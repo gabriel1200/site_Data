@@ -1,5 +1,71 @@
 # Basket_bot commands
 
+## help
+
+If you ever forget the formatting for the query commands, try typing help after the command. 
+
+Doing so will return the corresponding 'how to use it' for the command.
+
+## $playerboard
+
+**What it does**
+Displays the top 10 teams by the selected team statistic(ortg,drtg,etc) for the current season, taken from the Thinking Basketball Daily Leaderboard.
+
+For metrics with two terms in the name, replace the space with an underscore. (ie 'passer rating' should be entered as 'passer_rating') 
+
+**How to use it**
+
+$playerboard [stat]
+
+**Example**
+```
+$playerboard passer_rating
+
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│      Player         Tm    MP    GP   BPM    OBPM   ScoreVal   PlayVal   Load   Pts 75   rTS%    Box Creation   Passer Rating │
+├──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│    Trae Young       ATL   351   10   2.2    3.6      -0.8       2.4     59.9    27.5    -6.5        14.7            9.5      │
+│   Nikola Jokic      DEN   346   11   7.7    4.7      1.6        2.3     48.6    24.2    11.0        13.1            9.4      │
+│    Ben Simmons      BKN   231   8    3.1    -1.4     -1.6       0.5     24.7    7.3     -11.8       2.5             9.3      │
+│   James Harden      PHI   331   9    5.6    3.8      0.2        2.4     51.7    23.0     2.3        15.7            9.2      │
+│   Ousmane Dieng     OKC   135   9    -0.2   -1.6     -1.2       0.7     20.0    8.2     -16.3       1.8             9.1      │
+│    Luka Doncic      DAL   366   10   9.4    5.2      1.5        2.5     64.9    36.0     3.3        17.2            9.1      │
+│    Chris Paul       PHX   302   10   3.8    1.4      -1.0       1.7     35.2    11.8    -6.3        8.3             9.0      │
+│   Jrue Holiday      MIL   331   10   4.4    2.4      -0.6       1.6     46.7    21.2    -2.7        11.1            8.8      │
+│ Tyrese Haliburton   IND   371   11   4.9    4.3      1.0        2.3     48.4    22.7     8.2        14.5            8.8      │
+│  Andrew Nembhard    IND   200   10   0.7    0.6      -0.9       0.9     25.4    11.4    -3.6        3.7             8.7      │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+```
+## $teamboard
+
+**What it does**
+Displays the top 10 teams by the selected team statistic(Scoreval,Pts 75,Box Creation) for the current season, taken from the Thinking Basketball Daily Leaderboard.
+
+For metrics with two terms in the name, replace the space with an underscore. (ie 'passer rating' should be entered as 'passer_rating') 
+
+**How to use it**
+
+$teamboard [stat]
+
+**Example**
+```
+$teamboard ortg
+
+┌─────────────────────────────────────────────────────────────┐
+│ Tm    ORTG    DRTG    rORTG   rDRTG   Pace    OPace   DPace │
+├─────────────────────────────────────────────────────────────┤
+│ DAL   118.0   111.5    5.4    -0.9    93.9    15.3    14.1  │
+│ BOS   117.8   114.7    5.3     2.3    97.7    14.1    14.4  │
+│ CLE   116.6   105.9    4.1    -6.5    96.6    15.0    13.8  │
+│ UTA   116.3   110.5    3.7    -1.9    99.8    14.1    13.7  │
+│ NOP   116.2   112.4    3.6    -0.1    98.9    13.7    14.4  │
+│ IND   116.1   116.5    3.5     4.0    101.1   13.4    13.9  │
+│ DEN   116.0   114.1    3.4     1.7    100.0   14.2    13.7  │
+│ TOR   115.5   109.9    2.9    -2.5    96.9    14.0    14.5  │
+│ MEM   115.3   114.4    2.7     2.0    99.4    13.9    13.9  │
+│ PHX   115.3   107.1    2.7    -5.3    96.0    14.2    14.5  │
+└─────────────────────────────────────────────────────────────┘
+```
 ## $next_games
 
 **What it does**
