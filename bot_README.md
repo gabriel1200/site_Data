@@ -1,5 +1,5 @@
 # Basket_bot commands
-
+- _Deluxe Only_ means you can only use the command in the deluxe channel
 ## help
 
 If you ever forget the formatting for the query commands, try typing help after the command. 
@@ -7,6 +7,8 @@ If you ever forget the formatting for the query commands, try typing help after 
 Doing so will return the corresponding 'how to use it' for the command.
 
 ## $playerboard
+
+_Deluxe Only_
 
 **What it does**
 Displays the top 10 teams by the selected team statistic(ortg,drtg,etc) for the current season, taken from the Thinking Basketball Daily Leaderboard.
@@ -37,6 +39,8 @@ $playerboard passer_rating
 └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 ## $teamboard
+
+_Deluxe Only_
 
 **What it does**
 Displays the top 10 teams by the selected team statistic(Scoreval,Pts 75,Box Creation) for the current season, taken from the Thinking Basketball Daily Leaderboard.
@@ -139,6 +143,8 @@ Lakers (0-5) vs. Nuggets (4-2)
 ```
 ## $season
 
+_Deluxe Only_
+
 **What it does**
 
 Shows various tb statistics(playval,scoreval, passer rating, box creation, bpm) and public statistics(LEBRON) for a player.
@@ -210,6 +216,8 @@ $season lebron james 2010 2011
 
 
 ## $teamseason
+
+_Deluxe Only_
 
 **What it does**
 
