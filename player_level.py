@@ -23,30 +23,33 @@ url5 = 'https://www.nba.com/stats/players/transition?PerMode=Totals&dir=D&sort=P
 cs ='https://www.nba.com/stats/players/catch-shoot?PerMode=Totals'
 pullup ='https://www.nba.com/stats/players/pullup?PerMode=Totals'
 
-handoff = 'https://www.nba.com/stats/teams/hand-off?PerMode=Totals'
-iso ='https://www.nba.com/stats/teams/isolation?PerMode=Totals'
-trans ='https://www.nba.com/stats/teams/transition?PerMode=Totals'
-bh='https://www.nba.com/stats/teams/ball-handler?PerMode=Totals'
-rollman = 'https://www.nba.com/stats/teams/roll-man?PerMode=Totals'
-postup = 'https://www.nba.com/stats/teams/playtype-post-up?PerMode=Totals'
-spotup = 'https://www.nba.com/stats/teams/spot-up?PerMode=Totals'
-cut = 'https://www.nba.com/stats/teams/cut?PerMode=Totals'
-offscreen = 'https://www.nba.com/stats/teams/off-screen?PerMode=Totals'
-putbacks = 'https://www.nba.com/stats/teams/putbacks?PerMode=Totals'
-misc = 'https://www.nba.com/stats/teams/playtype-misc?PerMode=Totals'
+touches = 'https://www.nba.com/stats/players/touches?PerMode=Totals'
+drives = 'https://www.nba.com/stats/players/drives?PerMode=Totals'
 
-#url_list = [url1,url2,url3,url4,url5]
-url_list=[handoff,iso,trans,bh,rollman,postup,spotup,cut,offscreen,putbacks,misc]
+wide_open = 'https://www.nba.com/stats/players/shots-closest-defender?CloseDefDistRange=6%2B+Feet+-+Wide+Open&PerMode=Totals'
+close = 'https://www.nba.com/stats/players/defense-dash-lt6?PerMode=Totals&dir=D&sort=PLUSMINUS'
+passing = 'https://www.nba.com/stats/players/passing?PerMode=Totals'
+
+
+# In[2]:
+
+
+#url_list = [cs,pullup]
+from selenium.webdriver.support.select import Select
+
 def check_exists_by_xpath(driver, xpath):
     try:
         driver.find_element(By.XPATH, xpath)
     except NoSuchElementException:
         return False
     return True
-#url_list = [cs,pullup]
-def get_tables(url_list):
+
+
+def get_ptables(url_list,path_list):
     data = []
-    for url in url_list:
+    for i in range(len(url_list)):
+        url = url_list[i]
+        xpath = path_list[i]
         print(url)
         driver = webdriver.Chrome()
         driver.get(url)
@@ -56,10 +59,16 @@ def get_tables(url_list):
         '''if check_exists_by_xpath(driver, "//a[contains(text(),'>')]/preceding-sibling::a[1]"):
             number_of_pages = int(driver.find_element(By.XPATH, "//a[contains(text(),'>')]/preceding-sibling::a[1]").text)
             print(number_of_pages)'''
+        
+        dropdown1 = Select(driver.find_element(By.XPATH, xpath))
+        dropdown1.select_by_index(0)
+
         # Step 2: Parse HTML code and grab tables with Beautiful Soup
+        
         soup = BeautifulSoup(driver.page_source, 'lxml')
 
         tables = soup.find_all('table')
+        
 
         # Step 3: Read tables with Pandas read_html()
         dfs = pd.read_html(str(tables))
@@ -74,39 +83,64 @@ def get_tables(url_list):
         #drop = ['Unnamed: 16_level_1', 'Unnamed: 17_level_1', 'Unnamed: 18_level_1']
         #df.columns = df.columns.droplevel()
         #df = df.drop(columns = drop)
+       
         data.append(df)
     return data
 
 
-# In[2]:
+# In[3]:
 
 
-#url_list = [url1]
-frames = get_tables(url_list)
-
-
-# In[5]:
-
-
-frames[10]
-
-
-# In[6]:
-
-
-#terms = ['data/teampullup.csv','data/teamcatchshoot.csv','data/teamundersix.csv','data/teamiso.csv','data/teamtransition.csv']
-terms = ['playtype/handoff.csv','playtype/iso.csv','playtype/trans.csv','playtype/bh.csv','playtype/rollman.csv','playtype/postup.csv','playtype/spotup.csv',
-         'playtype/cut.csv','playtype/offscreen.csv','playtype/putback.csv','playtype/misc.csv']
-for i in range(len(terms)):
-    df = frames[i]
-    df.to_csv(terms[i],index = False)
-   
+url_list = [drives,wide_open,close,touches,cs,pullup,passing]
+name_list = ['drives','wide_open','close_6','touches','cs','pullup','passing']
+xpath = '//*[@id="__next"]/div[2]/div[2]/div[3]/section[2]/div/div[2]/div[2]/div[1]/div[3]/div/label/div/select'
+#xpath2 = '//*[@id="__next"]/div[2]/div[2]/div[3]/section[2]/div/div[2]/div[2]/div[1]/div[3]/div/label/div/select'
+path_list = [xpath for i in range(len(url_list))]
 
 
 # In[ ]:
 
 
 
+
+
+# In[ ]:
+
+
+
+
+
+# In[4]:
+
+
+tables= get_ptables(url_list,path_list)
+
+
+# In[5]:
+
+
+temp = tables[1]
+temp.columns = temp.columns.droplevel() 
+#temp = temp.drop(columns = ['Unnamed: 18_level_1','Unnamed: 19_level_1','Unnamed: 20_level_1', 'Unnamed: 21_level_1','Unnamed: 22_level_1'])
+#temp
+temp = temp.drop(columns = ['Unnamed: 18_level_1','Unnamed: 19_level_1','Unnamed: 20_level_1', 'Unnamed: 21_level_1','Unnamed: 22_level_1'])
+tables[1] = temp
+
+tables[1] = temp
+
+
+# In[8]:
+
+
+for i in range(len(name_list)):
+    tables[i].to_csv('player_tracking/'+name_list[i]+'.csv',index = False)
+
+
+# In[12]:
+
+
+tables[0].to_csv('player_tracking/pullup.csv',index = False)
+tables[1].to_csv('player_tracking/cs.csv',index = False)
 
 
 # In[ ]:

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[12]:
+# In[1]:
 
 
 import pandas as pd
@@ -43,7 +43,7 @@ def get_tables(url_list):
     return data
 
 
-# In[13]:
+# In[2]:
 
 
 tables = get_tables(url_list)
