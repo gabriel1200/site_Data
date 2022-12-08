@@ -104,10 +104,10 @@ path_list = [xpath for i in range(len(url_list))]
 
 
 
-# In[ ]:
+# In[10]:
 
 
-
+tables[1]
 
 
 # In[4]:
@@ -116,7 +116,7 @@ path_list = [xpath for i in range(len(url_list))]
 tables= get_ptables(url_list,path_list)
 
 
-# In[5]:
+# In[8]:
 
 
 temp = tables[1]
@@ -129,14 +129,14 @@ tables[1] = temp
 tables[1] = temp
 
 
-# In[8]:
+# In[11]:
 
 
 for i in range(len(name_list)):
     tables[i].to_csv('player_tracking/'+name_list[i]+'.csv',index = False)
 
 
-# In[12]:
+# In[7]:
 
 
 tables[0].to_csv('player_tracking/pullup.csv',index = False)
