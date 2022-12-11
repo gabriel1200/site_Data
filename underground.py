@@ -22,19 +22,19 @@ response_json = response.json()
 player_stats = response_json["multi_row_table_data"]
 
 
-# In[15]:
+# In[3]:
 
 
 len(player_stats)
 
 
-# In[25]:
+# In[ ]:
 
 
 
 
 
-# In[19]:
+# In[4]:
 
 
 df = pd.DataFrame(player_stats)
@@ -46,36 +46,36 @@ df = pd.DataFrame(player_stats)
 
 
 
-# In[33]:
+# In[20]:
 
 
-col = ['Name','Minutes','Points','FG2M', 'FG2A', 'FG3M', 'FG3A', 'TsPct','AssistPoints','AtRimAssists','ShortMidRangeAssists', 'LongMidRangeAssists','Corner3Assists','LostBallSteals', 'LiveBallTurnovers', 'BadPassOutOfBoundsTurnovers', 'BadPassTurnovers',
+col = ['Name','Minutes','Points','FG2M', 'FG2A', 'FG3M', 'FG3A', 'TsPct','AssistPoints','AtRimAssists','ShortMidRangeAssists', 'LongMidRangeAssists','Corner3Assists','Arc3Assists','LostBallSteals', 'LiveBallTurnovers', 'BadPassOutOfBoundsTurnovers', 'BadPassTurnovers',
        'DeadBallTurnovers', 'LostBallOutOfBoundsTurnovers', 'LostBallTurnovers', 'StepOutOfBoundsTurnovers', 'Travels', 'Turnovers','OffensiveGoaltends','FTA','OffPoss',
  'DefPoss','TotalPoss']
 
 
-# In[34]:
+# In[21]:
 
 
 df[col].to_csv('wowy/player_small.csv',index = False)
 
 
-# In[35]:
+# In[22]:
 
 
 df.to_csv('wowy/player_large.csv',index = False)
 
 
-# In[36]:
+# In[19]:
 
 
-df[df.Name == 'Jalen Duren']
+df[df.Name == 'Giannis Antetokounmpo']['Arc3Assists']
 
 
-# In[37]:
+# In[10]:
 
 
-player_stats[162]
+list(df.columns)
 
 
 # In[ ]:
