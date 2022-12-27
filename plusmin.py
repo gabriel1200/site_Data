@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[100]:
+# In[1]:
 
 
 import pandas as pd
@@ -82,35 +82,18 @@ def get_tables(url_list):
 elem = get_tables([epm])
 
 
-# In[101]:
-
-
-elem[0]
-
-
-# In[26]:
+# In[2]:
 
 
 df = elem[0]
 df.columns = df.columns.droplevel()
 df = df.dropna(subset = 'PLAYER')
 df = df[df.PLAYER != 'PLAYER']
-
-
-# In[28]:
-
-
 df.to_csv('epm_temp.csv',index = False)
-
-
-# In[95]:
-
-
 df = pd.read_csv('epm_temp.csv')
-df
 
 
-# In[96]:
+# In[3]:
 
 
 new_columns = []
@@ -132,71 +115,11 @@ df['PLAYER'] = df['PLAYER'].str.split("·",expand = True)[0]
 df['team'] = df['PLAYER'].str[-4:-1]
 df['PLAYER'] =  df['PLAYER'].str[:-4]
 df = df.round(2)
-
-
-# In[98]:
-
-
 df.columns = [x.lower() for x in df.columns]
-df
 
 
-# In[99]:
+# In[4]:
 
 
-df.to_csv('epm.csv',index = False)
-
-
-# In[72]:
-
-
-df['team']
-
-
-# In[43]:
-
-
-columns = df.columns
-for col in columns:
-    print(col)
-    print(df[col].dtype)
-
-
-# In[ ]:
-
-
-rows = driver.find_element("xpath",'//*[@id="player-stats"]/div[2]/table/tbody/tr[98]')
-
-
-# In[ ]:
-
-
-rows.text
-
-
-# In[ ]:
-
-
-//*[@id="player-stats"]/div[2]/table/tbody/tr[2]
-//*[@id="player-stats"]/div[2]/table/tbody/tr[480]
-
-
-# In[ ]:
-
-
-import io 
-output = io.StringIO()
-output.write(elem.text)
-
-
-# In[ ]:
-
-
-pd.read_csv(output)
-
-
-# In[ ]:
-
-
-
+df.to_csv('epm/epm.csv',index = False)
 

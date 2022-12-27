@@ -5,6 +5,7 @@ python misc.py
 python player_level.py
 python underground.py
 python standings.py
+python plusmin.py
 git add --all
 git commit -m 'Daily Update'
 git push origin main
