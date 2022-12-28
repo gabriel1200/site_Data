@@ -143,7 +143,6 @@ Lakers (0-5) vs. Nuggets (4-2)
 ```
 ## $season
 
-_Deluxe Only_
 
 **What it does**
 
@@ -216,8 +215,6 @@ $season lebron james 2010 2011
 
 
 ## $teamseason
-
-_Deluxe Only_
 
 **What it does**
 
