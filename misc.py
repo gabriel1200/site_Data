@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[2]:
+# In[1]:
 
 
 import pandas as pd
@@ -78,20 +78,14 @@ def get_tables(url_list):
     return data
 
 
-# In[ ]:
+# In[2]:
 
 
 #url_list = [url1]
 frames = get_tables(url_list)
 
 
-# In[1]:
-
-
-frames[10]
-
-
-# In[6]:
+# In[3]:
 
 
 #terms = ['data/teampullup.csv','data/teamcatchshoot.csv','data/teamundersix.csv','data/teamiso.csv','data/teamtransition.csv']
