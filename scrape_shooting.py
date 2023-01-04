@@ -21,7 +21,7 @@ def get_tables(url_list):
         driver.get(url)
 
         # Wait for the page to fully load
-        driver.implicitly_wait(6)
+        driver.implicitly_wait(10)
 
         # Step 2: Parse HTML code and grab tables with Beautiful Soup
         soup = BeautifulSoup(driver.page_source, 'lxml')
@@ -55,7 +55,7 @@ for i in range(len(terms)):
     df.to_json(jsons[i])
 
 
-# In[ ]:
+# In[3]:
 
 
 tables[0].to_json(orient="records")
