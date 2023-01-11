@@ -52,7 +52,7 @@ def get_tables(url_list):
         driver.get(url)
 
         # Wait for the page to fully load
-        driver.implicitly_wait(10)
+        driver.implicitly_wait(20)
         '''if check_exists_by_xpath(driver, "//a[contains(text(),'>')]/preceding-sibling::a[1]"):
             number_of_pages = int(driver.find_element(By.XPATH, "//a[contains(text(),'>')]/preceding-sibling::a[1]").text)
             print(number_of_pages)'''
