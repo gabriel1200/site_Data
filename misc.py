@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[4]:
 
 
 import pandas as pd
@@ -34,9 +34,9 @@ cut = 'https://www.nba.com/stats/teams/cut?PerMode=Totals'
 offscreen = 'https://www.nba.com/stats/teams/off-screen?PerMode=Totals'
 putbacks = 'https://www.nba.com/stats/teams/putbacks?PerMode=Totals'
 misc = 'https://www.nba.com/stats/teams/playtype-misc?PerMode=Totals'
-
+drives = 'https://www.nba.com/stats/teams/drives?PerMode=Totals'
 #url_list = [url1,url2,url3,url4,url5]
-url_list=[handoff,iso,trans,bh,rollman,postup,spotup,cut,offscreen,putbacks,misc]
+url_list=[handoff,iso,trans,bh,rollman,postup,spotup,cut,offscreen,putbacks,misc,drives]
 def check_exists_by_xpath(driver, xpath):
     try:
         driver.find_element(By.XPATH, xpath)
@@ -78,19 +78,19 @@ def get_tables(url_list):
     return data
 
 
-# In[2]:
+# In[5]:
 
 
 #url_list = [url1]
 frames = get_tables(url_list)
 
 
-# In[3]:
+# In[6]:
 
 
 #terms = ['data/teampullup.csv','data/teamcatchshoot.csv','data/teamundersix.csv','data/teamiso.csv','data/teamtransition.csv']
 terms = ['playtype/handoff.csv','playtype/iso.csv','playtype/trans.csv','playtype/bh.csv','playtype/rollman.csv','playtype/postup.csv','playtype/spotup.csv',
-         'playtype/cut.csv','playtype/offscreen.csv','playtype/putback.csv','playtype/misc.csv']
+         'playtype/cut.csv','playtype/offscreen.csv','playtype/putback.csv','playtype/misc.csv','playtype/drives.csv']
 for i in range(len(terms)):
     df = frames[i]
     df.to_csv(terms[i],index = False)

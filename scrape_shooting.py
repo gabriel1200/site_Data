@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[4]:
 
 
 import pandas as pd
@@ -19,9 +19,9 @@ def get_tables(url_list):
     for url in url_list:
         driver = webdriver.Chrome()
         driver.get(url)
-
+        print(url)
         # Wait for the page to fully load
-        driver.implicitly_wait(10)
+        driver.implicitly_wait(20)
 
         # Step 2: Parse HTML code and grab tables with Beautiful Soup
         soup = BeautifulSoup(driver.page_source, 'lxml')
@@ -36,6 +36,7 @@ def get_tables(url_list):
 
         driver.close()
         df= dfs[-1]
+        print(df)
         drop = ['Unnamed: 16_level_1', 'Unnamed: 17_level_1', 'Unnamed: 18_level_1']
         df.columns = df.columns.droplevel()
         df = df.drop(columns = drop)
@@ -43,7 +44,7 @@ def get_tables(url_list):
     return data
 
 
-# In[2]:
+# In[5]:
 
 
 tables = get_tables(url_list)
@@ -53,30 +54,6 @@ for i in range(len(terms)):
     df = tables[i]
     df.to_csv(terms[i],index = False)
     df.to_json(jsons[i])
-
-
-# In[3]:
-
-
-tables[0].to_json(orient="records")
-
-
-# In[ ]:
-
-
-
-
-
-# In[11]:
-
-
-len(tables)
-
-
-# In[ ]:
-
-
-tables[1]
 
 
 # In[ ]:
