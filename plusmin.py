@@ -14,6 +14,7 @@ from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import ElementNotInteractableException 
 from selenium.webdriver.support import expected_conditions as EC
+import requests
 
 
 # Step 1: Create a session and load the page
@@ -122,4 +123,31 @@ df.columns = [x.lower() for x in df.columns]
 
 
 df.to_csv('epm/epm.csv',index = False)
+
+
+# In[2]:
+
+
+def scrape_LEBRON():
+    url = 'https://www.bball-index.com/lebron-database/'
+    page = requests.get(url)
+    soup = BeautifulSoup(page.content, "html.parser")
+    table = soup.find(id = 'table_1')
+    df = pd.read_html(str(table),displayed_only=False)[0]
+    df = df.dropna(subset = 'Player')
+    year = df['Season'].str[0:4].astype(int) +1
+    df['year'] = year
+    df['Player'] = df['Player'].str.lower()
+    df = df.rename(columns = {'Team':'team'})
+    return df
+df = scrape_LEBRON()
+
+df = df[df['Season'] =='2022-23']
+df.to_csv('lebron/lebron.csv',index = False)
+
+
+# In[ ]:
+
+
+
 
