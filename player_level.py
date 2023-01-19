@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[3]:
 
 
 import pandas as pd
@@ -31,7 +31,7 @@ close = 'https://www.nba.com/stats/players/defense-dash-lt6?PerMode=Totals&dir=D
 passing = 'https://www.nba.com/stats/players/passing?PerMode=Totals'
 
 
-# In[2]:
+# In[4]:
 
 
 #url_list = [cs,pullup]
@@ -47,11 +47,12 @@ def check_exists_by_xpath(driver, xpath):
 
 def get_ptables(url_list,path_list):
     data = []
+    driver = webdriver.Chrome()
     for i in range(len(url_list)):
         url = url_list[i]
         xpath = path_list[i]
         print(url)
-        driver = webdriver.Chrome()
+        
         driver.get(url)
 
         # Wait for the page to fully load
@@ -77,7 +78,7 @@ def get_ptables(url_list,path_list):
         #print(f'Total tables: {len(dfs)}')
         #print(dfs[2].head())
     
-        driver.close()
+        
         #return dfs
         df= dfs[-1]
         #drop = ['Unnamed: 16_level_1', 'Unnamed: 17_level_1', 'Unnamed: 18_level_1']
@@ -85,10 +86,11 @@ def get_ptables(url_list,path_list):
         #df = df.drop(columns = drop)
        
         data.append(df)
+    driver.close()
     return data
 
 
-# In[3]:
+# In[5]:
 
 
 url_list = [drives,wide_open,close,touches,cs,pullup,passing]
@@ -98,19 +100,13 @@ xpath = '//*[@id="__next"]/div[2]/div[2]/div[3]/section[2]/div/div[2]/div[2]/div
 path_list = [xpath for i in range(len(url_list))]
 
 
-# In[ ]:
-
-
-
-
-
-# In[4]:
+# In[6]:
 
 
 tables= get_ptables(url_list,path_list)
 
 
-# In[5]:
+# In[7]:
 
 
 temp = tables[1]
@@ -123,7 +119,7 @@ tables[1] = temp
 tables[1] = temp
 
 
-# In[6]:
+# In[8]:
 
 
 for i in range(len(name_list)):

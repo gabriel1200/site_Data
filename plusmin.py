@@ -31,9 +31,10 @@ def check_exists_by_xpath(driver, xpath):
 #url_list = [cs,pullup]
 def get_tables(url_list):
     data = []
+    driver = webdriver.Chrome()
     for url in url_list:
         print(url)
-        driver = webdriver.Chrome()
+        
         driver.get(url)
         w_path = '//*[@id="player-stats"]/div[2]/table/tbody/tr[480]'
         xpath = '//*[@id="player-stats"]/div[2]/table'
@@ -78,7 +79,7 @@ def get_tables(url_list):
         df = pd.read_html(str(tables))[0]
         #print(dfs)
         data.append(df)
-        driver.close()
+    driver.close()
     return data
 elem = get_tables([epm])
 

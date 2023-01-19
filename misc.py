@@ -46,9 +46,10 @@ def check_exists_by_xpath(driver, xpath):
 #url_list = [cs,pullup]
 def get_tables(url_list):
     data = []
+    driver = webdriver.Chrome()
     for url in url_list:
         print(url)
-        driver = webdriver.Chrome()
+        
         driver.get(url)
 
         # Wait for the page to fully load
@@ -68,13 +69,14 @@ def get_tables(url_list):
         #print(f'Total tables: {len(dfs)}')
         #print(dfs[2].head())
     
-        driver.close()
+        
         #return dfs
         df= dfs[-1]
         #drop = ['Unnamed: 16_level_1', 'Unnamed: 17_level_1', 'Unnamed: 18_level_1']
         #df.columns = df.columns.droplevel()
         #df = df.drop(columns = drop)
         data.append(df)
+    driver.close()
     return data
 
 
