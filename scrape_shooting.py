@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[4]:
+# In[1]:
 
 
 import pandas as pd
@@ -37,7 +37,7 @@ def get_tables(url_list):
 
         
         df= dfs[-1]
-        print(df)
+        #print(df)
         drop = ['Unnamed: 16_level_1', 'Unnamed: 17_level_1', 'Unnamed: 18_level_1']
         df.columns = df.columns.droplevel()
         df = df.drop(columns = drop)
@@ -46,7 +46,7 @@ def get_tables(url_list):
     return data
 
 
-# In[5]:
+# In[2]:
 
 
 tables = get_tables(url_list)
