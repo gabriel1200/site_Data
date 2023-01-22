@@ -1,13 +1,15 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[3]:
+# In[1]:
 
 
 import pandas as pd
 from selenium import webdriver
 from bs4 import BeautifulSoup
 
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import ElementNotInteractableException 
@@ -31,7 +33,7 @@ close = 'https://www.nba.com/stats/players/defense-dash-lt6?PerMode=Totals&dir=D
 passing = 'https://www.nba.com/stats/players/passing?PerMode=Totals'
 
 
-# In[4]:
+# In[2]:
 
 
 #url_list = [cs,pullup]
@@ -54,7 +56,8 @@ def get_ptables(url_list,path_list):
         print(url)
         
         driver.get(url)
-
+        element = WebDriverWait(driver, 10).until(
+        EC.presence_of_element_located((By.XPATH, xpath)))
         # Wait for the page to fully load
         driver.implicitly_wait(10)
         '''if check_exists_by_xpath(driver, "//a[contains(text(),'>')]/preceding-sibling::a[1]"):
@@ -90,7 +93,7 @@ def get_ptables(url_list,path_list):
     return data
 
 
-# In[5]:
+# In[3]:
 
 
 url_list = [drives,wide_open,close,touches,cs,pullup,passing]
@@ -100,13 +103,13 @@ xpath = '//*[@id="__next"]/div[2]/div[2]/div[3]/section[2]/div/div[2]/div[2]/div
 path_list = [xpath for i in range(len(url_list))]
 
 
-# In[6]:
+# In[4]:
 
 
 tables= get_ptables(url_list,path_list)
 
 
-# In[7]:
+# In[5]:
 
 
 temp = tables[1]
@@ -119,7 +122,7 @@ tables[1] = temp
 tables[1] = temp
 
 
-# In[8]:
+# In[6]:
 
 
 for i in range(len(name_list)):

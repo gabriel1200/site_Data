@@ -1,13 +1,15 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[3]:
 
 
 import pandas as pd
 from selenium import webdriver
 from bs4 import BeautifulSoup
-
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.by import By
 # Step 1: Create a session and load the page
 url1 = 'https://www.nba.com/stats/teams/opponent-shots-closest-defender?CloseDefDistRange=0-2+Feet+-+Very+Tight&PerMode=Totals'
 url2 = 'https://www.nba.com/stats/teams/opponent-shots-closest-defender?CloseDefDistRange=2-4+Feet+-+Tight&PerMode=Totals'
@@ -16,6 +18,7 @@ url4 = 'https://www.nba.com/stats/teams/opponent-shots-closest-defender?CloseDef
 url_list = [url1,url2,url3,url4]
 def get_tables(url_list):
     data = []
+    xpath = '//*[@id="__next"]/div[2]/div[2]/div[3]/section[2]/div/div[2]/div[3]/table'
     driver = webdriver.Chrome()
     for url in url_list:
         
@@ -23,6 +26,8 @@ def get_tables(url_list):
         print(url)
         # Wait for the page to fully load
         driver.implicitly_wait(20)
+        element = WebDriverWait(driver, 10).until(
+        EC.presence_of_element_located((By.XPATH, xpath)))
 
         # Step 2: Parse HTML code and grab tables with Beautiful Soup
         soup = BeautifulSoup(driver.page_source, 'lxml')
@@ -46,7 +51,7 @@ def get_tables(url_list):
     return data
 
 
-# In[2]:
+# In[4]:
 
 
 tables = get_tables(url_list)

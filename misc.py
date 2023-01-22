@@ -1,13 +1,14 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[4]:
+# In[9]:
 
 
 import pandas as pd
 from selenium import webdriver
 from bs4 import BeautifulSoup
-
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import ElementNotInteractableException 
@@ -45,13 +46,15 @@ def check_exists_by_xpath(driver, xpath):
     return True
 #url_list = [cs,pullup]
 def get_tables(url_list):
+    xpath = '//*[@id="__next"]/div[2]/div[2]/div[3]/section[2]/div/div[2]/div[3]/table'
     data = []
     driver = webdriver.Chrome()
     for url in url_list:
         print(url)
         
         driver.get(url)
-
+        element = WebDriverWait(driver, 10).until(
+        EC.presence_of_element_located((By.XPATH, xpath)))
         # Wait for the page to fully load
         driver.implicitly_wait(20)
         '''if check_exists_by_xpath(driver, "//a[contains(text(),'>')]/preceding-sibling::a[1]"):
@@ -80,14 +83,14 @@ def get_tables(url_list):
     return data
 
 
-# In[5]:
+# In[10]:
 
 
 #url_list = [url1]
 frames = get_tables(url_list)
 
 
-# In[6]:
+# In[11]:
 
 
 #terms = ['data/teampullup.csv','data/teamcatchshoot.csv','data/teamundersix.csv','data/teamiso.csv','data/teamtransition.csv']
