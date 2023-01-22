@@ -5,6 +5,20 @@
 If you ever forget the formatting for the query commands, try typing help after the command. 
 
 Doing so will return the corresponding 'how to use it' for the command.
+## $player_card
+**What it does**
+Displays a players metrics over multi year periods in percentile form . 
+
+**How to use it**
+
+$[firstname] [lastname] [end year] [span]
+
+**Example**
+$player_card joel embiid 2022 3
+
+**How to use it**
+
+$playerboard [stat]
 
 ## $playerboard
 
