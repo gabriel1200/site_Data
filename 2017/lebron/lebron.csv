@@ -1,0 +1,487 @@
+bref_id,Player,Season,team,Offensive Archetype,Minutes,Games,Pos,Age,LEBRON,O-LEBRON,D-LEBRON,WAR,NBA ID,boxLEBRON,boxOLEBRON,boxDLEBRON,year
+cartevi01,vince carter,2016-17,MEM,Movement Shooter,1800,73,SF,40,0.87,0.73,0.14,3.80,1713.0,-0.22,-0.55,0.32,2017
+nowitdi01,dirk nowitzki,2016-17,DAL,Versatile Big,1424,54,PF,38,0.83,-0.27,1.11,3.00,1717.0,1.2,0.1,1.1,2017
+piercpa01,paul pierce,2016-17,LAC,Stationary Shooter,277,25,SF,39,-1.76,-1.74,-0.02,0.10,1718.0,-2.19,-2.16,-0.03,2017
+terryja01,jason terry,2016-17,MIL,Stationary Shooter,1365,74,SG,39,-1.6,-1.55,-0.05,0.60,1891.0,-1.81,-1.41,-0.41,2017
+artesro01,metta world peace,2016-17,LAL,Movement Shooter,160,25,SF,37,-1.15,-1.07,-0.08,0.10,1897.0,-0.98,-1.03,0.05,2017
+ginobma01,manu ginobili,2016-17,SAS,Secondary Ball Handler,1291,69,SG,39,1.01,0.26,0.75,2.90,1938.0,0.33,-0.05,0.38,2017
+millemi01,mike miller,2016-17,DEN,Stationary Shooter,151,20,SF,36,-1.09,-1.55,0.47,0.10,2034.0,-1.07,-1.51,0.43,2017
+crawfja01,jamal crawford,2016-17,LAC,Shot Creator,2157,82,SG,36,-2.71,-0.35,-2.36,-0.60,2037.0,-1.46,-0.09,-1.37,2017
+chandty01,tyson chandler,2016-17,PHO,Roll + Cut Big,1298,47,C,34,1.12,-0.59,1.71,3.00,2199.0,0.64,-0.52,1.16,2017
+gasolpa01,pau gasol,2016-17,SAS,Post Scorer,1627,64,C,36,1.45,0.24,1.21,4.10,2200.0,2.3,0.92,1.38,2017
+johnsjo02,joe johnson,2016-17,UTA,Shot Creator,1843,78,SF,35,-1.27,0.33,-1.61,1.30,2207.0,-0.55,-0.23,-0.33,2017
+jefferi01,richard jefferson,2016-17,CLE,Stationary Shooter,1614,79,SF,36,-1.24,-1.06,-0.18,1.10,2210.0,-1.92,-1.37,-0.54,2017
+randoza01,zach randolph,2016-17,MEM,Post Scorer,1786,73,PF,35,-0.26,0.78,-1.04,2.40,2216.0,-0.57,0.24,-0.81,2017
+parketo01,tony parker,2016-17,SAS,Slasher,1587,63,PG,34,-0.28,-0.02,-0.26,2.10,2225.0,-0.21,0.05,-0.26,2017
+anderch01,chris andersen,2016-17,CLE,Roll + Cut Big,114,12,C,38,-1.18,-1.6,0.42,0.10,2365.0,-1.17,-1.63,0.46,2017
+dunlemi02,mike dunleavy,2016-17,TOT,Off Screen Shooter,841,53,SF,36,-2.38,-2.16,-0.22,0.00,2399.0,-1.58,-0.98,-0.6,2017
+hilarne01,nene,2016-17,HOU,Roll + Cut Big,1198,67,C,34,1.3,-0.34,1.64,2.90,2403.0,0.33,-0.1,0.43,2017
+barnema02,matt barnes,2016-17,TOT,Athletic Finisher,1776,74,SF,36,-0.97,-0.92,-0.04,1.60,2440.0,-1.45,-1.22,-0.23,2017
+scolalu01,luis scola,2016-17,BRK,Versatile Big,461,36,PF,36,-1.0,-0.19,-0.81,0.40,2449.0,-1.03,-0.66,-0.37,2017
+jamesle01,lebron james,2016-17,CLE,Shot Creator,2795,74,SF,32,5.78,5.56,0.22,14.70,2544.0,4.44,4.44,0.0,2017
+anthoca01,carmelo anthony,2016-17,NYK,Shot Creator,2538,74,SF,32,-0.54,1.09,-1.63,3.00,2546.0,-0.12,1.29,-1.4,2017
+wadedw01,dwyane wade,2016-17,CHI,Shot Creator,1792,60,SG,35,-0.54,-0.19,-0.35,2.10,2548.0,1.07,0.7,0.37,2017
+collini01,nick collison,2016-17,OKC,Roll + Cut Big,128,20,PF,36,-1.16,-1.2,0.04,0.10,2555.0,-0.73,-0.95,0.22,2017
+westda01,david west,2016-17,GSW,Post Scorer,854,68,C,36,-0.07,-1.22,1.15,1.30,2561.0,0.31,-0.85,1.16,2017
+jonesda02,dahntay jones,2016-17,CLE,Slasher,12,1,SF,36,-1.19,-1.16,-0.02,0.00,2563.0,-1.31,-1.25,-0.06,2017
+diawbo01,boris diaw,2016-17,UTA,Post Scorer,1283,73,PF,34,-2.19,-1.74,-0.44,0.10,2564.0,-2.38,-1.74,-0.64,2017
+barbole01,leandro barbosa,2016-17,PHO,Secondary Ball Handler,963,67,SG,34,-1.55,-0.46,-1.09,0.50,2571.0,-1.92,-0.89,-1.02,2017
+pachuza01,zaza pachulia,2016-17,GSW,Roll + Cut Big,1268,70,C,32,0.77,-0.91,1.68,2.60,2585.0,0.71,-0.5,1.21,2017
+jonesja02,james jones,2016-17,CLE,Movement Shooter,381,48,SF,36,-1.83,-1.4,-0.43,0.10,2592.0,-1.2,-0.83,-0.37,2017
+korveky01,kyle korver,2016-17,TOT,Off Screen Shooter,1753,67,SG,35,-1.66,-0.24,-1.41,0.80,2594.0,-0.87,-0.22,-0.65,2017
+hasleud01,udonis haslem,2016-17,MIA,Roll + Cut Big,130,16,C,36,-2.57,-2.42,-0.15,0.00,2617.0,-1.31,-1.51,0.21,2017
+howardw01,dwight howard,2016-17,ATL,Post Scorer,2199,74,C,31,1.55,-0.72,2.27,5.70,2730.0,2.06,-0.04,2.1,2017
+livinsh01,shaun livingston,2016-17,GSW,Post Scorer,1345,76,PG,31,-1.8,-1.07,-0.74,0.40,2733.0,-2.15,-1.8,-0.35,2017
+harride01,devin harris,2016-17,DAL,Secondary Ball Handler,1087,65,PG,33,-0.06,0.35,-0.41,1.60,2734.0,-0.12,-0.05,-0.06,2017
+denglu01,luol deng,2016-17,LAL,Stationary Shooter,1486,56,SF,31,-1.49,-1.98,0.49,0.80,2736.0,-1.36,-1.36,0.0,2017
+iguodan01,andre iguodala,2016-17,GSW,Stationary Shooter,1998,76,SF,33,2.13,1.44,0.69,5.90,2738.0,1.04,0.38,0.66,2017
+humphkr01,kris humphries,2016-17,ATL,Stretch Big,689,56,PF,31,-1.43,-1.66,0.23,0.40,2743.0,-0.3,-0.94,0.64,2017
+jeffeal01,al jefferson,2016-17,IND,Post Scorer,931,66,C,32,-1.1,-0.65,-0.45,0.70,2744.0,-0.67,-0.19,-0.48,2017
+smithjr01,jr smith,2016-17,CLE,Movement Shooter,1187,41,SG,31,-1.98,-0.99,-0.99,0.30,2747.0,-0.88,-0.63,-0.25,2017
+nelsoja01,jameer nelson,2016-17,DEN,Primary Ball Handler,2045,75,PG,34,0.2,0.35,-0.15,3.40,2749.0,-0.81,0.05,-0.86,2017
+allento01,tony allen,2016-17,MEM,Roll + Cut Big,1914,71,SG,35,-0.07,-1.34,1.26,2.90,2754.0,-0.48,-1.39,0.9,2017
+vujacsa01,sasha vujacic,2016-17,NYK,Movement Shooter,408,42,SG,32,-1.33,-0.82,-0.52,0.30,2756.0,-1.57,-0.81,-0.76,2017
+udrihbe01,beno udrih,2016-17,DET,Slasher,560,39,PG,34,0.38,0.44,-0.06,1.00,2757.0,0.03,0.48,-0.45,2017
+varejan01,anderson varejao,2016-17,GSW,Roll + Cut Big,92,14,C,34,-3.08,-1.89,-1.2,0.00,2760.0,-2.72,-1.83,-0.89,2017
+arizatr01,trevor ariza,2016-17,HOU,Stationary Shooter,2773,80,SF,31,1.81,1.07,0.74,7.60,2772.0,1.87,0.93,0.94,2017
+bogutan01,andrew bogut,2016-17,TOT,Roll + Cut Big,583,27,C,32,0.12,-3.94,4.06,0.90,101106.0,-0.8,-3.28,2.48,2017
+willima02,marvin williams,2016-17,CHO,Movement Shooter,2295,76,PF,30,0.23,-0.56,0.79,3.90,101107.0,0.65,-0.2,0.86,2017
+paulch01,chris paul,2016-17,LAC,Shot Creator,1921,61,PG,31,6.26,4.64,1.62,10.60,101108.0,5.22,4.5,0.72,2017
+feltora01,raymond felton,2016-17,LAC,Primary Ball Handler,1700,80,PG,32,-2.15,-1.59,-0.55,0.20,101109.0,-1.21,-1.16,-0.05,2017
+fryech01,channing frye,2016-17,CLE,Stretch Big,1398,74,C,33,1.36,1.26,0.1,3.40,101112.0,0.81,0.8,0.02,2017
+willide01,deron williams,2016-17,TOT,Shot Creator,1657,64,PG,32,0.96,0.79,0.16,3.60,101114.0,-0.41,0.35,-0.75,2017
+greenge01,gerald green,2016-17,BOS,Movement Shooter,538,47,SF,31,-1.43,0.23,-1.66,0.30,101123.0,-1.5,-0.22,-1.28,2017
+jackja01,jarrett jack,2016-17,NOP,Secondary Ball Handler,33,2,PG,33,-1.44,-1.28,-0.17,0.00,101127.0,-1.38,-1.25,-0.13,2017
+mahinia01,ian mahinmi,2016-17,WAS,Roll + Cut Big,555,31,C,30,0.46,-1.62,2.08,1.00,101133.0,-0.39,-1.91,1.52,2017
+leeda02,david lee,2016-17,SAS,Roll + Cut Big,1477,79,PF,33,0.44,-0.26,0.7,2.70,101135.0,0.18,-0.29,0.47,2017
+bassbr01,brandon bass,2016-17,LAC,Post Scorer,577,52,PF,31,-1.99,-0.55,-1.44,0.10,101138.0,-0.49,0.05,-0.54,2017
+milescj01,cj miles,2016-17,IND,Off Screen Shooter,1776,76,SF,29,-0.01,0.51,-0.52,2.70,101139.0,-0.52,0.34,-0.87,2017
+ilyaser01,ersan ilyasova,2016-17,TOT,Stretch Big,2142,82,PF,29,0.24,0.24,-0.01,3.60,101141.0,-0.24,0.26,-0.5,2017
+ellismo01,monta ellis,2016-17,IND,Secondary Ball Handler,1998,74,SG,31,-2.19,-1.54,-0.65,0.20,101145.0,-2.06,-1.84,-0.22,2017
+willilo02,lou williams,2016-17,TOT,Secondary Ball Handler,1993,81,SG,30,0.76,3.07,-2.31,4.10,101150.0,0.9,2.5,-1.6,2017
+johnsam01,amir johnson,2016-17,BOS,Roll + Cut Big,1608,80,PF,29,0.29,-1.54,1.83,2.80,101161.0,0.51,-0.66,1.18,2017
+gortama01,marcin gortat,2016-17,WAS,Post Scorer,2555,82,C,32,0.16,-0.38,0.54,4.20,101162.0,-0.17,-0.76,0.58,2017
+pricero01,ronnie price,2016-17,PHO,Secondary Ball Handler,134,14,PG,33,-1.5,-1.54,0.04,0.10,101179.0,-0.91,-1.19,0.27,2017
+caldejo01,jose calderon,2016-17,TOT,Secondary Ball Handler,539,41,PG,35,-1.82,-1.5,-0.31,0.20,101181.0,-1.57,-1.22,-0.35,2017
+anderal01,alan anderson,2016-17,LAC,Stationary Shooter,308,30,SF,34,-3.91,-1.96,-1.95,-0.30,101187.0,-3.06,-2.07,-0.98,2017
+lucasjo02,john lucas iii,2016-17,MIN,Stationary Shooter,11,5,PG,34,-1.26,-1.19,-0.07,0.00,101249.0,-1.41,-1.27,-0.14,2017
+aldrila01,lamarcus aldridge,2016-17,SAS,Post Scorer,2335,72,PF,31,1.66,0.53,1.13,6.20,200746.0,1.74,0.62,1.12,2017
+foyera01,randy foye,2016-17,BRK,Secondary Ball Handler,1284,69,SG,33,-1.76,-1.99,0.22,0.50,200751.0,-2.36,-1.87,-0.49,2017
+gayru01,rudy gay,2016-17,SAC,Shot Creator,1013,30,SF,30,1.96,0.55,1.41,2.90,200752.0,0.83,0.48,0.35,2017
+redicjj01,jj redick,2016-17,LAC,Off Screen Shooter,2198,78,SG,32,1.13,1.5,-0.37,5.10,200755.0,0.43,1.32,-0.89,2017
+sefolth01,thabo sefolosha,2016-17,ATL,Athletic Finisher,1596,62,SF,32,0.04,-1.44,1.47,2.50,200757.0,-0.02,-1.56,1.53,2017
+rondora01,rajon rondo,2016-17,CHI,Slasher,1843,69,PG,30,-0.17,-0.55,0.38,2.60,200765.0,0.11,-0.68,0.79,2017
+lowryky01,kyle lowry,2016-17,TOR,Primary Ball Handler,2244,60,PG,30,4.96,4.21,0.75,10.70,200768.0,3.74,3.95,-0.21,2017
+farmajo01,jordan farmar,2016-17,SAC,Secondary Ball Handler,35,2,PG,30,-1.12,-0.98,-0.14,0.00,200770.0,-0.99,-1.01,0.02,2017
+rodrise01,sergio rodriguez,2016-17,PHI,Primary Ball Handler,1517,68,PG,30,-1.02,-0.22,-0.8,1.30,200771.0,-1.58,-0.5,-1.07,2017
+novakst01,steve novak,2016-17,MIL,Movement Shooter,22,8,PF,33,-1.63,-1.11,-0.52,0.00,200779.0,-1.51,-1.16,-0.35,2017
+tuckepj01,p.j. tucker,2016-17,TOT,Athletic Finisher,2236,81,SF,31,0.08,-1.15,1.24,3.60,200782.0,-1.09,-1.4,0.31,2017
+millspa01,paul millsap,2016-17,ATL,Post Scorer,2343,69,PF,31,2.48,0.31,2.17,7.50,200794.0,1.63,0.38,1.25,2017
+bareajo01,j.j. barea,2016-17,DAL,Secondary Ball Handler,771,35,PG,32,0.62,1.45,-0.83,1.50,200826.0,0.11,1.49,-1.38,2017
+duranke01,kevin durant,2016-17,GSW,Shot Creator,2070,62,PF,28,5.27,4.44,0.83,10.30,201142.0,5.74,4.2,1.54,2017
+horfoal01,al horford,2016-17,BOS,Versatile Big,2193,68,C,30,1.04,0.38,0.66,4.90,201143.0,1.81,1.01,0.79,2017
+conlemi01,mike conley,2016-17,MEM,Primary Ball Handler,2292,69,PG,29,3.9,4.09,-0.18,9.40,201144.0,3.27,3.43,-0.16,2017
+greenje02,jeff green,2016-17,ORL,Shot Creator,1534,69,PF,30,-2.79,-1.95,-0.84,-0.50,201145.0,-2.38,-1.33,-1.05,2017
+breweco01,corey brewer,2016-17,TOT,Stationary Shooter,1281,82,SF,30,-1.11,-1.72,0.61,1.00,201147.0,-1.73,-1.86,0.12,2017
+wrighbr03,brandan wright,2016-17,MEM,Roll + Cut Big,447,28,PF,29,-0.14,-0.41,0.28,0.60,201148.0,-0.17,-0.5,0.33,2017
+noahjo01,joakim noah,2016-17,NYK,Roll + Cut Big,1015,46,C,31,0.12,-1.19,1.31,1.60,201149.0,0.2,-0.9,1.1,2017
+hawessp01,spencer hawes,2016-17,TOT,Stretch Big,797,54,PF,28,-1.7,-1.24,-0.47,0.30,201150.0,-0.62,-1.0,0.38,2017
+youngth01,thaddeus young,2016-17,IND,Roll + Cut Big,2237,74,PF,28,-1.02,-1.47,0.45,1.90,201152.0,-0.25,-0.74,0.49,2017
+stuckro01,rodney stuckey,2016-17,IND,Secondary Ball Handler,696,39,PG,30,-2.2,-1.25,-0.95,0.10,201155.0,-2.3,-1.16,-1.14,2017
+youngni01,nick young,2016-17,LAL,Movement Shooter,1556,60,SG,31,-0.93,0.6,-1.53,1.40,201156.0,-0.32,0.96,-1.28,2017
+belinma01,marco belinelli,2016-17,CHO,Off Screen Shooter,1778,74,SG,30,-1.66,-0.06,-1.6,0.80,201158.0,-1.08,-0.14,-0.94,2017
+smithja02,jason smith,2016-17,WAS,Roll + Cut Big,1068,74,C,30,-1.17,-1.33,0.16,0.80,201160.0,-1.01,-1.61,0.6,2017
+dudleja01,jared dudley,2016-17,PHO,Movement Shooter,1362,64,PF,31,0.2,-0.89,1.09,2.30,201162.0,-1.3,-0.95,-0.35,2017
+chandwi01,wilson chandler,2016-17,DEN,Shot Creator,2197,71,SF,29,-0.43,0.68,-1.11,2.80,201163.0,-0.24,0.6,-0.84,2017
+brookaa01,aaron brooks,2016-17,IND,Secondary Ball Handler,894,65,PG,32,-2.54,-1.45,-1.09,-0.10,201166.0,-2.5,-1.2,-1.3,2017
+afflaar01,arron afflalo,2016-17,SAC,Shot Creator,1580,61,SG,31,-4.0,-2.15,-1.85,-1.70,201167.0,-2.65,-1.51,-1.14,2017
+splitti01,tiago splitter,2016-17,PHI,Post Scorer,76,8,C,32,-0.49,-0.54,0.05,0.10,201168.0,-0.67,-0.72,0.05,2017
+mcrobjo01,josh mcroberts,2016-17,MIA,Stretch Big,381,22,PF,29,-2.26,-1.48,-0.78,0.00,201177.0,-1.57,-1.34,-0.24,2017
+gasolma01,marc gasol,2016-17,MEM,Post Scorer,2531,74,C,32,1.88,1.21,0.67,7.10,201188.0,2.31,1.28,1.02,2017
+sessira01,ramon sessions,2016-17,CHO,Slasher,811,50,PG,30,-1.19,-0.46,-0.73,0.60,201196.0,-1.34,-0.73,-0.61,2017
+anthojo01,joel anthony,2016-17,SAS,Roll + Cut Big,122,19,C,34,-1.97,-1.84,-0.13,0.00,201202.0,-1.7,-1.66,-0.04,2017
+watsocj01,c.j. watson,2016-17,ORL,Secondary Ball Handler,1013,62,PG,32,-1.61,-1.66,0.04,0.50,201228.0,-1.91,-1.54,-0.37,2017
+tollian01,anthony tolliver,2016-17,SAC,Stationary Shooter,1477,65,PF,31,-2.02,-1.08,-0.93,0.30,201229.0,-1.64,-0.96,-0.68,2017
+beaslmi01,michael beasley,2016-17,MIL,Athletic Finisher,935,56,PF,28,-1.24,-0.48,-0.76,0.70,201563.0,-0.76,-0.3,-0.46,2017
+rosede01,derrick rose,2016-17,NYK,Slasher,2082,64,PG,28,-0.56,0.98,-1.54,2.40,201565.0,-1.5,0.27,-1.77,2017
+westbru01,russell westbrook,2016-17,OKC,Shot Creator,2802,81,PG,28,5.79,5.63,0.16,14.80,201566.0,5.5,5.4,0.1,2017
+loveke01,kevin love,2016-17,CLE,Versatile Big,1885,60,PF,28,3.22,2.77,0.45,6.90,201567.0,2.91,2.67,0.24,2017
+gallida01,danilo gallinari,2016-17,DEN,Shot Creator,2134,63,SF,28,2.22,2.35,-0.13,6.50,201568.0,1.55,2.08,-0.53,2017
+gordoer01,eric gordon,2016-17,HOU,Secondary Ball Handler,2323,75,SG,28,0.14,1.58,-1.44,3.80,201569.0,-0.12,1.34,-1.46,2017
+augusdj01,d.j. augustin,2016-17,ORL,Primary Ball Handler,1538,78,PG,29,-3.13,-1.2,-1.93,-0.80,201571.0,-1.83,-0.24,-1.6,2017
+lopezbr01,brook lopez,2016-17,BRK,Versatile Big,2222,75,C,28,0.27,0.76,-0.49,3.80,201572.0,0.36,0.94,-0.59,2017
+bayleje01,jerryd bayless,2016-17,PHI,Slasher,71,3,PG,28,-1.25,-1.01,-0.24,0.10,201573.0,-0.88,-0.78,-0.1,2017
+rushbr01,brandon rush,2016-17,MIN,Stationary Shooter,1030,47,SG,31,-2.73,-1.86,-0.87,-0.30,201575.0,-2.47,-2.23,-0.25,2017
+lopezro01,robin lopez,2016-17,CHI,Post Scorer,2271,81,C,28,-0.52,-1.56,1.04,2.70,201577.0,-1.13,-1.57,0.43,2017
+speigma01,marreese speights,2016-17,LAC,Stretch Big,1286,82,C,29,0.55,0.69,-0.14,2.50,201578.0,1.0,0.92,0.08,2017
+hibbero01,roy hibbert,2016-17,TOT,Post Scorer,682,48,C,30,-1.28,-2.61,1.33,0.50,201579.0,-1.24,-2.36,1.12,2017
+mcgeeja01,javale mcgee,2016-17,GSW,Roll + Cut Big,739,77,C,29,1.89,1.6,0.29,2.10,201580.0,1.02,0.57,0.45,2017
+ajincal01,alexis ajinca,2016-17,NOP,Roll + Cut Big,584,39,C,28,-1.05,-2.03,0.98,0.50,201582.0,-1.31,-2.39,1.09,2017
+anderry01,ryan anderson,2016-17,HOU,Stretch Big,2116,72,PF,28,0.8,1.41,-0.61,4.40,201583.0,0.37,1.46,-1.09,2017
+leeco01,courtney lee,2016-17,NYK,Movement Shooter,2459,77,SG,31,-1.54,0.16,-1.7,1.30,201584.0,-1.35,-0.53,-0.83,2017
+koufoko01,kosta koufos,2016-17,SAC,Roll + Cut Big,1419,71,C,27,-0.58,-2.28,1.7,1.60,201585.0,-0.97,-1.83,0.86,2017
+ibakase01,serge ibaka,2016-17,TOT,Versatile Big,2422,79,PF,27,0.44,-0.12,0.56,4.50,201586.0,0.29,-0.27,0.56,2017
+batumni01,nicolas batum,2016-17,CHO,Off Screen Shooter,2617,77,SG,28,1.24,0.8,0.44,6.20,201587.0,1.15,0.77,0.37,2017
+hillge01,george hill,2016-17,UTA,Primary Ball Handler,1544,49,PG,30,3.03,2.06,0.97,5.50,201588.0,2.2,2.17,0.03,2017
+arthuda01,darrell arthur,2016-17,DEN,Stretch Big,639,41,PF,28,-0.63,-0.87,0.24,0.70,201589.0,-0.26,-0.5,0.23,2017
+jordade01,deandre jordan,2016-17,LAC,Roll + Cut Big,2570,81,C,28,3.8,1.09,2.71,10.40,201599.0,3.68,1.11,2.57,2017
+asikom01,omer asik,2016-17,NOP,Roll + Cut Big,482,31,C,30,-1.87,-3.0,1.13,0.10,201600.0,-1.62,-2.53,0.91,2017
+mbahalu01,luc mbah a moute,2016-17,LAC,Athletic Finisher,1787,80,SF,30,-0.58,-2.4,1.82,2.10,201601.0,-0.67,-1.42,0.75,2017
+dragigo01,goran dragic,2016-17,MIA,Slasher,2459,73,PG,30,0.61,1.5,-0.89,4.80,201609.0,1.2,1.69,-0.49,2017
+morroan01,anthony morrow,2016-17,TOT,Stationary Shooter,714,49,SG,31,-1.61,-0.2,-1.41,0.30,201627.0,-1.69,-0.69,-1.0,2017
+brownbo02,bobby brown,2016-17,HOU,Secondary Ball Handler,123,25,PG,32,-2.56,-1.27,-1.29,0.00,201628.0,-1.88,-1.03,-0.86,2017
+griffbl01,blake griffin,2016-17,LAC,Post Scorer,2076,61,PF,27,2.72,2.38,0.34,7.00,201933.0,2.53,2.49,0.05,2017
+hardeja01,james harden,2016-17,HOU,Shot Creator,2947,81,PG,27,5.48,6.2,-0.72,15.00,201935.0,5.75,5.92,-0.16,2017
+evansty01,tyreke evans,2016-17,TOT,Secondary Ball Handler,788,40,SF,27,-0.46,-0.5,0.04,1.00,201936.0,0.02,0.33,-0.31,2017
+rubiori01,ricky rubio,2016-17,MIN,Primary Ball Handler,2469,75,PG,26,1.88,1.42,0.46,6.90,201937.0,1.43,1.44,-0.02,2017
+curryst01,stephen curry,2016-17,GSW,Primary Ball Handler,2639,79,PG,28,6.68,6.27,0.42,15.30,201939.0,5.04,5.06,-0.02,2017
+hilljo01,jordan hill,2016-17,MIN,Post Scorer,47,7,C,29,-1.53,-1.4,-0.13,0.00,201941.0,-1.63,-1.49,-0.14,2017
+derozde01,demar derozan,2016-17,TOR,Shot Creator,2620,74,SG,27,1.46,2.68,-1.22,6.60,201942.0,2.22,2.99,-0.77,2017
+jennibr01,brandon jennings,2016-17,TOT,Primary Ball Handler,1801,81,PG,27,-0.8,0.64,-1.44,1.80,201943.0,-1.04,-0.06,-0.98,2017
+hendege02,gerald henderson,2016-17,PHI,Movement Shooter,1667,72,SG,29,-2.84,-1.87,-0.97,-0.60,201945.0,-2.04,-1.19,-0.84,2017
+johnsja01,james johnson,2016-17,MIA,Shot Creator,2085,76,PF,29,1.53,-0.09,1.63,5.40,201949.0,0.6,-0.09,0.69,2017
+holidjr01,jrue holiday,2016-17,NOP,Primary Ball Handler,2190,67,PG,26,0.88,0.39,0.49,4.70,201950.0,0.52,0.39,0.13,2017
+lawsoty01,ty lawson,2016-17,SAC,Slasher,1732,69,PG,29,-0.53,0.29,-0.82,2.10,201951.0,-0.84,0.07,-0.91,2017
+teaguje01,jeff teague,2016-17,IND,Shot Creator,2657,82,PG,28,1.56,1.59,-0.03,6.90,201952.0,1.76,1.69,0.07,2017
+collida01,darren collison,2016-17,SAC,Primary Ball Handler,2063,68,PG,29,-0.27,0.49,-0.76,2.80,201954.0,-0.7,0.33,-1.03,2017
+casspom01,omri casspi,2016-17,TOT,Athletic Finisher,642,36,PF,28,-1.39,-1.36,-0.03,0.40,201956.0,-1.81,-1.63,-0.19,2017
+gibsota01,taj gibson,2016-17,TOT,Post Scorer,1989,78,PF,31,0.51,-0.76,1.27,3.70,201959.0,-0.68,-1.19,0.52,2017
+carrode01,demarre carroll,2016-17,TOR,Stationary Shooter,1881,72,SF,30,1.22,0.28,0.94,4.40,201960.0,0.78,0.18,0.6,2017
+ellinwa01,wayne ellington,2016-17,MIA,Off Screen Shooter,1500,62,SG,29,-0.55,0.94,-1.49,1.80,201961.0,-0.82,0.61,-1.43,2017
+douglto01,toney douglas,2016-17,MEM,Secondary Ball Handler,394,24,PG,30,-0.61,-0.65,0.05,0.40,201962.0,-1.19,-1.33,0.14,2017
+cunnida01,dante cunningham,2016-17,NOP,Athletic Finisher,1649,66,PF,29,-1.93,-1.74,-0.19,0.40,201967.0,-1.83,-1.9,0.08,2017
+jerebjo01,jonas jerebko,2016-17,BOS,Athletic Finisher,1232,78,PF,29,-1.82,-1.13,-0.69,0.40,201973.0,-1.77,-1.74,-0.03,2017
+meeksjo01,jodie meeks,2016-17,ORL,Off Screen Shooter,738,36,SG,29,-0.91,0.16,-1.08,0.70,201975.0,-0.55,-0.02,-0.52,2017
+beverpa01,patrick beverley,2016-17,HOU,Primary Ball Handler,2058,67,SG,28,2.27,1.12,1.15,6.30,201976.0,1.32,0.42,0.9,2017
+thornma01,marcus thornton,2016-17,WAS,Secondary Ball Handler,575,33,SG,29,-2.86,-1.08,-1.77,-0.20,201977.0,-2.28,-1.13,-1.15,2017
+greenda02,danny green,2016-17,SAS,Movement Shooter,1807,68,SG,29,1.18,-0.27,1.46,4.20,201980.0,0.85,-0.76,1.62,2017
+millspa02,patty mills,2016-17,SAS,Primary Ball Handler,1754,80,PG,28,0.75,1.37,-0.63,3.60,201988.0,0.45,1.08,-0.62,2017
+templga01,garrett temple,2016-17,SAC,Stationary Shooter,1728,65,SG,30,-1.22,-0.87,-0.35,1.20,202066.0,-1.26,-1.18,-0.08,2017
+matthwe02,wesley matthews,2016-17,DAL,Shot Creator,2495,73,SG,30,-0.39,-0.89,0.5,3.20,202083.0,-0.55,-0.45,-0.1,2017
+geeal01,alonzo gee,2016-17,DEN,Athletic Finisher,89,13,SF,29,-1.31,-1.76,0.46,0.10,202087.0,-1.3,-1.75,0.45,2017
+willire02,reggie williams,2016-17,NOP,Stationary Shooter,79,6,SF,30,-1.76,-1.37,-0.39,0.00,202130.0,-1.4,-1.18,-0.22,2017
+walljo01,john wall,2016-17,WAS,Shot Creator,2835,78,PG,26,2.74,3.24,-0.5,9.50,202322.0,2.81,2.99,-0.18,2017
+turneev01,evan turner,2016-17,POR,Shot Creator,1659,65,SF,28,-1.72,-1.93,0.21,0.60,202323.0,-1.6,-1.22,-0.39,2017
+favorde01,derrick favors,2016-17,UTA,Post Scorer,1186,50,PF,25,-0.24,-1.84,1.59,1.60,202324.0,0.3,-0.97,1.27,2017
+johnswe01,wesley johnson,2016-17,LAC,Stationary Shooter,810,68,SF,29,-0.35,-2.16,1.81,1.10,202325.0,-1.04,-2.19,1.15,2017
+couside01,demarcus cousins,2016-17,TOT,Versatile Big,2465,72,C,26,3.58,2.69,0.89,9.60,202326.0,3.65,2.93,0.72,2017
+monrogr01,greg monroe,2016-17,MIL,Post Scorer,1823,81,C,26,1.14,0.89,0.25,4.20,202328.0,0.39,0.37,0.02,2017
+aminual01,al-farouq aminu,2016-17,POR,Stationary Shooter,1773,61,PF,26,-0.75,-1.88,1.13,1.80,202329.0,-0.49,-1.13,0.64,2017
+haywago01,gordon hayward,2016-17,UTA,Secondary Ball Handler,2516,73,SF,26,3.41,2.96,0.45,9.60,202330.0,3.2,2.85,0.35,2017
+georgpa01,paul george,2016-17,IND,Shot Creator,2689,75,SF,26,2.37,2.13,0.24,8.40,202331.0,1.48,1.71,-0.23,2017
+aldrico01,cole aldrich,2016-17,MIN,Roll + Cut Big,531,62,C,28,-0.86,-1.96,1.1,0.50,202332.0,-0.83,-2.43,1.6,2017
+davised01,ed davis,2016-17,POR,Roll + Cut Big,789,46,PF,27,-2.3,-2.67,0.37,0.00,202334.0,-1.64,-2.1,0.46,2017
+pattepa01,patrick patterson,2016-17,TOR,Stationary Shooter,1599,65,PF,27,1.51,0.63,0.88,4.10,202335.0,-0.51,-0.47,-0.04,2017
+sandela01,larry sanders,2016-17,CLE,Roll + Cut Big,13,5,C,28,-1.5,-1.44,-0.06,0.00,202336.0,-1.32,-1.32,0.0,2017
+babbilu01,luke babbitt,2016-17,MIA,Stationary Shooter,1065,68,SF,27,-1.17,-1.26,0.09,0.80,202337.0,-1.15,-1.12,-0.03,2017
+serapke01,kevin seraphin,2016-17,IND,Post Scorer,559,49,PF,27,-2.34,-2.35,0.01,0.00,202338.0,-2.01,-1.84,-0.17,2017
+bledser01,eric bledsoe,2016-17,PHO,Primary Ball Handler,2176,66,PG,27,2.12,2.19,-0.06,6.40,202339.0,1.37,2.16,-0.79,2017
+bradlav01,avery bradley,2016-17,BOS,Movement Shooter,1834,55,SG,26,-0.33,0.2,-0.53,2.40,202340.0,0.05,0.29,-0.24,2017
+booketr01,trevor booker,2016-17,BRK,Roll + Cut Big,1754,71,PF,29,-0.81,-1.8,0.99,1.70,202344.0,-0.82,-1.17,0.35,2017
+crawfjo02,jordan crawford,2016-17,NOP,Secondary Ball Handler,442,19,SG,28,-0.37,1.84,-2.21,0.60,202348.0,-0.45,1.31,-1.76,2017
+vasqugr01,greivis vasquez,2016-17,BRK,Secondary Ball Handler,39,3,PG,30,-0.95,-1.11,0.16,0.00,202349.0,-0.81,-0.99,0.18,2017
+whiteha01,hassan whiteside,2016-17,MIA,Post Scorer,2513,77,C,27,2.59,0.4,2.18,8.20,202355.0,2.67,0.17,2.5,2017
+bjeline01,nemanja bjelica,2016-17,MIN,Stationary Shooter,1190,65,PF,28,-0.82,-0.8,-0.02,1.20,202357.0,-1.42,-1.15,-0.28,2017
+stephla01,lance stephenson,2016-17,TOT,Slasher,362,18,SG,26,-0.85,-0.94,0.09,0.40,202362.0,-1.67,-1.32,-0.35,2017
+mozgoti01,timofey mozgov,2016-17,LAL,Post Scorer,1104,54,C,30,-1.96,-2.61,0.66,0.30,202389.0,-2.2,-2.02,-0.18,2017
+nealga01,gary neal,2016-17,ATL,Secondary Ball Handler,18,2,SG,32,-0.99,-1.07,0.07,0.00,202390.0,-1.02,-1.08,0.06,2017
+linje01,jeremy lin,2016-17,BRK,Primary Ball Handler,883,36,PG,28,1.64,1.15,0.49,2.30,202391.0,1.76,1.66,0.1,2017
+smithis01,ish smith,2016-17,DET,Slasher,1955,81,PG,28,0.75,0.36,0.39,4.00,202397.0,0.1,-0.38,0.48,2017
+millsel01,elijah millsap,2016-17,PHO,Off Screen Shooter,23,2,SG,29,-0.67,-0.85,0.18,0.00,202407.0,-0.57,-0.72,0.15,2017
+harrima01,manny harris,2016-17,DAL,Slasher,25,4,SG,27,-1.26,-1.25,-0.01,0.00,202412.0,-1.06,-1.28,0.21,2017
+thomala01,lance thomas,2016-17,NYK,Stationary Shooter,968,46,PF,28,-3.31,-1.85,-1.46,-0.60,202498.0,-2.65,-1.81,-0.84,2017
+onuakar01,arinze onuaku,2016-17,ORL,Post Scorer,28,8,C,29,-0.98,-1.26,0.29,0.00,202620.0,-0.73,-1.09,0.35,2017
+irvinky01,kyrie irving,2016-17,CLE,Shot Creator,2525,72,PG,24,2.85,4.09,-1.25,8.70,202681.0,2.4,3.65,-1.25,2017
+willide02,derrick williams,2016-17,TOT,Athletic Finisher,804,50,PF,25,-2.57,-1.25,-1.32,-0.10,202682.0,-1.37,-0.96,-0.42,2017
+kanteen01,enes kanter,2016-17,OKC,Post Scorer,1533,72,C,24,-0.13,1.67,-1.8,2.20,202683.0,0.36,1.31,-0.95,2017
+thomptr01,tristan thompson,2016-17,CLE,Roll + Cut Big,2336,78,C,25,0.36,-1.07,1.43,4.20,202684.0,0.7,-0.15,0.85,2017
+valanjo01,jonas valanciunas,2016-17,TOR,Post Scorer,2065,80,C,24,0.9,0.27,0.63,4.40,202685.0,1.49,0.45,1.04,2017
+biyombi01,bismack biyombo,2016-17,ORL,Roll + Cut Big,1793,81,C,24,-0.41,-1.91,1.5,2.30,202687.0,-1.18,-2.38,1.2,2017
+knighbr03,brandon knight,2016-17,PHO,Slasher,1140,54,SG,25,-3.17,-1.28,-1.88,-0.60,202688.0,-2.06,-0.27,-1.79,2017
+walkeke02,kemba walker,2016-17,CHO,Primary Ball Handler,2739,79,PG,26,2.7,3.55,-0.85,9.10,202689.0,2.06,2.96,-0.9,2017
+thompkl01,klay thompson,2016-17,GSW,Off Screen Shooter,2649,78,SG,26,1.67,2.69,-1.02,7.10,202691.0,2.2,2.72,-0.52,2017
+burksal01,alec burks,2016-17,UTA,Secondary Ball Handler,653,42,SG,25,-1.66,-0.41,-1.25,0.30,202692.0,-1.36,-0.98,-0.37,2017
+morrima02,markieff morris,2016-17,WAS,Post Scorer,2374,76,PF,27,0.3,-1.3,1.6,4.10,202693.0,-0.28,-0.56,0.28,2017
+morrima03,marcus morris sr.,2016-17,DET,Secondary Ball Handler,2565,79,SF,27,-0.83,-0.91,0.08,2.50,202694.0,-0.3,-0.47,0.17,2017
+leonaka01,kawhi leonard,2016-17,SAS,Shot Creator,2474,74,SF,25,6.15,4.83,1.32,13.60,202695.0,5.61,4.29,1.32,2017
+vucevni01,nikola vucevic,2016-17,ORL,Post Scorer,2163,75,C,26,0.08,-1.12,1.2,3.50,202696.0,0.37,-0.5,0.87,2017
+shumpim01,iman shumpert,2016-17,CLE,Secondary Ball Handler,1937,76,SG,26,-1.76,-1.1,-0.66,0.70,202697.0,-1.36,-1.11,-0.24,2017
+harrito02,tobias harris,2016-17,DET,Shot Creator,2566,82,PF,24,0.36,0.17,0.19,4.60,202699.0,0.3,0.17,0.13,2017
+motiedo01,donatas motiejunas,2016-17,NOP,Stretch Big,479,34,PF,26,-1.84,-1.74,-0.1,0.10,202700.0,-1.85,-2.09,0.24,2017
+farieke01,kenneth faried,2016-17,DEN,Roll + Cut Big,1296,61,PF,27,1.01,0.93,0.07,2.90,202702.0,1.12,0.61,0.5,2017
+mirotni01,nikola mirotic,2016-17,CHI,Movement Shooter,1679,70,PF,25,1.24,1.01,0.23,4.00,202703.0,0.66,0.0,0.66,2017
+jacksre01,reggie jackson,2016-17,DET,Slasher,1424,52,PG,26,-1.05,0.03,-1.08,1.20,202704.0,-0.04,0.52,-0.56,2017
+coleno01,norris cole,2016-17,OKC,Secondary Ball Handler,125,13,PG,28,-1.57,-1.21,-0.36,0.10,202708.0,-1.36,-1.2,-0.16,2017
+josepco01,cory joseph,2016-17,TOR,Slasher,2003,80,PG,25,-0.93,0.2,-1.13,1.80,202709.0,-0.81,-0.23,-0.58,2017
+butleji01,jimmy butler,2016-17,CHI,Shot Creator,2809,76,SF,27,4.91,3.51,1.4,13.30,202710.0,3.69,3.13,0.56,2017
+bogdabo02,bojan bogdanovic,2016-17,TOT,Movement Shooter,2083,81,SF,27,-1.94,-0.41,-1.54,0.50,202711.0,-1.28,0.08,-1.36,2017
+harpeju01,justin harper,2016-17,PHI,Stretch Big,31,3,PF,27,-1.05,-0.92,-0.13,0.00,202712.0,-0.77,-0.84,0.06,2017
+singlky01,kyle singler,2016-17,OKC,Stationary Shooter,385,32,SF,28,-2.51,-2.31,-0.2,-0.10,202713.0,-2.62,-2.36,-0.26,2017
+macksh01,shelvin mack,2016-17,UTA,Primary Ball Handler,1205,55,PG,26,-2.08,-1.31,-0.77,0.20,202714.0,-1.57,-1.11,-0.46,2017
+parsoch01,chandler parsons,2016-17,MEM,Movement Shooter,675,34,SF,28,-1.64,-1.67,0.04,0.30,202718.0,-1.06,-1.3,0.24,2017
+leuerjo01,jon leuer,2016-17,DET,Stretch Big,1944,75,PF,27,-0.55,-1.09,0.54,2.30,202720.0,-0.6,-0.71,0.11,2017
+bertada01,davis bertans,2016-17,SAS,Movement Shooter,808,67,PF,24,-1.19,-0.63,-0.55,0.60,202722.0,-0.51,-0.32,-0.2,2017
+allenla01,lavoy allen,2016-17,IND,Roll + Cut Big,871,61,PF,27,-2.25,-1.71,-0.54,0.00,202730.0,-2.32,-2.01,-0.31,2017
+liggide01,deandre liggins,2016-17,TOT,Stationary Shooter,777,62,SG,28,-2.32,-3.14,0.82,0.00,202732.0,-1.79,-2.73,0.94,2017
+mooreet01,e'twaun moore,2016-17,NOP,Movement Shooter,1820,73,SG,27,-1.48,-1.08,-0.4,1.00,202734.0,-1.92,-1.21,-0.71,2017
+thomais02,isaiah thomas,2016-17,BOS,Primary Ball Handler,2569,76,PG,27,2.84,5.54,-2.7,8.80,202738.0,3.55,5.33,-1.79,2017
+davisan02,anthony davis,2016-17,NOP,Post Scorer,2708,75,C,23,4.49,2.07,2.42,12.10,203076.0,3.49,1.72,1.76,2017
+kiddgmi01,michael kidd-gilchrist,2016-17,CHO,Athletic Finisher,2349,81,SF,23,1.64,-1.3,2.94,6.20,203077.0,0.33,-1.25,1.58,2017
+bealbr01,bradley beal,2016-17,WAS,Off Screen Shooter,2684,77,SG,23,1.94,3.19,-1.26,7.60,203078.0,1.21,2.65,-1.44,2017
+waitedi01,dion waiters,2016-17,MIA,Shot Creator,1384,46,SG,25,0.05,0.07,-0.02,2.20,203079.0,-0.08,0.42,-0.51,2017
+robinth01,thomas robinson,2016-17,LAL,Roll + Cut Big,560,48,PF,25,-0.09,-0.53,0.44,0.80,203080.0,-0.52,-0.88,0.36,2017
+lillada01,damian lillard,2016-17,POR,Shot Creator,2693,75,PG,26,4.24,5.69,-1.45,11.70,203081.0,2.62,4.06,-1.44,2017
+rosste01,terrence ross,2016-17,TOT,Movement Shooter,1955,78,SF,25,0.97,1.3,-0.34,4.30,203082.0,-0.12,0.02,-0.14,2017
+drumman01,andre drummond,2016-17,DET,Post Scorer,2409,81,C,23,1.45,-0.49,1.94,6.10,203083.0,2.8,-0.11,2.91,2017
+barneha02,harrison barnes,2016-17,DAL,Slasher,2804,79,PF,24,0.15,-0.68,0.83,4.60,203084.0,-1.18,-0.38,-0.8,2017
+riverau01,austin rivers,2016-17,LAC,Shot Creator,2054,74,SG,24,-1.82,-0.15,-1.67,0.70,203085.0,-1.29,-0.2,-1.09,2017
+leoname01,meyers leonard,2016-17,POR,Stretch Big,1222,74,PF,24,-1.38,-1.77,0.39,0.80,203086.0,-1.35,-1.36,0.01,2017
+lambje01,jeremy lamb,2016-17,CHO,Secondary Ball Handler,1143,62,SG,24,0.03,0.56,-0.53,1.80,203087.0,0.47,0.26,0.21,2017
+hensojo01,john henson,2016-17,MIL,Roll + Cut Big,1123,58,C,26,0.21,-1.36,1.57,1.90,203089.0,0.07,-1.49,1.56,2017
+harklma01,maurice harkless,2016-17,POR,Stretch Big,2223,77,SF,23,0.23,-0.1,0.33,3.80,203090.0,-0.53,-0.8,0.27,2017
+zellety01,tyler zeller,2016-17,BOS,Roll + Cut Big,525,51,C,27,-1.87,-2.03,0.16,0.20,203092.0,-1.63,-1.72,0.1,2017
+joneste01,terrence jones,2016-17,TOT,Roll + Cut Big,1271,54,PF,25,-0.33,-1.0,0.67,1.70,203093.0,0.0,-0.7,0.7,2017
+nichoan01,andrew nicholson,2016-17,TOT,Post Scorer,342,38,PF,27,-2.89,-2.33,-0.57,-0.10,203094.0,-2.08,-2.13,0.05,2017
+fournev01,evan fournier,2016-17,ORL,Off Screen Shooter,2234,68,SG,24,-0.76,0.24,-1.0,2.30,203095.0,-1.41,-0.02,-1.39,2017
+sullija01,jared sullinger,2016-17,TOR,Stretch Big,118,11,PF,24,-1.84,-1.67,-0.17,0.00,203096.0,-1.66,-1.29,-0.37,2017
+jenkijo01,john jenkins,2016-17,PHO,Secondary Ball Handler,13,4,SG,25,-0.25,-0.43,0.18,0.00,203098.0,-0.4,-0.59,0.18,2017
+plumlmi01,miles plumlee,2016-17,TOT,Roll + Cut Big,485,45,C,28,-2.72,-2.88,0.16,-0.10,203101.0,-2.26,-2.5,0.24,2017
+satorto01,tomas satoransky,2016-17,WAS,Secondary Ball Handler,719,57,SG,25,-1.61,-1.77,0.15,0.30,203107.0,-2.52,-2.04,-0.48,2017
+crowdja01,jae crowder,2016-17,BOS,Movement Shooter,2335,72,SF,26,1.56,0.91,0.65,6.00,203109.0,1.22,0.9,0.32,2017
+greendr01,draymond green,2016-17,GSW,Stretch Big,2471,76,PF,26,4.97,0.98,3.99,11.80,203110.0,4.31,1.15,3.15,2017
+acyqu01,quincy acy,2016-17,TOT,Stretch Big,558,38,PF,26,-0.2,-0.44,0.25,0.80,203112.0,0.04,-0.41,0.45,2017
+middlkh01,khris middleton,2016-17,MIL,Shot Creator,889,29,SF,25,0.13,0.21,-0.08,1.40,203114.0,-0.04,0.19,-0.23,2017
+bartowi01,will barton,2016-17,DEN,Secondary Ball Handler,1705,60,SG,26,-1.24,0.02,-1.26,1.20,203115.0,0.17,0.89,-0.72,2017
+scottmi01,mike scott,2016-17,ATL,Stretch Big,195,18,PF,28,-1.48,-1.56,0.08,0.10,203118.0,-1.58,-1.6,0.03,2017
+hamilju01,justin hamilton,2016-17,BRK,Stretch Big,1177,64,C,26,-1.16,-0.98,-0.18,0.90,203120.0,-0.81,-0.79,-0.03,2017
+oquinky01,kyle o'quinn,2016-17,NYK,Roll + Cut Big,1229,79,C,26,0.49,-0.49,0.99,2.30,203124.0,1.05,-0.48,1.52,2017
+thompho01,hollis thompson,2016-17,TOT,Stationary Shooter,752,40,SG,25,-2.44,-1.9,-0.54,-0.10,203138.0,-1.62,-1.51,-0.11,2017
+teletmi01,mirza teletovic,2016-17,MIL,Movement Shooter,1133,70,PF,31,-0.95,-0.22,-0.73,1.00,203141.0,-1.79,-0.51,-1.28,2017
+bazemke01,kent bazemore,2016-17,ATL,Secondary Ball Handler,1963,73,SF,27,-0.16,-1.11,0.95,2.80,203145.0,-0.39,-1.24,0.85,2017
+roberbr01,brian roberts,2016-17,CHO,Secondary Ball Handler,416,41,PG,31,-2.26,-1.44,-0.82,0.00,203148.0,-2.13,-1.3,-0.83,2017
+reedwi02,willie reed,2016-17,MIA,Roll + Cut Big,1031,71,C,26,0.12,-0.91,1.03,1.70,203186.0,-0.38,-0.97,0.59,2017
+holidju01,justin holiday,2016-17,NYK,Movement Shooter,1639,82,SG,27,-0.25,-0.29,0.05,2.30,203200.0,-1.1,-0.5,-0.6,2017
+greenja01,jamychal green,2016-17,MEM,Stretch Big,2101,77,PF,26,-0.68,-1.75,1.07,2.30,203210.0,-0.18,-0.93,0.75,2017
+baynear01,aron baynes,2016-17,DET,Roll + Cut Big,1163,75,C,30,0.57,-1.36,1.93,2.20,203382.0,-0.99,-2.02,1.03,2017
+noelne01,nerlens noel,2016-17,TOT,Roll + Cut Big,1047,51,C,22,2.07,-0.41,2.48,3.10,203457.0,1.31,-0.44,1.76,2017
+lenal01,alex len,2016-17,PHO,Post Scorer,1560,77,C,23,-2.09,-3.15,1.06,0.20,203458.0,-0.53,-1.62,1.09,2017
+crabbal01,allen crabbe,2016-17,POR,Off Screen Shooter,2254,79,SG,24,-2.36,-0.72,-1.63,-0.10,203459.0,-1.65,-0.63,-1.01,2017
+roberan03,andre roberson,2016-17,OKC,Athletic Finisher,2376,79,SF,25,0.45,-1.54,1.99,4.40,203460.0,0.08,-1.6,1.68,2017
+bennean01,anthony bennett,2016-17,BRK,Stretch Big,264,23,PF,23,-0.61,0.16,-0.77,0.30,203461.0,-0.23,-0.04,-0.19,2017
+goodwar01,archie goodwin,2016-17,TOT,Slasher,214,15,SG,22,-0.33,-0.11,-0.22,0.30,203462.0,-0.31,-0.16,-0.15,2017
+mclembe01,ben mclemore,2016-17,SAC,Movement Shooter,1176,61,SG,23,-1.92,-1.56,-0.37,0.30,203463.0,-2.47,-1.26,-1.21,2017
+mccolcj01,cj mccollum,2016-17,POR,Primary Ball Handler,2796,80,SG,25,1.61,2.35,-0.74,7.30,203468.0,0.57,1.97,-1.41,2017
+zelleco01,cody zeller,2016-17,CHO,Roll + Cut Big,1725,62,C,24,1.7,-0.2,1.9,4.60,203469.0,0.61,-0.77,1.38,2017
+schrode01,dennis schroder,2016-17,ATL,Slasher,2485,79,PG,23,-1.18,0.13,-1.31,1.90,203471.0,-0.4,0.2,-0.6,2017
+dedmode01,dewayne dedmon,2016-17,SAS,Roll + Cut Big,1330,76,C,27,1.82,-1.3,3.12,3.70,203473.0,0.97,-1.41,2.38,2017
+dienggo01,gorgui dieng,2016-17,MIN,Roll + Cut Big,2653,82,PF,27,0.29,-1.46,1.75,4.60,203476.0,-0.16,-0.97,0.81,2017
+canaais01,isaiah canaan,2016-17,CHI,Secondary Ball Handler,592,39,SG,25,-2.38,-1.68,-0.7,0.00,203477.0,-2.05,-1.42,-0.63,2017
+witheje01,jeff withey,2016-17,UTA,Roll + Cut Big,432,51,C,26,0.34,-0.65,0.98,0.80,203481.0,0.41,-1.11,1.52,2017
+olynyke01,kelly olynyk,2016-17,BOS,Stretch Big,1538,75,C,25,-0.49,-0.62,0.12,1.90,203482.0,-0.14,-0.15,0.01,2017
+caldwke01,kentavious caldwell-pope,2016-17,DET,Secondary Ball Handler,2528,76,SG,23,-0.14,0.36,-0.5,3.70,203484.0,0.19,0.03,0.16,2017
+plumlma01,mason plumlee,2016-17,TOT,Roll + Cut Big,2148,81,C,26,1.83,0.52,1.32,6.00,203486.0,1.61,0.16,1.46,2017
+cartemi01,michael carter-williams,2016-17,CHI,Slasher,846,45,PG,25,-0.58,-1.8,1.21,1.00,203487.0,-1.14,-1.95,0.81,2017
+muscami01,mike muscala,2016-17,ATL,Stretch Big,1237,70,C,25,-0.13,-0.44,0.31,1.80,203488.0,-0.54,-0.86,0.32,2017
+porteot01,otto porter jr.,2016-17,WAS,Athletic Finisher,2605,80,SF,23,1.39,0.49,0.9,6.40,203490.0,1.58,0.97,0.61,2017
+bullore01,reggie bullock,2016-17,DET,Athletic Finisher,467,31,SF,25,0.06,-0.33,0.39,0.70,203493.0,-0.44,-0.68,0.23,2017
+covinro01,robert covington,2016-17,PHI,Movement Shooter,2119,67,SF,26,1.78,-1.12,2.9,5.80,203496.0,0.33,-0.86,1.19,2017
+goberru01,rudy gobert,2016-17,UTA,Roll + Cut Big,2744,81,C,24,5.76,1.21,4.55,14.40,203497.0,4.47,0.82,3.65,2017
+muhamsh01,shabazz muhammad,2016-17,MIN,Roll + Cut Big,1516,78,SF,24,-1.64,0.53,-2.18,0.70,203498.0,-2.08,0.14,-2.22,2017
+adamsst01,steven adams,2016-17,OKC,Post Scorer,2389,80,C,23,1.0,-0.35,1.35,5.30,203500.0,0.04,-0.62,0.66,2017
+hardati02,tim hardaway jr.,2016-17,ATL,Movement Shooter,2153,79,SG,24,0.52,1.15,-0.64,4.10,203501.0,-0.5,0.43,-0.92,2017
+snellto01,tony snell,2016-17,MIL,Stationary Shooter,2336,80,SG,25,-1.69,-0.74,-0.95,0.90,203503.0,-1.23,-0.78,-0.45,2017
+burketr01,trey burke,2016-17,WAS,Secondary Ball Handler,703,57,PG,24,-3.89,-1.63,-2.26,-0.70,203504.0,-2.61,-0.92,-1.69,2017
+oladivi01,victor oladipo,2016-17,OKC,Secondary Ball Handler,2223,67,SG,24,0.51,-0.48,1.0,4.20,203506.0,0.12,0.2,-0.08,2017
+antetgi01,giannis antetokounmpo,2016-17,MIL,Shot Creator,2845,80,SF,22,4.5,2.26,2.24,12.80,203507.0,4.07,2.59,1.47,2017
+jackspi01,pierre jackson,2016-17,DAL,Slasher,84,8,PG,25,-0.36,-0.72,0.36,0.10,203510.0,-0.97,-1.02,0.06,2017
+noguelu01,lucas nogueira,2016-17,TOR,Roll + Cut Big,1088,57,C,24,0.68,-1.38,2.05,2.20,203512.0,0.86,-1.64,2.5,2017
+ennisja01,james ennis iii,2016-17,MEM,Athletic Finisher,1501,64,SF,26,-0.94,-1.93,0.99,1.40,203516.0,-1.29,-1.56,0.28,2017
+abrinal01,alex abrines,2016-17,OKC,Movement Shooter,1055,68,SG,23,-1.26,-0.24,-1.02,0.70,203518.0,-1.16,-0.37,-0.79,2017
+dellama01,matthew dellavedova,2016-17,MIL,Primary Ball Handler,1986,76,PG,26,-1.23,-0.5,-0.73,1.40,203521.0,-2.07,-0.92,-1.15,2017
+hillso01,solomon hill,2016-17,NOP,Stationary Shooter,2374,80,SF,25,-1.88,-2.09,0.21,0.70,203524.0,-1.86,-2.29,0.43,2017
+netora01,raul neto,2016-17,UTA,Secondary Ball Handler,346,40,PG,24,-0.53,-1.1,0.57,0.40,203526.0,-1.52,-1.73,0.22,2017
+kellyry01,ryan kelly,2016-17,ATL,Stretch Big,110,16,PF,25,-0.98,-1.4,0.43,0.10,203527.0,-1.05,-1.38,0.33,2017
+lauvejo01,joffrey lauvergne,2016-17,TOT,Stretch Big,980,70,PF-C,25,-1.95,-0.7,-1.25,0.20,203530.0,-1.0,-0.65,-0.36,2017
+clarkia01,ian clark,2016-17,GSW,Movement Shooter,1137,77,SG,25,-2.7,-0.59,-2.12,-0.30,203546.0,-1.48,-0.1,-1.38,2017
+curryse01,seth curry,2016-17,DAL,Primary Ball Handler,2029,70,PG,26,-0.02,0.02,-0.04,3.10,203552.0,-0.54,0.04,-0.58,2017
+danietr01,troy daniels,2016-17,MEM,Off Screen Shooter,1183,67,SG,25,-1.32,0.51,-1.83,0.80,203584.0,-1.73,0.13,-1.86,2017
+mcgruro01,rodney mcgruder,2016-17,MIA,Athletic Finisher,1966,78,SG,25,-1.23,-0.45,-0.78,1.40,203585.0,-1.54,-1.29,-0.24,2017
+simmojo02,jonathon simmons,2016-17,SAS,Secondary Ball Handler,1392,78,SG,27,-1.39,-1.78,0.38,0.80,203613.0,-1.34,-1.64,0.31,2017
+napiesh01,shabazz napier,2016-17,POR,Secondary Ball Handler,512,53,PG,25,-0.03,0.38,-0.41,0.80,203894.0,-0.22,0.11,-0.33,2017
+mcraejo01,jordan mcrae,2016-17,CLE,Stationary Shooter,384,37,SG,25,-2.5,-1.27,-1.22,0.00,203895.0,-1.97,-1.21,-0.75,2017
+lavinza01,zach lavine,2016-17,MIN,Secondary Ball Handler,1749,47,SG,21,-1.26,0.29,-1.55,1.20,203897.0,-0.53,0.87,-1.4,2017
+ennisty01,tyler ennis,2016-17,TOT,Secondary Ball Handler,588,53,PG,22,-1.15,-1.01,-0.13,0.50,203898.0,-1.49,-0.76,-0.73,2017
+paytoel01,elfrid payton,2016-17,ORL,Slasher,2412,82,PG,22,0.47,0.98,-0.52,4.50,203901.0,-0.46,-0.01,-0.45,2017
+chrisse01,semaj christon,2016-17,OKC,Primary Ball Handler,973,64,PG,24,-3.37,-1.81,-1.56,-0.70,203902.0,-2.57,-2.2,-0.37,2017
+clarkjo01,jordan clarkson,2016-17,LAL,Primary Ball Handler,2397,82,SG,24,-2.98,-0.57,-2.41,-1.10,203903.0,-2.93,-0.77,-2.16,2017
+mcdankj01,kj mcdaniels,2016-17,TOT,Athletic Finisher,506,49,SF,23,-1.63,-1.15,-0.48,0.20,203909.0,-1.14,-1.23,0.09,2017
+wilcocj01,c.j. wilcox,2016-17,ORL,Stationary Shooter,108,22,SG,26,-1.56,-1.45,-0.11,0.10,203912.0,-1.29,-1.43,0.14,2017
+harriga01,gary harris,2016-17,DEN,Athletic Finisher,1782,57,SG,22,0.71,1.7,-0.99,3.60,203914.0,0.84,1.38,-0.54,2017
+dinwisp01,spencer dinwiddie,2016-17,BRK,Primary Ball Handler,1334,59,PG,23,0.0,-0.46,0.46,2.10,203915.0,-0.74,-0.68,-0.06,2017
+stausni01,nik stauskas,2016-17,PHI,Movement Shooter,2188,80,SG,23,-3.1,-1.14,-1.96,-1.10,203917.0,-2.7,-1.7,-1.0,2017
+hoodro01,rodney hood,2016-17,UTA,Secondary Ball Handler,1593,59,SG,24,-0.43,-0.81,0.38,2.00,203918.0,0.21,0.27,-0.06,2017
+robingl02,glenn robinson iii,2016-17,IND,Athletic Finisher,1427,69,SF,23,-2.0,-2.04,0.04,0.30,203922.0,-1.55,-1.28,-0.27,2017
+youngja01,james young,2016-17,BOS,Stationary Shooter,220,29,SG,21,-2.01,-1.61,-0.39,0.00,203923.0,-1.99,-1.55,-0.44,2017
+grantje01,jerami grant,2016-17,TOT,Stationary Shooter,1531,80,PF,22,-1.72,-2.02,0.3,0.60,203924.0,-0.73,-1.64,0.91,2017
+harrijo01,joe harris,2016-17,BRK,Movement Shooter,1138,52,SG,25,-2.98,-1.39,-1.58,-0.50,203925.0,-2.29,-1.43,-0.86,2017
+mcderdo01,doug mcdermott,2016-17,TOT,Off Screen Shooter,1508,66,SF,25,-2.45,-0.05,-2.4,-0.10,203926.0,-1.94,-0.78,-1.16,2017
+kilpase01,sean kilpatrick,2016-17,BRK,Secondary Ball Handler,1754,70,SG,27,-2.41,-0.72,-1.69,-0.10,203930.0,-1.68,-0.38,-1.3,2017
+gordoaa01,aaron gordon,2016-17,ORL,Athletic Finisher,2298,80,SF,21,0.3,0.93,-0.63,4.00,203932.0,-0.99,-0.45,-0.54,2017
+warretj01,t.j. warren,2016-17,PHO,Athletic Finisher,2048,66,SF,23,-0.65,0.76,-1.41,2.30,203933.0,-0.96,-0.32,-0.64,2017
+pattela01,lamar patterson,2016-17,ATL,Secondary Ball Handler,40,5,SG,25,-0.97,-1.14,0.17,0.00,203934.0,-1.14,-1.17,0.03,2017
+smartma01,marcus smart,2016-17,BOS,Shot Creator,2399,79,SG,22,0.09,0.05,0.04,3.80,203935.0,-0.25,-0.24,-0.01,2017
+anderky01,kyle anderson,2016-17,SAS,Athletic Finisher,1020,72,SF,23,0.36,-1.37,1.73,1.80,203937.0,0.01,-1.46,1.47,2017
+poweldw01,dwight powell,2016-17,DAL,Roll + Cut Big,1333,77,C,25,-0.67,-0.9,0.23,1.50,203939.0,0.56,-0.53,1.08,2017
+paynead01,adreian payne,2016-17,MIN,Stretch Big,135,18,PF,25,-0.72,-0.78,0.06,0.10,203940.0,-0.97,-1.13,0.16,2017
+vonleno01,noah vonleh,2016-17,POR,Roll + Cut Big,1265,74,PF,21,-1.71,-2.89,1.18,0.50,203943.0,-1.78,-2.18,0.4,2017
+randlju01,julius randle,2016-17,LAL,Roll + Cut Big,2132,74,PF,22,-1.49,-0.84,-0.65,1.20,203944.0,-0.64,-0.55,-0.09,2017
+obryajo01,johnny o'bryant iii,2016-17,TOT,Post Scorer,81,11,PF,23,-1.59,-1.65,0.06,0.00,203948.0,-1.07,-1.3,0.23,2017
+mcadoja01,james michael mcadoo,2016-17,GSW,Roll + Cut Big,457,52,PF,24,-1.99,-2.5,0.51,0.10,203949.0,-1.63,-1.98,0.34,2017
+stokeja01,jarnell stokes,2016-17,DEN,Roll + Cut Big,7,2,C,23,-0.88,-1.17,0.29,0.00,203950.0,-0.82,-1.18,0.36,2017
+wiggian01,andrew wiggins,2016-17,MIN,Shot Creator,3048,82,SF,21,-0.46,1.58,-2.04,3.80,203952.0,-0.98,0.97,-1.95,2017
+parkeja01,jabari parker,2016-17,MIL,Shot Creator,1728,51,PF,21,0.2,1.13,-0.93,2.90,203953.0,0.37,1.2,-0.83,2017
+embiijo01,joel embiid,2016-17,PHI,Post Scorer,786,31,C,22,3.97,1.27,2.7,3.30,203954.0,3.52,1.62,1.91,2017
+exumda01,dante exum,2016-17,UTA,Secondary Ball Handler,1228,66,PG,21,-2.37,-1.99,-0.37,0.00,203957.0,-2.26,-1.67,-0.59,2017
+huestjo01,josh huestis,2016-17,OKC,Stretch Big,31,2,PF,25,-0.8,-0.74,-0.06,0.00,203962.0,-0.73,-0.73,0.0,2017
+saricda01,dario saric,2016-17,PHI,Shot Creator,2129,81,PF,22,-2.74,-1.75,-0.99,-0.60,203967.0,-1.94,-1.07,-0.87,2017
+capelca01,clint capela,2016-17,HOU,Roll + Cut Big,1551,65,C,22,1.32,0.62,0.7,3.80,203991.0,1.61,0.66,0.95,2017
+nurkiju01,jusuf nurkic,2016-17,TOT,Post Scorer,1391,65,C,22,0.51,-1.43,1.94,2.60,203994.0,0.45,-0.79,1.25,2017
+cabocbr01,bruno caboclo,2016-17,TOR,Athletic Finisher,40,9,SF,21,-1.41,-1.16,-0.25,0.00,203998.0,-1.32,-0.99,-0.33,2017
+jokicni01,nikola jokic,2016-17,DEN,Post Scorer,2038,73,C,21,4.28,3.75,0.52,8.90,203999.0,3.2,2.88,0.33,2017
+porzikr01,kristaps porzingis,2016-17,NYK,Stretch Big,2164,66,PF,21,0.86,-0.28,1.14,4.60,204001.0,0.55,0.23,0.33,2017
+tavarwa01,edy tavares,2016-17,TOT,Post Scorer,28,2,C,24,-0.98,-1.15,0.17,0.00,204002.0,-1.23,-1.3,0.07,2017
+rudezda01,damjan rudez,2016-17,ORL,Stationary Shooter,314,45,SF,30,-2.19,-1.44,-0.74,0.00,204014.0,-1.89,-1.58,-0.31,2017
+johnsty01,tyler johnson,2016-17,MIA,Secondary Ball Handler,2177,73,PG,24,0.2,0.23,-0.04,3.60,204020.0,0.39,0.27,0.13,2017
+fraziti01,tim frazier,2016-17,NOP,Primary Ball Handler,1525,65,PG,26,-0.71,-0.64,-0.07,1.60,204025.0,-0.9,-0.67,-0.23,2017
+blackta01,tarik black,2016-17,LAL,Post Scorer,1091,67,C,25,-0.12,-1.53,1.41,1.60,204028.0,-1.37,-1.63,0.26,2017
+gallola01,langston galloway,2016-17,TOT,Secondary Ball Handler,1494,74,PG,25,-2.22,-0.86,-1.36,0.10,204038.0,-1.75,-0.73,-1.02,2017
+inglejo01,joe ingles,2016-17,UTA,Secondary Ball Handler,1972,82,SF,29,0.97,0.77,0.2,4.30,204060.0,0.43,-0.45,0.88,2017
+eddieja01,jarell eddie,2016-17,PHO,Off Screen Shooter,62,5,SF,25,-0.6,-0.79,0.19,0.10,204067.0,-0.55,-0.56,0.02,2017
+mccontj01,t.j. mcconnell,2016-17,PHI,Slasher,2133,81,PG,24,-0.79,-1.35,0.55,2.10,204456.0,-0.73,-1.13,0.4,2017
+okafoja01,jahlil okafor,2016-17,PHI,Post Scorer,1134,50,C,21,-2.69,-2.01,-0.68,-0.30,1626143.0,-1.5,-1.37,-0.12,2017
+mudiaem01,emmanuel mudiay,2016-17,DEN,Primary Ball Handler,1406,55,PG,20,-2.04,-0.81,-1.22,0.30,1626144.0,-0.96,-0.35,-0.61,2017
+jonesty01,tyus jones,2016-17,MIN,Secondary Ball Handler,774,60,PG,20,-0.15,0.2,-0.34,1.10,1626145.0,-0.21,-0.19,-0.02,2017
+anderju01,justin anderson,2016-17,TOT,Athletic Finisher,1227,75,SF,23,-1.45,-0.03,-1.42,0.70,1626147.0,-0.45,-0.31,-0.15,2017
+brownan02,anthony brown,2016-17,TOT,Stationary Shooter,159,11,SF,24,-1.65,-1.43,-0.21,0.10,1626148.0,-1.7,-1.58,-0.12,2017
+harremo01,montrezl harrell,2016-17,HOU,Roll + Cut Big,1064,58,C,23,-0.99,-0.11,-0.88,0.90,1626149.0,-0.06,0.11,-0.18,2017
+harrian01,andrew harrison,2016-17,MEM,Primary Ball Handler,1474,72,PG,22,-1.44,-1.74,0.29,0.80,1626150.0,-1.19,-1.42,0.23,2017
+harriaa01,aaron harrison,2016-17,CHO,Off Screen Shooter,17,5,SG,22,-1.62,-1.59,-0.03,0.00,1626151.0,-1.42,-1.52,0.1,2017
+wrighde01,delon wright,2016-17,TOR,Slasher,446,27,PG,24,0.01,-0.31,0.32,0.70,1626153.0,-0.2,-0.33,0.12,2017
+hunterj01,rj hunter,2016-17,CHI,Stationary Shooter,9,3,SG,23,-1.22,-1.24,0.02,0.00,1626154.0,-1.06,-1.06,0.0,2017
+dekkesa01,sam dekker,2016-17,HOU,Athletic Finisher,1419,77,PF,22,-1.71,-1.02,-0.69,0.60,1626155.0,-0.85,-0.17,-0.68,2017
+russeda01,d'angelo russell,2016-17,LAL,Secondary Ball Handler,1811,63,PG,20,-0.18,1.0,-1.18,2.60,1626156.0,-0.25,0.71,-0.95,2017
+townska01,karl-anthony towns,2016-17,MIN,Post Scorer,3030,82,C,21,2.54,3.17,-0.63,9.80,1626157.0,2.05,2.68,-0.63,2017
+holmeri01,richaun holmes,2016-17,PHI,Roll + Cut Big,1193,57,C,23,-0.24,-0.26,0.02,1.60,1626158.0,0.4,-0.27,0.67,2017
+winslju01,justise winslow,2016-17,MIA,Secondary Ball Handler,625,18,SF,20,-1.47,-1.9,0.43,0.30,1626159.0,-1.85,-1.97,0.12,2017
+caulewi01,willie cauley-stein,2016-17,SAC,Roll + Cut Big,1421,75,C,23,-0.83,-1.19,0.36,1.40,1626161.0,-0.57,-1.03,0.46,2017
+oubreke01,kelly oubre jr.,2016-17,WAS,Stationary Shooter,1605,79,SF,21,-1.29,-1.16,-0.13,1.10,1626162.0,-1.97,-1.69,-0.28,2017
+kaminfr01,frank kaminsky,2016-17,CHO,Stretch Big,1954,75,C,23,-0.56,0.34,-0.91,2.30,1626163.0,-0.63,-0.25,-0.38,2017
+bookede01,devin booker,2016-17,PHO,Shot Creator,2731,78,SG,20,-1.1,0.97,-2.07,2.20,1626164.0,-1.8,0.26,-2.07,2017
+payneca01,cameron payne,2016-17,TOT,Secondary Ball Handler,462,31,PG,22,-2.81,-2.08,-0.73,-0.20,1626166.0,-1.98,-1.49,-0.49,2017
+turnemy01,myles turner,2016-17,IND,Roll + Cut Big,2541,81,C,20,1.64,-0.27,1.9,6.70,1626167.0,1.59,-0.29,1.88,2017
+lylestr01,trey lyles,2016-17,UTA,Stationary Shooter,1158,71,PF,21,-1.0,-1.14,0.14,1.00,1626168.0,-1.17,-1.05,-0.12,2017
+johnsst04,stanley johnson,2016-17,DET,Secondary Ball Handler,1371,77,SF,20,-0.67,-1.54,0.87,1.50,1626169.0,-1.71,-2.46,0.75,2017
+grantje02,jerian grant,2016-17,CHI,Secondary Ball Handler,1028,63,PG,24,-0.29,-0.34,0.05,1.40,1626170.0,-0.13,-0.25,0.12,2017
+portibo01,bobby portis,2016-17,CHI,Stretch Big,1000,64,PF,21,-1.74,-1.29,-0.45,0.40,1626171.0,-0.73,-0.54,-0.19,2017
+looneke01,kevon looney,2016-17,GSW,Roll + Cut Big,447,53,C,20,-1.86,-1.95,0.1,0.10,1626172.0,-1.69,-1.75,0.06,2017
+vaughra01,rashad vaughn,2016-17,MIL,Movement Shooter,459,41,SG,20,-3.08,-2.39,-0.69,-0.20,1626173.0,-2.18,-1.76,-0.42,2017
+woodch01,christian wood,2016-17,CHO,Roll + Cut Big,107,13,PF,21,-1.12,-1.32,0.2,0.10,1626174.0,-1.19,-1.52,0.33,2017
+mickejo01,jordan mickey,2016-17,BOS,Roll + Cut Big,141,25,PF,22,-1.99,-2.0,0.01,0.00,1626175.0,-1.92,-1.87,-0.05,2017
+chrisra01,rakeem christmas,2016-17,IND,Roll + Cut Big,219,29,PF,25,-2.25,-1.93,-0.33,0.00,1626176.0,-1.91,-1.82,-0.09,2017
+holliro01,rondae hollis-jefferson,2016-17,BRK,Shot Creator,1761,78,SF,22,-0.87,-2.23,1.36,1.70,1626178.0,-0.72,-1.47,0.75,2017
+roziete01,terry rozier,2016-17,BOS,Primary Ball Handler,1263,74,PG,22,-0.58,-0.83,0.25,1.50,1626179.0,-1.03,-0.73,-0.3,2017
+powelno01,norman powell,2016-17,TOR,Secondary Ball Handler,1368,76,SG,23,-0.82,0.3,-1.12,1.40,1626181.0,-0.52,-0.01,-0.51,2017
+randlch01,chasson randle,2016-17,TOT,Secondary Ball Handler,299,26,PG,23,-0.84,-0.15,-0.69,0.30,1626184.0,-0.92,-0.41,-0.51,2017
+martija01,jarell martin,2016-17,MEM,Roll + Cut Big,558,42,PF,22,-2.77,-3.74,0.96,-0.20,1626185.0,-2.03,-2.68,0.64,2017
+cookqu01,quinn cook,2016-17,TOT,Secondary Ball Handler,187,14,PG,23,-1.33,-0.44,-0.89,0.10,1626188.0,-1.26,-0.98,-0.28,2017
+mcculch01,chris mccullough,2016-17,TOT,Roll + Cut Big,80,16,PF,21,-0.37,-0.59,0.23,0.10,1626191.0,-0.72,-0.85,0.13,2017
+connapa01,pat connaughton,2016-17,POR,Movement Shooter,316,39,SG,24,-1.88,-1.29,-0.59,0.10,1626192.0,-1.44,-1.03,-0.4,2017
+hernawi01,willy hernangomez,2016-17,NYK,Roll + Cut Big,1324,72,C,22,-0.69,-0.12,-0.57,1.40,1626195.0,-0.56,-0.45,-0.11,2017
+richajo01,josh richardson,2016-17,MIA,Secondary Ball Handler,1614,53,SG,23,-0.71,-0.8,0.09,1.70,1626196.0,-0.82,-1.04,0.23,2017
+hillida01,darrun hilliard,2016-17,DET,Secondary Ball Handler,381,39,SG,23,-2.54,-2.28,-0.26,-0.10,1626199.0,-2.39,-2.14,-0.26,2017
+youngjo01,joe young,2016-17,IND,Secondary Ball Handler,135,33,PG,24,-1.75,-1.11,-0.64,0.10,1626202.0,-1.53,-0.89,-0.65,2017
+grahatr01,treveon graham,2016-17,CHO,Movement Shooter,189,27,SG,23,-2.13,-1.68,-0.45,0.00,1626203.0,-1.66,-1.61,-0.05,2017
+nancela02,larry nance jr.,2016-17,LAL,Roll + Cut Big,1442,63,PF,24,0.28,-1.03,1.31,2.50,1626204.0,-0.41,-1.17,0.76,2017
+hezonma01,mario hezonja,2016-17,ORL,Stationary Shooter,960,65,SF,21,-3.73,-2.76,-0.97,-0.90,1626209.0,-2.4,-2.14,-0.26,2017
+willial03,alan williams,2016-17,PHO,Post Scorer,708,47,C,24,1.69,0.42,1.27,1.90,1626210.0,0.88,-0.29,1.18,2017
+feliccr01,cristiano felicio,2016-17,CHI,Roll + Cut Big,1040,66,C,24,-1.23,-0.86,-0.37,0.70,1626245.0,-0.83,-1.01,0.19,2017
+marjabo01,boban marjanovic,2016-17,DET,Post Scorer,293,35,C,28,2.38,1.36,1.02,0.90,1626246.0,2.17,1.37,0.8,2017
+toupaax01,axel toupane,2016-17,TOT,Off Screen Shooter,47,4,SF,24,-1.73,-1.39,-0.34,0.00,1626253.0,-1.45,-1.25,-0.2,2017
+ndourma01,maurice ndour,2016-17,NYK,Roll + Cut Big,331,32,PF,24,-1.2,-1.87,0.67,0.20,1626254.0,-1.73,-1.95,0.22,2017
+mejrisa01,salah mejri,2016-17,DAL,Roll + Cut Big,905,73,C,30,1.23,-2.03,3.26,2.10,1626257.0,0.29,-2.49,2.78,2017
+huertma01,marcelo huertas,2016-17,LAL,Secondary Ball Handler,237,23,PG,33,-1.16,-1.16,-0.01,0.20,1626273.0,-1.14,-1.2,0.05,2017
+gibsojo01,jonathan gibson,2016-17,DAL,Secondary Ball Handler,231,17,PG,29,-2.35,-1.45,-0.9,0.00,1626780.0,-1.32,-0.88,-0.44,2017
+delanma01,malcolm delaney,2016-17,ATL,Primary Ball Handler,1248,73,PG,27,-1.2,-1.49,0.29,0.90,1627098.0,-2.5,-2.08,-0.42,2017
+weberbr01,briante weber,2016-17,TOT,Athletic Finisher,205,20,PG,24,-1.81,-1.29,-0.52,0.10,1627362.0,-1.68,-1.47,-0.21,2017
+bendedr01,dragan bender,2016-17,PHO,Stationary Shooter,574,43,PF,19,-1.97,-2.02,0.04,0.10,1627733.0,-2.2,-2.36,0.15,2017
+sabondo01,domantas sabonis,2016-17,OKC,Versatile Big,1631,81,PF,20,-2.18,-3.43,1.26,0.10,1627734.0,-1.76,-2.32,0.55,2017
+baldwwa01,wade baldwin iv,2016-17,MEM,Slasher,405,33,PG,20,-4.25,-3.73,-0.52,-0.50,1627735.0,-2.8,-2.68,-0.12,2017
+beaslma01,malik beasley,2016-17,DEN,Movement Shooter,165,22,SG,20,-0.72,-0.93,0.21,0.20,1627736.0,-1.06,-0.83,-0.23,2017
+chrisma01,marquese chriss,2016-17,PHO,Stretch Big,1743,82,PF,19,-1.21,-1.38,0.17,1.30,1627737.0,-0.57,-1.04,0.47,2017
+davisde01,deyonta davis,2016-17,MEM,Roll + Cut Big,238,36,C,20,-1.54,-2.4,0.86,0.10,1627738.0,-1.38,-2.26,0.87,2017
+dunnkr01,kris dunn,2016-17,MIN,Primary Ball Handler,1333,78,PG,22,-2.0,-2.07,0.07,0.30,1627739.0,-1.77,-2.55,0.78,2017
+ellenhe01,henry ellenson,2016-17,DET,Stretch Big,146,19,PF,20,-0.83,-1.04,0.21,0.10,1627740.0,-0.69,-0.93,0.24,2017
+hieldbu01,buddy hield,2016-17,TOT,Secondary Ball Handler,1888,82,SG,24,-2.93,-1.23,-1.7,-0.80,1627741.0,-1.57,-0.5,-1.07,2017
+ingrabr01,brandon ingram,2016-17,LAL,Shot Creator,2279,79,SF,19,-2.45,-1.07,-1.38,-0.20,1627742.0,-3.29,-2.15,-1.14,2017
+jacksde01,demetrius jackson,2016-17,BOS,Slasher,17,5,PG,22,-1.44,-1.22,-0.21,0.00,1627743.0,-1.61,-1.3,-0.31,2017
+johnsbr02,brice johnson,2016-17,LAC,Post Scorer,9,3,PF,22,-1.42,-1.28,-0.14,0.00,1627744.0,-1.52,-1.29,-0.23,2017
+jonesda03,damian jones,2016-17,GSW,Roll + Cut Big,85,10,C,21,-3.07,-2.17,-0.89,0.00,1627745.0,-2.89,-1.98,-0.91,2017
+labissk01,skal labissiere,2016-17,SAC,Post Scorer,612,33,PF,20,-0.4,-0.46,0.06,0.80,1627746.0,-0.95,-0.81,-0.14,2017
+leverca01,caris levert,2016-17,BRK,Secondary Ball Handler,1237,57,SF,22,-0.4,-0.06,-0.34,1.60,1627747.0,-1.03,-0.71,-0.32,2017
+makerth01,thon maker,2016-17,MIL,Stretch Big,562,57,C,19,-0.34,-0.61,0.26,0.70,1627748.0,-0.22,-0.36,0.14,2017
+murrade01,dejounte murray,2016-17,SAS,Slasher,321,38,PG,20,-2.33,-1.48,-0.85,0.00,1627749.0,-2.55,-1.7,-0.85,2017
+murraja01,jamal murray,2016-17,DEN,Secondary Ball Handler,1765,82,SG,19,-1.46,-0.22,-1.23,1.00,1627750.0,-1.1,0.02,-1.12,2017
+poeltja01,jakob poeltl,2016-17,TOR,Roll + Cut Big,626,54,C,21,-1.44,-2.23,0.79,0.40,1627751.0,-1.73,-1.98,0.25,2017
+princta02,taurean prince,2016-17,ATL,Stationary Shooter,981,59,SF,22,-0.83,-2.5,1.67,1.00,1627752.0,-1.21,-2.0,0.79,2017
+stonedi01,diamond stone,2016-17,LAC,Post Scorer,24,7,C,19,-2.04,-1.72,-0.33,0.00,1627754.0,-1.6,-1.38,-0.22,2017
+ulisty01,tyler ulis,2016-17,PHO,Slasher,1123,61,PG,21,-0.99,0.19,-1.18,1.00,1627755.0,-1.35,-0.34,-1.01,2017
+valende01,denzel valentine,2016-17,CHI,Stationary Shooter,977,57,SG,23,-1.5,-1.37,-0.14,0.50,1627756.0,-1.7,-1.6,-0.1,2017
+zimmest01,stephen zimmerman,2016-17,ORL,Post Scorer,108,19,C,20,-1.41,-1.63,0.22,0.10,1627757.0,-1.08,-1.65,0.57,2017
+bakerro01,ron baker,2016-17,NYK,Secondary Ball Handler,857,52,SG,23,-1.89,-1.57,-0.32,0.20,1627758.0,-2.39,-1.98,-0.41,2017
+brownja02,jaylen brown,2016-17,BOS,Athletic Finisher,1341,78,SF,20,-2.11,-1.97,-0.15,0.20,1627759.0,-1.92,-1.42,-0.5,2017
+bembrde01,deandre' bembry,2016-17,ATL,Athletic Finisher,371,38,SF,22,-1.95,-1.58,-0.36,0.10,1627761.0,-2.16,-2.03,-0.13,2017
+bolomjo01,joel bolomboy,2016-17,UTA,Stretch Big,53,12,PF,23,-0.9,-1.04,0.14,0.00,1627762.0,-1.07,-0.99,-0.07,2017
+brogdma01,malcolm brogdon,2016-17,MIL,Primary Ball Handler,1982,75,SG,24,-0.68,0.48,-1.16,2.10,1627763.0,-0.61,0.2,-0.81,2017
+diallch01,cheick diallo,2016-17,NOP,Roll + Cut Big,199,17,PF,20,-1.29,-1.12,-0.16,0.10,1627767.0,-1.01,-1.22,0.2,2017
+feldeka01,kay felder,2016-17,CLE,Slasher,386,42,PG,21,-2.0,-1.9,-0.1,0.10,1627770.0,-1.58,-1.37,-0.21,2017
+gbinimi01,michael gbinije,2016-17,DET,Athletic Finisher,32,9,SG,24,-0.82,-1.2,0.38,0.00,1627771.0,-0.63,-1.08,0.45,2017
+hammoaj01,aj hammons,2016-17,DAL,Post Scorer,163,22,C,24,-1.48,-2.0,0.52,0.10,1627773.0,-1.13,-1.9,0.77,2017
+laymaja01,jake layman,2016-17,POR,Movement Shooter,249,35,SF,22,-2.42,-2.18,-0.24,0.00,1627774.0,-2.19,-1.72,-0.47,2017
+mccawpa01,patrick mccaw,2016-17,GSW,Stationary Shooter,1074,71,SG,21,-4.14,-2.81,-1.34,-1.30,1627775.0,-2.37,-1.56,-0.8,2017
+niangge01,georges niang,2016-17,IND,Stretch Big,93,23,PF,23,-1.8,-1.52,-0.29,0.00,1627777.0,-1.95,-1.68,-0.27,2017
+onuakch01,chinanu onuaku,2016-17,HOU,Roll + Cut Big,52,5,C,20,-1.87,-1.42,-0.45,0.00,1627778.0,-1.7,-1.53,-0.17,2017
+paytoga02,gary payton ii,2016-17,MIL,Secondary Ball Handler,99,6,PG,24,-2.5,-2.09,-0.41,0.00,1627780.0,-1.81,-1.55,-0.26,2017
+richama01,malachi richardson,2016-17,SAC,Secondary Ball Handler,198,22,SG,21,-1.48,-1.23,-0.25,0.10,1627781.0,-1.45,-1.11,-0.34,2017
+seldewa01,wayne selden,2016-17,TOT,Stationary Shooter,236,14,SG,22,-2.11,-1.71,-0.4,0.00,1627782.0,-1.73,-1.39,-0.34,2017
+siakapa01,pascal siakam,2016-17,TOR,Roll + Cut Big,859,55,PF,22,-1.82,-3.11,1.28,0.30,1627783.0,-1.13,-2.29,1.16,2017
+uthofja01,jarrod uthoff,2016-17,DAL,Roll + Cut Big,115,9,PF,23,-1.29,-1.22,-0.07,0.10,1627784.0,-0.86,-1.18,0.32,2017
+whiteis01,isaiah whitehead,2016-17,BRK,Primary Ball Handler,1643,73,PG,21,-1.91,-1.7,-0.21,0.40,1627785.0,-3.43,-2.69,-0.74,2017
+willitr02,troy williams,2016-17,TOT,Stationary Shooter,557,30,SF,22,-2.32,-2.14,-0.18,0.00,1627786.0,-1.88,-2.12,0.24,2017
+wiltjky01,kyle wiltjer,2016-17,HOU,Movement Shooter,44,14,PF,24,-2.47,-1.87,-0.6,0.00,1627787.0,-1.84,-1.49,-0.35,2017
+luwawti01,timothe luwawu-cabarrot,2016-17,PHI,Stationary Shooter,1190,69,SF,21,-1.18,-1.26,0.08,0.90,1627789.0,-2.47,-1.82,-0.65,2017
+bentibe01,ben bentil,2016-17,DAL,Versatile Big,10,3,PF,21,-1.12,-1.28,0.16,0.00,1627791.0,-0.94,-1.2,0.27,2017
+ferreyo01,yogi ferrell,2016-17,TOT,Primary Ball Handler,1197,46,PG,23,-1.21,-0.26,-0.95,0.90,1627812.0,-0.18,-0.07,-0.12,2017
+mcclesh01,sheldon mac,2016-17,WAS,Secondary Ball Handler,287,30,SG,24,-2.13,-1.8,-0.34,0.00,1627815.0,-1.89,-1.35,-0.53,2017
+poythal01,alex poythress,2016-17,PHI,Athletic Finisher,157,6,PF,23,-1.01,-0.44,-0.57,0.10,1627816.0,-0.84,-0.66,-0.18,2017
+quartti01,tim quarterman,2016-17,POR,Secondary Ball Handler,80,16,SG,22,-1.41,-1.33,-0.08,0.00,1627817.0,-1.16,-1.1,-0.06,2017
+taylois01,isaiah taylor,2016-17,HOU,Stationary Shooter,52,4,PG,22,-2.23,-1.71,-0.52,0.00,1627819.0,-2.07,-1.78,-0.29,2017
+hernaju01,juancho hernangomez,2016-17,DEN,Athletic Finisher,842,62,PF,21,-1.29,-0.82,-0.48,0.60,1627823.0,-0.09,-0.39,0.3,2017
+zubaciv01,ivica zubac,2016-17,LAL,Roll + Cut Big,609,38,C,19,-1.0,-1.18,0.17,0.50,1627826.0,-0.34,-1.15,0.82,2017
+finnedo01,dorian finney-smith,2016-17,DAL,Stationary Shooter,1642,81,PF,23,-1.58,-1.65,0.06,0.80,1627827.0,-2.15,-2.43,0.27,2017
+vanvlfr01,fred vanvleet,2016-17,TOR,Slasher,294,37,PG,22,-1.56,-1.6,0.04,0.10,1627832.0,-1.53,-1.34,-0.19,2017
+papagge01,georgios papagiannis,2016-17,SAC,Post Scorer,355,22,C,19,-1.96,-2.13,0.17,0.10,1627834.0,-1.87,-2.28,0.41,2017
+zipsepa01,paul zipser,2016-17,CHI,Stationary Shooter,843,44,SF,22,-2.56,-2.5,-0.06,-0.10,1627835.0,-2.29,-2.35,0.06,2017
+longsh01,shawn long,2016-17,PHI,Roll + Cut Big,234,18,C,24,1.16,1.48,-0.32,0.50,1627848.0,0.76,0.69,0.07,2017
+ochefda01,daniel ochefu,2016-17,WAS,Post Scorer,75,19,C,23,-1.91,-1.58,-0.33,0.00,1627849.0,-1.77,-1.6,-0.17,2017
+plumlma02,marshall plumlee,2016-17,NYK,Roll + Cut Big,170,21,C,24,-1.86,-1.33,-0.52,0.10,1627850.0,-1.45,-1.48,0.03,2017
+kuzmimi01,mindaugas kuzminskas,2016-17,NYK,Athletic Finisher,1016,68,SF,27,-1.42,-0.07,-1.35,0.60,1627851.0,-1.93,-0.37,-1.56,2017
+brussni01,nicolas brussino,2016-17,DAL,Movement Shooter,521,54,SG,23,-1.7,-1.12,-0.58,0.20,1627852.0,-1.12,-1.09,-0.03,2017
+forbebr01,bryn forbes,2016-17,SAS,Movement Shooter,285,36,SG,23,-3.58,-1.98,-1.6,-0.20,1627854.0,-2.93,-1.47,-1.46,2017
+whiteok01,okaro white,2016-17,MIA,Stretch Big,471,35,PF,24,-2.23,-1.91,-0.33,0.00,1627855.0,-2.4,-2.43,0.03,2017
+tobeymi01,mike tobey,2016-17,CHO,Roll + Cut Big,25,2,C,22,-1.55,-1.77,0.23,0.00,1627861.0,-1.46,-1.61,0.16,2017
+houseda01,danuel house jr.,2016-17,WAS,Low Minutes,1,1,SG,23,-1.43,-1.19,-0.24,0.00,1627863.0,-1.44,-1.2,-0.24,2017
+garinpa01,patricio garino,2016-17,ORL,Stationary Shooter,43,5,SG,23,-1.37,-1.56,0.18,0.00,1627868.0,-1.04,-1.35,0.31,2017
+georgma01,marcus georges-hunt,2016-17,ORL,Athletic Finisher,48,5,SG,22,-1.22,-1.32,0.1,0.00,1627875.0,-0.66,-1.0,0.34,2017
+laproni01,nicolas laprovittola,2016-17,SAS,Secondary Ball Handler,174,18,PG,27,-2.76,-1.71,-1.05,-0.10,1627879.0,-2.03,-1.13,-0.89,2017
+jonesde02,derrick jones jr.,2016-17,PHO,Roll + Cut Big,545,32,SF,19,-0.99,-0.63,-0.37,0.50,1627884.0,-1.61,-1.4,-0.21,2017
+nwabada01,david nwaba,2016-17,LAL,Athletic Finisher,397,20,SG,24,-1.43,-1.88,0.44,0.20,1628021.0,-1.24,-1.55,0.31,2017

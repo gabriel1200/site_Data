@@ -1,0 +1,530 @@
+bref_id,Player,Season,team,Offensive Archetype,Minutes,Games,Pos,Age,LEBRON,O-LEBRON,D-LEBRON,WAR,NBA ID,boxLEBRON,boxOLEBRON,boxDLEBRON,year
+cartevi01,vince carter,2018-19,ATL,Stationary Shooter,1330,76,PF,42,-1.02,-0.92,-0.11,1.10,1713.0,-1.09,-0.45,-0.64,2019
+nowitdi01,dirk nowitzki,2018-19,DAL,Versatile Big,795,51,PF,40,-1.4,-0.73,-0.67,0.50,1717.0,-0.59,-0.64,0.04,2019
+crawfja01,jamal crawford,2018-19,PHO,Primary Ball Handler,1211,64,SG,38,-4.31,-1.03,-3.27,-1.50,2037.0,-2.45,-0.51,-1.94,2019
+chandty01,tyson chandler,2018-19,TOT,Roll + Cut Big,875,55,C,36,-1.04,-2.94,1.91,0.70,2199.0,-1.29,-2.33,1.05,2019
+gasolpa01,pau gasol,2018-19,TOT,Post Scorer,361,30,C,38,0.13,-1.25,1.38,0.60,2200.0,0.62,-0.74,1.36,2019
+parketo01,tony parker,2018-19,CHO,Slasher,1003,56,PG,36,-1.81,-0.22,-1.59,0.30,2225.0,-1.56,-0.06,-1.5,2019
+hilarne01,nene,2018-19,HOU,Roll + Cut Big,546,42,C,36,-1.59,-1.98,0.38,0.30,2403.0,-1.55,-2.07,0.53,2019
+jamesle01,lebron james,2018-19,LAL,Shot Creator,1937,55,SF,34,4.91,3.92,0.99,9.10,2544.0,3.75,3.56,0.19,2019
+anthoca01,carmelo anthony,2018-19,HOU,Stationary Shooter,294,10,PF,34,-2.17,-1.38,-0.79,0.00,2546.0,-1.76,-0.91,-0.85,2019
+wadedw01,dwyane wade,2018-19,MIA,Shot Creator,1885,72,SG,37,-1.68,0.23,-1.9,0.80,2548.0,-0.61,-0.01,-0.61,2019
+pachuza01,zaza pachulia,2018-19,DET,Roll + Cut Big,878,68,C,34,-1.14,-2.11,0.97,0.70,2585.0,-0.71,-1.6,0.89,2019
+korveky01,kyle korver,2018-19,TOT,Off Screen Shooter,1334,70,SG-PF,37,-0.81,-0.35,-0.46,1.30,2594.0,-0.91,-0.1,-0.82,2019
+hasleud01,udonis haslem,2018-19,MIA,Stretch Big,75,10,C,38,-1.48,-1.62,0.14,0.00,2617.0,-1.41,-1.55,0.14,2019
+howardw01,dwight howard,2018-19,WAS,Post Scorer,230,9,C,33,-0.54,-1.28,0.74,0.30,2730.0,-0.11,-0.8,0.68,2019
+livinsh01,shaun livingston,2018-19,GSW,Roll + Cut Big,967,64,PG,33,-2.28,-1.9,-0.38,0.00,2733.0,-1.76,-1.63,-0.13,2019
+harride01,devin harris,2018-19,DAL,Movement Shooter,1071,68,PG,35,-1.61,-0.69,-0.91,0.50,2734.0,-0.66,-0.51,-0.15,2019
+denglu01,luol deng,2018-19,MIN,Athletic Finisher,392,22,SF,33,-0.02,0.02,-0.04,0.60,2736.0,-0.8,-0.63,-0.16,2019
+iguodan01,andre iguodala,2018-19,GSW,Athletic Finisher,1578,68,SF,35,1.45,-0.26,1.71,3.90,2738.0,0.33,-0.45,0.78,2019
+smithjr01,jr smith,2018-19,CLE,Secondary Ball Handler,222,11,SG,33,-1.13,-1.7,0.58,0.20,2747.0,-1.19,-1.53,0.35,2019
+arizatr01,trevor ariza,2018-19,TOT,Movement Shooter,2349,69,SF,33,-1.55,-1.01,-0.54,1.20,2772.0,-0.17,-0.03,-0.14,2019
+bogutan01,andrew bogut,2018-19,GSW,Roll + Cut Big,134,11,C,34,-1.86,-2.06,0.21,0.00,101106.0,-1.76,-1.91,0.15,2019
+willima02,marvin williams,2018-19,CHO,Stretch Big,2133,75,PF,32,0.16,-0.4,0.56,3.50,101107.0,0.33,-0.38,0.72,2019
+paulch01,chris paul,2018-19,HOU,Shot Creator,1857,58,PG,33,2.78,1.83,0.95,6.20,101108.0,3.16,2.81,0.35,2019
+feltora01,raymond felton,2018-19,OKC,Secondary Ball Handler,379,33,PG,34,-1.61,-0.79,-0.82,0.20,101109.0,-1.64,-0.79,-0.85,2019
+fryech01,channing frye,2018-19,CLE,Stretch Big,341,36,C,35,-1.85,-1.39,-0.46,0.10,101112.0,-0.79,-0.97,0.18,2019
+greenge01,gerald green,2018-19,HOU,Movement Shooter,1473,73,SG,33,-1.18,1.21,-2.39,1.10,101123.0,-1.12,0.26,-1.39,2019
+mahinia01,ian mahinmi,2018-19,WAS,Roll + Cut Big,498,34,C,32,-0.25,-1.77,1.52,0.70,101133.0,-0.87,-1.92,1.05,2019
+milescj01,cj miles,2018-19,TOT,Off Screen Shooter,857,53,SF,31,-1.94,-1.37,-0.58,0.20,101139.0,-1.93,-1.2,-0.73,2019
+ilyaser01,ersan ilyasova,2018-19,MIL,Stretch Big,1231,67,PF,31,0.45,-0.09,0.54,2.30,101141.0,-0.9,-1.03,0.13,2019
+willilo02,lou williams,2018-19,LAC,Slasher,1993,75,SG,32,0.7,3.0,-2.3,4.00,101150.0,0.63,2.62,-1.99,2019
+johnsam01,amir johnson,2018-19,PHI,Stretch Big,529,51,C,31,-1.51,-1.34,-0.17,0.30,101161.0,-1.33,-1.41,0.08,2019
+gortama01,marcin gortat,2018-19,LAC,Roll + Cut Big,750,47,C,34,-1.26,-1.96,0.7,0.50,101162.0,-0.73,-1.72,0.99,2019
+caldejo01,jose calderon,2018-19,DET,Secondary Ball Handler,632,49,PG,37,-2.86,-2.57,-0.29,-0.20,101181.0,-2.42,-2.31,-0.11,2019
+aldrila01,lamarcus aldridge,2018-19,SAS,Post Scorer,2687,81,C,33,1.85,1.5,0.34,7.40,200746.0,1.63,1.49,0.13,2019
+gayru01,rudy gay,2018-19,SAS,Shot Creator,1842,69,PF,32,1.04,-0.02,1.06,4.10,200752.0,0.78,0.24,0.55,2019
+redicjj01,jj redick,2018-19,PHI,Movement Shooter,2379,76,SG,34,0.59,1.48,-0.88,4.60,200755.0,0.33,1.71,-1.38,2019
+sefolth01,thabo sefolosha,2018-19,UTA,Stationary Shooter,609,50,SF,34,-0.14,-1.48,1.34,0.90,200757.0,-0.32,-1.31,0.99,2019
+rondora01,rajon rondo,2018-19,LAL,Primary Ball Handler,1369,46,PG,32,-1.98,-1.55,-0.42,0.30,200765.0,-0.52,-0.75,0.23,2019
+lowryky01,kyle lowry,2018-19,TOR,Primary Ball Handler,2213,65,PG,32,3.23,2.3,0.93,8.10,200768.0,2.77,1.91,0.86,2019
+tuckepj01,p.j. tucker,2018-19,HOU,Stationary Shooter,2802,82,PF,33,-0.51,-1.55,1.03,3.40,200782.0,0.18,-0.7,0.88,2019
+millspa01,paul millsap,2018-19,DEN,Post Scorer,1895,70,PF,33,2.43,1.08,1.34,5.90,200794.0,1.73,0.45,1.29,2019
+bareajo01,j.j. barea,2018-19,DAL,Secondary Ball Handler,752,38,PG,34,1.25,1.87,-0.62,1.80,200826.0,0.07,1.24,-1.18,2019
+duranke01,kevin durant,2018-19,GSW,Shot Creator,2702,78,SF,30,5.23,4.44,0.79,13.20,201142.0,3.87,3.64,0.23,2019
+horfoal01,al horford,2018-19,BOS,Versatile Big,1973,68,C,32,2.52,1.45,1.07,6.30,201143.0,2.47,1.21,1.26,2019
+conlemi01,mike conley,2018-19,MEM,Primary Ball Handler,2342,70,PG,31,3.86,3.76,0.1,9.50,201144.0,2.05,2.49,-0.43,2019
+greenje02,jeff green,2018-19,WAS,Stretch Big,2097,77,PF,32,-1.13,-0.29,-0.84,1.70,201145.0,-1.18,-0.15,-1.04,2019
+breweco01,corey brewer,2018-19,TOT,Athletic Finisher,492,31,SF,32,-1.08,-1.69,0.61,0.40,201147.0,-1.25,-1.47,0.22,2019
+noahjo01,joakim noah,2018-19,MEM,Roll + Cut Big,692,42,C,33,1.44,-0.36,1.8,1.70,201149.0,0.68,-0.73,1.41,2019
+youngth01,thaddeus young,2018-19,IND,Post Scorer,2489,81,PF,30,1.23,-0.04,1.27,5.90,201152.0,0.62,-0.35,0.97,2019
+youngni01,nick young,2018-19,DEN,Movement Shooter,37,4,SG,33,-2.0,-1.74,-0.26,0.00,201156.0,-1.9,-1.69,-0.2,2019
+belinma01,marco belinelli,2018-19,SAS,Movement Shooter,1815,79,SG,32,-2.15,-0.17,-1.98,0.20,201158.0,-1.29,-0.05,-1.24,2019
+smithja02,jason smith,2018-19,TOT,Stretch Big,191,20,PF-C,32,-1.71,-1.83,0.12,0.10,201160.0,-1.31,-1.39,0.08,2019
+dudleja01,jared dudley,2018-19,BRK,Stationary Shooter,1220,59,PF,33,-0.9,-1.22,0.33,1.20,201162.0,-1.71,-1.98,0.27,2019
+chandwi01,wilson chandler,2018-19,TOT,Movement Shooter,1176,51,PF-SF,31,-1.68,-1.65,-0.04,0.50,201163.0,-1.5,-1.64,0.14,2019
+gasolma01,marc gasol,2018-19,TOT,Versatile Big,2436,79,C,34,2.1,-0.12,2.22,7.10,201188.0,1.48,-0.08,1.56,2019
+tollian01,anthony tolliver,2018-19,MIN,Movement Shooter,1079,65,PF,33,-1.2,-0.88,-0.32,0.80,201229.0,-1.77,-1.41,-0.36,2019
+ingraan01,andre ingram,2018-19,LAL,Movement Shooter,15,4,SG,33,-1.11,-1.27,0.15,0.00,201281.0,-1.18,-1.29,0.12,2019
+beaslmi01,michael beasley,2018-19,LAL,Slasher,277,26,PF,30,-0.86,-0.3,-0.56,0.30,201563.0,-0.87,-0.73,-0.15,2019
+rosede01,derrick rose,2018-19,MIN,Slasher,1392,51,PG,30,0.79,2.03,-1.23,2.90,201565.0,-0.77,1.33,-2.1,2019
+westbru01,russell westbrook,2018-19,OKC,Shot Creator,2629,73,PG,30,4.13,2.75,1.38,11.10,201566.0,3.6,2.13,1.47,2019
+loveke01,kevin love,2018-19,CLE,Versatile Big,598,22,PF,30,3.15,2.2,0.96,2.20,201567.0,2.67,2.04,0.63,2019
+gallida01,danilo gallinari,2018-19,LAC,Shot Creator,2059,68,SF,30,2.94,2.56,0.38,7.10,201568.0,2.47,2.81,-0.34,2019
+gordoer01,eric gordon,2018-19,HOU,Stationary Shooter,2158,68,SG,30,0.92,1.83,-0.91,4.60,201569.0,-0.52,1.11,-1.63,2019
+augusdj01,d.j. augustin,2018-19,ORL,Primary Ball Handler,2269,81,PG,31,0.76,1.27,-0.51,4.60,201571.0,0.63,0.85,-0.22,2019
+lopezbr01,brook lopez,2018-19,MIL,Stretch Big,2322,81,C,30,3.1,-0.28,3.38,8.30,201572.0,3.12,0.35,2.78,2019
+bayleje01,jerryd bayless,2018-19,MIN,Secondary Ball Handler,657,34,PG,30,-2.05,-0.58,-1.47,0.10,201573.0,-2.11,-1.07,-1.04,2019
+lopezro01,robin lopez,2018-19,CHI,Post Scorer,1606,74,C,30,-2.14,-1.42,-0.73,0.20,201577.0,-2.85,-1.69,-1.16,2019
+mcgeeja01,javale mcgee,2018-19,LAL,Roll + Cut Big,1671,75,C,31,1.02,-0.59,1.61,3.70,201580.0,1.43,-0.58,2.01,2019
+anderry01,ryan anderson,2018-19,TOT,Movement Shooter,321,25,PF,30,-2.71,-2.1,-0.61,-0.10,201583.0,-2.64,-2.09,-0.55,2019
+leeco01,courtney lee,2018-19,TOT,Secondary Ball Handler,428,34,SG,33,-1.41,-1.65,0.24,0.30,201584.0,-1.45,-1.51,0.06,2019
+koufoko01,kosta koufos,2018-19,SAC,Roll + Cut Big,502,42,C,29,-1.63,-2.64,1.01,0.20,201585.0,-1.56,-2.46,0.9,2019
+ibakase01,serge ibaka,2018-19,TOR,Roll + Cut Big,2010,74,C,29,0.41,-0.29,0.71,3.70,201586.0,1.3,0.26,1.03,2019
+batumni01,nicolas batum,2018-19,CHO,Movement Shooter,2354,75,SF,30,-0.68,-1.06,0.38,2.60,201587.0,-0.6,-0.79,0.19,2019
+hillge01,george hill,2018-19,TOT,Secondary Ball Handler,1302,60,PG,32,0.96,0.0,0.95,2.80,201588.0,-0.7,-0.56,-0.14,2019
+jordade01,deandre jordan,2018-19,TOT,Roll + Cut Big,2047,69,C,30,0.39,-1.71,2.09,3.70,201599.0,1.65,-0.38,2.03,2019
+mbahalu01,luc mbah a moute,2018-19,LAC,Athletic Finisher,61,4,PF,32,-1.48,-1.41,-0.07,0.00,201601.0,-1.66,-1.47,-0.18,2019
+dragigo01,goran dragic,2018-19,MIA,Secondary Ball Handler,991,36,PG,32,0.51,0.55,-0.03,1.90,201609.0,-0.5,0.2,-0.69,2019
+griffbl01,blake griffin,2018-19,DET,Versatile Big,2622,75,PF,29,1.98,1.83,0.15,7.50,201933.0,2.01,2.31,-0.3,2019
+hardeja01,james harden,2018-19,HOU,Shot Creator,2867,78,PG,29,6.31,6.83,-0.52,15.80,201935.0,6.41,7.04,-0.63,2019
+evansty01,tyreke evans,2018-19,IND,Secondary Ball Handler,1402,69,SG,29,-1.05,-0.93,-0.12,1.20,201936.0,-1.44,-0.92,-0.51,2019
+rubiori01,ricky rubio,2018-19,UTA,Primary Ball Handler,1899,68,PG,28,1.1,-0.12,1.22,4.30,201937.0,1.09,0.46,0.63,2019
+curryst01,stephen curry,2018-19,GSW,Primary Ball Handler,2331,69,PG,30,5.06,4.96,0.1,11.20,201939.0,4.14,4.85,-0.72,2019
+derozde01,demar derozan,2018-19,SAS,Shot Creator,2688,77,SG,29,0.72,0.44,0.29,5.40,201942.0,1.4,1.22,0.18,2019
+johnsja01,james johnson,2018-19,MIA,Shot Creator,1164,55,PF,31,-1.02,-1.55,0.53,1.00,201949.0,-0.92,-1.43,0.5,2019
+holidjr01,jrue holiday,2018-19,NOP,Primary Ball Handler,2402,67,SG,28,3.87,3.15,0.72,9.80,201950.0,1.41,1.89,-0.47,2019
+teaguje01,jeff teague,2018-19,MIN,Slasher,1264,42,PG,30,0.43,0.38,0.05,2.30,201952.0,0.41,0.7,-0.29,2019
+collida01,darren collison,2018-19,IND,Primary Ball Handler,2143,76,PG,31,0.66,0.09,0.57,4.20,201954.0,1.68,0.83,0.84,2019
+casspom01,omri casspi,2018-19,MEM,Athletic Finisher,520,36,SF,30,0.3,-0.69,0.99,0.90,201956.0,-0.45,-0.8,0.35,2019
+gibsota01,taj gibson,2018-19,MIN,Post Scorer,1686,70,PF,33,-0.7,-0.53,-0.16,1.80,201959.0,-0.39,-0.25,-0.13,2019
+carrode01,demarre carroll,2018-19,BRK,Movement Shooter,1703,67,PF,32,-0.8,0.28,-1.08,1.70,201960.0,-0.7,-0.16,-0.53,2019
+ellinwa01,wayne ellington,2018-19,TOT,Movement Shooter,1297,53,SG,31,0.38,0.23,0.15,2.30,201961.0,-0.11,0.25,-0.36,2019
+cunnida01,dante cunningham,2018-19,SAS,Stretch Big,928,64,PF,31,-2.45,-2.49,0.04,-0.10,201967.0,-1.7,-2.05,0.36,2019
+jerebjo01,jonas jerebko,2018-19,GSW,Athletic Finisher,1218,73,PF,31,0.07,0.08,-0.01,1.90,201973.0,-0.44,-0.09,-0.35,2019
+meeksjo01,jodie meeks,2018-19,TOR,Off Screen Shooter,104,8,SG,31,-1.74,-0.77,-0.97,0.00,201975.0,-1.62,-0.99,-0.63,2019
+beverpa01,patrick beverley,2018-19,LAC,Primary Ball Handler,2137,78,PG,30,0.79,-0.24,1.03,4.40,201976.0,-0.02,-0.46,0.45,2019
+greenda02,danny green,2018-19,TOR,Movement Shooter,2215,80,SG,31,1.95,0.81,1.14,6.30,201980.0,1.12,0.17,0.95,2019
+millspa02,patty mills,2018-19,SAS,Primary Ball Handler,1908,82,PG,30,-0.74,1.16,-1.9,2.00,201988.0,-0.8,0.32,-1.11,2019
+templga01,garrett temple,2018-19,TOT,Movement Shooter,2041,75,SG,32,-1.8,-2.63,0.83,0.70,202066.0,-1.81,-2.15,0.35,2019
+matthwe02,wesley matthews,2018-19,TOT,Movement Shooter,2091,69,SF-SG,32,-1.09,-0.61,-0.48,1.70,202083.0,-0.94,-0.45,-0.5,2019
+walljo01,john wall,2018-19,WAS,Shot Creator,1104,32,PG,28,1.08,0.82,0.25,2.50,202322.0,1.19,1.5,-0.31,2019
+turneev01,evan turner,2018-19,POR,Shot Creator,1606,73,PG,30,-1.45,-0.97,-0.49,0.90,202323.0,-1.05,-1.14,0.09,2019
+favorde01,derrick favors,2018-19,UTA,Roll + Cut Big,1766,76,C,27,1.93,0.58,1.35,5.00,202324.0,2.67,0.88,1.79,2019
+johnswe01,wesley johnson,2018-19,TOT,Stationary Shooter,534,38,SF,31,-2.9,-2.73,-0.17,-0.20,202325.0,-2.23,-2.33,0.11,2019
+couside01,demarcus cousins,2018-19,GSW,Versatile Big,771,30,C,28,2.65,0.39,2.26,2.50,202326.0,3.15,1.32,1.82,2019
+udohek01,ekpe udoh,2018-19,UTA,Roll + Cut Big,320,51,C,31,0.4,-0.61,1.01,0.60,202327.0,0.93,-0.7,1.63,2019
+monrogr01,greg monroe,2018-19,TOT,Post Scorer,480,43,C,28,-1.78,-1.35,-0.43,0.20,202328.0,-1.97,-1.75,-0.21,2019
+aminual01,al-farouq aminu,2018-19,POR,Athletic Finisher,2292,81,PF,28,2.18,0.42,1.76,6.80,202329.0,1.15,0.03,1.13,2019
+haywago01,gordon hayward,2018-19,BOS,Secondary Ball Handler,1863,72,PF,28,0.03,0.51,-0.48,2.90,202330.0,0.32,0.31,0.01,2019
+georgpa01,paul george,2018-19,OKC,Shot Creator,2841,77,SF,28,5.53,4.21,1.32,14.40,202331.0,4.13,3.28,0.85,2019
+davised01,ed davis,2018-19,BRK,Roll + Cut Big,1446,81,C,29,0.36,-1.55,1.91,2.60,202334.0,0.63,-0.82,1.45,2019
+pattepa01,patrick patterson,2018-19,OKC,Stretch Big,861,63,PF,29,-2.94,-1.76,-1.18,-0.30,202335.0,-2.39,-1.81,-0.59,2019
+bledser01,eric bledsoe,2018-19,MIL,Primary Ball Handler,2272,78,PG,29,3.56,1.75,1.81,8.80,202339.0,3.37,2.31,1.06,2019
+bradlav01,avery bradley,2018-19,TOT,Stationary Shooter,1905,63,SG,28,-3.14,-2.33,-0.81,-1.00,202340.0,-2.39,-1.73,-0.67,2019
+pondequ01,quincy pondexter,2018-19,SAS,Athletic Finisher,292,53,SF,30,-1.79,-1.36,-0.43,0.10,202347.0,-1.11,-1.19,0.08,2019
+whiteha01,hassan whiteside,2018-19,MIA,Post Scorer,1674,72,C,29,3.37,0.48,2.89,6.30,202355.0,2.82,0.02,2.8,2019
+bjeline01,nemanja bjelica,2018-19,SAC,Stretch Big,1788,77,PF,30,0.86,0.4,0.47,3.80,202357.0,0.24,-0.23,0.47,2019
+stephla01,lance stephenson,2018-19,LAL,Secondary Ball Handler,1123,68,SG,28,-2.23,-1.12,-1.12,0.10,202362.0,-1.19,-0.86,-0.33,2019
+linje01,jeremy lin,2018-19,TOT,Primary Ball Handler,1436,74,PG,30,-2.0,-1.37,-0.63,0.30,202391.0,-1.11,-0.19,-0.92,2019
+smithis01,ish smith,2018-19,DET,Slasher,1251,56,PG,30,-1.51,-0.14,-1.37,0.70,202397.0,-1.48,-0.93,-0.55,2019
+thomala01,lance thomas,2018-19,NYK,Stationary Shooter,783,46,PF,30,-3.38,-2.84,-0.54,-0.50,202498.0,-3.03,-2.77,-0.26,2019
+irvinky01,kyrie irving,2018-19,BOS,Primary Ball Handler,2214,67,PG,26,3.97,3.69,0.28,9.10,202681.0,3.5,3.46,0.04,2019
+kanteen01,enes kanter,2018-19,TOT,Post Scorer,1639,67,C,26,0.45,1.13,-0.68,3.00,202683.0,-0.33,0.45,-0.78,2019
+thomptr01,tristan thompson,2018-19,CLE,Roll + Cut Big,1198,43,C,27,-0.3,-0.45,0.16,1.60,202684.0,-0.33,-0.15,-0.18,2019
+valanjo01,jonas valanciunas,2018-19,TOT,Post Scorer,1091,49,C,26,2.2,1.45,0.76,3.30,202685.0,1.52,0.85,0.67,2019
+biyombi01,bismack biyombo,2018-19,CHO,Roll + Cut Big,782,54,C,26,-1.7,-2.36,0.66,0.30,202687.0,-0.39,-1.71,1.32,2019
+knighbr03,brandon knight,2018-19,TOT,Secondary Ball Handler,737,39,PG,27,-1.91,-1.36,-0.55,0.20,202688.0,-1.33,-0.89,-0.44,2019
+walkeke02,kemba walker,2018-19,CHO,Primary Ball Handler,2863,82,PG,28,2.52,3.83,-1.31,9.20,202689.0,2.08,3.41,-1.33,2019
+fredeji01,jimmer fredette,2018-19,PHO,Secondary Ball Handler,65,6,SG,29,-1.48,-1.28,-0.2,0.00,202690.0,-1.51,-1.28,-0.23,2019
+thompkl01,klay thompson,2018-19,GSW,Off Screen Shooter,2652,78,SG,28,0.63,1.12,-0.49,5.20,202691.0,1.54,2.03,-0.49,2019
+burksal01,alec burks,2018-19,TOT,Secondary Ball Handler,1375,64,SG,27,-1.64,-0.67,-0.97,0.60,202692.0,-0.73,-0.59,-0.14,2019
+morrima02,markieff morris,2018-19,TOT,Versatile Big,1271,58,PF,29,-2.29,-1.32,-0.97,0.00,202693.0,-1.28,-0.98,-0.3,2019
+morrima03,marcus morris sr.,2018-19,BOS,Shot Creator,2091,75,PF,29,0.3,0.29,0.01,3.60,202694.0,0.23,0.25,-0.02,2019
+leonaka01,kawhi leonard,2018-19,TOR,Shot Creator,2040,60,SF,27,4.33,3.77,0.56,8.90,202695.0,4.34,3.77,0.58,2019
+vucevni01,nikola vucevic,2018-19,ORL,Post Scorer,2510,80,C,28,4.36,1.95,2.41,11.00,202696.0,3.48,1.9,1.58,2019
+shumpim01,iman shumpert,2018-19,TOT,Movement Shooter,1481,62,SG,28,-2.41,-2.11,-0.3,-0.10,202697.0,-1.26,-1.31,0.06,2019
+harrito02,tobias harris,2018-19,TOT,Shot Creator,2848,82,PF,26,0.19,0.54,-0.35,4.80,202699.0,0.82,0.99,-0.17,2019
+motiedo01,donatas motiejunas,2018-19,SAS,Post Scorer,13,3,PF,28,-1.68,-1.61,-0.07,0.00,202700.0,-1.54,-1.57,0.03,2019
+farieke01,kenneth faried,2018-19,TOT,Roll + Cut Big,728,37,C,29,0.41,0.8,-0.39,1.30,202702.0,0.01,0.27,-0.26,2019
+mirotni01,nikola mirotic,2018-19,TOT,Movement Shooter,1245,46,PF,27,0.41,0.73,-0.32,2.30,202703.0,0.91,1.0,-0.09,2019
+jacksre01,reggie jackson,2018-19,DET,Primary Ball Handler,2289,82,PG,28,0.17,0.42,-0.25,3.80,202704.0,0.22,0.96,-0.74,2019
+brookma01,marshon brooks,2018-19,MEM,Secondary Ball Handler,387,29,SG,30,-2.23,-0.97,-1.26,0.00,202705.0,-2.32,-1.07,-1.25,2019
+josepco01,cory joseph,2018-19,IND,Primary Ball Handler,2063,82,PG,27,0.69,-0.81,1.5,4.10,202709.0,-0.69,-1.39,0.69,2019
+butleji01,jimmy butler,2018-19,TOT,Shot Creator,2185,65,SF-SG,29,1.9,1.22,0.68,6.10,202710.0,2.12,1.82,0.3,2019
+bogdabo02,bojan bogdanovic,2018-19,IND,Off Screen Shooter,2573,81,SF,29,0.31,0.45,-0.13,4.50,202711.0,0.5,0.69,-0.19,2019
+macksh01,shelvin mack,2018-19,TOT,Primary Ball Handler,1247,57,PG,28,-2.7,-1.59,-1.11,-0.30,202714.0,-2.04,-1.32,-0.72,2019
+parsoch01,chandler parsons,2018-19,MEM,Secondary Ball Handler,496,25,SF,30,-2.76,-2.03,-0.73,-0.10,202718.0,-2.2,-1.84,-0.36,2019
+leuerjo01,jon leuer,2018-19,DET,Roll + Cut Big,402,41,PF,29,-1.76,-1.98,0.22,0.20,202720.0,-1.54,-1.87,0.33,2019
+bertada01,davis bertans,2018-19,SAS,Movement Shooter,1632,76,PF,26,1.64,1.02,0.63,4.30,202722.0,-0.21,-0.19,-0.03,2019
+mooreet01,e'twaun moore,2018-19,NOP,Movement Shooter,1463,53,SG,29,-2.3,-0.99,-1.31,0.00,202734.0,-2.12,-0.8,-1.32,2019
+thomais02,isaiah thomas,2018-19,DEN,Secondary Ball Handler,181,12,SG,29,-2.16,-1.37,-0.78,0.00,202738.0,-2.31,-1.35,-0.96,2019
+wanambr01,brad wanamaker,2018-19,BOS,Secondary Ball Handler,343,36,PG,29,-0.16,0.17,-0.34,0.50,202954.0,-0.96,-0.36,-0.6,2019
+davisan02,anthony davis,2018-19,NOP,Post Scorer,1850,56,C,25,5.83,3.45,2.37,9.70,203076.0,5.47,3.65,1.82,2019
+kiddgmi01,michael kidd-gilchrist,2018-19,CHO,Roll + Cut Big,1179,64,PF,25,-0.09,-1.08,0.99,1.70,203077.0,-1.32,-1.5,0.18,2019
+bealbr01,bradley beal,2018-19,WAS,Primary Ball Handler,3028,82,SG,25,2.09,2.92,-0.83,8.80,203078.0,1.18,2.47,-1.28,2019
+waitedi01,dion waiters,2018-19,MIA,Shot Creator,1138,44,SG,27,-0.59,0.24,-0.82,1.30,203079.0,-0.76,-0.04,-0.73,2019
+lillada01,damian lillard,2018-19,POR,Primary Ball Handler,2838,80,PG,28,4.83,5.14,-0.32,13.20,203081.0,3.71,4.41,-0.7,2019
+rosste01,terrence ross,2018-19,ORL,Off Screen Shooter,2150,81,SG,27,-1.2,-0.36,-0.84,1.60,203082.0,0.13,0.65,-0.52,2019
+drumman01,andre drummond,2018-19,DET,Post Scorer,2647,79,C,25,2.86,0.82,2.05,9.10,203083.0,3.06,0.37,2.69,2019
+barneha02,harrison barnes,2018-19,TOT,Movement Shooter,2533,77,PF-SF,26,-2.06,-1.19,-0.87,0.50,203084.0,-0.62,0.05,-0.67,2019
+riverau01,austin rivers,2018-19,TOT,Shot Creator,2028,76,SG,26,-1.94,-0.53,-1.41,0.50,203085.0,-2.43,-1.43,-1.0,2019
+leoname01,meyers leonard,2018-19,POR,Stretch Big,878,61,C,26,-1.28,-0.25,-1.03,0.60,203086.0,0.0,0.15,-0.15,2019
+lambje01,jeremy lamb,2018-19,CHO,Secondary Ball Handler,2250,79,SG,26,1.28,0.66,0.61,5.40,203087.0,0.73,0.87,-0.15,2019
+hensojo01,john henson,2018-19,MIL,Stretch Big,188,14,C,28,-0.79,-1.05,0.26,0.20,203089.0,-0.69,-0.95,0.26,2019
+harklma01,maurice harkless,2018-19,POR,Stretch Big,1415,60,SF,25,0.7,-0.68,1.38,2.80,203090.0,0.45,-0.97,1.43,2019
+zellety01,tyler zeller,2018-19,TOT,Roll + Cut Big,93,6,C,29,-1.0,-1.04,0.04,0.10,203092.0,-1.22,-1.23,0.02,2019
+joneste01,terrence jones,2018-19,HOU,Versatile Big,5,2,PF,27,-1.97,-1.4,-0.57,0.00,203093.0,-1.89,-1.37,-0.52,2019
+fournev01,evan fournier,2018-19,ORL,Secondary Ball Handler,2553,81,SG,26,-1.13,0.03,-1.17,2.00,203095.0,-0.62,-0.43,-0.19,2019
+jenkijo01,john jenkins,2018-19,TOT,Off Screen Shooter,333,26,SG,27,-2.68,-1.22,-1.46,-0.10,203098.0,-1.94,-0.89,-1.04,2019
+plumlmi01,miles plumlee,2018-19,ATL,Roll + Cut Big,173,18,C,30,-0.45,-0.61,0.16,0.20,203101.0,-0.47,-0.65,0.18,2019
+satorto01,tomas satoransky,2018-19,WAS,Primary Ball Handler,2164,80,PG,27,0.15,0.47,-0.32,3.60,203107.0,-0.77,-0.02,-0.75,2019
+crowdja01,jae crowder,2018-19,UTA,Stationary Shooter,2166,80,SF,28,0.89,0.74,0.16,4.60,203109.0,0.39,0.13,0.25,2019
+greendr01,draymond green,2018-19,GSW,Athletic Finisher,2065,66,PF,28,1.88,-0.74,2.63,5.80,203110.0,1.75,-0.44,2.2,2019
+acyqu01,quincy acy,2018-19,PHO,Stretch Big,123,10,PF,28,-1.06,-1.64,0.59,0.10,203112.0,-1.56,-1.75,0.19,2019
+middlkh01,khris middleton,2018-19,MIL,Shot Creator,2393,77,SF,27,1.44,0.93,0.51,6.00,203114.0,2.41,1.73,0.68,2019
+bartowi01,will barton,2018-19,DEN,Secondary Ball Handler,1189,43,SF,28,-1.67,-0.98,-0.69,0.50,203115.0,-0.92,-0.71,-0.21,2019
+scottmi01,mike scott,2018-19,TOT,Stationary Shooter,1396,79,PF,30,-3.12,-1.92,-1.2,-0.70,203118.0,-2.01,-1.56,-0.45,2019
+milleda01,darius miller,2018-19,NOP,Off Screen Shooter,1758,69,SF,28,-2.09,-0.65,-1.44,0.30,203121.0,-2.21,-1.07,-1.14,2019
+oquinky01,kyle o'quinn,2018-19,IND,Roll + Cut Big,371,45,C,28,-0.47,-1.19,0.71,0.50,203124.0,-0.14,-1.38,1.24,2019
+bazemke01,kent bazemore,2018-19,ATL,Secondary Ball Handler,1643,67,SG,29,-1.47,-1.69,0.21,0.90,203145.0,-1.05,-0.96,-0.09,2019
+machasc01,scott machado,2018-19,LAL,Slasher,19,4,PG,28,-1.03,-1.09,0.06,0.00,203159.0,-1.06,-1.16,0.1,2019
+holidju01,justin holiday,2018-19,TOT,Movement Shooter,2607,82,SG,29,-2.09,-2.24,0.15,0.40,203200.0,-1.24,-1.47,0.23,2019
+greenja01,jamychal green,2018-19,TOT,Stretch Big,1371,65,PF,28,-0.68,-1.04,0.35,1.50,203210.0,-0.88,-1.16,0.28,2019
+nunnaja01,james nunnally,2018-19,TOT,Stationary Shooter,101,15,SF,28,-1.99,-1.31,-0.68,0.00,203263.0,-1.69,-1.36,-0.32,2019
+baynear01,aron baynes,2018-19,BOS,Stretch Big,821,51,C,32,-1.0,-1.98,0.98,0.70,203382.0,-0.94,-1.25,0.3,2019
+noelne01,nerlens noel,2018-19,OKC,Roll + Cut Big,1056,77,C,24,0.37,-1.97,2.34,1.90,203457.0,1.43,-1.34,2.76,2019
+lenal01,alex len,2018-19,ATL,Stretch Big,1544,77,C,25,0.13,-0.33,0.46,2.50,203458.0,-0.72,0.0,-0.71,2019
+crabbal01,allen crabbe,2018-19,BRK,Off Screen Shooter,1133,43,SG,26,-1.71,-1.57,-0.15,0.50,203459.0,-1.76,-1.31,-0.46,2019
+mclembe01,ben mclemore,2018-19,SAC,Movement Shooter,158,19,SG,25,-1.38,-1.17,-0.22,0.10,203463.0,-1.47,-1.16,-0.31,2019
+mccolcj01,cj mccollum,2018-19,POR,Primary Ball Handler,2375,70,SG,27,1.01,1.48,-0.48,5.20,203468.0,0.81,1.7,-0.88,2019
+zelleco01,cody zeller,2018-19,CHO,Roll + Cut Big,1243,49,C,26,0.77,-0.01,0.78,2.50,203469.0,0.45,-0.56,1.0,2019
+schrode01,dennis schroder,2018-19,OKC,Primary Ball Handler,2314,79,PG,25,-0.68,0.05,-0.73,2.50,203471.0,-1.25,-0.39,-0.86,2019
+dedmode01,dewayne dedmon,2018-19,ATL,Stretch Big,1609,64,C,29,-0.19,-1.12,0.93,2.30,203473.0,0.79,-0.47,1.26,2019
+stephdj01,dj stephens,2018-19,MEM,Roll + Cut Big,7,1,SG,28,-1.47,-1.52,0.05,0.00,203474.0,-1.52,-1.5,-0.03,2019
+dienggo01,gorgui dieng,2018-19,MIN,Roll + Cut Big,1031,76,C,29,0.39,-0.63,1.02,1.90,203476.0,0.4,-0.48,0.87,2019
+canaais01,isaiah canaan,2018-19,TOT,Secondary Ball Handler,628,30,PG,27,-2.94,-1.81,-1.13,-0.20,203477.0,-2.19,-1.47,-0.72,2019
+olynyke01,kelly olynyk,2018-19,MIA,Stretch Big,1812,79,PF,27,0.98,-0.23,1.21,4.00,203482.0,0.14,-0.38,0.53,2019
+caldwke01,kentavious caldwell-pope,2018-19,LAL,Off Screen Shooter,2035,82,SG,25,-1.47,0.29,-1.76,1.20,203484.0,-0.92,-0.12,-0.79,2019
+brownlo01,lorenzo brown,2018-19,TOR,Secondary Ball Handler,212,26,PG,28,-2.57,-2.53,-0.04,0.00,203485.0,-2.4,-2.2,-0.2,2019
+plumlma01,mason plumlee,2018-19,DEN,Post Scorer,1731,82,C,28,0.94,-0.68,1.61,3.70,203486.0,0.99,-0.59,1.58,2019
+cartemi01,michael carter-williams,2018-19,TOT,Secondary Ball Handler,372,28,PG,27,-0.61,-0.53,-0.09,0.40,203487.0,-0.83,-1.04,0.22,2019
+muscami01,mike muscala,2018-19,TOT,Stationary Shooter,1306,64,PF,27,-1.08,-1.15,0.07,1.10,203488.0,-1.09,-0.93,-0.17,2019
+porteot01,otto porter jr.,2018-19,TOT,Movement Shooter,1684,56,SF,25,2.03,0.9,1.14,4.90,203490.0,0.38,0.15,0.23,2019
+bullore01,reggie bullock,2018-19,TOT,Movement Shooter,1879,63,SG,27,-1.83,-0.73,-1.1,0.60,203493.0,-0.86,-0.47,-0.39,2019
+covinro01,robert covington,2018-19,TOT,Movement Shooter,1203,35,SF,28,1.7,-0.77,2.48,3.20,203496.0,0.91,-0.46,1.36,2019
+goberru01,rudy gobert,2018-19,UTA,Roll + Cut Big,2577,81,C,26,5.06,1.08,3.99,12.30,203497.0,4.86,1.45,3.41,2019
+adamsst01,steven adams,2018-19,OKC,Post Scorer,2669,80,C,25,1.82,0.21,1.61,7.30,203500.0,0.55,-0.24,0.79,2019
+hardati02,tim hardaway jr.,2018-19,TOT,Secondary Ball Handler,2057,65,SG,26,-0.67,0.43,-1.1,2.30,203501.0,-0.77,0.49,-1.26,2019
+snellto01,tony snell,2018-19,MIL,Stationary Shooter,1304,74,SF,27,-1.15,-0.77,-0.37,1.00,203503.0,-0.96,-0.69,-0.28,2019
+burketr01,trey burke,2018-19,TOT,Slasher,1125,58,PG,26,-0.47,1.08,-1.55,1.40,203504.0,-0.65,0.73,-1.38,2019
+oladivi01,victor oladipo,2018-19,IND,Secondary Ball Handler,1147,36,SG,26,1.98,0.91,1.07,3.30,203506.0,1.82,1.5,0.32,2019
+antetgi01,giannis antetokounmpo,2018-19,MIL,Shot Creator,2358,72,PF,24,7.83,4.19,3.65,15.00,203507.0,6.96,4.36,2.61,2019
+ennisja01,james ennis iii,2018-19,TOT,Athletic Finisher,1230,58,SF,28,-1.88,-0.79,-1.1,0.40,203516.0,-1.36,-1.13,-0.23,2019
+abrinal01,alex abrines,2018-19,OKC,Movement Shooter,588,31,SG,25,-2.62,-2.06,-0.56,-0.10,203518.0,-2.68,-1.96,-0.73,2019
+dellama01,matthew dellavedova,2018-19,TOT,Secondary Ball Handler,812,48,PG,28,-1.29,-0.61,-0.67,0.60,203521.0,-1.34,-0.39,-0.95,2019
+hillso01,solomon hill,2018-19,NOP,Athletic Finisher,879,44,SF,27,-3.1,-2.36,-0.74,-0.40,203524.0,-2.64,-2.3,-0.33,2019
+netora01,raul neto,2018-19,UTA,Secondary Ball Handler,474,37,PG,26,-0.28,0.31,-0.59,0.60,203526.0,-0.87,-0.23,-0.64,2019
+clarkia01,ian clark,2018-19,NOP,Movement Shooter,973,60,SG,27,-2.56,-1.07,-1.49,-0.10,203546.0,-2.72,-1.28,-1.44,2019
+curryse01,seth curry,2018-19,POR,Secondary Ball Handler,1399,74,SG,28,-1.24,-0.39,-0.85,1.00,203552.0,-1.67,-0.48,-1.19,2019
+lucaska01,kalin lucas,2018-19,DET,Secondary Ball Handler,6,1,PG,29,-1.1,-1.39,0.29,0.00,203564.0,-1.13,-1.38,0.25,2019
+danietr01,troy daniels,2018-19,PHO,Movement Shooter,760,51,SG,27,-1.71,-0.39,-1.33,0.30,203584.0,-2.32,-0.79,-1.53,2019
+mcgruro01,rodney mcgruder,2018-19,MIA,Movement Shooter,1550,66,SG,27,-1.3,-1.53,0.22,1.10,203585.0,-1.7,-1.53,-0.17,2019
+simmojo02,jonathon simmons,2018-19,TOT,Secondary Ball Handler,1064,56,SG-SF,29,-3.14,-2.53,-0.61,-0.50,203613.0,-2.52,-2.08,-0.45,2019
+willicj01,c.j. williams,2018-19,MIN,Secondary Ball Handler,128,15,SG,28,-2.34,-1.78,-0.56,0.00,203710.0,-1.85,-1.57,-0.27,2019
+napiesh01,shabazz napier,2018-19,BRK,Secondary Ball Handler,983,56,PG,27,0.12,1.13,-1.01,1.60,203894.0,0.53,1.12,-0.59,2019
+mcraejo01,jordan mcrae,2018-19,WAS,Secondary Ball Handler,333,27,SG,27,-0.87,-0.37,-0.5,0.30,203895.0,-1.08,-0.69,-0.39,2019
+lavinza01,zach lavine,2018-19,CHI,Shot Creator,2171,63,SG,23,-0.08,1.21,-1.29,3.20,203897.0,-1.06,0.6,-1.66,2019
+paytoel01,elfrid payton,2018-19,NOP,Slasher,1250,42,PG,24,0.45,0.18,0.26,2.30,203901.0,-0.09,-0.08,-0.02,2019
+clarkjo01,jordan clarkson,2018-19,CLE,Shot Creator,2214,81,SG,26,-2.31,1.05,-3.36,0.00,203903.0,-2.48,0.6,-3.08,2019
+harriga01,gary harris,2018-19,DEN,Stationary Shooter,1639,57,SG,24,-0.46,-0.1,-0.36,2.00,203914.0,-0.63,-0.29,-0.33,2019
+dinwisp01,spencer dinwiddie,2018-19,BRK,Shot Creator,1914,68,PG,25,-0.55,1.26,-1.81,2.20,203915.0,0.02,1.27,-1.24,2019
+stausni01,nik stauskas,2018-19,TOT,Movement Shooter,1015,68,SG,25,-2.99,-1.54,-1.45,-0.40,203917.0,-1.47,-0.58,-0.89,2019
+hoodro01,rodney hood,2018-19,TOT,Shot Creator,1893,72,SG,26,-1.02,-0.24,-0.78,1.60,203918.0,-1.24,-0.5,-0.73,2019
+birchkh01,khem birch,2018-19,ORL,Roll + Cut Big,643,50,C,26,-0.14,-0.26,0.11,0.90,203920.0,0.44,-0.52,0.96,2019
+robingl02,glenn robinson iii,2018-19,DET,Athletic Finisher,610,47,SF,25,-2.37,-2.45,0.08,0.00,203922.0,-2.22,-2.01,-0.21,2019
+grantje01,jerami grant,2018-19,OKC,Stretch Big,2612,80,PF,24,0.12,-1.18,1.31,4.20,203924.0,0.44,-0.67,1.1,2019
+harrijo01,joe harris,2018-19,BRK,Off Screen Shooter,2294,76,SG,27,-0.66,0.21,-0.87,2.50,203925.0,-0.43,0.02,-0.45,2019
+mcderdo01,doug mcdermott,2018-19,IND,Off Screen Shooter,1340,77,SF,27,-1.63,-0.36,-1.27,0.60,203926.0,-2.11,-0.8,-1.31,2019
+gordoaa01,aaron gordon,2018-19,ORL,Shot Creator,2633,78,PF,23,0.98,-0.06,1.04,5.80,203932.0,0.5,-0.11,0.62,2019
+warretj01,t.j. warren,2018-19,PHO,Movement Shooter,1360,43,SF,25,-0.33,0.01,-0.33,1.80,203933.0,-0.98,0.03,-1.0,2019
+smartma01,marcus smart,2018-19,BOS,Primary Ball Handler,2200,80,SG,24,0.52,-0.55,1.07,4.20,203935.0,1.0,-0.04,1.04,2019
+anderky01,kyle anderson,2018-19,MEM,Athletic Finisher,1282,43,SF,25,-0.63,-2.31,1.69,1.40,203937.0,-0.36,-1.96,1.6,2019
+poweldw01,dwight powell,2018-19,DAL,Stretch Big,1663,77,C,27,1.79,1.61,0.18,4.50,203939.0,1.11,0.83,0.28,2019
+vonleno01,noah vonleh,2018-19,NYK,Versatile Big,1722,68,PF,23,-0.2,-1.31,1.11,2.40,203943.0,-0.67,-1.47,0.8,2019
+randlju01,julius randle,2018-19,NOP,Post Scorer,2232,73,PF,24,0.04,1.19,-1.14,3.50,203944.0,0.59,1.41,-0.82,2019
+wiggian01,andrew wiggins,2018-19,MIN,Shot Creator,2543,73,SF,23,-1.38,-0.43,-0.95,1.60,203952.0,-1.35,-0.29,-1.06,2019
+parkeja01,jabari parker,2018-19,TOT,Shot Creator,1724,64,PF,23,-0.92,-0.53,-0.4,1.60,203953.0,-1.28,-0.67,-0.61,2019
+embiijo01,joel embiid,2018-19,PHI,Post Scorer,2154,64,C,24,5.68,3.08,2.6,11.10,203954.0,4.64,3.02,1.62,2019
+exumda01,dante exum,2018-19,UTA,Slasher,664,42,PG,23,-1.4,-0.54,-0.85,0.40,203957.0,-1.93,-0.8,-1.13,2019
+sampsja02,jakarr sampson,2018-19,CHI,Stationary Shooter,127,4,SF,25,-0.19,-0.21,0.03,0.20,203960.0,-0.23,-0.4,0.17,2019
+moreler01,eric moreland,2018-19,TOT,Post Scorer,43,5,PF,27,-2.03,-1.77,-0.26,0.00,203961.0,-1.7,-1.51,-0.18,2019
+saricda01,dario saric,2018-19,TOT,Stretch Big,2022,81,PF,24,-1.01,-0.14,-0.87,1.80,203967.0,-1.25,-0.27,-0.98,2019
+capelca01,clint capela,2018-19,HOU,Roll + Cut Big,2249,67,C,24,2.2,0.67,1.53,6.70,203991.0,2.47,1.7,0.77,2019
+bogdabo01,bogdan bogdanovic,2018-19,SAC,Secondary Ball Handler,1947,70,SG,26,-0.5,0.18,-0.68,2.40,203992.0,-0.84,0.26,-1.11,2019
+nurkiju01,jusuf nurkic,2018-19,POR,Post Scorer,1974,72,C,24,4.08,1.45,2.63,8.30,203994.0,3.02,1.34,1.68,2019
+cabocbr01,bruno caboclo,2018-19,MEM,Stationary Shooter,800,34,PF,23,0.1,-0.5,0.59,1.30,203998.0,-1.0,-1.28,0.29,2019
+jokicni01,nikola jokic,2018-19,DEN,Post Scorer,2504,80,C,23,4.63,3.53,1.09,11.30,203999.0,4.52,3.32,1.2,2019
+johnsty01,tyler johnson,2018-19,TOT,Movement Shooter,1529,57,PG,26,-1.43,-0.91,-0.51,0.90,204020.0,-0.65,-0.41,-0.24,2019
+fraziti01,tim frazier,2018-19,TOT,Secondary Ball Handler,1120,59,PG,28,-1.71,-0.88,-0.83,0.50,204025.0,-1.3,-0.8,-0.5,2019
+gallola01,langston galloway,2018-19,DET,Movement Shooter,1745,80,SG,27,-1.45,0.16,-1.6,1.00,204038.0,-1.46,-0.51,-0.95,2019
+inglejo01,joe ingles,2018-19,UTA,Secondary Ball Handler,2568,82,PF,31,2.05,0.68,1.37,7.40,204060.0,1.45,0.54,0.91,2019
+mccontj01,t.j. mcconnell,2018-19,PHI,Primary Ball Handler,1470,76,PG,26,-0.68,-0.5,-0.18,1.60,204456.0,-0.82,-1.03,0.21,2019
+okafoja01,jahlil okafor,2018-19,NOP,Post Scorer,935,59,C,23,-0.09,-0.54,0.45,1.40,1626143.0,-0.66,-0.72,0.07,2019
+mudiaem01,emmanuel mudiay,2018-19,NYK,Slasher,1607,59,PG,22,-2.28,-0.59,-1.69,0.10,1626144.0,-1.96,-0.51,-1.46,2019
+jonesty01,tyus jones,2018-19,MIN,Primary Ball Handler,1560,68,PG,22,0.58,0.38,0.2,3.00,1626145.0,-0.4,0.0,-0.4,2019
+anderju01,justin anderson,2018-19,ATL,Stationary Shooter,464,48,SF,25,-1.03,-0.84,-0.19,0.40,1626147.0,-1.25,-1.26,0.01,2019
+harremo01,montrezl harrell,2018-19,LAC,Post Scorer,2158,82,C,25,0.71,0.91,-0.2,4.30,1626149.0,1.23,1.04,0.19,2019
+harrian01,andrew harrison,2018-19,TOT,Shot Creator,186,17,PG,24,-1.04,-1.5,0.45,0.20,1626150.0,-1.11,-1.44,0.33,2019
+wrighde01,delon wright,2018-19,TOT,Secondary Ball Handler,1698,75,PG,26,0.7,0.63,0.06,3.40,1626153.0,0.0,-0.18,0.19,2019
+hunterj01,rj hunter,2018-19,BOS,Secondary Ball Handler,26,1,SG,25,-1.27,-1.02,-0.24,0.00,1626154.0,-1.69,-1.28,-0.42,2019
+dekkesa01,sam dekker,2018-19,TOT,Roll + Cut Big,789,47,PF,24,-1.03,-0.67,-0.35,0.70,1626155.0,-1.22,-1.0,-0.22,2019
+russeda01,d'angelo russell,2018-19,BRK,Secondary Ball Handler,2448,81,PG,22,1.62,1.84,-0.23,6.40,1626156.0,1.72,2.51,-0.79,2019
+townska01,karl-anthony towns,2018-19,MIN,Versatile Big,2545,77,C,23,3.79,2.94,0.86,10.20,1626157.0,2.93,2.63,0.3,2019
+holmeri01,richaun holmes,2018-19,PHO,Roll + Cut Big,1184,70,C,25,0.8,-0.04,0.84,2.50,1626158.0,0.3,-0.47,0.77,2019
+winslju01,justise winslow,2018-19,MIA,Stationary Shooter,1960,66,SF,22,0.34,-0.78,1.12,3.50,1626159.0,-0.31,-0.76,0.45,2019
+caulewi01,willie cauley-stein,2018-19,SAC,Roll + Cut Big,2213,81,C,25,1.6,-0.2,1.8,5.70,1626161.0,1.04,-0.19,1.23,2019
+oubreke01,kelly oubre jr.,2018-19,TOT,Stationary Shooter,1935,69,SF,23,-0.54,0.04,-0.57,2.30,1626162.0,-0.77,-0.22,-0.55,2019
+kaminfr01,frank kaminsky,2018-19,CHO,Stretch Big,755,47,C,25,1.23,1.09,0.14,1.80,1626163.0,0.06,0.77,-0.71,2019
+bookede01,devin booker,2018-19,PHO,Shot Creator,2242,64,SG,22,-0.11,2.56,-2.67,3.30,1626164.0,-1.0,1.76,-2.77,2019
+payneca01,cameron payne,2018-19,TOT,Secondary Ball Handler,712,40,PG,24,-1.48,-1.64,0.16,0.40,1626166.0,-1.52,-1.31,-0.22,2019
+turnemy01,myles turner,2018-19,IND,Stretch Big,2119,74,C,22,2.15,-1.86,4.01,6.30,1626167.0,2.74,-0.49,3.23,2019
+lylestr01,trey lyles,2018-19,DEN,Stretch Big,1120,64,PF,23,-1.03,-0.7,-0.34,1.00,1626168.0,-0.72,-0.52,-0.2,2019
+johnsst04,stanley johnson,2018-19,TOT,Stationary Shooter,1207,66,SF,22,-2.29,-2.9,0.61,0.00,1626169.0,-1.33,-1.64,0.31,2019
+grantje02,jerian grant,2018-19,ORL,Primary Ball Handler,939,60,PG,26,-2.0,-2.06,0.05,0.20,1626170.0,-1.07,-1.23,0.15,2019
+portibo01,bobby portis,2018-19,TOT,Versatile Big,1298,50,PF,23,-0.23,0.54,-0.77,1.80,1626171.0,-0.38,-0.06,-0.32,2019
+looneke01,kevon looney,2018-19,GSW,Roll + Cut Big,1481,80,C,22,0.54,0.41,0.13,2.80,1626172.0,-0.11,-0.32,0.22,2019
+woodch01,christian wood,2018-19,TOT,Roll + Cut Big,250,21,PF,23,-0.68,-0.7,0.02,0.30,1626174.0,-0.14,-0.31,0.17,2019
+holliro01,rondae hollis-jefferson,2018-19,BRK,Roll + Cut Big,1234,59,SF,24,-0.32,-1.37,1.04,1.60,1626178.0,-0.81,-1.29,0.49,2019
+roziete01,terry rozier,2018-19,BOS,Primary Ball Handler,1791,79,PG,24,-1.48,-1.28,-0.2,1.00,1626179.0,0.36,0.18,0.19,2019
+powelno01,norman powell,2018-19,TOR,Secondary Ball Handler,1126,60,SG,25,-0.99,-0.54,-0.45,1.00,1626181.0,-0.96,-0.48,-0.48,2019
+randlch01,chasson randle,2018-19,WAS,Secondary Ball Handler,743,49,PG,25,-2.16,-1.0,-1.16,0.10,1626184.0,-1.9,-0.94,-0.96,2019
+martija01,jarell martin,2018-19,ORL,Stationary Shooter,328,42,PF,24,-1.18,-1.58,0.4,0.20,1626185.0,-1.51,-1.75,0.24,2019
+cookqu01,quinn cook,2018-19,GSW,Secondary Ball Handler,1059,74,PG,25,-2.7,-0.48,-2.23,-0.20,1626188.0,-1.28,0.18,-1.46,2019
+connapa01,pat connaughton,2018-19,MIL,Athletic Finisher,1261,61,SG,26,0.06,0.38,-0.33,2.00,1626192.0,0.29,0.02,0.27,2019
+hernawi01,willy hernangomez,2018-19,CHO,Roll + Cut Big,812,58,C,24,-0.83,0.39,-1.22,0.80,1626195.0,0.06,0.28,-0.23,2019
+richajo01,josh richardson,2018-19,MIA,Primary Ball Handler,2539,73,SG,25,0.43,0.04,0.39,4.60,1626196.0,0.42,0.22,0.2,2019
+grahatr01,treveon graham,2018-19,BRK,Movement Shooter,715,35,SG,25,-1.56,-1.31,-0.25,0.40,1626203.0,-2.12,-1.95,-0.17,2019
+nancela02,larry nance jr.,2018-19,CLE,Roll + Cut Big,1795,67,C,26,0.82,-0.01,0.83,3.70,1626204.0,0.4,-0.18,0.58,2019
+hezonma01,mario hezonja,2018-19,NYK,Secondary Ball Handler,1206,58,SF,23,-1.16,-1.46,0.3,0.90,1626209.0,-1.97,-1.83,-0.14,2019
+willial03,alan williams,2018-19,BRK,Roll + Cut Big,26,5,PF,26,-0.65,-0.92,0.26,0.00,1626210.0,-0.84,-1.09,0.25,2019
+onealro01,royce o'neale,2018-19,UTA,Stationary Shooter,1671,82,SF,25,-0.68,-1.61,0.93,1.80,1626220.0,-1.08,-2.01,0.94,2019
+osmande01,cedi osman,2018-19,CLE,Secondary Ball Handler,2444,76,SF,23,-2.13,-0.75,-1.37,0.30,1626224.0,-2.32,-0.86,-1.46,2019
+feliccr01,cristiano felicio,2018-19,CHI,Roll + Cut Big,746,60,C,26,-2.48,-1.14,-1.34,-0.10,1626245.0,-2.16,-1.68,-0.48,2019
+marjabo01,boban marjanovic,2018-19,TOT,Post Scorer,681,58,C,30,1.48,0.73,0.75,1.70,1626246.0,0.91,0.73,0.19,2019
+mejrisa01,salah mejri,2018-19,DAL,Stretch Big,399,36,C,32,0.35,-0.85,1.19,0.70,1626257.0,0.69,-0.94,1.63,2019
+millema01,malcolm miller,2018-19,TOR,Stationary Shooter,67,10,SF,25,-1.84,-1.16,-0.68,0.00,1626259.0,-1.6,-1.14,-0.46,2019
+siberjo01,jordan sibert,2018-19,ATL,Stationary Shooter,4,1,SG,26,-1.05,-1.16,0.1,0.00,1626296.0,-1.02,-1.18,0.16,2019
+lemonwa01,walt lemon jr.,2018-19,CHI,Slasher,167,6,PG,26,-0.8,-0.93,0.13,0.20,1627215.0,-0.86,-0.94,0.08,2019
+washbju01,julian washburn,2018-19,MEM,Movement Shooter,254,18,SF,27,-2.35,-2.35,-0.01,0.00,1627395.0,-2.48,-2.64,0.16,2019
+simmobe01,ben simmons,2018-19,PHI,Post Scorer,2700,79,PG,22,0.98,0.71,0.27,5.90,1627732.0,2.2,1.13,1.06,2019
+bendedr01,dragan bender,2018-19,PHO,Stretch Big,826,46,PF,21,-1.07,-1.5,0.43,0.70,1627733.0,-1.82,-1.9,0.09,2019
+sabondo01,domantas sabonis,2018-19,IND,Post Scorer,1838,74,C,22,1.79,0.7,1.09,5.00,1627734.0,0.91,0.45,0.46,2019
+baldwwa01,wade baldwin iv,2018-19,POR,Slasher,94,16,PG,22,-2.78,-2.24,-0.53,0.00,1627735.0,-1.98,-1.73,-0.24,2019
+beaslma01,malik beasley,2018-19,DEN,Movement Shooter,1879,81,SG,22,-1.01,0.38,-1.39,1.60,1627736.0,-0.56,0.42,-0.97,2019
+chrisma01,marquese chriss,2018-19,TOT,Stretch Big,499,43,PF,21,-1.6,-1.6,0.0,0.20,1627737.0,-1.26,-1.63,0.37,2019
+davisde01,deyonta davis,2018-19,ATL,Roll + Cut Big,118,9,C,22,-0.68,-1.36,0.67,0.10,1627738.0,-0.83,-1.33,0.49,2019
+dunnkr01,kris dunn,2018-19,CHI,Slasher,1389,46,PG,24,-1.73,-1.79,0.05,0.60,1627739.0,-1.02,-1.41,0.39,2019
+ellenhe01,henry ellenson,2018-19,TOT,Stationary Shooter,259,19,PF,22,-0.47,-0.71,0.24,0.30,1627740.0,-0.48,-0.84,0.36,2019
+hieldbu01,buddy hield,2018-19,SAC,Movement Shooter,2615,82,SG,26,-0.03,1.02,-1.05,4.00,1627741.0,0.06,1.45,-1.39,2019
+ingrabr01,brandon ingram,2018-19,LAL,Shot Creator,1760,52,SF,21,-0.68,-0.39,-0.29,1.90,1627742.0,-1.11,-0.89,-0.23,2019
+jacksde01,demetrius jackson,2018-19,PHI,Secondary Ball Handler,39,6,PG,24,-1.41,-1.12,-0.28,0.00,1627743.0,-1.51,-1.22,-0.3,2019
+jonesda03,damian jones,2018-19,GSW,Roll + Cut Big,410,24,C,23,-0.85,-1.15,0.3,0.40,1627745.0,-0.22,-1.32,1.1,2019
+labissk01,skal labissiere,2018-19,TOT,Versatile Big,176,22,PF,22,-1.49,-1.24,-0.25,0.10,1627746.0,-1.49,-1.56,0.06,2019
+leverca01,caris levert,2018-19,BRK,Shot Creator,1063,40,SF,24,0.42,0.53,-0.11,1.90,1627747.0,0.12,0.42,-0.3,2019
+makerth01,thon maker,2018-19,TOT,Stretch Big,972,64,C-PF,21,-0.82,-1.65,0.83,1.00,1627748.0,-0.39,-1.35,0.96,2019
+murraja01,jamal murray,2018-19,DEN,Primary Ball Handler,2447,75,PG,21,1.07,1.32,-0.25,5.50,1627750.0,0.86,1.26,-0.4,2019
+poeltja01,jakob poeltl,2018-19,SAS,Roll + Cut Big,1273,77,C,23,0.16,-0.48,0.64,2.10,1627751.0,0.34,-0.44,0.78,2019
+princta02,taurean prince,2018-19,ATL,Secondary Ball Handler,1552,55,SF,24,-1.76,-0.77,-1.0,0.60,1627752.0,-1.32,-0.55,-0.78,2019
+qizh01,zhou qi,2018-19,HOU,Roll + Cut Big,1,1,PF,23,-1.89,-1.35,-0.54,0.00,1627753.0,-1.87,-1.35,-0.52,2019
+ulisty01,tyler ulis,2018-19,CHI,Secondary Ball Handler,1,1,PG,23,-0.94,-1.18,0.24,0.00,1627755.0,-0.94,-1.17,0.22,2019
+bakerro01,ron baker,2018-19,TOT,Secondary Ball Handler,152,15,SG,25,-1.27,-1.95,0.68,0.10,1627758.0,-1.42,-1.64,0.22,2019
+brownja02,jaylen brown,2018-19,BOS,Stationary Shooter,1913,74,SG,22,-0.64,-0.96,0.32,2.10,1627759.0,-0.52,-0.41,-0.12,2019
+bembrde01,deandre' bembry,2018-19,ATL,Stationary Shooter,1931,82,SG,24,-1.74,-1.51,-0.23,0.80,1627761.0,-1.96,-2.04,0.08,2019
+brogdma01,malcolm brogdon,2018-19,MIL,Primary Ball Handler,1832,64,SG,26,1.75,1.4,0.35,4.90,1627763.0,1.59,1.57,0.02,2019
+diallch01,cheick diallo,2018-19,NOP,Roll + Cut Big,896,64,PF,22,-0.12,-0.75,0.63,1.30,1627767.0,-0.1,-1.21,1.11,2019
+hamilda02,daniel hamilton,2018-19,ATL,Secondary Ball Handler,204,19,SG,23,-1.79,-1.81,0.02,0.10,1627772.0,-1.86,-1.81,-0.05,2019
+laymaja01,jake layman,2018-19,POR,Athletic Finisher,1327,71,SF,24,-0.96,-0.63,-0.34,1.20,1627774.0,-0.67,-0.4,-0.27,2019
+mccawpa01,patrick mccaw,2018-19,TOT,Movement Shooter,397,29,SG,23,-2.97,-2.7,-0.27,-0.20,1627775.0,-1.98,-2.28,0.31,2019
+niangge01,georges niang,2018-19,UTA,Stationary Shooter,516,59,PF,25,-1.39,-0.01,-1.38,0.30,1627777.0,-0.95,-0.21,-0.74,2019
+paytoga02,gary payton ii,2018-19,WAS,Stretch Big,16,3,PG,26,-1.16,-1.23,0.07,0.00,1627780.0,-1.17,-1.26,0.09,2019
+richama01,malachi richardson,2018-19,TOR,Movement Shooter,103,22,SG,23,-2.43,-1.93,-0.5,0.00,1627781.0,-2.31,-1.78,-0.54,2019
+seldewa01,wayne selden,2018-19,TOT,Stationary Shooter,1439,75,SG,24,-3.13,-2.0,-1.12,-0.70,1627782.0,-3.08,-2.15,-0.94,2019
+siakapa01,pascal siakam,2018-19,TOR,Shot Creator,2548,80,PF,24,2.11,0.76,1.35,7.50,1627783.0,2.01,1.07,0.94,2019
+willitr02,troy williams,2018-19,SAC,Movement Shooter,312,21,SF,24,-1.99,-1.79,-0.2,0.10,1627786.0,-1.79,-1.81,0.02,2019
+korkmfu01,furkan korkmaz,2018-19,PHI,Movement Shooter,679,48,SG,21,-0.32,0.0,-0.32,0.90,1627788.0,-0.9,-0.38,-0.52,2019
+luwawti01,timothe luwawu-cabarrot,2018-19,TOT,Stationary Shooter,669,50,SF,23,-2.24,-1.88,-0.36,0.00,1627789.0,-1.9,-1.66,-0.24,2019
+zizican01,ante zizic,2018-19,CLE,Post Scorer,1082,59,C,22,-1.26,-1.54,0.28,0.80,1627790.0,-1.58,-1.11,-0.46,2019
+ferreyo01,yogi ferrell,2018-19,SAC,Secondary Ball Handler,1067,71,PG,25,-0.51,0.12,-0.63,1.30,1627812.0,-1.19,-0.36,-0.83,2019
+leeda03,damion lee,2018-19,GSW,Off Screen Shooter,375,32,SG,26,-1.97,-0.94,-1.03,0.10,1627814.0,-1.86,-0.74,-1.11,2019
+poythal01,alex poythress,2018-19,ATL,Stretch Big,305,21,PF,25,-1.72,-1.9,0.18,0.10,1627816.0,-1.31,-1.36,0.05,2019
+wallaty01,tyrone wallace,2018-19,LAC,Athletic Finisher,628,62,PG,24,-2.55,-2.26,-0.3,-0.10,1627820.0,-3.22,-2.9,-0.31,2019
+hernaju01,juancho hernangomez,2018-19,DEN,Athletic Finisher,1358,70,PF,23,-1.34,-0.97,-0.37,0.90,1627823.0,-1.08,-1.14,0.06,2019
+yabusgu01,guerschon yabusele,2018-19,BOS,Versatile Big,251,41,PF,23,-1.86,-1.29,-0.57,0.10,1627824.0,-1.89,-1.43,-0.45,2019
+zubaciv01,ivica zubac,2018-19,TOT,Roll + Cut Big,1039,59,C,21,0.66,-0.79,1.45,2.10,1627826.0,0.28,-0.51,0.79,2019
+finnedo01,dorian finney-smith,2018-19,DAL,Athletic Finisher,1985,81,SF,25,-0.71,-0.49,-0.22,2.10,1627827.0,-1.45,-1.42,-0.04,2019
+vanvlfr01,fred vanvleet,2018-19,TOR,Primary Ball Handler,1760,64,PG,24,0.8,1.03,-0.23,3.60,1627832.0,0.54,0.74,-0.2,2019
+naderab01,abdel nader,2018-19,OKC,Stationary Shooter,694,61,SF,25,-3.35,-2.62,-0.72,-0.40,1627846.0,-2.12,-2.02,-0.1,2019
+arcidry01,ryan arcidiacono,2018-19,CHI,Primary Ball Handler,1961,81,PG,24,-0.79,-0.29,-0.5,2.00,1627853.0,-2.06,-1.26,-0.8,2019
+forbebr01,bryn forbes,2018-19,SAS,Secondary Ball Handler,2293,82,SG,25,-1.25,-0.66,-0.59,1.60,1627854.0,-0.55,0.09,-0.64,2019
+whiteok01,okaro white,2018-19,WAS,Stationary Shooter,6,3,PF,26,-1.29,-1.35,0.06,0.00,1627855.0,-1.26,-1.33,0.07,2019
+houseda01,danuel house jr.,2018-19,HOU,Stationary Shooter,979,39,SF,25,-1.0,-0.16,-0.84,0.90,1627863.0,-1.22,-0.27,-0.95,2019
+jonesja04,jalen jones,2018-19,CLE,Stationary Shooter,214,16,SF,25,-0.79,-1.23,0.44,0.20,1627883.0,-0.75,-1.13,0.38,2019
+jonesde02,derrick jones jr.,2018-19,MIA,Stretch Big,1154,60,SF,21,-0.41,-1.21,0.8,1.50,1627884.0,-0.46,-1.19,0.72,2019
+harrish01,shaquille harrison,2018-19,CHI,Slasher,1430,73,SG,25,-2.53,-2.09,-0.44,-0.20,1627885.0,-1.3,-1.9,0.6,2019
+carusal01,alex caruso,2018-19,LAL,Secondary Ball Handler,531,25,PG,24,0.07,0.15,-0.08,0.80,1627936.0,-0.71,-0.48,-0.23,2019
+nwabada01,david nwaba,2018-19,CLE,Athletic Finisher,984,51,SF,26,0.36,-0.26,0.62,1.80,1628021.0,-1.13,-1.27,0.14,2019
+mckinal01,alfonzo mckinnie,2018-19,GSW,Athletic Finisher,1003,72,SF,26,-2.56,-1.59,-0.97,-0.10,1628035.0,-1.95,-1.32,-0.63,2019
+loydjo01,jordan loyd,2018-19,TOR,Secondary Ball Handler,55,12,PG,25,-1.81,-1.34,-0.47,0.00,1628070.0,-1.59,-1.19,-0.4,2019
+creekmi01,mitchell creek,2018-19,TOT,Roll + Cut Big,47,5,SF,26,-0.98,-1.08,0.1,0.00,1628249.0,-1.02,-1.19,0.17,2019
+fultzma01,markelle fultz,2018-19,PHI,Slasher,427,19,SG,20,-2.17,-2.09,-0.08,0.00,1628365.0,-1.94,-1.72,-0.23,2019
+balllo01,lonzo ball,2018-19,LAL,Secondary Ball Handler,1423,47,PG,21,0.42,-1.08,1.5,2.60,1628366.0,-0.03,-0.67,0.65,2019
+jacksjo02,josh jackson,2018-19,PHO,Secondary Ball Handler,1988,79,SG,21,-3.06,-2.57,-0.5,-0.90,1628367.0,-3.44,-2.2,-1.24,2019
+foxde01,de'aaron fox,2018-19,SAC,Slasher,2546,81,PG,21,0.66,0.89,-0.23,5.00,1628368.0,1.13,0.97,0.16,2019
+tatumja01,jayson tatum,2018-19,BOS,Shot Creator,2455,79,SF,20,1.88,0.27,1.61,6.80,1628369.0,1.16,0.16,1.0,2019
+monkma01,malik monk,2018-19,CHO,Movement Shooter,1258,73,SG,20,-1.61,-0.1,-1.51,0.60,1628370.0,-1.45,-0.21,-1.23,2019
+isaacjo01,jonathan isaac,2018-19,ORL,Athletic Finisher,1996,75,PF,21,0.32,-1.32,1.64,3.50,1628371.0,0.36,-1.23,1.59,2019
+smithde03,dennis smith jr.,2018-19,TOT,Secondary Ball Handler,1508,53,PG,21,-1.56,-1.58,0.02,0.80,1628372.0,-0.77,-0.55,-0.22,2019
+ntilila01,frank ntilikina,2018-19,NYK,Secondary Ball Handler,904,43,PG,20,-2.78,-2.58,-0.2,-0.30,1628373.0,-3.05,-2.68,-0.38,2019
+markkla01,lauri markkanen,2018-19,CHI,Stretch Big,1682,52,PF,21,0.04,0.88,-0.84,2.60,1628374.0,0.24,0.48,-0.24,2019
+mitchdo01,donovan mitchell,2018-19,UTA,Primary Ball Handler,2598,77,SG,22,1.72,1.42,0.3,7.00,1628378.0,1.65,1.6,0.05,2019
+kennalu01,luke kennard,2018-19,DET,Secondary Ball Handler,1437,63,SG,22,-1.31,-0.35,-0.96,1.00,1628379.0,-1.16,-0.54,-0.62,2019
+colliza01,zach collins,2018-19,POR,Stretch Big,1356,77,C,21,-1.08,-1.42,0.34,1.10,1628380.0,-0.65,-1.06,0.41,2019
+collijo01,john collins,2018-19,ATL,Roll + Cut Big,1828,61,PF,21,0.42,2.05,-1.63,3.30,1628381.0,0.19,1.36,-1.17,2019
+jacksju01,justin jackson,2018-19,TOT,Movement Shooter,1613,81,SF,23,-1.49,-0.44,-1.05,0.90,1628382.0,-1.59,-0.81,-0.78,2019
+pattoju01,justin patton,2018-19,PHI,Stretch Big,21,3,C,21,-1.57,-1.38,-0.19,0.00,1628383.0,-1.57,-1.4,-0.17,2019
+anunoog01,og anunoby,2018-19,TOR,Athletic Finisher,1352,67,SF,21,-2.39,-1.72,-0.67,0.00,1628384.0,-1.67,-1.48,-0.2,2019
+gilesha01,harry giles iii,2018-19,SAC,Post Scorer,820,58,PF,20,-2.17,-1.85,-0.33,0.10,1628385.0,-1.73,-1.83,0.11,2019
+allenja01,jarrett allen,2018-19,BRK,Roll + Cut Big,2096,80,C,20,1.33,-0.38,1.72,5.10,1628386.0,1.76,-0.26,2.02,2019
+anigbik01,ike anigbogu,2018-19,IND,Roll + Cut Big,6,3,C,20,-1.89,-1.51,-0.38,0.00,1628387.0,-1.8,-1.47,-0.33,2019
+leaftj01,t.j. leaf,2018-19,IND,Roll + Cut Big,522,58,PF,21,-0.72,-0.45,-0.27,0.60,1628388.0,-1.02,-0.77,-0.25,2019
+adebaba01,bam adebayo,2018-19,MIA,Roll + Cut Big,1913,82,C,21,1.25,-0.84,2.09,4.50,1628389.0,0.79,-0.87,1.66,2019
+fergute01,terrance ferguson,2018-19,OKC,Stationary Shooter,1931,74,SG,20,-2.56,-2.14,-0.43,-0.30,1628390.0,-2.06,-2.09,0.02,2019
+wilsodj01,d.j. wilson,2018-19,MIL,Stretch Big,882,48,PF,22,-0.84,-1.61,0.77,0.90,1628391.0,-0.91,-1.27,0.36,2019
+harteis01,isaiah hartenstein,2018-19,HOU,Roll + Cut Big,221,28,PF,20,-1.95,-2.12,0.17,0.10,1628392.0,-2.17,-2.32,0.15,2019
+evansja01,jawun evans,2018-19,TOT,Slasher,64,8,PG,22,-1.84,-1.66,-0.19,0.00,1628393.0,-1.65,-1.58,-0.07,2019
+belljo01,jordan bell,2018-19,GSW,Roll + Cut Big,788,68,C,24,-1.9,-2.17,0.27,0.20,1628395.0,-1.15,-2.1,0.95,2019
+bradlto01,tony bradley,2018-19,UTA,Roll + Cut Big,36,3,C,21,-1.83,-1.37,-0.46,0.00,1628396.0,-1.65,-1.33,-0.32,2019
+rabbiv01,ivan rabb,2018-19,MEM,Roll + Cut Big,721,49,PF,21,-1.35,-1.28,-0.07,0.50,1628397.0,-1.06,-1.13,0.07,2019
+kuzmaky01,kyle kuzma,2018-19,LAL,Movement Shooter,2314,70,PF,23,0.52,0.6,-0.07,4.40,1628398.0,-0.61,0.03,-0.64,2019
+lydonty01,tyler lydon,2018-19,DEN,Stretch Big,94,25,PF,22,-2.02,-1.65,-0.38,0.00,1628399.0,-1.95,-1.78,-0.17,2019
+ojelese01,semi ojeleye,2018-19,BOS,Stationary Shooter,594,56,PF,24,-2.38,-1.51,-0.87,0.00,1628400.0,-2.6,-1.6,-1.0,2019
+whitede01,derrick white,2018-19,SAS,Slasher,1728,67,PG,24,1.45,-0.09,1.54,4.30,1628401.0,0.57,-0.25,0.82,2019
+jacksfr01,frank jackson,2018-19,NOP,Movement Shooter,1169,61,PG,20,-2.87,-1.28,-1.59,-0.40,1628402.0,-2.81,-1.33,-1.48,2019
+swanica01,caleb swanigan,2018-19,TOT,Post Scorer,178,21,PF,21,-3.06,-2.88,-0.18,-0.10,1628403.0,-2.19,-2.23,0.04,2019
+hartjo01,josh hart,2018-19,LAL,Movement Shooter,1715,67,SG,23,-1.19,-1.9,0.72,1.30,1628404.0,-1.39,-1.81,0.41,2019
+motlejo01,johnathan motley,2018-19,LAC,Roll + Cut Big,156,22,PF,23,-1.36,-0.75,-0.61,0.10,1628405.0,-0.88,-0.71,-0.17,2019
+bacondw01,dwayne bacon,2018-19,CHO,Secondary Ball Handler,759,43,SG,23,-1.94,-1.15,-0.79,0.20,1628407.0,-1.83,-1.04,-0.79,2019
+doziepj01,pj dozier,2018-19,BOS,Athletic Finisher,51,6,SG,22,-1.49,-1.29,-0.2,0.00,1628408.0,-1.78,-1.42,-0.36,2019
+sumneed01,edmond sumner,2018-19,IND,Athletic Finisher,210,23,PG,23,-2.62,-2.2,-0.43,0.00,1628410.0,-2.28,-2.01,-0.27,2019
+iwundwe01,wes iwundu,2018-19,ORL,Stationary Shooter,1233,68,SF,24,-2.7,-2.67,-0.03,-0.30,1628411.0,-2.13,-2.47,0.34,2019
+masonfr01,frank mason,2018-19,SAC,Secondary Ball Handler,435,38,PG,24,-1.71,-0.61,-1.1,0.20,1628412.0,-1.23,-0.41,-0.81,2019
+boldejo01,jonah bolden,2018-19,PHI,Athletic Finisher,639,44,PF,23,-0.47,-1.04,0.58,0.80,1628413.0,-0.49,-1.46,0.96,2019
+thornsi01,sindarius thornwell,2018-19,LAC,Athletic Finisher,313,64,SG,24,-2.92,-3.13,0.22,-0.10,1628414.0,-2.69,-3.1,0.41,2019
+brookdi01,dillon brooks,2018-19,MEM,Movement Shooter,330,18,SF,23,-2.37,-1.8,-0.57,0.00,1628415.0,-2.94,-2.13,-0.81,2019
+dorsety01,tyler dorsey,2018-19,TOT,Movement Shooter,698,48,SG,22,-1.24,-0.33,-0.92,0.50,1628416.0,-1.42,-0.52,-0.9,2019
+blossja01,jaron blossomgame,2018-19,CLE,Stretch Big,439,27,SF,25,-1.51,-1.77,0.26,0.20,1628417.0,-1.67,-1.92,0.25,2019
+bryanth01,thomas bryant,2018-19,WAS,Roll + Cut Big,1496,72,C,21,1.27,0.78,0.49,3.60,1628418.0,1.19,0.74,0.46,2019
+morrimo01,monte morris,2018-19,DEN,Primary Ball Handler,1970,82,PG,23,-0.32,1.03,-1.35,2.60,1628420.0,0.31,0.84,-0.53,2019
+robinde01,devin robinson,2018-19,WAS,Athletic Finisher,95,7,SF,23,-0.98,-1.07,0.09,0.10,1628421.0,-0.86,-1.06,0.2,2019
+dotsoda01,damyean dotson,2018-19,NYK,Movement Shooter,2004,73,SG,24,-2.42,-1.28,-1.14,-0.10,1628422.0,-2.65,-1.37,-1.28,2019
+simmoko01,kobi simmons,2018-19,CLE,Secondary Ball Handler,2,1,PG,21,-0.5,-1.15,0.65,0.00,1628424.0,-0.51,-1.15,0.64,2019
+brownst02,sterling brown,2018-19,MIL,Stationary Shooter,1034,58,SG,23,-2.72,-2.04,-0.68,-0.30,1628425.0,-1.2,-0.97,-0.23,2019
+reedda01,davon reed,2018-19,IND,Athletic Finisher,47,10,SG,23,-1.69,-1.47,-0.22,0.00,1628432.0,-1.98,-1.6,-0.38,2019
+kornelu01,luke kornet,2018-19,NYK,Stretch Big,784,46,PF,23,0.7,-0.52,1.22,1.60,1628436.0,0.64,0.07,0.57,2019
+hicksis01,isaiah hicks,2018-19,NYK,Roll + Cut Big,32,3,PF,24,-0.66,-1.17,0.51,0.00,1628439.0,-0.72,-1.15,0.43,2019
+allenka01,kadeem allen,2018-19,NYK,Slasher,416,19,PG,26,-0.18,0.46,-0.64,0.60,1628443.0,0.05,0.25,-0.2,2019
+bouchch01,chris boucher,2018-19,TOR,Stretch Big,163,28,PF,26,-0.56,-0.63,0.07,0.20,1628449.0,-0.16,-0.75,0.59,2019
+teodomi01,milos teodosic,2018-19,LAC,Secondary Ball Handler,150,15,PG,31,-1.98,-1.23,-0.75,0.00,1628462.0,-1.86,-1.4,-0.46,2019
+cavanty01,tyler cavanaugh,2018-19,UTA,Athletic Finisher,39,11,PF,24,-2.06,-1.49,-0.56,0.00,1628463.0,-1.81,-1.43,-0.38,2019
+theisda01,daniel theis,2018-19,BOS,Stretch Big,908,66,C,26,0.19,-0.08,0.27,1.50,1628464.0,-0.08,-0.49,0.41,2019
+klebima01,maxi kleber,2018-19,DAL,Stretch Big,1502,71,PF,27,1.05,-0.38,1.43,3.40,1628467.0,-0.16,-1.12,0.95,2019
+blakean01,antonio blakeney,2018-19,CHI,Slasher,829,57,SG,22,-3.38,-1.68,-1.7,-0.60,1628469.0,-2.87,-1.54,-1.33,2019
+craigto01,torrey craig,2018-19,DEN,Athletic Finisher,1503,75,SF,28,-0.51,-0.42,-0.08,1.80,1628470.0,-1.16,-1.55,0.39,2019
+caupatr01,troy caupain,2018-19,ORL,Secondary Ball Handler,16,4,PG,23,-1.25,-1.29,0.04,0.00,1628505.0,-1.28,-1.37,0.09,2019
+mitrona01,naz mitrou-long,2018-19,UTA,Secondary Ball Handler,84,14,SG,25,-2.42,-1.6,-0.82,0.00,1628513.0,-2.09,-1.6,-0.49,2019
+briscis01,isaiah briscoe,2018-19,ORL,Secondary Ball Handler,559,39,PG,22,-2.92,-2.7,-0.22,-0.20,1628515.0,-2.63,-2.6,-0.03,2019
+jeffeam01,amile jefferson,2018-19,ORL,Roll + Cut Big,68,12,PF,25,-0.92,-1.0,0.08,0.10,1628518.0,-1.07,-1.39,0.32,2019
+morrija01,jaylen morris,2018-19,MIL,Stationary Shooter,29,4,SG,23,-1.66,-1.47,-0.18,0.00,1628537.0,-1.76,-1.39,-0.37,2019
+hannadu01,dusty hannahs,2018-19,MEM,Movement Shooter,26,2,SG,25,-1.57,-1.45,-0.11,0.00,1628605.0,-1.62,-1.53,-0.09,2019
+garrebi01,billy garrett,2018-19,NYK,Secondary Ball Handler,63,4,SG,24,-0.93,-1.19,0.26,0.10,1628656.0,-0.99,-1.16,0.17,2019
+mccalta01,tahjere mccall,2018-19,BRK,Off Screen Shooter,8,1,SG,24,-0.86,-1.09,0.23,0.00,1628769.0,-1.01,-1.18,0.17,2019
+alkinra01,rawle alkins,2018-19,CHI,Athletic Finisher,120,10,SG,21,-1.33,-1.18,-0.15,0.10,1628959.0,-1.41,-1.37,-0.04,2019
+allengr01,grayson allen,2018-19,UTA,Secondary Ball Handler,416,38,SG,23,-4.23,-1.36,-2.87,-0.50,1628960.0,-2.6,-0.89,-1.71,2019
+antetko01,kostas antetokounmpo,2018-19,DAL,Post Scorer,11,2,PF,21,-1.12,-1.41,0.3,0.00,1628961.0,-1.08,-1.34,0.26,2019
+baglema01,marvin bagley iii,2018-19,SAC,Post Scorer,1567,62,PF,19,-1.51,-0.18,-1.33,0.80,1628963.0,-0.53,-0.01,-0.52,2019
+bambamo01,mo bamba,2018-19,ORL,Stretch Big,766,47,C,20,-1.31,-3.08,1.77,0.50,1628964.0,0.26,-1.63,1.89,2019
+bateske01,keita bates-diop,2018-19,MIN,Athletic Finisher,503,30,SF,23,-2.14,-1.59,-0.54,0.10,1628966.0,-1.82,-2.01,0.19,2019
+bridgmi01,mikal bridges,2018-19,PHO,Movement Shooter,2417,82,SF,22,-0.43,-0.49,0.05,3.00,1628969.0,-2.57,-1.71,-0.86,2019
+bridgmi02,miles bridges,2018-19,CHO,Stationary Shooter,1696,80,SF,20,-1.04,-0.72,-0.31,1.40,1628970.0,-0.83,-1.03,0.2,2019
+brownbr01,bruce brown,2018-19,DET,Athletic Finisher,1449,74,SG,22,-1.95,-3.0,1.04,0.40,1628971.0,-2.02,-2.91,0.89,2019
+browntr01,troy brown jr.,2018-19,WAS,Stationary Shooter,730,52,SF,19,-1.43,-0.39,-1.04,0.40,1628972.0,-1.62,-1.14,-0.48,2019
+brunsja01,jalen brunson,2018-19,DAL,Primary Ball Handler,1591,73,PG,22,-0.6,0.35,-0.95,1.80,1628973.0,-1.25,-0.39,-0.86,2019
+carteje01,jevon carter,2018-19,MEM,Secondary Ball Handler,577,39,PG,23,-1.7,-1.62,-0.08,0.20,1628975.0,-2.1,-1.95,-0.15,2019
+cartewe01,wendell carter jr.,2018-19,CHI,Post Scorer,1110,44,C,19,-0.53,-2.55,2.02,1.30,1628976.0,-0.31,-1.53,1.21,2019
+diallha01,hamidou diallo,2018-19,OKC,Athletic Finisher,526,51,SG,20,-2.77,-1.92,-0.85,-0.10,1628977.0,-2.44,-2.23,-0.21,2019
+divindo01,donte divincenzo,2018-19,MIL,Stationary Shooter,411,27,SG,22,-2.08,-1.45,-0.63,0.10,1628978.0,-1.92,-1.4,-0.53,2019
+duvaltr01,trevon duval,2018-19,MIL,Secondary Ball Handler,6,3,PG,20,-1.75,-1.34,-0.41,0.00,1628979.0,-1.7,-1.32,-0.38,2019
+evansja02,jacob evans,2018-19,GSW,Stationary Shooter,204,30,SG,21,-3.73,-2.9,-0.83,-0.20,1628980.0,-3.28,-2.66,-0.61,2019
+frazime01,melvin frazier jr.,2018-19,ORL,Off Screen Shooter,44,10,SG,22,-1.65,-1.51,-0.14,0.00,1628982.0,-1.63,-1.6,-0.03,2019
+gilgesh01,shai gilgeous-alexander,2018-19,LAC,Slasher,2174,82,PG,20,-1.38,-1.72,0.34,1.40,1628983.0,-0.59,-0.61,0.02,2019
+grahade01,devonte' graham,2018-19,CHO,Secondary Ball Handler,676,46,PG,23,-1.64,-0.47,-1.18,0.30,1628984.0,-1.24,-0.54,-0.7,2019
+holidaa01,aaron holiday,2018-19,IND,Secondary Ball Handler,646,50,PG,22,-1.11,-0.52,-0.59,0.50,1628988.0,-1.26,-0.61,-0.64,2019
+huertke01,kevin huerter,2018-19,ATL,Secondary Ball Handler,2049,75,SG,20,-1.45,-0.75,-0.7,1.20,1628989.0,-2.25,-1.15,-1.11,2019
+hutchch01,chandler hutchison,2018-19,CHI,Athletic Finisher,895,44,SF,22,-3.04,-2.97,-0.06,-0.40,1628990.0,-2.6,-2.56,-0.04,2019
+jacksja02,jaren jackson jr.,2018-19,MEM,Post Scorer,1515,58,PF,19,-0.51,-1.92,1.41,1.80,1628991.0,0.17,-1.02,1.19,2019
+johnsal02,alize johnson,2018-19,IND,Roll + Cut Big,64,14,PF,22,-2.13,-1.69,-0.43,0.00,1628993.0,-1.93,-1.79,-0.14,2019
+kingge03,george king,2018-19,PHO,Low Minutes,6,1,SF,25,-1.22,-1.09,-0.14,0.00,1628994.0,-1.2,-1.14,-0.07,2019
+knoxke01,kevin knox ii,2018-19,NYK,Stationary Shooter,2158,75,PF,19,-4.83,-2.61,-2.22,-3.40,1628995.0,-3.54,-2.07,-1.47,2019
+matenya01,yante maten,2018-19,MIA,Athletic Finisher,13,2,PF,22,-1.23,-1.33,0.09,0.00,1628999.0,-1.24,-1.34,0.1,2019
+meltode01,de'anthony melton,2018-19,PHO,Secondary Ball Handler,984,50,PG,20,-1.36,-2.09,0.74,0.60,1629001.0,-1.61,-2.12,0.5,2019
+metuch01,chimezie metu,2018-19,SAS,Post Scorer,145,29,PF,21,-2.87,-2.68,-0.19,0.00,1629002.0,-2.19,-2.26,0.07,2019
+miltosh01,shake milton,2018-19,PHI,Movement Shooter,268,20,SG,22,-1.71,-0.85,-0.86,0.10,1629003.0,-1.9,-1.57,-0.33,2019
+mykhasv01,svi mykhailiuk,2018-19,TOT,Off Screen Shooter,440,42,SF,21,-2.42,-1.66,-0.76,0.00,1629004.0,-2.74,-1.75,-0.99,2019
+okogijo01,josh okogie,2018-19,MIN,Stationary Shooter,1757,74,SG,20,-0.07,-0.77,0.7,2.60,1629006.0,-1.42,-1.62,0.2,2019
+robinje01,jerome robinson,2018-19,LAC,Movement Shooter,321,33,SG,21,-2.64,-1.68,-0.96,-0.10,1629010.0,-2.38,-1.92,-0.46,2019
+robinmi01,mitchell robinson,2018-19,NYK,Roll + Cut Big,1360,66,C,20,1.66,-0.46,2.12,3.60,1629011.0,1.75,-1.03,2.78,2019
+sextoco01,collin sexton,2018-19,CLE,Slasher,2605,82,PG,20,-4.28,-1.2,-3.08,-3.20,1629012.0,-4.05,-1.08,-2.97,2019
+shamela01,landry shamet,2018-19,TOT,Off Screen Shooter,1802,79,SG,21,-1.84,-0.35,-1.49,0.60,1629013.0,-1.27,-0.1,-1.17,2019
+simonan01,anfernee simons,2018-19,POR,Secondary Ball Handler,141,20,SG,19,-2.42,-1.22,-1.2,0.00,1629014.0,-1.66,-0.94,-0.73,2019
+smithzh01,zhaire smith,2018-19,PHI,Movement Shooter,111,6,SG,19,-1.41,-0.91,-0.5,0.10,1629015.0,-1.7,-1.33,-0.37,2019
+spellom01,omari spellman,2018-19,ATL,Stretch Big,805,46,PF,21,-2.05,-1.27,-0.78,0.20,1629016.0,-1.08,-0.9,-0.18,2019
+thomakh01,khyri thomas,2018-19,DET,Movement Shooter,195,26,SG,22,-1.98,-2.05,0.07,0.00,1629017.0,-1.79,-1.88,0.08,2019
+trentga02,gary trent jr.,2018-19,POR,Secondary Ball Handler,111,15,SG,20,-2.06,-1.49,-0.56,0.00,1629018.0,-2.05,-1.65,-0.4,2019
+trieral01,allonzo trier,2018-19,NYK,Secondary Ball Handler,1459,64,SG,23,-3.53,-1.58,-1.95,-1.10,1629019.0,-2.92,-1.51,-1.42,2019
+vandeja01,jarred vanderbilt,2018-19,DEN,Roll + Cut Big,69,17,PF,19,-1.66,-1.9,0.24,0.00,1629020.0,-1.77,-1.8,0.03,2019
+wagnemo01,moritz wagner,2018-19,LAL,Stretch Big,446,43,C,21,-1.68,-1.71,0.03,0.20,1629021.0,-1.48,-1.39,-0.09,2019
+walkelo01,lonnie walker iv,2018-19,SAS,Secondary Ball Handler,118,17,SG,20,-2.36,-2.03,-0.33,0.00,1629022.0,-1.64,-1.68,0.04,2019
+willike04,kenrich williams,2018-19,NOP,Stationary Shooter,1079,46,SF,24,-0.75,-1.18,0.44,1.10,1629026.0,-1.22,-1.51,0.3,2019
+youngtr01,trae young,2018-19,ATL,Primary Ball Handler,2503,81,PG,20,-1.71,1.61,-3.32,1.00,1629027.0,-0.52,1.52,-2.05,2019
+aytonde01,deandre ayton,2018-19,PHO,Post Scorer,2183,71,C,20,-0.88,-0.65,-0.23,2.10,1629028.0,-1.06,-0.4,-0.66,2019
+doncilu01,luka doncic,2018-19,DAL,Shot Creator,2318,72,SG,19,1.63,2.13,-0.51,6.10,1629029.0,2.24,2.34,-0.1,2019
+pinsoth01,theo pinson,2018-19,BRK,Secondary Ball Handler,211,18,SG,23,-1.27,-1.03,-0.24,0.10,1629033.0,-1.36,-1.13,-0.23,2019
+spaldra01,ray spalding,2018-19,TOT,Roll + Cut Big,148,14,PF,21,-0.86,-1.46,0.6,0.10,1629034.0,-1.0,-1.44,0.44,2019
+colsobo01,bonzie colson,2018-19,MIL,Athletic Finisher,98,8,SF,23,-1.57,-1.12,-0.45,0.00,1629045.0,-1.66,-1.3,-0.36,2019
+edwarvi01,vincent edwards,2018-19,HOU,Movement Shooter,16,2,SF,22,-1.91,-1.38,-0.53,0.00,1629053.0,-1.96,-1.41,-0.55,2019
+grantdo01,donte grantham,2018-19,OKC,Low Minutes,2,3,SF,23,-1.53,-1.28,-0.25,0.00,1629055.0,-1.6,-1.32,-0.28,2019
+williro04,robert williams iii,2018-19,BOS,Roll + Cut Big,283,32,C,21,0.08,-2.0,2.08,0.50,1629057.0,0.09,-1.96,2.04,2019
+musadz01,dzanan musa,2018-19,BRK,Secondary Ball Handler,39,9,SG,19,-0.91,-0.98,0.07,0.00,1629058.0,-1.15,-1.23,0.07,2019
+okoboel01,elie okobo,2018-19,PHO,Primary Ball Handler,958,53,PG,21,-3.24,-2.3,-0.94,-0.60,1629059.0,-3.18,-2.03,-1.15,2019
+adelde01,deng adel,2018-19,CLE,Stationary Shooter,194,19,SF,21,-2.21,-2.57,0.36,0.00,1629061.0,-1.89,-2.3,0.42,2019
+kurucro01,rodions kurucs,2018-19,BRK,Athletic Finisher,1294,63,SF,20,-0.93,-1.57,0.63,1.20,1629066.0,-1.16,-1.46,0.3,2019
+bongais01,isaac bonga,2018-19,LAL,Athletic Finisher,120,22,PG,19,-1.0,-1.76,0.77,0.10,1629067.0,-1.43,-1.8,0.37,2019
+davisty01,tyler davis,2018-19,OKC,Roll + Cut Big,1,1,C,21,-1.57,-1.31,-0.26,0.00,1629093.0,-1.59,-1.31,-0.28,2019
+derrima01,marcus derrickson,2018-19,GSW,Versatile Big,67,11,PF,22,-1.96,-1.25,-0.71,0.00,1629094.0,-1.82,-1.04,-0.77,2019
+sampsbr01,brandon sampson,2018-19,CHI,Stationary Shooter,214,14,SG,21,-1.69,-1.34,-0.35,0.10,1629102.0,-1.79,-1.66,-0.14,2019
+clarkga01,gary clark,2018-19,HOU,Stationary Shooter,641,51,PF,24,-1.45,-1.03,-0.42,0.40,1629109.0,-1.21,-1.48,0.27,2019
+delgaan01,angel delgado,2018-19,LAC,Roll + Cut Big,15,2,C,24,-1.43,-1.45,0.02,0.00,1629116.0,-1.48,-1.37,-0.11,2019
+welshth01,thomas welsh,2018-19,DEN,Stretch Big,36,11,C,22,-1.68,-1.46,-0.22,0.00,1629118.0,-1.67,-1.52,-0.16,2019
+adamsja01,jaylen adams,2018-19,ATL,Secondary Ball Handler,428,34,PG,22,-2.62,-2.19,-0.43,-0.10,1629121.0,-2.04,-1.74,-0.29,2019
+macurjp01,j.p. macura,2018-19,CHO,Athletic Finisher,17,2,SG,23,-1.24,-1.54,0.3,0.00,1629122.0,-1.4,-1.53,0.14,2019
+terreja01,jared terrell,2018-19,MIN,Secondary Ball Handler,111,14,SG,23,-2.56,-2.07,-0.49,0.00,1629123.0,-2.18,-1.91,-0.27,2019
+burtode02,deonte burton,2018-19,OKC,Stationary Shooter,240,32,SG,25,-2.11,-2.41,0.3,0.00,1629126.0,-2.47,-2.21,-0.26,2019
+robindu01,duncan robinson,2018-19,MIA,Movement Shooter,161,15,SF,24,-1.35,-1.05,-0.3,0.10,1629130.0,-1.6,-1.41,-0.19,2019
+maconda01,daryl macon,2018-19,DAL,Movement Shooter,90,8,SG,23,-1.42,-1.46,0.04,0.10,1629133.0,-1.41,-1.47,0.06,2019
+watanyu01,yuta watanabe,2018-19,MEM,Movement Shooter,174,15,SF,24,-1.95,-1.97,0.02,0.00,1629139.0,-2.59,-2.44,-0.15,2019
+willijo04,johnathan williams,2018-19,LAL,Roll + Cut Big,372,24,C,23,-0.31,-0.41,0.09,0.50,1629140.0,-1.27,-1.02,-0.25,2019
+chealjo01,joe chealey,2018-19,CHO,Slasher,8,1,PG,23,-1.37,-1.5,0.13,0.00,1629147.0,-1.37,-1.51,0.13,2019
+terryem01,emanuel terry,2018-19,TOT,Roll + Cut Big,23,3,PF,22,-1.07,-1.02,-0.05,0.00,1629150.0,-1.18,-1.17,-0.02,2019
+broekry01,ryan broekhoff,2018-19,DAL,Off Screen Shooter,454,42,SG,28,-1.25,-0.53,-0.72,0.30,1629151.0,-1.44,-0.74,-0.7,2019
+akoonde01,devaughn akoon-purcell,2018-19,DEN,Stationary Shooter,22,7,SG,25,-1.75,-1.57,-0.18,0.00,1629152.0,-1.78,-1.64,-0.14,2019
+loftoza01,zach lofton,2018-19,DET,Stationary Shooter,4,1,SG,26,-1.14,-1.4,0.26,0.00,1629155.0,-1.14,-1.39,0.25,2019
+goodwbr01,brandon goodwin,2018-19,DEN,Slasher,57,16,PG,23,-1.85,-1.47,-0.38,0.00,1629164.0,-1.83,-1.56,-0.28,2019
+johnsbj01,bj johnson,2018-19,TOT,Stationary Shooter,49,7,SF,23,-1.6,-1.41,-0.18,0.00,1629168.0,-1.12,-1.2,0.09,2019
+chiozch01,chris chiozza,2018-19,HOU,Stationary Shooter,33,7,PG,23,-2.11,-1.48,-0.63,0.00,1629185.0,-2.01,-1.49,-0.53,2019
+jonesje01,jemerrio jones,2018-19,LAL,Stretch Big,143,6,SF,23,-0.79,-1.55,0.76,0.10,1629203.0,-1.02,-1.56,0.54,2019
+eubandr01,drew eubanks,2018-19,SAS,Post Scorer,113,23,PF,21,-1.48,-1.68,0.2,0.10,1629234.0,-1.35,-1.67,0.32,2019
+reynoca01,cameron reynolds,2018-19,MIN,Movement Shooter,259,19,SG,23,-1.62,-1.01,-0.61,0.10,1629244.0,-1.62,-1.07,-0.55,2019
+highsha01,haywood highsmith,2018-19,PHI,Stationary Shooter,40,5,SF,22,-2.11,-1.5,-0.61,0.00,1629312.0,-1.72,-1.51,-0.21,2019
+humphis01,isaac humphries,2018-19,ATL,Stretch Big,56,5,C,21,-1.44,-1.5,0.07,0.00,1629353.0,-1.29,-1.41,0.12,2019
+bertada02,dairis bertans,2018-19,NOP,Off Screen Shooter,167,12,SG,29,-2.85,-2.07,-0.78,-0.10,1629541.0,-2.6,-1.95,-0.65,2019
