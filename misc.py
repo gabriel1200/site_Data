@@ -1,12 +1,14 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[9]:
+# In[5]:
 
 
 import pandas as pd
 from selenium import webdriver
 from bs4 import BeautifulSoup
+from pathlib import Path
+
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
@@ -83,29 +85,54 @@ def get_tables(url_list):
     return data
 
 
-# In[10]:
+# In[6]:
 
 
-#url_list = [url1]
-frames = get_tables(url_list)
+#url_list = [url1]#
+def get_multi(url_list):
+    for i in range(2013,2022):
+        
+        season = '&Season='+str(i)+'-'+str(i+1 - 2000)
+        year_url = [url+season for url in url_list]
+        frames = get_tables(year_url)
+
+ 
+        path = str(i+1)+'/playtype/'
+        output_dir = Path(path)
+        output_dir.mkdir(parents=True, exist_ok=True)
+        #terms = ['data/teampullup.csv','data/teamcatchshoot.csv','data/teamundersix.csv','data/teamiso.csv','data/teamtransition.csv']
+        terms = ['playtype/handoff.csv','playtype/iso.csv','playtype/trans.csv','playtype/bh.csv','playtype/rollman.csv','playtype/postup.csv','playtype/spotup.csv',
+                 'playtype/cut.csv','playtype/offscreen.csv','playtype/putback.csv','playtype/misc.csv','playtype/drives.csv']
+        terms = [ str(i+1)+'/'+t for t in terms]
+        
+        for i in range(len(terms)):
+            df = frames[i]
+            df.to_csv(terms[i],index = False)
 
 
-# In[11]:
+# In[7]:
+
+
+#get_multi(url_list)
+
+
+# In[8]:
 
 
 #terms = ['data/teampullup.csv','data/teamcatchshoot.csv','data/teamundersix.csv','data/teamiso.csv','data/teamtransition.csv']
+frames = get_tables(url_list)
 terms = ['playtype/handoff.csv','playtype/iso.csv','playtype/trans.csv','playtype/bh.csv','playtype/rollman.csv','playtype/postup.csv','playtype/spotup.csv',
          'playtype/cut.csv','playtype/offscreen.csv','playtype/putback.csv','playtype/misc.csv','playtype/drives.csv']
+
+
+# In[9]:
+
+
 for i in range(len(terms)):
     df = frames[i]
     df.to_csv(terms[i],index = False)
+    df.to_csv('2023/'+terms[i],index = False)
    
-
-
-# In[ ]:
-
-
-
 
 
 # In[ ]:

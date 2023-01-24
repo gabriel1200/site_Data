@@ -1,12 +1,14 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[ ]:
 
 
 import pandas as pd
 from selenium import webdriver
 from bs4 import BeautifulSoup
+from pathlib import Path
+
 
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -22,18 +24,10 @@ url3 = 'https://www.nba.com/stats/players/defense-dash-lt6?PerMode=Totals'
 url4 = 'https://www.nba.com/stats/teams/isolation?PerMode=Totals'
 url5 = 'https://www.nba.com/stats/players/transition?PerMode=Totals&dir=D&sort=POSS'
 '''
-cs ='https://www.nba.com/stats/players/catch-shoot?PerMode=Totals'
-pullup ='https://www.nba.com/stats/players/pullup?PerMode=Totals'
-
-touches = 'https://www.nba.com/stats/players/touches?PerMode=Totals'
-drives = 'https://www.nba.com/stats/players/drives?PerMode=Totals'
-
-wide_open = 'https://www.nba.com/stats/players/shots-closest-defender?CloseDefDistRange=6%2B+Feet+-+Wide+Open&PerMode=Totals'
-close = 'https://www.nba.com/stats/players/defense-dash-lt6?PerMode=Totals&dir=D&sort=PLUSMINUS'
-passing = 'https://www.nba.com/stats/players/passing?PerMode=Totals'
 
 
-# In[2]:
+
+# In[ ]:
 
 
 #url_list = [cs,pullup]
@@ -56,7 +50,7 @@ def get_ptables(url_list,path_list):
         print(url)
         
         driver.get(url)
-        element = WebDriverWait(driver, 10).until(
+        element = WebDriverWait(driver, 12).until(
         EC.presence_of_element_located((By.XPATH, xpath)))
         # Wait for the page to fully load
         driver.implicitly_wait(10)
@@ -93,9 +87,45 @@ def get_ptables(url_list,path_list):
     return data
 
 
-# In[3]:
+# In[ ]:
 
 
+def get_multi(url_list,path_list):
+    for i in range(2018,2022):
+        
+        season = '&Season='+str(i)+'-'+str(i+1 - 2000)
+        year_url = [url+season for url in url_list]
+        tables = get_ptables(year_url,path_list)
+        temp = tables[1]
+        temp.columns = temp.columns.droplevel() 
+        #temp = temp.drop(columns = ['Unnamed: 18_level_1','Unnamed: 19_level_1','Unnamed: 20_level_1', 'Unnamed: 21_level_1','Unnamed: 22_level_1'])
+        #temp
+        temp = temp.drop(columns = ['Unnamed: 18_level_1','Unnamed: 19_level_1','Unnamed: 20_level_1', 'Unnamed: 21_level_1','Unnamed: 22_level_1'])
+        tables[1] = temp
+
+        tables[1] = temp
+        path = str(i+1)+'/player_tracking/'
+        output_dir = Path(path)
+        output_dir.mkdir(parents=True, exist_ok=True)
+        name_list = ['drives','wide_open','close_6','touches','cs','pullup','passing']
+        for i in range(len(name_list)):
+            tables[i].to_csv(path+name_list[i]+'.csv',index = False)
+        
+        
+
+
+# In[ ]:
+
+
+cs ='https://www.nba.com/stats/players/catch-shoot?PerMode=Totals'
+pullup ='https://www.nba.com/stats/players/pullup?PerMode=Totals'
+
+touches = 'https://www.nba.com/stats/players/touches?PerMode=Totals'
+drives = 'https://www.nba.com/stats/players/drives?PerMode=Totals'
+
+wide_open = 'https://www.nba.com/stats/players/shots-closest-defender?CloseDefDistRange=6%2B+Feet+-+Wide+Open&PerMode=Totals'
+close = 'https://www.nba.com/stats/players/defense-dash-lt6?PerMode=Totals&dir=D&sort=PLUSMINUS'
+passing = 'https://www.nba.com/stats/players/passing?PerMode=Totals'
 url_list = [drives,wide_open,close,touches,cs,pullup,passing]
 name_list = ['drives','wide_open','close_6','touches','cs','pullup','passing']
 xpath = '//*[@id="__next"]/div[2]/div[2]/div[3]/section[2]/div/div[2]/div[2]/div[1]/div[3]/div/label/div/select'
@@ -103,13 +133,19 @@ xpath = '//*[@id="__next"]/div[2]/div[2]/div[3]/section[2]/div/div[2]/div[2]/div
 path_list = [xpath for i in range(len(url_list))]
 
 
-# In[4]:
+# In[ ]:
+
+
+#get_multi(url_list,path_list)
+
+
+# In[ ]:
 
 
 tables= get_ptables(url_list,path_list)
 
 
-# In[5]:
+# In[ ]:
 
 
 temp = tables[1]
@@ -120,13 +156,15 @@ temp = temp.drop(columns = ['Unnamed: 18_level_1','Unnamed: 19_level_1','Unnamed
 tables[1] = temp
 
 tables[1] = temp
-
-
-# In[6]:
-
-
 for i in range(len(name_list)):
     tables[i].to_csv('player_tracking/'+name_list[i]+'.csv',index = False)
+    tables[i].to_csv('2023/player_tracking/'+name_list[i]+'.csv',index = False)
+
+
+# In[ ]:
+
+
+
 
 
 # In[ ]:

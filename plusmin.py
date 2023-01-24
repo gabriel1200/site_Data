@@ -1,13 +1,14 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[3]:
 
 
 import pandas as pd
 from selenium import webdriver
 from bs4 import BeautifulSoup
 from selenium.webdriver.support.wait import WebDriverWait
+from pathlib import Path
 
 
 from selenium.webdriver.common.by import By
@@ -84,7 +85,7 @@ def get_tables(url_list):
 elem = get_tables([epm])
 
 
-# In[2]:
+# In[4]:
 
 
 df = elem[0]
@@ -95,7 +96,7 @@ df.to_csv('epm_temp.csv',index = False)
 df = pd.read_csv('epm_temp.csv')
 
 
-# In[3]:
+# In[5]:
 
 
 new_columns = []
@@ -120,13 +121,13 @@ df = df.round(2)
 df.columns = [x.lower() for x in df.columns]
 
 
-# In[4]:
+# In[6]:
 
 
 df.to_csv('epm/epm.csv',index = False)
 
 
-# In[2]:
+# In[7]:
 
 
 def scrape_LEBRON():
@@ -143,8 +144,32 @@ def scrape_LEBRON():
     return df
 df = scrape_LEBRON()
 
+
 df = df[df['Season'] =='2022-23']
 df.to_csv('lebron/lebron.csv',index = False)
+df.to_csv('2023/lebron/lebron.csv',index = False)
+
+
+# In[10]:
+
+
+'''
+for i in range(2013,2022):
+        
+
+
+ 
+    path = str(i+1)+'/lebron/'
+    output_dir = Path(path)
+    output_dir.mkdir(parents=True, exist_ok=True)
+    frame = df[df['year'] ==i+1]
+    frame.to_csv(str(i+1)+'/lebron/lebron.csv',index = False)'''
+
+
+# In[7]:
+
+
+df
 
 
 # In[ ]:

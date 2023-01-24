@@ -1,12 +1,15 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[5]:
+# In[ ]:
 
 
 import pandas as pd
 from selenium import webdriver
 from bs4 import BeautifulSoup
+
+from pathlib import Path
+
 
 # Step 1: Create a session and load the page
 def years(start_year, end_year):
@@ -48,7 +51,7 @@ def get_tables(url_list):
 frames = get_tables(url_list)
 
 
-# In[9]:
+# In[ ]:
 
 
 year = 2014
@@ -59,142 +62,142 @@ for df in frames:
     
 
 
-# In[12]:
+# In[ ]:
 
 
 drives = pd.concat(frames)
 
 
-# In[29]:
+# In[ ]:
 
 
 drives = drives[drives.year != 2020]
 
 
-# In[26]:
+# In[ ]:
 
 
 test = get_tables(['https://www.nba.com/stats/teams/drives?Season=2021-22&PerMode=PerGame'])
 
 
-# In[36]:
+# In[ ]:
 
 
 test['year'] = 2020
 
 
-# In[34]:
+# In[ ]:
 
 
 
 
 
-# In[39]:
+# In[ ]:
 
 
 drives = drives.dropna(subset = ['year'])
 drives
 
 
-# In[40]:
+# In[ ]:
 
 
 drives = pd.concat([drives,test])
 drives
 
 
-# In[41]:
+# In[ ]:
 
 
 drives['year'] = drives['year'].astype(int)
 
 
-# In[42]:
+# In[ ]:
 
 
 drives.to_csv('drives.csv',index = False)
 
 
-# In[43]:
+# In[ ]:
 
 
 df = pd.read_csv('drives.csv')
 
 
-# In[61]:
+# In[ ]:
 
 
 drives
 
 
-# In[64]:
+# In[ ]:
 
 
 by_year = drives.groupby('year').max()[['DRIVES','FTA','PF','PTS%','Team']]
 
 
-# In[65]:
+# In[ ]:
 
 
 by_year['ftperdrive'] = by_year['FTA']/by_year['DRIVES']
 
 
-# In[66]:
+# In[ ]:
 
 
 by_year
 
 
-# In[83]:
+# In[ ]:
 
 
 drives.groupby(["year","Team"]).max()["DRIVES"]
 
 
-# In[86]:
+# In[ ]:
 
 
 drives.groupby(['year','DRIVES']).head(1)
 drives.columns
 
 
-# In[85]:
+# In[ ]:
 
 
 drives.sort_values(by ='DRIVES',ascending = False)
 
 
-# In[88]:
+# In[ ]:
 
 
 drives = drives.drop(columns = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs','Fri', 'Sat'])
 
 
-# In[91]:
+# In[ ]:
 
 
 drives = drives.sort_values(by = 'DRIVES',ascending = False)
 
 
-# In[93]:
+# In[ ]:
 
 
 drives.to_csv('drives.csv',index = False)
 
 
-# In[116]:
+# In[ ]:
 
 
 drives.iloc[drives.reset_index().groupby(['year'])['DRIVES'].idxmax()]
 
 
-# In[112]:
+# In[ ]:
 
 
 drives.groupby(['year'])['DRIVES'].idxmax(axis = 0)
 
 
-# In[121]:
+# In[ ]:
 
 
 drives[drives.year == 2014]
