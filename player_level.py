@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
+# In[1]:
 
 
 import pandas as pd
@@ -27,7 +27,7 @@ url5 = 'https://www.nba.com/stats/players/transition?PerMode=Totals&dir=D&sort=P
 
 
 
-# In[ ]:
+# In[2]:
 
 
 #url_list = [cs,pullup]
@@ -87,7 +87,7 @@ def get_ptables(url_list,path_list):
     return data
 
 
-# In[ ]:
+# In[3]:
 
 
 def get_multi(url_list,path_list):
@@ -114,7 +114,7 @@ def get_multi(url_list,path_list):
         
 
 
-# In[ ]:
+# In[4]:
 
 
 cs ='https://www.nba.com/stats/players/catch-shoot?PerMode=Totals'
@@ -133,13 +133,13 @@ xpath = '//*[@id="__next"]/div[2]/div[2]/div[3]/section[2]/div/div[2]/div[2]/div
 path_list = [xpath for i in range(len(url_list))]
 
 
-# In[ ]:
+# In[5]:
 
 
 #get_multi(url_list,path_list)
 
 
-# In[ ]:
+# In[6]:
 
 
 tables= get_ptables(url_list,path_list)
