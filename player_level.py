@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[18]:
 
 
 import pandas as pd
@@ -27,7 +27,7 @@ url5 = 'https://www.nba.com/stats/players/transition?PerMode=Totals&dir=D&sort=P
 
 
 
-# In[2]:
+# In[19]:
 
 
 #url_list = [cs,pullup]
@@ -50,7 +50,7 @@ def get_ptables(url_list,path_list):
         print(url)
         
         driver.get(url)
-        element = WebDriverWait(driver, 12).until(
+        element = WebDriverWait(driver, 20).until(
         EC.presence_of_element_located((By.XPATH, xpath)))
         # Wait for the page to fully load
         driver.implicitly_wait(10)
@@ -87,7 +87,7 @@ def get_ptables(url_list,path_list):
     return data
 
 
-# In[3]:
+# In[20]:
 
 
 def get_multi(url_list,path_list):
@@ -114,7 +114,7 @@ def get_multi(url_list,path_list):
         
 
 
-# In[4]:
+# In[21]:
 
 
 cs ='https://www.nba.com/stats/players/catch-shoot?PerMode=Totals'
@@ -133,19 +133,19 @@ xpath = '//*[@id="__next"]/div[2]/div[2]/div[3]/section[2]/div/div[2]/div[2]/div
 path_list = [xpath for i in range(len(url_list))]
 
 
-# In[5]:
+# In[22]:
 
 
 #get_multi(url_list,path_list)
 
 
-# In[6]:
+# In[23]:
 
 
 tables= get_ptables(url_list,path_list)
 
 
-# In[ ]:
+# In[24]:
 
 
 temp = tables[1]
