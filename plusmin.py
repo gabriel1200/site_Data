@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[3]:
+# In[1]:
 
 
 import pandas as pd
@@ -15,6 +15,8 @@ from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import ElementNotInteractableException 
 from selenium.webdriver.support import expected_conditions as EC
+
+
 import requests
 
 
@@ -37,8 +39,12 @@ def get_tables(url_list):
         print(url)
         
         driver.get(url)
-        w_path = '//*[@id="player-stats"]/div[2]/table/tbody/tr[480]'
-        xpath = '//*[@id="player-stats"]/div[2]/table'
+        driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+
+        #w_path = '//*[@id="player-stats"]/div[2]/table/tbody/tr[480]'
+        w_path = '/html/body/div/main/div/div[2]/div[1]/div[3]/table/tfoot'
+        xpath = '/html/body/div/main/div/div[2]/div[1]/div[3]'
+        
         #button_path = '/html/body/div/main/div/div[3]/div[2]/table/thead/tr[2]/th[8]'
         '''
         try:
@@ -50,17 +56,18 @@ def get_tables(url_list):
         
         '''
         #'''
+
         wait = WebDriverWait(driver, 10)
-        result = wait.until(EC.presence_of_element_located((By.XPATH,w_path)))
+        result = wait.until(EC.presence_of_element_located((By.XPATH,w_path)))        
         elem = driver.find_element(By.XPATH,xpath)
-        
+        driver.execute_script("return arguments[0].scrollIntoView(true);", elem)
+  
         # Wait for the page to fully load
         #print(elem.text)
         #elem = driver.find_element(By.XPATH,xpath)
         #driver.implicitly_wait(40)
         #driver.execute_script("window.scrollTo(0,document.body.scrollHeight)",elem)
-        driver.implicitly_wait(40)
-       
+
         '''if check_exists_by_xpath(driver, "//a[contains(text(),'>')]/preceding-sibling::a[1]"):
             number_of_pages = int(driver.find_element(By.XPATH, "//a[contains(text(),'>')]/preceding-sibling::a[1]").text)
             print(number_of_pages)'''
@@ -85,18 +92,25 @@ def get_tables(url_list):
 elem = get_tables([epm])
 
 
-# In[4]:
+# In[2]:
+
+
+elem[0]
+
+
+# In[16]:
 
 
 df = elem[0]
 df.columns = df.columns.droplevel()
+df = df.rename(columns = {'Player':'PLAYER'})
 df = df.dropna(subset = 'PLAYER')
 df = df[df.PLAYER != 'PLAYER']
 df.to_csv('epm_temp.csv',index = False)
 df = pd.read_csv('epm_temp.csv')
 
 
-# In[5]:
+# In[17]:
 
 
 new_columns = []
@@ -121,13 +135,13 @@ df = df.round(2)
 df.columns = [x.lower() for x in df.columns]
 
 
-# In[6]:
+# In[18]:
 
 
 df.to_csv('epm/epm.csv',index = False)
 
 
-# In[7]:
+# In[19]:
 
 
 def scrape_LEBRON():
@@ -150,7 +164,7 @@ df.to_csv('lebron/lebron.csv',index = False)
 df.to_csv('2023/lebron/lebron.csv',index = False)
 
 
-# In[10]:
+# In[20]:
 
 
 '''

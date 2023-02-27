@@ -46,7 +46,7 @@ df = pd.DataFrame(player_stats)
 
 
 
-# In[20]:
+# In[5]:
 
 
 col = ['Name','Minutes','Points','FG2M', 'FG2A', 'FG3M', 'FG3A', 'TsPct','AssistPoints','AtRimAssists','ShortMidRangeAssists', 'LongMidRangeAssists','Corner3Assists','Arc3Assists','LostBallSteals', 'LiveBallTurnovers', 'BadPassOutOfBoundsTurnovers', 'BadPassTurnovers',
@@ -54,19 +54,19 @@ col = ['Name','Minutes','Points','FG2M', 'FG2A', 'FG3M', 'FG3A', 'TsPct','Assist
  'DefPoss','TotalPoss']
 
 
-# In[21]:
+# In[6]:
 
 
 df[col].to_csv('wowy/player_small.csv',index = False)
 
 
-# In[22]:
+# In[7]:
 
 
 df.to_csv('wowy/player_large.csv',index = False)
 
 
-# In[19]:
+# In[8]:
 
 
 df[df.Name == 'Giannis Antetokounmpo']['Arc3Assists']

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[5]:
+# In[1]:
 
 
 import pandas as pd
@@ -85,7 +85,7 @@ def get_tables(url_list):
     return data
 
 
-# In[6]:
+# In[2]:
 
 
 #url_list = [url1]#
@@ -110,13 +110,13 @@ def get_multi(url_list):
             df.to_csv(terms[i],index = False)
 
 
-# In[7]:
+# In[3]:
 
 
 #get_multi(url_list)
 
 
-# In[8]:
+# In[4]:
 
 
 #terms = ['data/teampullup.csv','data/teamcatchshoot.csv','data/teamundersix.csv','data/teamiso.csv','data/teamtransition.csv']
@@ -125,7 +125,7 @@ terms = ['playtype/handoff.csv','playtype/iso.csv','playtype/trans.csv','playtyp
          'playtype/cut.csv','playtype/offscreen.csv','playtype/putback.csv','playtype/misc.csv','playtype/drives.csv']
 
 
-# In[9]:
+# In[5]:
 
 
 for i in range(len(terms)):
