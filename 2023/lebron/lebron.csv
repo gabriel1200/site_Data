@@ -1,505 +1,507 @@
 bref_id,Player,Season,team,Offensive Archetype,Minutes,Games,Pos,Age,LEBRON,O-LEBRON,D-LEBRON,WAR,NBA ID,boxLEBRON,boxOLEBRON,boxDLEBRON,year
-jokicni01,nikola jokic,2022-23,DEN,Post Scorer,1612,49,C,27,7.61,5.57,2.05,9.90,203999.0,6.03,4.82,1.21,2023
-antetgi01,giannis antetokounmpo,2022-23,MIL,Shot Creator,1499,45,PF,28,5.51,4.41,1.11,7.40,203507.0,5.06,3.88,1.18,2023
-doncilu01,luka doncic,2022-23,DAL,Shot Creator,1714,48,PG,23,5.23,5.71,-0.48,8.20,1629029.0,6.34,6.19,0.15,2023
-embiijo01,joel embiid,2022-23,PHI,Shot Creator,1464,43,C,28,5.08,3.17,1.91,6.90,203954.0,5.19,4.12,1.08,2023
-tatumja01,jayson tatum,2022-23,BOS,Shot Creator,1979,54,PF,24,5.05,4.39,0.66,9.30,1628369.0,4.99,4.24,0.76,2023
-jacksja02,jaren jackson jr.,2022-23,MEM,Stretch Big,1037,39,C,23,5.04,1.06,3.98,4.90,1628991.0,3.8,0.26,3.54,2023
-jamesle01,lebron james,2022-23,LAL,Shot Creator,1603,44,PF,38,4.21,4.33,-0.12,6.70,2544.0,2.95,3.57,-0.61,2023
-butleji01,jimmy butler,2022-23,MIA,Shot Creator,1385,42,SF,33,4.19,3.25,0.94,5.80,202710.0,3.71,2.67,1.04,2023
-mitchdo01,donovan mitchell,2022-23,CLE,Primary Ball Handler,1659,48,SG,26,3.94,3.28,0.66,6.70,1628378.0,3.24,3.3,-0.07,2023
-gilgesh01,shai gilgeous-alexander,2022-23,OKC,Shot Creator,1809,51,PG,24,3.93,3.46,0.47,7.30,1628983.0,3.61,3.38,0.23,2023
-curryst01,stephen curry,2022-23,GSW,Primary Ball Handler,1313,38,PG,34,3.9,4.09,-0.19,5.30,201939.0,3.63,4.14,-0.51,2023
-davisan02,anthony davis,2022-23,LAL,Post Scorer,1071,33,C,29,3.88,2.15,1.74,4.30,203076.0,3.95,2.6,1.34,2023
-duranke01,kevin durant,2022-23,BRK,Shot Creator,1403,39,PF,34,3.85,3.26,0.6,5.60,201142.0,3.2,3.07,0.12,2023
-moranja01,ja morant,2022-23,MEM,Slasher,1504,47,PG,23,3.83,4.06,-0.22,6.00,1629630.0,3.28,3.55,-0.27,2023
-claxtni01,nic claxton,2022-23,BRK,Roll + Cut Big,1515,52,C,23,3.82,0.6,3.22,6.00,1629651.0,2.76,0.18,2.58,2023
-hardeja01,james harden,2022-23,PHI,Shot Creator,1387,39,PG,33,3.8,3.41,0.39,5.50,201935.0,4.25,3.77,0.48,2023
-lillada01,damian lillard,2022-23,POR,Shot Creator,1592,44,PG,32,3.77,6.02,-2.25,6.30,203081.0,4.01,5.71,-1.7,2023
-leonaka01,kawhi leonard,2022-23,LAC,Shot Creator,1032,32,SF,31,3.74,2.82,0.92,4.00,202695.0,2.93,2.63,0.3,2023
-sabondo01,domantas sabonis,2022-23,SAC,Roll + Cut Big,1825,54,C,26,3.34,2.28,1.06,6.70,1627734.0,3.41,2.46,0.96,2023
-kesslwa01,walker kessler,2022-23,UTA,Roll + Cut Big,1127,55,C,21,3.11,-0.2,3.31,4.00,1631117.0,1.77,-0.22,1.99,2023
-garlada01,darius garland,2022-23,CLE,Primary Ball Handler,1685,49,PG,23,3.1,3.05,0.05,5.90,1629636.0,2.67,2.63,0.04,2023
-georgpa01,paul george,2022-23,LAC,Shot Creator,1439,42,SG,32,3.09,2.08,1.01,5.10,202331.0,2.06,1.9,0.16,2023
-bookede01,devin booker,2022-23,PHO,Shot Creator,1054,31,SG,26,2.97,3.41,-0.44,3.60,1626164.0,1.97,2.6,-0.63,2023
-irvinky01,kyrie irving,2022-23,BRK/DAL,Shot Creator,1549,43,PG,30,2.78,3.41,-0.63,5.10,202681.0,2.23,3.11,-0.87,2023
-randlju01,julius randle,2022-23,NYK,Shot Creator,2046,58,PF,28,2.7,3.33,-0.63,6.70,203944.0,2.63,2.7,-0.07,2023
-turnemy01,myles turner,2022-23,IND,Stretch Big,1427,49,C,26,2.65,0.16,2.49,4.60,1626167.0,1.94,0.13,1.81,2023
-capelca01,clint capela,2022-23,ATL,Roll + Cut Big,1072,41,C,28,2.63,1.01,1.62,3.50,203991.0,1.38,0.18,1.21,2023
-holidjr01,jrue holiday,2022-23,MIL,Primary Ball Handler,1482,45,PG,32,2.61,1.63,0.98,4.80,201950.0,1.67,1.35,0.32,2023
-allenja01,jarrett allen,2022-23,CLE,Roll + Cut Big,1685,52,C,24,2.53,0.25,2.28,5.30,1628386.0,2.14,0.09,2.05,2023
-porzikr01,kristaps porzingis,2022-23,WAS,Versatile Big,1498,47,C,27,2.53,1.67,0.86,4.70,204001.0,3.01,1.97,1.04,2023
-markkla01,lauri markkanen,2022-23,UTA,Stretch Big,1780,53,SF,25,2.52,2.72,-0.2,5.60,1628374.0,2.38,2.99,-0.61,2023
-gordoaa01,aaron gordon,2022-23,DEN,Roll + Cut Big,1483,49,PF,27,2.43,1.81,0.62,4.60,203932.0,1.8,1.65,0.15,2023
-willizi01,zion williamson,2022-23,NOP,Shot Creator,956,29,PF,22,2.4,2.14,0.26,2.90,1629627.0,1.77,1.95,-0.18,2023
-halibty01,tyrese haliburton,2022-23,IND,Primary Ball Handler,1500,46,PG,22,2.34,2.6,-0.27,4.60,1630169.0,2.75,3.2,-0.44,2023
-siakapa01,pascal siakam,2022-23,TOR,Shot Creator,1766,48,C,28,2.34,2.07,0.27,5.40,1627783.0,1.42,1.9,-0.48,2023
-paulch01,chris paul,2022-23,PHO,Primary Ball Handler,1176,37,PG,37,2.25,1.25,1.0,3.50,101108.0,2.71,1.49,1.23,2023
-youngtr01,trae young,2022-23,ATL,Primary Ball Handler,1742,50,PG,24,2.17,4.06,-1.89,5.10,1629027.0,1.66,3.35,-1.69,2023
-townska01,karl-anthony towns,2022-23,MIN,Stretch Big,709,21,PF,27,2.1,1.44,0.67,2.00,1626157.0,1.58,1.66,-0.08,2023
-mobleev01,evan mobley,2022-23,CLE,Roll + Cut Big,1907,57,PF,21,2.03,-0.92,2.95,5.40,1630596.0,2.1,-0.07,2.17,2023
-adebaba01,bam adebayo,2022-23,MIA,Shot Creator,1793,52,C,25,2.0,0.56,1.44,5.10,1628389.0,1.45,0.08,1.37,2023
-adamsst01,steven adams,2022-23,MEM,Roll + Cut Big,1133,42,C,29,1.99,0.23,1.76,3.20,203500.0,1.05,-0.52,1.57,2023
-lopezbr01,brook lopez,2022-23,MIL,Stretch Big,1671,55,C,34,1.98,-0.92,2.9,4.70,201572.0,1.98,-0.47,2.45,2023
-vanvlfr01,fred vanvleet,2022-23,TOR,Primary Ball Handler,1774,49,PG,28,1.97,2.05,-0.07,5.00,1627832.0,1.8,1.69,0.11,2023
-foxde01,de'aaron fox,2022-23,SAC,Slasher,1690,51,PG,25,1.97,2.47,-0.5,4.70,1628368.0,2.28,2.75,-0.47,2023
-banede01,desmond bane,2022-23,MEM,Movement Shooter,1027,34,SG,24,1.96,1.6,0.35,2.90,1630217.0,1.52,1.56,-0.04,2023
-derozde01,demar derozan,2022-23,CHI,Shot Creator,1849,52,SF,33,1.79,1.7,0.09,5.00,201942.0,1.65,1.51,0.13,2023
-carusal01,alex caruso,2022-23,CHI,Stationary Shooter,1139,48,PG,28,1.72,-1.02,2.75,3.00,1627936.0,0.01,-1.72,1.74,2023
-vucevni01,nikola vucevic,2022-23,CHI,Versatile Big,1866,56,C,32,1.7,0.6,1.1,4.90,202696.0,1.98,0.8,1.18,2023
-bouchch01,chris boucher,2022-23,TOR,Stretch Big,1061,52,PF,30,1.68,0.9,0.78,2.80,1628449.0,0.47,0.2,0.28,2023
-whitede01,derrick white,2022-23,BOS,Stationary Shooter,1526,57,SG,28,1.63,0.25,1.38,3.90,1628401.0,1.85,0.65,1.2,2023
-looneke01,kevon looney,2022-23,GSW,Roll + Cut Big,1272,56,C,27,1.61,0.25,1.36,3.30,1626172.0,1.55,0.02,1.54,2023
-williro04,robert williams iii,2022-23,BOS,Roll + Cut Big,498,22,C,25,1.58,-0.11,1.69,1.30,1629057.0,0.86,-0.52,1.38,2023
-brunsja01,jalen brunson,2022-23,NYK,Shot Creator,1852,54,PG,26,1.56,2.93,-1.37,4.70,1628973.0,1.78,2.37,-0.6,2023
-bealbr01,bradley beal,2022-23,WAS,Slasher,1050,33,SG,29,1.52,2.19,-0.67,2.60,203078.0,0.81,1.57,-0.75,2023
-drumman01,andre drummond,2022-23,CHI,Roll + Cut Big,545,43,C,29,1.5,0.21,1.29,1.40,203083.0,1.29,0.02,1.27,2023
-sengual01,alperen sengun,2022-23,HOU,Post Scorer,1444,51,C,20,1.42,1.13,0.3,3.50,1630578.0,0.36,0.13,0.23,2023
-nancela02,larry nance jr.,2022-23,NOP,Roll + Cut Big,1068,47,PF,30,1.38,-0.44,1.82,2.60,1626204.0,0.35,-0.87,1.22,2023
-greendr01,draymond green,2022-23,GSW,Stretch Big,1557,50,PF,32,1.33,-1.11,2.44,3.70,203110.0,0.8,-1.12,1.92,2023
-edwaran01,anthony edwards,2022-23,MIN,Shot Creator,2139,59,SG,21,1.32,1.37,-0.05,5.10,1630162.0,1.27,1.38,-0.11,2023
-brownja02,jaylen brown,2022-23,BOS,Secondary Ball Handler,1707,48,SF,26,1.3,1.11,0.19,4.10,1627759.0,2.1,1.98,0.12,2023
-smartma01,marcus smart,2022-23,BOS,Stationary Shooter,1331,41,PG,28,1.29,0.53,0.76,3.20,203935.0,1.26,0.52,0.74,2023
-ballla01,lamelo ball,2022-23,CHO,Primary Ball Handler,1052,31,PG,21,1.25,2.34,-1.09,2.50,1630163.0,0.94,1.75,-0.81,2023
-johnsca02,cameron johnson,2022-23,PHO,Movement Shooter,429,18,PF,26,1.25,0.59,0.66,1.00,1629661.0,0.7,0.69,0.01,2023
-brownmo01,moses brown,2022-23,LAC,Roll + Cut Big,288,34,C,23,1.18,0.66,0.52,0.70,1629650.0,1.03,0.51,0.52,2023
-woodch01,christian wood,2022-23,DAL,Shot Creator,1267,46,C,27,1.12,0.72,0.41,2.90,1626174.0,1.75,1.23,0.52,2023
-nurkiju01,jusuf nurkic,2022-23,POR,Post Scorer,1223,45,C,28,1.11,-0.9,2.0,2.80,203994.0,1.45,0.27,1.19,2023
-morrimo01,monte morris,2022-23,WAS,Primary Ball Handler,1301,47,PG,27,1.05,1.05,0.0,2.90,1628420.0,0.51,0.44,0.07,2023
-herroty01,tyler herro,2022-23,MIA,Primary Ball Handler,1548,45,SG,23,1.03,1.02,0.01,3.40,1629639.0,0.91,0.63,0.28,2023
-barnesc01,scottie barnes,2022-23,TOR,Shot Creator,1898,55,PF,21,1.02,0.5,0.51,4.20,1630567.0,0.09,0.1,0.0,2023
-anderky01,kyle anderson,2022-23,MIN,Athletic Finisher,1197,46,PF,29,1.02,-0.77,1.79,2.60,203937.0,0.36,-0.88,1.24,2023
-murraja01,jamal murray,2022-23,DEN,Primary Ball Handler,1464,45,PG,25,1.0,2.31,-1.31,3.20,1627750.0,1.61,2.49,-0.87,2023
-fernabr01,bruno fernando,2022-23,HOU,Roll + Cut Big,364,31,C,24,1.0,-1.21,2.2,0.80,1628981.0,1.15,-1.05,2.19,2023
-gaffoda01,daniel gafford,2022-23,WAS,Roll + Cut Big,959,53,C,24,0.97,-0.53,1.5,2.10,1629655.0,0.81,-0.59,1.39,2023
-huertke01,kevin huerter,2022-23,SAC,Movement Shooter,1573,53,SG,24,0.96,1.48,-0.52,3.40,1628989.0,0.91,1.06,-0.15,2023
-robinmi01,mitchell robinson,2022-23,NYK,Roll + Cut Big,1020,38,C,24,0.96,-0.93,1.89,2.20,1629011.0,1.56,-0.61,2.17,2023
-willima07,mark williams,2022-23,CHO,Roll + Cut Big,380,27,C,21,0.93,-0.76,1.69,0.80,1631109.0,1.19,-0.93,2.12,2023
-wagnefr01,franz wagner,2022-23,ORL,Secondary Ball Handler,1823,56,SF,21,0.9,1.06,-0.17,3.90,1630532.0,-0.43,0.45,-0.88,2023
-ingrabr01,brandon ingram,2022-23,NOP,Shot Creator,705,22,SF,25,0.9,1.09,-0.2,1.50,1627742.0,0.77,0.93,-0.16,2023
-cartewe01,wendell carter jr.,2022-23,ORL,Stretch Big,1080,37,C,23,0.84,0.0,0.84,2.30,1628976.0,0.35,0.13,0.22,2023
-osmande01,cedi osman,2022-23,CLE,Stationary Shooter,1192,57,SF,27,0.81,0.63,0.18,2.50,1626224.0,-0.68,-0.39,-0.29,2023
-quickim01,immanuel quickley,2022-23,NYK,Primary Ball Handler,1560,57,PG,23,0.78,1.04,-0.26,3.20,1630193.0,-0.1,0.36,-0.46,2023
-daviste02,terence davis,2022-23,SAC,Movement Shooter,553,43,SG,25,0.78,0.25,0.54,1.10,1629056.0,0.49,0.34,0.15,2023
-alvarjo01,jose alvarado,2022-23,NOP,Stationary Shooter,1212,56,PG,24,0.78,0.23,0.55,2.50,1630631.0,-0.49,-0.34,-0.14,2023
-johnsja05,jalen johnson,2022-23,ATL,Stretch Big,758,53,SF,21,0.74,-0.24,0.98,1.50,1630552.0,-0.05,-1.05,1.0,2023
-aldamsa01,santi aldama,2022-23,MEM,Athletic Finisher,1145,53,PF,22,0.66,-0.74,1.39,2.30,1630583.0,0.28,-0.65,0.93,2023
-barneha02,harrison barnes,2022-23,SAC,Stationary Shooter,1788,56,PF,30,0.65,1.15,-0.5,3.50,203084.0,0.62,0.89,-0.27,2023
-loveke01,kevin love,2022-23,CLE,Stretch Big,821,41,PF,34,0.64,0.52,0.12,1.60,201567.0,0.71,0.34,0.37,2023
-okogijo01,josh okogie,2022-23,PHO,Athletic Finisher,668,48,SG,24,0.63,0.02,0.61,1.30,1629006.0,-0.04,-0.27,0.22,2023
-anunoog01,o.g. anunoby,2022-23,TOR,Stationary Shooter,1611,45,SF,25,0.63,-0.29,0.92,3.10,1628384.0,-0.22,-0.78,0.56,2023
-wiggian01,andrew wiggins,2022-23,GSW,Stretch Big,1120,36,SF,27,0.62,-0.16,0.78,2.20,203952.0,0.68,0.39,0.3,2023
-goberru01,rudy gobert,2022-23,MIN,Roll + Cut Big,1459,48,C,30,0.61,-1.27,1.88,2.80,203497.0,1.47,-0.3,1.77,2023
-harrito02,tobias harris,2022-23,PHI,Shot Creator,1688,51,PF,30,0.6,0.06,0.54,3.30,202699.0,0.82,0.3,0.52,2023
-kuzmaky01,kyle kuzma,2022-23,WAS,Movement Shooter,1781,51,PF,27,0.59,0.52,0.07,3.40,1628398.0,0.17,0.66,-0.49,2023
-conlemi01,mike conley,2022-23,UTA/MIN,Primary Ball Handler,1301,44,PG,35,0.58,1.04,-0.46,2.50,201144.0,1.23,1.49,-0.25,2023
-plumlma01,mason plumlee,2022-23,CHO,Roll + Cut Big,1597,56,C,32,0.57,-0.03,0.6,3.00,203486.0,0.23,-0.14,0.36,2023
-konchjo01,john konchar,2022-23,MEM,Stationary Shooter,1081,48,SG,26,0.57,-0.93,1.5,2.10,1629723.0,-0.58,-1.79,1.21,2023
-brookdi01,dillon brooks,2022-23,MEM,Secondary Ball Handler,1517,51,SF,27,0.55,-0.42,0.97,2.90,1628415.0,-1.02,-1.03,0.02,2023
-middlkh01,khris middleton,2022-23,MIL,Secondary Ball Handler,340,16,SF,31,0.55,0.97,-0.42,0.60,203114.0,0.29,0.91,-0.62,2023
-caldwke01,kentavious caldwell-pope,2022-23,DEN,Stationary Shooter,1659,54,SG,29,0.53,-0.18,0.71,3.10,203484.0,-0.15,-0.58,0.43,2023
-hortota01,talen horton-tucker,2022-23,UTA,Secondary Ball Handler,682,44,SG,22,0.51,0.07,0.44,1.30,1629659.0,-0.49,-0.2,-0.29,2023
-dinwisp01,spencer dinwiddie,2022-23,DAL/BRK,Shot Creator,1847,55,PG,29,0.51,1.13,-0.62,3.50,203915.0,1.43,2.13,-0.7,2023
-lowryky01,kyle lowry,2022-23,MIA,Movement Shooter,1464,44,PG,36,0.5,-0.1,0.6,2.70,200768.0,0.62,-0.31,0.93,2023
-bassech01,charles bassey,2022-23,SAS,Roll + Cut Big,327,24,C,22,0.49,-1.21,1.7,0.60,1629646.0,-0.13,-1.66,1.53,2023
-landajo01,jock landale,2022-23,PHO,Versatile Big,706,49,C,27,0.49,-0.15,0.63,1.30,1629111.0,-0.75,-0.52,-0.24,2023
-bryanth01,thomas bryant,2022-23,LAL,Roll + Cut Big,873,42,C,25,0.48,0.73,-0.25,1.60,1628418.0,0.71,0.24,0.47,2023
-hieldbu01,buddy hield,2022-23,IND,Movement Shooter,1833,58,SF,30,0.48,0.69,-0.21,3.40,1627741.0,-0.27,0.53,-0.8,2023
-isaacjo01,jonathan isaac,2022-23,ORL,Low Minute,80,9,PF,25,0.48,0.28,0.2,0.10,1628371.0,0.39,0.29,0.1,2023
-harteis01,isaiah hartenstein,2022-23,NYK,Roll + Cut Big,1108,58,C,24,0.47,-0.83,1.3,2.00,1628392.0,-0.84,-1.75,0.91,2023
-murrade01,dejounte murray,2022-23,ATL,Shot Creator,1866,52,SG,26,0.46,0.94,-0.49,3.40,1627749.0,1.04,1.24,-0.2,2023
-portibo01,bobby portis,2022-23,MIL,Versatile Big,1258,47,PF,28,0.45,0.17,0.28,2.30,1626171.0,0.77,0.47,0.29,2023
-greenja02,javonte green,2022-23,CHI,Stretch Big,449,28,SG,29,0.45,-1.21,1.65,0.80,1629750.0,-0.48,-1.51,1.03,2023
-goodwjo01,jordan goodwin,2022-23,WAS,Secondary Ball Handler,719,40,PG,24,0.44,-0.65,1.09,1.30,1630692.0,-0.13,-0.95,0.82,2023
-robinor01,orlando robinson,2022-23,MIA,Roll + Cut Big,370,27,C,22,0.42,-1.2,1.62,0.70,1631115.0,-0.52,-1.78,1.26,2023
-lavinza01,zach lavine,2022-23,CHI,Primary Ball Handler,1831,52,SG,27,0.41,1.19,-0.78,3.30,203897.0,0.83,1.39,-0.56,2023
-hudgitr01,trevor hudgins,2022-23,HOU,Low Minute,10,2,PG,23,0.4,0.02,0.38,0.00,1631309.0,0.38,0.01,0.36,2023
-daysda01,darius days,2022-23,HOU,Low Minute,2,1,PF,23,0.4,0.06,0.34,0.00,1630620.0,0.39,0.03,0.36,2023
-trentga02,gary trent jr.,2022-23,TOR,Movement Shooter,1682,50,SG,24,0.4,0.47,-0.07,3.00,1629018.0,-0.02,0.56,-0.58,2023
-meltode01,de'anthony melton,2022-23,PHI,Stationary Shooter,1467,52,PG,24,0.39,-0.51,0.9,2.60,1629001.0,0.93,-0.13,1.06,2023
-cunnica01,cade cunningham,2022-23,DET,Slasher,400,12,PG,21,0.37,0.62,-0.25,0.70,1630595.0,0.33,0.55,-0.22,2023
-hernawi01,willy hernangomez,2022-23,NOP,Roll + Cut Big,355,28,C,28,0.37,0.35,0.02,0.60,1626195.0,0.8,0.43,0.36,2023
-brogdma01,malcolm brogdon,2022-23,BOS,Primary Ball Handler,1196,48,PG,30,0.36,0.6,-0.24,2.10,1627763.0,0.86,1.26,-0.4,2023
-muscami01,mike muscala,2022-23,OKC/BOS,Stretch Big,638,45,C,31,0.36,-0.08,0.44,1.10,203488.0,-0.18,-0.38,0.2,2023
-thompkl01,klay thompson,2022-23,GSW,Off Screen Shooter,1408,44,SG,33,0.36,1.44,-1.08,2.50,202691.0,0.28,1.39,-1.11,2023
-joeis01,isaiah joe,2022-23,OKC,Movement Shooter,732,47,SG,23,0.36,0.62,-0.27,1.30,1630198.0,0.27,0.86,-0.58,2023
-grantje01,jerami grant,2022-23,POR,Stationary Shooter,1927,54,PF,28,0.34,0.35,-0.01,3.40,203924.0,0.51,1.16,-0.66,2023
-marjabo01,boban marjanovic,2022-23,HOU,Low Minute,72,17,C,34,0.32,0.04,0.28,0.10,1626246.0,0.3,-0.09,0.39,2023
-wagnemo01,moritz wagner,2022-23,ORL,Stretch Big,744,36,C,25,0.31,0.42,-0.12,1.30,1629021.0,0.47,0.67,-0.21,2023
-batumni01,nicolas batum,2022-23,LAC,Stationary Shooter,1205,55,PF,34,0.31,-1.22,1.53,2.10,201587.0,-0.47,-1.42,0.95,2023
-covinro01,robert covington,2022-23,LAC,Athletic Finisher,584,36,PF,32,0.29,-0.74,1.03,1.00,203496.0,0.71,-0.89,1.6,2023
-easonta01,tari eason,2022-23,HOU,Athletic Finisher,1085,56,PF,21,0.28,-0.46,0.74,1.90,1631106.0,-0.8,-1.0,0.2,2023
-bridgmi01,mikal bridges,2022-23,PHO,Movement Shooter,2039,57,SF,26,0.27,-0.14,0.41,3.50,1628969.0,0.51,-0.09,0.6,2023
-poeltja01,jakob poeltl,2022-23,SAS/TOR,Roll + Cut Big,1216,48,C,27,0.26,-0.88,1.14,2.10,1627751.0,-0.12,-0.41,0.29,2023
-eubandr01,drew eubanks,2022-23,POR,Roll + Cut Big,1045,54,C,26,0.24,-0.67,0.91,1.80,1629234.0,-0.13,-1.52,1.39,2023
-nowelja01,jaylen nowell,2022-23,MIN,Secondary Ball Handler,1172,59,SG,23,0.24,1.37,-1.13,2.00,1629669.0,-1.13,0.34,-1.47,2023
-mccolcj01,cj mccollum,2022-23,NOP,Primary Ball Handler,1787,51,SG,31,0.23,1.79,-1.55,3.00,203468.0,0.76,1.15,-0.4,2023
-oladivi01,victor oladipo,2022-23,MIA,Secondary Ball Handler,739,26,SG,30,0.2,-0.35,0.55,1.20,203506.0,-0.44,-0.93,0.49,2023
-tillmxa01,xavier tillman,2022-23,MEM,Roll + Cut Big,523,37,PF,24,0.18,-0.76,0.94,0.90,1630214.0,-0.23,-0.67,0.44,2023
-westbru01,russell westbrook,2022-23,LAL,Shot Creator,1491,52,PG,34,0.17,1.14,-0.97,2.50,201566.0,-0.09,0.55,-0.64,2023
-anthoco01,cole anthony,2022-23,ORL,Primary Ball Handler,957,39,PG,22,0.16,0.88,-0.72,1.60,1630175.0,0.48,0.37,0.11,2023
-poweldw01,dwight powell,2022-23,DAL,Roll + Cut Big,1024,53,C,31,0.16,-0.49,0.65,1.70,203939.0,-0.58,-0.87,0.29,2023
-jonesty01,tyus jones,2022-23,MEM,Primary Ball Handler,1291,56,PG,26,0.14,0.89,-0.75,2.10,1626145.0,0.64,0.79,-0.15,2023
-metuch01,chimezie metu,2022-23,SAC,Roll + Cut Big,457,43,C,25,0.14,-0.71,0.84,0.70,1629002.0,-0.16,-0.68,0.52,2023
-joneshe01,herbert jones,2022-23,NOP,Athletic Finisher,1184,41,SF,24,0.13,-0.76,0.89,1.90,1630529.0,-0.08,-1.39,1.31,2023
-biyombi01,bismack biyombo,2022-23,PHO,Roll + Cut Big,629,45,C,30,0.13,-2.86,2.99,1.00,202687.0,-0.07,-2.94,2.87,2023
-jonestr01,tre jones,2022-23,SAS,Slasher,1499,52,PG,23,0.12,0.37,-0.25,2.40,1630200.0,-1.15,-0.02,-1.13,2023
-johnsal02,alize johnson,2022-23,SAS,Low Minute,30,4,PF,26,0.12,-0.28,0.39,0.00,1628993.0,-0.32,-0.48,0.16,2023
-horfoal01,al horford,2022-23,BOS,Stationary Shooter,1324,44,C,36,0.11,-0.92,1.03,2.10,201143.0,1.04,-0.4,1.44,2023
-garzalu01,luka garza,2022-23,MIN,Stretch Big,205,22,C,24,0.1,1.46,-1.37,0.30,1630568.0,-0.57,0.82,-1.4,2023
-washity02,tyty washington jr.,2022-23,HOU,Secondary Ball Handler,253,21,PG,21,0.09,-0.22,0.31,0.40,1631102.0,-0.65,-0.62,-0.03,2023
-finnedo01,dorian finney-smith,2022-23,DAL/BRK,Athletic Finisher,1322,42,PF,29,0.09,-0.53,0.62,2.10,1627827.0,-0.56,-0.55,-0.01,2023
-boehebu01,buddy boeheim,2022-23,DET,Low Minute,1,1,PG,23,0.08,-0.08,0.16,0.00,1631205.0,0.08,-0.09,0.17,2023
-simmobe01,ben simmons,2022-23,BRK,Shot Creator,1055,40,PG,26,0.08,-1.57,1.65,1.70,1627732.0,0.44,-1.11,1.55,2023
-roziete01,terry rozier,2022-23,CHO,Primary Ball Handler,1681,48,SG,28,0.03,1.64,-1.6,2.60,1626179.0,-1.09,0.49,-1.58,2023
-hartjo01,josh hart,2022-23,POR,Athletic Finisher,1704,52,SF-SG,27,0.02,-0.78,0.79,2.60,1628404.0,0.13,-0.4,0.53,2023
-bambamo01,mo bamba,2022-23,ORL,Stretch Big,681,40,C,24,0.01,-0.33,0.34,1.10,1628964.0,0.99,-0.2,1.18,2023
-jacksis01,isaiah jackson,2022-23,IND,Roll + Cut Big,639,43,C,21,0.01,-1.53,1.54,1.00,1630543.0,0.28,-1.33,1.61,2023
-wrighde01,delon wright,2022-23,WAS,Secondary Ball Handler,550,26,PG,30,0.0,-0.42,0.43,0.90,1626153.0,0.6,-0.36,0.95,2023
-rhodeja01,jared rhoden,2022-23,DET,Low Minute,12,1,SG,23,0.0,-0.04,0.04,0.00,1631197.0,0.01,-0.17,0.18,2023
-gabriwe01,wenyen gabriel,2022-23,LAL,Roll + Cut Big,680,44,PF,25,0.0,-1.02,1.02,1.00,1629117.0,-1.57,-1.64,0.07,2023
-dortlu01,luguentz dort,2022-23,OKC,Stationary Shooter,1445,48,SG,23,-0.01,0.06,-0.07,2.20,1629652.0,-0.54,-0.16,-0.38,2023
-collijo01,john collins,2022-23,ATL,Versatile Big,1502,49,PF,25,-0.01,-0.97,0.96,2.30,1628381.0,0.12,-1.09,1.21,2023
-keybr01,braxton key,2022-23,DET,Low Minute,9,3,SF,25,-0.08,-0.15,0.07,0.00,1630296.0,0.03,-0.14,0.18,2023
-mclaujo01,jordan mclaughlin,2022-23,MIN,Secondary Ball Handler,340,22,PG,26,-0.1,-0.07,-0.03,0.50,1629162.0,-1.0,-0.4,-0.61,2023
-diallha01,hamidou diallo,2022-23,DET,Roll + Cut Big,803,49,SG,24,-0.12,-0.67,0.55,1.20,1628977.0,-1.18,-1.28,0.1,2023
-robinje02,jeremiah robinson-earl,2022-23,OKC,Stretch Big,548,26,PF,22,-0.13,-0.56,0.44,0.80,1630526.0,-0.6,-0.41,-0.19,2023
-clarkbr01,brandon clarke,2022-23,MEM,Roll + Cut Big,965,50,PF,26,-0.14,-0.69,0.56,1.40,1629634.0,0.56,-0.42,0.99,2023
-dedmode01,dewayne dedmon,2022-23,MIA,Roll + Cut Big,350,30,C,33,-0.14,-1.16,1.01,0.50,203473.0,0.21,-0.93,1.13,2023
-payneca01,cameron payne,2022-23,PHO,Primary Ball Handler,671,28,PG,28,-0.15,0.39,-0.54,1.00,1626166.0,-0.32,0.38,-0.7,2023
-mamuksa01,sandro mamukelashvili,2022-23,MIL,Stretch Big,197,23,C,23,-0.15,-0.62,0.47,0.30,1630572.0,-0.88,-0.85,-0.03,2023
-banchpa01,paolo banchero,2022-23,ORL,Shot Creator,1653,50,PF,20,-0.15,-0.03,-0.13,2.40,1631094.0,0.55,0.62,-0.07,2023
-lylestr01,trey lyles,2022-23,SAC,Athletic Finisher,768,50,PF,27,-0.19,-0.45,0.26,1.10,1626168.0,-0.05,-0.11,0.06,2023
-dorsety01,tyler dorsey,2022-23,DAL,Low Minute,8,3,SG,26,-0.19,0.1,-0.29,0.00,1628416.0,-0.23,0.09,-0.32,2023
-minotjo01,josh minott,2022-23,MIN,Low Minute,68,11,SF,20,-0.19,0.05,-0.24,0.10,1631169.0,-0.42,-0.14,-0.28,2023
-halljo02,jordan hall,2022-23,SAS,Low Minute,79,9,SF,21,-0.2,-0.51,0.3,0.10,1631160.0,-0.42,-0.41,-0.01,2023
-greenjo02,josh green,2022-23,DAL,Stationary Shooter,888,38,SG,22,-0.21,-0.68,0.47,1.20,1630182.0,-1.42,-0.83,-0.59,2023
-campafa01,facundo campazzo,2022-23,DAL,Low Minute,52,8,PG,31,-0.23,-0.17,-0.06,0.10,1630267.0,-0.29,0.0,-0.29,2023
-bitadgo01,goga bitadze,2022-23,IND,Roll + Cut Big,202,21,C,23,-0.23,-0.88,0.64,0.30,1629048.0,-1.07,-1.09,0.01,2023
-reedpa01,paul reed,2022-23,PHI,Roll + Cut Big,385,42,C,23,-0.23,-1.81,1.58,0.50,1630194.0,-0.19,-1.94,1.75,2023
-allengr01,grayson allen,2022-23,MIL,Movement Shooter,1428,52,SG,27,-0.23,-1.02,0.78,2.00,1628960.0,0.24,-0.33,0.57,2023
-walkeke02,kemba walker,2022-23,DAL,Secondary Ball Handler,144,9,PG,32,-0.24,0.56,-0.8,0.20,202689.0,-0.13,0.34,-0.47,2023
-hardati02,tim hardaway jr.,2022-23,DAL,Stationary Shooter,1617,54,SG,30,-0.26,0.81,-1.07,2.20,203501.0,-0.08,0.85,-0.94,2023
-elliske01,keon ellis,2022-23,SAC,Low Minute,35,8,SG,23,-0.26,-0.13,-0.13,0.00,1631165.0,-0.37,-0.22,-0.16,2023
-iguodan01,andre iguodala,2022-23,GSW,Low Minute,42,3,SF,39,-0.27,-0.47,0.21,0.10,2738.0,-0.34,-0.42,0.08,2023
-silvach01,chris silva,2022-23,DAL,Low Minute,3,1,PF,26,-0.28,0.06,-0.35,0.00,1629735.0,-0.22,0.09,-0.31,2023
-doziepj01,pj dozier,2022-23,SAC,Low Minute,10,4,SG,26,-0.3,-0.18,-0.12,0.00,1628408.0,-0.36,-0.19,-0.17,2023
-rubiori01,ricky rubio,2022-23,CLE,Secondary Ball Handler,195,13,PG,32,-0.31,-0.1,-0.21,0.30,201937.0,0.09,0.23,-0.14,2023
-jonesca03,carlik jones,2022-23,CHI,Low Minute,1,1,PG,25,-0.31,0.01,-0.33,0.00,1630637.0,-0.35,-0.01,-0.33,2023
-valanjo01,jonas valanciunas,2022-23,NOP,Post Scorer,1377,56,C,30,-0.32,-0.05,-0.27,1.80,202685.0,0.65,0.28,0.37,2023
-kolokch01,christian koloko,2022-23,TOR,Roll + Cut Big,658,45,C,22,-0.32,-2.28,1.96,0.90,1631132.0,-1.53,-2.78,1.25,2023
-richani01,nick richards,2022-23,CHO,Roll + Cut Big,713,43,C,25,-0.32,-0.43,0.11,1.00,1630208.0,-0.64,-0.82,0.18,2023
-swideco01,cole swider,2022-23,LAL,Low Minute,40,6,SF,23,-0.33,-0.21,-0.12,0.10,1631306.0,-0.54,-0.35,-0.19,2023
-prestja01,jason preston,2022-23,LAC,Secondary Ball Handler,122,13,PG,23,-0.35,-0.11,-0.24,0.20,1630554.0,-0.43,-0.21,-0.21,2023
-queentr01,trevelin queen,2022-23,IND,Low Minute,70,7,SG,25,-0.35,-0.22,-0.13,0.10,1630243.0,-0.76,-0.4,-0.36,2023
-hillma01,malcolm hill,2022-23,CHI,Low Minute,2,4,SF,27,-0.35,-0.01,-0.34,0.00,1630792.0,-0.35,-0.02,-0.33,2023
-burtode02,deonte burton,2022-23,SAC,Low Minute,6,2,SG,29,-0.35,-0.17,-0.18,0.00,1629126.0,-0.36,-0.18,-0.18,2023
-simonma01,marko simonovic,2022-23,CHI,Low Minute,3,2,C,23,-0.36,-0.01,-0.34,0.00,1630250.0,-0.36,-0.02,-0.33,2023
-reidna01,naz reid,2022-23,MIN,Stretch Big,914,51,C,23,-0.36,-0.41,0.05,1.20,1629675.0,0.22,-0.14,0.37,2023
-clarkjo01,jordan clarkson,2022-23,UTA,Primary Ball Handler,1777,56,SG,30,-0.37,1.75,-2.12,2.30,203903.0,-0.25,1.77,-2.02,2023
-durenja01,jalen duren,2022-23,DET,Roll + Cut Big,1237,50,C,19,-0.39,-0.55,0.16,1.60,1631105.0,-1.06,-1.32,0.27,2023
-gibsota01,taj gibson,2022-23,WAS,Roll + Cut Big,342,35,C,37,-0.39,-1.08,0.69,0.40,201959.0,-1.06,-1.58,0.51,2023
-schakjo01,jordan schakel,2022-23,WAS,Low Minute,6,2,SF,24,-0.39,-0.13,-0.26,0.00,1630648.0,-0.43,-0.17,-0.26,2023
-brownst02,sterling brown,2022-23,LAL,Low Minute,24,4,SG,28,-0.4,-0.3,-0.09,0.00,1628425.0,-0.48,-0.32,-0.16,2023
-russeda01,d'angelo russell,2022-23,MIN,Primary Ball Handler,1778,55,PG,26,-0.4,0.3,-0.7,2.30,1626156.0,0.62,1.4,-0.79,2023
-whiteco01,coby white,2022-23,CHI,Stationary Shooter,1022,48,SG,22,-0.41,0.51,-0.91,1.30,1629632.0,-1.0,-0.63,-0.37,2023
-barlodo01,dominick barlow,2022-23,SAS,Low Minute,53,8,SF,19,-0.41,-0.33,-0.08,0.10,1631230.0,-0.37,-0.47,0.11,2023
-grahade01,devonte' graham,2022-23,NOP/SAS,Movement Shooter,848,55,PG,27,-0.42,-0.13,-0.29,1.10,1628984.0,0.0,0.31,-0.31,2023
-mccontj01,t.j. mcconnell,2022-23,IND,Slasher,1061,55,PG,30,-0.42,-0.26,-0.16,1.30,204456.0,-1.11,-0.73,-0.38,2023
-bradlto01,tony bradley,2022-23,CHI,Low Minute,30,11,C,25,-0.43,-0.17,-0.26,0.00,1628396.0,-0.45,-0.17,-0.28,2023
-butlejo01,john butler jr.,2022-23,POR,Low Minute,24,7,C,20,-0.44,-0.31,-0.12,0.00,1631219.0,-0.47,-0.32,-0.15,2023
-thybuma01,matisse thybulle,2022-23,PHI,Athletic Finisher,591,49,SG,25,-0.44,-2.11,1.67,0.70,1629680.0,-1.43,-2.35,0.92,2023
-pokusal01,aleksej pokusevski,2022-23,OKC,Stretch Big,677,31,PF,21,-0.45,-1.46,1.01,0.80,1630197.0,0.37,-0.65,1.02,2023
-olynyke01,kelly olynyk,2022-23,UTA,Stretch Big,1261,46,C,31,-0.46,-0.76,0.3,1.60,203482.0,0.12,-0.35,0.48,2023
-jonesde02,derrick jones jr.,2022-23,CHI,Stretch Big,678,45,SF,25,-0.46,-0.61,0.15,0.80,1627884.0,-0.75,-1.32,0.56,2023
-monekch01,chima moneke,2022-23,SAC,Low Minute,8,2,SF,27,-0.46,-0.19,-0.27,0.00,1631320.0,-0.37,-0.18,-0.18,2023
-morrima03,marcus morris sr.,2022-23,LAC,Stationary Shooter,1477,51,PF,33,-0.48,-0.75,0.27,1.80,202694.0,-0.06,-0.45,0.38,2023
-sumneed01,edmond sumner,2022-23,BRK,Stationary Shooter,670,46,SG,27,-0.48,-0.43,-0.05,0.80,1628410.0,-1.04,-0.36,-0.67,2023
-marshna01,naji marshall,2022-23,NOP,Stationary Shooter,1304,52,SF,25,-0.48,-0.15,-0.33,1.60,1630230.0,-0.89,-0.77,-0.12,2023
-pippesc02,scotty pippen jr.,2022-23,LAL,Low Minute,32,6,PG,22,-0.48,-0.37,-0.12,0.00,1630590.0,-0.48,-0.28,-0.2,2023
-pottemi01,micah potter,2022-23,UTA,Low Minute,14,3,PF,24,-0.49,-0.24,-0.25,0.00,1630695.0,-0.43,-0.22,-0.21,2023
-baglema01,marvin bagley iii,2022-23,DET,Roll + Cut Big,531,25,C,23,-0.49,-0.84,0.35,0.70,1628963.0,-0.16,-0.38,0.22,2023
-careyve01,vernon carey jr.,2022-23,WAS,Low Minute,24,10,C,21,-0.49,-0.33,-0.16,0.00,1630176.0,-0.48,-0.29,-0.19,2023
-keelstr01,trevor keels,2022-23,NYK,Low Minute,1,1,SG,19,-0.5,-0.32,-0.18,0.00,1631211.0,-0.5,-0.32,-0.18,2023
-dienggo01,gorgui dieng,2022-23,SAS,Stretch Big,184,19,C,33,-0.5,-0.73,0.23,0.20,203476.0,-0.53,-0.71,0.18,2023
-johnsja01,james johnson,2022-23,IND,Low Minute,98,12,PF,35,-0.5,-0.77,0.27,0.10,201949.0,-1.07,-1.04,-0.03,2023
-bouyeja01,jamaree bouyea,2022-23,MIA,Low Minute,14,2,PG,23,-0.5,-0.54,0.04,0.00,1631123.0,-0.42,-0.46,0.05,2023
-toddis01,isaiah todd,2022-23,WAS,Low Minute,13,4,PF,21,-0.51,-0.24,-0.27,0.00,1630225.0,-0.47,-0.2,-0.27,2023
-zubaciv01,ivica zubac,2022-23,LAC,Post Scorer,1676,57,C,25,-0.51,-2.03,1.52,2.00,1627826.0,0.13,-1.54,1.67,2023
-primojo01,joshua primo,2022-23,SAS,Low Minute,93,4,SG,20,-0.52,-0.68,0.16,0.10,1630563.0,-0.48,-0.62,0.14,2023
-dotsode01,devon dotson,2022-23,WAS,Low Minute,53,6,PG,23,-0.52,-0.44,-0.08,0.10,1629653.0,-0.64,-0.41,-0.23,2023
-kornelu01,luke kornet,2022-23,BOS,Roll + Cut Big,575,49,C,27,-0.52,-1.14,0.62,0.70,1628436.0,-0.28,-1.3,1.02,2023
-mykhasv01,svi mykhailiuk,2022-23,NYK,Low Minute,40,13,SF,25,-0.52,-0.61,0.09,0.00,1629004.0,-0.66,-0.49,-0.16,2023
-lenal01,alex len,2022-23,SAC,Low Minute,46,13,C,29,-0.53,-0.45,-0.08,0.10,203458.0,-0.57,-0.46,-0.11,2023
-portemi01,michael porter jr.,2022-23,DEN,Athletic Finisher,1135,40,SF,24,-0.53,0.21,-0.75,1.40,1629008.0,0.48,0.73,-0.25,2023
-burksal01,alec burks,2022-23,DET,Secondary Ball Handler,967,45,SG,31,-0.54,0.9,-1.45,1.20,202692.0,-0.56,0.46,-1.02,2023
-simonan01,anfernee simons,2022-23,POR,Primary Ball Handler,1935,54,SG,23,-0.55,0.8,-1.35,2.30,1629014.0,0.05,1.78,-1.73,2023
-browngr01,greg brown iii,2022-23,POR,Low Minute,93,16,PF,21,-0.55,-0.88,0.33,0.10,1630535.0,-0.69,-0.87,0.18,2023
-leesa01,saben lee,2022-23,PHI/PHO,Slasher,280,18,PG,23,-0.55,-0.67,0.12,0.30,1630240.0,-0.82,-0.59,-0.23,2023
-carteje01,jevon carter,2022-23,MIL,Stationary Shooter,1260,56,PG,27,-0.55,-1.83,1.28,1.50,1628975.0,-0.35,-1.41,1.05,2023
-toppiob01,obi toppin,2022-23,NYK,Athletic Finisher,631,43,PF,24,-0.56,-0.51,-0.05,0.70,1630167.0,-0.65,-0.39,-0.26,2023
-arcidry01,ryan arcidiacono,2022-23,NYK,Low Minute,26,11,PG,28,-0.57,-0.53,-0.04,0.00,1627853.0,-0.63,-0.5,-0.13,2023
-suggsja01,jalen suggs,2022-23,ORL,Secondary Ball Handler,702,32,PG,21,-0.57,-0.82,0.25,0.80,1630591.0,-0.53,-0.52,-0.01,2023
-thomaca02,cam thomas,2022-23,BRK,Shot Creator,620,39,SG,21,-0.58,0.57,-1.15,0.70,1630560.0,-0.94,0.73,-1.67,2023
-achiupr01,precious achiuwa,2022-23,TOR,Roll + Cut Big,760,34,C,23,-0.58,-0.32,-0.26,0.90,1630173.0,-0.49,-0.64,0.16,2023
-lawsoaj01,a.j. lawson,2022-23,MIN/DAL,Low Minute,50,12,SG,22,-0.58,-0.06,-0.52,0.10,1630639.0,-0.44,-0.07,-0.37,2023
-aytonde01,deandre ayton,2022-23,PHO,Post Scorer,1471,49,C,24,-0.58,-0.83,0.25,1.70,1629028.0,0.82,0.19,0.62,2023
-smithdr01,dru smith,2022-23,MIA/BRK,Low Minute,92,7,SG,25,-0.58,-0.52,-0.06,0.10,1630696.0,-0.66,-0.66,0.0,2023
-baldwpa01,patrick baldwin jr.,2022-23,GSW,Off Screen Shooter,127,15,SF,20,-0.59,-0.48,-0.11,0.10,1631116.0,-0.23,-0.1,-0.13,2023
-seabrde01,dereon seabron,2022-23,NOP,Low Minute,8,4,SG,22,-0.61,-0.28,-0.33,0.00,1631220.0,-0.68,-0.36,-0.32,2023
-mcdanja02,jaden mcdaniels,2022-23,MIN,Athletic Finisher,1706,56,PF,22,-0.61,-1.97,1.35,2.00,1630183.0,-1.05,-1.43,0.37,2023
-mannte01,terance mann,2022-23,LAC,Athletic Finisher,1349,58,SG,26,-0.62,-0.44,-0.18,1.50,1629611.0,-0.94,-0.94,0.0,2023
-maxeyty01,tyrese maxey,2022-23,PHI,Primary Ball Handler,1149,36,SG,22,-0.64,0.79,-1.43,1.30,1630178.0,-0.13,1.16,-1.3,2023
-azubuud01,udoka azubuike,2022-23,UTA,Roll + Cut Big,110,22,C,23,-0.64,-0.99,0.34,0.10,1628962.0,-0.76,-0.97,0.21,2023
-mcdanja01,jalen mcdaniels,2022-23,CHO,Stationary Shooter,1494,57,SF,25,-0.65,-1.12,0.47,1.70,1629667.0,-2.04,-2.13,0.09,2023
-fournev01,evan fournier,2022-23,NYK,Movement Shooter,412,22,SG,30,-0.66,-0.43,-0.22,0.50,203095.0,-1.18,-0.65,-0.52,2023
-quetane01,neemias queta,2022-23,SAC,Low Minute,25,4,C,23,-0.66,-0.42,-0.24,0.00,1629674.0,-0.45,-0.3,-0.15,2023
-terryda01,dalen terry,2022-23,CHI,Low Minute,64,20,SG,20,-0.66,-0.33,-0.33,0.10,1631207.0,-0.6,-0.37,-0.23,2023
-avdijde01,deni avdija,2022-23,WAS,Stationary Shooter,1372,53,SF,22,-0.67,-1.69,1.02,1.50,1630166.0,-0.34,-1.27,0.93,2023
-gayru01,rudy gay,2022-23,UTA,Stretch Big,616,43,PF,36,-0.67,-1.03,0.37,0.70,200752.0,-1.14,-0.98,-0.16,2023
-mobleis01,isaiah mobley,2022-23,CLE,Low Minute,26,9,PF,23,-0.67,-0.29,-0.39,0.00,1630600.0,-0.8,-0.37,-0.43,2023
-davisjd01,jd davison,2022-23,BOS,Low Minute,12,5,PG,20,-0.68,-0.23,-0.44,0.00,1631120.0,-0.74,-0.24,-0.49,2023
-okorois01,isaac okoro,2022-23,CLE,Stationary Shooter,1213,59,SF,22,-0.68,-1.7,1.02,1.30,1630171.0,-0.62,-1.54,0.92,2023
-mcgeeja01,javale mcgee,2022-23,DAL,Roll + Cut Big,270,34,C,35,-0.7,-1.36,0.66,0.30,201580.0,-0.24,-1.07,0.82,2023
-culveja01,jarrett culver,2022-23,ATL,Athletic Finisher,137,10,SG,23,-0.71,-0.72,0.01,0.10,1629633.0,-0.95,-0.88,-0.07,2023
-bolmale01,leandro bolmaro,2022-23,UTA,Low Minute,68,14,SG,22,-0.71,-0.54,-0.18,0.10,1630195.0,-0.93,-0.68,-0.25,2023
-bazleda01,darius bazley,2022-23,OKC,Athletic Finisher,555,36,PF,22,-0.73,-1.73,0.99,0.60,1629647.0,-0.31,-1.34,1.03,2023
-mcbrimi01,miles mcbride,2022-23,NYK,Stationary Shooter,587,45,PG,22,-0.75,-0.73,-0.02,0.60,1630540.0,-1.6,-1.14,-0.47,2023
-waterli01,lindy waters iii,2022-23,OKC,Off Screen Shooter,232,21,SG,25,-0.75,-0.68,-0.07,0.20,1630322.0,-0.99,-0.66,-0.33,2023
-powelno01,norman powell,2022-23,LAC,Secondary Ball Handler,1266,49,SG,29,-0.76,0.12,-0.87,1.30,1626181.0,-0.2,0.5,-0.7,2023
-grimequ01,quentin grimes,2022-23,NYK,Movement Shooter,1410,47,SG,22,-0.77,-0.94,0.17,1.50,1629656.0,-1.01,-0.96,-0.06,2023
-divindo01,donte divincenzo,2022-23,GSW,Movement Shooter,1129,46,SG,26,-0.77,-0.82,0.05,1.20,1628978.0,-0.01,-0.23,0.23,2023
-bolbo01,bol bol,2022-23,ORL,Athletic Finisher,1203,52,PF,23,-0.77,-1.58,0.81,1.30,1629626.0,-0.38,-1.66,1.28,2023
-kabenmf01,mfiondu kabengele,2022-23,BOS,Low Minute,14,2,PF,25,-0.78,-0.29,-0.49,0.00,1629662.0,-0.78,-0.28,-0.5,2023
-smithde03,dennis smith jr.,2022-23,CHO,Slasher,868,36,PG,25,-0.8,-2.04,1.24,0.90,1628372.0,-1.43,-1.72,0.28,2023
-brownke03,kendall brown,2022-23,IND,Low Minute,40,6,SG,19,-0.81,-0.54,-0.27,0.00,1631112.0,-0.93,-0.6,-0.33,2023
-vassede01,devin vassell,2022-23,SAS,Secondary Ball Handler,907,29,SG,22,-0.82,0.05,-0.87,0.90,1630170.0,-0.32,0.56,-0.88,2023
-edwarke02,kessler edwards,2022-23,BRK,Low Minute,79,14,SF,22,-0.83,-0.21,-0.62,0.10,1630556.0,-1.44,-0.57,-0.87,2023
-dellama01,matthew dellavedova,2022-23,SAC,Secondary Ball Handler,145,23,PG,32,-0.83,-0.8,-0.03,0.10,203521.0,-0.83,-0.64,-0.19,2023
-giddejo01,josh giddey,2022-23,OKC,Slasher,1545,50,SG,20,-0.83,-0.57,-0.27,1.60,1630581.0,-0.07,0.19,-0.26,2023
-garubus01,usman garuba,2022-23,HOU,Athletic Finisher,669,49,PF,20,-0.85,-2.05,1.2,0.70,1630586.0,-0.58,-1.98,1.4,2023
-alexani01,nickeil alexander-walker,2022-23,UTA/MIN,Secondary Ball Handler,529,37,SG,24,-0.85,-0.88,0.03,0.50,1629638.0,-0.95,-0.98,0.04,2023
-onealro01,royce o'neale,2022-23,BRK,Stationary Shooter,1773,53,SF,29,-0.86,-1.47,0.6,1.80,1626220.0,-0.56,-0.96,0.4,2023
-hayesja02,jaxson hayes,2022-23,NOP,Roll + Cut Big,433,31,C,22,-0.86,-1.07,0.21,0.40,1629637.0,-0.86,-1.15,0.3,2023
-willike04,kenrich williams,2022-23,OKC,Stretch Big,1053,47,PF,28,-0.86,-0.04,-0.82,1.00,1629026.0,-0.72,-0.37,-0.35,2023
-smithja04,jalen smith,2022-23,IND,Stretch Big,913,50,PF,22,-0.87,-0.56,-0.31,0.90,1630188.0,-0.33,-0.31,-0.02,2023
-joneska01,kai jones,2022-23,CHO,Athletic Finisher,237,27,C,22,-0.88,-1.7,0.82,0.20,1630539.0,-1.75,-2.2,0.45,2023
-paytoga02,gary payton ii,2022-23,POR,Athletic Finisher,257,15,PG,30,-0.88,-1.14,0.26,0.30,1627780.0,-1.63,-1.93,0.3,2023
-noelne01,nerlens noel,2022-23,DET,Roll + Cut Big,152,14,C,28,-0.89,-1.82,0.93,0.10,203457.0,-0.33,-1.52,1.19,2023
-champju02,julian champagnie,2022-23,PHI,Low Minute,7,2,SF,21,-0.89,-0.24,-0.65,0.00,1630577.0,-0.93,-0.3,-0.63,2023
-monkma01,malik monk,2022-23,SAC,Movement Shooter,1218,54,SG,25,-0.89,0.66,-1.55,1.20,1628370.0,0.28,1.58,-1.3,2023
-harpero02,ron harper jr.,2022-23,TOR,Low Minute,9,3,SF,22,-0.9,-0.49,-0.4,0.00,1631199.0,-1.01,-0.58,-0.44,2023
-bogdabo02,bojan bogdanovic,2022-23,DET,Off Screen Shooter,1725,55,PF,33,-0.9,1.2,-2.1,1.70,202711.0,-1.35,0.78,-2.13,2023
-martica02,caleb martin,2022-23,MIA,Athletic Finisher,1400,47,PF,27,-0.9,-1.81,0.91,1.30,1628997.0,-0.73,-1.82,1.09,2023
-kaminfr01,frank kaminsky,2022-23,ATL/HOU,Stretch Big,176,27,C,29,-0.93,-0.7,-0.22,0.20,1626163.0,-0.86,-0.92,0.06,2023
-hylanbo01,bones hyland,2022-23,DEN,Primary Ball Handler,820,42,PG,22,-0.93,1.22,-2.15,0.80,1630538.0,0.15,1.57,-1.41,2023
-schofad01,admiral schofield,2022-23,ORL,Stretch Big,350,27,PF,25,-0.93,-0.71,-0.22,0.30,1629678.0,-1.3,-0.86,-0.44,2023
-martity01,tyrese martin,2022-23,ATL,Low Minute,44,13,SG,23,-0.94,-0.4,-0.54,0.00,1631213.0,-0.76,-0.44,-0.32,2023
-fostemi02,michael foster jr.,2022-23,PHI,Low Minute,1,1,PF,20,-0.94,-0.3,-0.65,0.00,1630701.0,-0.91,-0.28,-0.63,2023
-netora01,raul neto,2022-23,CLE,Stationary Shooter,393,38,PG,30,-0.94,-0.93,-0.02,0.40,203526.0,-0.98,-1.04,0.06,2023
-lewiski01,kira lewis jr.,2022-23,NOP,Secondary Ball Handler,132,12,PG,21,-0.96,-0.35,-0.62,0.10,1630184.0,-1.09,-0.76,-0.33,2023
-shamela01,landry shamet,2022-23,PHO,Movement Shooter,642,30,SG,25,-0.98,-0.57,-0.41,0.60,1629013.0,-0.94,-0.02,-0.92,2023
-strusma01,max strus,2022-23,MIA,Movement Shooter,1601,55,SF,26,-0.98,-0.96,-0.02,1.50,1629622.0,-0.96,-0.7,-0.26,2023
-willial06,alondes williams,2022-23,BRK,Low Minute,5,1,SG,23,-0.99,-0.15,-0.84,0.00,1631214.0,-0.93,-0.13,-0.8,2023
-wadede01,dean wade,2022-23,CLE,Stationary Shooter,646,29,PF,26,-0.99,-2.14,1.16,0.60,1629731.0,-1.09,-2.04,0.95,2023
-cainja01,jamal cain,2022-23,MIA,Roll + Cut Big,181,13,SF,23,-0.99,-1.1,0.11,0.20,1631288.0,-1.07,-1.18,0.12,2023
-mcgruro01,rodney mcgruder,2022-23,DET,Movement Shooter,217,21,SG,31,-0.99,-0.88,-0.12,0.20,203585.0,-1.4,-1.05,-0.35,2023
-hasleud01,udonis haslem,2022-23,MIA,Low Minute,46,6,C,42,-0.99,-0.9,-0.1,0.00,2617.0,-0.66,-0.73,0.06,2023
-theisda01,daniel theis,2022-23,IND,Low Minute,71,5,C,30,-1.0,-0.68,-0.33,0.10,1628464.0,-0.94,-0.67,-0.27,2023
-wainris01,ish wainright,2022-23,PHO,Stationary Shooter,626,40,SF,28,-1.0,-1.06,0.06,0.60,1630688.0,-1.15,-1.53,0.38,2023
-johnske04,keldon johnson,2022-23,SAS,Stationary Shooter,1596,50,SF,23,-1.0,0.8,-1.81,1.40,1629640.0,-1.77,0.54,-2.31,2023
-connapa01,pat connaughton,2022-23,MIL,Stationary Shooter,1009,40,SG,30,-1.01,-0.65,-0.35,0.90,1626192.0,-0.18,-0.61,0.42,2023
-josepco01,cory joseph,2022-23,DET,Secondary Ball Handler,599,39,PG,31,-1.01,-0.23,-0.78,0.50,202709.0,-1.16,-0.61,-0.55,2023
-bantoda01,dalano banton,2022-23,TOR,Athletic Finisher,233,25,PG,23,-1.02,-0.74,-0.28,0.20,1630625.0,-0.71,-0.71,0.0,2023
-leverca01,caris levert,2022-23,CLE,Secondary Ball Handler,1602,53,SG,28,-1.02,-0.87,-0.15,1.40,1627747.0,-0.24,-0.52,0.28,2023
-harremo01,montrezl harrell,2022-23,PHI,Post Scorer,621,49,C,29,-1.02,-0.78,-0.24,0.50,1626149.0,-1.02,-0.93,-0.09,2023
-champju01,justin champagnie,2022-23,TOR,Low Minute,11,3,SF,21,-1.03,-0.56,-0.46,0.00,1630551.0,-1.02,-0.61,-0.41,2023
-fultzma01,markelle fultz,2022-23,ORL,Slasher,1003,36,PG,24,-1.03,-1.16,0.13,0.90,1628365.0,0.15,-0.14,0.29,2023
-rolliry01,ryan rollins,2022-23,GSW,Low Minute,62,12,PG,20,-1.03,-0.83,-0.2,0.10,1631157.0,-0.55,-0.51,-0.04,2023
-maledth01,theo maledon,2022-23,CHO,Secondary Ball Handler,581,36,PG,21,-1.03,-0.49,-0.54,0.50,1630177.0,-1.11,-1.36,0.25,2023
-robindu01,duncan robinson,2022-23,MIA,Movement Shooter,501,28,SF,28,-1.04,-0.35,-0.69,0.40,1629130.0,-1.69,-0.88,-0.81,2023
-willija07,jaylin williams,2022-23,OKC,Stretch Big,352,23,PF,20,-1.04,-1.36,0.31,0.30,1631119.0,-0.87,-1.17,0.3,2023
-brownbr01,bruce brown,2022-23,DEN,Stationary Shooter,1577,56,SG,26,-1.05,-0.9,-0.15,1.40,1628971.0,-0.27,-0.52,0.25,2023
-jeromty01,ty jerome,2022-23,GSW,Secondary Ball Handler,589,34,SG,25,-1.05,-0.61,-0.44,0.50,1629660.0,-0.84,-0.62,-0.22,2023
-leeda03,damion lee,2022-23,PHO,Movement Shooter,1295,58,SG,30,-1.05,-1.2,0.15,1.10,1627814.0,-1.87,-1.42,-0.45,2023
-richajo01,josh richardson,2022-23,SAS,Movement Shooter,998,42,SG,29,-1.07,-0.47,-0.6,0.80,1626196.0,-1.74,-0.23,-1.51,2023
-mathega01,garrison mathews,2022-23,HOU,Movement Shooter,601,45,SG,26,-1.09,-1.16,0.07,0.50,1629726.0,-1.14,-0.78,-0.36,2023
-martike04,kenyon martin jr.,2022-23,HOU,Stretch Big,1467,56,SF,22,-1.1,0.22,-1.32,1.20,1630231.0,-1.87,-0.95,-0.92,2023
-sprinja01,jaden springer,2022-23,PHI,Low Minute,26,7,SG,20,-1.11,-0.45,-0.66,0.00,1630531.0,-0.99,-0.39,-0.59,2023
-davisjo06,johnny davis,2022-23,WAS,Low Minute,57,12,SG,20,-1.11,-0.92,-0.19,0.00,1631098.0,-0.82,-0.62,-0.2,2023
-griffaj01,aj griffin,2022-23,ATL,Movement Shooter,1072,53,SF,19,-1.11,-0.4,-0.71,0.90,1631100.0,-1.69,-0.64,-1.05,2023
-willigr01,grant williams,2022-23,BOS,Stationary Shooter,1522,56,PF,24,-1.12,-1.79,0.67,1.20,1629684.0,-0.63,-1.21,0.57,2023
-stewais01,isaiah stewart,2022-23,DET,Stretch Big,1305,47,C,21,-1.14,-1.52,0.38,1.10,1630191.0,-0.94,-0.74,-0.2,2023
-loftoke01,kenneth lofton jr.,2022-23,MEM,Low Minute,31,8,PF,20,-1.14,-0.53,-0.62,0.00,1631254.0,-0.93,-0.44,-0.49,2023
-wisemja01,james wiseman,2022-23,GSW,Roll + Cut Big,262,21,C,21,-1.14,-1.13,-0.02,0.20,1630164.0,-0.12,-0.53,0.41,2023
-okongon01,onyeka okongwu,2022-23,ATL,Roll + Cut Big,1309,55,C,22,-1.16,-1.96,0.8,1.00,1630168.0,-0.1,-1.23,1.13,2023
-matthwe02,wesley matthews,2022-23,MIL,Movement Shooter,577,37,SG,36,-1.16,-1.67,0.51,0.50,202083.0,-2.07,-2.16,0.09,2023
-diabamo01,moussa diabate,2022-23,LAC,Roll + Cut Big,168,16,PF,21,-1.16,-0.83,-0.33,0.10,1631217.0,-1.29,-0.95,-0.33,2023
-krejcvi01,vit krejci,2022-23,ATL,Athletic Finisher,117,20,PG,22,-1.17,-0.68,-0.49,0.10,1630249.0,-1.05,-0.81,-0.25,2023
-hausesa01,sam hauser,2022-23,BOS,Movement Shooter,810,55,PF,25,-1.18,-0.49,-0.68,0.60,1630573.0,-0.54,-0.27,-0.28,2023
-chandke01,kennedy chandler,2022-23,MEM,Secondary Ball Handler,221,24,PG,20,-1.18,-1.17,-0.01,0.20,1631113.0,-1.14,-1.08,-0.06,2023
-wieskjo01,joe wieskamp,2022-23,TOR,Low Minute,17,2,SF,23,-1.18,-0.75,-0.43,0.00,1630580.0,-1.07,-0.63,-0.44,2023
-willivi01,vince williams jr.,2022-23,MEM,Low Minute,49,9,SG,22,-1.19,-0.77,-0.41,0.00,1631246.0,-1.03,-0.62,-0.4,2023
-daniedy01,dyson daniels,2022-23,NOP,Athletic Finisher,778,39,PG,19,-1.19,-2.2,1.01,0.60,1630700.0,-1.62,-2.3,0.68,2023
-jovicni01,nikola jovic,2022-23,MIA,Stretch Big,204,15,PF,19,-1.19,-0.91,-0.29,0.20,1631107.0,-1.01,-1.02,0.01,2023
-robyis01,isaiah roby,2022-23,SAS,Stretch Big,448,41,PF,25,-1.2,-1.24,0.04,0.30,1629676.0,-1.46,-1.56,0.1,2023
-dowtije01,jeff dowtin jr.,2022-23,TOR,Low Minute,93,14,PG,25,-1.21,-0.75,-0.46,0.10,1630288.0,-1.36,-0.92,-0.44,2023
-kennalu01,luke kennard,2022-23,LAC,Movement Shooter,725,36,SG,26,-1.23,-1.48,0.24,0.50,1628379.0,-1.9,-1.44,-0.46,2023
-whiteja03,jack white,2022-23,DEN,Low Minute,41,13,SF,25,-1.24,-0.68,-0.55,0.00,1631298.0,-1.15,-0.61,-0.54,2023
-vandeja01,jarred vanderbilt,2022-23,UTA,Roll + Cut Big,1253,53,PF,23,-1.24,-0.8,-0.44,0.90,1629020.0,0.79,-0.05,0.84,2023
-knighna01,nathan knight,2022-23,MIN,Athletic Finisher,268,33,PF,25,-1.24,-0.6,-0.64,0.20,1630233.0,-1.38,-0.79,-0.59,2023
-inglejo01,joe ingles,2022-23,MIL,Secondary Ball Handler,510,23,SF,35,-1.25,-0.74,-0.51,0.40,204060.0,-1.62,-1.36,-0.25,2023
-brissos01,oshae brissett,2022-23,IND,Athletic Finisher,779,49,SF,24,-1.26,-0.99,-0.27,0.60,1629052.0,-1.49,-1.2,-0.29,2023
-johnsst04,stanley johnson,2022-23,SAS,Stationary Shooter,454,30,SF,26,-1.27,-0.84,-0.43,0.30,1626169.0,-1.25,-1.3,0.05,2023
-vincega01,gabe vincent,2022-23,MIA,Secondary Ball Handler,1072,43,PG,26,-1.28,-1.27,-0.01,0.80,1629216.0,-1.95,-1.74,-0.21,2023
-hillge01,george hill,2022-23,MIL,Secondary Ball Handler,668,35,PG,36,-1.28,-1.3,0.02,0.50,201588.0,-1.46,-1.46,0.0,2023
-reaveau01,austin reaves,2022-23,LAL,Stationary Shooter,1070,39,SG,24,-1.29,-0.52,-0.77,0.80,1630559.0,-2.03,-1.31,-0.71,2023
-moorewe01,wendell moore jr.,2022-23,MIN,Stretch Big,139,24,SG,21,-1.29,-0.59,-0.71,0.10,1631111.0,-1.01,-0.7,-0.31,2023
-templga01,garrett temple,2022-23,NOP,Stationary Shooter,129,18,SG,36,-1.3,-1.01,-0.29,0.10,202066.0,-1.21,-0.99,-0.22,2023
-gillan01,anthony gill,2022-23,WAS,Roll + Cut Big,393,39,PF,30,-1.3,-0.94,-0.36,0.30,1630264.0,-2.06,-1.78,-0.28,2023
-bostobr01,brandon boston jr.,2022-23,LAC,Slasher,244,20,SG,21,-1.33,-0.53,-0.8,0.20,1630527.0,-1.2,-0.45,-0.76,2023
-omorueu01,eugene omoruyi,2022-23,OKC,Stretch Big,263,22,SF,25,-1.33,-0.84,-0.49,0.20,1630647.0,-1.74,-0.99,-0.76,2023
-ryanma01,matt ryan,2022-23,LAL/MIN,Movement Shooter,303,32,SF,25,-1.34,-0.14,-1.2,0.20,1630346.0,-1.04,-0.18,-0.86,2023
-greenda02,danny green,2022-23,MEM,Low Minute,44,3,SG,35,-1.34,-0.79,-0.55,0.00,201980.0,-1.13,-0.65,-0.48,2023
-washipj01,p.j. washington,2022-23,CHO,Stationary Shooter,1839,57,PF,24,-1.35,-1.34,-0.01,1.20,1629023.0,-1.66,-1.46,-0.21,2023
-pinsoth01,theo pinson,2022-23,DAL,Stationary Shooter,182,30,SG,27,-1.35,-0.66,-0.7,0.10,1629033.0,-0.85,-0.48,-0.36,2023
-oubreke01,kelly oubre jr.,2022-23,CHO,Stationary Shooter,1141,35,SF,27,-1.35,-0.04,-1.32,0.80,1626162.0,-0.57,0.17,-0.74,2023
-watsope01,peyton watson,2022-23,DEN,Low Minute,36,11,SG,20,-1.36,-0.64,-0.71,0.00,1631212.0,-1.14,-0.55,-0.58,2023
-niangge01,georges niang,2022-23,PHI,Movement Shooter,1036,53,PF,29,-1.36,-0.76,-0.6,0.70,1627777.0,-1.04,-0.17,-0.87,2023
-porteke02,kevin porter jr.,2022-23,HOU,Shot Creator,1360,40,PG,22,-1.36,-0.61,-0.75,0.90,1629645.0,-0.31,0.46,-0.77,2023
-willija06,jalen williams,2022-23,OKC,Athletic Finisher,1478,51,SG,21,-1.38,-1.62,0.23,1.00,1631114.0,-0.69,-1.02,0.32,2023
-saricda01,dario saric,2022-23,PHO,Stretch Big,533,37,PF,28,-1.4,-1.11,-0.29,0.30,203967.0,-0.88,-0.91,0.03,2023
-morrima02,markieff morris,2022-23,BRK,Athletic Finisher,285,27,PF,33,-1.43,-1.2,-0.22,0.20,202693.0,-1.57,-1.08,-0.5,2023
-griffbl01,blake griffin,2022-23,BOS,Stretch Big,323,24,C,33,-1.43,-1.58,0.15,0.20,201933.0,-0.91,-1.02,0.11,2023
-ibakase01,serge ibaka,2022-23,MIL,Stretch Big,185,16,C,33,-1.44,-1.62,0.18,0.10,201586.0,-1.36,-1.44,0.08,2023
-duartch01,chris duarte,2022-23,IND,Secondary Ball Handler,655,35,SF,25,-1.44,-0.45,-0.99,0.40,1630537.0,-2.04,-1.13,-0.91,2023
-bogdabo01,bogdan bogdanovic,2022-23,ATL,Secondary Ball Handler,933,32,SG,30,-1.44,0.81,-2.25,0.60,203992.0,-0.99,0.1,-1.09,2023
-walkeja01,jabari walker,2022-23,POR,Roll + Cut Big,307,36,SF,20,-1.47,-1.09,-0.38,0.20,1631133.0,-1.47,-1.14,-0.34,2023
-littlna01,nassir little,2022-23,POR,Stationary Shooter,574,35,SF,23,-1.47,-0.86,-0.61,0.30,1629642.0,-1.66,-1.23,-0.43,2023
-walljo01,john wall,2022-23,LAC,Shot Creator,755,34,PG,32,-1.47,-0.57,-0.9,0.40,202322.0,0.07,0.6,-0.53,2023
-lamban01,anthony lamb,2022-23,GSW,Stationary Shooter,810,42,SF,25,-1.48,-1.52,0.04,0.50,1630237.0,-1.17,-1.18,0.0,2023
-langfro01,romeo langford,2022-23,SAS,Athletic Finisher,649,32,SG,23,-1.49,-1.02,-0.47,0.40,1629641.0,-2.67,-1.69,-0.98,2023
-nixda01,daishen nix,2022-23,HOU,Secondary Ball Handler,636,41,PG,20,-1.49,-1.11,-0.39,0.40,1630227.0,-2.07,-1.95,-0.12,2023
-greenja01,jamychal green,2022-23,GSW,Stretch Big,514,36,PF,32,-1.49,-1.44,-0.05,0.30,203210.0,-0.89,-0.97,0.08,2023
-winslju01,justise winslow,2022-23,POR,Athletic Finisher,776,29,SF,26,-1.5,-2.05,0.55,0.40,1626159.0,-1.63,-1.71,0.08,2023
-martico01,cody martin,2022-23,CHO,Stationary Shooter,134,7,SF,27,-1.51,-1.04,-0.47,0.10,1628998.0,-0.91,-0.92,0.02,2023
-antetth01,thanasis antetokounmpo,2022-23,MIL,Low Minute,98,24,SF,30,-1.51,-1.22,-0.29,0.10,203648.0,-1.1,-1.12,0.02,2023
-murrake02,keegan murray,2022-23,SAC,Athletic Finisher,1577,54,SF,22,-1.51,-1.42,-0.09,0.90,1631099.0,-0.16,-0.13,-0.03,2023
-gordoer01,eric gordon,2022-23,HOU,Secondary Ball Handler,1418,47,SG,34,-1.52,-0.79,-0.73,0.80,201569.0,-2.03,-0.93,-1.11,2023
-jonesda03,damian jones,2022-23,LAL,Roll + Cut Big,176,22,C,27,-1.53,-1.71,0.18,0.10,1627745.0,-0.8,-1.37,0.57,2023
-hamptrj01,r.j. hampton,2022-23,ORL,Secondary Ball Handler,361,26,PG,22,-1.56,-0.7,-0.87,0.20,1630181.0,-1.05,-0.67,-0.38,2023
-holidaa01,aaron holiday,2022-23,ATL,Secondary Ball Handler,716,49,PG,26,-1.57,-1.81,0.24,0.40,1628988.0,-2.66,-2.28,-0.38,2023
-nesmiaa01,aaron nesmith,2022-23,IND,Stationary Shooter,1211,51,SF,23,-1.57,-1.55,-0.02,0.60,1630174.0,-1.68,-1.54,-0.14,2023
-highsha01,haywood highsmith,2022-23,MIA,Stretch Big,780,41,SF,26,-1.57,-2.7,1.13,0.40,1629312.0,-1.88,-2.69,0.82,2023
-agbajoc01,ochai agbaji,2022-23,UTA,Athletic Finisher,470,35,SG,22,-1.57,-1.21,-0.36,0.20,1630534.0,-3.09,-2.09,-1.0,2023
-bateske01,keita bates-diop,2022-23,SAS,Athletic Finisher,824,43,SF,27,-1.59,-1.61,0.03,0.40,1628966.0,-2.18,-1.44,-0.74,2023
-diakima01,mamadi diakite,2022-23,CLE,Low Minute,99,16,PF,26,-1.59,-1.32,-0.27,0.10,1629603.0,-1.27,-1.01,-0.26,2023
-okekech01,chuma okeke,2022-23,ORL,Athletic Finisher,392,18,SF,24,-1.6,-1.32,-0.29,0.20,1629643.0,-0.61,-1.09,0.48,2023
-youngth01,thaddeus young,2022-23,TOR,Roll + Cut Big,723,46,PF,34,-1.61,-1.38,-0.23,0.40,201152.0,-1.23,-1.46,0.23,2023
-okpalkz01,kz okpala,2022-23,SAC,Athletic Finisher,248,35,PF,23,-1.62,-2.46,0.85,0.10,1629644.0,-2.0,-2.44,0.45,2023
-jacksju01,justin jackson,2022-23,BOS,Off Screen Shooter,107,23,SF,27,-1.62,-1.09,-0.53,0.10,1628382.0,-0.91,-0.68,-0.23,2023
-sochaje01,jeremy sochan,2022-23,SAS,Athletic Finisher,1161,46,PF,19,-1.62,-1.13,-0.49,0.60,1631110.0,-2.71,-1.85,-0.85,2023
-diengou01,ousmane dieng,2022-23,OKC,Athletic Finisher,284,19,SF,19,-1.64,-1.16,-0.48,0.10,1631172.0,-1.53,-1.32,-0.2,2023
-barrerj01,rj barrett,2022-23,NYK,Secondary Ball Handler,1740,51,SG,22,-1.64,0.05,-1.69,0.80,1629628.0,-0.68,0.13,-0.81,2023
-watanyu01,yuta watanabe,2022-23,BRK,Stationary Shooter,763,42,SF,28,-1.64,-0.86,-0.78,0.40,1629139.0,-1.73,-1.21,-0.52,2023
-haywago01,gordon hayward,2022-23,CHO,Secondary Ball Handler,960,32,SF,32,-1.65,-1.64,-0.01,0.50,202330.0,-1.76,-1.29,-0.47,2023
-huntede01,de'andre hunter,2022-23,ATL,Stationary Shooter,1471,47,SF,25,-1.68,-1.05,-0.63,0.70,1629631.0,-1.4,-0.84,-0.56,2023
-beysa01,saddiq bey,2022-23,DET,Movement Shooter,1500,52,SF,23,-1.68,0.3,-1.98,0.70,1630180.0,-1.09,0.24,-1.33,2023
-wrighmc01,mckinley wright iv,2022-23,DAL,Secondary Ball Handler,193,19,PG,24,-1.69,-0.92,-0.77,0.10,1630593.0,-0.79,-0.71,-0.07,2023
-manntr01,tre mann,2022-23,OKC,Secondary Ball Handler,928,50,PG,22,-1.71,-1.19,-0.52,0.40,1630544.0,-1.84,-0.98,-0.86,2023
-simsje01,jericho sims,2022-23,NYK,Roll + Cut Big,698,45,C,24,-1.71,-2.46,0.75,0.30,1630579.0,-1.37,-2.27,0.9,2023
-sharpda01,day'ron sharpe,2022-23,BRK,Roll + Cut Big,309,31,C,21,-1.71,-1.25,-0.46,0.10,1630549.0,-1.45,-1.38,-0.07,2023
-flynnma01,malachi flynn,2022-23,TOR,Movement Shooter,551,41,PG,24,-1.72,-0.41,-1.31,0.20,1630201.0,-1.95,-0.99,-0.95,2023
-murphtr02,trey murphy iii,2022-23,NOP,Stationary Shooter,1592,54,SF,22,-1.72,-1.28,-0.44,0.70,1630530.0,0.05,-0.23,0.28,2023
-beverpa01,patrick beverley,2022-23,LAL,Secondary Ball Handler,1211,45,PG,34,-1.75,-2.38,0.63,0.50,201976.0,-1.24,-1.96,0.72,2023
-sextoco01,collin sexton,2022-23,UTA,Slasher,1066,45,SG,24,-1.76,0.26,-2.02,0.40,1629012.0,-1.33,0.36,-1.7,2023
-hardyja02,jaden hardy,2022-23,DAL,Secondary Ball Handler,309,29,SG,20,-1.78,-0.48,-1.3,0.10,1630702.0,-1.2,-0.29,-0.91,2023
-greenja05,jalen green,2022-23,HOU,Primary Ball Handler,1785,52,SG,21,-1.8,0.26,-2.05,0.70,1630224.0,-1.63,0.28,-1.92,2023
-taylote01,terry taylor,2022-23,IND,Athletic Finisher,228,26,PF,23,-1.8,-1.17,-0.64,0.10,1630678.0,-2.58,-1.75,-0.83,2023
-schrode01,dennis schroder,2022-23,LAL,Primary Ball Handler,1300,43,PG,29,-1.81,-0.6,-1.21,0.50,203471.0,-1.22,-0.65,-0.57,2023
-birchkh01,khem birch,2022-23,TOR,Roll + Cut Big,162,20,C,30,-1.82,-2.16,0.34,0.10,203920.0,-2.2,-2.12,-0.08,2023
-wiggiaa01,aaron wiggins,2022-23,OKC,Stretch Big,824,44,SG,24,-1.82,-1.4,-0.42,0.30,1630598.0,-2.05,-1.45,-0.61,2023
-porteot01,otto porter jr.,2022-23,TOR,Stretch Big,146,8,SF,29,-1.83,-1.26,-0.57,0.10,203490.0,-1.6,-1.3,-0.3,2023
-watfotr01,trendon watford,2022-23,POR,Athletic Finisher,649,40,PF,22,-1.86,-1.35,-0.51,0.20,1630570.0,-1.64,-1.76,0.13,2023
-reddica01,cam reddish,2022-23,NYK/POR,Stationary Shooter,455,21,SF,23,-1.88,-1.25,-0.62,0.20,1629629.0,-1.81,-1.55,-0.27,2023
-harriga01,gary harris,2022-23,ORL,Stationary Shooter,656,28,SG,28,-1.9,-1.14,-0.76,0.20,203914.0,-1.39,-1.26,-0.12,2023
-craigto01,torrey craig,2022-23,PHO,Stretch Big,1417,55,SF,32,-1.9,-1.9,0.0,0.50,1628470.0,-0.92,-1.55,0.63,2023
-mcgowbr01,bryce mcgowens,2022-23,CHO,Movement Shooter,326,24,SG,20,-1.91,-1.61,-0.3,0.10,1631121.0,-2.52,-2.12,-0.4,2023
-korkmfu01,furkan korkmaz,2022-23,PHI,Athletic Finisher,255,25,SG,25,-1.91,-1.17,-0.75,0.10,1627788.0,-1.91,-1.06,-0.86,2023
-johnske07,keon johnson,2022-23,POR,Stationary Shooter,264,26,SG,20,-1.93,-1.4,-0.54,0.10,1630553.0,-1.46,-0.93,-0.53,2023
-moodymo01,moses moody,2022-23,GSW,Stationary Shooter,603,42,SG,20,-1.94,-1.41,-0.53,0.20,1630541.0,-1.96,-1.32,-0.63,2023
-bouknja01,james bouknight,2022-23,CHO,Movement Shooter,354,26,SG,22,-1.95,-1.75,-0.2,0.10,1630547.0,-1.81,-1.64,-0.17,2023
-colliza01,zach collins,2022-23,SAS,Post Scorer,929,46,C,25,-1.96,-1.12,-0.84,0.30,1628380.0,-1.85,-1.21,-0.64,2023
-dukeda01,david duke jr.,2022-23,BRK,Slasher,137,15,SG,23,-1.96,-1.23,-0.74,0.00,1630561.0,-2.05,-1.17,-0.88,2023
-washidu02,duane washington jr.,2022-23,PHO,Secondary Ball Handler,394,31,SG,22,-1.98,-0.34,-1.63,0.10,1630613.0,-1.73,0.09,-1.81,2023
-tateja01,jae'sean tate,2022-23,HOU,Athletic Finisher,377,18,SF,27,-1.99,-1.48,-0.5,0.10,1630256.0,-1.83,-1.47,-0.36,2023
-jacksre01,reggie jackson,2022-23,LAC,Primary Ball Handler,1338,52,PG,32,-2.0,-1.49,-0.51,0.30,202704.0,-1.66,-0.84,-0.81,2023
-klebima01,maxi kleber,2022-23,DAL,Athletic Finisher,564,22,C,31,-2.02,-2.49,0.47,0.10,1628467.0,-1.9,-2.21,0.31,2023
-smithja05,jabari smith jr.,2022-23,HOU,Athletic Finisher,1581,53,PF,19,-2.03,-1.88,-0.15,0.40,1631095.0,-1.37,-1.64,0.27,2023
-bartowi01,will barton,2022-23,WAS,Secondary Ball Handler,782,40,SG,32,-2.04,-1.36,-0.68,0.20,203115.0,-1.6,-0.99,-0.61,2023
-harrijo01,joe harris,2022-23,BRK,Movement Shooter,1169,49,SG,31,-2.05,-0.72,-1.33,0.30,203925.0,-1.57,-0.94,-0.63,2023
-princta02,taurean prince,2022-23,MIN,Stationary Shooter,742,35,SF,28,-2.06,-1.49,-0.57,0.20,1627752.0,-2.33,-1.58,-0.75,2023
-hachiru01,rui hachimura,2022-23,WAS/LAL,Athletic Finisher,947,39,PF,25,-2.07,-1.72,-0.35,0.20,1629060.0,-1.4,-0.8,-0.59,2023
-miltosh01,shake milton,2022-23,PHI,Slasher,1096,51,SG,26,-2.08,-0.73,-1.35,0.20,1629003.0,-1.79,-0.82,-0.97,2023
-vonleno01,noah vonleh,2022-23,BOS,Athletic Finisher,171,23,C,27,-2.08,-2.22,0.13,0.00,203943.0,-1.9,-2.02,0.12,2023
-mathube01,bennedict mathurin,2022-23,IND,Secondary Ball Handler,1607,58,SF,20,-2.09,-0.65,-1.44,0.30,1631097.0,-2.35,-0.35,-2.01,2023
-harrike01,kevon harris,2022-23,ORL,Stretch Big,336,27,SG,25,-2.1,-1.84,-0.26,0.10,1630284.0,-2.11,-1.84,-0.27,2023
-millspa02,patty mills,2022-23,BRK,Movement Shooter,471,36,PG,34,-2.11,-0.02,-2.1,0.10,201988.0,-1.8,0.05,-1.85,2023
-beaslma01,malik beasley,2022-23,UTA,Off Screen Shooter,1470,56,SG,26,-2.15,0.33,-2.48,0.20,1627736.0,-0.73,0.84,-1.58,2023
-poolejo01,jordan poole,2022-23,GSW,Primary Ball Handler,1680,56,PG,23,-2.18,-0.75,-1.42,0.20,1629673.0,-0.49,0.98,-1.47,2023
-knoxke01,kevin knox ii,2022-23,DET,Stationary Shooter,593,42,PF,23,-2.21,-2.26,0.05,0.10,1628995.0,-2.05,-1.93,-0.12,2023
-rosede01,derrick rose,2022-23,NYK,Secondary Ball Handler,336,26,PG,34,-2.21,-1.11,-1.11,0.00,201565.0,-1.75,-0.72,-1.04,2023
-hayeski01,killian hayes,2022-23,DET,Primary Ball Handler,1420,54,PG,21,-2.22,-1.64,-0.59,0.20,1630165.0,-1.62,-1.12,-0.5,2023
-forbebr01,bryn forbes,2022-23,MIN,Off Screen Shooter,267,25,SG,29,-2.24,-0.72,-1.51,0.00,1627854.0,-2.31,-0.93,-1.39,2023
-toscaju01,juan toscano-anderson,2022-23,LAL,Stretch Big,365,30,SF,29,-2.26,-2.54,0.28,0.00,1629308.0,-2.45,-2.85,0.4,2023
-fontesi01,simone fontecchio,2022-23,UTA,Movement Shooter,257,29,SF,27,-2.26,-0.76,-1.5,0.00,1631323.0,-1.64,-0.62,-1.02,2023
-sharpsh01,shaedon sharpe,2022-23,POR,Athletic Finisher,1103,55,SG,19,-2.26,-1.04,-1.23,0.10,1631101.0,-2.7,-1.49,-1.22,2023
-chrisjo01,josh christopher,2022-23,HOU,Slasher,367,38,SG,21,-2.27,-1.3,-0.97,0.00,1630528.0,-1.57,-1.29,-0.29,2023
-holmeri01,richaun holmes,2022-23,SAC,Roll + Cut Big,301,33,C,29,-2.28,-2.65,0.36,0.00,1626158.0,-1.62,-2.02,0.4,2023
-warretj01,t.j. warren,2022-23,BRK,Athletic Finisher,491,26,PF,29,-2.29,-0.86,-1.43,0.00,203933.0,-1.73,-0.86,-0.87,2023
-houstca01,caleb houstan,2022-23,ORL,Athletic Finisher,524,32,SF,20,-2.32,-1.35,-0.97,0.00,1631216.0,-2.72,-1.99,-0.73,2023
-smithis01,ish smith,2022-23,DEN,Shot Creator,255,28,PG,34,-2.33,-1.98,-0.35,0.00,202397.0,-2.22,-1.77,-0.45,2023
-nembhan01,andrew nembhard,2022-23,IND,Secondary Ball Handler,1371,51,SG,23,-2.33,-2.4,0.07,0.10,1629614.0,-2.53,-2.03,-0.5,2023
-bertada01,davis bertans,2022-23,DAL,Movement Shooter,360,34,PF,30,-2.34,-0.95,-1.39,0.00,202722.0,-1.66,-0.58,-1.08,2023
-greenaj01,aj green,2022-23,MIL,Movement Shooter,221,25,SG,23,-2.36,-1.12,-1.24,0.00,1631260.0,-1.36,-0.72,-0.65,2023
-hernaju01,juancho hernangomez,2022-23,TOR,Stretch Big,609,41,PF,27,-2.36,-1.81,-0.56,0.00,1627823.0,-2.56,-2.62,0.06,2023
-curryse01,seth curry,2022-23,BRK,Movement Shooter,904,39,SG,32,-2.37,-1.02,-1.34,0.00,203552.0,-1.81,-0.42,-1.39,2023
-mitchda01,davion mitchell,2022-23,SAC,Stationary Shooter,977,55,PG,24,-2.39,-1.55,-0.83,0.00,1630558.0,-1.73,-1.14,-0.59,2023
-browntr01,troy brown jr.,2022-23,LAL,Athletic Finisher,1219,51,SF,23,-2.39,-1.6,-0.79,0.00,1628972.0,-2.06,-1.9,-0.16,2023
-jordade01,deandre jordan,2022-23,DEN,Roll + Cut Big,486,34,C,34,-2.4,-2.86,0.46,0.00,201599.0,-1.21,-2.38,1.17,2023
-stevela01,lamar stevens,2022-23,CLE,Stretch Big,735,41,PF,25,-2.46,-2.21,-0.25,0.00,1630205.0,-1.7,-2.06,0.36,2023
-nworajo01,jordan nwora,2022-23,MIL,Stationary Shooter,596,38,SF,24,-2.51,-1.61,-0.91,0.00,1629670.0,-1.42,-1.1,-0.31,2023
-kuminjo01,jonathan kuminga,2022-23,GSW,Stretch Big,837,44,PF,20,-2.53,-2.38,-0.15,-0.10,1630228.0,-1.58,-1.32,-0.27,2023
-forretr01,trent forrest,2022-23,ATL,Slasher,239,18,PG,24,-2.53,-2.1,-0.43,0.00,1630235.0,-2.01,-1.92,-0.09,2023
-weslebl01,blake wesley,2022-23,SAS,Athletic Finisher,154,13,SG,19,-2.53,-1.96,-0.58,0.00,1631104.0,-1.71,-1.62,-0.09,2023
-liveris01,isaiah livers,2022-23,DET,Stationary Shooter,733,36,PF,24,-2.54,-2.18,-0.36,-0.10,1630587.0,-2.36,-2.29,-0.07,2023
-cancavl01,vlatko cancar,2022-23,DEN,Stretch Big,628,42,PF,25,-2.56,-2.0,-0.57,-0.10,1628427.0,-1.73,-1.52,-0.21,2023
-nunnke01,kendrick nunn,2022-23,LAL/WAS,Secondary Ball Handler,652,47,SG-PG,27,-2.57,-1.24,-1.33,-0.10,1629134.0,-2.39,-1.07,-1.33,2023
-chrisma02,max christie,2022-23,LAL,Stationary Shooter,492,34,SG,20,-2.58,-2.51,-0.07,-0.10,1631108.0,-2.57,-2.49,-0.08,2023
-dragigo01,goran dragic,2022-23,CHI,Secondary Ball Handler,773,50,PG,36,-2.58,-0.44,-2.14,-0.10,201609.0,-2.02,-0.67,-1.35,2023
-bullore01,reggie bullock,2022-23,DAL,Stationary Shooter,1655,56,SF,31,-2.59,-1.53,-1.07,-0.20,203493.0,-1.37,-1.3,-0.07,2023
-walkelo01,lonnie walker iv,2022-23,LAL,Stationary Shooter,1090,40,SG,24,-2.61,-1.44,-1.18,-0.10,1629022.0,-1.42,-0.53,-0.89,2023
-dosunay01,ayo dosunmu,2022-23,CHI,Stationary Shooter,1480,54,SG,23,-2.62,-2.57,-0.04,-0.20,1630245.0,-1.57,-1.65,0.07,2023
-iveyja01,jaden ivey,2022-23,DET,Primary Ball Handler,1599,54,SG,20,-2.64,-1.12,-1.51,-0.20,1631093.0,-1.9,-0.66,-1.24,2023
-ntilila01,frank ntilikina,2022-23,DAL,Stationary Shooter,387,34,PG,24,-2.65,-2.06,-0.59,-0.10,1628373.0,-2.45,-2.12,-0.33,2023
-beaucma01,marjon beauchamp,2022-23,MIL,Stationary Shooter,541,37,SF,22,-2.66,-1.38,-1.28,-0.10,1630699.0,-2.18,-1.38,-0.8,2023
-reedda01,davon reed,2022-23,DEN,Stationary Shooter,315,35,SG,27,-2.67,-2.7,0.02,-0.10,1628432.0,-2.21,-2.14,-0.06,2023
-tuckepj01,p.j. tucker,2022-23,PHI,Athletic Finisher,1361,53,PF,37,-2.69,-3.04,0.35,-0.20,200782.0,-2.61,-3.1,0.49,2023
-rosste01,terrence ross,2022-23,ORL,Movement Shooter,944,42,SG,32,-2.76,-1.25,-1.51,-0.20,203082.0,-2.37,-1.58,-0.79,2023
-pritcpa01,payton pritchard,2022-23,BOS,Movement Shooter,504,41,PG,25,-2.77,-1.65,-1.12,-0.10,1630202.0,-2.17,-0.72,-1.46,2023
-coffeam01,amir coffey,2022-23,LAC,Secondary Ball Handler,568,39,SG,25,-2.82,-1.48,-1.34,-0.10,1629599.0,-2.7,-1.94,-0.76,2023
-nnajize01,zeke nnaji,2022-23,DEN,Roll + Cut Big,582,44,PF,22,-2.82,-2.01,-0.82,-0.20,1630192.0,-1.88,-1.4,-0.48,2023
-willipa01,patrick williams,2022-23,CHI,Athletic Finisher,1594,56,PF,21,-2.83,-2.96,0.12,-0.40,1630172.0,-1.15,-1.89,0.74,2023
-thorjt01,jt thor,2022-23,CHO,Athletic Finisher,474,45,PF,20,-2.98,-2.69,-0.29,-0.20,1630550.0,-2.87,-2.67,-0.2,2023
-holidju01,justin holiday,2022-23,ATL,Movement Shooter,411,28,SG,33,-2.98,-2.08,-0.9,-0.10,203200.0,-2.65,-1.84,-0.81,2023
-kispeco01,corey kispert,2022-23,WAS,Movement Shooter,1258,47,SF,23,-2.99,-1.56,-1.43,-0.50,1630557.0,-1.94,-1.25,-0.68,2023
-riverau01,austin rivers,2022-23,MIN,Stationary Shooter,928,44,SG,30,-3.08,-1.83,-1.25,-0.40,203085.0,-2.36,-1.83,-0.53,2023
-roddyda01,david roddy,2022-23,MEM,Athletic Finisher,817,46,PF,21,-3.12,-2.01,-1.1,-0.40,1631223.0,-2.45,-2.17,-0.29,2023
-mcderdo01,doug mcdermott,2022-23,SAS,Movement Shooter,1021,50,SF,31,-3.27,-0.73,-2.54,-0.50,203926.0,-3.35,-1.2,-2.15,2023
-houseda01,danuel house jr.,2022-23,PHI,Stationary Shooter,543,36,SF,29,-3.28,-2.09,-1.19,-0.30,1627863.0,-2.46,-1.98,-0.47,2023
-willizi02,ziaire williams,2022-23,MEM,Athletic Finisher,486,28,SF,21,-3.29,-2.1,-1.18,-0.30,1630533.0,-2.89,-2.42,-0.47,2023
-greenje02,jeff green,2022-23,DEN,Roll + Cut Big,643,35,PF,36,-3.48,-2.18,-1.3,-0.40,201145.0,-2.18,-1.41,-0.77,2023
-braunch01,christian braun,2022-23,DEN,Stationary Shooter,755,52,SG,21,-3.52,-2.6,-0.92,-0.50,1631128.0,-2.54,-2.24,-0.3,2023
-laravja01,jake laravia,2022-23,MEM,Movement Shooter,381,30,PF,21,-3.67,-2.43,-1.23,-0.30,1631222.0,-2.73,-2.42,-0.3,2023
-branhma01,malaki branham,2022-23,SAS,Secondary Ball Handler,900,43,SF,19,-3.85,-1.53,-2.32,-0.80,1631103.0,-3.5,-1.88,-1.62,2023
-lopezro01,robin lopez,2022-23,CLE,Post Scorer,238,30,C,34,-3.94,-2.79,-1.14,-0.20,201577.0,-2.96,-2.25,-0.71,2023
+jokicni01,nikola jokic,2022-23,DEN,Post Scorer,1714,51,C,27,8.2,5.91,2.28,11.00,203999.0,6.08,4.8,1.27,2023
+antetgi01,giannis antetokounmpo,2022-23,MIL,Shot Creator,1554,47,PF,28,5.48,4.35,1.13,7.70,203507.0,4.97,3.74,1.23,2023
+jacksja02,jaren jackson jr.,2022-23,MEM,Stretch Big,1088,40,C,23,5.45,1.17,4.29,5.40,1628991.0,3.89,0.31,3.57,2023
+embiijo01,joel embiid,2022-23,PHI,Shot Creator,1571,45,C,28,4.99,3.0,1.99,7.30,203954.0,5.26,4.14,1.12,2023
+tatumja01,jayson tatum,2022-23,BOS,Shot Creator,2051,55,PF,24,4.86,4.41,0.45,9.40,1628369.0,4.98,4.2,0.78,2023
+doncilu01,luka doncic,2022-23,DAL,Shot Creator,1826,50,PG,23,4.8,5.58,-0.78,8.30,1629029.0,6.22,6.19,0.03,2023
+jamesle01,lebron james,2022-23,LAL,Shot Creator,1632,45,PF,38,4.59,4.51,0.07,7.20,2544.0,3.01,3.51,-0.51,2023
+mitchdo01,donovan mitchell,2022-23,CLE,Primary Ball Handler,1776,50,SG,26,4.51,3.65,0.86,7.80,1628378.0,3.45,3.48,-0.03,2023
+butleji01,jimmy butler,2022-23,MIA,Shot Creator,1482,44,SF,33,4.32,3.39,0.93,6.30,202710.0,3.68,2.7,0.99,2023
+davisan02,anthony davis,2022-23,LAL,Post Scorer,1168,35,C,29,4.13,1.82,2.31,4.80,203076.0,3.96,2.39,1.57,2023
+gilgesh01,shai gilgeous-alexander,2022-23,OKC,Shot Creator,1877,53,PG,24,4.11,3.52,0.59,7.80,1628983.0,3.65,3.31,0.34,2023
+leonaka01,kawhi leonard,2022-23,LAC,Shot Creator,1101,34,SF,31,4.1,3.05,1.05,4.60,202695.0,3.03,2.69,0.34,2023
+duranke01,kevin durant,2022-23,BRK,Shot Creator,1403,39,PF,34,4.02,3.19,0.83,5.70,201142.0,3.15,3.07,0.08,2023
+claxtni01,nic claxton,2022-23,BRK,Roll + Cut Big,1592,54,C,23,3.97,0.49,3.48,6.50,1629651.0,2.69,0.09,2.59,2023
+curryst01,stephen curry,2022-23,GSW,Primary Ball Handler,1313,38,PG,34,3.9,3.99,-0.09,5.30,201939.0,3.61,4.18,-0.57,2023
+moranja01,ja morant,2022-23,MEM,Slasher,1572,48,PG,23,3.81,4.1,-0.29,6.20,1629630.0,3.21,3.46,-0.25,2023
+hardeja01,james harden,2022-23,PHI,Shot Creator,1494,41,PG,33,3.73,3.37,0.36,5.80,201935.0,4.39,3.9,0.49,2023
+lillada01,damian lillard,2022-23,POR,Shot Creator,1665,46,PG,32,3.68,5.96,-2.28,6.40,203081.0,3.97,5.7,-1.73,2023
+georgpa01,paul george,2022-23,LAC,Shot Creator,1506,44,SG,32,3.35,2.22,1.13,5.50,202331.0,2.1,1.99,0.11,2023
+kesslwa01,walker kessler,2022-23,UTA,Roll + Cut Big,1212,57,C,21,3.34,-0.18,3.53,4.40,1631117.0,1.62,-0.39,2.01,2023
+bookede01,devin booker,2022-23,PHO,Shot Creator,1118,33,SG,26,3.25,3.63,-0.38,4.00,1626164.0,1.94,2.55,-0.61,2023
+sabondo01,domantas sabonis,2022-23,SAC,Roll + Cut Big,1904,55,C,26,3.22,2.13,1.1,6.80,1627734.0,3.39,2.46,0.93,2023
+capelca01,clint capela,2022-23,ATL,Roll + Cut Big,1156,43,C,28,2.98,1.26,1.71,4.00,203991.0,1.31,0.19,1.12,2023
+randlju01,julius randle,2022-23,NYK,Shot Creator,2152,60,PF,28,2.9,3.62,-0.72,7.30,203944.0,2.76,2.78,-0.02,2023
+irvinky01,kyrie irving,2022-23,BRK/DAL,Shot Creator,1631,44,PG,30,2.88,3.56,-0.69,5.50,202681.0,2.17,3.06,-0.89,2023
+holidjr01,jrue holiday,2022-23,MIL,Primary Ball Handler,1552,47,PG,32,2.8,1.63,1.17,5.20,201950.0,1.81,1.46,0.35,2023
+garlada01,darius garland,2022-23,CLE,Primary Ball Handler,1794,51,PG,23,2.74,3.05,-0.31,5.90,1629636.0,2.49,2.47,0.02,2023
+turnemy01,myles turner,2022-23,IND,Stretch Big,1489,50,C,26,2.73,0.2,2.53,4.90,1626167.0,1.91,0.17,1.74,2023
+markkla01,lauri markkanen,2022-23,UTA,Stretch Big,1851,54,SF,25,2.68,2.88,-0.19,6.00,1628374.0,2.39,3.05,-0.66,2023
+willizi01,zion williamson,2022-23,NOP,Shot Creator,956,29,PF,22,2.66,2.21,0.45,3.10,1629627.0,1.74,1.93,-0.19,2023
+allenja01,jarrett allen,2022-23,CLE,Roll + Cut Big,1798,54,C,24,2.63,0.44,2.2,5.80,1628386.0,2.15,0.14,2.01,2023
+siakapa01,pascal siakam,2022-23,TOR,Shot Creator,1845,49,C,28,2.6,2.25,0.35,5.90,1627783.0,1.46,1.95,-0.49,2023
+paulch01,chris paul,2022-23,PHO,Primary Ball Handler,1247,39,PG,37,2.48,1.4,1.09,3.90,101108.0,2.79,1.54,1.25,2023
+youngtr01,trae young,2022-23,ATL,Primary Ball Handler,1841,52,PG,24,2.43,4.13,-1.7,5.70,1629027.0,1.76,3.39,-1.63,2023
+porzikr01,kristaps porzingis,2022-23,WAS,Versatile Big,1627,50,C,27,2.36,1.77,0.59,5.00,204001.0,3.15,2.17,0.98,2023
+gordoaa01,aaron gordon,2022-23,DEN,Roll + Cut Big,1483,49,PF,27,2.33,1.61,0.72,4.50,203932.0,1.78,1.61,0.17,2023
+banede01,desmond bane,2022-23,MEM,Movement Shooter,1093,35,SG,24,2.25,1.63,0.63,3.30,1630217.0,1.56,1.63,-0.07,2023
+adebaba01,bam adebayo,2022-23,MIA,Shot Creator,1909,54,C,25,2.24,0.7,1.54,5.70,1628389.0,1.48,0.05,1.44,2023
+townska01,karl-anthony towns,2022-23,MIN,Stretch Big,709,21,PF,27,2.23,1.37,0.86,2.10,1626157.0,1.57,1.63,-0.06,2023
+halibty01,tyrese haliburton,2022-23,IND,Primary Ball Handler,1605,48,PG,22,2.19,2.66,-0.46,4.70,1630169.0,2.76,3.23,-0.48,2023
+carusal01,alex caruso,2022-23,CHI,Stationary Shooter,1191,49,PG,28,2.18,-0.95,3.13,3.50,1627936.0,-0.06,-1.88,1.83,2023
+lopezbr01,brook lopez,2022-23,MIL,Stretch Big,1729,57,C,34,2.16,-0.89,3.05,5.10,201572.0,2.0,-0.44,2.44,2023
+vanvlfr01,fred vanvleet,2022-23,TOR,Primary Ball Handler,1847,50,PG,28,2.04,2.2,-0.16,5.30,1627832.0,1.89,1.81,0.09,2023
+brunsja01,jalen brunson,2022-23,NYK,Shot Creator,1966,56,PG,26,2.02,3.4,-1.39,5.60,1628973.0,2.06,2.64,-0.58,2023
+adamsst01,steven adams,2022-23,MEM,Roll + Cut Big,1133,42,C,29,2.01,0.25,1.75,3.20,203500.0,0.96,-0.55,1.51,2023
+bouchch01,chris boucher,2022-23,TOR,Stretch Big,1102,53,PF,30,1.96,1.09,0.87,3.10,1628449.0,0.46,0.2,0.25,2023
+foxde01,de'aaron fox,2022-23,SAC,Slasher,1770,52,PG,25,1.92,2.57,-0.65,4.90,1628368.0,2.22,2.75,-0.53,2023
+looneke01,kevon looney,2022-23,GSW,Roll + Cut Big,1354,58,C,27,1.9,0.69,1.21,3.70,1626172.0,1.67,0.15,1.52,2023
+williro04,robert williams iii,2022-23,BOS,Roll + Cut Big,543,23,C,25,1.88,0.13,1.75,1.50,1629057.0,0.94,-0.39,1.33,2023
+whitede01,derrick white,2022-23,BOS,Stationary Shooter,1636,59,SG,28,1.84,0.26,1.59,4.50,1628401.0,2.04,0.87,1.17,2023
+mobleev01,evan mobley,2022-23,CLE,Roll + Cut Big,2016,59,PF,21,1.79,-1.27,3.06,5.40,1630596.0,2.01,-0.14,2.15,2023
+derozde01,demar derozan,2022-23,CHI,Shot Creator,1925,53,SF,33,1.75,1.69,0.07,5.10,201942.0,1.42,1.27,0.15,2023
+bealbr01,bradley beal,2022-23,WAS,Shot Creator,1183,36,SG,29,1.72,2.65,-0.93,3.10,203078.0,1.08,1.95,-0.86,2023
+greendr01,draymond green,2022-23,GSW,Athletic Finisher,1646,52,PF,32,1.71,-0.98,2.7,4.30,203110.0,0.74,-1.12,1.86,2023
+drumman01,andre drummond,2022-23,CHI,Roll + Cut Big,595,46,C,29,1.67,0.03,1.64,1.60,203083.0,1.25,-0.23,1.48,2023
+nancela02,larry nance jr.,2022-23,NOP,Roll + Cut Big,1089,48,PF,30,1.64,-0.37,2.01,2.80,1626204.0,0.32,-0.88,1.21,2023
+sengual01,alperen sengun,2022-23,HOU,Post Scorer,1498,53,C,20,1.63,1.23,0.4,3.90,1630578.0,0.1,-0.06,0.16,2023
+vucevni01,nikola vucevic,2022-23,CHI,Versatile Big,2005,59,C,32,1.47,0.35,1.12,5.00,202696.0,1.86,0.57,1.29,2023
+smartma01,marcus smart,2022-23,BOS,Stationary Shooter,1360,42,PG,28,1.46,0.51,0.95,3.40,203935.0,1.39,0.53,0.86,2023
+quickim01,immanuel quickley,2022-23,NYK,Primary Ball Handler,1636,59,PG,23,1.3,1.4,-0.1,3.90,1630193.0,0.12,0.52,-0.41,2023
+anderky01,kyle anderson,2022-23,MIN,Athletic Finisher,1253,48,PF,29,1.29,-0.58,1.87,3.00,203937.0,0.54,-0.7,1.24,2023
+johnsca02,cameron johnson,2022-23,PHO/BRK,Stationary Shooter,519,20,PF,26,1.27,0.68,0.59,1.20,1629661.0,0.53,0.59,-0.05,2023
+brownmo01,moses brown,2022-23,LAC,Roll + Cut Big,288,34,C,23,1.25,0.69,0.56,0.70,1629650.0,1.05,0.51,0.54,2023
+osmande01,cedi osman,2022-23,CLE,Stationary Shooter,1218,58,SF,27,1.24,0.84,0.39,2.80,1626224.0,-0.66,-0.35,-0.31,2023
+wagnefr01,franz wagner,2022-23,ORL,Secondary Ball Handler,1924,58,SF,21,1.19,1.15,0.04,4.40,1630532.0,-0.58,0.22,-0.8,2023
+edwaran01,anthony edwards,2022-23,MIN,Shot Creator,2211,61,SG,21,1.19,1.35,-0.16,5.10,1630162.0,1.21,1.37,-0.16,2023
+brownja02,jaylen brown,2022-23,BOS,Secondary Ball Handler,1707,48,SF,26,1.16,0.94,0.22,3.90,1627759.0,2.08,1.98,0.1,2023
+ballla01,lamelo ball,2022-23,CHO,Primary Ball Handler,1167,33,PG,21,1.12,2.43,-1.31,2.60,1630163.0,1.01,1.88,-0.87,2023
+barnesc01,scottie barnes,2022-23,TOR,Shot Creator,1971,56,PF,21,1.08,0.54,0.53,4.40,1630567.0,0.14,0.15,-0.01,2023
+huertke01,kevin huerter,2022-23,SAC,Movement Shooter,1648,54,SG,24,1.05,1.66,-0.61,3.70,1628989.0,0.97,1.07,-0.1,2023
+daviste02,terence davis,2022-23,SAC,Movement Shooter,607,44,SG,25,1.05,0.36,0.69,1.30,1629056.0,0.49,0.35,0.14,2023
+nurkiju01,jusuf nurkic,2022-23,POR,Post Scorer,1227,45,C,28,1.03,-1.16,2.2,2.70,203994.0,1.39,0.2,1.2,2023
+fernabr01,bruno fernando,2022-23,HOU/ATL,Roll + Cut Big,368,32,C,24,1.03,-1.2,2.23,0.80,1628981.0,1.13,-1.06,2.19,2023
+middlkh01,khris middleton,2022-23,MIL,Shot Creator,364,17,SF,31,1.0,1.49,-0.49,0.80,203114.0,0.82,1.5,-0.68,2023
+herroty01,tyler herro,2022-23,MIA,Primary Ball Handler,1594,45,SG,23,0.97,0.88,0.1,3.50,1629639.0,0.73,0.54,0.19,2023
+harteis01,isaiah hartenstein,2022-23,NYK,Roll + Cut Big,1181,60,C,24,0.97,-0.41,1.38,2.60,1628392.0,-0.72,-1.7,0.97,2023
+cartewe01,wendell carter jr.,2022-23,ORL,Stretch Big,1173,39,C,23,0.97,-0.01,0.98,2.50,1628976.0,0.27,0.07,0.19,2023
+woodch01,christian wood,2022-23,DAL,Shot Creator,1329,48,C,27,0.95,0.8,0.14,2.90,1626174.0,1.89,1.52,0.37,2023
+morrimo01,monte morris,2022-23,WAS,Primary Ball Handler,1407,50,PG,27,0.93,1.18,-0.26,3.00,1628420.0,0.58,0.54,0.05,2023
+gaffoda01,daniel gafford,2022-23,WAS,Roll + Cut Big,1049,56,C,24,0.82,-0.48,1.31,2.20,1629655.0,0.82,-0.59,1.41,2023
+hortota01,talen horton-tucker,2022-23,UTA,Secondary Ball Handler,760,46,SG,22,0.82,0.58,0.24,1.60,1629659.0,-0.19,0.1,-0.3,2023
+landajo01,jock landale,2022-23,PHO,Versatile Big,721,51,C,27,0.81,-0.01,0.82,1.50,1629111.0,-0.81,-0.53,-0.28,2023
+bassech01,charles bassey,2022-23,SAS,Roll + Cut Big,354,26,C,22,0.81,-0.92,1.73,0.70,1629646.0,-0.01,-1.47,1.47,2023
+alvarjo01,jose alvarado,2022-23,NOP,Stationary Shooter,1264,58,PG,24,0.81,0.25,0.56,2.60,1630631.0,-0.63,-0.46,-0.16,2023
+aldamsa01,santi aldama,2022-23,MEM,Athletic Finisher,1194,54,PF,22,0.8,-0.66,1.46,2.50,1630583.0,0.26,-0.67,0.93,2023
+caldwke01,kentavious caldwell-pope,2022-23,DEN,Stationary Shooter,1758,56,SG,29,0.8,-0.04,0.84,3.60,203484.0,0.01,-0.53,0.54,2023
+konchjo01,john konchar,2022-23,MEM,Stationary Shooter,1097,49,SG,26,0.78,-0.8,1.58,2.20,1629723.0,-0.63,-1.77,1.14,2023
+greenja02,javonte green,2022-23,CHI,Stretch Big,449,28,SG,29,0.78,-1.1,1.88,0.90,1629750.0,-0.42,-1.53,1.11,2023
+brookdi01,dillon brooks,2022-23,MEM,Secondary Ball Handler,1585,52,SF,27,0.78,-0.3,1.08,3.20,1628415.0,-1.09,-1.09,0.0,2023
+okogijo01,josh okogie,2022-23,PHO,Athletic Finisher,748,50,SG,24,0.77,0.2,0.57,1.50,1629006.0,-0.22,-0.32,0.1,2023
+johnsja05,jalen johnson,2022-23,ATL,Stretch Big,790,55,SF,21,0.75,-0.06,0.81,1.60,1630552.0,-0.15,-1.08,0.93,2023
+kuzmaky01,kyle kuzma,2022-23,WAS,Movement Shooter,1851,53,PF,27,0.73,0.3,0.43,3.70,1628398.0,0.27,0.81,-0.55,2023
+anunoog01,o.g. anunoby,2022-23,TOR,Stationary Shooter,1611,45,SF,25,0.71,-0.31,1.02,3.20,1628384.0,-0.18,-0.73,0.55,2023
+robinmi01,mitchell robinson,2022-23,NYK,Roll + Cut Big,1022,38,C,24,0.71,-1.17,1.88,2.00,1629011.0,1.6,-0.59,2.18,2023
+murraja01,jamal murray,2022-23,DEN,Primary Ball Handler,1464,45,PG,25,0.69,2.08,-1.39,2.90,1627750.0,1.63,2.47,-0.84,2023
+harrito02,tobias harris,2022-23,PHI,Shot Creator,1779,53,PF,30,0.68,0.06,0.63,3.50,202699.0,0.84,0.25,0.59,2023
+muscami01,mike muscala,2022-23,OKC/BOS,Stretch Big,698,46,C,31,0.68,0.1,0.57,1.40,203488.0,-0.2,-0.38,0.18,2023
+hieldbu01,buddy hield,2022-23,IND,Movement Shooter,1921,60,SF,30,0.67,0.95,-0.28,3.80,1627741.0,-0.25,0.64,-0.89,2023
+plumlma01,mason plumlee,2022-23,CHO/LAC,Roll + Cut Big,1631,58,C,32,0.66,-0.09,0.75,3.20,203486.0,0.3,-0.09,0.39,2023
+barneha02,harrison barnes,2022-23,SAC,Stationary Shooter,1861,57,PF,30,0.59,1.2,-0.61,3.60,203084.0,0.51,0.82,-0.31,2023
+wiggian01,andrew wiggins,2022-23,GSW,Stretch Big,1190,37,SF,27,0.58,-0.26,0.84,2.30,203952.0,0.61,0.47,0.15,2023
+conlemi01,mike conley,2022-23,UTA/MIN,Primary Ball Handler,1367,46,PG,35,0.56,0.98,-0.41,2.60,201144.0,1.14,1.41,-0.27,2023
+goodwjo01,jordan goodwin,2022-23,WAS,Secondary Ball Handler,721,40,PG,24,0.54,-0.66,1.2,1.40,1630692.0,-0.14,-0.92,0.78,2023
+loveke01,kevin love,2022-23,CLE,Stretch Big,821,41,PF,34,0.54,0.49,0.05,1.50,201567.0,0.67,0.32,0.35,2023
+willima07,mark williams,2022-23,CHO,Roll + Cut Big,461,29,C,21,0.53,-0.97,1.49,0.90,1631109.0,1.05,-1.18,2.24,2023
+gabriwe01,wenyen gabriel,2022-23,LAL,Roll + Cut Big,706,46,PF,25,0.52,-0.76,1.29,1.30,1629117.0,-1.51,-1.56,0.04,2023
+poeltja01,jakob poeltl,2022-23,SAS/TOR,Roll + Cut Big,1278,49,C,27,0.51,-0.88,1.39,2.40,1627751.0,-0.13,-0.46,0.33,2023
+dortlu01,luguentz dort,2022-23,OKC,Stationary Shooter,1494,50,SG,23,0.5,0.29,0.21,2.80,1629652.0,-0.38,-0.14,-0.25,2023
+robinor01,orlando robinson,2022-23,MIA,Roll + Cut Big,397,29,C,22,0.48,-1.04,1.53,0.70,1631115.0,-0.54,-1.72,1.18,2023
+goberru01,rudy gobert,2022-23,MIN,Roll + Cut Big,1524,50,C,30,0.47,-1.3,1.77,2.80,203497.0,1.44,-0.29,1.72,2023
+lavinza01,zach lavine,2022-23,CHI,Primary Ball Handler,1982,55,SG,27,0.46,1.14,-0.68,3.60,203897.0,0.82,1.24,-0.43,2023
+thompkl01,klay thompson,2022-23,GSW,Off Screen Shooter,1508,46,SG,33,0.45,1.66,-1.21,2.80,202691.0,0.28,1.48,-1.2,2023
+batumni01,nicolas batum,2022-23,LAC,Stationary Shooter,1238,57,PF,34,0.44,-1.13,1.57,2.30,201587.0,-0.45,-1.38,0.93,2023
+lowryky01,kyle lowry,2022-23,MIA,Movement Shooter,1464,44,PG,36,0.4,-0.15,0.56,2.60,200768.0,0.61,-0.28,0.89,2023
+portibo01,bobby portis,2022-23,MIL,Versatile Big,1258,47,PF,28,0.4,0.1,0.3,2.30,1626171.0,0.76,0.46,0.3,2023
+bryanth01,thomas bryant,2022-23,LAL/DEN,Roll + Cut Big,906,44,C,25,0.4,0.83,-0.44,1.60,1628418.0,0.68,0.17,0.51,2023
+hartjo01,josh hart,2022-23,POR/NYK,Athletic Finisher,1783,54,SF-SG,27,0.37,-0.33,0.69,3.20,1628404.0,0.06,-0.46,0.51,2023
+daysda01,darius days,2022-23,HOU,Low Minute,23,3,PF,23,0.36,0.08,0.28,0.00,1630620.0,0.4,0.01,0.38,2023
+dinwisp01,spencer dinwiddie,2022-23,DAL/BRK,Shot Creator,1946,57,PG,29,0.36,0.94,-0.58,3.40,203915.0,1.33,2.1,-0.77,2023
+nowelja01,jaylen nowell,2022-23,MIN,Secondary Ball Handler,1201,61,SG,23,0.35,1.5,-1.15,2.10,1629669.0,-1.24,0.24,-1.48,2023
+grantje01,jerami grant,2022-23,POR,Stationary Shooter,1927,54,PF,28,0.35,0.19,0.16,3.40,203924.0,0.45,1.1,-0.65,2023
+isaacjo01,jonathan isaac,2022-23,ORL,Roll + Cut Big,108,10,PF,25,0.34,-0.19,0.53,0.20,1628371.0,0.24,0.08,0.16,2023
+trentga02,gary trent jr.,2022-23,TOR,Movement Shooter,1682,50,SG,24,0.33,0.28,0.05,3.00,1629018.0,0.02,0.61,-0.59,2023
+cunnica01,cade cunningham,2022-23,DET,Slasher,400,12,PG,21,0.32,0.57,-0.25,0.70,1630595.0,0.27,0.49,-0.22,2023
+metuch01,chimezie metu,2022-23,SAC,Roll + Cut Big,476,44,C,25,0.32,-0.68,1.0,0.80,1629002.0,-0.21,-0.8,0.59,2023
+oladivi01,victor oladipo,2022-23,MIA,Secondary Ball Handler,739,26,SG,30,0.31,-0.26,0.57,1.30,203506.0,-0.41,-0.9,0.49,2023
+poweldw01,dwight powell,2022-23,DAL,Roll + Cut Big,1083,55,C,31,0.28,-0.47,0.75,1.90,203939.0,-0.56,-0.84,0.28,2023
+marjabo01,boban marjanovic,2022-23,HOU,Low Minute,83,19,C,34,0.28,0.06,0.22,0.10,1626246.0,0.29,-0.1,0.39,2023
+finnedo01,dorian finney-smith,2022-23,DAL/BRK,Athletic Finisher,1406,44,PF,29,0.27,-0.55,0.82,2.40,1627827.0,-0.64,-0.55,-0.09,2023
+garzalu01,luka garza,2022-23,MIN,Stretch Big,205,22,C,24,0.27,1.58,-1.31,0.40,1630568.0,-0.6,0.76,-1.36,2023
+brogdma01,malcolm brogdon,2022-23,BOS,Primary Ball Handler,1264,50,PG,30,0.26,0.52,-0.26,2.20,1627763.0,0.93,1.36,-0.43,2023
+hudgitr01,trevor hudgins,2022-23,HOU,Low Minute,27,4,PG,23,0.26,0.0,0.26,0.00,1631309.0,0.32,-0.02,0.34,2023
+jonestr01,tre jones,2022-23,SAS,Slasher,1524,52,PG,23,0.23,0.35,-0.12,2.60,1630200.0,-1.2,-0.12,-1.07,2023
+wagnemo01,moritz wagner,2022-23,ORL,Stretch Big,799,38,C,25,0.22,0.14,0.08,1.30,1629021.0,0.55,0.65,-0.1,2023
+anthoco01,cole anthony,2022-23,ORL,Primary Ball Handler,977,39,PG,22,0.21,1.03,-0.81,1.60,1630175.0,0.54,0.38,0.15,2023
+simmobe01,ben simmons,2022-23,BRK,Roll + Cut Big,1105,42,PG,26,0.21,-1.37,1.58,1.90,1627732.0,0.52,-1.03,1.55,2023
+johnsal02,alize johnson,2022-23,SAS,Low Minute,30,4,PF,26,0.21,-0.22,0.43,0.00,1628993.0,-0.38,-0.49,0.12,2023
+rubiori01,ricky rubio,2022-23,CLE,Secondary Ball Handler,235,14,PG,32,0.21,0.04,0.17,0.40,201937.0,0.48,0.36,0.12,2023
+ingrabr01,brandon ingram,2022-23,NOP,Shot Creator,772,24,SF,25,0.19,0.74,-0.55,1.30,1627742.0,0.38,0.74,-0.36,2023
+roziete01,terry rozier,2022-23,CHO,Primary Ball Handler,1746,49,SG,28,0.19,1.85,-1.66,2.90,1626179.0,-0.98,0.55,-1.53,2023
+eubandr01,drew eubanks,2022-23,POR,Roll + Cut Big,1093,56,C,26,0.19,-0.6,0.78,1.80,1629234.0,-0.1,-1.54,1.44,2023
+easonta01,tari eason,2022-23,HOU,Athletic Finisher,1124,58,PF,21,0.18,-0.54,0.72,1.90,1631106.0,-0.94,-1.1,0.16,2023
+covinro01,robert covington,2022-23,LAC,Athletic Finisher,584,36,PF,32,0.15,-0.77,0.92,1.00,203496.0,0.73,-0.9,1.64,2023
+tillmxa01,xavier tillman,2022-23,MEM,Roll + Cut Big,560,38,PF,24,0.14,-0.9,1.04,0.90,1630214.0,-0.37,-0.83,0.46,2023
+biyombi01,bismack biyombo,2022-23,PHO,Roll + Cut Big,642,46,C,30,0.14,-2.88,3.02,1.00,202687.0,-0.08,-2.94,2.86,2023
+murrade01,dejounte murray,2022-23,ATL,Shot Creator,1972,54,SG,26,0.13,0.73,-0.6,3.20,1627749.0,0.85,1.08,-0.23,2023
+joneshe01,herbert jones,2022-23,NOP,Athletic Finisher,1239,43,SF,24,0.13,-0.72,0.85,2.00,1630529.0,-0.08,-1.37,1.29,2023
+hernawi01,willy hernangomez,2022-23,NOP,Roll + Cut Big,372,29,C,28,0.12,0.42,-0.3,0.60,1626195.0,0.85,0.5,0.34,2023
+westbru01,russell westbrook,2022-23,LAL,Shot Creator,1491,52,PG,34,0.11,1.14,-1.03,2.40,201566.0,0.0,0.53,-0.53,2023
+mccolcj01,cj mccollum,2022-23,NOP,Primary Ball Handler,1820,52,SG,31,0.11,1.96,-1.85,2.90,203468.0,0.76,1.15,-0.39,2023
+umudest01,stanley umude,2022-23,DET,Low Minute,2,1,SG,23,0.11,-0.03,0.13,0.00,1630649.0,0.07,-0.07,0.15,2023
+diallha01,hamidou diallo,2022-23,DET,Roll + Cut Big,841,50,SG,24,0.1,-0.49,0.59,1.40,1628977.0,-1.18,-1.24,0.06,2023
+bridgmi01,mikal bridges,2022-23,PHO/BRK,Movement Shooter,2139,59,SF,26,0.1,-0.12,0.22,3.40,1628969.0,0.45,-0.07,0.52,2023
+wrighde01,delon wright,2022-23,WAS,Secondary Ball Handler,653,29,PG,30,0.07,-0.15,0.22,1.00,1626153.0,0.53,-0.37,0.89,2023
+boehebu01,buddy boeheim,2022-23,DET,Low Minute,1,1,PG,23,0.07,-0.07,0.14,0.00,1631205.0,0.07,-0.07,0.15,2023
+joeis01,isaiah joe,2022-23,OKC,Movement Shooter,771,49,SG,23,0.07,0.52,-0.46,1.20,1630198.0,0.31,0.92,-0.6,2023
+robinje02,jeremiah robinson-earl,2022-23,OKC,Stretch Big,585,28,PF,22,0.03,-0.49,0.52,0.90,1630526.0,-0.63,-0.47,-0.17,2023
+reedpa01,paul reed,2022-23,PHI,Roll + Cut Big,422,44,C,23,0.03,-1.83,1.86,0.70,1630194.0,-0.12,-2.1,1.98,2023
+bitadgo01,goga bitadze,2022-23,IND,Roll + Cut Big,202,21,C,23,0.01,-0.87,0.88,0.30,1629048.0,-1.08,-1.13,0.05,2023
+meltode01,de'anthony melton,2022-23,PHI,Stationary Shooter,1537,54,PG,24,0.0,-0.67,0.66,2.40,1629001.0,0.88,-0.14,1.02,2023
+rhodeja01,jared rhoden,2022-23,DET,Low Minute,12,1,SG,23,-0.01,0.02,-0.03,0.00,1631197.0,0.0,-0.15,0.15,2023
+mclaujo01,jordan mclaughlin,2022-23,MIN,Secondary Ball Handler,367,24,PG,26,-0.03,-0.02,-0.01,0.60,1629162.0,-1.19,-0.54,-0.66,2023
+kolokch01,christian koloko,2022-23,TOR,Roll + Cut Big,658,45,C,22,-0.06,-2.21,2.14,1.00,1631132.0,-1.51,-2.76,1.25,2023
+collijo01,john collins,2022-23,ATL,Versatile Big,1555,50,PF,25,-0.07,-1.01,0.94,2.30,1628381.0,0.1,-1.11,1.21,2023
+hardati02,tim hardaway jr.,2022-23,DAL,Stationary Shooter,1633,54,SG,30,-0.08,0.76,-0.84,2.40,203501.0,-0.09,0.89,-0.98,2023
+mamuksa01,sandro mamukelashvili,2022-23,MIL,Stretch Big,218,24,C,23,-0.08,-0.73,0.65,0.30,1630572.0,-0.83,-0.95,0.12,2023
+minotjo01,josh minott,2022-23,MIN,Low Minute,68,11,SF,20,-0.12,0.07,-0.19,0.10,1631169.0,-0.42,-0.16,-0.25,2023
+keybr01,braxton key,2022-23,DET,Low Minute,9,3,SF,26,-0.13,-0.14,0.01,0.00,1630296.0,0.03,-0.13,0.15,2023
+dorsety01,tyler dorsey,2022-23,DAL,Low Minute,8,3,SG,26,-0.14,0.14,-0.27,0.00,1628416.0,-0.19,0.12,-0.31,2023
+jonesty01,tyus jones,2022-23,MEM,Primary Ball Handler,1319,57,PG,26,-0.14,0.71,-0.85,1.90,1626145.0,0.49,0.72,-0.22,2023
+payneca01,cameron payne,2022-23,PHO,Primary Ball Handler,671,28,PG,28,-0.15,0.37,-0.52,1.00,1626166.0,-0.34,0.38,-0.72,2023
+bambamo01,mo bamba,2022-23,ORL/LAL,Stretch Big,696,41,C,24,-0.15,-0.22,0.07,1.00,1628964.0,0.95,-0.23,1.18,2023
+elliske01,keon ellis,2022-23,SAC,Low Minute,36,9,SG,23,-0.15,-0.1,-0.05,0.10,1631165.0,-0.35,-0.21,-0.14,2023
+horfoal01,al horford,2022-23,BOS,Stationary Shooter,1381,45,C,36,-0.16,-1.07,0.91,2.00,201143.0,1.11,-0.32,1.43,2023
+campafa01,facundo campazzo,2022-23,DAL,Low Minute,52,8,PG,31,-0.17,-0.21,0.04,0.10,1630267.0,-0.26,0.02,-0.28,2023
+thybuma01,matisse thybulle,2022-23,PHI/POR,Athletic Finisher,647,51,SG,25,-0.18,-2.12,1.94,0.90,1629680.0,-1.36,-2.19,0.83,2023
+jacksis01,isaiah jackson,2022-23,IND,Roll + Cut Big,689,45,C,21,-0.2,-1.64,1.44,1.00,1630543.0,0.41,-1.31,1.72,2023
+simonma01,marko simonovic,2022-23,CHI,Low Minute,5,3,C,23,-0.22,0.05,-0.27,0.00,1630250.0,-0.27,-0.02,-0.25,2023
+queentr01,trevelin queen,2022-23,IND,Low Minute,70,7,SG,25,-0.23,-0.2,-0.03,0.10,1630243.0,-0.77,-0.44,-0.33,2023
+walkeke02,kemba walker,2022-23,DAL,Secondary Ball Handler,144,9,PG,32,-0.23,0.65,-0.88,0.20,202689.0,-0.11,0.34,-0.46,2023
+lylestr01,trey lyles,2022-23,SAC,Athletic Finisher,811,51,PF,27,-0.24,-0.5,0.26,1.10,1626168.0,-0.11,-0.14,0.03,2023
+hillma01,malcolm hill,2022-23,CHI,Low Minute,9,5,SF,27,-0.24,-0.01,-0.23,0.00,1630792.0,-0.28,-0.03,-0.25,2023
+doziepj01,pj dozier,2022-23,SAC,Low Minute,10,4,SG,26,-0.24,-0.15,-0.09,0.00,1628408.0,-0.32,-0.17,-0.14,2023
+iguodan01,andre iguodala,2022-23,GSW,Low Minute,42,3,SF,39,-0.25,-0.49,0.24,0.10,2738.0,-0.35,-0.42,0.07,2023
+washity02,tyty washington jr.,2022-23,HOU,Secondary Ball Handler,292,23,PG,21,-0.25,-0.51,0.26,0.40,1631102.0,-0.95,-0.82,-0.13,2023
+halljo02,jordan hall,2022-23,SAS,Low Minute,83,9,SF,21,-0.26,-0.62,0.36,0.10,1631160.0,-0.54,-0.49,-0.05,2023
+mcdanja01,jalen mcdaniels,2022-23,CHO/PHI,Stationary Shooter,1550,59,SF,25,-0.27,-0.81,0.55,2.10,1629667.0,-1.92,-2.01,0.09,2023
+silvach01,chris silva,2022-23,DAL,Low Minute,3,1,PF,26,-0.27,0.08,-0.35,0.00,1629735.0,-0.18,0.13,-0.31,2023
+sumneed01,edmond sumner,2022-23,BRK,Stationary Shooter,669,46,SG,27,-0.27,-0.49,0.21,0.90,1628410.0,-0.99,-0.34,-0.65,2023
+swideco01,cole swider,2022-23,LAL,Low Minute,40,6,SF,23,-0.27,-0.19,-0.08,0.10,1631306.0,-0.54,-0.36,-0.18,2023
+bradlto01,tony bradley,2022-23,CHI,Low Minute,33,12,C,25,-0.27,-0.14,-0.13,0.00,1628396.0,-0.34,-0.16,-0.18,2023
+jonesca03,carlik jones,2022-23,CHI,Low Minute,23,2,PG,25,-0.27,-0.06,-0.21,0.00,1630637.0,-0.37,-0.12,-0.24,2023
+dedmode01,dewayne dedmon,2022-23,MIA,Roll + Cut Big,350,30,C,33,-0.28,-1.29,1.01,0.50,203473.0,0.19,-0.95,1.15,2023
+richani01,nick richards,2022-23,CHO,Roll + Cut Big,777,45,C,25,-0.3,-0.63,0.34,1.00,1630208.0,-0.71,-1.03,0.32,2023
+prestja01,jason preston,2022-23,LAC,Secondary Ball Handler,122,13,PG,23,-0.3,-0.09,-0.21,0.20,1630554.0,-0.43,-0.22,-0.2,2023
+burtode02,deonte burton,2022-23,SAC,Low Minute,6,2,SG,29,-0.31,-0.15,-0.16,0.00,1629126.0,-0.31,-0.16,-0.16,2023
+mykhasv01,svi mykhailiuk,2022-23,NYK/CHO,Low Minute,65,14,SF,25,-0.32,-0.76,0.43,0.10,1629004.0,-0.62,-0.46,-0.16,2023
+banchpa01,paolo banchero,2022-23,ORL,Shot Creator,1754,52,PF,20,-0.33,-0.15,-0.17,2.30,1631094.0,0.39,0.46,-0.07,2023
+johnsja01,james johnson,2022-23,IND,Low Minute,98,12,PF,35,-0.33,-0.72,0.4,0.10,201949.0,-1.07,-1.07,0.01,2023
+carteje01,jevon carter,2022-23,MIL,Stationary Shooter,1307,58,PG,27,-0.33,-1.66,1.33,1.70,1628975.0,-0.27,-1.31,1.04,2023
+jonesde02,derrick jones jr.,2022-23,CHI,Stretch Big,698,46,SF,26,-0.33,-0.4,0.06,0.90,1627884.0,-0.68,-1.26,0.58,2023
+avdijde01,deni avdija,2022-23,WAS,Athletic Finisher,1472,56,SF,22,-0.35,-1.62,1.28,1.90,1630166.0,-0.33,-1.18,0.85,2023
+allengr01,grayson allen,2022-23,MIL,Movement Shooter,1491,54,SG,27,-0.37,-1.29,0.92,1.90,1628960.0,0.21,-0.38,0.59,2023
+brownst02,sterling brown,2022-23,LAL,Low Minute,24,4,SG,28,-0.37,-0.31,-0.05,0.00,1628425.0,-0.47,-0.32,-0.15,2023
+gibsota01,taj gibson,2022-23,WAS,Roll + Cut Big,353,36,C,37,-0.37,-1.0,0.63,0.50,201959.0,-1.16,-1.61,0.45,2023
+waterli01,lindy waters iii,2022-23,OKC,Off Screen Shooter,257,23,SG,25,-0.38,-0.13,-0.25,0.30,1630322.0,-0.8,-0.13,-0.67,2023
+mcdanja02,jaden mcdaniels,2022-23,MIN,Athletic Finisher,1770,58,PF,22,-0.39,-1.81,1.43,2.30,1630183.0,-1.03,-1.39,0.36,2023
+olynyke01,kelly olynyk,2022-23,UTA,Stretch Big,1353,48,C,31,-0.39,-0.61,0.22,1.70,203482.0,0.19,-0.23,0.42,2023
+mannte01,terance mann,2022-23,LAC,Athletic Finisher,1412,60,SG,26,-0.39,-0.06,-0.33,1.80,1629611.0,-0.77,-0.75,-0.02,2023
+greenjo02,josh green,2022-23,DAL,Stationary Shooter,995,40,SG,22,-0.4,-0.75,0.35,1.30,1630182.0,-1.59,-0.88,-0.71,2023
+marshna01,naji marshall,2022-23,NOP,Stationary Shooter,1345,54,SF,25,-0.42,0.01,-0.42,1.70,1630230.0,-0.96,-0.87,-0.09,2023
+burksal01,alec burks,2022-23,DET,Secondary Ball Handler,1015,46,SG,31,-0.43,1.18,-1.61,1.30,202692.0,-0.56,0.51,-1.08,2023
+grahade01,devonte' graham,2022-23,NOP/SAS,Movement Shooter,922,57,PG,27,-0.43,-0.16,-0.26,1.20,1628984.0,0.02,0.35,-0.33,2023
+smithdr01,dru smith,2022-23,MIA/BRK,Low Minute,97,8,SG,25,-0.43,-0.39,-0.04,0.10,1630696.0,-0.64,-0.63,0.0,2023
+schakjo01,jordan schakel,2022-23,WAS,Low Minute,6,2,SF,24,-0.44,-0.13,-0.32,0.00,1630648.0,-0.49,-0.18,-0.31,2023
+russeda01,d'angelo russell,2022-23,MIN/LAL,Primary Ball Handler,1869,57,PG,26,-0.45,-0.09,-0.36,2.30,1626156.0,0.58,1.34,-0.76,2023
+monekch01,chima moneke,2022-23,SAC,Low Minute,8,2,SF,27,-0.45,-0.17,-0.28,0.00,1631320.0,-0.32,-0.16,-0.16,2023
+clarkbr01,brandon clarke,2022-23,MEM,Roll + Cut Big,1020,51,PF,26,-0.46,-0.85,0.4,1.30,1629634.0,0.57,-0.44,1.02,2023
+lenal01,alex len,2022-23,SAC,Low Minute,46,13,C,29,-0.47,-0.42,-0.05,0.10,203458.0,-0.53,-0.44,-0.09,2023
+dienggo01,gorgui dieng,2022-23,SAS,Stretch Big,193,19,C,33,-0.47,-0.73,0.26,0.20,203476.0,-0.64,-0.77,0.14,2023
+portemi01,michael porter jr.,2022-23,DEN,Movement Shooter,1234,42,SF,24,-0.48,0.42,-0.9,1.50,1629008.0,0.65,0.89,-0.24,2023
+butlejo01,john butler jr.,2022-23,POR,Low Minute,26,8,C,20,-0.48,-0.37,-0.11,0.00,1631219.0,-0.46,-0.36,-0.11,2023
+pippesc02,scotty pippen jr.,2022-23,LAL,Low Minute,32,6,PG,22,-0.49,-0.41,-0.08,0.00,1630590.0,-0.47,-0.29,-0.18,2023
+valanjo01,jonas valanciunas,2022-23,NOP,Post Scorer,1433,58,C,30,-0.49,-0.25,-0.24,1.80,202685.0,0.61,0.21,0.4,2023
+jacksqu01,quenton jackson,2022-23,WAS,Low Minute,8,3,PG,24,-0.49,-0.22,-0.27,0.00,1631245.0,-0.5,-0.18,-0.32,2023
+leesa01,saben lee,2022-23,PHI/PHO,Slasher,294,20,PG,23,-0.49,-0.8,0.31,0.40,1630240.0,-0.91,-0.66,-0.25,2023
+terryda01,dalen terry,2022-23,CHI,Athletic Finisher,115,23,SG,20,-0.5,-0.48,-0.01,0.10,1631207.0,-0.61,-0.42,-0.19,2023
+pottemi01,micah potter,2022-23,UTA,Low Minute,14,3,PF,24,-0.5,-0.24,-0.26,0.00,1630695.0,-0.41,-0.2,-0.22,2023
+dotsode01,devon dotson,2022-23,WAS,Low Minute,53,6,PG,23,-0.52,-0.44,-0.08,0.10,1629653.0,-0.69,-0.4,-0.29,2023
+bogdabo02,bojan bogdanovic,2022-23,DET,Off Screen Shooter,1796,56,PF,33,-0.52,1.55,-2.07,2.20,202711.0,-1.31,0.88,-2.19,2023
+browngr01,greg brown iii,2022-23,POR,Low Minute,93,16,PF,21,-0.52,-0.91,0.39,0.10,1630535.0,-0.69,-0.9,0.21,2023
+whiteco01,coby white,2022-23,CHI,Stationary Shooter,1135,51,SG,23,-0.52,0.41,-0.93,1.40,1629632.0,-0.99,-0.69,-0.3,2023
+morrima03,marcus morris sr.,2022-23,LAC,Stationary Shooter,1519,53,PF,33,-0.53,-0.76,0.24,1.80,202694.0,-0.04,-0.41,0.37,2023
+keelstr01,trevor keels,2022-23,NYK,Low Minute,1,1,SG,19,-0.53,-0.32,-0.21,0.00,1631211.0,-0.54,-0.32,-0.21,2023
+durenja01,jalen duren,2022-23,DET,Roll + Cut Big,1283,51,C,19,-0.55,-0.66,0.11,1.50,1631105.0,-1.17,-1.41,0.24,2023
+edwarke02,kessler edwards,2022-23,BRK/SAC,Low Minute,90,15,SF,22,-0.55,-0.13,-0.43,0.10,1630556.0,-1.26,-0.52,-0.74,2023
+maxeyty01,tyrese maxey,2022-23,PHI,Primary Ball Handler,1245,38,SG,22,-0.55,0.82,-1.37,1.50,1630178.0,-0.14,1.18,-1.32,2023
+suggsja01,jalen suggs,2022-23,ORL,Secondary Ball Handler,781,34,PG,21,-0.57,-1.07,0.5,0.90,1630591.0,-0.43,-0.51,0.08,2023
+toddis01,isaiah todd,2022-23,WAS,Low Minute,13,4,PF,21,-0.58,-0.25,-0.32,0.00,1630225.0,-0.54,-0.21,-0.32,2023
+primojo01,joshua primo,2022-23,SAS,Low Minute,93,4,SG,20,-0.58,-0.71,0.13,0.10,1630563.0,-0.54,-0.64,0.1,2023
+arcidry01,ryan arcidiacono,2022-23,NYK/POR,Low Minute,36,13,PG,28,-0.59,-0.5,-0.09,0.00,1627853.0,-0.6,-0.43,-0.16,2023
+paytoga02,gary payton ii,2022-23,POR,Athletic Finisher,255,15,PG,30,-0.6,-0.92,0.32,0.30,1627780.0,-1.57,-1.94,0.37,2023
+achiupr01,precious achiuwa,2022-23,TOR,Roll + Cut Big,827,35,C,23,-0.61,-0.25,-0.36,1.00,1630173.0,-0.59,-0.72,0.13,2023
+careyve01,vernon carey jr.,2022-23,WAS,Low Minute,28,11,C,21,-0.62,-0.48,-0.14,0.00,1630176.0,-0.52,-0.32,-0.21,2023
+aytonde01,deandre ayton,2022-23,PHO,Post Scorer,1540,51,C,24,-0.63,-1.03,0.41,1.80,1629028.0,0.91,0.21,0.71,2023
+bolmale01,leandro bolmaro,2022-23,UTA,Low Minute,68,14,SG,22,-0.63,-0.49,-0.14,0.10,1630195.0,-0.92,-0.66,-0.26,2023
+baglema01,marvin bagley iii,2022-23,DET,Roll + Cut Big,532,25,C,23,-0.63,-1.04,0.41,0.60,1628963.0,-0.19,-0.4,0.21,2023
+mobleis01,isaiah mobley,2022-23,CLE,Low Minute,26,9,PF,23,-0.64,-0.26,-0.37,0.00,1630600.0,-0.8,-0.38,-0.42,2023
+kornelu01,luke kornet,2022-23,BOS,Roll + Cut Big,605,51,C,27,-0.64,-1.06,0.43,0.70,1628436.0,-0.22,-1.3,1.08,2023
+fournev01,evan fournier,2022-23,NYK,Movement Shooter,414,23,SG,30,-0.65,-0.45,-0.19,0.50,203095.0,-1.19,-0.63,-0.55,2023
+seabrde01,dereon seabron,2022-23,NOP,Low Minute,12,5,SG,22,-0.65,-0.25,-0.4,0.00,1631220.0,-0.7,-0.36,-0.34,2023
+lewiski01,kira lewis jr.,2022-23,NOP,Stationary Shooter,155,14,PG,21,-0.65,-0.05,-0.6,0.20,1630184.0,-1.02,-0.72,-0.3,2023
+joneska01,kai jones,2022-23,CHO,Athletic Finisher,237,27,C,22,-0.65,-1.56,0.91,0.30,1630539.0,-1.8,-2.2,0.4,2023
+gayru01,rudy gay,2022-23,UTA,Stretch Big,645,44,PF,36,-0.66,-1.18,0.52,0.70,200752.0,-1.27,-1.08,-0.19,2023
+toppiob01,obi toppin,2022-23,NYK,Athletic Finisher,669,45,PF,24,-0.67,-0.61,-0.06,0.70,1630167.0,-0.68,-0.38,-0.3,2023
+culveja01,jarrett culver,2022-23,ATL,Athletic Finisher,137,10,SG,23,-0.67,-0.72,0.06,0.20,1629633.0,-1.0,-0.94,-0.06,2023
+reidna01,naz reid,2022-23,MIN,Stretch Big,939,53,C,23,-0.68,-0.58,-0.11,1.00,1629675.0,0.18,-0.14,0.32,2023
+davisjd01,jd davison,2022-23,BOS,Low Minute,14,6,PG,20,-0.68,-0.23,-0.46,0.00,1631120.0,-0.73,-0.25,-0.48,2023
+zubaciv01,ivica zubac,2022-23,LAC,Post Scorer,1734,59,C,25,-0.68,-2.04,1.36,1.90,1627826.0,0.14,-1.48,1.62,2023
+quetane01,neemias queta,2022-23,SAC,Low Minute,25,4,C,23,-0.69,-0.44,-0.25,0.00,1629674.0,-0.41,-0.28,-0.13,2023
+baldwpa01,patrick baldwin jr.,2022-23,GSW,Off Screen Shooter,129,16,SF,20,-0.71,-0.63,-0.07,0.10,1631116.0,-0.31,-0.17,-0.14,2023
+smithde03,dennis smith jr.,2022-23,CHO,Slasher,951,38,PG,25,-0.71,-2.2,1.49,1.00,1628372.0,-1.45,-1.7,0.25,2023
+willija07,jaylin williams,2022-23,OKC,Stretch Big,393,25,PF,20,-0.71,-1.42,0.71,0.40,1631119.0,-0.68,-1.23,0.55,2023
+mcbrimi01,miles mcbride,2022-23,NYK,Stationary Shooter,592,47,PG,22,-0.72,-0.73,0.01,0.60,1630540.0,-1.58,-1.11,-0.47,2023
+alexani01,nickeil alexander-walker,2022-23,UTA/MIN,Secondary Ball Handler,534,38,SG,24,-0.74,-0.82,0.08,0.60,1629638.0,-0.92,-0.95,0.03,2023
+leeda03,damion lee,2022-23,PHO,Movement Shooter,1324,60,SG,30,-0.75,-1.2,0.45,1.40,1627814.0,-1.92,-1.46,-0.46,2023
+pokusal01,aleksej pokusevski,2022-23,OKC,Stretch Big,677,31,PF,21,-0.76,-1.73,0.97,0.70,1630197.0,0.39,-0.67,1.06,2023
+kabenmf01,mfiondu kabengele,2022-23,BOS,Low Minute,14,2,PF,25,-0.76,-0.3,-0.46,0.00,1629662.0,-0.76,-0.29,-0.47,2023
+vincega01,gabe vincent,2022-23,MIA,Secondary Ball Handler,1183,45,PG,26,-0.77,-0.88,0.11,1.20,1629216.0,-1.83,-1.59,-0.24,2023
+lawsoaj01,a.j. lawson,2022-23,MIN/DAL,Low Minute,63,13,SG,22,-0.77,-0.16,-0.61,0.10,1630639.0,-0.47,-0.08,-0.39,2023
+brownke03,kendall brown,2022-23,IND,Low Minute,40,6,SG,19,-0.78,-0.55,-0.23,0.00,1631112.0,-0.93,-0.62,-0.3,2023
+willike04,kenrich williams,2022-23,OKC,Stretch Big,1101,49,PF,28,-0.79,0.2,-0.99,1.10,1629026.0,-0.7,-0.42,-0.28,2023
+powelno01,norman powell,2022-23,LAC,Secondary Ball Handler,1292,50,SG,29,-0.79,0.1,-0.9,1.30,1626181.0,-0.11,0.6,-0.71,2023
+dellama01,matthew dellavedova,2022-23,SAC,Secondary Ball Handler,146,24,PG,32,-0.8,-0.88,0.09,0.10,203521.0,-0.81,-0.65,-0.16,2023
+robindu01,duncan robinson,2022-23,MIA,Movement Shooter,524,29,SF,28,-0.81,-0.1,-0.72,0.50,1629130.0,-1.62,-0.84,-0.78,2023
+schofad01,admiral schofield,2022-23,ORL,Stretch Big,350,27,PF,25,-0.82,-0.71,-0.12,0.40,1629678.0,-1.31,-0.87,-0.43,2023
+grimequ01,quentin grimes,2022-23,NYK,Movement Shooter,1479,49,SG,22,-0.83,-1.11,0.28,1.50,1629656.0,-0.92,-0.92,0.0,2023
+mccontj01,t.j. mcconnell,2022-23,IND,Slasher,1119,57,PG,30,-0.84,-0.6,-0.24,1.10,204456.0,-1.3,-0.85,-0.45,2023
+thomaca02,cam thomas,2022-23,BRK,Shot Creator,679,41,SG,21,-0.85,0.64,-1.49,0.70,1630560.0,-0.92,0.78,-1.69,2023
+okorois01,isaac okoro,2022-23,CLE,Stationary Shooter,1295,61,SF,22,-0.85,-1.66,0.81,1.30,1630171.0,-0.69,-1.59,0.89,2023
+theisda01,daniel theis,2022-23,IND,Low Minute,93,6,C,30,-0.85,-0.6,-0.25,0.10,1628464.0,-0.88,-0.62,-0.26,2023
+harpero02,ron harper jr.,2022-23,TOR,Low Minute,9,3,SF,22,-0.85,-0.45,-0.41,0.00,1631199.0,-1.01,-0.55,-0.45,2023
+wadede01,dean wade,2022-23,CLE,Stationary Shooter,671,31,PF,26,-0.87,-2.41,1.54,0.70,1629731.0,-0.97,-2.01,1.04,2023
+hayesja02,jaxson hayes,2022-23,NOP,Roll + Cut Big,438,33,C,22,-0.88,-1.08,0.2,0.40,1629637.0,-0.88,-1.17,0.29,2023
+wainris01,ish wainright,2022-23,PHO,Stationary Shooter,653,42,SF,28,-0.88,-1.0,0.12,0.60,1630688.0,-1.22,-1.66,0.44,2023
+nesmiaa01,aaron nesmith,2022-23,IND,Stationary Shooter,1300,53,SF,23,-0.88,-1.13,0.24,1.30,1630174.0,-1.58,-1.44,-0.13,2023
+richajo01,josh richardson,2022-23,SAS/NOP,Movement Shooter,1050,44,SG,29,-0.88,-0.52,-0.36,1.00,1626196.0,-1.67,-0.25,-1.42,2023
+bazleda01,darius bazley,2022-23,OKC,Athletic Finisher,555,36,PF,22,-0.88,-1.88,1.0,0.50,1629647.0,-0.29,-1.37,1.07,2023
+clarkjo01,jordan clarkson,2022-23,UTA,Primary Ball Handler,1886,58,SG,30,-0.89,1.58,-2.47,1.80,203903.0,-0.43,1.67,-2.1,2023
+champju02,julian champagnie,2022-23,PHI,Low Minute,7,2,SF,21,-0.89,-0.21,-0.68,0.00,1630577.0,-0.96,-0.3,-0.66,2023
+mcgruro01,rodney mcgruder,2022-23,DET,Movement Shooter,217,21,SG,31,-0.9,-0.85,-0.04,0.20,203585.0,-1.42,-1.07,-0.35,2023
+griffbl01,blake griffin,2022-23,BOS,Stretch Big,375,26,C,33,-0.93,-1.48,0.55,0.40,201933.0,-0.7,-0.94,0.25,2023
+leverca01,caris levert,2022-23,CLE,Secondary Ball Handler,1674,55,SG,28,-0.93,-0.87,-0.06,1.60,1627747.0,-0.32,-0.61,0.29,2023
+willial06,alondes williams,2022-23,BRK,Low Minute,5,1,SG,23,-0.94,-0.14,-0.8,0.00,1631214.0,-0.87,-0.12,-0.75,2023
+simonan01,anfernee simons,2022-23,POR,Primary Ball Handler,1990,56,SG,23,-0.94,0.3,-1.25,1.90,1629014.0,-0.01,1.73,-1.74,2023
+netora01,raul neto,2022-23,CLE,Stationary Shooter,403,39,PG,30,-0.95,-1.01,0.07,0.40,203526.0,-1.03,-1.09,0.05,2023
+mcgeeja01,javale mcgee,2022-23,DAL,Roll + Cut Big,293,36,C,35,-0.95,-1.47,0.52,0.30,201580.0,-0.38,-1.18,0.79,2023
+brownbr01,bruce brown,2022-23,DEN,Stationary Shooter,1670,58,SG,26,-0.96,-0.74,-0.22,1.50,1628971.0,-0.18,-0.45,0.27,2023
+cainja01,jamal cain,2022-23,MIA,Roll + Cut Big,181,13,SF,23,-0.96,-1.11,0.14,0.20,1631288.0,-1.05,-1.19,0.14,2023
+martica02,caleb martin,2022-23,MIA,Athletic Finisher,1485,49,PF,27,-0.97,-1.82,0.85,1.40,1628997.0,-0.7,-1.8,1.1,2023
+fostemi02,michael foster jr.,2022-23,PHI,Low Minute,1,1,PF,20,-0.97,-0.29,-0.68,0.00,1630701.0,-0.93,-0.27,-0.66,2023
+willigr01,grant williams,2022-23,BOS,Stationary Shooter,1616,58,PF,24,-0.99,-1.66,0.68,1.50,1629684.0,-0.62,-1.18,0.55,2023
+harremo01,montrezl harrell,2022-23,PHI,Post Scorer,624,50,C,29,-0.99,-0.69,-0.3,0.60,1626149.0,-1.02,-0.9,-0.13,2023
+vassede01,devin vassell,2022-23,SAS,Secondary Ball Handler,907,29,SG,22,-0.99,-0.08,-0.92,0.80,1630170.0,-0.3,0.55,-0.85,2023
+jeromty01,ty jerome,2022-23,GSW,Secondary Ball Handler,642,36,SG,25,-1.0,-0.21,-0.79,0.60,1629660.0,-0.69,-0.42,-0.27,2023
+giddejo01,josh giddey,2022-23,OKC,Slasher,1602,52,SG,20,-1.01,-0.79,-0.22,1.40,1630581.0,-0.01,0.11,-0.12,2023
+shamela01,landry shamet,2022-23,PHO,Movement Shooter,642,30,SG,25,-1.01,-0.74,-0.28,0.60,1629013.0,-0.96,-0.02,-0.95,2023
+mathega01,garrison mathews,2022-23,HOU/ATL,Movement Shooter,606,46,SG,26,-1.02,-1.26,0.24,0.50,1629726.0,-1.16,-0.82,-0.34,2023
+josepco01,cory joseph,2022-23,DET,Secondary Ball Handler,633,40,PG,31,-1.02,-0.24,-0.78,0.60,202709.0,-1.26,-0.68,-0.58,2023
+champju01,justin champagnie,2022-23,TOR,Low Minute,11,3,SF,21,-1.02,-0.52,-0.5,0.00,1630551.0,-1.02,-0.59,-0.43,2023
+martity01,tyrese martin,2022-23,ATL,Low Minute,45,13,SG,23,-1.02,-0.42,-0.6,0.00,1631213.0,-0.82,-0.51,-0.32,2023
+kaminfr01,frank kaminsky,2022-23,ATL/HOU,Stretch Big,196,29,C,29,-1.02,-0.6,-0.42,0.20,1626163.0,-0.78,-0.89,0.11,2023
+maledth01,theo maledon,2022-23,CHO,Secondary Ball Handler,581,36,PG,21,-1.02,-0.26,-0.76,0.50,1630177.0,-1.09,-1.31,0.22,2023
+daniedy01,dyson daniels,2022-23,NOP,Athletic Finisher,778,39,PG,19,-1.03,-2.2,1.17,0.70,1630700.0,-1.64,-2.32,0.68,2023
+smithja04,jalen smith,2022-23,IND,Stretch Big,928,51,PF,22,-1.03,-0.78,-0.25,0.80,1630188.0,-0.38,-0.33,-0.05,2023
+azubuud01,udoka azubuike,2022-23,UTA,Roll + Cut Big,137,24,C,23,-1.04,-1.47,0.43,0.10,1628962.0,-0.88,-1.23,0.35,2023
+bouyeja01,jamaree bouyea,2022-23,MIA,Low Minute,65,4,PG,23,-1.04,-0.85,-0.18,0.10,1631123.0,-0.67,-0.84,0.18,2023
+matthwe02,wesley matthews,2022-23,MIL,Movement Shooter,608,39,SG,36,-1.04,-1.47,0.44,0.50,202083.0,-2.17,-2.26,0.09,2023
+martike04,kenyon martin jr.,2022-23,HOU,Stretch Big,1526,58,SF,22,-1.05,0.39,-1.43,1.30,1630231.0,-2.02,-1.06,-0.97,2023
+inglejo01,joe ingles,2022-23,MIL,Secondary Ball Handler,563,25,SF,35,-1.05,-0.65,-0.4,0.50,204060.0,-1.47,-1.36,-0.11,2023
+bolbo01,bol bol,2022-23,ORL,Athletic Finisher,1251,54,PF,23,-1.05,-1.83,0.78,1.10,1629626.0,-0.56,-1.83,1.27,2023
+noelne01,nerlens noel,2022-23,DET,Roll + Cut Big,152,14,C,28,-1.08,-1.92,0.84,0.10,203457.0,-0.33,-1.51,1.17,2023
+monkma01,malik monk,2022-23,SAC,Movement Shooter,1219,54,SG,25,-1.09,0.48,-1.57,1.00,1628370.0,0.27,1.56,-1.3,2023
+stewais01,isaiah stewart,2022-23,DET,Stretch Big,1368,48,C,21,-1.1,-1.65,0.55,1.10,1630191.0,-1.02,-0.75,-0.27,2023
+hasleud01,udonis haslem,2022-23,MIA,Low Minute,47,6,C,42,-1.1,-0.97,-0.13,0.00,2617.0,-0.66,-0.74,0.08,2023
+brissos01,oshae brissett,2022-23,IND,Athletic Finisher,786,49,SF,24,-1.13,-0.96,-0.18,0.60,1629052.0,-1.47,-1.21,-0.26,2023
+hausesa01,sam hauser,2022-23,BOS,Movement Shooter,903,57,PF,25,-1.13,-0.53,-0.61,0.70,1630573.0,-0.51,-0.23,-0.28,2023
+gillan01,anthony gill,2022-23,WAS,Roll + Cut Big,411,41,PF,30,-1.15,-0.82,-0.32,0.30,1630264.0,-2.13,-1.83,-0.3,2023
+littlna01,nassir little,2022-23,POR,Stationary Shooter,620,37,SF,23,-1.15,-0.51,-0.64,0.50,1629642.0,-1.53,-1.12,-0.41,2023
+garubus01,usman garuba,2022-23,HOU,Athletic Finisher,693,51,PF,20,-1.16,-2.28,1.12,0.50,1630586.0,-0.65,-2.08,1.43,2023
+johnske04,keldon johnson,2022-23,SAS,Stationary Shooter,1695,52,SF,23,-1.17,0.7,-1.86,1.30,1629640.0,-1.85,0.5,-2.35,2023
+sprinja01,jaden springer,2022-23,PHI,Low Minute,26,7,SG,20,-1.17,-0.46,-0.71,0.00,1630531.0,-1.01,-0.39,-0.62,2023
+langfro01,romeo langford,2022-23,SAS,Athletic Finisher,646,32,SG,23,-1.17,-0.84,-0.34,0.50,1629641.0,-2.66,-1.7,-0.96,2023
+duartch01,chris duarte,2022-23,IND,Secondary Ball Handler,694,36,SF,25,-1.18,-0.22,-0.96,0.50,1630537.0,-2.12,-1.13,-0.99,2023
+rolliry01,ryan rollins,2022-23,GSW,Low Minute,62,12,PG,20,-1.2,-0.94,-0.26,0.00,1631157.0,-0.57,-0.52,-0.05,2023
+omorueu01,eugene omoruyi,2022-23,OKC,Stretch Big,272,23,SF,26,-1.2,-0.84,-0.36,0.20,1630647.0,-1.67,-0.95,-0.71,2023
+willija06,jalen williams,2022-23,OKC,Athletic Finisher,1539,53,SG,21,-1.21,-1.6,0.39,1.20,1631114.0,-0.54,-0.97,0.43,2023
+dowtije01,jeff dowtin jr.,2022-23,TOR,Slasher,102,15,PG,25,-1.21,-0.82,-0.39,0.10,1630288.0,-1.44,-0.99,-0.45,2023
+wieskjo01,joe wieskamp,2022-23,TOR,Low Minute,17,2,SF,23,-1.21,-0.77,-0.45,0.00,1630580.0,-1.07,-0.61,-0.46,2023
+reaveau01,austin reaves,2022-23,LAL,Stationary Shooter,1144,41,SG,24,-1.22,-0.42,-0.79,0.90,1630559.0,-2.02,-1.35,-0.67,2023
+griffaj01,aj griffin,2022-23,ATL,Movement Shooter,1122,55,SF,19,-1.22,-0.56,-0.66,0.80,1631100.0,-1.83,-0.74,-1.09,2023
+knighna01,nathan knight,2022-23,MIN,Athletic Finisher,268,33,PF,25,-1.23,-0.61,-0.62,0.20,1630233.0,-1.38,-0.82,-0.56,2023
+strusma01,max strus,2022-23,MIA,Movement Shooter,1722,57,SF,26,-1.23,-1.09,-0.14,1.30,1629622.0,-0.98,-0.65,-0.34,2023
+chandke01,kennedy chandler,2022-23,MEM,Secondary Ball Handler,221,24,PG,20,-1.23,-1.25,0.01,0.20,1631113.0,-1.2,-1.12,-0.08,2023
+hylanbo01,bones hyland,2022-23,DEN/LAC,Shot Creator,852,44,PG,22,-1.24,1.06,-2.31,0.60,1630538.0,0.27,1.59,-1.32,2023
+wisemja01,james wiseman,2022-23,GSW/DET,Roll + Cut Big,286,22,C,21,-1.24,-1.18,-0.06,0.20,1630164.0,-0.12,-0.5,0.38,2023
+bantoda01,dalano banton,2022-23,TOR,Athletic Finisher,246,26,PG,23,-1.24,-0.79,-0.46,0.20,1630625.0,-0.8,-0.8,0.0,2023
+jovicni01,nikola jovic,2022-23,MIA,Stretch Big,204,15,PF,19,-1.25,-0.91,-0.33,0.20,1631107.0,-1.01,-1.04,0.03,2023
+washipj01,p.j. washington,2022-23,CHO,Stretch Big,1940,59,PF,24,-1.25,-1.26,0.02,1.40,1629023.0,-1.5,-1.3,-0.21,2023
+gordoer01,eric gordon,2022-23,HOU/LAC,Secondary Ball Handler,1466,49,SG,34,-1.25,-0.63,-0.62,1.10,201569.0,-2.01,-0.94,-1.07,2023
+divindo01,donte divincenzo,2022-23,GSW,Movement Shooter,1210,48,SG,26,-1.25,-0.99,-0.25,0.90,1628978.0,-0.12,-0.24,0.12,2023
+whiteja03,jack white,2022-23,DEN,Low Minute,43,14,SF,25,-1.25,-0.69,-0.56,0.00,1631298.0,-1.16,-0.61,-0.55,2023
+diabamo01,moussa diabate,2022-23,LAC,Roll + Cut Big,171,17,PF,21,-1.25,-0.88,-0.38,0.10,1631217.0,-1.35,-1.02,-0.33,2023
+hillge01,george hill,2022-23,MIL/IND,Secondary Ball Handler,677,36,PG,36,-1.25,-1.32,0.07,0.50,201588.0,-1.45,-1.45,0.0,2023
+loftoke01,kenneth lofton jr.,2022-23,MEM,Low Minute,31,8,PF,20,-1.26,-0.58,-0.68,0.00,1631254.0,-0.97,-0.46,-0.51,2023
+nixda01,daishen nix,2022-23,HOU,Secondary Ball Handler,636,41,PG,21,-1.26,-0.87,-0.39,0.50,1630227.0,-2.06,-1.96,-0.11,2023
+krejcvi01,vit krejci,2022-23,ATL,Stationary Shooter,120,21,PG,22,-1.27,-0.73,-0.54,0.10,1630249.0,-1.13,-0.91,-0.22,2023
+willivi01,vince williams jr.,2022-23,MEM,Low Minute,49,9,SG,22,-1.27,-0.84,-0.43,0.00,1631246.0,-1.07,-0.65,-0.42,2023
+holidaa01,aaron holiday,2022-23,ATL,Secondary Ball Handler,725,50,PG,26,-1.27,-1.69,0.42,0.50,1628988.0,-2.7,-2.31,-0.39,2023
+kennalu01,luke kennard,2022-23,LAC/MEM,Movement Shooter,767,37,SG,26,-1.28,-1.48,0.2,0.60,1628379.0,-1.81,-1.36,-0.45,2023
+greenda02,danny green,2022-23,MEM/CLE,Low Minute,55,4,SG,35,-1.28,-0.68,-0.6,0.00,201980.0,-1.08,-0.58,-0.5,2023
+johnsst04,stanley johnson,2022-23,SAS,Stationary Shooter,469,30,SF,26,-1.3,-0.76,-0.54,0.30,1626169.0,-1.41,-1.4,0.0,2023
+onealro01,royce o'neale,2022-23,BRK,Stationary Shooter,1837,55,SF,29,-1.3,-1.54,0.24,1.30,1626220.0,-0.63,-0.93,0.3,2023
+barlodo01,dominick barlow,2022-23,SAS,Low Minute,95,10,SF,19,-1.32,-0.8,-0.52,0.10,1631230.0,-0.77,-0.77,0.0,2023
+templga01,garrett temple,2022-23,NOP,Stationary Shooter,129,18,SG,36,-1.33,-1.02,-0.31,0.10,202066.0,-1.21,-0.99,-0.23,2023
+morrima02,markieff morris,2022-23,BRK,Athletic Finisher,285,27,PF,33,-1.33,-1.27,-0.07,0.20,202693.0,-1.53,-1.08,-0.45,2023
+connapa01,pat connaughton,2022-23,MIL,Stationary Shooter,1043,41,SG,30,-1.37,-0.74,-0.64,0.70,1626192.0,-0.2,-0.68,0.48,2023
+lamban01,anthony lamb,2022-23,GSW,Stationary Shooter,837,43,SF,25,-1.37,-1.49,0.11,0.60,1630237.0,-1.19,-1.13,-0.06,2023
+davisjo06,johnny davis,2022-23,WAS,Low Minute,62,13,SG,20,-1.37,-1.19,-0.18,0.00,1631098.0,-0.92,-0.68,-0.24,2023
+walkeja01,jabari walker,2022-23,POR,Roll + Cut Big,335,38,SF,20,-1.37,-1.17,-0.2,0.20,1631133.0,-1.53,-1.21,-0.32,2023
+moorewe01,wendell moore jr.,2022-23,MIN,Stretch Big,139,24,SG,21,-1.38,-0.59,-0.79,0.10,1631111.0,-1.02,-0.73,-0.28,2023
+fultzma01,markelle fultz,2022-23,ORL,Slasher,1108,38,PG,24,-1.39,-1.49,0.1,0.70,1628365.0,0.14,-0.18,0.32,2023
+niangge01,georges niang,2022-23,PHI,Movement Shooter,1089,55,PF,29,-1.4,-0.89,-0.51,0.70,1627777.0,-1.17,-0.27,-0.9,2023
+bogdabo01,bogdan bogdanovic,2022-23,ATL,Secondary Ball Handler,1015,34,SG,30,-1.41,0.96,-2.36,0.60,203992.0,-1.02,-0.01,-1.0,2023
+robyis01,isaiah roby,2022-23,SAS,Stretch Big,474,42,PF,25,-1.41,-1.52,0.11,0.30,1629676.0,-1.67,-1.78,0.1,2023
+watsope01,peyton watson,2022-23,DEN,Low Minute,38,12,SG,20,-1.42,-0.66,-0.75,0.00,1631212.0,-1.15,-0.56,-0.59,2023
+bostobr01,brandon boston jr.,2022-23,LAC,Secondary Ball Handler,247,21,SG,21,-1.43,-0.61,-0.82,0.20,1630527.0,-1.2,-0.47,-0.73,2023
+ryanma01,matt ryan,2022-23,LAL/MIN,Movement Shooter,303,32,SF,25,-1.45,-0.17,-1.28,0.20,1630346.0,-1.03,-0.19,-0.84,2023
+okpalkz01,kz okpala,2022-23,SAC,Athletic Finisher,248,35,PF,23,-1.45,-2.46,1.01,0.20,1629644.0,-1.97,-2.44,0.48,2023
+saricda01,dario saric,2022-23,PHO/OKC,Stretch Big,547,38,PF,28,-1.46,-1.09,-0.37,0.30,203967.0,-0.9,-0.9,-0.01,2023
+watanyu01,yuta watanabe,2022-23,BRK,Stationary Shooter,772,43,SF,28,-1.46,-0.65,-0.81,0.50,1629139.0,-1.69,-1.16,-0.53,2023
+okongon01,onyeka okongwu,2022-23,ATL,Roll + Cut Big,1365,57,C,22,-1.47,-2.24,0.78,0.80,1630168.0,-0.13,-1.27,1.14,2023
+ibakase01,serge ibaka,2022-23,MIL,Stretch Big,185,16,C,33,-1.47,-1.69,0.23,0.10,201586.0,-1.39,-1.48,0.09,2023
+winslju01,justise winslow,2022-23,POR,Athletic Finisher,776,29,SF,26,-1.48,-2.18,0.7,0.50,1626159.0,-1.65,-1.75,0.1,2023
+sochaje01,jeremy sochan,2022-23,SAS,Athletic Finisher,1242,48,PF,19,-1.48,-1.0,-0.48,0.70,1631110.0,-2.79,-1.91,-0.88,2023
+bateske01,keita bates-diop,2022-23,SAS,Athletic Finisher,904,45,SF,27,-1.49,-1.71,0.22,0.50,1628966.0,-2.35,-1.56,-0.79,2023
+porteke02,kevin porter jr.,2022-23,HOU,Shot Creator,1359,40,PG,22,-1.52,-0.85,-0.67,0.80,1629645.0,-0.37,0.41,-0.77,2023
+vandeja01,jarred vanderbilt,2022-23,UTA/LAL,Roll + Cut Big,1321,55,PF,23,-1.53,-1.01,-0.51,0.70,1629020.0,0.71,-0.09,0.8,2023
+taylote01,terry taylor,2022-23,IND,Athletic Finisher,228,26,PF,23,-1.59,-1.04,-0.55,0.10,1630678.0,-2.59,-1.8,-0.79,2023
+agbajoc01,ochai agbaji,2022-23,UTA,Athletic Finisher,557,37,SG,22,-1.59,-0.99,-0.6,0.30,1630534.0,-3.18,-2.05,-1.14,2023
+highsha01,haywood highsmith,2022-23,MIA,Stretch Big,847,43,SF,26,-1.61,-2.68,1.07,0.40,1629312.0,-1.88,-2.7,0.82,2023
+huntede01,de'andre hunter,2022-23,ATL,Stationary Shooter,1567,49,SF,25,-1.61,-1.15,-0.46,0.80,1629631.0,-1.3,-0.76,-0.54,2023
+oubreke01,kelly oubre jr.,2022-23,CHO,Stationary Shooter,1141,35,SF,27,-1.61,-0.17,-1.44,0.60,1626162.0,-0.48,0.23,-0.72,2023
+haywago01,gordon hayward,2022-23,CHO,Secondary Ball Handler,1059,34,SF,32,-1.63,-1.64,0.01,0.50,202330.0,-1.6,-1.13,-0.47,2023
+schrode01,dennis schroder,2022-23,LAL,Primary Ball Handler,1379,45,PG,29,-1.64,-0.54,-1.1,0.70,203471.0,-1.17,-0.64,-0.54,2023
+jonesda03,damian jones,2022-23,LAL/UTA,Roll + Cut Big,184,23,C,27,-1.65,-1.7,0.05,0.10,1627745.0,-0.77,-1.33,0.56,2023
+hamptrj01,r.j. hampton,2022-23,ORL,Secondary Ball Handler,361,26,PG,22,-1.66,-0.7,-0.97,0.20,1630181.0,-1.04,-0.67,-0.36,2023
+antetth01,thanasis antetokounmpo,2022-23,MIL,Roll + Cut Big,101,25,SF,30,-1.68,-1.27,-0.41,0.00,203648.0,-1.12,-1.13,0.01,2023
+beysa01,saddiq bey,2022-23,DET/ATL,Movement Shooter,1539,54,SF,23,-1.68,0.38,-2.06,0.70,1630180.0,-1.02,0.27,-1.29,2023
+sharpda01,day'ron sharpe,2022-23,BRK,Roll + Cut Big,327,32,C,21,-1.69,-1.1,-0.59,0.10,1630549.0,-1.28,-1.23,-0.06,2023
+moodymo01,moses moody,2022-23,GSW,Stationary Shooter,627,44,SG,20,-1.7,-1.2,-0.5,0.30,1630541.0,-1.88,-1.21,-0.67,2023
+diakima01,mamadi diakite,2022-23,CLE,Low Minute,99,16,PF,26,-1.7,-1.44,-0.26,0.00,1629603.0,-1.28,-1.03,-0.25,2023
+diengou01,ousmane dieng,2022-23,OKC,Athletic Finisher,284,19,SF,19,-1.71,-1.14,-0.57,0.10,1631172.0,-1.54,-1.36,-0.18,2023
+flynnma01,malachi flynn,2022-23,TOR,Stationary Shooter,582,42,PG,24,-1.71,-0.24,-1.47,0.30,1630201.0,-1.87,-0.95,-0.92,2023
+birchkh01,khem birch,2022-23,TOR,Roll + Cut Big,162,20,C,30,-1.72,-2.18,0.46,0.10,203920.0,-2.19,-2.11,-0.08,2023
+martico01,cody martin,2022-23,CHO,Stationary Shooter,134,7,SF,27,-1.75,-1.08,-0.67,0.10,1628998.0,-0.97,-0.92,-0.05,2023
+manntr01,tre mann,2022-23,OKC,Secondary Ball Handler,938,51,PG,22,-1.76,-1.35,-0.41,0.40,1630544.0,-1.81,-1.0,-0.82,2023
+youngth01,thaddeus young,2022-23,TOR,Roll + Cut Big,754,47,PF,34,-1.8,-1.3,-0.5,0.30,201152.0,-1.25,-1.47,0.22,2023
+murrake02,keegan murray,2022-23,SAC,Athletic Finisher,1625,55,SF,22,-1.81,-1.77,-0.03,0.60,1631099.0,-0.09,-0.09,0.0,2023
+wiggiaa01,aaron wiggins,2022-23,OKC,Stretch Big,846,46,SG,24,-1.83,-1.44,-0.39,0.30,1630598.0,-2.03,-1.44,-0.59,2023
+simsje01,jericho sims,2022-23,NYK,Roll + Cut Big,767,47,C,24,-1.84,-2.57,0.73,0.30,1630579.0,-1.45,-2.33,0.88,2023
+jacksju01,justin jackson,2022-23,BOS,Off Screen Shooter,107,23,SF,27,-1.85,-1.26,-0.6,0.00,1628382.0,-0.91,-0.71,-0.2,2023
+wrighmc01,mckinley wright iv,2022-23,DAL,Shot Creator,206,20,PG,24,-1.85,-0.86,-1.0,0.10,1630593.0,-0.71,-0.61,-0.1,2023
+walljo01,john wall,2022-23,LAC,Shot Creator,755,34,PG,32,-1.87,-0.94,-0.93,0.30,202322.0,0.09,0.62,-0.53,2023
+dukeda01,david duke jr.,2022-23,BRK,Slasher,141,16,SG,23,-1.87,-1.25,-0.62,0.00,1630561.0,-2.06,-1.22,-0.85,2023
+sharpsh01,shaedon sharpe,2022-23,POR,Athletic Finisher,1157,57,SG,19,-1.88,-0.72,-1.16,0.40,1631101.0,-2.56,-1.37,-1.18,2023
+greenja05,jalen green,2022-23,HOU,Primary Ball Handler,1833,54,SG,21,-1.88,0.26,-2.14,0.60,1630224.0,-1.63,0.3,-1.93,2023
+hachiru01,rui hachimura,2022-23,WAS/LAL,Athletic Finisher,1016,41,PF,25,-1.9,-1.97,0.07,0.30,1629060.0,-1.41,-0.81,-0.61,2023
+watfotr01,trendon watford,2022-23,POR,Athletic Finisher,680,42,PF,22,-1.9,-1.38,-0.51,0.20,1630570.0,-1.66,-1.78,0.12,2023
+princta02,taurean prince,2022-23,MIN,Stationary Shooter,787,37,SF,28,-1.91,-1.52,-0.4,0.20,1627752.0,-2.25,-1.59,-0.66,2023
+porteot01,otto porter jr.,2022-23,TOR,Stretch Big,146,8,SF,29,-1.91,-1.26,-0.66,0.00,203490.0,-1.61,-1.3,-0.31,2023
+korkmfu01,furkan korkmaz,2022-23,PHI,Athletic Finisher,255,25,SG,25,-1.93,-1.21,-0.72,0.10,1627788.0,-1.94,-1.06,-0.87,2023
+klebima01,maxi kleber,2022-23,DAL,Athletic Finisher,564,22,C,31,-1.93,-2.56,0.62,0.20,1628467.0,-1.9,-2.2,0.31,2023
+colliza01,zach collins,2022-23,SAS,Post Scorer,1016,48,C,25,-1.95,-1.16,-0.79,0.30,1628380.0,-1.93,-1.33,-0.6,2023
+sextoco01,collin sexton,2022-23,UTA,Slasher,1129,47,SG,24,-1.97,0.15,-2.11,0.30,1629012.0,-1.39,0.31,-1.7,2023
+beverpa01,patrick beverley,2022-23,LAL,Secondary Ball Handler,1211,45,PG,34,-1.97,-2.57,0.59,0.30,201976.0,-1.16,-1.97,0.81,2023
+barrerj01,rj barrett,2022-23,NYK,Secondary Ball Handler,1829,53,SG,22,-1.99,-0.13,-1.86,0.50,1629628.0,-0.57,0.17,-0.74,2023
+pinsoth01,theo pinson,2022-23,DAL,Stationary Shooter,232,32,SG,27,-2.03,-0.69,-1.34,0.10,1629033.0,-1.14,-0.71,-0.43,2023
+bouknja01,james bouknight,2022-23,CHO,Movement Shooter,354,26,SG,22,-2.04,-1.79,-0.25,0.10,1630547.0,-1.83,-1.61,-0.22,2023
+washidu02,duane washington jr.,2022-23,PHO,Secondary Ball Handler,394,31,SG,22,-2.06,-0.47,-1.59,0.10,1630613.0,-1.72,0.11,-1.83,2023
+greenja01,jamychal green,2022-23,GSW,Stretch Big,558,38,PF,32,-2.06,-1.7,-0.35,0.10,203210.0,-0.87,-0.94,0.07,2023
+harrike01,kevon harris,2022-23,ORL,Stretch Big,336,27,SG,25,-2.07,-1.84,-0.23,0.10,1630284.0,-2.12,-1.86,-0.26,2023
+jacksre01,reggie jackson,2022-23,LAC,Primary Ball Handler,1338,52,PG,32,-2.07,-1.72,-0.35,0.30,202704.0,-1.59,-0.78,-0.81,2023
+harriga01,gary harris,2022-23,ORL,Stationary Shooter,735,30,SG,28,-2.08,-1.18,-0.9,0.20,203914.0,-1.29,-1.3,0.0,2023
+reddica01,cam reddish,2022-23,NYK/POR,Movement Shooter,507,23,SF,23,-2.08,-1.38,-0.7,0.10,1629629.0,-1.68,-1.35,-0.33,2023
+toscaju01,juan toscano-anderson,2022-23,LAL/UTA,Stretch Big,390,31,SF,29,-2.1,-2.35,0.26,0.10,1629308.0,-2.29,-2.69,0.4,2023
+bartowi01,will barton,2022-23,WAS,Secondary Ball Handler,782,40,SG,32,-2.11,-1.44,-0.67,0.10,203115.0,-1.54,-0.92,-0.63,2023
+nembhan01,andrew nembhard,2022-23,IND,Secondary Ball Handler,1435,53,SG,23,-2.11,-2.35,0.24,0.30,1629614.0,-2.49,-2.01,-0.48,2023
+vonleno01,noah vonleh,2022-23,BOS,Athletic Finisher,172,23,C,27,-2.13,-2.3,0.17,0.00,203943.0,-1.9,-2.05,0.15,2023
+miltosh01,shake milton,2022-23,PHI,Slasher,1138,53,SG,26,-2.13,-0.63,-1.49,0.20,1629003.0,-1.85,-0.89,-0.96,2023
+mathube01,bennedict mathurin,2022-23,IND,Secondary Ball Handler,1693,60,SF,20,-2.14,-0.72,-1.41,0.30,1631097.0,-2.32,-0.29,-2.02,2023
+murphtr02,trey murphy iii,2022-23,NOP,Stationary Shooter,1644,56,SF,22,-2.14,-1.68,-0.46,0.30,1630530.0,-0.02,-0.34,0.32,2023
+okekech01,chuma okeke,2022-23,ORL,Athletic Finisher,404,19,SF,24,-2.17,-1.58,-0.59,0.10,1629643.0,-0.78,-1.26,0.48,2023
+craigto01,torrey craig,2022-23,PHO,Stretch Big,1474,57,SF,32,-2.18,-2.01,-0.17,0.20,1628470.0,-1.02,-1.64,0.62,2023
+harrijo01,joe harris,2022-23,BRK,Movement Shooter,1215,51,SG,31,-2.18,-0.52,-1.66,0.20,203925.0,-1.53,-0.79,-0.74,2023
+beaslma01,malik beasley,2022-23,UTA/LAL,Off Screen Shooter,1533,58,SG,26,-2.2,0.17,-2.37,0.20,1627736.0,-0.75,0.78,-1.53,2023
+mcgowbr01,bryce mcgowens,2022-23,CHO,Movement Shooter,382,26,SG,20,-2.2,-1.92,-0.28,0.10,1631121.0,-2.91,-2.38,-0.53,2023
+forbebr01,bryn forbes,2022-23,MIN,Off Screen Shooter,268,25,SG,29,-2.22,-0.7,-1.52,0.00,1627854.0,-2.31,-0.96,-1.35,2023
+warretj01,t.j. warren,2022-23,BRK/PHO,Athletic Finisher,505,28,PF-SF,29,-2.22,-0.82,-1.4,0.10,203933.0,-1.66,-0.85,-0.81,2023
+johnske07,keon johnson,2022-23,POR,Shot Creator,274,28,SG,20,-2.22,-1.54,-0.68,0.00,1630553.0,-1.51,-0.87,-0.64,2023
+knoxke01,kevin knox ii,2022-23,DET/POR,Stationary Shooter,607,44,PF-SF,23,-2.24,-2.35,0.11,0.10,1628995.0,-1.99,-1.86,-0.14,2023
+nunnke01,kendrick nunn,2022-23,LAL/WAS,Secondary Ball Handler,730,50,SG-PG,27,-2.24,-0.89,-1.36,0.10,1629134.0,-2.19,-0.95,-1.24,2023
+houstca01,caleb houstan,2022-23,ORL,Athletic Finisher,549,34,SF,20,-2.28,-1.36,-0.92,0.00,1631216.0,-2.72,-2.04,-0.68,2023
+millspa02,patty mills,2022-23,BRK,Movement Shooter,479,36,PG,34,-2.3,-0.15,-2.15,0.00,201988.0,-1.85,-0.05,-1.8,2023
+browntr01,troy brown jr.,2022-23,LAL,Athletic Finisher,1279,53,SF,23,-2.34,-1.52,-0.82,0.10,1628972.0,-1.95,-1.87,-0.08,2023
+hernaju01,juancho hernangomez,2022-23,TOR,Stretch Big,609,41,PF,27,-2.37,-1.67,-0.7,0.00,1627823.0,-2.54,-2.59,0.04,2023
+hayeski01,killian hayes,2022-23,DET,Primary Ball Handler,1471,55,PG,21,-2.37,-1.82,-0.55,0.00,1630165.0,-1.6,-1.09,-0.52,2023
+rosede01,derrick rose,2022-23,NYK,Secondary Ball Handler,336,26,PG,34,-2.4,-1.27,-1.13,0.00,201565.0,-1.72,-0.68,-1.05,2023
+poolejo01,jordan poole,2022-23,GSW,Primary Ball Handler,1778,58,PG,23,-2.41,-1.04,-1.36,0.00,1629673.0,-0.42,1.1,-1.52,2023
+tateja01,jae'sean tate,2022-23,HOU,Athletic Finisher,420,20,SF,27,-2.41,-1.82,-0.59,0.00,1630256.0,-1.99,-1.67,-0.32,2023
+smithis01,ish smith,2022-23,DEN,Shot Creator,311,30,PG,34,-2.41,-2.05,-0.36,0.00,202397.0,-2.33,-1.9,-0.43,2023
+bertada01,davis bertans,2022-23,DAL,Movement Shooter,360,34,PF,30,-2.41,-1.02,-1.39,0.00,202722.0,-1.64,-0.55,-1.08,2023
+holmeri01,richaun holmes,2022-23,SAC,Roll + Cut Big,301,33,C,29,-2.42,-2.82,0.41,0.00,1626158.0,-1.6,-2.03,0.43,2023
+curryse01,seth curry,2022-23,BRK,Movement Shooter,914,40,SG,32,-2.47,-1.24,-1.23,0.00,203552.0,-1.86,-0.45,-1.41,2023
+cancavl01,vlatko cancar,2022-23,DEN,Stretch Big,705,44,PF,25,-2.5,-1.75,-0.76,0.00,1628427.0,-1.53,-1.27,-0.26,2023
+smithja05,jabari smith jr.,2022-23,HOU,Athletic Finisher,1646,55,PF,19,-2.5,-2.17,-0.34,-0.10,1631095.0,-1.55,-1.75,0.2,2023
+mitchda01,davion mitchell,2022-23,SAC,Stationary Shooter,999,56,PG,24,-2.51,-1.75,-0.76,-0.10,1630558.0,-1.75,-1.16,-0.59,2023
+ntilila01,frank ntilikina,2022-23,DAL,Stationary Shooter,432,36,PG,24,-2.55,-2.01,-0.54,0.00,1628373.0,-2.56,-2.16,-0.4,2023
+fontesi01,simone fontecchio,2022-23,UTA,Movement Shooter,299,31,SF,27,-2.57,-0.91,-1.66,0.00,1631323.0,-1.96,-0.78,-1.18,2023
+chrisma02,max christie,2022-23,LAL,Stationary Shooter,498,35,SG,20,-2.58,-2.62,0.04,-0.10,1631108.0,-2.51,-2.55,0.04,2023
+dosunay01,ayo dosunmu,2022-23,CHI,Stationary Shooter,1619,57,SG,23,-2.58,-2.74,0.16,-0.20,1630245.0,-1.67,-1.81,0.14,2023
+liveris01,isaiah livers,2022-23,DET,Stationary Shooter,782,37,PF,24,-2.58,-2.22,-0.36,-0.10,1630587.0,-2.48,-2.39,-0.09,2023
+kuminjo01,jonathan kuminga,2022-23,GSW,Stretch Big,886,46,PF,20,-2.65,-2.51,-0.14,-0.10,1630228.0,-1.57,-1.31,-0.26,2023
+tuckepj01,p.j. tucker,2022-23,PHI,Athletic Finisher,1415,55,PF,37,-2.66,-2.94,0.28,-0.20,200782.0,-2.65,-3.09,0.44,2023
+reedda01,davon reed,2022-23,DEN/LAL,Stationary Shooter,326,37,SG,27,-2.69,-2.76,0.06,-0.10,1628432.0,-2.14,-2.07,-0.07,2023
+pritcpa01,payton pritchard,2022-23,BOS,Movement Shooter,536,42,PG,25,-2.69,-1.66,-1.03,-0.10,1630202.0,-2.01,-0.57,-1.44,2023
+beaucma01,marjon beauchamp,2022-23,MIL,Stationary Shooter,562,38,SF,22,-2.71,-1.25,-1.46,-0.10,1630699.0,-2.12,-1.41,-0.71,2023
+hardyja02,jaden hardy,2022-23,DAL,Secondary Ball Handler,367,31,SG,20,-2.71,-0.75,-1.97,-0.10,1630702.0,-1.51,-0.53,-0.98,2023
+forretr01,trent forrest,2022-23,ATL,Slasher,239,18,PG,24,-2.72,-2.21,-0.51,0.00,1630235.0,-2.05,-1.98,-0.07,2023
+stevela01,lamar stevens,2022-23,CLE,Stretch Big,739,42,PF,25,-2.72,-2.28,-0.44,-0.10,1630205.0,-1.7,-2.07,0.37,2023
+rosste01,terrence ross,2022-23,ORL/PHO,Movement Shooter,969,43,SG,32,-2.73,-1.1,-1.63,-0.20,203082.0,-2.31,-1.57,-0.74,2023
+jordade01,deandre jordan,2022-23,DEN,Roll + Cut Big,498,34,C,34,-2.74,-3.12,0.38,-0.10,201599.0,-1.24,-2.43,1.19,2023
+iveyja01,jaden ivey,2022-23,DET,Primary Ball Handler,1653,55,SG,21,-2.76,-1.16,-1.59,-0.40,1631093.0,-1.9,-0.58,-1.31,2023
+greenaj01,aj green,2022-23,MIL,Movement Shooter,244,26,SG,23,-2.77,-1.25,-1.52,-0.10,1631260.0,-1.41,-0.74,-0.67,2023
+dragigo01,goran dragic,2022-23,CHI,Secondary Ball Handler,787,51,PG,36,-2.85,-0.54,-2.31,-0.20,201609.0,-2.13,-0.84,-1.29,2023
+bullore01,reggie bullock,2022-23,DAL,Stationary Shooter,1764,58,SF,31,-2.89,-1.4,-1.49,-0.50,203493.0,-1.47,-1.3,-0.18,2023
+coffeam01,amir coffey,2022-23,LAC,Slasher,570,40,SG,25,-2.9,-1.39,-1.51,-0.20,1629599.0,-2.7,-1.92,-0.79,2023
+walkelo01,lonnie walker iv,2022-23,LAL,Stationary Shooter,1123,42,SG,24,-2.95,-1.62,-1.33,-0.40,1629022.0,-1.43,-0.57,-0.86,2023
+chrisjo01,josh christopher,2022-23,HOU,Slasher,406,40,SG,21,-2.95,-1.67,-1.28,-0.10,1630528.0,-1.95,-1.65,-0.31,2023
+nworajo01,jordan nwora,2022-23,MIL/IND,Stationary Shooter,623,40,SF,24,-2.99,-1.96,-1.03,-0.20,1629670.0,-1.4,-1.08,-0.31,2023
+nnajize01,zeke nnaji,2022-23,DEN,Roll + Cut Big,584,44,PF,22,-3.1,-2.28,-0.82,-0.30,1630192.0,-1.9,-1.44,-0.47,2023
+holidju01,justin holiday,2022-23,ATL,Movement Shooter,411,28,SG,33,-3.1,-2.2,-0.9,-0.20,203200.0,-2.69,-1.88,-0.81,2023
+riverau01,austin rivers,2022-23,MIN,Stationary Shooter,956,46,SG,30,-3.11,-1.69,-1.42,-0.40,203085.0,-2.39,-1.87,-0.52,2023
+thorjt01,jt thor,2022-23,CHO,Athletic Finisher,506,47,PF,20,-3.18,-2.89,-0.29,-0.20,1630550.0,-2.99,-2.78,-0.21,2023
+weslebl01,blake wesley,2022-23,SAS,Secondary Ball Handler,196,15,SG,19,-3.22,-2.39,-0.83,-0.10,1631104.0,-2.19,-2.02,-0.18,2023
+mcderdo01,doug mcdermott,2022-23,SAS,Movement Shooter,1043,51,SF,31,-3.34,-0.72,-2.61,-0.60,203926.0,-3.42,-1.24,-2.18,2023
+roddyda01,david roddy,2022-23,MEM,Athletic Finisher,817,46,PF,21,-3.36,-2.04,-1.31,-0.50,1631223.0,-2.57,-2.21,-0.35,2023
+braunch01,christian braun,2022-23,DEN,Athletic Finisher,834,54,SG,21,-3.36,-2.38,-0.98,-0.50,1631128.0,-2.31,-2.09,-0.22,2023
+willipa01,patrick williams,2022-23,CHI,Athletic Finisher,1715,59,PF,21,-3.37,-3.2,-0.16,-1.00,1630172.0,-1.1,-1.95,0.84,2023
+greenje02,jeff green,2022-23,DEN,Roll + Cut Big,711,37,PF,36,-3.4,-2.03,-1.37,-0.40,201145.0,-2.03,-1.24,-0.78,2023
+kispeco01,corey kispert,2022-23,WAS,Movement Shooter,1360,50,SF,23,-3.41,-1.6,-1.81,-0.90,1630557.0,-1.9,-1.19,-0.71,2023
+willizi02,ziaire williams,2022-23,MEM,Athletic Finisher,486,28,SF,21,-3.46,-2.06,-1.39,-0.30,1630533.0,-2.95,-2.46,-0.49,2023
+houseda01,danuel house jr.,2022-23,PHI,Stationary Shooter,546,37,SF,29,-3.5,-2.08,-1.42,-0.40,1627863.0,-2.47,-1.97,-0.5,2023
+branhma01,malaki branham,2022-23,SAS,Secondary Ball Handler,989,45,SF,19,-3.91,-1.54,-2.37,-0.90,1631103.0,-3.48,-1.83,-1.66,2023
+laravja01,jake laravia,2022-23,MEM,Movement Shooter,381,30,PF,21,-3.97,-2.45,-1.51,-0.40,1631222.0,-2.78,-2.44,-0.33,2023
+lopezro01,robin lopez,2022-23,CLE,Post Scorer,238,30,C,34,-4.27,-2.99,-1.27,-0.30,201577.0,-2.97,-2.27,-0.7,2023

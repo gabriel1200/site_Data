@@ -7,6 +7,7 @@ python underground.py
 python standings.py
 python plusmin.py
 python record.py
+python tracking.py
 git add --all
 git commit -m 'Daily Update'
 git push origin main
