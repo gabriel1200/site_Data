@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[11]:
 
 
 import requests
@@ -11,7 +11,7 @@ response = requests.get(url)
 json = json.loads(response.text)
 
 
-# In[3]:
+# In[12]:
 
 
 import pandas as pd
@@ -27,7 +27,7 @@ for i in range(len(screens)):
         frames.append(df)
 
 
-# In[23]:
+# In[13]:
 
 
 final = pd.concat(frames)
@@ -35,10 +35,20 @@ final.to_csv('screening/ballscreen.csv',index = False)
 final = final.drop(columns = 'playerId')
 
 
-# In[24]:
+# In[17]:
 
 
-final.sort_values(by = 'screensPerGame',ascending = False).head(30)
+def get_combos(player,df):
+    return df[(df.playerName.str.lower()==player.lower()) | (df.receiver.str.lower()==player.lower())]
+              
+get_combos('rudy gobert',final)
+    
+
+
+# In[7]:
+
+
+final.columns
 
 
 # In[ ]:
