@@ -14,8 +14,9 @@ Displays a players metrics over multi year periods in percentile form .
 $[firstname] [lastname] [end year] [span]
 
 **Example**
+```
 $player_card joel embiid 2022 3
-
+```
 ## $team_card
 **What it does**
 Displays a teams performance metrics over multi year periods in percentile form. 
@@ -25,8 +26,9 @@ Displays a teams performance metrics over multi year periods in percentile form.
 $[team_acronym] [end_year] [span]
 
 **Example**
-$player_card mil 2022 4
-
+```
+$team_card mil 2022 4
+```
 
 ## $find_clip
 **What it does**
@@ -40,10 +42,11 @@ OR
 $find_clip [team] [Month/Day] [Quarter] [Minutes:Seconds]
 
 **Examples**
+```
 $find_clip den 2023-1-24 4 0:07
 
 $find_clip DEN 12/28 4 0:07
-
+```
 
 ## $playerboard
 
