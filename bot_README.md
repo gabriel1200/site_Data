@@ -3,8 +3,16 @@
 ## help
 
 If you ever forget the formatting for the query commands, try typing help after the command. 
-
 Doing so will return the corresponding 'how to use it' for the command.
+**Example**
+```
+$find_clip help
+
+$find_clip [team] [Year-Month-Day] [Quarter] [Minutes:Seconds]
+Alternatively, if the game was in the current season
+$find_clip [team] [Month/Day] [Quarter] [Minutes:Seconds]
+```
+
 ## $player_card
 **What it does**
 Displays a players metrics over multi year periods in percentile form . 
