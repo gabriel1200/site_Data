@@ -16,9 +16,17 @@ $[firstname] [lastname] [end year] [span]
 **Example**
 $player_card joel embiid 2022 3
 
+## $pteam_card
+**What it does**
+Displays a teams performance metrics over multi year periods in percentile form. 
+
 **How to use it**
 
-$playerboard [stat]
+$[team_acronym] [end_year] [span]
+
+**Example**
+$player_card mil 2022 4
+
 
 ## $playerboard
 
