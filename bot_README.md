@@ -14,6 +14,25 @@ Alternatively, if the game was in the current season
 $find_clip [team] [Month/Day] [Quarter] [Minutes:Seconds]
 ```
 
+## $shotmap
+**What it does**
+Creates a Goldsberry style shotmap of a player season. 
+
+**How to use it**
+
+$[firstname] [lastname] [season]
+
+or
+
+$firstname] [lastname] [season] ps
+
+**Example**
+```
+$shotmap tracy mcgrady 2004
+
+```
+
+
 ## $player_card
 **What it does**
 Displays a players metrics over multi year periods in percentile form . 
