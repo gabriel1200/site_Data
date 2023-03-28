@@ -13,6 +13,34 @@ $find_clip [team] [Year-Month-Day] [Quarter] [Minutes:Seconds]
 Alternatively, if the game was in the current season
 $find_clip [team] [Month/Day] [Quarter] [Minutes:Seconds]
 ```
+## $playtype
+**What it does**
+Shares the PPP & Frequencies of a players playtypes, according to Synergy classification. 
+
+**How to use it**
+
+$[firstname] [lastname] [season] 
+
+or
+
+$firstname] [lastname] [start_season] [end_season]
+
+or
+
+$[firstname] [lastname] [season] [ps]
+
+**Example**
+```
+$playtype james harden 2019
+
+$playtype james harden 2019 ps
+
+$playtype james harden 2019 2020 ps
+
+$playtype james harden 2019 2020
+
+```
+
 
 ## $shotmap
 **What it does**
