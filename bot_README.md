@@ -123,7 +123,7 @@ $playerscreen [first_name] [last_name]
 ```
 $player_screen Malcolm Brogdon
 ```
-https://media.discordapp.net/attachments/638116254720327680/1095773509621387264/player_snip.jpg?width=1386&height=966
+![Player Screen](https://media.discordapp.net/attachments/638116254720327680/1095773509621387264/player_snip.jpg?width=1386&height=966)
 ## $playerboard
 
 _Deluxe Only_
