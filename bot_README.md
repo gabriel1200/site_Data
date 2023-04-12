@@ -40,7 +40,7 @@ $playtype james harden 2019 2020 ps
 $playtype james harden 2019 2020
 
 ```
-[Playtypes](https://media.discordapp.net/attachments/1045134231707336764/1095817225820192948/playtype.jpg?width=1832&height=1145)
+![Playtypes](https://media.discordapp.net/attachments/1045134231707336764/1095817225820192948/playtype.jpg?width=1832&height=1145)
 
 
 ## $shotmap
