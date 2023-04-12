@@ -109,7 +109,21 @@ $find_clip den 2023-1-24 4 0:07
 $find_clip DEN 12/28 4 0:07
 ```
 https://videos.nba.com/nba/pbp/media/2022/12/28/0022200522/656/25b2f99d-d815-c9b0-efc6-06b5f55cf9c7_960x540.mp4
+## $playerscreen
 
+_Deluxe Only_
+
+**What it does**
+Provides customized snapshot of a players current season from thinkingbasketball.net
+**How to use it**
+
+$playerscreen [first_name] [last_name] 
+
+**Example**
+```
+$player_screen Malcolm Brogdon
+```
+https://media.discordapp.net/attachments/638116254720327680/1095773509621387264/player_snip.jpg?width=1386&height=966
 ## $playerboard
 
 _Deluxe Only_
