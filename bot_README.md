@@ -40,6 +40,7 @@ $playtype james harden 2019 2020 ps
 $playtype james harden 2019 2020
 
 ```
+[Playtypes](https://media.discordapp.net/attachments/1045134231707336764/1095817225820192948/playtype.jpg?width=1832&height=1145)
 
 
 ## $shotmap
@@ -76,6 +77,7 @@ $[firstname] [lastname] [end year] [span]
 ```
 $player_card joel embiid 2022 3
 ```
+![Player Card ]https://media.discordapp.net/attachments/1045134231707336764/1095815927599202364/fig1.png?width=1145&height=1145
 ## $team_card
 **What it does**
 Displays a teams performance metrics over multi year periods in percentile form. 
@@ -88,7 +90,7 @@ $[team_acronym] [end_year] [span]
 ```
 $team_card mil 2022 4
 ```
-
+![Team Card ]https://media.discordapp.net/attachments/1045134231707336764/1095816188023554148/fig1.png?width=1145&height=1145
 ## $find_clip
 **What it does**
 Returns the possesion video(s) closest to the time stamp.
@@ -106,6 +108,7 @@ $find_clip den 2023-1-24 4 0:07
 
 $find_clip DEN 12/28 4 0:07
 ```
+https://videos.nba.com/nba/pbp/media/2022/12/28/0022200522/656/25b2f99d-d815-c9b0-efc6-06b5f55cf9c7_960x540.mp4
 
 ## $playerboard
 
@@ -294,44 +297,15 @@ to games including all of the selected players.
 
 **How to use it**
 
-$wowy [team_acronym] [year1,year2,year3 ....] [first-name_last-name,first-name_last-name] [season type] [common*-optional*]
+$wowy [team_acronym] [names] [years] [season type] [common*-optional*]
 
-**Examples**
+**Example**
 
 ```
-$wowy cle 2015,2016,2017,2018 lebron_james ps
+$wowy lal kobe bryant pau gasol 2009 ps
+```
+[Wowy](https://media.discordapp.net/attachments/617888289801895966/1095555436339535892/fig1.png?width=1832&height=1145)
 
-┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
-│ OffRtg   DefRtg   NetRtg   Minutes        On            Off         3P%     2P%    Opp3%   Opp2% │
-├──────────────────────────────────────────────────────────────────────────────────────────────────┤
-│ 102.13   109.85   -7.72     581.0                   LeBron James   33.86   46.53   34.14   49.14 │
-│ 115.49   108.57    6.92    3332.0    LeBron James                  38.05   51.31   34.46   50.42 │
-└──────────────────────────────────────────────────────────────────────────────────────────────────┘
-```
-```
-$wowy GSW 2017,2019 stephen_curry,kevin_durant ps common
-
-┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│ OffRtg   DefRtg   NetRtg   Minutes               On                            Off                3P%     2P%    Opp3%   Opp2% │
-├────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
-│ 96.85    106.42   -9.58     279.0                                  Stephen Curry, Kevin Durant   29.38   46.73   34.91   49.67 │
-│ 117.96   109.83    8.13     628.0           Stephen Curry                 Kevin Durant           37.12   55.17   35.53   48.92 │
-│ 112.78   110.56    2.22     157.0           Kevin Durant                  Stephen Curry          41.67   48.89   33.66   51.12 │
-│ 124.58   110.2    14.38     818.0    Stephen Curry, Kevin Durant                                 40.22   58.65   35.57   48.76 │
-└────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
-```
-```
-$wowy PHI 2022,2023 james_harden,joel_embiid rs common
-
-┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│ OffRtg   DefRtg   NetRtg   Minutes              On                          Off               3P%     2P%    Opp3%   Opp2% │
-├────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
-│ 109.89   112.36   -2.47    1574.0                                James Harden, Joel Embiid   34.24   51.55   34.1    53.69 │
-│ 114.8    120.0     -5.2     363.0          James Harden                 Joel Embiid          37.98   50.74   37.75   59.51 │
-│ 114.16   110.61    3.55    1744.0           Joel Embiid                James Harden          37.38   52.81   33.45   52.3  │
-│ 123.69   109.62   14.08     760.0    James Harden, Joel Embiid                               40.35   56.48   35.51   51.8  │
-└────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
-```
 ## $teamseason
 
 **What it does**
