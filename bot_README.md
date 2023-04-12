@@ -61,6 +61,9 @@ $shotmap tracy mcgrady 2004
 ```
 
 
+
+![Shotmap](https://media.discordapp.net/attachments/1088122768672948335/1095815519304691883/Tracy_McGrady_2003-04.png?width=1333&height=1145)
+
 ## $player_card
 **What it does**
 Displays a players metrics over multi year periods in percentile form . 
