@@ -77,7 +77,7 @@ $[firstname] [lastname] [end year] [span]
 ```
 $player_card joel embiid 2022 3
 ```
-![Player Card ]https://media.discordapp.net/attachments/1045134231707336764/1095815927599202364/fig1.png?width=1145&height=1145
+![Player Card ](https://media.discordapp.net/attachments/1045134231707336764/1095815927599202364/fig1.png?width=1145&height=1145)
 ## $team_card
 **What it does**
 Displays a teams performance metrics over multi year periods in percentile form. 
@@ -90,7 +90,7 @@ $[team_acronym] [end_year] [span]
 ```
 $team_card mil 2022 4
 ```
-![Team Card ]https://media.discordapp.net/attachments/1045134231707336764/1095816188023554148/fig1.png?width=1145&height=1145
+![Team Card](https://media.discordapp.net/attachments/1045134231707336764/1095816188023554148/fig1.png?width=1145&height=1145)
 ## $find_clip
 **What it does**
 Returns the possesion video(s) closest to the time stamp.
@@ -304,7 +304,7 @@ $wowy [team_acronym] [names] [years] [season type] [common*-optional*]
 ```
 $wowy lal kobe bryant pau gasol 2009 ps
 ```
-[Wowy](https://media.discordapp.net/attachments/617888289801895966/1095555436339535892/fig1.png?width=1832&height=1145)
+![Wowy](https://media.discordapp.net/attachments/617888289801895966/1095555436339535892/fig1.png?width=1832&height=1145)
 
 ## $teamseason
 
