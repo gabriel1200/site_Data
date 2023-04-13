@@ -108,7 +108,7 @@ $find_clip den 2023-1-24 4 0:07
 
 $find_clip DEN 12/28 4 0:07
 ```
-https://videos.nba.com/nba/pbp/media/2022/12/28/0022200522/656/25b2f99d-d815-c9b0-efc6-06b5f55cf9c7_960x540.mp4
+[Find Clip]!(https://videos.nba.com/nba/pbp/media/2022/12/28/0022200522/656/25b2f99d-d815-c9b0-efc6-06b5f55cf9c7_960x540.mp4)
 ## $playerscreen
 
 _Deluxe Only_
