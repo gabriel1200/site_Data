@@ -17,6 +17,8 @@ $find_clip [team] [Month/Day] [Quarter] [Minutes:Seconds]
 **What it does**
 Shares the PPP & Frequencies of a players playtypes, according to Synergy classification. 
 
+Span: 2005 - Present
+
 **How to use it**
 
 $[firstname] [lastname] [season] 
@@ -47,6 +49,9 @@ $playtype james harden 2019 2020
 **What it does**
 Creates a Goldsberry style shotmap of a player season. 
 
+Span: 1998 - Present
+
+
 **How to use it**
 
 $[firstname] [lastname] [season]
@@ -69,6 +74,8 @@ $shotmap tracy mcgrady 2004
 **What it does**
 Displays a players metrics over multi year periods in percentile form . 
 
+Span: 1955 - 2022 (Corresponds to the Thinking Basketball Historical Database)
+
 **How to use it**
 
 $[firstname] [lastname] [end year] [span]
@@ -82,6 +89,8 @@ $player_card joel embiid 2022 3
 **What it does**
 Displays a teams performance metrics over multi year periods in percentile form. 
 
+Span: 1980 - 2022
+
 **How to use it**
 
 $[team_acronym] [end_year] [span]
@@ -94,6 +103,9 @@ $team_card mil 2022 4
 ## $find_clip
 **What it does**
 Returns the possesion video(s) closest to the time stamp.
+
+Span: 2015 - Present
+
 **How to use it**
 
 $find_clip [team] [Year-Month-Day] [Quarter] [Minutes:Seconds]
@@ -115,6 +127,9 @@ _Deluxe Only_
 
 **What it does**
 Provides customized snapshot of a players current season from thinkingbasketball.net
+
+Span: Current Season
+
 **How to use it**
 
 $playerscreen [first_name] [last_name] 
@@ -132,6 +147,8 @@ _Deluxe Only_
 Displays the top 10 teams by the selected team statistic(ortg,drtg,etc) for the current season, taken from the Thinking Basketball Daily Leaderboard.
 
 For metrics with two terms in the name, replace the space with an underscore. (ie 'passer rating' should be entered as 'passer_rating') 
+
+Span: Current Season
 
 **How to use it**
 
@@ -162,6 +179,8 @@ $playerboard passer_rating
 
 Shows the next 10 games the selected team has scheduled.
 
+Span: Current Season
+
 **How to use it**
 
 $next_games [team_acronym]
@@ -189,6 +208,8 @@ $next_games cle
 **What it does**
 
 Shows the planned time if a game is scheduled for later in the day, and shows the current score, remaining time and quarter if the game is ongoing.
+
+Span: Current Season
 
 **How to use it**
 $scoreboards
@@ -235,6 +256,9 @@ Lakers (0-5) vs. Nuggets (4-2)
 Shows various tb statistics(playval,scoreval, passer rating, box creation, bpm) and public statistics(LEBRON) for a player.
 The user can select a single season or a multi season stretch, with the latter being determined using a weighted average by minutes played.
 
+Span: 1955 - 2022 (Corresponds to the Thinking Basketball Historical Database)
+
+
 **How to use it**
 
 $season [firstname] [lastname] [start year] [end year *-optional*]
@@ -255,6 +279,8 @@ Users can select any combination of players on a team, any combination of season
 regular season(rs), post season(ps) and total(all) wowy calculations. They can also chose whether to limit the calculation
 to games including all of the selected players.
 
+Span: 2001 - Present
+
 **How to use it**
 
 $wowy [team_acronym] [names] [years] [season type] [common*-optional*]
@@ -273,6 +299,8 @@ $wowy lal kobe bryant pau gasol 2009 ps
 Shows various team level metrics for the regular season(rDOtg,rORTG,SRS) and the playoffs if applicable(cORtg ,cDRtg ,cNET ).
 
 Users can select a single season or a multi season stretch. Playoff metrics for the latter are determined via a weighted average by games played.
+
+Span: 1980 - 2022
 
 **How to use it**
 
