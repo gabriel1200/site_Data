@@ -13,6 +13,30 @@ $find_clip [team] [Year-Month-Day] [Quarter] [Minutes:Seconds]
 Alternatively, if the game was in the current season
 $find_clip [team] [Month/Day] [Quarter] [Minutes:Seconds]
 ```
+
+## shift
+
+**What it does**
+
+Shows a players output with and without another player. [PBP stats.](http://www.pbpstats.com/wowy-combos/nba)
+Users select two players on a team, whatever set of team seasons they want to compare, and chose between
+regular season(rs) &post season(ps) data.
+
+Span: 2001 - Present
+
+**How to use it**
+
+$shift [team_acronym] firstname lastname first name lastname [seasons] ps-optional
+
+**Examples**
+
+```
+$shift cle darius garland jarrett allen 2023
+$shift cle darius garland jarrett allen 2022 2023
+```
+![Shift](https://media.discordapp.net/attachments/1042176198832308387/1096940938523328612/fig1.png?width=1606&height=1070)
+
+
 ## $playtype
 **What it does**
 Shares the PPP & Frequencies of a players playtypes, according to Synergy classification. 
