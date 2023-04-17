@@ -19,20 +19,20 @@ $find_clip [team] [Month/Day] [Quarter] [Minutes:Seconds]
 **What it does**
 
 Shows a players output with and without another player. [PBP stats.](http://www.pbpstats.com/wowy-combos/nba)
-Users select two players on a team, whatever set of team seasons they want to compare, and chose between
+Users select two players on a team, a season[multi season is under development], and chose between
 regular season(rs) &post season(ps) data.
 
 Span: 2001 - Present
 
 **How to use it**
 
-$shift [team_acronym] firstname lastname first name lastname [seasons] ps-optional
+$shift [team_acronym] firstname lastname first name lastname [season] ps-optional
 
 **Examples**
 
 ```
 $shift cle darius garland jarrett allen 2023
-$shift cle darius garland jarrett allen 2022 2023
+
 ```
 ![Shift](https://media.discordapp.net/attachments/1042176198832308387/1096940938523328612/fig1.png?width=1606&height=1070)
 
