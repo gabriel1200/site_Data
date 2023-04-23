@@ -13,9 +13,35 @@ $find_clip [team] [Year-Month-Day] [Quarter] [Minutes:Seconds]
 Alternatively, if the game was in the current season
 $find_clip [team] [Month/Day] [Quarter] [Minutes:Seconds]
 ```
+
+## shift
+
+**What it does**
+
+Shows a players output with and without another player. [PBP stats.](http://www.pbpstats.com/wowy-combos/nba)
+Users select two players on a team, a season[multi season is under development], and chose between
+regular season(rs) &post season(ps) data.
+
+Span: 2001 - Present
+
+**How to use it**
+
+$shift [team_acronym] firstname lastname first name lastname [season] ps-optional
+
+**Examples**
+
+```
+$shift cle darius garland jarrett allen 2023
+
+```
+![Shift](https://media.discordapp.net/attachments/1042176198832308387/1096940938523328612/fig1.png?width=1606&height=1070)
+
+
 ## $playtype
 **What it does**
 Shares the PPP & Frequencies of a players playtypes, according to Synergy classification. 
+
+Span: 2005 - Present
 
 **How to use it**
 
@@ -40,11 +66,15 @@ $playtype james harden 2019 2020 ps
 $playtype james harden 2019 2020
 
 ```
+![Playtypes](https://media.discordapp.net/attachments/1045134231707336764/1095817225820192948/playtype.jpg?width=1832&height=1145)
 
 
 ## $shotmap
 **What it does**
 Creates a Goldsberry style shotmap of a player season. 
+
+Span: 1998 - Present
+
 
 **How to use it**
 
@@ -61,9 +91,14 @@ $shotmap tracy mcgrady 2004
 ```
 
 
+
+![Shotmap](https://media.discordapp.net/attachments/1088122768672948335/1095815519304691883/Tracy_McGrady_2003-04.png?width=1333&height=1145)
+
 ## $player_card
 **What it does**
 Displays a players metrics over multi year periods in percentile form . 
+
+Span: 1955 - 2022 (Corresponds to the Thinking Basketball Historical Database)
 
 **How to use it**
 
@@ -73,9 +108,12 @@ $[firstname] [lastname] [end year] [span]
 ```
 $player_card joel embiid 2022 3
 ```
+![Player Card ](https://media.discordapp.net/attachments/1045134231707336764/1095815927599202364/fig1.png?width=1145&height=1145)
 ## $team_card
 **What it does**
 Displays a teams performance metrics over multi year periods in percentile form. 
+
+Span: 1980 - 2022
 
 **How to use it**
 
@@ -85,10 +123,13 @@ $[team_acronym] [end_year] [span]
 ```
 $team_card mil 2022 4
 ```
-
+![Team Card](https://media.discordapp.net/attachments/1045134231707336764/1095816188023554148/fig1.png?width=1145&height=1145)
 ## $find_clip
 **What it does**
 Returns the possesion video(s) closest to the time stamp.
+
+Span: 2015 - Present
+
 **How to use it**
 
 $find_clip [team] [Year-Month-Day] [Quarter] [Minutes:Seconds]
@@ -103,7 +144,25 @@ $find_clip den 2023-1-24 4 0:07
 
 $find_clip DEN 12/28 4 0:07
 ```
+https://videos.nba.com/nba/pbp/media/2022/12/28/0022200522/656/25b2f99d-d815-c9b0-efc6-06b5f55cf9c7_960x540.mp4
+## $playerscreen
 
+_Deluxe Only_
+
+**What it does**
+Provides customized snapshot of a players current season from thinkingbasketball.net
+
+Span: Current Season
+
+**How to use it**
+
+$playerscreen [first_name] [last_name] 
+
+**Example**
+```
+$player_screen Malcolm Brogdon
+```
+![Player Screen](https://media.discordapp.net/attachments/638116254720327680/1095773509621387264/player_snip.jpg?width=1386&height=966)
 ## $playerboard
 
 _Deluxe Only_
@@ -112,6 +171,8 @@ _Deluxe Only_
 Displays the top 10 teams by the selected team statistic(ortg,drtg,etc) for the current season, taken from the Thinking Basketball Daily Leaderboard.
 
 For metrics with two terms in the name, replace the space with an underscore. (ie 'passer rating' should be entered as 'passer_rating') 
+
+Span: Current Season
 
 **How to use it**
 
@@ -142,6 +203,8 @@ $playerboard passer_rating
 
 Shows the next 10 games the selected team has scheduled.
 
+Span: Current Season
+
 **How to use it**
 
 $next_games [team_acronym]
@@ -169,6 +232,8 @@ $next_games cle
 **What it does**
 
 Shows the planned time if a game is scheduled for later in the day, and shows the current score, remaining time and quarter if the game is ongoing.
+
+Span: Current Season
 
 **How to use it**
 $scoreboards
@@ -215,69 +280,18 @@ Lakers (0-5) vs. Nuggets (4-2)
 Shows various tb statistics(playval,scoreval, passer rating, box creation, bpm) and public statistics(LEBRON) for a player.
 The user can select a single season or a multi season stretch, with the latter being determined using a weighted average by minutes played.
 
+Span: 1955 - 2022 (Corresponds to the Thinking Basketball Historical Database)
+
+
 **How to use it**
 
 $season [firstname] [lastname] [start year] [end year *-optional*]
 
 **Examples**
 ```
-$season lebron james 2012
-
-┌────────────────────────────────────────────────────────────────────┐
-│ BPM   OBPM   AuPM/g   ScoreVal   PlayVal   Load   IA Pts/75   rTS% │
-├────────────────────────────────────────────────────────────────────┤
-│ 7.2   5.2     5.8       2.0        1.3     50.9     30.0      7.8  │
-└────────────────────────────────────────────────────────────────────┘
-┌──────────────────────────────────────────────────────────────────────────────────┐
-│ Box Creation   Passer rating   FTA / 100   LEBRON   O-LEBRON   D-LEBRON     MP   │
-├──────────────────────────────────────────────────────────────────────────────────┤
-│     10.0            7.2          11.4       6.3       5.4        0.9      2326.0 │
-└──────────────────────────────────────────────────────────────────────────────────┘
-┌───────────────────────────────────────────────────────────────────┐
-│ PS AuPM/g   PS BPM   PS OBPM   PS ScoreVal   PS PlayVal   PS Load │
-├───────────────────────────────────────────────────────────────────┤
-│    6.9       8.2       6.4         2.2          0.9        49.4   │
-└───────────────────────────────────────────────────────────────────┘
-┌─────────────────────────────────────────────────────────────────────┐
-│ PS aPts 75   PS rTS%   PS Box OC   PS Pass rtg   PS FTA/100   PS MP │
-├─────────────────────────────────────────────────────────────────────┤
-│    31.6        6.5        8.3          6.2          13.0      983.0 │
-└─────────────────────────────────────────────────────────────────────┘
-┌────────────────────────────────────────────────────────────┐
-│ Team SRS   Team Ortg   Team Drtg   PS Tm Ortg   PS Tm Drtg │
-├────────────────────────────────────────────────────────────┤
-│   5.7         2.0        -4.4         8.4          -3.5    │
-└────────────────────────────────────────────────────────────┘
+$season michael jordan 1992 1993
 ```
-
-```
-$season lebron james 2010 2011
-
-┌────────────────────────────────────────────────────────────────────┐
-│ BPM   OBPM   AuPM/g   ScoreVal   PlayVal   Load   IA Pts/75   rTS% │
-├────────────────────────────────────────────────────────────────────┤
-│ 7.7   5.8     6.0       1.6        1.9     53.7     29.3      5.7  │
-└────────────────────────────────────────────────────────────────────┘
-┌──────────────────────────────────────────────────────────────────────────────────┐
-│ Box Creation   Passer rating   FTA / 100   LEBRON   O-LEBRON   D-LEBRON     MP   │
-├──────────────────────────────────────────────────────────────────────────────────┤
-│     12.4            7.9          12.5       7.5       6.2        1.4      6029.0 │
-└──────────────────────────────────────────────────────────────────────────────────┘
-┌───────────────────────────────────────────────────────────────────┐
-│ PS AuPM/g   PS BPM   PS OBPM   PS ScoreVal   PS PlayVal   PS Load │
-├───────────────────────────────────────────────────────────────────┤
-│    4.6       7.5       5.3         1.4          1.0        44.0   │
-└───────────────────────────────────────────────────────────────────┘
-┌──────────────────────────────────────────────────────────────────────┐
-│ PS aPts 75   PS rTS%   PS Box OC   PS Pass rtg   PS FTA/100   PS MP  │
-├──────────────────────────────────────────────────────────────────────┤
-│    25.6        5.4        8.3          6.6          10.8      1382.0 │
-└──────────────────────────────────────────────────────────────────────┘
-┌────────────────────────────────────────────────────────────┐
-│ Team SRS   Team Ortg   Team Drtg   PS Tm Ortg   PS Tm Drtg │
-├────────────────────────────────────────────────────────────┤
-│   6.5         4.1        -3.6         3.6          -2.6    │
-```
+![Season](https://media.discordapp.net/attachments/1045134231707336764/1095821055802748979/fig1.png?width=1600&height=800)
 
 
 ## $wowy
@@ -289,46 +303,19 @@ Users can select any combination of players on a team, any combination of season
 regular season(rs), post season(ps) and total(all) wowy calculations. They can also chose whether to limit the calculation
 to games including all of the selected players.
 
+Span: 2001 - Present
+
 **How to use it**
 
-$wowy [team_acronym] [year1,year2,year3 ....] [first-name_last-name,first-name_last-name] [season type] [common*-optional*]
+$wowy [team_acronym] [names] [years] [season type] [common*-optional*]
 
-**Examples**
+**Example**
 
 ```
-$wowy cle 2015,2016,2017,2018 lebron_james ps
+$wowy lal kobe bryant pau gasol 2009 ps
+```
+![Wowy](https://media.discordapp.net/attachments/617888289801895966/1095555436339535892/fig1.png?width=1832&height=1145)
 
-┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
-│ OffRtg   DefRtg   NetRtg   Minutes        On            Off         3P%     2P%    Opp3%   Opp2% │
-├──────────────────────────────────────────────────────────────────────────────────────────────────┤
-│ 102.13   109.85   -7.72     581.0                   LeBron James   33.86   46.53   34.14   49.14 │
-│ 115.49   108.57    6.92    3332.0    LeBron James                  38.05   51.31   34.46   50.42 │
-└──────────────────────────────────────────────────────────────────────────────────────────────────┘
-```
-```
-$wowy GSW 2017,2019 stephen_curry,kevin_durant ps common
-
-┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│ OffRtg   DefRtg   NetRtg   Minutes               On                            Off                3P%     2P%    Opp3%   Opp2% │
-├────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
-│ 96.85    106.42   -9.58     279.0                                  Stephen Curry, Kevin Durant   29.38   46.73   34.91   49.67 │
-│ 117.96   109.83    8.13     628.0           Stephen Curry                 Kevin Durant           37.12   55.17   35.53   48.92 │
-│ 112.78   110.56    2.22     157.0           Kevin Durant                  Stephen Curry          41.67   48.89   33.66   51.12 │
-│ 124.58   110.2    14.38     818.0    Stephen Curry, Kevin Durant                                 40.22   58.65   35.57   48.76 │
-└────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
-```
-```
-$wowy PHI 2022,2023 james_harden,joel_embiid rs common
-
-┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│ OffRtg   DefRtg   NetRtg   Minutes              On                          Off               3P%     2P%    Opp3%   Opp2% │
-├────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
-│ 109.89   112.36   -2.47    1574.0                                James Harden, Joel Embiid   34.24   51.55   34.1    53.69 │
-│ 114.8    120.0     -5.2     363.0          James Harden                 Joel Embiid          37.98   50.74   37.75   59.51 │
-│ 114.16   110.61    3.55    1744.0           Joel Embiid                James Harden          37.38   52.81   33.45   52.3  │
-│ 123.69   109.62   14.08     760.0    James Harden, Joel Embiid                               40.35   56.48   35.51   51.8  │
-└────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
-```
 ## $teamseason
 
 **What it does**
@@ -337,57 +324,17 @@ Shows various team level metrics for the regular season(rDOtg,rORTG,SRS) and the
 
 Users can select a single season or a multi season stretch. Playoff metrics for the latter are determined via a weighted average by games played.
 
+Span: 1980 - 2022
+
 **How to use it**
 
 $season [team_acronym] [start_year] [end year *-optional*] 
 
 **Examples**
-```
-$teamseason gsw 2016
-
-┌────────────────────────────────────────────────────────────────────────────┐
-│  W      L    SRS    ORtg    reg_cont   eFG%   DRtg    NRtg   rORtg   rDRtg │
-├────────────────────────────────────────────────────────────────────────────┤
-│ 73.0   9.0   10.4   114.5     95.0     56.0   103.8   10.7    8.1    -2.6  │
-└────────────────────────────────────────────────────────────────────────────┘
-┌────────────────────────────────────────────────────────────────────────────┐
-│  W      L    SRS    ORtg    reg_cont   eFG%   DRtg    NRtg   rORtg   rDRtg │
-├────────────────────────────────────────────────────────────────────────────┤
-│ 73.0   9.0   10.4   114.5     95.0     56.0   103.8   10.7    8.1    -2.6  │
-└────────────────────────────────────────────────────────────────────────────┘
-┌─────────────────────────────────────┐
-│ cORTG   cDRTG   cNET   round    G   │
-├─────────────────────────────────────┤
-│  4.9    -6.2    11.1    4.0    24.0 │
-└─────────────────────────────────────┘
-┌─────────────────────────────────────┐
-│ cORTG   cDRTG   cNET   round    G   │
-├─────────────────────────────────────┤
-│  4.9    -6.2    11.1    4.0    24.0 │
-```
 
 ```
 $teamseason hou 2018 2019
 
-┌────────────────────────────────────────────────────────────────────────────┐
-│  W      L     SRS   ORtg    reg_cont   eFG%   DRtg    NRtg   rORtg   rDRtg │
-├────────────────────────────────────────────────────────────────────────────┤
-│ 59.0   23.0   6.6   115.1     64.5     54.5   108.4   6.7     5.6    -1.1  │
-└────────────────────────────────────────────────────────────────────────────┘
-┌────────────────────────────────────────────────────────────────────────────┐
-│  W      L     SRS   ORtg    reg_cont   eFG%   DRtg    NRtg   rORtg   rDRtg │
-├────────────────────────────────────────────────────────────────────────────┤
-│ 59.0   23.0   6.6   115.1     64.5     54.5   108.4   6.7     5.6    -1.1  │
-└────────────────────────────────────────────────────────────────────────────┘
-┌─────────────────────────────────────┐
-│ cORTG   cDRTG   cNET   round    G   │
-├─────────────────────────────────────┤
-│  3.9    -5.1    9.0     2.5    28.0 │
-└─────────────────────────────────────┘
-┌─────────────────────────────────────┐
-│ cORTG   cDRTG   cNET   round    G   │
-├─────────────────────────────────────┤
-│  3.9    -5.1    9.0     2.5    28.0 │
-└─────────────────────────────────────┘
 ```
 
+![Team Season](https://media.discordapp.net/attachments/1045134231707336764/1095821466597072906/fig1.png?width=1600&height=533)
