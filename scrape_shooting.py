@@ -17,6 +17,7 @@ url2 = 'https://www.nba.com/stats/teams/opponent-shots-closest-defender?CloseDef
 url3 = 'https://www.nba.com/stats/teams/opponent-shots-closest-defender?CloseDefDistRange=4-6+Feet+-+Open&PerMode=Totals'
 url4 = 'https://www.nba.com/stats/teams/opponent-shots-closest-defender?CloseDefDistRange=6%2B+Feet+-+Wide+Open&PerMode=Totals'
 url_list = [url1,url2,url3,url4]
+url_list =[url +'&SeasonType=Playoffs' for url in url_list]
 def get_tables(url_list):
     data = []
     xpath = '//*[@id="__next"]/div[2]/div[2]/div[3]/section[2]/div/div[2]/div[3]/table'
@@ -82,18 +83,19 @@ def get_multi(url_list):
 #get_multi(url_list)
 
 
-# In[4]:
+# In[7]:
 
 
 tables = get_tables(url_list)
 terms = ['opp_shooting/very_tight.csv','opp_shooting/tight.csv','opp_shooting/open.csv','opp_shooting/wide_open.csv']
-jsons =  ['opp_shooting/very_tight.json','opp_shooting/tight.json','opp_shooting/open.json','opp_shooting/wide_open.json']
+terms = ['2023/playoffs/'+t for t in terms]
+#jsons =  ['opp_shooting/very_tight.json','opp_shooting/tight.json','opp_shooting/open.json','opp_shooting/wide_open.json']
 for i in range(len(terms)):
     df = tables[i]
     df.to_csv(terms[i],index = False)
-    df.to_json(jsons[i])
-    df.to_csv('2023/'+terms[i],index = False)
-    df.to_json('2023/'+jsons[i])
+    #df.to_json(jsons[i])
+    #df.to_csv('2023/'+terms[i],index = False)
+    #df.to_json('2023/'+jsons[i])
 
 
 # In[ ]:

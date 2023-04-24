@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[6]:
 
 
 import pandas as pd
@@ -27,7 +27,7 @@ url5 = 'https://www.nba.com/stats/players/transition?PerMode=Totals&dir=D&sort=P
 
 
 
-# In[2]:
+# In[7]:
 
 
 #url_list = [cs,pullup]
@@ -87,7 +87,7 @@ def get_ptables(url_list,path_list):
     return data
 
 
-# In[3]:
+# In[8]:
 
 
 def get_multi(url_list,path_list):
@@ -114,7 +114,7 @@ def get_multi(url_list,path_list):
         
 
 
-# In[4]:
+# In[9]:
 
 
 cs ='https://www.nba.com/stats/players/catch-shoot?PerMode=Totals'
@@ -127,25 +127,26 @@ wide_open = 'https://www.nba.com/stats/players/shots-closest-defender?CloseDefDi
 close = 'https://www.nba.com/stats/players/defense-dash-lt6?PerMode=Totals&dir=D&sort=PLUSMINUS'
 passing = 'https://www.nba.com/stats/players/passing?PerMode=Totals'
 url_list = [drives,wide_open,close,touches,cs,pullup,passing]
+url_list =[url +'&SeasonType=Playoffs' for url in url_list]
 name_list = ['drives','wide_open','close_6','touches','cs','pullup','passing']
 xpath = '//*[@id="__next"]/div[2]/div[2]/div[3]/section[2]/div/div[2]/div[2]/div[1]/div[3]/div/label/div/select'
 #xpath2 = '//*[@id="__next"]/div[2]/div[2]/div[3]/section[2]/div/div[2]/div[2]/div[1]/div[3]/div/label/div/select'
 path_list = [xpath for i in range(len(url_list))]
 
 
-# In[5]:
+# In[10]:
 
 
 #get_multi(url_list,path_list)
 
 
-# In[6]:
+# In[11]:
 
 
 tables= get_ptables(url_list,path_list)
 
 
-# In[7]:
+# In[12]:
 
 
 temp = tables[1]
@@ -157,8 +158,8 @@ tables[1] = temp
 
 tables[1] = temp
 for i in range(len(name_list)):
-    tables[i].to_csv('player_tracking/'+name_list[i]+'.csv',index = False)
-    tables[i].to_csv('2023/player_tracking/'+name_list[i]+'.csv',index = False)
+    #tables[i].to_csv('player_tracking/'+name_list[i]+'.csv',index = False)
+    tables[i].to_csv('2023/playoffs/player_tracking/'+name_list[i]+'.csv',index = False)
 
 
 # In[ ]:

@@ -125,13 +125,13 @@ terms = ['playtype/handoff.csv','playtype/iso.csv','playtype/trans.csv','playtyp
          'playtype/cut.csv','playtype/offscreen.csv','playtype/putback.csv','playtype/misc.csv','playtype/drives.csv']
 
 
-# In[5]:
+# In[6]:
 
 
 for i in range(len(terms)):
     df = frames[i]
-    df.to_csv(terms[i],index = False)
-    df.to_csv('2023/'+terms[i],index = False)
+    #df.to_csv(terms[i],index = False)
+    df.to_csv('2023/playoffs/'+terms[i],index = False)
    
 
 
