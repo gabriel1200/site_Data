@@ -1,4 +1,4 @@
-Player,Team,GP,W,L,MIN,PTS,TOUCHES,Front CT Touches,Time Of Poss,Avg Sec Per Touch,Avg Drib Per Touch,PTS Per Touch,Elbow Touches,Post Ups,Paint Touches,PTS Per Elbow Touch,PTS Per Post Touch,PTS Per Paint Touch
+Player,Team,GP,W,L,MIN,PTS,TOUCHES,Front CTTouches,Time OfPoss,Avg Sec PerTouch,Avg Drib PerTouch,PTS PerTouch,ElbowTouches,PostUps,PaintTouches,PTS PerElbow Touch,PTS PerPost Touch,PTS PerPaint Touch
 A.J. Lawson,DAL,15,5,10,108,56,147,88,4,1.44,0.75,0.381,1,0,9,2.0,0.0,1.444
 AJ Green,MIL,35,27,8,345,154,423,259,18,2.53,1.74,0.364,3,0,12,0.0,0.0,0.667
 AJ Griffin,ATL,72,34,38,1401,639,1518,1024,53,2.09,1.51,0.421,31,1,50,0.806,2.0,0.94
