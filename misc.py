@@ -98,7 +98,7 @@ def get_multi(url_list,playoffs = False):
         p ='/playoffs/'
     else:
         p=''
-    for i in range(2013,2022):
+    for i in range(2022,2023):
         
         season = '&Season='+str(i)+'-'+str(i+1 - 2000)
         year_url = [url+season for url in url_list]

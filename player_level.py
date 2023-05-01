@@ -106,7 +106,7 @@ def get_ptables(url_list,path_list):
 
 
 def get_multi(url_list,path_list,ps =False):
-    for i in range(2014,2023):
+    for i in range(2022,2023):
         
         season = '&Season='+str(i)+'-'+str(i+1 - 2000)
         year_url = [url+season for url in url_list]

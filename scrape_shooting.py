@@ -17,8 +17,8 @@ url2 = 'https://www.nba.com/stats/teams/opponent-shots-closest-defender?CloseDef
 url3 = 'https://www.nba.com/stats/teams/opponent-shots-closest-defender?CloseDefDistRange=4-6+Feet+-+Open&PerMode=Totals'
 url4 = 'https://www.nba.com/stats/teams/opponent-shots-closest-defender?CloseDefDistRange=6%2B+Feet+-+Wide+Open&PerMode=Totals'
 url_list = [url1,url2,url3,url4]
-#url_list =[url +'&SeasonType=Playoffs' for url in url_list]
-url_list =[url +'&SeasonType=Regular+Season'for url in url_list]
+url_list =[url +'&SeasonType=Playoffs' for url in url_list]
+#url_list =[url +'&SeasonType=Regular+Season'for url in url_list]
 
 def get_tables(url_list):
     data = []
@@ -65,7 +65,7 @@ def get_multi(url_list,playoffs = False):
     else:
         p = ''
         
-    for i in range(2013,2022):
+    for i in range(2022,2023):
         
         season = '&Season='+str(i)+'-'+str(i+1 - 2000)
         year_url = [url+season for url in url_list]
@@ -87,7 +87,7 @@ def get_multi(url_list,playoffs = False):
 # In[9]:
 
 
-get_multi(url_list,playoffs= False)
+get_multi(url_list,playoffs= True)
 
 
 # In[7]:
