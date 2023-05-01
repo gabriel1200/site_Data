@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[7]:
 
 
 import pandas as pd
@@ -17,7 +17,9 @@ url2 = 'https://www.nba.com/stats/teams/opponent-shots-closest-defender?CloseDef
 url3 = 'https://www.nba.com/stats/teams/opponent-shots-closest-defender?CloseDefDistRange=4-6+Feet+-+Open&PerMode=Totals'
 url4 = 'https://www.nba.com/stats/teams/opponent-shots-closest-defender?CloseDefDistRange=6%2B+Feet+-+Wide+Open&PerMode=Totals'
 url_list = [url1,url2,url3,url4]
-url_list =[url +'&SeasonType=Playoffs' for url in url_list]
+#url_list =[url +'&SeasonType=Playoffs' for url in url_list]
+url_list =[url +'&SeasonType=Regular+Season'for url in url_list]
+
 def get_tables(url_list):
     data = []
     xpath = '//*[@id="__next"]/div[2]/div[2]/div[3]/section[2]/div/div[2]/div[3]/table'
@@ -53,11 +55,16 @@ def get_tables(url_list):
     return data
 
 
-# In[2]:
+# In[8]:
 
 
 #url_list = [url1]#
-def get_multi(url_list):
+def get_multi(url_list,playoffs = False):
+    if playoffs == True:
+        p ='/playoffs'
+    else:
+        p = ''
+        
     for i in range(2013,2022):
         
         season = '&Season='+str(i)+'-'+str(i+1 - 2000)
@@ -65,28 +72,28 @@ def get_multi(url_list):
         frames = get_tables(year_url)
 
  
-        path = str(i+1)+'/opp_shooting/'
+        path = str(i+1)+p+'/opp_shooting/'
         output_dir = Path(path)
         output_dir.mkdir(parents=True, exist_ok=True)
         #terms = ['data/teampullup.csv','data/teamcatchshoot.csv','data/teamundersix.csv','data/teamiso.csv','data/teamtransition.csv']
-        terms = ['opp_shooting/very_tight.csv','opp_shooting/tight.csv','opp_shooting/open.csv','opp_shooting/wide_open.csv']
-        terms = [ str(i+1)+'/'+t for t in terms]
+        terms = ['very_tight.csv','tight.csv','open.csv','wide_open.csv']
+        terms = [ path+ t for t in terms]
         
         for i in range(len(terms)):
             df = frames[i]
             df.to_csv(terms[i],index = False)
 
 
-# In[3]:
+# In[9]:
 
 
-#get_multi(url_list)
+get_multi(url_list,playoffs= False)
 
 
 # In[7]:
 
 
-tables = get_tables(url_list)
+#tables = get_tables(url_list)
 terms = ['opp_shooting/very_tight.csv','opp_shooting/tight.csv','opp_shooting/open.csv','opp_shooting/wide_open.csv']
 terms = ['2023/playoffs/'+t for t in terms]
 #jsons =  ['opp_shooting/very_tight.json','opp_shooting/tight.json','opp_shooting/open.json','opp_shooting/wide_open.json']

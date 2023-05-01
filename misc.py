@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[19]:
 
 
 import pandas as pd
@@ -38,8 +38,12 @@ offscreen = 'https://www.nba.com/stats/teams/off-screen?PerMode=Totals'
 putbacks = 'https://www.nba.com/stats/teams/putbacks?PerMode=Totals'
 misc = 'https://www.nba.com/stats/teams/playtype-misc?PerMode=Totals'
 drives = 'https://www.nba.com/stats/teams/drives?PerMode=Totals'
+
 #url_list = [url1,url2,url3,url4,url5]
 url_list=[handoff,iso,trans,bh,rollman,postup,spotup,cut,offscreen,putbacks,misc,drives]
+url_list =[url +'&SeasonType=Playoffs' for url in url_list]
+#url_list =[url +'&SeasonType=Regular+Season'for url in url_list]
+
 def check_exists_by_xpath(driver, xpath):
     try:
         driver.find_element(By.XPATH, xpath)
@@ -85,11 +89,15 @@ def get_tables(url_list):
     return data
 
 
-# In[2]:
+# In[20]:
 
 
 #url_list = [url1]#
-def get_multi(url_list):
+def get_multi(url_list,playoffs = False):
+    if playoffs == True:
+        p ='/playoffs/'
+    else:
+        p=''
     for i in range(2013,2022):
         
         season = '&Season='+str(i)+'-'+str(i+1 - 2000)
@@ -97,23 +105,23 @@ def get_multi(url_list):
         frames = get_tables(year_url)
 
  
-        path = str(i+1)+'/playtype/'
+        path = str(i+1)+p+'/playtype/'
         output_dir = Path(path)
         output_dir.mkdir(parents=True, exist_ok=True)
         #terms = ['data/teampullup.csv','data/teamcatchshoot.csv','data/teamundersix.csv','data/teamiso.csv','data/teamtransition.csv']
-        terms = ['playtype/handoff.csv','playtype/iso.csv','playtype/trans.csv','playtype/bh.csv','playtype/rollman.csv','playtype/postup.csv','playtype/spotup.csv',
-                 'playtype/cut.csv','playtype/offscreen.csv','playtype/putback.csv','playtype/misc.csv','playtype/drives.csv']
-        terms = [ str(i+1)+'/'+t for t in terms]
+        terms = ['handoff.csv','iso.csv','trans.csv','bh.csv','rollman.csv','postup.csv','spotup.csv',
+                 'cut.csv','offscreen.csv','putback.csv','misc.csv','drives.csv']
+        terms = [ path+t for t in terms]
         
         for i in range(len(terms)):
             df = frames[i]
             df.to_csv(terms[i],index = False)
 
 
-# In[3]:
+# In[21]:
 
 
-#get_multi(url_list)
+get_multi(url_list,playoffs = True)
 
 
 # In[4]:
@@ -133,6 +141,30 @@ for i in range(len(terms)):
     #df.to_csv(terms[i],index = False)
     df.to_csv('2023/playoffs/'+terms[i],index = False)
    
+
+
+# In[12]:
+
+
+import pandas as pd
+import os
+
+
+# In[14]:
+
+
+def add_synergy():
+    df = pd.read_csv('../synergy/full_data/playtype_p.csv')
+    for i in range(2014,2024):
+        path = str(i)+'/playoffs/synergy/'
+        isExist = os.path.exists(path)
+        if not isExist:
+
+       # Create a new directory because it does not exist
+           os.makedirs(path)
+        year_df = df[df.year == i]
+        print(year_df.head())
+        year_df.to_csv(path+'playtype.csv')
 
 
 # In[ ]:
