@@ -135,15 +135,15 @@ dreb = 'https://www.nba.com/stats/players/defensive-rebounding?PerMode=Totals'
 shoot_ef = 'https://www.nba.com/stats/players/shooting-efficiency?'
 post_up = 'https://www.nba.com/stats/players/tracking-post-ups?PerMode=Totals'
 url_list = [drives,wide_open,close,touches,cs,pullup,passing,paint,elbow,oreb,dreb,shoot_ef,post_up]
-#url_list =[url +'&SeasonType=Playoffs' for url in url_list]
-url_list =[url +'&SeasonType=Regular+Season'for url in url_list]
+url_list =[url +'&SeasonType=Playoffs' for url in url_list]
+#url_list =[url +'&SeasonType=Regular+Season'for url in url_list]
 
 name_list = ['drives','wide_open','close_6','touches','cs','pullup','passing',\
             'paint','elbow','oreb','dreb','shoot_ef','post_up']
 xpath = '//*[@id="__next"]/div[2]/div[2]/div[3]/section[2]/div/div[2]/div[2]/div[1]/div[3]/div/label/div/select'
 #xpath2 = '//*[@id="__next"]/div[2]/div[2]/div[3]/section[2]/div/div[2]/div[2]/div[1]/div[3]/div/label/div/select'
 path_list = [xpath for i in range(len(url_list))]
-ps = False
+ps = True
 
 
 # In[5]:
