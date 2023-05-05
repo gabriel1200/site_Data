@@ -1,4 +1,4 @@
-Player,Team,GP,W,L,MIN,PTS,TOUCHES,Front CTTouches,Time OfPoss,Avg Sec PerTouch,Avg Drib PerTouch,PTS PerTouch,ElbowTouches,PostUps,PaintTouches,PTS PerElbow Touch,PTS PerPost Touch,PTS PerPaint Touch
+Player,Team,GP,W,L,MIN,PTS,TOUCHES,Front CT Touches,Time Of Poss,Avg Sec Per Touch,Avg Drib Per Touch,PTS Per Touch,Elbow Touches,Post Ups,Paint Touches,PTS Per Elbow Touch,PTS Per Post Touch,PTS Per Paint Touch
 Aaron Gordon,DEN,7,6,1,241,106,295,161,15,3.04,2.18,0.359,12,7,46,0.5,0.857,1.022
 Aaron Holiday,ATL,1,1,0,4,0,7,1,1,7.09,7.71,0.0,0,0,0,0.0,0.0,0.0
 Al Horford,BOS,8,5,3,249,51,367,185,9,1.48,0.46,0.139,6,3,25,0.0,0.0,0.6
