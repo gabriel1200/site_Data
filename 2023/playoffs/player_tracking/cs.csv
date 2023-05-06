@@ -1,7 +1,7 @@
 PLAYER,TEAM,GP,MIN,PTS,FGM,FGA,FG%,3PM,3PA,3P%,eFG%
-Aaron Gordon,DEN,7,241,15,5,13,38.5,5,11,45.5,57.7
+Aaron Gordon,DEN,8,280,15,5,15,33.3,5,13,38.5,50.0
 Aaron Holiday,ATL,1,4,0,0,0,-,-,-,-,-
-Al Horford,BOS,8,249,33,11,39,28.2,11,37,29.7,42.3
+Al Horford,BOS,9,280,48,16,46,34.8,16,44,36.4,52.2
 Alex Len,SAC,7,54,0,0,0,-,-,-,-,-
 Amir Coffey,LAC,1,1,0,0,0,-,-,-,-,-
 Andrew Wiggins,GSW,9,311,30,10,39,25.6,10,38,26.3,38.5
@@ -18,23 +18,23 @@ Bogdan Bogdanovic,ATL,6,157,39,13,24,54.2,13,23,56.5,81.3
 Bones Hyland,LAC,5,82,9,3,14,21.4,3,14,21.4,32.1
 Brandon Boston Jr.,LAC,1,1,0,0,0,-,-,-,-,-
 Brook Lopez,MIL,5,182,24,9,23,39.1,6,15,40.0,52.2
-Bruce Brown,DEN,7,184,6,2,12,16.7,2,12,16.7,25.0
+Bruce Brown,DEN,8,207,9,3,15,20.0,3,15,20.0,30.0
 Caleb Martin,MIA,7,202,32,11,21,52.4,10,20,50.0,76.2
 Cam Thomas,BKN,2,16,0,0,0,-,0,0,-,-
 Cameron Johnson,BKN,4,152,33,11,25,44.0,11,24,45.8,66.0
-Cameron Payne,PHX,3,25,3,1,5,20.0,1,5,20.0,30.0
+Cameron Payne,PHX,4,55,3,1,8,12.5,1,8,12.5,18.8
 Caris LeVert,CLE,5,170,30,10,24,41.7,10,24,41.7,62.5
 Cedi Osman,CLE,5,93,18,6,18,33.3,6,18,33.3,50.0
 Chimezie Metu,SAC,3,6,0,0,0,-,-,-,-,-
 Chris Paul,PHX,7,250,17,6,17,35.3,5,16,31.3,50.0
-Christian Braun,DEN,7,93,6,2,3,66.7,2,3,66.7,100
+Christian Braun,DEN,8,103,6,2,4,50.0,2,4,50.0,75.0
 Clint Capela,ATL,6,151,0,0,0,-,-,-,-,-
 Cody Zeller,MIA,6,53,0,0,0,-,-,-,-,-
 D'Angelo Russell,LAL,8,247,35,12,33,36.4,11,32,34.4,53.0
 DaQuan Jeffries,NYK,1,4,0,0,0,-,-,-,-,-
 Damion Lee,PHX,6,73,9,3,13,23.1,3,13,23.1,34.6
 Danny Green,CLE,4,40,0,0,3,0.0,0,3,0.0,0.0
-Danuel House Jr.,PHI,3,13,0,0,2,0.0,0,2,0.0,0.0
+Danuel House Jr.,PHI,4,13,0,0,2,0.0,0,2,0.0,0.0
 Darius Garland,CLE,5,189,24,8,23,34.8,8,21,38.1,52.2
 David Duke Jr.,BKN,1,5,0,0,1,0.0,0,1,0.0,0.0
 David Roddy,MEM,6,76,18,6,18,33.3,6,18,33.3,50.0
@@ -42,16 +42,16 @@ Davion Mitchell,SAC,7,140,21,7,21,33.3,7,21,33.3,50.0
 Day'Ron Sharpe,BKN,2,20,0,0,0,-,-,-,-,-
 De'Aaron Fox,SAC,7,270,29,10,24,41.7,9,23,39.1,60.4
 De'Andre Hunter,ATL,6,224,34,12,31,38.7,10,29,34.5,54.8
-De'Anthony Melton,PHI,6,144,38,13,26,50.0,12,25,48.0,73.1
+De'Anthony Melton,PHI,7,174,50,17,32,53.1,16,31,51.6,78.1
 DeAndre Jordan,DEN,3,10,0,0,0,-,-,-,-,-
 Dean Wade,CLE,2,11,0,0,1,0.0,0,1,0.0,0.0
-Deandre Ayton,PHX,7,235,28,14,26,53.8,-,-,-,53.8
+Deandre Ayton,PHX,8,261,28,14,27,51.9,-,-,-,51.9
 Dejounte Murray,ATL,5,190,18,6,19,31.6,6,18,33.3,47.4
 Dennis Schroder,LAL,8,183,3,1,9,11.1,1,8,12.5,16.7
 Derrick Rose,NYK,1,3,0,0,1,0.0,0,1,0.0,0.0
-Derrick White,BOS,8,252,36,12,31,38.7,12,31,38.7,58.1
+Derrick White,BOS,9,285,39,13,35,37.1,13,35,37.1,55.7
 Desmond Bane,MEM,6,231,40,14,31,45.2,12,28,42.9,64.5
-Devin Booker,PHX,7,301,25,9,13,69.2,7,11,63.6,96.2
+Devin Booker,PHX,8,342,28,10,14,71.4,8,12,66.7,100
 Dewayne Dedmon,PHI,1,5,0,0,1,0.0,0,1,0.0,0.0
 Dillon Brooks,MEM,6,167,24,8,33,24.2,8,32,25.0,36.4
 Domantas Sabonis,SAC,7,243,11,5,14,35.7,1,5,20.0,39.3
@@ -66,10 +66,10 @@ Evan Mobley,CLE,5,188,2,1,2,50.0,0,1,0.0,50.0
 Furkan Korkmaz,PHI,2,7,0,0,0,-,0,0,-,-
 Gabe Vincent,MIA,7,217,30,10,20,50.0,10,20,50.0,75.0
 Gary Payton II,GSW,8,118,6,2,9,22.2,2,9,22.2,33.3
-Georges Niang,PHI,6,89,12,4,10,40.0,4,10,40.0,60.0
+Georges Niang,PHI,7,108,18,6,15,40.0,6,15,40.0,60.0
 Giannis Antetokounmpo,MIL,3,91,0,0,1,0.0,0,1,0.0,0.0
 Goran Dragic,MIL,2,7,0,0,0,-,0,0,-,-
-Grant Williams,BOS,5,69,24,8,13,61.5,8,13,61.5,92.3
+Grant Williams,BOS,6,92,24,8,16,50.0,8,16,50.0,75.0
 Grayson Allen,MIL,5,149,36,12,25,48.0,12,25,48.0,72.0
 Harrison Barnes,SAC,7,197,14,5,18,27.8,4,17,23.5,38.9
 Haywood Highsmith,MIA,6,54,6,2,7,28.6,2,6,33.3,42.9
@@ -84,24 +84,24 @@ JaMychal Green,GSW,5,35,15,5,12,41.7,5,12,41.7,62.5
 Jaden Springer,PHI,2,12,0,0,0,-,-,-,-,-
 Jae Crowder,MIL,4,41,2,1,7,14.3,0,6,0.0,14.3
 Jalen Brunson,NYK,7,268,15,5,15,33.3,5,15,33.3,50.0
-Jalen Johnson,ATL,6,56,14,5,14,35.7,4,11,36.4,50.0
-Jalen McDaniels,PHI,6,89,6,2,7,28.6,2,7,28.6,42.9
-Jamal Murray,DEN,7,268,24,8,20,40.0,8,19,42.1,60.0
-James Harden,PHI,6,216,15,5,9,55.6,5,9,55.6,83.3
+Jalen Johnson,ATL,6,55,14,5,14,35.7,4,11,36.4,50.0
+Jalen McDaniels,PHI,7,101,9,3,9,33.3,3,9,33.3,50.0
+Jamal Murray,DEN,8,309,24,8,21,38.1,8,20,40.0,57.1
+James Harden,PHI,7,257,18,6,11,54.5,6,11,54.5,81.8
 Jaren Jackson Jr.,MEM,6,220,21,7,25,28.0,7,24,29.2,42.0
 Jarred Vanderbilt,LAL,8,165,23,8,23,34.8,7,21,33.3,50.0
 Jarrett Allen,CLE,5,191,2,1,5,20.0,-,-,-,20.0
 Jason Preston,LAC,1,1,0,0,0,-,-,-,-,-
-Jaylen Brown,BOS,8,298,47,17,27,63.0,13,20,65.0,87.0
+Jaylen Brown,BOS,9,333,49,18,31,58.1,13,23,56.5,79.0
 Jaylen Nowell,MIN,5,62,6,2,5,40.0,2,4,50.0,60.0
-Jayson Tatum,BOS,8,300,29,10,29,34.5,9,26,34.6,50.0
-Jeff Green,DEN,7,146,6,2,13,15.4,2,12,16.7,23.1
+Jayson Tatum,BOS,9,342,37,13,35,37.1,11,31,35.5,52.9
+Jeff Green,DEN,8,160,9,3,16,18.8,3,15,20.0,28.1
 Jevon Carter,MIL,4,49,3,1,6,16.7,1,6,16.7,25.0
 Jimmy Butler,MIA,6,230,12,4,7,57.1,4,6,66.7,85.7
-Jock Landale,PHX,3,23,0,0,2,0.0,0,1,0.0,0.0
+Jock Landale,PHX,4,45,0,0,2,0.0,0,1,0.0,0.0
 Joe Harris,BKN,4,44,3,1,11,9.1,1,11,9.1,13.6
 Joe Ingles,MIL,5,89,24,8,15,53.3,8,15,53.3,80.0
-Joel Embiid,PHI,4,134,7,3,11,27.3,1,7,14.3,31.8
+Joel Embiid,PHI,5,174,14,6,15,40.0,2,9,22.2,46.7
 John Collins,ATL,6,164,37,13,34,38.2,11,31,35.5,54.4
 John Konchar,MEM,5,49,0,0,4,0.0,0,4,0.0,0.0
 Jonathan Kuminga,GSW,7,46,3,1,4,25.0,1,4,25.0,37.5
@@ -109,7 +109,7 @@ Jordan McLaughlin,MIN,2,14,0,0,1,0.0,0,1,0.0,0.0
 Jordan Poole,GSW,9,205,30,10,31,32.3,10,30,33.3,48.4
 Josh Hart,NYK,7,251,20,7,20,35.0,6,18,33.3,50.0
 Josh Minott,MIN,1,6,0,0,1,0.0,0,1,0.0,0.0
-Josh Okogie,PHX,7,141,8,3,13,23.1,2,11,18.2,30.8
+Josh Okogie,PHX,8,151,8,3,13,23.1,2,11,18.2,30.8
 Jrue Holiday,MIL,5,191,14,5,14,35.7,4,13,30.8,50.0
 Julius Randle,NYK,6,181,27,9,26,34.6,9,26,34.6,51.9
 Justin Champagnie,BOS,1,5,0,0,2,0.0,0,2,0.0,0.0
@@ -117,9 +117,9 @@ Karl-Anthony Towns,MIN,5,180,18,6,23,26.1,6,21,28.6,39.1
 Kawhi Leonard,LAC,2,80,11,4,6,66.7,3,4,75.0,91.7
 Keegan Murray,SAC,7,194,27,9,26,34.6,9,26,34.6,51.9
 Kenneth Lofton Jr.,MEM,4,12,0,0,2,0.0,0,2,0.0,0.0
-Kentavious Caldwell-Pope,DEN,7,234,41,14,28,50.0,13,27,48.1,73.2
+Kentavious Caldwell-Pope,DEN,8,268,41,14,30,46.7,13,29,44.8,68.3
 Kessler Edwards,SAC,6,7,0,0,0,-,-,-,-,-
-Kevin Durant,PHX,7,300,39,15,32,46.9,9,24,37.5,60.9
+Kevin Durant,PHX,8,343,41,16,36,44.4,9,25,36.0,56.9
 Kevin Huerter,SAC,7,183,18,6,29,20.7,6,29,20.7,31.0
 Kevin Love,MIA,7,148,48,16,39,41.0,16,38,42.1,61.5
 Kevon Looney,GSW,9,252,0,0,0,-,-,-,-,-
@@ -128,22 +128,22 @@ Klay Thompson,GSW,9,319,85,30,71,42.3,25,62,40.3,59.9
 Kyle Anderson,MIN,4,104,10,4,9,44.4,2,6,33.3,55.6
 Kyle Lowry,MIA,7,167,0,0,6,0.0,0,6,0.0,0.0
 Lamar Stevens,CLE,2,9,3,1,1,100,1,1,100,150.0
-Landry Shamet,PHX,6,69,6,2,6,33.3,2,6,33.3,50.0
+Landry Shamet,PHX,7,94,6,2,7,28.6,2,7,28.6,42.9
 LeBron James,LAL,8,291,30,11,42,26.2,8,37,21.6,35.7
 Lonnie Walker IV,LAL,5,27,3,1,5,20.0,1,5,20.0,30.0
 Luke Kennard,MEM,5,107,15,5,11,45.5,5,10,50.0,68.2
 Luke Kornet,BOS,2,6,0,0,0,-,-,-,-,-
-Malcolm Brogdon,BOS,8,214,21,7,18,38.9,7,18,38.9,58.3
+Malcolm Brogdon,BOS,9,241,27,9,22,40.9,9,22,40.9,61.4
 Malik Beasley,LAL,7,78,12,4,15,26.7,4,15,26.7,40.0
 Malik Monk,SAC,7,205,21,7,22,31.8,7,22,31.8,47.7
 MarJon Beauchamp,MIL,2,5,0,0,0,-,0,0,-,-
 Marcus Morris Sr.,LAC,3,68,6,2,10,20.0,2,10,20.0,30.0
-Marcus Smart,BOS,8,248,39,13,31,41.9,13,30,43.3,62.9
+Marcus Smart,BOS,9,282,45,15,38,39.5,15,37,40.5,59.2
 Mason Plumlee,LAC,5,91,0,0,0,-,-,-,-,-
 Max Christie,LAL,5,21,3,1,3,33.3,1,3,33.3,50.0
 Max Strus,MIA,7,196,36,12,25,48.0,12,25,48.0,72.0
 Meyers Leonard,MIL,2,5,0,0,0,-,-,-,-,-
-Michael Porter Jr.,DEN,7,234,36,12,30,40.0,12,28,42.9,60.0
+Michael Porter Jr.,DEN,8,270,48,16,37,43.2,16,35,45.7,64.9
 Mikal Bridges,BKN,4,157,15,5,18,27.8,5,16,31.3,41.7
 Mike Conley,MIN,5,183,8,3,8,37.5,2,7,28.6,50.0
 Mike Muscala,BOS,2,6,3,1,1,100,1,1,100,150.0
@@ -156,17 +156,17 @@ Nathan Knight,MIN,2,5,0,0,1,0.0,0,1,0.0,0.0
 Nic Claxton,BKN,4,117,2,1,1,100,-,-,-,100
 Nickeil Alexander-Walker,MIN,5,148,27,9,24,37.5,9,22,40.9,56.3
 Nicolas Batum,LAC,5,92,18,6,17,35.3,6,17,35.3,52.9
-Nikola Jokic,DEN,7,259,21,8,24,33.3,5,14,35.7,43.8
+Nikola Jokic,DEN,8,301,24,9,26,34.6,6,16,37.5,46.2
 Norman Powell,LAC,5,167,24,8,19,42.1,8,18,44.4,63.2
 Obi Toppin,NYK,7,128,27,9,28,32.1,9,28,32.1,48.2
 Omer Yurtseven,MIA,1,3,0,0,0,-,-,-,-,-
 Onyeka Okongwu,ATL,6,131,3,1,3,33.3,1,1,100,50.0
-P.J. Tucker,PHI,6,164,12,4,17,23.5,4,16,25.0,35.3
+P.J. Tucker,PHI,7,188,21,7,21,33.3,7,20,35.0,50.0
 PJ Dozier,SAC,3,6,3,1,3,33.3,1,3,33.3,50.0
 Pat Connaughton,MIL,4,88,30,10,22,45.5,10,22,45.5,68.2
 Patrick Baldwin Jr.,GSW,1,3,0,0,0,-,-,-,-,-
 Patty Mills,BKN,1,5,0,0,2,0.0,0,2,0.0,0.0
-Paul Reed,PHI,6,120,2,1,1,100,-,-,-,100
+Paul Reed,PHI,7,129,2,1,1,100,-,-,-,100
 Payton Pritchard,BOS,3,12,3,1,1,100,1,1,100,150.0
 Peyton Watson,DEN,2,7,3,1,2,50.0,1,2,50.0,75.0
 Quentin Grimes,NYK,5,99,6,2,13,15.4,2,13,15.4,23.1
@@ -175,7 +175,7 @@ Raul Neto,CLE,2,7,0,0,1,0.0,0,1,0.0,0.0
 Reggie Jackson,DEN,2,7,0,0,0,-,-,-,-,-
 Ricky Rubio,CLE,3,17,0,0,0,-,-,-,-,-
 Robert Covington,LAC,2,12,0,0,2,0.0,0,2,0.0,0.0
-Robert Williams III,BOS,8,178,0,0,0,-,-,-,-,-
+Robert Williams III,BOS,9,194,0,0,0,-,-,-,-,-
 Robin Lopez,CLE,2,6,0,0,0,-,-,-,-,-
 Royce O'Neale,BKN,4,118,12,4,19,21.1,4,18,22.2,31.6
 Rudy Gobert,MIN,5,177,0,0,0,-,-,-,-,-
@@ -189,20 +189,20 @@ Shake Milton,PHI,3,16,0,0,0,-,-,-,-,-
 Shaquille Harrison,LAL,4,12,0,0,0,-,-,-,-,-
 Spencer Dinwiddie,BKN,4,159,6,2,6,33.3,2,6,33.3,50.0
 Stephen Curry,GSW,9,341,63,22,42,52.4,19,38,50.0,75.0
-T.J. Warren,PHX,2,6,0,0,0,-,-,-,-,-
+T.J. Warren,PHX,3,32,3,1,2,50.0,1,2,50.0,75.0
 Taurean Prince,MIN,5,100,18,6,18,33.3,6,18,33.3,50.0
 Terance Mann,LAC,5,133,21,7,15,46.7,7,15,46.7,70.0
 Terence Davis,SAC,4,58,9,3,12,25.0,3,12,25.0,37.5
-Terrence Ross,PHX,2,9,0,0,2,0.0,0,2,0.0,0.0
+Terrence Ross,PHX,3,23,3,1,8,12.5,1,8,12.5,18.8
 Thanasis Antetokounmpo,MIL,2,5,0,0,0,-,-,-,-,-
-Tobias Harris,PHI,6,209,33,11,20,55.0,11,20,55.0,82.5
-Torrey Craig,PHX,7,163,36,13,25,52.0,10,21,47.6,72.0
+Tobias Harris,PHI,7,234,33,11,21,52.4,11,21,52.4,78.6
+Torrey Craig,PHX,8,166,36,13,26,50.0,10,22,45.5,69.2
 Trae Young,ATL,6,230,3,1,5,20.0,1,5,20.0,30.0
 Trey Lyles,SAC,7,118,27,9,27,33.3,9,27,33.3,50.0
 Tristan Thompson,LAL,1,12,0,0,0,-,-,-,-,-
 Troy Brown Jr.,LAL,8,108,6,2,12,16.7,2,12,16.7,25.0
 Tyler Herro,MIA,1,19,6,2,3,66.7,2,3,66.7,100
-Tyrese Maxey,PHI,6,214,33,11,18,61.1,11,18,61.1,91.7
+Tyrese Maxey,PHI,7,254,39,13,24,54.2,13,24,54.2,81.3
 Tyus Jones,MEM,6,120,9,3,17,17.6,3,17,17.6,26.5
 Udonis Haslem,MIA,1,2,0,0,2,0.0,0,1,0.0,0.0
 Victor Oladipo,MIA,2,45,6,2,5,40.0,2,5,40.0,60.0
