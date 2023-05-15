@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[19]:
+# In[6]:
 
 
 import pandas as pd
@@ -38,7 +38,6 @@ offscreen = 'https://www.nba.com/stats/teams/off-screen?PerMode=Totals'
 putbacks = 'https://www.nba.com/stats/teams/putbacks?PerMode=Totals'
 misc = 'https://www.nba.com/stats/teams/playtype-misc?PerMode=Totals'
 drives = 'https://www.nba.com/stats/teams/drives?PerMode=Totals'
-
 #url_list = [url1,url2,url3,url4,url5]
 url_list=[handoff,iso,trans,bh,rollman,postup,spotup,cut,offscreen,putbacks,misc,drives]
 url_list =[url +'&SeasonType=Playoffs' for url in url_list]
@@ -89,7 +88,7 @@ def get_tables(url_list):
     return data
 
 
-# In[20]:
+# In[7]:
 
 
 #url_list = [url1]#
@@ -118,7 +117,7 @@ def get_multi(url_list,playoffs = False):
             df.to_csv(terms[i],index = False)
 
 
-# In[21]:
+# In[8]:
 
 
 get_multi(url_list,playoffs = True)
