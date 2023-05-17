@@ -97,9 +97,9 @@ get_multi(url_list,playoffs= True)
 terms = ['opp_shooting/very_tight.csv','opp_shooting/tight.csv','opp_shooting/open.csv','opp_shooting/wide_open.csv']
 terms = ['2023/playoffs/'+t for t in terms]
 #jsons =  ['opp_shooting/very_tight.json','opp_shooting/tight.json','opp_shooting/open.json','opp_shooting/wide_open.json']
-for i in range(len(terms)):
-    df = tables[i]
-    df.to_csv(terms[i],index = False)
+#for i in range(len(terms)):
+#    df = tables[i]
+#    df.to_csv(terms[i],index = False)
     #df.to_json(jsons[i])
     #df.to_csv('2023/'+terms[i],index = False)
     #df.to_json('2023/'+jsons[i])

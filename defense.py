@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[12]:
+# In[61]:
 
 
 import plotly.graph_objs as go
@@ -76,9 +76,9 @@ def get_ptables(url_list,path_list):
         data.append(df)
     driver.close()
     return data
-def get_defense(year,ps = False):
+def get_defense(url,year,ps = False):
     
-    defense = 'https://www.nba.com/stats/players/defense-dash-overall?PerMode=Totals'
+    defense = url
     url_list = [defense]
     #url_list =[url +'&SeasonType=Regular+Season'for url in url_list]
     url_list =[defense+'&Season='+str(year)+'-'+str(year+1 - 2000)]
@@ -101,8 +101,10 @@ def get_defense(year,ps = False):
     #xpath2 = '//*[@id="__next"]/div[2]/div[2]/div[3]/section[2]/div/div[2]/div[2]/div[1]/div[3]/div/label/div/select'
     path_list = [xpath for i in range(len(url_list))]
     frames = get_ptables(url_list,path_list)
+    
     df = frames[0]
-    df.to_csv(filename,index = False)
+    df['year'] = year
+    return df
 def wowy_statlog(stat,start_year,ps =False):
     if ps == False:
         s_type = 'Regular Season'
@@ -162,13 +164,42 @@ filename = '2023/defense/rimfreq.csv'
 
 filename = '2023/playoffs/defense/rimfreq_p.csv'
 update_log(filename,stat2,ps = True)
+def update_dash():
+    url = 'https://www.nba.com/stats/players/defense-dash-lt6?PerMode=Totals'
+    df = get_defense(url,2022,ps=True)
+    old = pd.read_csv('rimdfg_p.csv')
+    old = old[old.year!=2023]
+    df['year'] = 2023
+    old = pd.concat([old,df])
+    old.to_csv('rimdfg_p.csv',index = False)
+    df.to_csv('2023/playoffs/defense/rimdfg.csv',index = False)
+    url = 'https://www.nba.com/stats/players/defense-dash-overall?PerMode=Totals'
+    df = get_defense(url,2022,ps=True)
+    old = pd.read_csv('dfg_p.csv')
+    old = old[old.year!=2023]
+    df['year'] = 2023
+    old = pd.concat([old,df])
+    old.to_csv('dfg_p.csv',index = False)
+    df.to_csv('2023/playoffs/defense/dfg.csv',index = False)
+update_dash()
 
-get_defense(2022,ps=True)
+
+# In[57]:
 
 
-# In[11]:
 
 
+
+# In[59]:
+
+
+
+
+
+# In[39]:
+
+
+'''
 def create_folders():
     for year in range(2014,2024):
         path = str(year) +'/defense/'
@@ -178,20 +209,46 @@ def create_folders():
         output_dir = Path(path)
         output_dir.mkdir(parents=True, exist_ok=True)
 # create_folders()
+masters =['rimfreq','rim_acc','dfg']
+temp = pd.read_csv('dfg_p.csv')
+temp = temp.rename(columns = {'year':'Year'})
+temp.to_csv('dfg_p.csv',index = False)
+def update_masters(year,masters,ps = False):
+    
+    if ps == False:
+        trail = ''
+        path = str(year)+'/defense/'
+    else:
+        trail = '_p'
+        path = str(year)+'/playoffs/defense/'
+    for file in masters:
+        print(file)
+        df = pd.read_csv(file+trail+'.csv')
+        df = df[df.Year<year]
+        new = pd.read_csv(path+file+trail+'.csv')
+        df = pd.concat([df,new])
+        df.to_csv(file+trail+'csv',index = False)
+update_masters(2023,masters,ps = True)
+temp = pd.read_csv('dfg_p.csv')
+temp = temp.rename(columns = {'Year':'year'})
+temp.to_csv('dfg_p.csv',index = False)     
+'''
 
 
-# In[27]:
+# In[62]:
 
 
 '''
 filename = 'dfg_p.csv'
 df = pd.read_csv(filename)
 for year in range(2014,2024):
-    path = str(year) +'/playoffs/'+'/defense/'
+    ps = '/playoffs/'
+    #ps = ''
+    path = str(year) +ps+'/defense/'
     year_df = df[df.year==year]
     print(year_df)
     year_df.to_csv(path+'dfg.csv',index = False)
-  '''      
+'''  
 
 
 # In[ ]:
