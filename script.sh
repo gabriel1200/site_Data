@@ -12,6 +12,7 @@
     cp rim_acc_p.csv ../discord/data/rim_acc_p.csv
     cp rimfreq_p.csv ../discord/data/rimfreq_p.csv
     cp dfg_p.csv ../discord/data/dfg_p.csv
+    cp rimdfg_p.csv ../discord/data/rimdfg_p.csv
     git add --all
     git commit -m 'Daily Update'
     git push origin main

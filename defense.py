@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[61]:
+# In[3]:
 
 
 import plotly.graph_objs as go
@@ -31,7 +31,13 @@ def get_index():
     player_dict = dict([(player.lower(),num) for num,player in players.items()])
   
     return player_dict,team_dict
-
+def update_master(master_file,new_file):
+    df = pd.read_csv(new_file)
+    old = pd.read_csv(master_file)
+    old = old[old.Year!=2023]
+    df['year'] = 2023
+    old = pd.concat([old,df])
+    old.to_csv(master_file,index = False)
 def get_ptables(url_list,path_list):
     data = []
     driver = webdriver.Chrome()
@@ -156,6 +162,7 @@ filename = '2023/playoffs/defense/rim_acc_p.csv'
 
 
 update_log(filename,stat,ps = True)
+update_master('rim_acc_p.csv',filename)
 
 stat2 ="AtRimFrequencyOpponent"
 
@@ -164,6 +171,8 @@ filename = '2023/defense/rimfreq.csv'
 
 filename = '2023/playoffs/defense/rimfreq_p.csv'
 update_log(filename,stat2,ps = True)
+update_master('rimfreq_p.csv',filename)
+
 def update_dash():
     url = 'https://www.nba.com/stats/players/defense-dash-lt6?PerMode=Totals'
     df = get_defense(url,2022,ps=True)
@@ -173,6 +182,7 @@ def update_dash():
     old = pd.concat([old,df])
     old.to_csv('rimdfg_p.csv',index = False)
     df.to_csv('2023/playoffs/defense/rimdfg.csv',index = False)
+    
     url = 'https://www.nba.com/stats/players/defense-dash-overall?PerMode=Totals'
     df = get_defense(url,2022,ps=True)
     old = pd.read_csv('dfg_p.csv')
@@ -181,10 +191,12 @@ def update_dash():
     old = pd.concat([old,df])
     old.to_csv('dfg_p.csv',index = False)
     df.to_csv('2023/playoffs/defense/dfg.csv',index = False)
+    
+
 update_dash()
 
 
-# In[57]:
+# In[ ]:
 
 
 
