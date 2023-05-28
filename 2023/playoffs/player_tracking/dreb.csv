@@ -1,4 +1,4 @@
-PLAYER,TEAM,GP,W,L,MIN,DREB,Contested DREB,Contested DREB%,DREB Chances,DREB Chance%,Deferred DREB Chances,Adjusted DREB Chance%,AVG DREB Distance
+PLAYER,TEAM,GP,W,L,MIN,DREB,ContestedDREB,ContestedDREB%,DREBChances,DREBChance%,DeferredDREB Chances,AdjustedDREB Chance%,AVG DREBDistance
 Aaron Gordon,DEN,15,12,3,534,43,10,23.3,69,62.3,8,70.5,7.6
 Al Horford,BOS,18,10,8,551,100,22,22.0,171,58.5,18,65.4,5.7
 Alex Len,SAC,6,2,4,54,13,4,30.8,23,56.5,3,65.0,4.9

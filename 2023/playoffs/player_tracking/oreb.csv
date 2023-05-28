@@ -1,4 +1,4 @@
-PLAYER,TEAM,GP,W,L,MIN,OREB,Contested OREB,Contested OREB%,OREB Chances,OREB Chance%,Deferred OREB Chances,Adjusted OREB Chance%,AVG OREB Distance
+PLAYER,TEAM,GP,W,L,MIN,OREB,ContestedOREB,ContestedOREB%,OREBChances,OREBChance%,DeferredOREB Chances,AdjustedOREB Chance%,AVG OREBDistance
 Aaron Gordon,DEN,15,12,3,534,40,28,70.0,71,56.3,3,58.8,5.7
 Al Horford,BOS,18,10,8,551,28,17,60.7,48,58.3,1,59.6,7.9
 Alex Len,SAC,6,2,4,54,7,3,42.9,14,50.0,1,53.8,6.7
