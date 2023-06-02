@@ -9,6 +9,7 @@
     python tracking.py
     python game_log.py
     python defense.py
+    python player_shooting.py
     cp rim_acc_p.csv ../discord/data/rim_acc_p.csv
     cp rimfreq_p.csv ../discord/data/rimfreq_p.csv
     cp dfg_p.csv ../discord/data/dfg_p.csv
