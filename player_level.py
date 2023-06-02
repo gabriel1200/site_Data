@@ -15,6 +15,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import ElementNotInteractableException 
+from selenium.webdriver.support.select import Select
 
 # Step 1: Create a session and load the page
 '''
@@ -31,7 +32,6 @@ url5 = 'https://www.nba.com/stats/players/transition?PerMode=Totals&dir=D&sort=P
 
 
 #url_list = [cs,pullup]
-from selenium.webdriver.support.select import Select
 
 def check_exists_by_xpath(driver, xpath):
     try:
