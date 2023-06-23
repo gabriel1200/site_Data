@@ -1,0 +1,9 @@
+TEAM,GP,G,Freq%,FGM,FGA,FG%,eFG%,2FG Freq%,2FGM,2FGA,2FG%,3FG Freq%,3PM,3PA,3P%,shot_coverage,round,year
+Cleveland Cavaliers,7,7,16.0,45,86,52.3,52.3,15.3,45,82,54.9,0.7,0,4,0.0,very_tight,4,2016
+Golden State Warriors,7,7,11.3,35,61,57.4,58.2,10.4,34,56,60.7,0.9,1,5,20.0,very_tight,4,2016
+Cleveland Cavaliers,7,7,38.4,101,206,49.0,50.7,32.4,94,174,54.0,6.0,7,32,21.9,tight,4,2016
+Golden State Warriors,7,7,36.7,88,198,44.4,47.0,29.6,78,160,48.8,7.0,10,38,26.3,tight,4,2016
+Cleveland Cavaliers,7,7,28.1,69,151,45.7,53.6,15.3,45,82,54.9,12.8,24,69,34.8,open,4,2016
+Golden State Warriors,7,7,27.6,68,149,45.6,58.1,10.4,31,56,55.4,17.2,37,93,39.8,open,4,2016
+Golden State Warriors,7,7,24.4,58,132,43.9,61.4,3.3,12,18,66.7,21.1,46,114,40.4,wide_open,4,2016
+Cleveland Cavaliers,7,7,17.5,48,94,51.1,64.4,6.0,23,32,71.9,11.5,25,62,40.3,wide_open,4,2016
