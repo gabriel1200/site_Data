@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[2]:
+# In[ ]:
 
 
 import pandas as pd
@@ -14,6 +14,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
+import time
 
 from pathlib import Path
 # Step 1: Create a session and load the page
@@ -26,11 +27,17 @@ url_list = [url1,url2,url3,url4]
 print(url_list)
 #url_list =[url +'&SeasonType=Playoffs' for url in url_list]
 #url_list =[url +'&SeasonType=Regular+Season'for url in url_list]
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+
 
 def get_tables(url_list):
     data = []
     xpath = '//*[@id="__next"]/div[2]/div[2]/div[3]/section[2]/div/div[2]/div[2]/div[1]/div[3]/div/label/div/select'
-    driver = webdriver.Chrome()
+    options = webdriver.FirefoxOptions()
+    driver = webdriver.Firefox(options=options)
+
+    #driver = webdriver.Chrome()
     for url in url_list:
         
         driver.get(url)
@@ -43,7 +50,7 @@ def get_tables(url_list):
         '''if check_exists_by_xpath(driver, "//a[contains(text(),'>')]/preceding-sibling::a[1]"):
             number_of_pages = int(driver.find_element(By.XPATH, "//a[contains(text(),'>')]/preceding-sibling::a[1]").text)
             print(number_of_pages)'''
-        
+        time.sleep(10)
         dropdown1 = Select(driver.find_element(By.XPATH, xpath))
         dropdown1.select_by_index(0)
 
@@ -79,7 +86,7 @@ def get_multi(url_list,playoffs = False):
         p = ''
         url_list =[url +'&SeasonType=Regular+Season'for url in url_list]
         
-    for i in range(2022,2023):
+    for i in range(2023,2024):
         
         season = '&Season='+str(i)+'-'+str(i+1 - 2000)
         year_url = [url+season for url in url_list]
@@ -101,10 +108,10 @@ def get_multi(url_list,playoffs = False):
             df.to_csv(terms[i],index = False)
 
 #get_multi(url_list)
-get_multi(url_list,playoffs = True)
+get_multi(url_list,playoffs = False)
 
 
-# In[9]:
+# In[ ]:
 
 
 def master_shooting(playoffs = False):
@@ -124,10 +131,8 @@ def master_shooting(playoffs = False):
             data.append(df)
     master = pd.concat(data)
     return master
-#master= master_shooting() 
-#master.to_csv('player_shooting.csv',index = False)
-#master= master_shooting(playoffs = True) 
-#master.to_csv('player_shooting_p.csv',index = False)
+master= master_shooting() 
+master.to_csv('player_shooting.csv',index = False)
 
 
 # In[ ]:

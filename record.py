@@ -4,7 +4,7 @@
 # In[5]:
 
 
-url = 'https://api.pbpstats.com/get-games/nba?Season=2022-23&SeasonType=Regular+Season'
+url = 'https://api.pbpstats.com/get-games/nba?Season=2023-24&SeasonType=Regular+Season'
 import json
 import requests
 import pandas as pd

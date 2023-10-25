@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[6]:
+# In[1]:
 
 
 import pandas as pd
@@ -40,9 +40,9 @@ misc = 'https://www.nba.com/stats/teams/playtype-misc?PerMode=Totals'
 drives = 'https://www.nba.com/stats/teams/drives?PerMode=Totals'
 #url_list = [url1,url2,url3,url4,url5]
 url_list=[handoff,iso,trans,bh,rollman,postup,spotup,cut,offscreen,putbacks,misc,drives]
-url_list =[url +'&SeasonType=Playoffs' for url in url_list]
-#url_list =[url +'&SeasonType=Regular+Season'for url in url_list]
-
+#url_list =[url +'&SeasonType=Playoffs' for url in url_list]
+url_list =[url +'&SeasonType=Regular+Season'for url in url_list]
+#add tag specifying that the url list is for the regular seasonx
 def check_exists_by_xpath(driver, xpath):
     try:
         driver.find_element(By.XPATH, xpath)
@@ -53,7 +53,9 @@ def check_exists_by_xpath(driver, xpath):
 def get_tables(url_list):
     xpath = '//*[@id="__next"]/div[2]/div[2]/div[3]/section[2]/div/div[2]/div[3]/table'
     data = []
-    driver = webdriver.Chrome()
+    options = webdriver.FirefoxOptions()
+    driver = webdriver.Firefox(options=options)
+
     for url in url_list:
         print(url)
         
@@ -72,23 +74,15 @@ def get_tables(url_list):
 
         # Step 3: Read tables with Pandas read_html()
         dfs = pd.read_html(str(tables))
-        #print(dfs)
 
-        #print(f'Total tables: {len(dfs)}')
-        #print(dfs[2].head())
-    
-        
-        #return dfs
         df= dfs[-1]
-        #drop = ['Unnamed: 16_level_1', 'Unnamed: 17_level_1', 'Unnamed: 18_level_1']
-        #df.columns = df.columns.droplevel()
-        #df = df.drop(columns = drop)
+
         data.append(df)
     driver.close()
     return data
 
 
-# In[7]:
+# In[2]:
 
 
 #url_list = [url1]#
@@ -97,7 +91,9 @@ def get_multi(url_list,playoffs = False):
         p ='/playoffs/'
     else:
         p=''
-    for i in range(2022,2023):
+    # get table per year, create corresponding directory if it doesn't exist
+    
+    for i in range(2023,2024):
         
         season = '&Season='+str(i)+'-'+str(i+1 - 2000)
         year_url = [url+season for url in url_list]
@@ -117,10 +113,10 @@ def get_multi(url_list,playoffs = False):
             df.to_csv(terms[i],index = False)
 
 
-# In[8]:
+# In[ ]:
 
 
-get_multi(url_list,playoffs = True)
+get_multi(url_list,playoffs = False)
 
 
 # In[4]:

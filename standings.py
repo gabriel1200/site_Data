@@ -10,7 +10,7 @@ import pandas as pd
 # In[2]:
 
 
-df = pd.read_html('https://www.basketball-reference.com/leagues/NBA_2023.html')
+df = pd.read_html('https://www.basketball-reference.com/leagues/NBA_2024.html')
 
 
 # In[3]:
