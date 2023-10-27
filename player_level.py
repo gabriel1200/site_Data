@@ -66,10 +66,10 @@ def get_ptables(url_list,path_list):
         print(url)
         
         driver.get(url)
-        element = WebDriverWait(driver, 30).until(
+        element = WebDriverWait(driver, 5).until(
         EC.presence_of_element_located((By.XPATH, xpath)))
         # Wait for the page to fully load
-        driver.implicitly_wait(10)
+        #driver.implicitly_wait(10)
         '''if check_exists_by_xpath(driver, "//a[contains(text(),'>')]/preceding-sibling::a[1]"):
             number_of_pages = int(driver.find_element(By.XPATH, "//a[contains(text(),'>')]/preceding-sibling::a[1]").text)
             print(number_of_pages)'''
