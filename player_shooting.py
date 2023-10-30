@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[2]:
+# In[4]:
 
 
 import pandas as pd
@@ -43,14 +43,14 @@ def get_tables(url_list):
         driver.get(url)
         print(url)
         # Wait for the page to fully load
-        driver.implicitly_wait(20)
+        #driver.implicitly_wait(20)
         element = WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.XPATH, xpath)))
-        driver.implicitly_wait(10)
+        #driver.implicitly_wait(10)
         '''if check_exists_by_xpath(driver, "//a[contains(text(),'>')]/preceding-sibling::a[1]"):
             number_of_pages = int(driver.find_element(By.XPATH, "//a[contains(text(),'>')]/preceding-sibling::a[1]").text)
             print(number_of_pages)'''
-        time.sleep(10)
+        #time.sleep(3)
         dropdown1 = Select(driver.find_element(By.XPATH, xpath))
         dropdown1.select_by_index(0)
 

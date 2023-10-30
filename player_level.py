@@ -1,13 +1,14 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[8]:
+# In[9]:
 
 
 import pandas as pd
 from selenium import webdriver
 from bs4 import BeautifulSoup
 from pathlib import Path
+import time
 
 
 from selenium.webdriver.support.ui import WebDriverWait
@@ -28,7 +29,7 @@ url5 = 'https://www.nba.com/stats/players/transition?PerMode=Totals&dir=D&sort=P
 
 
 
-# In[9]:
+# In[15]:
 
 
 #url_list = [cs,pullup]
@@ -52,6 +53,7 @@ def save_tables(tables,year, playoffs= False):
     tables[1] = temp
 
     tables[1] = temp
+    #print(tables)
     for i in range(len(name_list)):
         #tables[i].to_csv('player_tracking/'+name_list[i]+'.csv',index = False)
         tables[i].to_csv(path+name_list[i]+'.csv',index = False)
@@ -60,16 +62,25 @@ def get_ptables(url_list,path_list):
     data = []
     options = webdriver.FirefoxOptions()
     driver = webdriver.Firefox(options=options)
+    cookie_check = False
     for i in range(len(url_list)):
         url = url_list[i]
         xpath = path_list[i]
         print(url)
         
         driver.get(url)
-        element = WebDriverWait(driver, 5).until(
+        accept_path = '//*[@id="onetrust-accept-btn-handler"]'
+
+        if EC.presence_of_element_located((By.XPATH, accept_path)) and cookie_check == False:
+            driver.find_element(By.XPATH, accept_path).click() 
+            cookie_check = True
+            time.sleep(1)
+        
+
+        element = WebDriverWait(driver, 20).until(
         EC.presence_of_element_located((By.XPATH, xpath)))
         # Wait for the page to fully load
-        #driver.implicitly_wait(10)
+        #time.sleep(5)
         '''if check_exists_by_xpath(driver, "//a[contains(text(),'>')]/preceding-sibling::a[1]"):
             number_of_pages = int(driver.find_element(By.XPATH, "//a[contains(text(),'>')]/preceding-sibling::a[1]").text)
             print(number_of_pages)'''
@@ -95,7 +106,7 @@ def get_ptables(url_list,path_list):
     return data
 
 
-# In[10]:
+# In[16]:
 
 
 def get_multi(url_list,path_list,ps =False):
@@ -110,7 +121,7 @@ def get_multi(url_list,path_list,ps =False):
         
 
 
-# In[11]:
+# In[17]:
 
 
 cs ='https://www.nba.com/stats/players/catch-shoot?PerMode=Totals'
@@ -140,16 +151,22 @@ path_list = [xpath for i in range(len(url_list))]
 ps = True
 
 
-# In[12]:
+# In[18]:
 
 
 url_list
 
 
-# In[13]:
+# In[19]:
 
 
 get_multi(url_list,path_list,ps = False)
+
+
+# In[ ]:
+
+
+
 
 
 # In[ ]:
