@@ -36,7 +36,7 @@ def get_tables(url_list):
     xpath = '//*[@id="__next"]/div[2]/div[2]/div[3]/section[2]/div/div[2]/div[2]/div[1]/div[3]/div/label/div/select'
     options = webdriver.FirefoxOptions()
     driver = webdriver.Firefox(options=options)
-
+    cookie_check = False
     #driver = webdriver.Chrome()
     for url in url_list:
         
@@ -44,7 +44,12 @@ def get_tables(url_list):
         print(url)
         # Wait for the page to fully load
         #driver.implicitly_wait(20)
-        element = WebDriverWait(driver, 10).until(
+        accept_path = '//*[@id="onetrust-accept-btn-handler"]'
+        if EC.presence_of_element_located((By.XPATH, accept_path)) and cookie_check == False:
+            driver.find_element(By.XPATH, accept_path).click() 
+            cookie_check = True
+            time.sleep(1)
+        element = WebDriverWait(driver, 5).until(
         EC.presence_of_element_located((By.XPATH, xpath)))
         #driver.implicitly_wait(10)
         '''if check_exists_by_xpath(driver, "//a[contains(text(),'>')]/preceding-sibling::a[1]"):
