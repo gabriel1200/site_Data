@@ -116,12 +116,12 @@ def get_multi(url_list,playoffs = False):
 get_multi(url_list,playoffs = False)
 
 
-# In[ ]:
+# In[1]:
 
 
 def master_shooting(playoffs = False):
     data =[]
-    for i in range(2014,2024):
+    for i in range(2014,2025):
         if playoffs == False:
             p = ''
         else:

@@ -35,8 +35,8 @@ def get_index():
 def update_master(master_file,new_file):
     df = pd.read_csv(new_file)
     old = pd.read_csv(master_file)
-    old = old[old.Year!=2023]
-    df['year'] = 2023
+    old = old[old.year!=2024]
+    df['year'] = 2024
     old = pd.concat([old,df])
     old.to_csv(master_file,index = False)
 def get_ptables(url_list,path_list):
@@ -174,15 +174,16 @@ filename = '2024/defense/rim_acc.csv'
 #filename = '2023/playoffs/defense/rim_acc_p.csv'
 
 
-#update_log(filename,stat,ps = False)
-update_master('rim_acc.csv',filename)
+update_log(filename,stat,ps = False)
+#update_master('rim_acc.csv',filename)
 
 stat2 ="AtRimFrequencyOpponent"
 
-filename = '2024/defense/rimfreq.csv'
+
 #update_log(filename,stat2)
 
 #filename = '2023/playoffs/defense/rimfreq_p.csv'
+filename = '2024/defense/rimfreq.csv'
 update_log(filename,stat2,ps = False)
 
 def update_dash():
@@ -205,15 +206,17 @@ def update_dash():
     df.to_csv('2024/defense/rimdfg.csv',index = False)
     
 
+#update_master('rimfreq.csv',filename)
+
+#update_dash()
+filename = '2024/defense/rimfreq.csv'
 update_master('rimfreq.csv',filename)
-
-update_dash()
-
-
-# In[ ]:
-
-
-
+filename = '2024/defense/dfg.csv'
+update_master('dfg.csv',filename)
+filename = '2024/defense/rimdfg.csv'
+update_master('rimdfg.csv',filename)
+filename = '2024/defense/rim_acc.csv'
+update_master('rim_acc.csv',filename)
 
 
 # In[ ]:
@@ -223,6 +226,12 @@ update_dash()
 
 
 # In[ ]:
+
+
+
+
+
+# In[6]:
 
 
 def create_folders():
@@ -236,7 +245,7 @@ def create_folders():
 # create_folders()
 masters =['rimfreq','rim_acc','dfg']
 #temp = pd.read_csv('dfg_p.csv')
-temp = temp.rename(columns = {'year':'Year'})
+#temp = temp.rename(columns = {'year':'Year'})
 #temp.to_csv('dfg_p.csv',index = False)
 def update_masters(year,masters,ps = False):
     
@@ -249,13 +258,13 @@ def update_masters(year,masters,ps = False):
     for file in masters:
         print(file)
         df = pd.read_csv(file+trail+'.csv')
-        df = df[df.Year<year]
+        df = df[df.year<year]
         new = pd.read_csv(path+file+trail+'.csv')
         df = pd.concat([df,new])
         df.to_csv(file+trail+'csv',index = False)
-update_masters(2023,masters,ps = True)
+#update_masters(2023,masters,ps = False)
 #temp = pd.read_csv('dfg_p.csv')
-temp = temp.rename(columns = {'Year':'year'})
+#temp = temp.rename(columns = {'Year':'year'})
 #temp.to_csv('dfg_p.csv',index = False)     
 
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[27]:
+# In[8]:
 
 
 import pandas as pd
@@ -57,8 +57,8 @@ def get_tables(url_list):
 #url_list = [url1]#
 def multiyear_shooting(url_list,team_round=0,playoffs = True):
     df_list = []
-
-    for i in range(2023,2024):
+    start_year = 2023
+    for i in range(start_year,2024):
         year = i+1
         season = '&Season='+str(i)+'-'+str(i+1 - 2000)
         year_url = [url+season for url in url_list]
@@ -85,13 +85,22 @@ def multiyear_shooting(url_list,team_round=0,playoffs = True):
         df = pd.concat(frames)
         df.to_csv(path+'team_shooting.csv',index = False)
         df_list.append(df)
-    final_df = pd.concat(df_list)
+    new_df = pd.concat(df_list)
+    new_df['TEAMNAME'] = new_df['TEAM']
+    df = pd.read_csv('team_shooting.csv')
+    df = df[df.year <start_year]
+    names = dict(zip(df.TEAMNAME,df.TEAM))
+    print(names)
+    final_df = pd.concat([df,new_df])
+    final_df.replace({'TEAM':names},inplace=True)
+    
     return final_df
 
 df = multiyear_shooting(url_list,playoffs=False)
+print(df)
 
 
-# In[28]:
+# In[11]:
 
 
 df.to_csv('team_shooting.csv',index = False)
