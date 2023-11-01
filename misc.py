@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[16]:
 
 
 import pandas as pd
@@ -37,9 +37,9 @@ cut = 'https://www.nba.com/stats/teams/cut?PerMode=Totals'
 offscreen = 'https://www.nba.com/stats/teams/off-screen?PerMode=Totals'
 putbacks = 'https://www.nba.com/stats/teams/putbacks?PerMode=Totals'
 misc = 'https://www.nba.com/stats/teams/playtype-misc?PerMode=Totals'
-drives = 'https://www.nba.com/stats/teams/drives?PerMode=Totals'
+#drives = 'https://www.nba.com/stats/teams/drives?PerMode=Totals'
 #url_list = [url1,url2,url3,url4,url5]
-url_list=[handoff,iso,trans,bh,rollman,postup,spotup,cut,offscreen,putbacks,misc,drives]
+url_list=[handoff,iso,trans,bh,rollman,postup,spotup,cut,offscreen,putbacks,misc]
 #url_list =[url +'&SeasonType=Playoffs' for url in url_list]
 url_list =[url +'&SeasonType=Regular+Season'for url in url_list]
 #add tag specifying that the url list is for the regular seasonx
@@ -82,7 +82,7 @@ def get_tables(url_list):
     return data
 
 
-# In[2]:
+# In[17]:
 
 
 #url_list = [url1]#
@@ -95,7 +95,7 @@ def get_multi(url_list,playoffs = False):
     
     for i in range(2023,2024):
         
-        season = '&Season='+str(i)+'-'+str(i+1 - 2000)
+        season = '&SeasonYear='+str(i)+'-'+str(i+1 - 2000)
         year_url = [url+season for url in url_list]
         frames = get_tables(year_url)
 
@@ -105,7 +105,7 @@ def get_multi(url_list,playoffs = False):
         output_dir.mkdir(parents=True, exist_ok=True)
         #terms = ['data/teampullup.csv','data/teamcatchshoot.csv','data/teamundersix.csv','data/teamiso.csv','data/teamtransition.csv']
         terms = ['handoff.csv','iso.csv','trans.csv','bh.csv','rollman.csv','postup.csv','spotup.csv',
-                 'cut.csv','offscreen.csv','putback.csv','misc.csv','drives.csv']
+                 'cut.csv','offscreen.csv','putback.csv','misc.csv']
         terms = [ path+t for t in terms]
         
         for i in range(len(terms)):
@@ -113,36 +113,19 @@ def get_multi(url_list,playoffs = False):
             df.to_csv(terms[i],index = False)
 
 
-# In[ ]:
+# In[18]:
 
 
 get_multi(url_list,playoffs = False)
 
 
-# In[4]:
+# In[ ]:
 
 
 #terms = ['data/teampullup.csv','data/teamcatchshoot.csv','data/teamundersix.csv','data/teamiso.csv','data/teamtransition.csv']
-frames = get_tables(url_list)
+#frames = get_tables(url_list)
 terms = ['playtype/handoff.csv','playtype/iso.csv','playtype/trans.csv','playtype/bh.csv','playtype/rollman.csv','playtype/postup.csv','playtype/spotup.csv',
          'playtype/cut.csv','playtype/offscreen.csv','playtype/putback.csv','playtype/misc.csv','playtype/drives.csv']
-
-
-# In[6]:
-
-
-for i in range(len(terms)):
-    df = frames[i]
-    #df.to_csv(terms[i],index = False)
-    df.to_csv('2023/playoffs/'+terms[i],index = False)
-   
-
-
-# In[12]:
-
-
-import pandas as pd
-import os
 
 
 # In[14]:

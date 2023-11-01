@@ -120,12 +120,12 @@ avg['TS%'] = avg['PTS']/(2*(avg['FGA']+.44*avg['FTA']))
 avg
 
 
-# In[7]:
+# In[21]:
 
 
-avg.to_csv('avg_shooting.csv')
+avg.to_csv('avg_shooting.csv',index = False)
 avg = avg[['Season','ORtg']]
-avg.to_csv('team_avg.csv')
+avg.to_csv('team_avg.csv',index = False)
 
 
 # In[ ]:
