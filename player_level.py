@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[9]:
+# In[ ]:
 
 
 import pandas as pd
@@ -29,7 +29,7 @@ url5 = 'https://www.nba.com/stats/players/transition?PerMode=Totals&dir=D&sort=P
 
 
 
-# In[15]:
+# In[14]:
 
 
 #url_list = [cs,pullup]
@@ -70,6 +70,7 @@ def get_ptables(url_list,path_list):
         
         driver.get(url)
         accept_path = '//*[@id="onetrust-accept-btn-handler"]'
+        time.sleep(3)
 
         if EC.presence_of_element_located((By.XPATH, accept_path)) and cookie_check == False:
             driver.find_element(By.XPATH, accept_path).click() 
@@ -106,7 +107,7 @@ def get_ptables(url_list,path_list):
     return data
 
 
-# In[16]:
+# In[15]:
 
 
 def get_multi(url_list,path_list,ps =False):
@@ -121,7 +122,7 @@ def get_multi(url_list,path_list,ps =False):
         
 
 
-# In[17]:
+# In[16]:
 
 
 cs ='https://www.nba.com/stats/players/catch-shoot?PerMode=Totals'
@@ -151,13 +152,13 @@ path_list = [xpath for i in range(len(url_list))]
 ps = True
 
 
-# In[18]:
+# In[17]:
 
 
 url_list
 
 
-# In[19]:
+# In[ ]:
 
 
 get_multi(url_list,path_list,ps = False)
