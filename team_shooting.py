@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[8]:
+# In[12]:
 
 
 import pandas as pd
@@ -100,7 +100,7 @@ df = multiyear_shooting(url_list,playoffs=False)
 print(df)
 
 
-# In[11]:
+# In[13]:
 
 
 df.to_csv('team_shooting.csv',index = False)

@@ -208,7 +208,7 @@ def update_dash():
 
 #update_master('rimfreq.csv',filename)
 
-#update_dash()
+update_dash()
 filename = '2024/defense/rimfreq.csv'
 update_master('rimfreq.csv',filename)
 filename = '2024/defense/dfg.csv'
