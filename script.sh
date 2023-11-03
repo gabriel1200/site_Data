@@ -8,6 +8,7 @@ python player_level.py
 python record.py
 python standings.py
 python passing.py
+python scrape_shooting.py
 git add --all
 git commit -m 'Daily Update'
 git push origin main
