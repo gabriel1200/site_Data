@@ -59,7 +59,6 @@ def get_ptables(url_list,path_list):
             number_of_pages = int(driver.find_element(By.XPATH, "//a[contains(text(),'>')]/preceding-sibling::a[1]").text)
             print(number_of_pages)'''
         accept_path = '//*[@id="onetrust-accept-btn-handler"]'
-        time.sleep(3)
         if EC.presence_of_element_located((By.XPATH, accept_path)) and cookie_check == False:
             driver.find_element(By.XPATH, accept_path).click() 
             cookie_check = True
