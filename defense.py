@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[6]:
+# In[7]:
 
 
 import plotly.graph_objs as go
@@ -59,6 +59,7 @@ def get_ptables(url_list,path_list):
             number_of_pages = int(driver.find_element(By.XPATH, "//a[contains(text(),'>')]/preceding-sibling::a[1]").text)
             print(number_of_pages)'''
         accept_path = '//*[@id="onetrust-accept-btn-handler"]'
+        time.sleep(4)
         if EC.presence_of_element_located((By.XPATH, accept_path)) and cookie_check == False:
             driver.find_element(By.XPATH, accept_path).click() 
             cookie_check = True
@@ -231,7 +232,7 @@ update_master('rim_acc.csv',filename)
 
 
 
-# In[4]:
+# In[8]:
 
 
 def create_folders():
@@ -268,7 +269,7 @@ def update_masters(year,masters,ps = False):
 #temp.to_csv('dfg_p.csv',index = False)     
 
 
-# In[5]:
+# In[9]:
 
 
 '''

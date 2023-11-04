@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[12]:
+# In[25]:
 
 
 import pandas as pd
@@ -88,22 +88,34 @@ def multiyear_shooting(url_list,team_round=0,playoffs = True):
     new_df = pd.concat(df_list)
     new_df['TEAMNAME'] = new_df['TEAM']
     df = pd.read_csv('team_shooting.csv')
-    df = df[df.year <start_year]
+    df = df[df.year <=start_year]
     names = dict(zip(df.TEAMNAME,df.TEAM))
+    names['Los Angeles Clippers'] = 'LAC'
+    names['Charlotte Bobcats'] = 'CHA'
+
+    #names
     print(names)
     final_df = pd.concat([df,new_df])
     final_df.replace({'TEAM':names},inplace=True)
-    
+    final_df.loc[final_df['TEAMNAME'] =='Los Angeles Clippers', 'TEAM'] = 'LAC'
+    final_df.loc[final_df['TEAMNAME'] =='Charlotte Bobcats', 'TEAM'] = 'CHA'
+
     return final_df
 
 df = multiyear_shooting(url_list,playoffs=False)
 print(df)
 
 
-# In[13]:
+# In[27]:
 
 
 df.to_csv('team_shooting.csv',index = False)
+
+
+# In[26]:
+
+
+df.head(40)
 
 
 # In[ ]:

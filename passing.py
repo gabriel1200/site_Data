@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[31]:
 
 
 import pandas as pd
@@ -35,6 +35,8 @@ def passing_data(ps = False):
         #print(df.head)
 
         df2 = pd.read_csv(str(year)+trail+'/player_tracking/passing.csv')
+        if year ==2024:
+            print(df2.sort_values(by = 'PotentialAST').head(40))
         df2.rename(columns = {'PLAYER':'Name'}, inplace = True)
         df3 =  pd.read_csv(str(year)+trail+'/player_tracking/touches.csv')
         df3.rename(columns = {'Player':'Name'}, inplace = True)
@@ -84,7 +86,7 @@ passing = passing_data()
 #merged['testas'] = merged['TwoPtAssists']*2+ merged['ThreePtAssists']*3
 
 
-# In[2]:
+# In[27]:
 
 
 columns = ['EntityId','Name','Points','on-ball-time%','on-ball-time','UAPTS','TSA','OffPoss','Potential Assists','Travels','TsPct',
@@ -95,9 +97,10 @@ rs=passing[columns]
 #ps=passing_ps[columns]
 rs.to_csv('passing.csv',index =False)
 #ps.to_csv('../data/passing_ps.csv',index = False)
+print(rs.sort_values(by=)
 
 
-# In[19]:
+# In[24]:
 
 
 avg = pd.read_html('https://www.basketball-reference.com/leagues/NBA_stats_per_poss.html')[0]
@@ -113,19 +116,25 @@ avg['FTA'] = avg['FTA'].astype(float)
 avg.head(87)
 
 
-# In[20]:
+# In[25]:
 
 
 avg['TS%'] = avg['PTS']/(2*(avg['FGA']+.44*avg['FTA']))
 avg
 
 
-# In[21]:
+# In[26]:
 
 
 avg.to_csv('avg_shooting.csv',index = False)
 avg = avg[['Season','ORtg']]
 avg.to_csv('team_avg.csv',index = False)
+
+
+# In[ ]:
+
+
+
 
 
 # In[ ]:
