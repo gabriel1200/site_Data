@@ -97,7 +97,7 @@ rs=passing[columns]
 #ps=passing_ps[columns]
 rs.to_csv('passing.csv',index =False)
 #ps.to_csv('../data/passing_ps.csv',index = False)
-print(rs.sort_values(by=)
+#print(rs.sort_values(by=)
 
 
 # In[24]:
