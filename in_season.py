@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[13]:
 
 
 import pandas as pd
@@ -76,7 +76,7 @@ df = df.drop(columns=['Unnamed: 0'])
 df.to_csv('inseason_2024.csv',index = False)
 
 
-# In[6]:
+# In[22]:
 
 
 def get_table(year,minutes,ps = False):
@@ -101,7 +101,8 @@ def get_table(year,minutes,ps = False):
     df['G'] = df['G'].astype(int)
     
     #print(df)
-    return [ df[['Player','TS%','PTS','MP','Tm','G']],year]
+    return [ df[['Player','TS%','PTS','MP','Tm','G','FTA','FGA']],year]
+    
 def get_table2(year,minutes,ps = False):
     if ps == False:
         stype = 'leagues'
@@ -122,33 +123,40 @@ def get_table2(year,minutes,ps = False):
     df = df[df['MP'] >minutes]
     df['TS%'] *=100
     df['G'] = df['G'].astype(int)
-    
+    return [ df[['Player','TS%','PTS','MP','Tm','G']],year]
     #print(df)
-    return [ df[['Player','TS%','PTS','MP','Tm','G','FTA','FGA']],year]
+    
 year = 2024
 minutes = 0
 ps = False
 if ps == False:
     df = pd.read_csv('scoring.csv')
     df = df[df.year<year]
-    new_table,year = get_table(year,minutes,ps)
+    new_table,year = get_table2(year,minutes,ps)
+    new_table['year'] = year
     df = pd.concat([df,new_table])
+    df['year'] = df['year'].astype(int)
+    #df =df.drop(columns=['FTA','FGA'])
     df.to_csv('scoring.csv',index=False)
     print(df)
     
     df = pd.read_csv('totals.csv')
     df = df[df.year<year]
-    new_table,year = get_table2(year,minutes,ps)
+    new_table,year = get_table(year,minutes,ps)
     new_table['year'] = year
     df = pd.concat([df,new_table])
+    df['year'] = df['year'].astype(int)
+
     df.to_csv('totals.csv',index = False)
     
 elif ps == True:
     df = pd.read_csv('scoring_ps.csv')
     df = df[df.year<year]
     new_table = get_table(year,minutes,ps)
+    new_table['year'] = year
     df = pd.concat([df,new_table])
     df.to_csv('scoring_ps.csv',index=False)
+    new_table['year'] = year
     
     df = pd.read_csv('totals_ps.csv')
     df = df[df.year<year]
