@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
+# In[1]:
 
 
 import pandas as pd
@@ -76,16 +76,118 @@ df = df.drop(columns=['Unnamed: 0'])
 df.to_csv('inseason_2024.csv',index = False)
 
 
-# In[ ]:
+# In[6]:
 
 
+def get_table(year,minutes,ps = False):
+    if ps == False:
+        stype = 'leagues'
+    else:
+        stype='playoffs'
+    link_1 = 'https://www.basketball-reference.com/'+stype+'/NBA_'+str(year)+'_totals.html'
+    df = pd.read_html(link_1)[0]
+   
+    df = df[df["MP"].notna()]
+    df = df[df['MP'] != 'MP']
+    df['MP'] = df['MP'].astype(float)
+    df['PTS'] = df['PTS'].astype(float)
+    df['FTA'] = df['FTA'].astype(float)
+    df['FGA'] = df['FGA'].astype(float)
+
+    df['TS%'] = df['PTS']/(2* (df['FGA'] + .44 *df['FTA'] ))
+
+    df = df[df['MP'] >minutes]
+    df['TS%'] *=100
+    df['G'] = df['G'].astype(int)
+    
+    #print(df)
+    return [ df[['Player','TS%','PTS','MP','Tm','G']],year]
+def get_table2(year,minutes,ps = False):
+    if ps == False:
+        stype = 'leagues'
+    else:
+        stype='playoffs'
+    link_1 = 'https://www.basketball-reference.com/'+stype+'/NBA_'+str(year)+'_per_poss.html'
+    df = pd.read_html(link_1)[0]
+   
+    df = df[df["MP"].notna()]
+    df = df[df['MP'] != 'MP']
+    df['MP'] = df['MP'].astype(float)
+    df['PTS'] = df['PTS'].astype(float)
+    df['FTA'] = df['FTA'].astype(float)
+    df['FGA'] = df['FGA'].astype(float)
+
+    df['TS%'] = df['PTS']/(2* (df['FGA'] + .44 *df['FTA'] ))
+
+    df = df[df['MP'] >minutes]
+    df['TS%'] *=100
+    df['G'] = df['G'].astype(int)
+    
+    #print(df)
+    return [ df[['Player','TS%','PTS','MP','Tm','G','FTA','FGA']],year]
+year = 2024
+minutes = 0
+ps = False
+if ps == False:
+    df = pd.read_csv('scoring.csv')
+    df = df[df.year<year]
+    new_table,year = get_table(year,minutes,ps)
+    df = pd.concat([df,new_table])
+    df.to_csv('scoring.csv',index=False)
+    print(df)
+    
+    df = pd.read_csv('totals.csv')
+    df = df[df.year<year]
+    new_table,year = get_table2(year,minutes,ps)
+    new_table['year'] = year
+    df = pd.concat([df,new_table])
+    df.to_csv('totals.csv',index = False)
+    
+elif ps == True:
+    df = pd.read_csv('scoring_ps.csv')
+    df = df[df.year<year]
+    new_table = get_table(year,minutes,ps)
+    df = pd.concat([df,new_table])
+    df.to_csv('scoring_ps.csv',index=False)
+    
+    df = pd.read_csv('totals_ps.csv')
+    df = df[df.year<year]
+    new_table = get_table2(year,minutes,ps)
+    df = pd.concat([df,new_table])
+    df.to_csv('totals_ps.csv',index= False)
+df
 
 
-
-# In[ ]:
-
+# In[10]:
 
 
+start_year = 1974
+end_year = 2024
+averages = pd.read_html('https://www.basketball-reference.com/leagues/NBA_stats_per_game.html#stats', header=1)[0]
+
+#averages= averages.dropna()
+
+averages = averages[averages['Season']!='Season']
+averages = averages[averages['PTS']!='Per Game']
+
+averages['PTS'] = averages['PTS'].astype(float)
+averages['FGA'] = averages['FGA'].astype(float)
+averages['FTA'] = averages['FTA'].astype(float)
+averages['TS%'] = averages['PTS']/(2* (averages['FGA'] + .44 *averages['FTA'] ))
+averages['TS%'] = averages['PTS']/(2* (averages['FGA'] + .44 *averages['FTA'] ))
+averages = averages[['TS%','Season']]
+averages['Season'] = averages['Season'].str[:4]
+averages['Season'] = averages['Season'].astype(int)
+averages['Season']+=1
+averages = averages[averages['Season']>=start_year]
+averages = averages[averages['Season']<=end_year]
+averages = averages.iloc[::-1]
+
+
+# In[12]:
+
+
+averages.to_csv('tsavg.csv',index = False)
 
 
 # In[ ]:

@@ -23,3 +23,8 @@ cp passing.csv ../discord/data/passing.csv
 cp team_avg.csv ../discord/data/team_avg.csv
 cp avg_shooting.csv ../discord/data/avg_shooting.csv
 cp player_shooting.csv ../discord/data/player_shooting.csv
+cp totals.csv ../discord/data/totals.csv
+cp scoring.csv ../discord/data/scoring.csv
+cp tsavg.csv ../discord/data/tsavg.csv
+
+
