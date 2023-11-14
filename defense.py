@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[7]:
+# In[39]:
 
 
 import plotly.graph_objs as go
@@ -32,11 +32,11 @@ def get_index():
     player_dict = dict([(player.lower(),num) for num,player in players.items()])
   
     return player_dict,team_dict
-def update_master(master_file,new_file):
+def update_master(master_file,new_file,year):
     df = pd.read_csv(new_file)
     old = pd.read_csv(master_file)
-    old = old[old.year!=2024]
-    df['year'] = 2024
+    old = old[old.year!=year]
+    df['year'] = year
     old = pd.concat([old,df])
     old.to_csv(master_file,index = False)
 def get_ptables(url_list,path_list):
@@ -171,11 +171,11 @@ def update_log(filename,stat,ps = False):
 # At Rim Shot Frequency - Defense
 stat= "AtRimAccuracyOpponent"
 filename = '2024/defense/rim_acc.csv'
-#update_log(filename,stat)
+update_log(filename,stat)
 #filename = '2023/playoffs/defense/rim_acc_p.csv'
 
 
-update_log(filename,stat,ps = False)
+#update_log(filename,stat,ps = False)
 #update_master('rim_acc.csv',filename)
 
 stat2 ="AtRimFrequencyOpponent"
@@ -208,25 +208,25 @@ def update_dash():
     
 
 #update_master('rimfreq.csv',filename)
-
 update_dash()
+#year = 2023
+#filename = '2023/defense/rim_acc.csv'
+#update_master('rim_acc.csv',filename,year)
+#year = 2023
+#filename = '2023/defense/rimfreq.csv'
+#update_master('rimfreq.csv',filename,year)
+year =2024
 filename = '2024/defense/rimfreq.csv'
-update_master('rimfreq.csv',filename)
+update_master('rimfreq.csv',filename,year)
 filename = '2024/defense/dfg.csv'
-update_master('dfg.csv',filename)
+update_master('dfg.csv',filename,year)
 filename = '2024/defense/rimdfg.csv'
-update_master('rimdfg.csv',filename)
+update_master('rimdfg.csv',filename,year)
 filename = '2024/defense/rim_acc.csv'
-update_master('rim_acc.csv',filename)
+update_master('rim_acc.csv',filename,year)
 
 
-# In[ ]:
-
-
-
-
-
-# In[ ]:
+# In[49]:
 
 
 

@@ -17,6 +17,7 @@ git push origin main
 
 cp rimdfg.csv ../discord/data/rimdfg.csv
 cp rimfreq.csv ../discord/data/rimfreq.csv
+cp rim_acc.csv ../discord/data/rim_acc.csv
 cp dfg.csv ../discord/data/dfg.csv
 cp team_shooting.csv ../discord/data/team_shooting.csv
 cp passing.csv ../discord/data/passing.csv
