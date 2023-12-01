@@ -9,6 +9,7 @@ from selenium import webdriver
 from bs4 import BeautifulSoup
 from pathlib import Path
 import time
+from unidecode import unidecode
 
 
 from selenium.webdriver.support.ui import WebDriverWait
@@ -196,6 +197,33 @@ averages = averages.iloc[::-1]
 
 
 averages.to_csv('tsavg.csv',index = False)
+
+
+# In[38]:
+
+
+df = pd.read_csv('scoring_ps.csv')
+df['Player'] = df['Player'].apply(unidecode)
+df['Player'] = df['Player'].astype(str)
+df.to_csv('scoring_ps.csv',index = False)
+
+df = pd.read_csv('scoring.csv')
+df['Player'] = df['Player'].apply(unidecode)
+df = pd.read_csv('scoring.csv')
+df['Player'] = df['Player'].astype(str)
+df.to_csv('scoring.csv',index = False)
+
+
+# In[ ]:
+
+
+
+
+
+# In[39]:
+
+
+df[df.Player=='Nikola Jokic']
 
 
 # In[ ]:
