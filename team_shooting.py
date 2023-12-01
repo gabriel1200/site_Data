@@ -112,10 +112,56 @@ print(df)
 df.to_csv('team_shooting.csv',index = False)
 
 
-# In[26]:
+# In[5]:
 
 
-df.head(40)
+#import pandas as pd
+shots = ['wide_open','open','tight','very_tight']
+frames = []
+for year in range(2014,2025):
+    path = str(year)+'/opp_shooting/'
+    for shot in shots:
+        filepath = path+shot+'.csv'
+        df = pd.read_csv(filepath)
+        df['shot_coverage'] = shot
+        df['year'] = year
+        frames.append(df)
+opp_master = pd.concat(frames)
+opp_master.to_csv('opp_team_shooting.csv',index=False)
+frames = []
+for year in range(2014,2024):
+    path = str(year)+'/playoffs/opp_shooting/'
+    for shot in shots:
+        filepath = path+shot+'.csv'
+        df = pd.read_csv(filepath)
+        df['shot_coverage'] = shot
+        df['year'] = year
+        frames.append(df)
+opp_master = pd.concat(frames)
+opp_master.to_csv('opp_team_shooting_ps.csv',index=False)
+#opp_master
+
+
+# In[16]:
+
+
+old_df = pd.read_csv('team_shooting.csv')
+name_dict = dict(zip(old_df.TEAMNAME,old_df.TEAM))
+temp = pd.read_csv('opp_team_shooting.csv')
+temp['TEAMNAME'] = temp['TEAM']
+temp['TEAM'] = temp['TEAMNAME'].map(name_dict)
+temp.to_csv('opp_team_shooting.csv',index = False)
+temp = pd.read_csv('opp_team_shooting_ps.csv')
+temp['TEAMNAME'] = temp['TEAM']
+temp['TEAM'] = temp['TEAMNAME'].map(name_dict)
+temp.to_csv('opp_team_shooting_ps.csv',index = False)
+temp
+
+
+# In[18]:
+
+
+temp.TEAM.unique()
 
 
 # In[ ]:

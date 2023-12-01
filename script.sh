@@ -20,6 +20,8 @@ cp rimfreq.csv ../discord/data/rimfreq.csv
 cp rim_acc.csv ../discord/data/rim_acc.csv
 cp dfg.csv ../discord/data/dfg.csv
 cp team_shooting.csv ../discord/data/team_shooting.csv
+cp opp_team_shooting.csv ../discord/data/opp_team_shooting.csv
+
 cp passing.csv ../discord/data/passing.csv
 cp team_avg.csv ../discord/data/team_avg.csv
 cp avg_shooting.csv ../discord/data/avg_shooting.csv
