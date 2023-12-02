@@ -199,30 +199,44 @@ averages = averages.iloc[::-1]
 averages.to_csv('tsavg.csv',index = False)
 
 
-# In[38]:
+# In[42]:
 
 
 df = pd.read_csv('scoring_ps.csv')
 df['Player'] = df['Player'].apply(unidecode)
 df['Player'] = df['Player'].astype(str)
-df.to_csv('scoring_ps.csv',index = False)
+df.to_csv('scoring_ps.csv',index = False,encoding='utf-8')
 
 df = pd.read_csv('scoring.csv')
 df['Player'] = df['Player'].apply(unidecode)
-df = pd.read_csv('scoring.csv')
 df['Player'] = df['Player'].astype(str)
-df.to_csv('scoring.csv',index = False)
+df.to_csv('scoring.csv',index = False,encoding='utf-8')
 
 
-# In[ ]:
+# In[46]:
 
 
+df = pd.read_csv('totals_ps.csv')
+df['Player'] = df['Player'].apply(unidecode)
+df['Player'] = df['Player'].astype(str)
+df.to_csv('totals_ps.csv',index = False,encoding='utf-8')
 
+df = pd.read_csv('totals.csv')
+df['Player'] = df['Player'].apply(unidecode)
+df['Player'] = df['Player'].astype(str)
+df.to_csv('totals.csv',index = False,encoding='utf-8')
 
 
 # In[39]:
 
 
+
+
+
+# In[45]:
+
+
+df = pd.read_csv('scoring.csv')
 df[df.Player=='Nikola Jokic']
 
 
