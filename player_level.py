@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[35]:
+# In[2]:
 
 
 import pandas as pd
@@ -29,7 +29,7 @@ url5 = 'https://www.nba.com/stats/players/transition?PerMode=Totals&dir=D&sort=P
 
 
 
-# In[36]:
+# In[ ]:
 
 
 #url_list = [cs,pullup]
@@ -40,23 +40,41 @@ def check_exists_by_xpath(driver, xpath):
     except NoSuchElementException:
         return False
     return True
-def save_tables(tables,year, playoffs= False):
+def save_tables(folder_choice,tables,year,name_list, playoffs= False):
     if playoffs == True:
-        path = str(year)+'/playoffs/player_tracking/'
+        path = str(year)+'/playoffs/'+'/'+folder_choice+'/'
     else:
-        path = str(year)+'/player_tracking/'
-    temp = tables[1]
-    temp.columns = temp.columns.droplevel() 
-    #temp = temp.drop(columns = ['Unnamed: 18_level_1','Unnamed: 19_level_1','Unnamed: 20_level_1', 'Unnamed: 21_level_1','Unnamed: 22_level_1'])
-    #temp
-    temp = temp.drop(columns = ['Unnamed: 18_level_1','Unnamed: 19_level_1','Unnamed: 20_level_1', 'Unnamed: 21_level_1','Unnamed: 22_level_1'])
-    tables[1] = temp
+        path = str(year)+'/'+folder_choice+'/'
+    if len(tables)>1:
+        table = tables[1]
+        #print(table)
+        temp = table
+        temp.columns = temp.columns.droplevel() 
+        #temp = temp.drop(columns = ['Unnamed: 18_level_1','Unnamed: 19_level_1','Unnamed: 20_level_1', 'Unnamed: 21_level_1','Unnamed: 22_level_1'])
+        #temp
+        temp = temp.drop(columns = ['Unnamed: 18_level_1','Unnamed: 19_level_1','Unnamed: 20_level_1', 'Unnamed: 21_level_1','Unnamed: 22_level_1'])
+        table = temp
 
-    tables[1] = temp
-    #print(tables)
-    for i in range(len(name_list)):
-        #tables[i].to_csv('player_tracking/'+name_list[i]+'.csv',index = False)
-        tables[i].to_csv(path+name_list[i]+'.csv',index = False)
+        tables[1] = temp
+        #print(tables)
+        for i in range(len(name_list)):
+            #tables[i].to_csv('player_tracking/'+name_list[i]+'.csv',index = False)
+            tables[i].to_csv(path+name_list[i]+'.csv',index = False)
+    else:
+        table = tables[0]
+        #print(table)
+        temp = table
+        #temp.columns = temp.columns.droplevel() 
+        #temp = temp.drop(columns = ['Unnamed: 18_level_1','Unnamed: 19_level_1','Unnamed: 20_level_1', 'Unnamed: 21_level_1','Unnamed: 22_level_1'])
+        #temp
+        #temp = temp.drop(columns = ['Unnamed: 18_level_1','Unnamed: 19_level_1','Unnamed: 20_level_1', 'Unnamed: 21_level_1','Unnamed: 22_level_1'])
+        #table = temp
+
+        #tables[0] = temp
+        #print(tables)
+        for i in range(len(name_list)):
+            #tables[i].to_csv('player_tracking/'+name_list[i]+'.csv',index = False)
+            tables[i].to_csv(path+name_list[i]+'.csv',index = False)
 
 def get_ptables(url_list,path_list):
     data = []
@@ -107,22 +125,23 @@ def get_ptables(url_list,path_list):
     return data
 
 
-# In[37]:
+# In[ ]:
 
 
-def get_multi(url_list,path_list,ps =False):
-    for i in range(2023,2024):
+def get_multi(url_list,path_list,name_list,folder_choice,ps =False,start_year = 2016,end_year=2024):
+    for i in range(start_year,end_year):
         
         season = '&Season='+str(i)+'-'+str(i+1 - 2000)
         year_url = [url+season for url in url_list]
         tables = get_ptables(year_url,path_list)
         year =i+1
-        save_tables(tables,year,playoffs = ps)
+        
+        save_tables(folder_choice,tables,year,name_list,playoffs = ps)
        
         
 
 
-# In[38]:
+# In[ ]:
 
 
 cs ='https://www.nba.com/stats/players/catch-shoot?PerMode=Totals'
@@ -144,30 +163,62 @@ url_list = [drives,wide_open,close,touches,cs,pullup,passing,paint,elbow,oreb,dr
 #url_list =[url +'&SeasonType=Playoffs' for url in url_list]
 #url_list =[url +'&SeasonType=Regular+Season'for url in url_list]
 
-name_list = ['drives','wide_open','close_6','touches','cs','pullup','passing',\
-            'paint','elbow','oreb','dreb','shoot_ef','post_up']
+
 xpath = '//*[@id="__next"]/div[2]/div[2]/div[3]/section[2]/div/div[2]/div[2]/div[1]/div[3]/div/label/div/select'
 #xpath2 = '//*[@id="__next"]/div[2]/div[2]/div[3]/section[2]/div/div[2]/div[2]/div[1]/div[3]/div/label/div/select'
 path_list = [xpath for i in range(len(url_list))]
+
+hurl_list= ['https://www.nba.com/stats/players/hustle?PerMode=Totals']
+h_paths = [xpath for i in range(len(hurl_list))]
+
 ps = True
-
-
-# In[39]:
-
-
-url_list
-
-
-# In[40]:
-
-
-get_multi(url_list,path_list,ps = False)
 
 
 # In[ ]:
 
 
+#get_multi(url_list,path_list,name_list,folder_choice,ps = False,start_year=2023)
+folder_choice = 'hustle'
+name_list = ['hustle']
+hurl_list =[url +'&SeasonType=Playoffs' for url in hurl_list]
+get_multi(hurl_list,h_paths,name_list,folder_choice,ps = False,start_year=2023)
 
+#get_multi(hurl_list,h_paths,name_list,folder_choice,ps = True,start_year=2018,end_year=2024)
+
+
+# In[ ]:
+
+
+folder_choice = 'player_tracking'
+name_list = ['drives','wide_open','close_6','touches','cs','pullup','passing',\
+            'paint','elbow','oreb','dreb','shoot_ef','post_up']
+get_multi(url_list,path_list,name_list,folder_choice,ps = False,start_year=2023)
+
+
+# In[6]:
+
+
+frames_normal= []
+for i in range(2017,2025):
+    path = str(i) + '/hustle/hustle.csv'
+    df = pd.read_csv(path)
+    df['year'] = i
+    frames_normal.append(df)
+master= pd.concat(frames_normal)
+
+
+
+
+frames_ps= []
+for i in range(2017,2024):
+    path = str(i) + '/playoffs/hustle/hustle.csv'
+    df = pd.read_csv(path)
+    df['year'] = i
+    frames_ps.append(df)
+master_ps= pd.concat(frames_ps)
+master.to_csv('hustle.csv',index = False)
+
+master_ps.to_csv('hustle_ps.csv', index = False)
 
 
 # In[ ]:

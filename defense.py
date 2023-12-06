@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[39]:
+# In[ ]:
 
 
 import plotly.graph_objs as go
@@ -21,6 +21,11 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import ElementNotInteractableException 
+
+
+# In[49]:
+
+
 def get_index():
     teams_response = requests.get("https://api.pbpstats.com/get-teams/nba")
     teams = teams_response.json()
@@ -226,24 +231,19 @@ filename = '2024/defense/rim_acc.csv'
 update_master('rim_acc.csv',filename,year)
 
 
-# In[49]:
-
-
-
-
-
 # In[8]:
 
 
-def create_folders():
+def create_folders(new_folder):
     for year in range(2014,2024):
-        path = str(year) +'/defense/'
+        path = str(year) +'/'+new_folder+'/'
         output_dir = Path(path)
         output_dir.mkdir(parents=True, exist_ok=True)
-        path = str(year) +'/playoffs'+'/defense/'
+        path = str(year) +'/playoffs'+'/'+new_folder+'/'
         output_dir = Path(path)
         output_dir.mkdir(parents=True, exist_ok=True)
-# create_folders()
+
+create_folders('hustle')
 masters =['rimfreq','rim_acc','dfg']
 #temp = pd.read_csv('dfg_p.csv')
 #temp = temp.rename(columns = {'year':'Year'})
