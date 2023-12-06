@@ -177,6 +177,15 @@ ps = True
 # In[ ]:
 
 
+folder_choice = 'player_tracking'
+name_list = ['drives','wide_open','close_6','touches','cs','pullup','passing',\
+            'paint','elbow','oreb','dreb','shoot_ef','post_up']
+get_multi(url_list,path_list,name_list,folder_choice,ps = False,start_year=2023)
+
+
+# In[ ]:
+
+
 #get_multi(url_list,path_list,name_list,folder_choice,ps = False,start_year=2023)
 folder_choice = 'hustle'
 name_list = ['hustle']
@@ -189,10 +198,7 @@ get_multi(hurl_list,h_paths,name_list,folder_choice,ps = False,start_year=2023)
 # In[ ]:
 
 
-folder_choice = 'player_tracking'
-name_list = ['drives','wide_open','close_6','touches','cs','pullup','passing',\
-            'paint','elbow','oreb','dreb','shoot_ef','post_up']
-get_multi(url_list,path_list,name_list,folder_choice,ps = False,start_year=2023)
+
 
 
 # In[6]:
