@@ -190,7 +190,7 @@ get_multi(url_list,path_list,name_list,folder_choice,ps = False,start_year=2023)
 folder_choice = 'hustle'
 name_list = ['hustle']
 hurl_list =[url +'&SeasonType=Playoffs' for url in hurl_list]
-get_multi(hurl_list,h_paths,name_list,folder_choice,ps = False,start_year=2023)
+#get_multi(hurl_list,h_paths,name_list,folder_choice,ps = False,start_year=2023)
 
 #get_multi(hurl_list,h_paths,name_list,folder_choice,ps = True,start_year=2018,end_year=2024)
 
