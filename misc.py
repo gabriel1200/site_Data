@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[8]:
+# In[9]:
 
 
 import pandas as pd
@@ -132,7 +132,7 @@ years = [2023]
 get_playtypes(years)
 
 
-# In[2]:
+# In[10]:
 
 
 #url_list = [url1]#
@@ -163,13 +163,13 @@ def get_multi(url_list,playoffs = False):
             df.to_csv(terms[i],index = False)
 
 
-# In[3]:
+# In[11]:
 
 
 #get_multi(url_list,playoffs = False)
 
 
-# In[4]:
+# In[12]:
 
 
 #terms = ['data/teampullup.csv','data/teamcatchshoot.csv','data/teamundersix.csv','data/teamiso.csv','data/teamtransition.csv']
@@ -178,14 +178,14 @@ terms = ['playtype/handoff.csv','playtype/iso.csv','playtype/trans.csv','playtyp
          'playtype/cut.csv','playtype/offscreen.csv','playtype/putback.csv','playtype/misc.csv','playtype/drives.csv']
 
 
-# In[5]:
+# In[13]:
 
 
 #df = pd.read_csv('2024/playtype/spotup.csv')
 #df
 
 
-# In[6]:
+# In[14]:
 
 
 def add_synergy():
