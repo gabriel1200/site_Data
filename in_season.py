@@ -77,7 +77,7 @@ df = df.drop(columns=['Unnamed: 0'])
 df.to_csv('inseason_2024.csv',index = False)
 
 
-# In[22]:
+# In[2]:
 
 
 def get_table(year,minutes,ps = False):
@@ -167,7 +167,7 @@ elif ps == True:
 df
 
 
-# In[10]:
+# In[3]:
 
 
 start_year = 1974
@@ -193,13 +193,13 @@ averages = averages[averages['Season']<=end_year]
 averages = averages.iloc[::-1]
 
 
-# In[12]:
+# In[4]:
 
 
 averages.to_csv('tsavg.csv',index = False)
 
 
-# In[42]:
+# In[5]:
 
 
 df = pd.read_csv('scoring_ps.csv')
@@ -213,7 +213,7 @@ df['Player'] = df['Player'].astype(str)
 df.to_csv('scoring.csv',index = False,encoding='utf-8')
 
 
-# In[46]:
+# In[6]:
 
 
 df = pd.read_csv('totals_ps.csv')

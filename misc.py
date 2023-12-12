@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[16]:
+# In[ ]:
 
 
 import pandas as pd
@@ -82,7 +82,7 @@ def get_tables(url_list):
     return data
 
 
-# In[17]:
+# In[ ]:
 
 
 #url_list = [url1]#
@@ -113,7 +113,7 @@ def get_multi(url_list,playoffs = False):
             df.to_csv(terms[i],index = False)
 
 
-# In[18]:
+# In[ ]:
 
 
 get_multi(url_list,playoffs = False)
@@ -128,7 +128,7 @@ terms = ['playtype/handoff.csv','playtype/iso.csv','playtype/trans.csv','playtyp
          'playtype/cut.csv','playtype/offscreen.csv','playtype/putback.csv','playtype/misc.csv','playtype/drives.csv']
 
 
-# In[14]:
+# In[ ]:
 
 
 def add_synergy():
@@ -143,6 +143,35 @@ def add_synergy():
         year_df = df[df.year == i]
         print(year_df.head())
         year_df.to_csv(path+'playtype.csv')
+
+
+# In[24]:
+
+
+import requests
+ssn = '2023-24'
+headers = {
+    "Host": "stats.nba.com",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0",
+    "Accept": "application/json, text/plain, */*",
+    "Accept-Language": "en-US,en;q=0.5",
+    "Accept-Encoding": "gzip, deflate, br",
+
+    "Connection": "keep-alive",
+    "Referer": "https://stats.nba.com/"
+}
+playtypes = ['PRBallHandler','Spotup','Isolation','PRRollMan','OffScreen','HandOff','Transition','PostUp','Misc','OffRebound','Cut']
+playtype = 'Cut'
+url = (
+        "https://stats.nba.com/stats/synergyplaytypes?LeagueID=00&PerMode=Totals&PlayType="+playtype+"&PlayerOrTeam=T&SeasonType=Regular+Season&SeasonYear="
+        + str(ssn)
+        + "&TypeGrouping=offensive"
+    )
+json = requests.get(url,headers = headers).json()
+data = json["resultSets"][0]["rowSet"]
+columns = json["resultSets"][0]["headers"]
+
+    df8 = pd.DataFrame.from_records(data, columns=columns)
 
 
 # In[ ]:
