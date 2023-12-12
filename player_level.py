@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[2]:
+# In[1]:
 
 
 import pandas as pd
@@ -9,7 +9,7 @@ from selenium import webdriver
 from bs4 import BeautifulSoup
 from pathlib import Path
 import time
-
+import requests
 
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -27,6 +27,33 @@ url4 = 'https://www.nba.com/stats/teams/isolation?PerMode=Totals'
 url5 = 'https://www.nba.com/stats/players/transition?PerMode=Totals&dir=D&sort=POSS'
 '''
 
+
+
+# In[6]:
+
+
+headers = {
+                    "Host": "stats.nba.com",
+                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0",
+                    "Accept": "application/json, text/plain, */*",
+                    "Accept-Language": "en-US,en;q=0.5",
+                    "Accept-Encoding": "gzip, deflate, br",
+
+                    "Connection": "keep-alive",
+                    "Referer": "https://stats.nba.com/"
+                }
+url = 'https://stats.nba.com/stats/leaguedashptstats?College=&Conference=&Country=&DateFrom=&DateTo=&Division=&DraftPick=&DraftYear=&GameScope=&Height=&ISTRound=&LastNGames=0&LeagueID=00&Location=&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PerMode=Totals&PlayerExperience=&PlayerOrTeam=Player&PlayerPosition=&PtMeasureType=Passing&Season=2023-24&SeasonSegment=&SeasonType=Regular%20Season&StarterBench=&TeamID=0&VsConference=&VsDivision=&Weight='
+json = requests.get(url,headers = headers).json()
+data = json["resultSets"][0]["rowSet"]
+columns = json["resultSets"][0]["headers"]
+df = pd.DataFrame.from_records(data, columns=columns)
+df
+
+
+# In[5]:
+
+
+df['FT_AST'].max()
 
 
 # In[ ]:

@@ -1,20 +1,21 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
+# In[8]:
 
 
 import pandas as pd
 from selenium import webdriver
 from bs4 import BeautifulSoup
 from pathlib import Path
-
+import requests
+'''
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import ElementNotInteractableException 
-
+'''
 # Step 1: Create a session and load the page
 '''
 url1 = 'https://www.nba.com/stats/players/pullup?PerMode=Totals'
@@ -80,9 +81,58 @@ def get_tables(url_list):
         data.append(df)
     driver.close()
     return data
+def get_playtypes(years):
+    headers = {
+        "Host": "stats.nba.com",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0",
+        "Accept": "application/json, text/plain, */*",
+        "Accept-Language": "en-US,en;q=0.5",
+        "Accept-Encoding": "gzip, deflate, br",
+
+        "Connection": "keep-alive",
+        "Referer": "https://stats.nba.com/"
+    }
+    playtypes = ['PRBallHandler','Spotup','Isolation','PRRollMan','OffScreen','HandOff','Transition','PostUp','Misc','OffRebound','Cut']
+    terms = ['bh.csv','spotup.csv','iso.csv','rollman.csv','offscreen.csv','handoff.csv','trans.csv','postup.csv','misc.csv','putback.csv','cut.csv',]
+
+    for year in years:
+        ssn = str(year)+'-'+str(year+1 - 2000)
+        i = 0
+        for play in playtypes:
+            half1 = "https://stats.nba.com/stats/synergyplaytypes?LeagueID=00&PerMode=Totals&PlayType="+play+"&PlayerOrTeam=T&SeasonType=Regular+Season&SeasonYear="
+            half2 = "&TypeGrouping=offensive"
+            term = terms[i]
+            url = (
+                        
+                        half1+ str(ssn)+half2
+                        
+                    )
+            json = requests.get(url,headers = headers).json()
+            data = json["resultSets"][0]["rowSet"]
+            columns = json["resultSets"][0]["headers"]
+
+            df2 = pd.DataFrame.from_records(data, columns=columns)
+                #df2.columns
+            df2 = df2.rename(columns={'TEAM_NAME':'TEAM','POSS_PCT':'FREQ%','EFG_PCT':'EFG%','FG_PCT':'FG%',
+                                          'TOV_POSS_PCT':'TOVFREQ%','PLUSONE_POSS_PCT':'AND ONEFREQ%','FT_POSS_PCT':'FTFREQ%','SCORE_POSS_PCT':'SCOREFREQ%','SF_POSS_PCT':'SFFREQ%'})
+            for col in df2.columns:
+                if '%' in col or 'PERC' in col:
+                    df2[col]*=100
+            #print(df2)
+            path = str(year+1)+'/playtype/'+term
+            print(path)
+            df2 = df2.round(1)
+            df2 = df2[['TEAM', 'GP', 'POSS', 'FREQ%', 'PPP', 'PTS', 'FGM', 'FGA', 'FG%',
+       'EFG%', 'FTFREQ%', 'TOVFREQ%', 'SFFREQ%', 'AND ONEFREQ%', 'SCOREFREQ%',
+       'PERCENTILE']]
+            df2.to_csv(path,index = False)
+            i+=1
+                
+years = [2023]
+get_playtypes(years)
 
 
-# In[ ]:
+# In[2]:
 
 
 #url_list = [url1]#
@@ -113,13 +163,13 @@ def get_multi(url_list,playoffs = False):
             df.to_csv(terms[i],index = False)
 
 
-# In[ ]:
+# In[3]:
 
 
-get_multi(url_list,playoffs = False)
+#get_multi(url_list,playoffs = False)
 
 
-# In[ ]:
+# In[4]:
 
 
 #terms = ['data/teampullup.csv','data/teamcatchshoot.csv','data/teamundersix.csv','data/teamiso.csv','data/teamtransition.csv']
@@ -128,7 +178,14 @@ terms = ['playtype/handoff.csv','playtype/iso.csv','playtype/trans.csv','playtyp
          'playtype/cut.csv','playtype/offscreen.csv','playtype/putback.csv','playtype/misc.csv','playtype/drives.csv']
 
 
-# In[ ]:
+# In[5]:
+
+
+#df = pd.read_csv('2024/playtype/spotup.csv')
+#df
+
+
+# In[6]:
 
 
 def add_synergy():
@@ -143,35 +200,6 @@ def add_synergy():
         year_df = df[df.year == i]
         print(year_df.head())
         year_df.to_csv(path+'playtype.csv')
-
-
-# In[24]:
-
-
-import requests
-ssn = '2023-24'
-headers = {
-    "Host": "stats.nba.com",
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0",
-    "Accept": "application/json, text/plain, */*",
-    "Accept-Language": "en-US,en;q=0.5",
-    "Accept-Encoding": "gzip, deflate, br",
-
-    "Connection": "keep-alive",
-    "Referer": "https://stats.nba.com/"
-}
-playtypes = ['PRBallHandler','Spotup','Isolation','PRRollMan','OffScreen','HandOff','Transition','PostUp','Misc','OffRebound','Cut']
-playtype = 'Cut'
-url = (
-        "https://stats.nba.com/stats/synergyplaytypes?LeagueID=00&PerMode=Totals&PlayType="+playtype+"&PlayerOrTeam=T&SeasonType=Regular+Season&SeasonYear="
-        + str(ssn)
-        + "&TypeGrouping=offensive"
-    )
-json = requests.get(url,headers = headers).json()
-data = json["resultSets"][0]["rowSet"]
-columns = json["resultSets"][0]["headers"]
-
-    df8 = pd.DataFrame.from_records(data, columns=columns)
 
 
 # In[ ]:
