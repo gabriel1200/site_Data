@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[5]:
 
 
 import pandas as pd
@@ -127,7 +127,7 @@ def get_playershots(years):
         for shot in shots:
             season = str(year)+'-'+str(year+1 - 2000)
             part1 = "https://stats.nba.com/stats/leaguedashplayerptshot?CloseDefDistRange="
-            part2 = "&College=&Conference=&Country=&DateFrom=&DateTo=&Division=&DraftPick=&DraftYear=&DribbleRange=&GameScope=&GameSegment=&GeneralRange=&Height=&LastNGames=0&LeagueID=00&Location=&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PerMode=PerGame&Period=0&PlayerExperience=&PlayerPosition=&Season="
+            part2 = "&College=&Conference=&Country=&DateFrom=&DateTo=&Division=&DraftPick=&DraftYear=&DribbleRange=&GameScope=&GameSegment=&GeneralRange=&Height=&LastNGames=0&LeagueID=00&Location=&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PerMode=Totals&Period=0&PlayerExperience=&PlayerPosition=&Season="
 
             part3 = "&SeasonSegment=&SeasonType=Regular%20Season&ShotClockRange=&ShotDistRange=&StarterBench=&TeamID=0&TouchTimeRange=&VsConference=&VsDivision=&Weight="
             url = part1+shot+part2+season+part3
@@ -172,7 +172,7 @@ def get_playershots(years):
 get_playershots([2023])
 
 
-# In[2]:
+# In[6]:
 
 
 def master_shooting(playoffs = False):
@@ -196,16 +196,10 @@ master= master_shooting()
 master.to_csv('player_shooting.csv',index = False)
 
 
-# In[ ]:
+# In[17]:
 
 
 
-
-
-# In[3]:
-
-
-master
 
 
 # In[ ]:

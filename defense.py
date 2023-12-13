@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
+# In[2]:
 
 
 import plotly.graph_objs as go
@@ -15,17 +15,34 @@ from bs4 import BeautifulSoup
 from pathlib import Path
 import requests
 import time
-
+'''
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import ElementNotInteractableException 
+'''
 
 
-# In[49]:
+# In[22]:
 
 
+def pull_data(url):
+    headers = {
+                                    "Host": "stats.nba.com",
+                                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0",
+                                    "Accept": "application/json, text/plain, */*",
+                                    "Accept-Language": "en-US,en;q=0.5",
+                                    "Accept-Encoding": "gzip, deflate, br",
+
+                                    "Connection": "keep-alive",
+                                    "Referer": "https://stats.nba.com/"
+                                }
+    json = requests.get(url,headers = headers).json()
+    data = json["resultSets"][0]["rowSet"]
+    columns = json["resultSets"][0]["headers"]
+    df = pd.DataFrame.from_records(data, columns=columns)
+    return df
 def get_index():
     teams_response = requests.get("https://api.pbpstats.com/get-teams/nba")
     teams = teams_response.json()
@@ -128,6 +145,14 @@ def get_defense(url,year,ps = False):
     df = frames[0]
     df['year'] = year
     return df
+def prep_dfg(dfg):
+    dfg = dfg.drop(columns = ['CLOSE_DEF_PERSON_ID','PLAYER_LAST_TEAM_ID'])
+    dfg.columns = ['PLAYER', 'TEAM', 'AGE', 'POSITION', 'GP', 'G', 'FREQ%', 'DFGM', 'DFGA',
+       'DFG%', 'FG%', 'DIFF%']
+    for col in dfg:
+        if '%' in col:
+            dfg[col]*=100
+    return dfg
 def wowy_statlog(stat,start_year,ps =False):
     if ps == False:
         s_type = 'Regular Season'
@@ -193,20 +218,28 @@ filename = '2024/defense/rimfreq.csv'
 update_log(filename,stat2,ps = False)
 
 def update_dash():
-    url = 'https://www.nba.com/stats/players/defense-dash-overall?PerMode=Totals'
-    df = get_defense(url,2023,ps=False)
+    
+    url="https://stats.nba.com/stats/leaguedashptdefend?College=&Conference=&Country=&DateFrom=&DateTo=&DefenseCategory=Overall&Division=&DraftPick=&DraftYear=&GameSegment=&Height=&ISTRound=&LastNGames=0&LeagueID=00&Location=&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PerMode=Totals&Period=0&PlayerExperience=&PlayerPosition=&Season=2023-24&SeasonSegment=&SeasonType=Regular%20Season&StarterBench=&TeamID=0&VsConference=&VsDivision=&Weight="
+
+    df = pull_data(url)
+    df = prep_dfg(df)
     old = pd.read_csv('dfg.csv')
     old = old[old.year!=2023]
     df['year'] = 2024
+    df = df.round(2)
     old = pd.concat([old,df])
     old.to_csv('dfg.csv',index = False)
+    
     df.to_csv('2024/defense/dfg.csv',index = False)
     
-    url = 'https://www.nba.com/stats/players/defense-dash-lt6?PerMode=Totals'
-    df = get_defense(url,2023,ps=False)
+    url = "https://stats.nba.com/stats/leaguedashptdefend?College=&Conference=&Country=&DateFrom=&DateTo=&DefenseCategory=Less%20Than%206Ft&Division=&DraftPick=&DraftYear=&GameSegment=&Height=&LastNGames=0&LeagueID=00&Location=&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PerMode=Totals&Period=0&PlayerExperience=&PlayerPosition=&Season=2023-24&SeasonSegment=&SeasonType=Regular%20Season&StarterBench=&TeamID=0&VsConference=&VsDivision=&Weight="
+    
+    df = pull_data(url)
+    df = prep_dfg(df)
     old = pd.read_csv('rimdfg.csv')
     old = old[old.year!=2024]
     df['year'] = 2024
+    df = df.round(2)
     old = pd.concat([old,df])
     old.to_csv('rimdfg.csv',index = False)
     df.to_csv('2024/defense/rimdfg.csv',index = False)
@@ -283,16 +316,4 @@ for year in range(2014,2024):
     print(year_df)
     year_df.to_csv(path+'dfg.csv',index = False)
 '''  
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
 
