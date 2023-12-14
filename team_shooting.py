@@ -179,105 +179,11 @@ def get_teamshots(years):
 get_teamshots([2023])
 
 
-# In[3]:
-
-
-#import pandas as pd
-shots = ['wide_open','open','tight','very_tight']
-frames = []
-for year in range(2014,2025):
-    path = str(year)+'/opp_shooting/'
-    for shot in shots:
-        filepath = path+shot+'.csv'
-        df = pd.read_csv(filepath)
-        df['shot_coverage'] = shot
-        df['year'] = year
-        frames.append(df)
-opp_master = pd.concat(frames)
-opp_master.to_csv('opp_team_shooting.csv',index=False)
-frames = []
-for year in range(2014,2024):
-    path = str(year)+'/playoffs/opp_shooting/'
-    for shot in shots:
-        filepath = path+shot+'.csv'
-        df = pd.read_csv(filepath)
-        df['shot_coverage'] = shot
-        df['year'] = year
-        frames.append(df)
-opp_master = pd.concat(frames)
-opp_master.to_csv('opp_team_shooting_ps.csv',index=False)
-#opp_master
-
-
-# In[4]:
-
-
-'''
-old_df = pd.read_csv('team_shooting.csv')
-temp = pd.read_csv('opp_team_shooting.csv')
-temp['TEAMNAME'] = temp['TEAM']
-temp['TEAM'] = temp['TEAMNAME'].map(name_dict)
-temp.to_csv('opp_team_shooting.csv',index = False)
-temp = pd.read_csv('opp_team_shooting_ps.csv')
-temp['TEAMNAME'] = temp['TEAM']
-temp['TEAM'] = temp['TEAMNAME'].map(name_dict)
-temp.to_csv('opp_team_shooting_ps.csv',index = False)
-temp
-'''
-
-
 # In[2]:
 
 
-shots = ['wide_open','open','tight','very_tight']
-
-frames = []
-for year in range(2014,2025):
-    path = str(year)+'/team_shooting/'
-    for shot in shots:
-        filepath = path+shot+'.csv'
-        df = pd.read_csv(filepath)
-        df['shot_coverage'] = shot
-        df['year'] = year
-        frames.append(df)
-master = pd.concat(frames)
-master.to_csv('team_shooting.csv',index=False)
-
-
-# In[17]:
-
-
-name_dict = {'SAS': 'San Antonio Spurs',
- 'MIA': 'Miami Heat',
- 'IND': 'Indiana Pacers',
- 'OKC': 'Oklahoma City Thunder',
- 'BKN': 'Brooklyn Nets',
- 'POR': 'Portland Trail Blazers',
- 'WAS': 'Washington Wizards',
- 'ATL': 'Atlanta Hawks',
- 'GSW': 'Golden State Warriors',
- 'DAL': 'Dallas Mavericks',
- 'MEM': 'Memphis Grizzlies',
- 'HOU': 'Houston Rockets',
- 'TOR': 'Toronto Raptors',
- 'CHI': 'Chicago Bulls',
- 'CLE': 'Cleveland Cavaliers',
- 'MIL': 'Milwaukee Bucks',
- 'NOP': 'New Orleans Pelicans',
- 'BOS': 'Boston Celtics',
- 'CHA': 'Charlotte Hornets',
- 'LAC': 'Los Angeles Clippers',
- 'DET': 'Detroit Pistons',
- 'UTA': 'Utah Jazz',
- 'PHI': 'Philadelphia 76ers',
- 'MIN': 'Minnesota Timberwolves',
- 'DEN': 'Denver Nuggets',
- 'ORL': 'Orlando Magic',
- 'LAL': 'Los Angeles Lakers',
- 'PHX': 'Phoenix Suns',
- 'NYK': 'New York Knicks',
- 'SAC': 'Sacramento Kings'}
-{'San Antonio Spurs': 'SAS',
+#import pandas as pd
+acr_dict = {'San Antonio Spurs': 'SAS',
  'Miami Heat': 'MIA',
  'Indiana Pacers': 'IND',
  'Oklahoma City Thunder': 'OKC',
@@ -309,9 +215,116 @@ name_dict = {'SAS': 'San Antonio Spurs',
  'Phoenix Suns': 'PHX',
  'New York Knicks': 'NYK',
  'Sacramento Kings': 'SAC'}
-df = pd.read_csv('team_shooting.csv')
-old = df[df.year<=2022]
-new = df[df.year>2022]
+name_dict = {'SAS': 'San Antonio Spurs',
+ 'MIA': 'Miami Heat',
+ 'IND': 'Indiana Pacers',
+ 'OKC': 'Oklahoma City Thunder',
+ 'BKN': 'Brooklyn Nets',
+ 'POR': 'Portland Trail Blazers',
+ 'WAS': 'Washington Wizards',
+ 'ATL': 'Atlanta Hawks',
+ 'GSW': 'Golden State Warriors',
+ 'DAL': 'Dallas Mavericks',
+ 'MEM': 'Memphis Grizzlies',
+ 'HOU': 'Houston Rockets',
+ 'TOR': 'Toronto Raptors',
+ 'CHI': 'Chicago Bulls',
+ 'CLE': 'Cleveland Cavaliers',
+ 'MIL': 'Milwaukee Bucks',
+ 'NOP': 'New Orleans Pelicans',
+ 'BOS': 'Boston Celtics',
+ 'CHA': 'Charlotte Hornets',
+ 'LAC': 'Los Angeles Clippers',
+ 'DET': 'Detroit Pistons',
+ 'UTA': 'Utah Jazz',
+ 'PHI': 'Philadelphia 76ers',
+ 'MIN': 'Minnesota Timberwolves',
+ 'DEN': 'Denver Nuggets',
+ 'ORL': 'Orlando Magic',
+ 'LAL': 'Los Angeles Lakers',
+ 'PHX': 'Phoenix Suns',
+ 'NYK': 'New York Knicks',
+ 'SAC': 'Sacramento Kings'}
+
+shots = ['wide_open','open','tight','very_tight']
+frames = []
+for year in range(2014,2025):
+    path = str(year)+'/opp_shooting/'
+    for shot in shots:
+        filepath = path+shot+'.csv'
+        df = pd.read_csv(filepath)
+        df['shot_coverage'] = shot
+        df['year'] = year
+        if year <2024:
+            df['TEAM'] = df['TEAM'].map(acr_dict)
+        df['TEAMNAME'] =df['TEAM'].map(name_dict)
+        frames.append(df)
+opp_master = pd.concat(frames)
+
+
+opp_master.to_csv('opp_team_shooting.csv',index=False)
+frames = []
+for year in range(2014,2024):
+    path = str(year)+'/playoffs/opp_shooting/'
+    for shot in shots:
+        filepath = path+shot+'.csv'
+        df = pd.read_csv(filepath)
+        df['shot_coverage'] = shot
+        df['year'] = year
+        if year >2023:
+            df['TEAM'] = df['TEAM'].map(acr_dict)
+        df['TEAMNAME'] =df['TEAM'].map(name_dict)
+        frames.append(df)
+opp_master = pd.concat(frames)
+opp_master['TEAM'] = opp_master['TEAM'].map(acr_dict)
+opp_master['TEAMNAME'] =opp_master['TEAM'].map(name_dict)
+opp_master.to_csv('opp_team_shooting_ps.csv',index=False)
+
+frames = []
+for year in range(2014,2025):
+    path = str(year)+'/opp_shooting/'
+    for shot in shots:
+        filepath = path+shot+'.csv'
+        df = pd.read_csv(filepath)
+        df['shot_coverage'] = shot
+        df['year'] = year
+        if year <2024:
+            df['TEAM'] = df['TEAM'].map(acr_dict)
+        df['TEAMNAME'] =df['TEAM'].map(name_dict)
+        frames.append(df)
+opp_master = pd.concat(frames)
+
+#opp_master
+frames = []
+for year in range(2014,2025):
+    path = str(year)+'/team_shooting/'
+    for shot in shots:
+        filepath = path+shot+'.csv'
+        df = pd.read_csv(filepath)
+        df['shot_coverage'] = shot
+        df['year'] = year
+        if year <2024:
+            df['TEAM'] = df['TEAM'].map(acr_dict)
+        df['TEAMNAME'] =df['TEAM'].map(name_dict)
+        frames.append(df)
+master = pd.concat(frames)
+master.to_csv('team_shooting.csv',index = False)
+
+
+# In[3]:
+
+
+'''
+old_df = pd.read_csv('team_shooting.csv')
+temp = pd.read_csv('opp_team_shooting.csv')
+temp['TEAMNAME'] = temp['TEAM']
+temp['TEAM'] = temp['TEAMNAME'].map(name_dict)
+temp.to_csv('opp_team_shooting.csv',index = False)
+temp = pd.read_csv('opp_team_shooting_ps.csv')
+temp['TEAMNAME'] = temp['TEAM']
+temp['TEAM'] = temp['TEAMNAME'].map(name_dict)
+temp.to_csv('opp_team_shooting_ps.csv',index = False)
+'''
 
 
 # In[ ]:
@@ -320,12 +333,10 @@ new = df[df.year>2022]
 
 
 
-# In[10]:
+# In[ ]:
 
 
-old_df = pd.read_csv('team_shooting_ps.csv')
-acr_dict = dict(zip(df.TEAMNAME,old_df.TEAM))
-acr_dict
+
 
 
 # In[ ]:
