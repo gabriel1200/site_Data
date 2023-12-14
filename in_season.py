@@ -11,14 +11,14 @@ from pathlib import Path
 import time
 from unidecode import unidecode
 
-
+'''
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import ElementNotInteractableException 
 from selenium.webdriver.support.select import Select
-
+'''
 url = 'https://www.nba.com/stats/players/traditional?SeasonType=IST'
 xpath = '//*[@id="__next"]/div[2]/div[2]/div[3]/section[2]/div/div[2]/div[2]/div[1]/div[3]/div/label/div/select'
 def get_ptables(url_list,path_list):
@@ -68,6 +68,7 @@ def get_ptables(url_list,path_list):
         data.append(df)
     driver.close()
     return data
+'''
 urls = [url]
 paths = [xpath]
 data = get_ptables(urls,paths)
@@ -75,6 +76,7 @@ df = data[0]
 df = df[[col for col in df.columns if ' RANK' not in col]]
 df = df.drop(columns=['Unnamed: 0'])
 df.to_csv('inseason_2024.csv',index = False)
+'''
 
 
 # In[2]:
@@ -227,17 +229,17 @@ df['Player'] = df['Player'].astype(str)
 df.to_csv('totals.csv',index = False,encoding='utf-8')
 
 
-# In[39]:
+# In[ ]:
 
 
 
 
 
-# In[45]:
+# In[7]:
 
 
 df = pd.read_csv('scoring.csv')
-df[df.Player=='Nikola Jokic']
+#df[df.Player=='Nikola Jokic']
 
 
 # In[ ]:

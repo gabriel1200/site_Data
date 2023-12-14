@@ -24,7 +24,8 @@ def passing_data(ps = False,update=True):
         df = df[df.year<2024]
         frames.append(df)
         start_year=2024
-    for year in range(stary_year,2025):
+    print(start_year)
+    for year in range(start_year,2025):
         #print(str(year-1)+'-'+str(year)[-2:])
 
         params = {
@@ -41,8 +42,7 @@ def passing_data(ps = False,update=True):
         #print(df.head)
 
         df2 = pd.read_csv(str(year)+trail+'/player_tracking/passing.csv')
-        if year ==2024:
-            print(df2.sort_values(by = 'PotentialAST').head(40))
+
         df2.rename(columns = {'PLAYER':'Name'}, inplace = True)
         df3 =  pd.read_csv(str(year)+trail+'/player_tracking/touches.csv')
         df3.rename(columns = {'Player':'Name'}, inplace = True)
@@ -119,14 +119,14 @@ avg['PTS'] = avg['PTS'].astype(float)
 avg['FGA'] = avg['FGA'].astype(float)
 avg['FTA'] = avg['FTA'].astype(float)
 
-avg.head(87)
+#avg.head(87)
 
 
 # In[4]:
 
 
 avg['TS%'] = avg['PTS']/(2*(avg['FGA']+.44*avg['FTA']))
-avg
+#avg
 
 
 # In[5]:
