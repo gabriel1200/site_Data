@@ -5,7 +5,7 @@
 
 
 import pandas as pd
-from selenium import webdriver
+#from selenium import webdriver
 from bs4 import BeautifulSoup
 import requests
 '''
@@ -212,8 +212,8 @@ opp_master.to_csv('opp_team_shooting_ps.csv',index=False)
 # In[4]:
 
 
+'''
 old_df = pd.read_csv('team_shooting.csv')
-name_dict = dict(zip(old_df.TEAMNAME,old_df.TEAM))
 temp = pd.read_csv('opp_team_shooting.csv')
 temp['TEAMNAME'] = temp['TEAM']
 temp['TEAM'] = temp['TEAMNAME'].map(name_dict)
@@ -223,6 +223,7 @@ temp['TEAMNAME'] = temp['TEAM']
 temp['TEAM'] = temp['TEAMNAME'].map(name_dict)
 temp.to_csv('opp_team_shooting_ps.csv',index = False)
 temp
+'''
 
 
 # In[2]:
@@ -241,6 +242,90 @@ for year in range(2014,2025):
         frames.append(df)
 master = pd.concat(frames)
 master.to_csv('team_shooting.csv',index=False)
+
+
+# In[17]:
+
+
+name_dict = {'SAS': 'San Antonio Spurs',
+ 'MIA': 'Miami Heat',
+ 'IND': 'Indiana Pacers',
+ 'OKC': 'Oklahoma City Thunder',
+ 'BKN': 'Brooklyn Nets',
+ 'POR': 'Portland Trail Blazers',
+ 'WAS': 'Washington Wizards',
+ 'ATL': 'Atlanta Hawks',
+ 'GSW': 'Golden State Warriors',
+ 'DAL': 'Dallas Mavericks',
+ 'MEM': 'Memphis Grizzlies',
+ 'HOU': 'Houston Rockets',
+ 'TOR': 'Toronto Raptors',
+ 'CHI': 'Chicago Bulls',
+ 'CLE': 'Cleveland Cavaliers',
+ 'MIL': 'Milwaukee Bucks',
+ 'NOP': 'New Orleans Pelicans',
+ 'BOS': 'Boston Celtics',
+ 'CHA': 'Charlotte Hornets',
+ 'LAC': 'Los Angeles Clippers',
+ 'DET': 'Detroit Pistons',
+ 'UTA': 'Utah Jazz',
+ 'PHI': 'Philadelphia 76ers',
+ 'MIN': 'Minnesota Timberwolves',
+ 'DEN': 'Denver Nuggets',
+ 'ORL': 'Orlando Magic',
+ 'LAL': 'Los Angeles Lakers',
+ 'PHX': 'Phoenix Suns',
+ 'NYK': 'New York Knicks',
+ 'SAC': 'Sacramento Kings'}
+{'San Antonio Spurs': 'SAS',
+ 'Miami Heat': 'MIA',
+ 'Indiana Pacers': 'IND',
+ 'Oklahoma City Thunder': 'OKC',
+ 'Los Angeles Clippers': 'LAC',
+ 'Brooklyn Nets': 'BKN',
+ 'Portland Trail Blazers': 'POR',
+ 'Washington Wizards': 'WAS',
+ 'Atlanta Hawks': 'ATL',
+ 'Golden State Warriors': 'GSW',
+ 'Dallas Mavericks': 'DAL',
+ 'Memphis Grizzlies': 'MEM',
+ 'Houston Rockets': 'HOU',
+ 'Toronto Raptors': 'TOR',
+ 'Chicago Bulls': 'CHI',
+ 'Charlotte Bobcats': 'CHA',
+ 'Cleveland Cavaliers': 'CLE',
+ 'Milwaukee Bucks': 'MIL',
+ 'New Orleans Pelicans': 'NOP',
+ 'Boston Celtics': 'BOS',
+ 'Charlotte Hornets': 'CHA',
+ 'LA Clippers': 'LAC',
+ 'Detroit Pistons': 'DET',
+ 'Utah Jazz': 'UTA',
+ 'Philadelphia 76ers': 'PHI',
+ 'Minnesota Timberwolves': 'MIN',
+ 'Denver Nuggets': 'DEN',
+ 'Orlando Magic': 'ORL',
+ 'Los Angeles Lakers': 'LAL',
+ 'Phoenix Suns': 'PHX',
+ 'New York Knicks': 'NYK',
+ 'Sacramento Kings': 'SAC'}
+df = pd.read_csv('team_shooting.csv')
+old = df[df.year<=2022]
+new = df[df.year>2022]
+
+
+# In[ ]:
+
+
+
+
+
+# In[10]:
+
+
+old_df = pd.read_csv('team_shooting_ps.csv')
+acr_dict = dict(zip(df.TEAMNAME,old_df.TEAM))
+acr_dict
 
 
 # In[ ]:
