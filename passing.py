@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[31]:
+# In[1]:
 
 
 import pandas as pd
@@ -10,7 +10,7 @@ import requests
 import json
 import math
 #df = pd.read_csv('../../league_wide/wowy/player_large.csv')
-def passing_data(ps = False):
+def passing_data(ps = False,update=True):
     url = 'https://api.pbpstats.com/get-totals/nba'
     stype = 'Regular Season'
     trail = ''
@@ -18,7 +18,13 @@ def passing_data(ps = False):
         stype='Playoffs'
         trail ='/playoffs'
     frames = []
-    for year in range(2014,2025):
+    start_year = 2014
+    if update == True:
+        df = pd.read_csv('passing.csv')
+        df = df[df.year<2024]
+        frames.append(df)
+        start_year=2024
+    for year in range(stary_year,2025):
         #print(str(year-1)+'-'+str(year)[-2:])
 
         params = {
@@ -86,7 +92,7 @@ passing = passing_data()
 #merged['testas'] = merged['TwoPtAssists']*2+ merged['ThreePtAssists']*3
 
 
-# In[27]:
+# In[2]:
 
 
 columns = ['EntityId','Name','Points','on-ball-time%','on-ball-time','UAPTS','TSA','OffPoss','Potential Assists','Travels','TsPct',
@@ -100,7 +106,7 @@ rs.to_csv('passing.csv',index =False)
 #print(rs.sort_values(by=)
 
 
-# In[24]:
+# In[3]:
 
 
 avg = pd.read_html('https://www.basketball-reference.com/leagues/NBA_stats_per_poss.html')[0]
@@ -116,14 +122,14 @@ avg['FTA'] = avg['FTA'].astype(float)
 avg.head(87)
 
 
-# In[25]:
+# In[4]:
 
 
 avg['TS%'] = avg['PTS']/(2*(avg['FGA']+.44*avg['FTA']))
 avg
 
 
-# In[26]:
+# In[5]:
 
 
 avg.to_csv('avg_shooting.csv',index = False)

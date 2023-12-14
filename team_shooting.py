@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[6]:
 
 
 import pandas as pd
@@ -169,7 +169,7 @@ def get_teamshots(years):
             term = terms[i]
             path = str(year+1)+folder+term
             print(path)
-            #df.to_csv(path,index = False)
+            df.to_csv(path,index = False)
             #print(df)
             i+=1
 get_teamshots([2023])

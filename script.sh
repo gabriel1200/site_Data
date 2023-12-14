@@ -31,6 +31,8 @@ cp totals_ps.csv ../discord/data/totals_ps.csv
 
 cp scoring.csv ../discord/data/scoring.csv
 
+cp shotzone.csv ../discord/data/shotzone.csv
+
 cp scoring_ps.csv ../discord/data/scoring_ps.csv
 
 cp hustle.csv ../discord/data/hustle.csv

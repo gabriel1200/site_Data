@@ -1,21 +1,26 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[2]:
+# In[1]:
 
 
 import plotly.graph_objs as go
 import plotly.io as pio
 import pandas as pd
 import string
+from bs4 import BeautifulSoup
+from pathlib import Path
+import requests
+import time
 #url_list = [cs,pullup]
+'''
 from selenium.webdriver.support.select import Select
 from selenium import webdriver
 from bs4 import BeautifulSoup
 from pathlib import Path
 import requests
 import time
-'''
+
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
@@ -24,7 +29,7 @@ from selenium.common.exceptions import ElementNotInteractableException
 '''
 
 
-# In[22]:
+# In[2]:
 
 
 def pull_data(url):
@@ -264,7 +269,7 @@ filename = '2024/defense/rim_acc.csv'
 update_master('rim_acc.csv',filename,year)
 
 
-# In[8]:
+# In[3]:
 
 
 def create_folders(new_folder):
@@ -302,7 +307,7 @@ def update_masters(year,masters,ps = False):
 #temp.to_csv('dfg_p.csv',index = False)     
 
 
-# In[9]:
+# In[4]:
 
 
 '''
