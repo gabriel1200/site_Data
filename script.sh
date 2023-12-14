@@ -1,6 +1,5 @@
 jupyter nbconvert --to script *.ipynb
 python player_shooting.py
-python team_shooting.py
 python defense.py
 python scrape_shooting.py
 python misc.py
@@ -8,7 +7,8 @@ python player_level.py
 python record.py
 python standings.py
 python passing.py
-python scrape_shooting.py
+python team_shooting.py
+
 python underground.py
 #python in_season.py
 git add --all

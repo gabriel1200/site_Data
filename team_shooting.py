@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[6]:
+# In[1]:
 
 
 import pandas as pd
@@ -114,6 +114,7 @@ def get_teamshots(years):
 
     for year in years:
         i = 0
+        frames = []
         for shot in shots:
             season = str(year)+'-'+str(year+1 - 2000)
             
@@ -170,8 +171,11 @@ def get_teamshots(years):
             path = str(year+1)+folder+term
             print(path)
             df.to_csv(path,index = False)
+            frames.append(df)
             #print(df)
             i+=1
+        year_df = pd.concat(frames)
+        year_df.to_csv(str(year+1)+folder+'team_shooting.csv',index = False)
 get_teamshots([2023])
 
 
@@ -221,10 +225,22 @@ temp.to_csv('opp_team_shooting_ps.csv',index = False)
 temp
 
 
-# In[5]:
+# In[2]:
 
 
+shots = ['wide_open','open','tight','very_tight']
 
+frames = []
+for year in range(2014,2025):
+    path = str(year)+'/team_shooting/'
+    for shot in shots:
+        filepath = path+shot+'.csv'
+        df = pd.read_csv(filepath)
+        df['shot_coverage'] = shot
+        df['year'] = year
+        frames.append(df)
+master = pd.concat(frames)
+master.to_csv('team_shooting.csv',index=False)
 
 
 # In[ ]:
