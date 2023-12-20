@@ -24,6 +24,30 @@ import configparser
 
 
 
+# In[13]:
+
+
+url = "https://bball-index.shinyapps.io/Lebron/__sockjs__/n=1X3EzJCDf7I2hrdArE/t=aafccad80f857164d4ddfc525f26a6b7/w=d2402a9b/s=0/396/gvz1w1g2/eventsource"
+headers = {
+      
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0",
+        "Accept": "application/json, text/plain, */*",
+        "Accept-Language": "en-US,en;q=0.5",
+        "Accept-Encoding": "gzip, deflate, br",
+
+        "Connection": "keep-alive",
+    }
+page = requests.get(url,headers = headers)
+soup = BeautifulSoup(page.content, "html.parser")
+soup.find('table')
+
+
+# In[15]:
+
+
+soup.text
+
+
 # In[2]:
 
 
@@ -51,12 +75,12 @@ def scrape_LEBRON():
 df = scrape_LEBRON()
 
 df.to_csv('lebron.csv',index = False)
-df = df[df['Season'] =='2022-23']
+df = df[df['Season'] =='2023-24']
 df.to_csv('lebron/lebron.csv',index = False)
 #df.to_csv('2023/lebron/lebron.csv',index = False)
 
 
-# In[7]:
+# In[3]:
 
 
 files = glob.glob('epm/*')
@@ -122,7 +146,7 @@ def load_epm(username,password):
 load_epm(username,password)
 
 
-# In[8]:
+# In[4]:
 
 
 download_path = r'C:\Users\gaber\Downloads\EPM data.csv'
