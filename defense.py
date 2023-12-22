@@ -270,7 +270,7 @@ filename = '2024/defense/rim_acc.csv'
 update_master('rim_acc.csv',filename,year)
 
 
-# In[12]:
+# In[15]:
 
 
 def create_folders(new_folder):
@@ -308,14 +308,15 @@ def update_masters(masters,ps = False):
             path = str(year)+'/playoffs/defense/'
         for file in masters:
             print(file)
-            df = pd.read_csv(path+file'.csv')
+            df = pd.read_csv(path+file+'.csv')
             frames[i].append(df)
             i=(i+1)%3
 
     for i in range(len(masters)):
         masterframe = pd.concat(frames[i])
-        masterframe.to_csv(i[masters]+'.csv',index = False)
-update_masters(masters,ps = False)
+        masterframe.to_csv(masters[i]+'.csv',index = False)
+        print(masterframe)
+update_masters(masters,ps = True)
 #temp = pd.read_csv('dfg_p.csv')
 #temp = temp.rename(columns = {'Year':'year'})
 #temp.to_csv('dfg_p.csv',index = False)     
