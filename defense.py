@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[8]:
+# In[1]:
 
 
 import plotly.graph_objs as go
@@ -29,7 +29,7 @@ from selenium.common.exceptions import ElementNotInteractableException
 '''
 
 
-# In[11]:
+# In[2]:
 
 
 def pull_data(url):
@@ -153,7 +153,7 @@ def get_defense(url,year,ps = False):
 def prep_dfg(dfg):
     dfg = dfg.drop(columns = ['CLOSE_DEF_PERSON_ID','PLAYER_LAST_TEAM_ID'])
     dfg = dfg.rename(columns={'DIFF%':'Diff%'})
-    dfg.columns = ['PLAYER', 'TEAM', 'AGE', 'POSITION', 'GP', 'G', 'FREQ%', 'DFGM', 'DFGA',
+    dfg.columns = ['PLAYER', 'TEAM', 'POSITION', 'AGE','GP', 'G', 'FREQ%', 'DFGM', 'DFGA',
        'DFG%', 'FG%', 'DIFF%']
     for col in dfg:
         if '%' in col:
@@ -229,12 +229,12 @@ def update_dash():
 
     df = pull_data(url)
     df = prep_dfg(df)
-    old = pd.read_csv('dfg.csv')
-    old = old[old.year!=2024]
+    #old = pd.read_csv('dfg.csv')
+    #old = old[old.year!=2024]
     df['year'] = 2024
     df = df.round(2)
-    old = pd.concat([old,df])
-    old.to_csv('dfg.csv',index = False)
+    #old = pd.concat([old,df])
+    #old.to_csv('dfg.csv',index = False)
     
     df.to_csv('2024/defense/dfg.csv',index = False)
     
@@ -242,12 +242,12 @@ def update_dash():
     
     df = pull_data(url)
     df = prep_dfg(df)
-    old = pd.read_csv('rimdfg.csv')
-    old = old[old.year!=2024]
+    #old = pd.read_csv('rimdfg.csv')
+    #old = old[old.year!=2024]
     df['year'] = 2024
     df = df.round(2)
-    old = pd.concat([old,df])
-    old.to_csv('rimdfg.csv',index = False)
+    #old = pd.concat([old,df])
+    #old.to_csv('rimdfg.csv',index = False)
     df.to_csv('2024/defense/rimdfg.csv',index = False)
     
 
@@ -273,7 +273,7 @@ update_master('rim_acc.csv',filename,year)
 '''
 
 
-# In[16]:
+# In[3]:
 
 
 def create_folders(new_folder):
