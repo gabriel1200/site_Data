@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[8]:
 
 
 import plotly.graph_objs as go
@@ -29,7 +29,7 @@ from selenium.common.exceptions import ElementNotInteractableException
 '''
 
 
-# In[2]:
+# In[11]:
 
 
 def pull_data(url):
@@ -152,6 +152,7 @@ def get_defense(url,year,ps = False):
     return df
 def prep_dfg(dfg):
     dfg = dfg.drop(columns = ['CLOSE_DEF_PERSON_ID','PLAYER_LAST_TEAM_ID'])
+    dfg = dfg.rename(columns={'DIFF%':'Diff%'})
     dfg.columns = ['PLAYER', 'TEAM', 'AGE', 'POSITION', 'GP', 'G', 'FREQ%', 'DFGM', 'DFGA',
        'DFG%', 'FG%', 'DIFF%']
     for col in dfg:
@@ -229,7 +230,7 @@ def update_dash():
     df = pull_data(url)
     df = prep_dfg(df)
     old = pd.read_csv('dfg.csv')
-    old = old[old.year!=2023]
+    old = old[old.year!=2024]
     df['year'] = 2024
     df = df.round(2)
     old = pd.concat([old,df])
@@ -269,7 +270,7 @@ filename = '2024/defense/rim_acc.csv'
 update_master('rim_acc.csv',filename,year)
 
 
-# In[3]:
+# In[12]:
 
 
 def create_folders(new_folder):
@@ -281,27 +282,40 @@ def create_folders(new_folder):
         output_dir = Path(path)
         output_dir.mkdir(parents=True, exist_ok=True)
 
-create_folders('hustle')
+#create_folders('hustle')
 masters =['rimfreq','rim_acc','dfg']
 #temp = pd.read_csv('dfg_p.csv')
 #temp = temp.rename(columns = {'year':'Year'})
 #temp.to_csv('dfg_p.csv',index = False)
-def update_masters(year,masters,ps = False):
-    
-    if ps == False:
-        trail = ''
-        path = str(year)+'/defense/'
-    else:
+def update_masters(masters,ps = False):
+    trail = ''
+    end_year = 2025
+    if ps == True:
+        end_year =2024
         trail = '_p'
-        path = str(year)+'/playoffs/defense/'
-    for file in masters:
-        print(file)
-        df = pd.read_csv(file+trail+'.csv')
-        df = df[df.year<year]
-        new = pd.read_csv(path+file+trail+'.csv')
-        df = pd.concat([df,new])
-        df.to_csv(file+trail+'csv',index = False)
-#update_masters(2023,masters,ps = False)
+    frames1 = []
+    frames2=[]
+    frames3= []
+    frames = [frames1,frames2,frames3]
+    i = 0
+    for year in range(2014,end_year):
+        
+        if ps == False:
+           
+            path = str(year)+'/defense/'
+        else:
+           
+            path = str(year)+'/playoffs/defense/'
+        for file in masters:
+            print(file)
+            df = pd.read_csv(path+file'.csv')
+            frames[i].append(df)
+            i=(i+1)%3
+
+    for i in range(len(masters)):
+        masterframe = pd.concat(frames[i])
+        masterframe.to_csv(i[masters]+'.csv',index = False)
+update_masters(masters,ps = False)
 #temp = pd.read_csv('dfg_p.csv')
 #temp = temp.rename(columns = {'Year':'year'})
 #temp.to_csv('dfg_p.csv',index = False)     
