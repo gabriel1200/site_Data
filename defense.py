@@ -259,6 +259,8 @@ update_dash()
 #year = 2023
 #filename = '2023/defense/rimfreq.csv'
 #update_master('rimfreq.csv',filename,year)
+
+'''
 year =2024
 filename = '2024/defense/rimfreq.csv'
 update_master('rimfreq.csv',filename,year)
@@ -268,9 +270,10 @@ filename = '2024/defense/rimdfg.csv'
 update_master('rimdfg.csv',filename,year)
 filename = '2024/defense/rim_acc.csv'
 update_master('rim_acc.csv',filename,year)
+'''
 
 
-# In[15]:
+# In[16]:
 
 
 def create_folders(new_folder):
@@ -316,7 +319,7 @@ def update_masters(masters,ps = False):
         masterframe = pd.concat(frames[i])
         masterframe.to_csv(masters[i]+'.csv',index = False)
         print(masterframe)
-update_masters(masters,ps = True)
+update_masters(masters,ps = False)
 #temp = pd.read_csv('dfg_p.csv')
 #temp = temp.rename(columns = {'Year':'year'})
 #temp.to_csv('dfg_p.csv',index = False)     
