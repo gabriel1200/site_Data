@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[10]:
 
 
 import pandas as pd
@@ -79,7 +79,7 @@ df.to_csv('inseason_2024.csv',index = False)
 '''
 
 
-# In[2]:
+# In[11]:
 
 
 def get_table(year,minutes,ps = False):
@@ -169,7 +169,7 @@ elif ps == True:
 df
 
 
-# In[3]:
+# In[12]:
 
 
 start_year = 1974
@@ -195,13 +195,13 @@ averages = averages[averages['Season']<=end_year]
 averages = averages.iloc[::-1]
 
 
-# In[4]:
+# In[13]:
 
 
 averages.to_csv('tsavg.csv',index = False)
 
 
-# In[5]:
+# In[14]:
 
 
 df = pd.read_csv('scoring_ps.csv')
@@ -234,13 +234,6 @@ df.to_csv('totals.csv',index = False,encoding='utf-8')
 
 
 
-
-
-# In[ ]:
-
-
-df = pd.read_csv('scoring.csv')
-#df[df.Player=='Nikola Jokic']
 
 
 # In[ ]:
