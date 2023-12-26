@@ -215,7 +215,7 @@ df['Player'] = df['Player'].astype(str)
 df.to_csv('scoring.csv',index = False,encoding='utf-8')
 
 
-# In[8]:
+# In[9]:
 
 
 df = pd.read_csv('totals_ps.csv')
@@ -224,7 +224,7 @@ df['Player'] = df['Player'].astype(str)
 df.to_csv('totals_ps.csv',index = False,encoding='utf-8')
 
 df = pd.read_csv('totals.csv')
-print(df['Player'].astype(str))
+df['Player'] = df['Player'].astype(str)
 df['Player'] = df['Player'].apply(unidecode)
 df['Player'] = df['Player'].astype(str)
 df.to_csv('totals.csv',index = False,encoding='utf-8')
