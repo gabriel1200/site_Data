@@ -70,7 +70,7 @@ def scrape_LEBRON():
     year = df['Season'].str[0:4].astype(int) +1
     df['year'] = year
     df['Player'] = df['Player'].str.lower()
-    df = df.rename(columns = {'Team':'team'})
+    df = df.rename(columns = {'Team':'team','LEBRON Contract Value':'Value Added'})
     return df
 df = scrape_LEBRON()
 
@@ -81,6 +81,14 @@ df.to_csv('lebron/lebron.csv',index = False)
 
 
 # In[5]:
+
+
+old = pd.read_csv('old_lebron.csv')
+new = pd.read_csv('lebron.csv')
+set(new.columns) - set(old.columns)
+
+
+# In[6]:
 
 
 files = glob.glob('epm/*')
@@ -146,7 +154,7 @@ def load_epm(username,password):
 load_epm(username,password)
 
 
-# In[6]:
+# In[7]:
 
 
 download_path = r'C:\Users\gaber\Downloads\EPM data.csv'
@@ -161,7 +169,7 @@ df.to_csv('epm/epm.csv',index = False)
 
 
 
-# In[ ]:
+# In[8]:
 
 
 '''
@@ -177,7 +185,7 @@ for i in range(2013,2022):
     frame.to_csv(str(i+1)+'/lebron/lebron.csv',index = False)'''
 
 
-# In[ ]:
+# In[9]:
 
 
 df
