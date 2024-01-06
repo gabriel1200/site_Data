@@ -42,13 +42,13 @@ soup = BeautifulSoup(page.content, "html.parser")
 soup.find('table')
 
 
-# In[3]:
+# In[ ]:
 
 
 soup.text
 
 
-# In[4]:
+# In[ ]:
 
 
 def scrape_LEBRON():
@@ -80,15 +80,91 @@ df.to_csv('lebron/lebron.csv',index = False)
 #df.to_csv('2023/lebron/lebron.csv',index = False)
 
 
-# In[5]:
+# In[88]:
 
 
 old = pd.read_csv('old_lebron.csv')
 new = pd.read_csv('lebron.csv')
-set(new.columns) - set(old.columns)
+new
 
 
-# In[6]:
+# In[89]:
+
+
+old = old[old.year==2024]
+old = old[['Player','Defensive Role']]
+new = new[new.year==2024]
+new['Player'] = new['Player'].str.replace('.','', regex=True)
+
+name_dict = dict(zip(new['Player'],new['NBA ID']))
+old['NBA ID'] = old['Player'].map(name_dict)
+
+new.drop(columns='Defensive Role',inplace = True)
+master = new.merge(old,how='left')
+master
+
+
+# In[90]:
+
+
+old
+
+
+# In[92]:
+
+
+master[master['Defensive Role'].isnull()]
+
+
+# In[93]:
+
+
+master['Defensive Role'] = master['Defensive Role'].fillna('Low Minute')
+
+
+# In[94]:
+
+
+master
+
+
+# In[95]:
+
+
+orig =pd.read_csv('lebron.csv')
+orig = orig[orig.year!=2024]
+orig
+
+
+# In[69]:
+
+
+
+
+
+# In[96]:
+
+
+to_save = pd.concat([orig,master])
+to_save
+
+
+# In[97]:
+
+
+to_save.to_csv('lebron.csv',index = False)
+
+
+# In[ ]:
+
+
+old['year_id'] = old['Player'].astype(str)+old['year'].astype(str)
+print(old['year_id'])
+droles = dict(zip(old['year_id'],old['Defensive Role']))
+droles
+
+
+# In[ ]:
 
 
 files = glob.glob('epm/*')
@@ -154,7 +230,7 @@ def load_epm(username,password):
 load_epm(username,password)
 
 
-# In[7]:
+# In[ ]:
 
 
 download_path = r'C:\Users\gaber\Downloads\EPM data.csv'
@@ -169,7 +245,7 @@ df.to_csv('epm/epm.csv',index = False)
 
 
 
-# In[8]:
+# In[ ]:
 
 
 '''
@@ -185,10 +261,16 @@ for i in range(2013,2022):
     frame.to_csv(str(i+1)+'/lebron/lebron.csv',index = False)'''
 
 
-# In[9]:
+# In[ ]:
 
 
 df
+
+
+# In[ ]:
+
+
+
 
 
 # In[ ]:
