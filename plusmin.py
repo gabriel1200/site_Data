@@ -42,13 +42,13 @@ soup = BeautifulSoup(page.content, "html.parser")
 soup.find('table')
 
 
-# In[ ]:
+# In[3]:
 
 
 soup.text
 
 
-# In[ ]:
+# In[4]:
 
 
 def scrape_LEBRON():
@@ -80,7 +80,7 @@ df.to_csv('lebron/lebron.csv',index = False)
 #df.to_csv('2023/lebron/lebron.csv',index = False)
 
 
-# In[88]:
+# In[13]:
 
 
 old = pd.read_csv('old_lebron.csv')
@@ -88,7 +88,13 @@ new = pd.read_csv('lebron.csv')
 new
 
 
-# In[89]:
+# In[14]:
+
+
+old
+
+
+# In[15]:
 
 
 old = old[old.year==2024]
@@ -99,36 +105,36 @@ new['Player'] = new['Player'].str.replace('.','', regex=True)
 name_dict = dict(zip(new['Player'],new['NBA ID']))
 old['NBA ID'] = old['Player'].map(name_dict)
 
-new.drop(columns='Defensive Role',inplace = True)
+#new.drop(columns='Defensive Role',inplace = True)
 master = new.merge(old,how='left')
 master
 
 
-# In[90]:
+# In[12]:
 
 
 old
 
 
-# In[92]:
+# In[16]:
 
 
 master[master['Defensive Role'].isnull()]
 
 
-# In[93]:
+# In[17]:
 
 
 master['Defensive Role'] = master['Defensive Role'].fillna('Low Minute')
 
 
-# In[94]:
+# In[18]:
 
 
 master
 
 
-# In[95]:
+# In[19]:
 
 
 orig =pd.read_csv('lebron.csv')
@@ -136,20 +142,20 @@ orig = orig[orig.year!=2024]
 orig
 
 
-# In[69]:
+# In[ ]:
 
 
 
 
 
-# In[96]:
+# In[20]:
 
 
 to_save = pd.concat([orig,master])
 to_save
 
 
-# In[97]:
+# In[21]:
 
 
 to_save.to_csv('lebron.csv',index = False)
