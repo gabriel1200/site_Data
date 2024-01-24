@@ -24,6 +24,26 @@ import configparser
 
 
 
+# In[3]:
+
+
+old_bron = pd.read_csv('lebron.csv')
+new_bron = pd.read_csv('lebron_recent.csv')
+new_bron
+
+
+# In[5]:
+
+
+old_bron.columns
+
+
+# In[6]:
+
+
+new_bron.columns
+
+
 # In[2]:
 
 
