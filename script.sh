@@ -21,7 +21,7 @@ cp rim_acc.csv ../discord/data/rim_acc.csv
 cp dfg.csv ../discord/data/dfg.csv
 cp team_shooting.csv ../discord/data/team_shooting.csv
 cp opp_team_shooting.csv ../discord/data/opp_team_shooting.csv
-cp lebron.csv ../discord/data/lebron.csv
+#cp lebron.csv ../discord/data/lebron.csv
 
 cp passing.csv ../discord/data/passing.csv
 cp team_avg.csv ../discord/data/team_avg.csv
