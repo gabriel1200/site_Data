@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[2]:
+# In[1]:
 
 
 import pandas as pd
@@ -62,16 +62,45 @@ master = pd.concat(shots)
 master.to_csv('shotzone.csv',index = False)
 
 
-# In[ ]:
+# In[4]:
 
 
+def get_shotzone():
+    data = []
+    for year in range(2000,2024):
+        season = str(year)+'-'+str(year+1)[-2:]
+        print(season)
+                               
+        
+        url = "https://api.pbpstats.com/get-totals/nba"
+        params = {
+            "Season": season,
+            "SeasonType": "Regular Season",
+            "Type": "Player"
+        }
+        response = requests.get(url, params=params)
+        response_json = response.json()
+        player_stats = response_json["multi_row_table_data"]
+        df = pd.DataFrame(player_stats)
+        shotzone = df[['Name','EntityId','TeamId','TeamAbbreviation','GamesPlayed','OffPoss','DefPoss','Minutes','FtPoints','FTA','AtRimFGA','AtRimFGM','AtRimAccuracy','ShortMidRangeFGA','ShortMidRangeFGM',
+                'ShortMidRangeAccuracy','ShortMidRangeFrequency','LongMidRangeFGM','LongMidRangeFGA','FG2A','FG2M','FG3A','NonHeaveFg3Pct','NonHeaveArc3FGA','HeaveAttempts','Corner3FGA','Corner3FGM','NonHeaveFg3Pct'
+                        ,'NonHeaveArc3FGM','TsPct','Points','EfgPct','SecondChanceEfgPct','PenaltyEfgPct','SecondChanceTsPct','PenaltyTsPct','SecondChanceShotQualityAvg','PenaltyShotQualityAvg','ShotQualityAvg']].reset_index(drop=True)
+        shotzone['year']=year+1
+        data.append(shotzone)
+    return pd.concat(data)
+#df = get_shotzone()
 
 
-
-# In[ ]:
-
+# In[5]:
 
 
+master
+
+
+# In[8]:
+
+
+#df.to_csv('shotzone.csv',index = False)
 
 
 # In[ ]:
