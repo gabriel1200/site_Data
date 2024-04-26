@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[10]:
+# In[1]:
 
 
 import pandas as pd
@@ -79,7 +79,7 @@ df.to_csv('inseason_2024.csv',index = False)
 '''
 
 
-# In[11]:
+# In[2]:
 
 
 def get_table(year,minutes,ps = False):
@@ -131,11 +131,12 @@ def get_table2(year,minutes,ps = False):
     
 year = 2024
 minutes = 0
-ps = False
+ps = True
 if ps == False:
     df = pd.read_csv('scoring.csv')
     df = df[df.year<year]
     new_table,year = get_table2(year,minutes,ps)
+    print(new_table)
     new_table['year'] = year
     df = pd.concat([df,new_table])
     df['year'] = df['year'].astype(int)
@@ -155,7 +156,10 @@ if ps == False:
 elif ps == True:
     df = pd.read_csv('scoring_ps.csv')
     df = df[df.year<year]
-    new_table = get_table(year,minutes,ps)
+    print(df)
+    new_table,year = get_table2(year,minutes,ps)
+    print(new_table)
+   
     new_table['year'] = year
     df = pd.concat([df,new_table])
     df.to_csv('scoring_ps.csv',index=False)
@@ -163,13 +167,14 @@ elif ps == True:
     
     df = pd.read_csv('totals_ps.csv')
     df = df[df.year<year]
-    new_table = get_table2(year,minutes,ps)
+    new_table,year = get_table(year,minutes,ps)
+    new_table['year'] = year
     df = pd.concat([df,new_table])
     df.to_csv('totals_ps.csv',index= False)
 df
 
 
-# In[12]:
+# In[3]:
 
 
 start_year = 1974
@@ -195,13 +200,13 @@ averages = averages[averages['Season']<=end_year]
 averages = averages.iloc[::-1]
 
 
-# In[13]:
+# In[4]:
 
 
 averages.to_csv('tsavg.csv',index = False)
 
 
-# In[14]:
+# In[5]:
 
 
 df = pd.read_csv('scoring_ps.csv')
@@ -215,7 +220,7 @@ df['Player'] = df['Player'].astype(str)
 df.to_csv('scoring.csv',index = False,encoding='utf-8')
 
 
-# In[9]:
+# In[6]:
 
 
 df = pd.read_csv('totals_ps.csv')
