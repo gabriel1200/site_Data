@@ -156,6 +156,7 @@ if ps == False:
 elif ps == True:
     df = pd.read_csv('scoring_ps.csv')
     df = df[df.year<year]
+    df = df.drop(columns='
     print(df)
     new_table,year = get_table2(year,minutes,ps)
     print(new_table)
@@ -170,6 +171,7 @@ elif ps == True:
     new_table,year = get_table(year,minutes,ps)
     new_table['year'] = year
     df = pd.concat([df,new_table])
+    df['year'] = df['year'].astype(int)
     df.to_csv('totals_ps.csv',index= False)
 df
 
