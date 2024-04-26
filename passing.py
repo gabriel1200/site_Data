@@ -88,7 +88,7 @@ def passing_data(ps = False,update=True):
     return df
 
 passing = passing_data()
-#passing_ps = passing_data(ps=True)
+passing_ps = passing_data(ps=True)
 #merged['testas'] = merged['TwoPtAssists']*2+ merged['ThreePtAssists']*3
 
 
@@ -100,9 +100,9 @@ columns = ['EntityId','Name','Points','on-ball-time%','on-ball-time','UAPTS','TS
            'AST PTSCreated','Assists','SecondaryAST','POT_AST_PER_MIN','ThreePtAssists','AtRimAssists','Time OfPoss','ASTAdj','BadPassTurnovers',
        'Avg Drib PerTouch','PtsUnassisted2s','PtsUnassisted3s','Fg3Pct','FG3A','FG3M','OffPoss','GP','Minutes','year']
 rs=passing[columns]
-#ps=passing_ps[columns]
+ps=passing_ps[columns]
 rs.to_csv('passing.csv',index =False)
-#ps.to_csv('../data/passing_ps.csv',index = False)
+ps.to_csv('passing_ps.csv',index = False)
 #print(rs.sort_values(by=)
 
 

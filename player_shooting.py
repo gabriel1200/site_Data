@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[5]:
+# In[1]:
 
 
 import pandas as pd
@@ -117,11 +117,15 @@ def get_multi(url_list,playoffs = False):
 #get_playershots(years):
 
 #get_multi(url_list,playoffs = False)
-def get_playershots(years):
+def get_playershots(years,ps = False):
     shots = ["0-2%20Feet%20-%20Very%20Tight","2-4%20Feet%20-%20Tight","4-6%20Feet%20-%20Open","6%2B%20Feet%20-%20Wide%20Open"]
     terms = ['very_tight.csv','tight.csv','open.csv','wide_open.csv']
     folder = '/player_shooting/'
-
+    sfolder=''
+    stype = "Regular%20Season"
+    if ps == True:
+        stype="Playoffs"
+        sfolder = "/playoffs"
     for year in years:
         i = 0
         for shot in shots:
@@ -129,7 +133,7 @@ def get_playershots(years):
             part1 = "https://stats.nba.com/stats/leaguedashplayerptshot?CloseDefDistRange="
             part2 = "&College=&Conference=&Country=&DateFrom=&DateTo=&Division=&DraftPick=&DraftYear=&DribbleRange=&GameScope=&GameSegment=&GeneralRange=&Height=&LastNGames=0&LeagueID=00&Location=&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PerMode=Totals&Period=0&PlayerExperience=&PlayerPosition=&Season="
 
-            part3 = "&SeasonSegment=&SeasonType=Regular%20Season&ShotClockRange=&ShotDistRange=&StarterBench=&TeamID=0&TouchTimeRange=&VsConference=&VsDivision=&Weight="
+            part3 = "&SeasonSegment=&SeasonType="+stype+"&ShotClockRange=&ShotDistRange=&StarterBench=&TeamID=0&TouchTimeRange=&VsConference=&VsDivision=&Weight="
             url = part1+shot+part2+season+part3
             headers = {
                     "Host": "stats.nba.com",
@@ -166,13 +170,13 @@ def get_playershots(years):
                 if '%' in col or 'PERC' in col:
                     df[col]*=100
             term = terms[i]
-            path = str(year+1)+folder+term
+            path = str(year+1)+sfolder+folder+term
             df.to_csv(path,index = False)
             i+=1
-get_playershots([2023])
+get_playershots([2023],ps=True)
 
 
-# In[6]:
+# In[2]:
 
 
 def master_shooting(playoffs = False):
@@ -194,9 +198,11 @@ def master_shooting(playoffs = False):
     return master
 master= master_shooting() 
 master.to_csv('player_shooting.csv',index = False)
+master= master_shooting(playoffs=True) 
+master.to_csv('player_shooting_p.csv',index = False)
 
 
-# In[17]:
+# In[ ]:
 
 
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[13]:
+# In[1]:
 
 
 import pandas as pd
@@ -82,7 +82,12 @@ def get_tables(url_list):
         data.append(df)
     driver.close()
     return data
-def get_playtypes(years):
+def get_playtypes(years,ps= False):
+    stype = "Regular+Season"
+    trail =''
+    if ps == True:
+        stype = "Playoffs"
+        trail='/playoffs'
     headers = {
         "Host": "stats.nba.com",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0",
@@ -100,7 +105,7 @@ def get_playtypes(years):
         ssn = str(year)+'-'+str(year+1 - 2000)
         i = 0
         for play in playtypes:
-            half1 = "https://stats.nba.com/stats/synergyplaytypes?LeagueID=00&PerMode=Totals&PlayType="+play+"&PlayerOrTeam=T&SeasonType=Regular+Season&SeasonYear="
+            half1 = "https://stats.nba.com/stats/synergyplaytypes?LeagueID=00&PerMode=Totals&PlayType="+play+"&PlayerOrTeam=T&SeasonType="+stype+"&SeasonYear="
             half2 = "&TypeGrouping=offensive"
             term = terms[i]
             url = (
@@ -121,7 +126,7 @@ def get_playtypes(years):
                 if '%' in col or 'PERC' in col:
                     df2[col]*=100
             #print(df2)
-            path = str(year+1)+'/playtype/'+term
+            path = str(year+1)+trail+'/playtype/'+term
             print(path)
             df2 = df2.round(1)
             df2 = df2[['TEAM', 'GP', 'POSS', 'FREQ%', 'PPP', 'PTS', 'FGM', 'FGA', 'FG%',
@@ -132,10 +137,10 @@ def get_playtypes(years):
             i+=1
                 
 years = [2023]
-get_playtypes(years)
+get_playtypes(years,ps=True)
 
 
-# In[8]:
+# In[2]:
 
 
 #url_list = [url1]#
@@ -166,13 +171,13 @@ def get_multi(url_list,playoffs = False):
             df.to_csv(terms[i],index = False)
 
 
-# In[9]:
+# In[3]:
 
 
 #get_multi(url_list,playoffs = False)
 
 
-# In[10]:
+# In[4]:
 
 
 #terms = ['data/teampullup.csv','data/teamcatchshoot.csv','data/teamundersix.csv','data/teamiso.csv','data/teamtransition.csv']
@@ -181,14 +186,14 @@ terms = ['playtype/handoff.csv','playtype/iso.csv','playtype/trans.csv','playtyp
          'playtype/cut.csv','playtype/offscreen.csv','playtype/putback.csv','playtype/misc.csv','playtype/drives.csv']
 
 
-# In[11]:
+# In[5]:
 
 
 #df = pd.read_csv('2024/playtype/spotup.csv')
 #df
 
 
-# In[12]:
+# In[6]:
 
 
 def add_synergy():

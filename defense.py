@@ -207,25 +207,30 @@ def update_log(filename,stat,ps = False):
 # At Rim Shot Frequency - Defense
 stat= "AtRimAccuracyOpponent"
 filename = '2024/defense/rim_acc.csv'
-update_log(filename,stat)
-#filename = '2023/playoffs/defense/rim_acc_p.csv'
+update_log(filename,stat,ps=False)
+filename = '2024/playoffs/defense/rim_acc.csv'
 
 
-#update_log(filename,stat,ps = False)
+update_log(filename,stat,ps = True)
 #update_master('rim_acc.csv',filename)
 
 stat2 ="AtRimFrequencyOpponent"
 
 
 #update_log(filename,stat2)
-
-#filename = '2023/playoffs/defense/rimfreq_p.csv'
 filename = '2024/defense/rimfreq.csv'
-update_log(filename,stat2,ps = False)
 
-def update_dash():
+
+update_log(filename,stat2,ps = False)
+filename = '2024/playoffs/defense/rimfreq.csv'
+update_log(filename,stat2,ps = True)
+
+def update_dash(ps = False):
+    stype = 'Regular%20Season'
+    if ps == True:
+        stype='Playoffs'
     
-    url="https://stats.nba.com/stats/leaguedashptdefend?College=&Conference=&Country=&DateFrom=&DateTo=&DefenseCategory=Overall&Division=&DraftPick=&DraftYear=&GameSegment=&Height=&ISTRound=&LastNGames=0&LeagueID=00&Location=&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PerMode=Totals&Period=0&PlayerExperience=&PlayerPosition=&Season=2023-24&SeasonSegment=&SeasonType=Regular%20Season&StarterBench=&TeamID=0&VsConference=&VsDivision=&Weight="
+    url="https://stats.nba.com/stats/leaguedashptdefend?College=&Conference=&Country=&DateFrom=&DateTo=&DefenseCategory=Overall&Division=&DraftPick=&DraftYear=&GameSegment=&Height=&ISTRound=&LastNGames=0&LeagueID=00&Location=&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PerMode=Totals&Period=0&PlayerExperience=&PlayerPosition=&Season=2023-24&SeasonSegment=&SeasonType="+stype+"&StarterBench=&TeamID=0&VsConference=&VsDivision=&Weight="
 
     df = pull_data(url)
     df = prep_dfg(df)
@@ -235,10 +240,12 @@ def update_dash():
     df = df.round(2)
     #old = pd.concat([old,df])
     #old.to_csv('dfg.csv',index = False)
+    if ps == True:
+         df.to_csv('2024/playoffs/defense/dfg.csv',index = False)
+    else:
+        df.to_csv('2024/defense/dfg.csv',index = False)
     
-    df.to_csv('2024/defense/dfg.csv',index = False)
-    
-    url = "https://stats.nba.com/stats/leaguedashptdefend?College=&Conference=&Country=&DateFrom=&DateTo=&DefenseCategory=Less%20Than%206Ft&Division=&DraftPick=&DraftYear=&GameSegment=&Height=&LastNGames=0&LeagueID=00&Location=&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PerMode=Totals&Period=0&PlayerExperience=&PlayerPosition=&Season=2023-24&SeasonSegment=&SeasonType=Regular%20Season&StarterBench=&TeamID=0&VsConference=&VsDivision=&Weight="
+    url = "https://stats.nba.com/stats/leaguedashptdefend?College=&Conference=&Country=&DateFrom=&DateTo=&DefenseCategory=Less%20Than%206Ft&Division=&DraftPick=&DraftYear=&GameSegment=&Height=&LastNGames=0&LeagueID=00&Location=&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PerMode=Totals&Period=0&PlayerExperience=&PlayerPosition=&Season=2023-24&SeasonSegment=&SeasonType="+stype+"&StarterBench=&TeamID=0&VsConference=&VsDivision=&Weight="
     
     df = pull_data(url)
     df = prep_dfg(df)
@@ -248,11 +255,16 @@ def update_dash():
     df = df.round(2)
     #old = pd.concat([old,df])
     #old.to_csv('rimdfg.csv',index = False)
-    df.to_csv('2024/defense/rimdfg.csv',index = False)
+    if ps == True:
+        df.to_csv('2024/playoffs/defense/rimdfg.csv',index = False)
+    else:
+        df.to_csv('2024/defense/rimdfg.csv',index = False)
     
 
 #update_master('rimfreq.csv',filename)
 update_dash()
+
+update_dash(ps = True)
 #year = 2023
 #filename = '2023/defense/rim_acc.csv'
 #update_master('rim_acc.csv',filename,year)
@@ -286,7 +298,7 @@ def create_folders(new_folder):
         output_dir.mkdir(parents=True, exist_ok=True)
 
 #create_folders('hustle')
-masters =['rimfreq','rim_acc','dfg']
+masters =['rimfreq','rim_acc','dfg','rimdfg']
 #temp = pd.read_csv('dfg_p.csv')
 #temp = temp.rename(columns = {'year':'Year'})
 #temp.to_csv('dfg_p.csv',index = False)
@@ -299,7 +311,8 @@ def update_masters(masters,ps = False):
     frames1 = []
     frames2=[]
     frames3= []
-    frames = [frames1,frames2,frames3]
+    frames4=[]
+    frames = [frames1,frames2,frames3,frames4]
     i = 0
     for year in range(2014,end_year):
         
@@ -317,15 +330,17 @@ def update_masters(masters,ps = False):
 
     for i in range(len(masters)):
         masterframe = pd.concat(frames[i])
-        masterframe.to_csv(masters[i]+'.csv',index = False)
+        masterframe.to_csv(masters[i]+trail+'.csv',index = False)
         print(masterframe)
+update_masters(masters,ps = True)
 update_masters(masters,ps = False)
+
 #temp = pd.read_csv('dfg_p.csv')
 #temp = temp.rename(columns = {'Year':'year'})
 #temp.to_csv('dfg_p.csv',index = False)     
 
 
-# In[4]:
+# In[ ]:
 
 
 '''

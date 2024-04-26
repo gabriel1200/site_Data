@@ -138,7 +138,10 @@ def prep_pullup(pullup):
         if '%' in col:
             pullup[col]*=100
     return pullup
-def get_tracking(years):
+def get_tracking(years,ps = False):
+    stype ="Regular%20Season"
+    if ps == True:
+        stype="Playoffs"
     frames = []
     shots = ["Drives","CatchShoot","Passing","Possessions","ElbowTouch","PostTouch","PaintTouch","PullUpShot"]
     for year in years:
@@ -148,7 +151,7 @@ def get_tracking(years):
             part1 = "https://stats.nba.com/stats/leaguedashptstats?College=&Conference=&Country=&DateFrom=&DateTo=&Division=&DraftPick=&DraftYear=&GameScope=&Height=&ISTRound=&LastNGames=0&LeagueID=00&Location=&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PerMode=Totals&PlayerExperience=&PlayerOrTeam=Player&PlayerPosition=&PtMeasureType="
 
             part2 = "&Season="
-            part3="&SeasonSegment=&SeasonType=Regular%20Season&StarterBench=&TeamID=0&VsConference=&VsDivision=&Weight="
+            part3="&SeasonSegment=&SeasonType="+stype+"&StarterBench=&TeamID=0&VsConference=&VsDivision=&Weight="
 
 
             url = part1+shot+part2+season+part3
@@ -170,10 +173,14 @@ def get_tracking(years):
 
             frames.append(df)
     return frames
-def tracking_save(years):
+def tracking_save(years,ps=False):
+    if ps == False:
+        trail = ''
+    else:
+        trail='/playoffs'
     for year in years:
-        folder = str(year)+'/player_tracking/'
-        frames = get_tracking([year-1])
+        folder = str(year)+trail+'/player_tracking/'
+        frames = get_tracking([year-1],ps=ps)
         drives = format_drives(frames[0])
         drives.to_csv(folder+'drives.csv',index = False)
         cs = prep_cs(frames[1])
@@ -195,7 +202,7 @@ def tracking_save(years):
         pullup = prep_pullup(frames[7])
         pullup.to_csv(folder+'pullup.csv',index = False)
 
-tracking_save([2024])
+tracking_save([2024],ps=True)
 
 
 # In[3]:
@@ -208,7 +215,7 @@ path = str(year)+'/player_tracking/pullup.csv'
 #df2
 
 
-# In[ ]:
+# In[4]:
 
 
 '''
@@ -250,7 +257,7 @@ for year in range(2014,2024):
 
 
 
-# In[ ]:
+# In[5]:
 
 
 '''
@@ -286,7 +293,7 @@ name_list = ['drives','touches','cs','pullup','passing',\
 '''
 
 
-# In[ ]:
+# In[6]:
 
 
 #get_multi(url_list,path_list,name_list,folder_choice,ps = False,start_year=2023)
@@ -304,7 +311,7 @@ name_list = ['drives','touches','cs','pullup','passing',\
 
 
 
-# In[ ]:
+# In[7]:
 
 
 '''

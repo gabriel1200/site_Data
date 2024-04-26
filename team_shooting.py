@@ -107,11 +107,14 @@ def multiyear_shooting(url_list,team_round=0,playoffs = True):
 
 #df = multiyear_shooting(url_list,playoffs=False)
 #print(df)
-def get_teamshots(years):
+def get_teamshots(years,ps=False):
     shots = ["0-2%20Feet%20-%20Very%20Tight","2-4%20Feet%20-%20Tight","4-6%20Feet%20-%20Open","6%2B%20Feet%20-%20Wide%20Open"]
     terms = ['very_tight.csv','tight.csv','open.csv','wide_open.csv']
     folder = '/team_shooting/'
-
+    stype = "Regular%20Season"
+    if ps== True:
+        folder = '/playoffs/team_shooting/'
+        stype = "Playoffs"
     for year in years:
         i = 0
         frames = []
@@ -121,7 +124,7 @@ def get_teamshots(years):
             part1 = "https://stats.nba.com/stats/leaguedashteamptshot?CloseDefDistRange="
             part2 = "&College=&Conference=&Country=&DateFrom=&DateTo=&Division=&DraftPick=&DraftYear=&DribbleRange=&GameScope=&GameSegment=&GeneralRange=&Height=&LastNGames=0&LeagueID=00&Location=&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PerMode=Totals&Period=0&PlayerExperience=&PlayerPosition=&Season="
 
-            part3 = "&SeasonSegment=&SeasonType=Regular%20Season&ShotClockRange=&ShotDistRange=&StarterBench=&TeamID=0&TouchTimeRange=&VsConference=&VsDivision=&Weight="
+            part3 = "&SeasonSegment=&SeasonType="+stype+"&ShotClockRange=&ShotDistRange=&StarterBench=&TeamID=0&TouchTimeRange=&VsConference=&VsDivision=&Weight="
             url = part1+shot+part2+season+part3
             #print(url)
             headers = {
@@ -176,7 +179,7 @@ def get_teamshots(years):
             i+=1
         year_df = pd.concat(frames)
         year_df.to_csv(str(year+1)+folder+'team_shooting.csv',index = False)
-get_teamshots([2023])
+get_teamshots([2023],ps=True)
 
 
 # In[2]:
@@ -309,6 +312,20 @@ for year in range(2014,2025):
         frames.append(df)
 master = pd.concat(frames)
 master.to_csv('team_shooting.csv',index = False)
+frames = []
+for year in range(2014,2025):
+    path = str(year)+'/playoffs/team_shooting/'
+    for shot in shots:
+        filepath = path+shot+'.csv'
+        df = pd.read_csv(filepath)
+        df['shot_coverage'] = shot
+        df['year'] = year
+        if year <2024:
+            df['TEAM'] = df['TEAM'].map(acr_dict)
+        df['TEAMNAME'] =df['TEAM'].map(name_dict)
+        frames.append(df)
+master = pd.concat(frames)
+master.to_csv('team_shooting_ps.csv',index = False)
 
 
 # In[3]:
