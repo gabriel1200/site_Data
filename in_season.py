@@ -79,7 +79,7 @@ df.to_csv('inseason_2024.csv',index = False)
 '''
 
 
-# In[2]:
+# In[9]:
 
 
 def get_table(year,minutes,ps = False):
@@ -156,7 +156,7 @@ if ps == False:
 elif ps == True:
     df = pd.read_csv('scoring_ps.csv')
     df = df[df.year<year]
-    df = df.drop(columns='
+    #df = df.drop(columns=['FTA','FGA'])
     print(df)
     new_table,year = get_table2(year,minutes,ps)
     print(new_table)
