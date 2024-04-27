@@ -182,7 +182,7 @@ def get_teamshots(years,ps=False):
 get_teamshots([2023],ps=True)
 
 
-# In[2]:
+# In[ ]:
 
 
 #import pandas as pd
@@ -267,14 +267,14 @@ opp_master = pd.concat(frames)
 
 opp_master.to_csv('opp_team_shooting.csv',index=False)
 frames = []
-for year in range(2014,2024):
+for year in range(2014,2025):
     path = str(year)+'/playoffs/opp_shooting/'
     for shot in shots:
         filepath = path+shot+'.csv'
         df = pd.read_csv(filepath)
         df['shot_coverage'] = shot
         df['year'] = year
-        if year >2023:
+        if year<2024:
             df['TEAM'] = df['TEAM'].map(acr_dict)
         df['TEAMNAME'] =df['TEAM'].map(name_dict)
         frames.append(df)
@@ -328,7 +328,7 @@ master = pd.concat(frames)
 master.to_csv('team_shooting_ps.csv',index = False)
 
 
-# In[3]:
+# In[ ]:
 
 
 '''
@@ -347,7 +347,7 @@ temp.to_csv('opp_team_shooting_ps.csv',index = False)
 # In[ ]:
 
 
-
+opp_master
 
 
 # In[ ]:
