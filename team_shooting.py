@@ -182,7 +182,7 @@ def get_teamshots(years,ps=False):
 get_teamshots([2023],ps=True)
 
 
-# In[ ]:
+# In[2]:
 
 
 #import pandas as pd
@@ -279,8 +279,7 @@ for year in range(2014,2025):
         df['TEAMNAME'] =df['TEAM'].map(name_dict)
         frames.append(df)
 opp_master = pd.concat(frames)
-opp_master['TEAM'] = opp_master['TEAM'].map(acr_dict)
-opp_master['TEAMNAME'] =opp_master['TEAM'].map(name_dict)
+
 opp_master.to_csv('opp_team_shooting_ps.csv',index=False)
 
 frames = []
@@ -328,7 +327,7 @@ master = pd.concat(frames)
 master.to_csv('team_shooting_ps.csv',index = False)
 
 
-# In[ ]:
+# In[3]:
 
 
 '''
@@ -344,7 +343,7 @@ temp.to_csv('opp_team_shooting_ps.csv',index = False)
 '''
 
 
-# In[ ]:
+# In[4]:
 
 
 opp_master
