@@ -190,7 +190,7 @@ def master_shooting(playoffs = False):
         path = str(i)+p+'/player_shooting/'
         files = ['wide_open','open','tight','very_tight']
         for file in files:
-            df = pd.read_csv(path+file+'.csv.')
+            df = pd.read_csv(path+file+'.csv')
             df['year'] = i
             df['shot_type'] =file
             data.append(df)
