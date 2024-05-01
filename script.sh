@@ -13,7 +13,7 @@ python underground.py
 python in_season.py
 git add --all
 git commit -m 'Daily Update'
-git push origin main
+git push origin master
 
 cp rimdfg.csv ../discord/data/rimdfg.csv
 cp rimfreq.csv ../discord/data/rimfreq.csv
