@@ -201,11 +201,57 @@ def tracking_save(years,ps=False):
 
         pullup = prep_pullup(frames[7])
         pullup.to_csv(folder+'pullup.csv',index = False)
+def tracking_master(years,ps=False):
+    if ps == False:
+        trail = ''
+    else:
+        trail='/playoffs'
 
-tracking_save([2024],ps=True)
+    all_frames = []
+    for year in years:
+        folder = str(year)+trail+'/player_tracking/'
+
+        drives = pd.read_csv(folder+'drives.csv')
+        drives['type']='drives'
+        drives['Volume']= drives['DRIVES']
+        
+        cs = pd.read_csv(folder+'cs.csv')
+        cs['type']='cs'
+        elbow = pd.read_csv(folder+'elbow.csv')
+        elbow['type']='elbow'
+        post = pd.read_csv(folder+'post_up.csv')
+        post['type']='post_up'
+        pullup = pd.read_csv(folder+'pullup.csv')
+        pullup['type']='pullup'
+        paint= pd.read_csv(folder+'drives.csv')
+        paint['type']='paint'
+        year_master = pd.concat([drives,cs,elbow,paint,pullup,post])
+        year_master['year']=year
+
+        all_frames.append(year_master)
+    return pd.concat(all_frames)
+ps = True
+trail =''
+if ps == True:
+    trail='_p'
+tracking_save([2024],ps=ps)
+
+new_master = tracking_master([i for i in range(2014,2025)],ps=ps)
+new_master
 
 
 # In[3]:
+
+
+to_save=['PLAYER', 'TEAM', 'GP', 'W', 'L', 'MIN', 'DRIVES', 'FGM', 'FGA', 'FG%',
+       'FTM', 'FTA', 'FT%', 'PTS', 'PTS%', 'PASS', 'PASS%', 'AST', 'AST%',
+       'TO', 'TOV%', 'PF', 'PF%', 'type', '3PM', '3PA', '3P%', 'eFG%',
+       'Touches']
+new_master = new_master[to_save]
+new_master.to_csv('tracking'+trail+'.csv',index=False)
+
+
+# In[4]:
 
 
 year = 2024
@@ -215,7 +261,7 @@ path = str(year)+'/player_tracking/pullup.csv'
 #df2
 
 
-# In[4]:
+# In[5]:
 
 
 '''
@@ -257,7 +303,7 @@ for year in range(2014,2024):
 
 
 
-# In[5]:
+# In[6]:
 
 
 '''
@@ -293,7 +339,7 @@ name_list = ['drives','touches','cs','pullup','passing',\
 '''
 
 
-# In[6]:
+# In[7]:
 
 
 #get_multi(url_list,path_list,name_list,folder_choice,ps = False,start_year=2023)
@@ -311,7 +357,7 @@ name_list = ['drives','touches','cs','pullup','passing',\
 
 
 
-# In[7]:
+# In[8]:
 
 
 '''
