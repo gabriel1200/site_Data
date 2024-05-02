@@ -173,6 +173,7 @@ def get_playershots(years,ps = False):
             path = str(year+1)+sfolder+folder+term
             df.to_csv(path,index = False)
             i+=1
+get_playershots([2023],ps=False)
 get_playershots([2023],ps=True)
 
 
