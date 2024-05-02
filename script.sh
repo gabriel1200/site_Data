@@ -8,7 +8,7 @@ python record.py
 python standings.py
 python passing.py
 python team_shooting.py
-
+python dribble.py
 python underground.py
 python in_season.py
 git add --all
@@ -55,7 +55,11 @@ cp scoring_ps.csv ../discord/data/scoring_ps.csv
 
 cp hustle.csv ../discord/data/hustle.csv
 cp hustle_ps.csv ../discord/data/hustle_ps.csv
+cp dribbleshot.csv ../discord/data/dribbleshot.csv
+cp dribbleshot_ps.csv ../discord/data/dribbleshot_ps.csv
 
+cp jumpdribble.csv ../discord/data/jumpdribble.csv
+cp jumpdribble_ps.csv ../discord/data/jumpdribble_ps.csv
 
 cp tsavg.csv ../discord/data/tsavg.csv
 
