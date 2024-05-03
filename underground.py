@@ -21,8 +21,7 @@ response = requests.get(url, params=params)
 response_json = response.json()
 player_stats = response_json["multi_row_table_data"]
 df = pd.DataFrame(player_stats)
-for col in df.columns:
-    print(col)
+
 col = ['Name','Minutes','Points','FG2M', 'FG2A', 'FG3M', 'FG3A', 'TsPct','AssistPoints','AtRimAssists','ShortMidRangeAssists', 'LongMidRangeAssists','Corner3Assists','Arc3Assists','LostBallSteals', 'LiveBallTurnovers', 'BadPassOutOfBoundsTurnovers', 'BadPassTurnovers',
        'DeadBallTurnovers', 'LostBallOutOfBoundsTurnovers', 'LostBallTurnovers', 'StepOutOfBoundsTurnovers', 'Travels', 'Turnovers','OffensiveGoaltends','FTA','OffPoss','PtsAssisted2s',
 'PtsUnassisted2s',
@@ -60,8 +59,7 @@ response = requests.get(url, params=params)
 response_json = response.json()
 player_stats = response_json["multi_row_table_data"]
 df = pd.DataFrame(player_stats)
-for col in df.columns:
-    print(col)
+
 col = ['Name','Minutes','Points','FG2M', 'FG2A', 'FG3M', 'FG3A', 'TsPct','AssistPoints','AtRimAssists','ShortMidRangeAssists', 'LongMidRangeAssists','Corner3Assists','Arc3Assists','LostBallSteals', 'LiveBallTurnovers', 'BadPassOutOfBoundsTurnovers', 'BadPassTurnovers',
        'DeadBallTurnovers', 'LostBallOutOfBoundsTurnovers', 'LostBallTurnovers', 'StepOutOfBoundsTurnovers', 'Travels', 'Turnovers','OffensiveGoaltends','FTA','OffPoss','PtsAssisted2s',
 'PtsUnassisted2s',
@@ -88,6 +86,7 @@ shots.append(old)
 shots.append(shotzone)
 master = pd.concat(shots)
 master.to_csv('shotzone_ps.csv',index = False)
+print('ShotZone Player')
 
 
 # In[ ]:
@@ -105,36 +104,47 @@ master.to_csv('shotzone_ps.csv',index = False)
 # In[2]:
 
 
-def get_shotzone():
-    data = []
-    for year in range(2000,2024):
-        season = str(year)+'-'+str(year+1)[-2:]
-        print(season)
+def team_shotzone(year,ps = False):
+    stype="Playoffs"
+    if ps == False:
+        stype="Regular Season"
+    season = str(year)+'-'+str(year+1)[-2:]
+
                                
         
-        url = "https://api.pbpstats.com/get-totals/nba"
-        params = {
-            "Season": season,
-            "SeasonType": "Regular Season",
-            "Type": "Player"
-        }
-        response = requests.get(url, params=params)
-        response_json = response.json()
-        player_stats = response_json["multi_row_table_data"]
-        df = pd.DataFrame(player_stats)
-        shotzone = df[['Name','EntityId','TeamId','TeamAbbreviation','GamesPlayed','OffPoss','DefPoss','Minutes','FtPoints','FTA','AtRimFGA','AtRimFGM','AtRimAccuracy','ShortMidRangeFGA','ShortMidRangeFGM',
-                'ShortMidRangeAccuracy','ShortMidRangeFrequency','LongMidRangeFGM','LongMidRangeFGA','FG2A','FG2M','FG3A','NonHeaveFg3Pct','NonHeaveArc3FGA','HeaveAttempts','Corner3FGA','Corner3FGM','NonHeaveFg3Pct'
-                        ,'NonHeaveArc3FGM','TsPct','Points','EfgPct','SecondChanceEfgPct','PenaltyEfgPct','SecondChanceTsPct','PenaltyTsPct','SecondChanceShotQualityAvg','PenaltyShotQualityAvg','ShotQualityAvg']].reset_index(drop=True)
-        shotzone['year']=year+1
-        data.append(shotzone)
-    return pd.concat(data)
-#df = get_shotzone()
+    url = "https://api.pbpstats.com/get-totals/nba"
+    params = {
+        "Season": season,
+        "SeasonType": stype,
+        "Type": "Team"
+    }
+    response = requests.get(url, params=params)
+    response_json = response.json()
+    player_stats = response_json["multi_row_table_data"]
+    df = pd.DataFrame(player_stats)
+    shotzone = df[['Name','EntityId','TeamId','TeamAbbreviation','GamesPlayed','OffPoss','DefPoss','FtPoints','FTA','AtRimFGA','AtRimFGM','AtRimAccuracy','ShortMidRangeFGA','ShortMidRangeFGM',
+            'ShortMidRangeAccuracy','ShortMidRangeFrequency','LongMidRangeFGM','LongMidRangeFGA','FG2A','FG2M','FG3A','NonHeaveFg3Pct','NonHeaveArc3FGA','HeaveAttempts','Corner3FGA','Corner3FGM'
+                    ,'NonHeaveArc3FGM','TsPct','Points','EfgPct','SecondChanceEfgPct','PenaltyEfgPct','SecondChanceTsPct','PenaltyTsPct','SecondChanceShotQualityAvg','PenaltyShotQualityAvg','ShotQualityAvg']].reset_index(drop=True)
+    shotzone['year']=year+1
+    shotzone = shotzone.reset_index(drop=True)
+    return shotzone
 
 
-# In[3]:
-
-
-master
+def update_team(year,ps=False):
+    trail = ''
+    if ps == True:
+        trail='_ps'
+    teamdf = team_shotzone(year,ps=ps)
+    print(teamdf.columns)
+    year+=1
+    old_df =pd.read_csv('team_shotzone'+trail+'.csv')
+    print(old.columns)
+    old_df = old_df[old_df.year!=year].reset_index(drop=True)
+    new=pd.concat([old_df,teamdf])
+    new.to_csv('team_shotzone'+trail+'.csv',index=False)
+    return new
+newdf = update_team(2023,ps=True)
+newdf
 
 
 # In[4]:

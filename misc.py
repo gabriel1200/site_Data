@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[9]:
 
 
 import pandas as pd
@@ -82,7 +82,11 @@ def get_tables(url_list):
         data.append(df)
     driver.close()
     return data
-def get_playtypes(years,ps= False):
+def get_playtypes(years,ps= False,p_or_t='p'):
+    if p_or_t =='p':
+        type ='P'
+    else:
+        type='T'
     stype = "Regular+Season"
     trail =''
     if ps == True:
@@ -100,12 +104,21 @@ def get_playtypes(years,ps= False):
     }
     playtypes = ['Transition','PRBallHandler','Spotup','Isolation','PRRollman','Postup','Misc','OffRebound','Cut','Handoff','OffScreen',]
     terms = ['trans.csv','bh.csv','spotup.csv','iso.csv','rollman.csv','postup.csv','misc.csv','putback.csv','cut.csv','handoff.csv','offscreen.csv']
+    plays = ['tran','pr_ball','spot','iso','roll','post','misc','oreb','cut','handoff','off_screen']
 
+    frames = []
+    data_columns= ['TEAM', 'GP', 'POSS', 'FREQ%', 'PPP', 'PTS', 'FGM', 'FGA', 'FG%',
+       'EFG%', 'FTFREQ%', 'TOVFREQ%', 'SFFREQ%', 'AND ONEFREQ%', 'SCOREFREQ%',
+       'PERCENTILE']
+    if type =="P":
+        data_columns= ['PLAYER_NAME','PLAYER_ID','TEAM', 'GP', 'POSS', 'FREQ%',
+                   'PPP', 'PTS', 'FGM', 'FGA', 'FG%','EFG%', 'FTFREQ%', 'TOVFREQ%', 'SFFREQ%', 'AND ONEFREQ%', 'SCOREFREQ%','PERCENTILE']
+        
     for year in years:
         ssn = str(year)+'-'+str(year+1 - 2000)
         i = 0
         for play in playtypes:
-            half1 = "https://stats.nba.com/stats/synergyplaytypes?LeagueID=00&PerMode=Totals&PlayType="+play+"&PlayerOrTeam=T&SeasonType="+stype+"&SeasonYear="
+            half1 = "https://stats.nba.com/stats/synergyplaytypes?LeagueID=00&PerMode=Totals&PlayType="+play+"&PlayerOrTeam="+type+"&SeasonType="+stype+"&SeasonYear="
             half2 = "&TypeGrouping=offensive"
             term = terms[i]
             url = (
@@ -113,13 +126,15 @@ def get_playtypes(years,ps= False):
                         half1+ str(ssn)+half2
                         
                     )
-
+            #print(url)
             json = requests.get(url,headers = headers).json()
             data = json["resultSets"][0]["rowSet"]
+            
             columns = json["resultSets"][0]["headers"]
 
             df2 = pd.DataFrame.from_records(data, columns=columns)
                 #df2.columns
+          
             df2 = df2.rename(columns={'TEAM_NAME':'TEAM','POSS_PCT':'FREQ%','EFG_PCT':'EFG%','FG_PCT':'FG%',
                                           'TOV_POSS_PCT':'TOVFREQ%','PLUSONE_POSS_PCT':'AND ONEFREQ%','FT_POSS_PCT':'FTFREQ%','SCORE_POSS_PCT':'SCOREFREQ%','SF_POSS_PCT':'SFFREQ%'})
             for col in df2.columns:
@@ -127,20 +142,76 @@ def get_playtypes(years,ps= False):
                     df2[col]*=100
             #print(df2)
             path = str(year+1)+trail+'/playtype/'+term
-            print(path)
-            df2 = df2.round(1)
-            df2 = df2[['TEAM', 'GP', 'POSS', 'FREQ%', 'PPP', 'PTS', 'FGM', 'FGA', 'FG%',
-       'EFG%', 'FTFREQ%', 'TOVFREQ%', 'SFFREQ%', 'AND ONEFREQ%', 'SCOREFREQ%',
-       'PERCENTILE']]
-            df2.to_csv(path,index = False)
+          
+            df2 = df2.round(2)
+            
+            df2 = df2[data_columns]
+            
+            #print(df2)
+            if p_or_t.lower() =='t':
+                df2.to_csv(path,index = False)
+            else:
+                #print(df2)
+                df2['playtype'] = plays[i]
+                df2['year']=year+1
+                print(len(df2))
+                frames.append(df2)
           
             i+=1
-                
+            
+        if p_or_t.lower() =='p':
+            data = pd.concat(frames)
+            
+            map_terms ={
+            'PLAYER_NAME': 'Player',
+          
+            'TEAM': 'Team',
+            'GP': 'GP',
+            'POSS': 'Poss',
+            'FREQ%': '% Time',
+            'PPP': 'PPP',
+            'PTS': 'Points',
+            'FGM': 'FGM',
+            'FGA': 'FGA',
+            'FG%': 'FG%',
+            'EFG%': 'aFG%',
+            'FTFREQ%': '%FT',
+            'TOVFREQ%': '%TO',
+            'SFFREQ%': '%SF',
+            'AND ONEFREQ%': 'AND ONEFREQ%',
+            'SCOREFREQ%': '%Score',
+            'PERCENTILE': 'Percentile',
+            'playtype': 'playtype'
+        }
+
+            data.rename(columns=map_terms,inplace=True)
+            return data
 years = [2023]
 get_playtypes(years,ps=True)
+def update_player_master(year,ps=False):
+    trail = ''
+    if ps == True:
+        trail ='_p'
+    years=[year-1]
+    frames = get_playtypes(years,ps=ps,p_or_t='p')
+
+    old =pd.read_csv('playtype'+trail+'.csv')
+    old = old[old.year!=year]
+    print(frames.columns)
+    new = pd.concat([old,frames])
+    new.to_csv('playtype'+trail+'.csv',index=False)
+    return new
+new = update_player_master(2024,ps=True)
+new
 
 
 # In[2]:
+
+
+new['year']
+
+
+# In[3]:
 
 
 #url_list = [url1]#
@@ -171,13 +242,13 @@ def get_multi(url_list,playoffs = False):
             df.to_csv(terms[i],index = False)
 
 
-# In[3]:
+# In[4]:
 
 
 #get_multi(url_list,playoffs = False)
 
 
-# In[4]:
+# In[5]:
 
 
 #terms = ['data/teampullup.csv','data/teamcatchshoot.csv','data/teamundersix.csv','data/teamiso.csv','data/teamtransition.csv']
@@ -186,14 +257,14 @@ terms = ['playtype/handoff.csv','playtype/iso.csv','playtype/trans.csv','playtyp
          'playtype/cut.csv','playtype/offscreen.csv','playtype/putback.csv','playtype/misc.csv','playtype/drives.csv']
 
 
-# In[5]:
+# In[6]:
 
 
 #df = pd.read_csv('2024/playtype/spotup.csv')
 #df
 
 
-# In[6]:
+# In[7]:
 
 
 def add_synergy():
@@ -208,6 +279,25 @@ def add_synergy():
         year_df = df[df.year == i]
         print(year_df.head())
         year_df.to_csv(path+'playtype.csv')
+
+
+# In[8]:
+
+
+df = pd.read_csv('playtype.csv')
+print(df['playtype'].unique())
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
 
 
 # In[ ]:
