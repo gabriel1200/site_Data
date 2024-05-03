@@ -29,7 +29,7 @@ url5 = 'https://www.nba.com/stats/players/transition?PerMode=Totals&dir=D&sort=P
 
 
 
-# In[2]:
+# In[9]:
 
 
 def prep_passing(passing):
@@ -237,7 +237,7 @@ if ps == True:
 tracking_save([2024],ps=ps)
 
 new_master = tracking_master([i for i in range(2014,2025)],ps=ps)
-new_master
+new_master.to_csv('tracking'+trail+'.csv',index=False)
 
 
 # In[3]:

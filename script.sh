@@ -53,14 +53,17 @@ cp scoring_ps.csv ../discord/data/scoring_ps.csv
 cp playtype.csv ../discord/data/playtype.csv
 cp playtype_p.csv ../discord/data/playtype_p.csv
 
-
+cp teamplay_p.csv ../discord/data/teamplay_p.csv
+cp teamplay.csv ../discord/data/teamplay.csv
+cp teamplayd_p.csv ../discord/data/teamplayd_p.csv
+cp teamplayd.csv ../discord/data/teamplayd.csv
 
 cp shotzone.csv ../discord/data/shotzone.csv
 cp shotzone_ps.csv ../discord/data/shotzone_ps.csv
 cp team_shotzone.csv ../discord/data/team_shotzone.csv
 cp team_shotzone_ps.csv ../discord/data/team_shotzone_ps.csv
 
-cp tracking.csv ../discord/data/tracking.csv
+#cp tracking.csv ../discord/data/tracking.csv
 
 cp tracking_p.csv ../discord/data/tracking_p.csv
 
