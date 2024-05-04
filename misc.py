@@ -107,7 +107,7 @@ def get_playtypes(years,ps= False,p_or_t='t',defense= False):
     }
     playtypes = ['Transition','PRBallHandler','Spotup','Isolation','PRRollman','Postup','Misc','OffRebound','Cut','Handoff','OffScreen',]
     terms = ['trans.csv','bh.csv','spotup.csv','iso.csv','rollman.csv','postup.csv','misc.csv','putback.csv','cut.csv','handoff.csv','offscreen.csv']
-    plays = ['tran','pr_ball','spot','iso','roll','post','misc','oreb','cut','handoff','off_screen']
+    plays = ['tran','pr_ball','spot','iso','pr_roll','post','misc','oreb','cut','hand_off','off_screen']
 
     frames = []
     data_columns= ['TEAM', 'GP', 'POSS', 'FREQ%', 'PPP', 'PTS', 'FGM', 'FGA', 'FG%',
@@ -256,6 +256,7 @@ def update_player_master(year,ps=False):
     new.to_csv('playtype'+trail+'.csv',index=False)
     return new
 new = update_player_master(2024,ps=playoffs)
+new2 = update_player_master(2024,ps=False)
 
 
 defense = get_playtypes([2023],ps=True,defense=True)
@@ -362,10 +363,17 @@ team_dict = dict(zip(df.full_name,df.Team))
 team_dict
 
 
-# In[ ]:
+# In[8]:
 
 
+df['playtype'].unique().tolist()
 
+
+# In[9]:
+
+
+new_df=pd.read_csv('teamplay_p.csv')
+new_df['playtype'].unique().tolist()
 
 
 # In[ ]:
