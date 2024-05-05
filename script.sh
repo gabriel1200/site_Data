@@ -11,6 +11,8 @@ python team_shooting.py
 python dribble.py
 python underground.py
 python in_season.py
+python hustle.py
+
 git add --all
 git commit -m 'Daily Update'
 git push origin master
@@ -19,6 +21,9 @@ cp rimdfg.csv ../discord/data/rimdfg.csv
 cp rimfreq.csv ../discord/data/rimfreq.csv
 cp rim_acc.csv ../discord/data/rim_acc.csv
 cp dfg.csv ../discord/data/dfg.csv
+
+cp hustle.csv ../discord/data/hustle.csv
+cp hustle_ps.csv ../discord/data/hustle_ps.csv
 
 
 cp rimdfg_p.csv ../discord/data/rimdfg_ps.csv
@@ -37,6 +42,9 @@ cp opp_team_shooting_ps.csv ../discord/data/opp_team_shooting_ps.csv
 
 cp passing.csv ../discord/data/passing.csv
 cp passing_ps.csv ../discord/data/passing_ps.csv
+
+cp poss.csv ../discord/data/poss.csv
+cp poss_ps.csv ../discord/data/poss_ps.csv
 
 cp team_avg.csv ../discord/data/team_avg.csv
 cp avg_shooting.csv ../discord/data/avg_shooting.csv

@@ -4,6 +4,9 @@ cp rim_acc.csv ../discord/data/rim_acc.csv
 cp dfg.csv ../discord/data/dfg.csv
 
 
+cp hustle.csv ../discord/data/hustle.csv
+cp hustle_ps.csv ../discord/data/hustle_ps.csv
+
 cp rimdfg_p.csv ../discord/data/rimdfg_ps.csv
 cp rimfreq_p.csv ../discord/data/rimfreq_p.csv
 cp rim_acc_p.csv ../discord/data/rim_acc_p.csv
@@ -31,6 +34,9 @@ cp totals_ps.csv ../discord/data/totals_ps.csv
 
 cp scoring.csv ../discord/data/scoring.csv
 cp scoring_ps.csv ../discord/data/scoring_ps.csv
+
+cp poss.csv ../discord/data/poss.csv
+cp poss_ps.csv ../discord/data/poss_ps.csv
 
 
 cp playtype.csv ../discord/data/playtype.csv

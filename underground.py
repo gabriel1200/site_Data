@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[2]:
 
 
 import pandas as pd
@@ -89,10 +89,21 @@ master.to_csv('shotzone_ps.csv',index = False)
 print('ShotZone Player')
 
 
-# In[ ]:
+# In[6]:
 
 
+poss = pd.read_csv('shotzone.csv')
+poss = poss[['EntityId','OffPoss','DefPoss','year']]
+poss.rename(columns={'EntityId':'PLAYER_ID'},inplace=True)
+poss['Poss'] = poss['OffPoss']+poss['DefPoss']
+poss.to_csv('poss.csv',index=False)
 
+
+poss = pd.read_csv('shotzone_ps.csv')
+poss = poss[['EntityId','OffPoss','DefPoss','year']]
+poss.rename(columns={'EntityId':'PLAYER_ID'},inplace=True)
+poss['Poss'] = poss['OffPoss']+poss['DefPoss']
+poss.to_csv('poss.csv',index=False)
 
 
 # In[ ]:
