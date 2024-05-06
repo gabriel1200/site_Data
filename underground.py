@@ -89,7 +89,7 @@ master.to_csv('shotzone_ps.csv',index = False)
 print('ShotZone Player')
 
 
-# In[6]:
+# In[7]:
 
 
 poss = pd.read_csv('shotzone.csv')
@@ -103,7 +103,7 @@ poss = pd.read_csv('shotzone_ps.csv')
 poss = poss[['EntityId','OffPoss','DefPoss','year']]
 poss.rename(columns={'EntityId':'PLAYER_ID'},inplace=True)
 poss['Poss'] = poss['OffPoss']+poss['DefPoss']
-poss.to_csv('poss.csv',index=False)
+poss.to_csv('poss_ps.csv',index=False)
 
 
 # In[ ]:
