@@ -100,10 +100,10 @@ hustle = hustle_master(ps=False)
 hustle
 
 
-# In[ ]:
+# In[2]:
 
 
-
+print(hustle.columns)
 
 
 # In[ ]:

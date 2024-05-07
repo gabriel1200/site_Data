@@ -35,8 +35,8 @@ cp totals_ps.csv ../discord/data/totals_ps.csv
 cp scoring.csv ../discord/data/scoring.csv
 cp scoring_ps.csv ../discord/data/scoring_ps.csv
 
-cp poss.csv ../discord/data/poss.csv
-cp poss_ps.csv ../discord/data/poss_ps.csv
+#cp poss.csv ../discord/data/poss.csv
+#cp poss_ps.csv ../discord/data/poss_ps.csv
 
 
 cp playtype.csv ../discord/data/playtype.csv

@@ -43,8 +43,8 @@ cp opp_team_shooting_ps.csv ../discord/data/opp_team_shooting_ps.csv
 cp passing.csv ../discord/data/passing.csv
 cp passing_ps.csv ../discord/data/passing_ps.csv
 
-cp poss.csv ../discord/data/poss.csv
-cp poss_ps.csv ../discord/data/poss_ps.csv
+#cp poss.csv ../discord/data/poss.csv
+#cp poss_ps.csv ../discord/data/poss_ps.csv
 
 cp team_avg.csv ../discord/data/team_avg.csv
 cp avg_shooting.csv ../discord/data/avg_shooting.csv
