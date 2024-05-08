@@ -29,7 +29,7 @@ url5 = 'https://www.nba.com/stats/players/transition?PerMode=Totals&dir=D&sort=P
 
 
 
-# In[9]:
+# In[2]:
 
 
 def prep_passing(passing):
@@ -246,7 +246,7 @@ new_master.to_csv('tracking'+trail+'.csv',index=False)
 to_save=['PLAYER', 'TEAM', 'GP', 'W', 'L', 'MIN', 'DRIVES', 'FGM', 'FGA', 'FG%',
        'FTM', 'FTA', 'FT%', 'PTS', 'PTS%', 'PASS', 'PASS%', 'AST', 'AST%',
        'TO', 'TOV%', 'PF', 'PF%', 'type', '3PM', '3PA', '3P%', 'eFG%',
-       'Touches']
+       'Touches','year']
 new_master = new_master[to_save]
 new_master.to_csv('tracking'+trail+'.csv',index=False)
 
