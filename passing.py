@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[2]:
 
 
 import pandas as pd
@@ -87,21 +87,22 @@ def passing_data(ps = False,update=True):
     df = pd.concat(frames)
     return df
 
-passing = passing_data()
-passing_ps = passing_data(ps=True)
+#passing = passing_data()
+passing_ps = passing_data(ps=True,update=False)
 #merged['testas'] = merged['TwoPtAssists']*2+ merged['ThreePtAssists']*3
+passing_ps
 
 
-# In[2]:
+# In[3]:
 
 
 columns = ['EntityId','Name','Points','on-ball-time%','on-ball-time','UAPTS','TSA','OffPoss','Potential Assists','Travels','TsPct',
         'Turnovers','Passes','PassesReceived','PotAss/Passes','UAFGM','High Value Assist %','Assist PPP','TOUCHES','Avg Sec PerTouch',
            'AST PTSCreated','Assists','SecondaryAST','POT_AST_PER_MIN','ThreePtAssists','AtRimAssists','Time OfPoss','ASTAdj','BadPassTurnovers',
        'Avg Drib PerTouch','PtsUnassisted2s','PtsUnassisted3s','Fg3Pct','FG3A','FG3M','OffPoss','GP','Minutes','year']
-rs=passing[columns]
+#rs=passing[columns]
 ps=passing_ps[columns]
-rs.to_csv('passing.csv',index =False)
+#rs.to_csv('passing.csv',index =False)
 ps.to_csv('passing_ps.csv',index = False)
 #print(rs.sort_values(by=)
 

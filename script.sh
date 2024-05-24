@@ -26,7 +26,7 @@ cp hustle.csv ../discord/data/hustle.csv
 cp hustle_ps.csv ../discord/data/hustle_ps.csv
 
 
-cp rimdfg_p.csv ../discord/data/rimdfg_ps.csv
+cp rimdfg_p.csv ../discord/data/rimdfg_p.csv
 cp rimfreq_p.csv ../discord/data/rimfreq_p.csv
 cp rim_acc_p.csv ../discord/data/rim_acc_p.csv
 cp dfg_p.csv ../discord/data/dfg_p.csv

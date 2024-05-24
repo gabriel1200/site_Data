@@ -285,7 +285,7 @@ update_master('rim_acc.csv',filename,year)
 '''
 
 
-# In[3]:
+# In[4]:
 
 
 def create_folders(new_folder):
@@ -306,7 +306,7 @@ def update_masters(masters,ps = False):
     trail = ''
     end_year = 2025
     if ps == True:
-        end_year =2024
+        end_year =2025
         trail = '_p'
     frames1 = []
     frames2=[]
@@ -340,7 +340,7 @@ update_masters(masters,ps = True)
 #temp.to_csv('dfg_p.csv',index = False)     
 
 
-# In[4]:
+# In[ ]:
 
 
 '''
