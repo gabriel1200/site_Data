@@ -354,26 +354,71 @@ def add_synergy():
         year_df.to_csv(path+'playtype.csv')
 
 
-# In[7]:
+# In[29]:
 
 
-df= pd.read_csv('teamplay.csv')
+def create_macro(data,play,playlist):
+        num_col = ['% Time', 'PPP', 'Points', 'FGM', 'FGA','FG%', 'aFG%', '%FT', '%TO', '%SF', '%Score','Poss','GP']
+        perc = [ 'PPP','FG%', 'aFG%', '%FT', '%TO', '%SF', '%Score']
 
-team_dict = dict(zip(df.full_name,df.Team))
-team_dict
+        print(len(data.columns))
+     
+        data = data.loc[data.playtype.isin(playlist)]
+        #data['playtype'] = play
+        #data['GP']/=3
+        group = data.groupby(['Player','Team','year'])
+        s_list = []
+        #print(p_df)
+        for col in num_col:
+            if col in perc:
+                series =group.apply(w_avg, col, 'Poss')
+            #poss = pd.Series([sum(df['Poss'])], index=['Poss'])
+            #series = pd.concat([series,poss],keys =['series'])
+            #print(series)
+        #print(series)
+
+            elif col =='GP':
+                series = group.mean()[col]
+                print(series)
+         
+            else:
+                series = group.sum()[col]
+            s_list.append(series)
+
+        player_df = pd.concat(s_list)
+        print(len(player_df.columns))
+        player_df.columns = num_col
+        #print(player_df)
+        new_data = player_df.reset_index()
+        new_data['playtype'] = play
+        
+        return new_data
+def w_avg(df, values, weights):
+    #print(values)
+    #print(weights)
+
+    d = df[values]
+    w = df[weights]
+    if values == 'Poss':
+
+        return d.sum()
+    
+    return (d * w).sum() / w.sum()
+df = pd.read_csv('playtype_p.csv')
+print(df.columns)
+year = 2024
+df=df[df.year==year].reset_index(drop=True)
+data_names = {'pr_ball':'on_ball','iso':'on_ball','pr_roll':'play_finish','post':'on_ball','hand_off':'motion'
+               ,'oreb':'play_finish','cut':'play_finish','off_screen':'motion','spot':'play_finish','tran':'tran','misc':'misc'}
+df['playtype'] = df['playtype'].map(data_names)
+pstyle= df.groupby(['Player','Team','GP','PLAYER_ID','playtype','year']).sum()[['Poss','% Time','FGM','FGA','Points']].reset_index()
+pstyle['PPP'] = pstyle['Points']/pstyle['Poss']
+oldstyle = pd.read_csv('play_style_p.csv')
+oldstyle = oldstyle[oldstyle.year!=year]
 
 
-# In[8]:
-
-
-df['playtype'].unique().tolist()
-
-
-# In[9]:
-
-
-new_df=pd.read_csv('teamplay_p.csv')
-new_df['playtype'].unique().tolist()
+newstyle = pd.concat([oldstyle,pstyle])
+newstyle.to_csv('play_style_p.csv',index=False)
 
 
 # In[ ]:

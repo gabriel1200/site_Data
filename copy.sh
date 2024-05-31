@@ -42,6 +42,9 @@ cp scoring_ps.csv ../discord/data/scoring_ps.csv
 cp playtype.csv ../discord/data/playtype.csv
 cp playtype_p.csv ../discord/data/playtype_p.csv
 
+cp play_style.csv ../discord/data/play_style.csv
+cp play_style_p.csv ../discord/data/play_style_p.csv
+
 cp teamplay_p.csv ../discord/data/teamplay_p.csv
 cp teamplay.csv ../discord/data/teamplay.csv
 cp teamplayd_p.csv ../discord/data/teamplayd_p.csv
