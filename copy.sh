@@ -1,3 +1,7 @@
+cp windex.csv ../discord/data/windex.csv
+
+cp windex_ps.csv ../discord/data/windex_ps.csv
+
 cp rimdfg.csv ../discord/data/rimdfg.csv
 cp rimfreq.csv ../discord/data/rimfreq.csv
 cp rim_acc.csv ../discord/data/rim_acc.csv

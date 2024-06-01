@@ -12,10 +12,14 @@ python dribble.py
 python underground.py
 python in_season.py
 python hustle.py
-
+python player_index.py
 git add --all
 git commit -m 'Daily Update'
 git push origin master
+
+cp windex.csv ../discord/data/windex.csv
+
+cp windex_ps.csv ../discord/data/windex_ps.csv
 
 cp rimdfg.csv ../discord/data/rimdfg.csv
 cp rimfreq.csv ../discord/data/rimfreq.csv
