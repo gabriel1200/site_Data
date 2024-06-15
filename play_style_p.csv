@@ -12688,9 +12688,9 @@ Aaron Nesmith,Indiana Pacers,2024,53.599999999999994,0.8541666666666666,82,28,82
 Aaron Nesmith,Indiana Pacers,2024,22.9,0.8536585365853658,35,13,29,,,,,,,41,17.0,tran,1630174.0
 Aaron Wiggins,Oklahoma City Thunder,2024,41.0,0.92,23,9,24,,,,,,,25,10.0,play_finish,1630598.0
 Aaron Wiggins,Oklahoma City Thunder,2024,16.4,0.9,9,3,7,,,,,,,10,10.0,tran,1630598.0
-Al Horford,Boston Celtics,2024,7.5,1.4545454545454546,16,8,11,,,,,,,11,17.0,on_ball,201143.0
-Al Horford,Boston Celtics,2024,63.6,1.075268817204301,100,37,88,,,,,,,93,17.0,play_finish,201143.0
-Al Horford,Boston Celtics,2024,17.1,1.32,33,13,23,,,,,,,25,17.0,tran,201143.0
+Al Horford,Boston Celtics,2024,7.4,1.4545454545454546,16,8,11,,,,,,,11,18.0,on_ball,201143.0
+Al Horford,Boston Celtics,2024,64.2,1.0842105263157895,103,38,89,,,,,,,95,18.0,play_finish,201143.0
+Al Horford,Boston Celtics,2024,16.9,1.32,33,13,23,,,,,,,25,18.0,tran,201143.0
 Alec Burks,New York Knicks,2024,17.5,0.9090909090909091,10,1,7,,,,,,,11,6.0,on_ball,202692.0
 Alec Burks,New York Knicks,2024,33.3,1.5238095238095237,32,11,19,,,,,,,21,6.0,play_finish,202692.0
 Alec Burks,New York Knicks,2024,17.5,1.4545454545454546,16,4,8,,,,,,,11,6.0,tran,202692.0
@@ -12750,21 +12750,21 @@ D'Angelo Russell,Los Angeles Lakers,2024,19.5,0.875,14,6,12,,,,,,,16,5.0,tran,16
 Damian Lillard,Milwaukee Bucks,2024,17.1,0.3888888888888889,7,0,14,,,,,,,18,4.0,motion,203081.0
 Damian Lillard,Milwaukee Bucks,2024,52.300000000000004,1.3636363636363635,75,21,44,,,,,,,55,4.0,on_ball,203081.0
 Damian Lillard,Milwaukee Bucks,2024,13.3,1.5,21,5,9,,,,,,,14,4.0,tran,203081.0
-Daniel Gafford,Dallas Mavericks,2024,9.3,0.2,3,1,5,,,,,,,15,20.0,misc,1629655.0
-Daniel Gafford,Dallas Mavericks,2024,77.0,1.217741935483871,151,60,92,,,,,,,124,20.0,play_finish,1629655.0
-Daniel Gafford,Dallas Mavericks,2024,7.5,1.5833333333333333,19,9,11,,,,,,,12,20.0,tran,1629655.0
+Daniel Gafford,Dallas Mavericks,2024,9.6,0.1875,3,1,5,,,,,,,16,21.0,misc,1629655.0
+Daniel Gafford,Dallas Mavericks,2024,74.9,1.216,152,60,92,,,,,,,125,21.0,play_finish,1629655.0
+Daniel Gafford,Dallas Mavericks,2024,8.4,1.6428571428571428,23,10,12,,,,,,,14,21.0,tran,1629655.0
 Darius Garland,Cleveland Cavaliers,2024,8.3,0.7647058823529411,13,6,14,,,,,,,17,12.0,motion,1629636.0
 Darius Garland,Cleveland Cavaliers,2024,59.5,0.9098360655737705,111,45,105,,,,,,,122,12.0,on_ball,1629636.0
 Darius Garland,Cleveland Cavaliers,2024,12.2,1.0,25,8,21,,,,,,,25,12.0,play_finish,1629636.0
 Darius Garland,Cleveland Cavaliers,2024,12.7,0.7692307692307693,20,9,24,,,,,,,26,12.0,tran,1629636.0
-Dereck Lively II,Dallas Mavericks,2024,14.9,0.7,14,0,0,,,,,,,20,19.0,misc,1641726.0
-Dereck Lively II,Dallas Mavericks,2024,73.2,1.2142857142857142,119,52,77,,,,,,,98,19.0,play_finish,1641726.0
-Dereck Lively II,Dallas Mavericks,2024,11.2,1.2666666666666666,19,7,11,,,,,,,15,19.0,tran,1641726.0
-Derrick Jones Jr.,Dallas Mavericks,2024,72.89999999999999,1.0930232558139534,141,53,113,,,,,,,129,20.0,play_finish,1627884.0
-Derrick Jones Jr.,Dallas Mavericks,2024,22.6,1.075,43,18,33,,,,,,,40,20.0,tran,1627884.0
-Derrick White,Boston Celtics,2024,18.7,0.9361702127659575,44,16,43,,,,,,,47,17.0,on_ball,1628401.0
-Derrick White,Boston Celtics,2024,47.6,1.3416666666666666,161,57,113,,,,,,,120,17.0,play_finish,1628401.0
-Derrick White,Boston Celtics,2024,17.9,0.9555555555555556,43,14,37,,,,,,,45,17.0,tran,1628401.0
+Dereck Lively II,Dallas Mavericks,2024,14.2,0.7,14,0,0,,,,,,,20,20.0,misc,1641726.0
+Dereck Lively II,Dallas Mavericks,2024,72.4,1.2058823529411764,123,53,79,,,,,,,102,20.0,play_finish,1641726.0
+Dereck Lively II,Dallas Mavericks,2024,12.1,1.3529411764705883,23,9,13,,,,,,,17,20.0,tran,1641726.0
+Derrick Jones Jr.,Dallas Mavericks,2024,72.3,1.099236641221374,144,54,115,,,,,,,131,21.0,play_finish,1627884.0
+Derrick Jones Jr.,Dallas Mavericks,2024,23.2,1.0714285714285714,45,19,35,,,,,,,42,21.0,tran,1627884.0
+Derrick White,Boston Celtics,2024,21.900000000000002,0.9473684210526315,54,19,51,,,,,,,57,18.0,on_ball,1628401.0
+Derrick White,Boston Celtics,2024,48.0,1.312,164,58,118,,,,,,,125,18.0,play_finish,1628401.0
+Derrick White,Boston Celtics,2024,17.3,0.9555555555555556,43,14,37,,,,,,,45,18.0,tran,1628401.0
 Devin Booker,Phoenix Suns,2024,42.1,1.05,42,11,26,,,,,,,40,4.0,on_ball,1626164.0
 Devin Booker,Phoenix Suns,2024,28.4,1.3333333333333333,36,12,20,,,,,,,27,4.0,tran,1626164.0
 Donovan Mitchell,Cleveland Cavaliers,2024,3.6,1.3,13,2,4,,,,,,,10,10.0,misc,1628378.0
@@ -12800,9 +12800,9 @@ Isaiah Joe,Oklahoma City Thunder,2024,37.3,1.1363636363636365,25,9,20,,,,,,,22,1
 Isaiah Joe,Oklahoma City Thunder,2024,23.7,1.1428571428571428,16,6,12,,,,,,,14,10.0,tran,1630198.0
 Ivica Zubac,LA Clippers,2024,19.5,1.0,17,8,16,,,,,,,17,6.0,on_ball,1627826.0
 Ivica Zubac,LA Clippers,2024,63.1,1.2545454545454546,69,30,46,,,,,,,55,6.0,play_finish,1627826.0
-Jaden Hardy,Dallas Mavericks,2024,32.4,0.8333333333333334,20,7,19,,,,,,,24,17.0,on_ball,1630702.0
-Jaden Hardy,Dallas Mavericks,2024,36.5,1.2222222222222223,33,12,24,,,,,,,27,17.0,play_finish,1630702.0
-Jaden Hardy,Dallas Mavericks,2024,17.6,0.9230769230769231,12,4,11,,,,,,,13,17.0,tran,1630702.0
+Jaden Hardy,Dallas Mavericks,2024,32.9,0.7692307692307693,20,7,21,,,,,,,26,18.0,on_ball,1630702.0
+Jaden Hardy,Dallas Mavericks,2024,35.4,1.2857142857142858,36,13,25,,,,,,,28,18.0,play_finish,1630702.0
+Jaden Hardy,Dallas Mavericks,2024,17.7,1.0,14,5,12,,,,,,,14,18.0,tran,1630702.0
 Jaden McDaniels,Minnesota Timberwolves,2024,73.8,1.1338582677165354,144,55,106,,,,,,,127,16.0,play_finish,1630183.0
 Jaden McDaniels,Minnesota Timberwolves,2024,11.6,1.3,26,10,17,,,,,,,20,16.0,tran,1630183.0
 Jaime Jaquez Jr.,Miami Heat,2024,27.4,0.5294117647058824,9,3,13,,,,,,,17,4.0,on_ball,1631170.0
@@ -12829,16 +12829,16 @@ James Harden,LA Clippers,2024,63.5,1.1643835616438356,85,26,56,,,,,,,73,6.0,on_b
 James Harden,LA Clippers,2024,10.4,0.5,6,2,12,,,,,,,12,6.0,play_finish,201935.0
 James Harden,LA Clippers,2024,14.8,1.3529411764705883,23,8,13,,,,,,,17,6.0,tran,201935.0
 Jarrett Allen,Cleveland Cavaliers,2024,62.9,1.411764705882353,48,18,25,,,,,,,34,4.0,play_finish,1628386.0
-Jaylen Brown,Boston Celtics,2024,3.0,0.6666666666666666,8,2,3,,,,,,,12,17.0,misc,1627759.0
-Jaylen Brown,Boston Celtics,2024,8.899999999999999,1.2,42,15,25,,,,,,,35,17.0,motion,1627759.0
-Jaylen Brown,Boston Celtics,2024,36.7,0.9724137931034482,141,53,110,,,,,,,145,17.0,on_ball,1627759.0
-Jaylen Brown,Boston Celtics,2024,26.799999999999997,1.1320754716981132,120,46,90,,,,,,,106,17.0,play_finish,1627759.0
-Jaylen Brown,Boston Celtics,2024,23.3,1.1956521739130435,110,48,72,,,,,,,92,17.0,tran,1627759.0
+Jaylen Brown,Boston Celtics,2024,2.9,0.6666666666666666,8,2,3,,,,,,,12,18.0,misc,1627759.0
+Jaylen Brown,Boston Celtics,2024,8.5,1.2,42,15,25,,,,,,,35,18.0,motion,1627759.0
+Jaylen Brown,Boston Celtics,2024,36.5,0.9533333333333334,143,53,114,,,,,,,150,18.0,on_ball,1627759.0
+Jaylen Brown,Boston Celtics,2024,27.7,1.0964912280701755,125,48,96,,,,,,,114,18.0,play_finish,1627759.0
+Jaylen Brown,Boston Celtics,2024,23.1,1.1894736842105262,113,49,74,,,,,,,95,18.0,tran,1627759.0
 Jaylin Williams,Oklahoma City Thunder,2024,50.0,1.1578947368421053,22,8,18,,,,,,,19,10.0,play_finish,1631119.0
-Jayson Tatum,Boston Celtics,2024,3.9,0.7058823529411765,12,1,1,,,,,,,17,17.0,misc,1628369.0
-Jayson Tatum,Boston Celtics,2024,58.0,0.9087301587301587,229,79,206,,,,,,,252,17.0,on_ball,1628369.0
-Jayson Tatum,Boston Celtics,2024,22.2,1.1041666666666667,106,36,77,,,,,,,96,17.0,play_finish,1628369.0
-Jayson Tatum,Boston Celtics,2024,13.4,1.293103448275862,75,27,45,,,,,,,58,17.0,tran,1628369.0
+Jayson Tatum,Boston Celtics,2024,3.8,0.7058823529411765,12,1,1,,,,,,,17,18.0,misc,1628369.0
+Jayson Tatum,Boston Celtics,2024,57.8,0.9,234,80,212,,,,,,,260,18.0,on_ball,1628369.0
+Jayson Tatum,Boston Celtics,2024,22.4,1.1287128712871286,114,39,81,,,,,,,101,18.0,play_finish,1628369.0
+Jayson Tatum,Boston Celtics,2024,13.6,1.2622950819672132,77,27,45,,,,,,,61,18.0,tran,1628369.0
 Joel Embiid,Philadelphia 76ers,2024,5.2,0.7,7,1,3,,,,,,,10,6.0,misc,203954.0
 Joel Embiid,Philadelphia 76ers,2024,35.2,0.9117647058823529,62,21,48,,,,,,,68,6.0,on_ball,203954.0
 Joel Embiid,Philadelphia 76ers,2024,42.0,1.271604938271605,103,29,60,,,,,,,81,6.0,play_finish,203954.0
@@ -12849,16 +12849,16 @@ Jonathan Isaac,Orlando Magic,2024,56.8,0.72,18,6,24,,,,,,,25,7.0,play_finish,162
 Jose Alvarado,New Orleans Pelicans,2024,45.8,0.2727272727272727,3,1,11,,,,,,,11,4.0,play_finish,1630631.0
 Josh Giddey,Oklahoma City Thunder,2024,51.7,1.127659574468085,53,21,43,,,,,,,47,10.0,play_finish,1630581.0
 Josh Giddey,Oklahoma City Thunder,2024,23.1,1.0476190476190477,22,8,16,,,,,,,21,10.0,tran,1630581.0
-Josh Green,Dallas Mavericks,2024,57.3,0.9803921568627451,50,17,47,,,,,,,51,20.0,play_finish,1630182.0
-Josh Green,Dallas Mavericks,2024,24.7,1.3181818181818181,29,7,15,,,,,,,22,20.0,tran,1630182.0
+Josh Green,Dallas Mavericks,2024,57.6,0.9622641509433962,51,17,48,,,,,,,53,21.0,play_finish,1630182.0
+Josh Green,Dallas Mavericks,2024,23.9,1.3181818181818181,29,7,15,,,,,,,22,21.0,tran,1630182.0
 Josh Hart,New York Knicks,2024,6.8,0.14285714285714285,2,0,0,,,,,,,14,13.0,misc,1628404.0
 Josh Hart,New York Knicks,2024,11.7,0.8333333333333334,20,6,17,,,,,,,24,13.0,on_ball,1628404.0
 Josh Hart,New York Knicks,2024,46.800000000000004,1.0729166666666667,103,36,79,,,,,,,96,13.0,play_finish,1628404.0
 Josh Hart,New York Knicks,2024,23.9,1.0204081632653061,50,18,34,,,,,,,49,13.0,tran,1628404.0
-Jrue Holiday,Boston Celtics,2024,8.0,0.625,10,2,5,,,,,,,16,17.0,misc,201950.0
-Jrue Holiday,Boston Celtics,2024,29.4,1.0,59,22,48,,,,,,,59,17.0,on_ball,201950.0
-Jrue Holiday,Boston Celtics,2024,32.9,1.2121212121212122,80,31,61,,,,,,,66,17.0,play_finish,201950.0
-Jrue Holiday,Boston Celtics,2024,16.4,1.2727272727272727,42,17,30,,,,,,,33,17.0,tran,201950.0
+Jrue Holiday,Boston Celtics,2024,7.4,0.625,10,2,5,,,,,,,16,18.0,misc,201950.0
+Jrue Holiday,Boston Celtics,2024,28.200000000000003,1.0163934426229508,62,23,49,,,,,,,61,18.0,on_ball,201950.0
+Jrue Holiday,Boston Celtics,2024,38.4,1.2289156626506024,102,40,76,,,,,,,83,18.0,play_finish,201950.0
+Jrue Holiday,Boston Celtics,2024,16.7,1.2222222222222223,44,18,31,,,,,,,36,18.0,tran,201950.0
 Justin Holiday,Denver Nuggets,2024,55.0,0.8636363636363636,19,6,20,,,,,,,22,12.0,play_finish,203200.0
 Jusuf Nurkic,Phoenix Suns,2024,28.9,1.0,11,5,9,,,,,,,11,4.0,play_finish,203994.0
 Karl-Anthony Towns,Minnesota Timberwolves,2024,5.2,0.9333333333333333,14,3,4,,,,,,,15,16.0,misc,1626157.0
@@ -12882,21 +12882,21 @@ Kristaps Porzingis,Boston Celtics,2024,21.1,1.0666666666666667,16,5,10,,,,,,,15,
 Kristaps Porzingis,Boston Celtics,2024,39.4,0.9285714285714286,26,7,24,,,,,,,28,6.0,play_finish,204001.0
 Kyle Anderson,Minnesota Timberwolves,2024,56.2,0.975609756097561,40,19,38,,,,,,,41,15.0,play_finish,203937.0
 Kyle Lowry,Philadelphia 76ers,2024,39.5,1.0588235294117647,18,5,15,,,,,,,17,6.0,play_finish,200768.0
-Kyrie Irving,Dallas Mavericks,2024,4.3,0.7368421052631579,14,0,4,,,,,,,19,20.0,misc,202681.0
-Kyrie Irving,Dallas Mavericks,2024,6.6,1.0,29,11,24,,,,,,,29,20.0,motion,202681.0
-Kyrie Irving,Dallas Mavericks,2024,52.7,0.9267241379310345,215,88,195,,,,,,,232,20.0,on_ball,202681.0
-Kyrie Irving,Dallas Mavericks,2024,15.899999999999999,1.1857142857142857,83,31,63,,,,,,,70,20.0,play_finish,202681.0
-Kyrie Irving,Dallas Mavericks,2024,15.9,1.2142857142857142,85,35,63,,,,,,,70,20.0,tran,202681.0
+Kyrie Irving,Dallas Mavericks,2024,4.1,0.7368421052631579,14,0,4,,,,,,,19,21.0,misc,202681.0
+Kyrie Irving,Dallas Mavericks,2024,7.0,0.90625,29,11,26,,,,,,,32,21.0,motion,202681.0
+Kyrie Irving,Dallas Mavericks,2024,53.0,0.9547325102880658,232,96,206,,,,,,,243,21.0,on_ball,202681.0
+Kyrie Irving,Dallas Mavericks,2024,17.9,1.1951219512195121,98,38,75,,,,,,,82,21.0,play_finish,202681.0
+Kyrie Irving,Dallas Mavericks,2024,15.7,1.1805555555555556,85,35,65,,,,,,,72,21.0,tran,202681.0
 LeBron James,Los Angeles Lakers,2024,54.0,0.9705882352941176,66,26,49,,,,,,,68,5.0,on_ball,2544.0
 LeBron James,Los Angeles Lakers,2024,19.0,1.375,33,13,20,,,,,,,24,5.0,tran,2544.0
 Luguentz Dort,Oklahoma City Thunder,2024,53.1,0.9666666666666667,58,18,52,,,,,,,60,10.0,play_finish,1629652.0
 Luguentz Dort,Oklahoma City Thunder,2024,20.4,1.1304347826086956,26,8,20,,,,,,,23,10.0,tran,1629652.0
-Luka Doncic,Dallas Mavericks,2024,2.7,0.5625,9,1,5,,,,,,,16,20.0,misc,1629029.0
-Luka Doncic,Dallas Mavericks,2024,5.3,0.75,24,9,28,,,,,,,32,20.0,motion,1629029.0
-Luka Doncic,Dallas Mavericks,2024,65.1,0.9974358974358974,389,136,301,,,,,,,390,20.0,on_ball,1629029.0
-Luka Doncic,Dallas Mavericks,2024,11.7,1.0285714285714285,72,23,61,,,,,,,70,20.0,play_finish,1629029.0
-Luka Doncic,Dallas Mavericks,2024,12.9,0.935064935064935,72,27,47,,,,,,,77,20.0,tran,1629029.0
-Luke Kornet,Boston Celtics,2024,36.4,1.1666666666666667,14,7,12,,,,,,,12,11.0,play_finish,1628436.0
+Luka Doncic,Dallas Mavericks,2024,2.6,0.5625,9,1,5,,,,,,,16,21.0,misc,1629029.0
+Luka Doncic,Dallas Mavericks,2024,5.1,0.75,24,9,28,,,,,,,32,21.0,motion,1629029.0
+Luka Doncic,Dallas Mavericks,2024,65.60000000000001,0.9902676399026764,407,143,319,,,,,,,411,21.0,on_ball,1629029.0
+Luka Doncic,Dallas Mavericks,2024,11.6,1.0136986301369864,74,24,64,,,,,,,73,21.0,play_finish,1629029.0
+Luka Doncic,Dallas Mavericks,2024,12.8,0.975,78,30,50,,,,,,,80,21.0,tran,1629029.0
+Luke Kornet,Boston Celtics,2024,35.3,1.1666666666666667,14,7,12,,,,,,,12,12.0,play_finish,1628436.0
 Malik Beasley,Milwaukee Bucks,2024,40.9,1.3333333333333333,24,9,18,,,,,,,18,6.0,play_finish,1627736.0
 Marcus Morris Sr.,Cleveland Cavaliers,2024,40.4,1.3333333333333333,28,11,20,,,,,,,21,9.0,play_finish,202694.0
 Markelle Fultz,Orlando Magic,2024,24.4,1.0,11,5,8,,,,,,,11,7.0,on_ball,1628365.0
@@ -12904,7 +12904,7 @@ Max Strus,Cleveland Cavaliers,2024,29.7,1.2222222222222223,44,17,34,,,,,,,36,12.
 Max Strus,Cleveland Cavaliers,2024,9.9,0.0,0,0,6,,,,,,,12,12.0,on_ball,1629622.0
 Max Strus,Cleveland Cavaliers,2024,26.4,0.78125,25,8,30,,,,,,,32,12.0,play_finish,1629622.0
 Max Strus,Cleveland Cavaliers,2024,16.5,1.4,28,11,19,,,,,,,20,12.0,tran,1629622.0
-Maxi Kleber,Dallas Mavericks,2024,58.5,1.5416666666666667,37,13,23,,,,,,,24,11.0,play_finish,1628467.0
+Maxi Kleber,Dallas Mavericks,2024,59.1,1.6153846153846154,42,14,24,,,,,,,26,12.0,play_finish,1628467.0
 Michael Porter Jr.,Denver Nuggets,2024,19.9,1.3142857142857143,46,15,26,,,,,,,35,12.0,motion,1629008.0
 Michael Porter Jr.,Denver Nuggets,2024,40.4,0.9577464788732394,68,24,63,,,,,,,71,12.0,play_finish,1629008.0
 Michael Porter Jr.,Denver Nuggets,2024,29.0,1.0980392156862746,56,21,42,,,,,,,51,12.0,tran,1629008.0
@@ -12945,10 +12945,10 @@ OG Anunoby,New York Knicks,2024,21.3,1.5185185185185186,41,17,25,,,,,,,27,9.0,tr
 Obi Toppin,Indiana Pacers,2024,7.5,1.0,12,2,4,,,,,,,12,17.0,misc,1630167.0
 Obi Toppin,Indiana Pacers,2024,46.400000000000006,0.9864864864864865,73,29,69,,,,,,,74,17.0,play_finish,1630167.0
 Obi Toppin,Indiana Pacers,2024,27.5,1.4318181818181819,63,28,42,,,,,,,44,17.0,tran,1630167.0
-P.J. Washington,Dallas Mavericks,2024,4.7,0.3076923076923077,4,0,2,,,,,,,13,20.0,misc,1629023.0
-P.J. Washington,Dallas Mavericks,2024,4.0,1.1818181818181819,13,4,7,,,,,,,11,20.0,on_ball,1629023.0
-P.J. Washington,Dallas Mavericks,2024,67.9,1.0591397849462365,197,71,169,,,,,,,186,20.0,play_finish,1629023.0
-P.J. Washington,Dallas Mavericks,2024,20.4,1.0357142857142858,58,19,38,,,,,,,56,20.0,tran,1629023.0
+P.J. Washington,Dallas Mavericks,2024,5.0,0.2857142857142857,4,0,2,,,,,,,14,21.0,misc,1629023.0
+P.J. Washington,Dallas Mavericks,2024,4.3,1.0833333333333333,13,4,8,,,,,,,12,21.0,on_ball,1629023.0
+P.J. Washington,Dallas Mavericks,2024,67.5,1.0582010582010581,200,72,171,,,,,,,189,21.0,play_finish,1629023.0
+P.J. Washington,Dallas Mavericks,2024,20.4,1.0701754385964912,61,20,39,,,,,,,57,21.0,tran,1629023.0
 Paolo Banchero,Orlando Magic,2024,50.8,0.8349514563106796,86,31,69,,,,,,,103,7.0,on_ball,1631094.0
 Paolo Banchero,Orlando Magic,2024,28.5,1.0,58,23,51,,,,,,,58,7.0,play_finish,1631094.0
 Paolo Banchero,Orlando Magic,2024,11.8,0.9166666666666666,22,7,18,,,,,,,24,7.0,tran,1631094.0
@@ -12961,9 +12961,9 @@ Paul George,LA Clippers,2024,17.5,0.8571428571428571,18,7,17,,,,,,,21,6.0,motion
 Paul George,LA Clippers,2024,40.8,0.8367346938775511,41,13,39,,,,,,,49,6.0,on_ball,202331.0
 Paul George,LA Clippers,2024,19.2,1.1304347826086956,26,9,22,,,,,,,23,6.0,play_finish,202331.0
 Paul George,LA Clippers,2024,11.7,1.0714285714285714,15,5,10,,,,,,,14,6.0,tran,202331.0
-Payton Pritchard,Boston Celtics,2024,26.8,1.2758620689655173,37,12,19,,,,,,,29,17.0,on_ball,1630202.0
-Payton Pritchard,Boston Celtics,2024,37.0,0.825,33,11,37,,,,,,,40,17.0,play_finish,1630202.0
-Payton Pritchard,Boston Celtics,2024,18.5,1.3,26,10,18,,,,,,,20,17.0,tran,1630202.0
+Payton Pritchard,Boston Celtics,2024,27.4,1.2352941176470589,42,14,23,,,,,,,34,18.0,on_ball,1630202.0
+Payton Pritchard,Boston Celtics,2024,33.1,0.8048780487804879,33,11,38,,,,,,,41,18.0,play_finish,1630202.0
+Payton Pritchard,Boston Celtics,2024,21.0,1.2307692307692308,32,13,24,,,,,,,26,18.0,tran,1630202.0
 Peyton Watson,Denver Nuggets,2024,56.7,0.6470588235294118,11,4,16,,,,,,,17,10.0,play_finish,1631212.0
 Precious Achiuwa,New York Knicks,2024,47.2,1.24,31,14,23,,,,,,,25,9.0,play_finish,1630173.0
 Precious Achiuwa,New York Knicks,2024,18.9,0.8,8,3,7,,,,,,,10,9.0,tran,1630173.0
@@ -12979,8 +12979,8 @@ Rui Hachimura,Los Angeles Lakers,2024,22.7,1.1,11,4,7,,,,,,,10,5.0,tran,1629060.
 Russell Westbrook,LA Clippers,2024,15.2,0.2,2,1,9,,,,,,,10,6.0,on_ball,201566.0
 Russell Westbrook,LA Clippers,2024,28.8,0.5789473684210527,11,4,19,,,,,,,19,6.0,play_finish,201566.0
 Russell Westbrook,LA Clippers,2024,24.2,0.75,12,3,10,,,,,,,16,6.0,tran,201566.0
-Sam Hauser,Boston Celtics,2024,54.7,0.975609756097561,40,14,39,,,,,,,41,17.0,play_finish,1630573.0
-Sam Hauser,Boston Celtics,2024,24.0,1.5555555555555556,28,9,16,,,,,,,18,17.0,tran,1630573.0
+Sam Hauser,Boston Celtics,2024,52.4,1.0465116279069768,45,16,41,,,,,,,43,18.0,play_finish,1630573.0
+Sam Hauser,Boston Celtics,2024,22.0,1.5555555555555556,28,9,16,,,,,,,18,18.0,tran,1630573.0
 Sam Merrill,Cleveland Cavaliers,2024,46.7,0.5714285714285714,8,2,13,,,,,,,14,10.0,play_finish,1630241.0
 Shai Gilgeous-Alexander,Oklahoma City Thunder,2024,65.19999999999999,1.0491803278688525,192,72,146,,,,,,,183,10.0,on_ball,1628983.0
 Shai Gilgeous-Alexander,Oklahoma City Thunder,2024,11.0,1.1290322580645162,35,14,29,,,,,,,31,10.0,play_finish,1628983.0
@@ -12992,8 +12992,8 @@ T.J. McConnell,Indiana Pacers,2024,15.1,1.375,44,20,27,,,,,,,32,17.0,tran,204456
 Taurean Prince,Los Angeles Lakers,2024,57.6,1.0,19,7,17,,,,,,,19,5.0,play_finish,1627752.0
 Terance Mann,LA Clippers,2024,40.0,1.3181818181818181,29,10,21,,,,,,,22,6.0,play_finish,1629611.0
 Terance Mann,LA Clippers,2024,20.0,0.8181818181818182,9,3,10,,,,,,,11,6.0,tran,1629611.0
-Tim Hardaway Jr.,Dallas Mavericks,2024,45.5,0.72,18,7,24,,,,,,,25,12.0,play_finish,203501.0
-Tim Hardaway Jr.,Dallas Mavericks,2024,23.6,0.8461538461538461,11,4,12,,,,,,,13,12.0,tran,203501.0
+Tim Hardaway Jr.,Dallas Mavericks,2024,43.5,0.7777777777777778,21,8,26,,,,,,,27,13.0,play_finish,203501.0
+Tim Hardaway Jr.,Dallas Mavericks,2024,21.0,0.8461538461538461,11,4,12,,,,,,,13,13.0,tran,203501.0
 Tobias Harris,Philadelphia 76ers,2024,25.0,1.0714285714285714,15,5,14,,,,,,,14,6.0,play_finish,202699.0
 Tobias Harris,Philadelphia 76ers,2024,21.4,0.9166666666666666,11,5,10,,,,,,,12,6.0,tran,202699.0
 Trey Murphy III,New Orleans Pelicans,2024,25.0,1.2142857142857142,17,6,14,,,,,,,14,4.0,play_finish,1630530.0
