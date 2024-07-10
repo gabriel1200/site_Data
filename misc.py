@@ -421,6 +421,75 @@ newstyle = pd.concat([oldstyle,pstyle])
 newstyle.to_csv('play_style_p.csv',index=False)
 
 
+# In[7]:
+
+
+
+
+
+# In[10]:
+
+
+old['Player'].value_counts()
+
+
+# In[27]:
+
+
+old=pd.read_csv('playtype.csv')
+old = old[old.year==2024]
+temp = pd.read_csv('playtype_backup.csv')
+temp = temp[temp.year==2024]
+id_map=dict(zip(old['Player'],old['PLAYER_ID']))
+temp['PLAYER_ID'] = temp['Player'].map(id_map)
+trans = pd.concat([old,temp])
+
+trans = trans.drop_duplicates(subset=['Player','Team','GP','playtype','year'])
+backed = pd.read_csv('playtype.csv')
+backed = backed[backed.year<2024]
+new_save = pd.concat([backed,trans])
+new_save.to_csv('playtype.csv',index=False)
+df = pd.read_csv('playtype.csv')
+print(df.columns)
+year = 2024
+df=df[df.year==year].reset_index(drop=True)
+data_names = {'pr_ball':'on_ball','iso':'on_ball','pr_roll':'play_finish','post':'on_ball','hand_off':'motion'
+               ,'oreb':'play_finish','cut':'play_finish','off_screen':'motion','spot':'play_finish','tran':'tran','misc':'misc'}
+df['playtype'] = df['playtype'].map(data_names)
+pstyle= df.groupby(['Player','Team','GP','PLAYER_ID','playtype','year']).sum()[['Poss','% Time','FGM','FGA','Points']].reset_index()
+pstyle['PPP'] = pstyle['Points']/pstyle['Poss']
+oldstyle = pd.read_csv('play_style.csv')
+oldstyle = oldstyle[oldstyle.year!=year]
+
+
+newstyle = pd.concat([oldstyle,pstyle])
+newstyle.to_csv('play_style.csv',index=False)
+
+
+# In[16]:
+
+
+
+
+
+# In[26]:
+
+
+
+
+
+# In[23]:
+
+
+
+
+
+# In[25]:
+
+
+len(old)
+
+
 # In[ ]:
 
 
