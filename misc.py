@@ -406,19 +406,16 @@ def w_avg(df, values, weights):
     return (d * w).sum() / w.sum()
 df = pd.read_csv('playtype_p.csv')
 print(df.columns)
-year = 2024
-df=df[df.year==year].reset_index(drop=True)
+#year = 2024
+#df=df[df.year==year].reset_index(drop=True)
 data_names = {'pr_ball':'on_ball','iso':'on_ball','pr_roll':'play_finish','post':'on_ball','hand_off':'motion'
                ,'oreb':'play_finish','cut':'play_finish','off_screen':'motion','spot':'play_finish','tran':'tran','misc':'misc'}
 df['playtype'] = df['playtype'].map(data_names)
 pstyle= df.groupby(['Player','Team','GP','PLAYER_ID','playtype','year']).sum()[['Poss','% Time','FGM','FGA','Points']].reset_index()
 pstyle['PPP'] = pstyle['Points']/pstyle['Poss']
-oldstyle = pd.read_csv('play_style_p.csv')
-oldstyle = oldstyle[oldstyle.year!=year]
 
-
-newstyle = pd.concat([oldstyle,pstyle])
-newstyle.to_csv('play_style_p.csv',index=False)
+#pstyle.to_csv('play_style_p.csv',index=False)
+pstyle
 
 
 # In[7]:

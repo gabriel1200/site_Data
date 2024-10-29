@@ -50,7 +50,7 @@ def format_drives(df):
     df.columns = [col.replace('_PCT','%') for col in df.columns]
     replace_columns = {'PASSES':'PASS', 'PASSES%':'PASS%', 'PLAYER_NAME':'PLAYER', 'TEAM_ABBREVIATION':'TEAM', 'TOV':'TO'}
     df = df.rename(columns=replace_columns)
-    df = df[['PLAYER', 'TEAM', 'GP', 'W', 'L', 'MIN', 'DRIVES', 'FGM', 'FGA', 'FG%',
+    df = df[['PLAYER_ID','PLAYER', 'TEAM', 'GP', 'W', 'L', 'MIN', 'DRIVES', 'FGM', 'FGA', 'FG%',
            'FTM', 'FTA', 'FT%', 'PTS', 'PTS%', 'PASS', 'PASS%', 'AST', 'AST%',
            'TO', 'TOV%', 'PF', 'PF%']]
     for col in df:
@@ -70,7 +70,8 @@ def prep_touches(touches):
     touches['TEAM_ID']= tid
     return touches
 def prep_cs(cs):
-    cs =cs.drop(columns=['PLAYER_ID', 'TEAM_ID', 'W','L'])
+    cs =cs.drop(columns=['TEAM_ID', 'W','L'])
+    pid=cs['PLAYER_ID']
     cs.columns
     pts = cs['CATCH_SHOOT_PTS']
 
@@ -81,6 +82,7 @@ def prep_cs(cs):
     cs.columns = ['PLAYER', 'TEAM', 'GP', 'MIN',  'FGM', 'FGA', 'FG%', '3PM', '3PA',
            '3P%', 'eFG%']
     cs['PTS'] = pts
+    cs['PLAYER_ID']=pid
     for col in cs:
         if '%' in col:
             cs[col]*=100
@@ -230,20 +232,23 @@ def tracking_master(years,ps=False):
 
         all_frames.append(year_master)
     return pd.concat(all_frames)
-ps = True
+ps = False
 trail =''
 if ps == True:
     trail='_p'
-tracking_save([2024],ps=ps)
 
-new_master = tracking_master([i for i in range(2014,2025)],ps=ps)
+tracking_save([i for i in range(2025,2026)],ps=False)
+
+#tracking_save([i for i in range(2014,2025)],ps=True)
+
+new_master = tracking_master([i for i in range(2014,2026)],ps=ps)
 new_master.to_csv('tracking'+trail+'.csv',index=False)
 
 
 # In[3]:
 
 
-to_save=['PLAYER', 'TEAM', 'GP', 'W', 'L', 'MIN', 'DRIVES', 'FGM', 'FGA', 'FG%',
+to_save=['PLAYER_ID','PLAYER', 'TEAM', 'GP', 'W', 'L', 'MIN', 'DRIVES', 'FGM', 'FGA', 'FG%',
        'FTM', 'FTA', 'FT%', 'PTS', 'PTS%', 'PASS', 'PASS%', 'AST', 'AST%',
        'TO', 'TOV%', 'PF', 'PF%', 'type', '3PM', '3PA', '3P%', 'eFG%',
        'Touches','year']

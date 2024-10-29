@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[2]:
+# In[1]:
 
 
 import pandas as pd
@@ -13,7 +13,7 @@ import requests
 
 url = "https://api.pbpstats.com/get-totals/nba"
 params = {
-    "Season": "2023-24",
+    "Season": "2024-25",
     "SeasonType": "Regular Season",
     "Type": "Player"
 }
@@ -31,7 +31,7 @@ col = ['Name','Minutes','Points','FG2M', 'FG2A', 'FG3M', 'FG3A', 'TsPct','Assist
 df[col].to_csv('wowy/player_small.csv',index = False)
 #df[col].to_csv('2024/player_tracking/player_small.csv',index = False)
 df.to_csv('wowy/player_large.csv',index = False)
-year = 2024
+year = 2025
 df['year'] = year
 shotzone = df[['Name','EntityId','TeamId','TeamAbbreviation','GamesPlayed','OffPoss','DefPoss','Minutes','FtPoints','FTA','AtRimFGA','AtRimFGM','AtRimAccuracy','ShortMidRangeFGA','ShortMidRangeFGM',
         'ShortMidRangeAccuracy','ShortMidRangeFrequency','LongMidRangeFGM','LongMidRangeFGA','FG2A','FG2M','FG3A','NonHeaveFg3Pct','NonHeaveArc3FGA','HeaveAttempts','Corner3FGA','Corner3FGM','NonHeaveFg3Pct'
@@ -48,7 +48,7 @@ shots.append(old)
 shots.append(shotzone)
 master = pd.concat(shots)
 master.to_csv('shotzone.csv',index = False)
-
+'''
 url = "https://api.pbpstats.com/get-totals/nba"
 params = {
     "Season": "2023-24",
@@ -86,10 +86,11 @@ shots.append(old)
 shots.append(shotzone)
 master = pd.concat(shots)
 master.to_csv('shotzone_ps.csv',index = False)
+'''
 print('ShotZone Player')
 
 
-# In[7]:
+# In[2]:
 
 
 poss = pd.read_csv('shotzone.csv')
@@ -112,7 +113,7 @@ poss.to_csv('poss_ps.csv',index=False)
 
 
 
-# In[2]:
+# In[6]:
 
 
 def team_shotzone(year,ps = False):
@@ -132,6 +133,7 @@ def team_shotzone(year,ps = False):
     response = requests.get(url, params=params)
     response_json = response.json()
     player_stats = response_json["multi_row_table_data"]
+
     df = pd.DataFrame(player_stats)
     shotzone = df[['Name','EntityId','TeamId','TeamAbbreviation','GamesPlayed','OffPoss','DefPoss','FtPoints','FTA','AtRimFGA','AtRimFGM','AtRimAccuracy','ShortMidRangeFGA','ShortMidRangeFGM',
             'ShortMidRangeAccuracy','ShortMidRangeFrequency','LongMidRangeFGM','LongMidRangeFGA','FG2A','FG2M','FG3A','NonHeaveFg3Pct','NonHeaveArc3FGA','HeaveAttempts','Corner3FGA','Corner3FGM'
@@ -154,7 +156,7 @@ def update_team(year,ps=False):
     new=pd.concat([old_df,teamdf])
     new.to_csv('team_shotzone'+trail+'.csv',index=False)
     return new
-newdf = update_team(2023,ps=True)
+newdf = update_team(2024,ps=False)
 newdf
 
 

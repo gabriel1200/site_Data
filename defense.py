@@ -169,7 +169,7 @@ def wowy_statlog(stat,start_year,ps =False):
         print('Playoffs')
     player_dict,team_dict= get_index()
     frames = []
-    for season in range(start_year,2025):
+    for season in range(start_year,2026):
         if (season)%100 <=9:
             zero = '0'
         else:
@@ -178,6 +178,7 @@ def wowy_statlog(stat,start_year,ps =False):
         print(season_s)
         url = "https://api.pbpstats.com/get-on-off/nba/stat"
         for team in team_dict.keys():
+            time.sleep(3)
             params = {
                 "Season": season_s,
                 "SeasonType": s_type,
@@ -185,6 +186,7 @@ def wowy_statlog(stat,start_year,ps =False):
                 "Stat": stat, # for all options for Stat, see the list below
 
             }
+            print(params)
             response = requests.get(url, params=params)
             response_json = response.json()
             #print(response_json)
@@ -200,30 +202,30 @@ def wowy_statlog(stat,start_year,ps =False):
     return pd.concat(frames)
 def update_log(filename,stat,ps = False):
 
-    df = wowy_statlog(stat,2024,ps)
+    df = wowy_statlog(stat,2025,ps)
     df.to_csv(filename,index =False)
     
 #stat = 'FG2APctBlocked'
 # At Rim Shot Frequency - Defense
 stat= "AtRimAccuracyOpponent"
-filename = '2024/defense/rim_acc.csv'
+filename = '2025/defense/rim_acc.csv'
 update_log(filename,stat,ps=False)
-filename = '2024/playoffs/defense/rim_acc.csv'
+#filename = '2025/playoffs/defense/rim_acc.csv'
 
 
-update_log(filename,stat,ps = True)
+#update_log(filename,stat,ps = True)
 #update_master('rim_acc.csv',filename)
 
 stat2 ="AtRimFrequencyOpponent"
 
 
 #update_log(filename,stat2)
-filename = '2024/defense/rimfreq.csv'
+filename = '2025/defense/rimfreq.csv'
 
 
 update_log(filename,stat2,ps = False)
-filename = '2024/playoffs/defense/rimfreq.csv'
-update_log(filename,stat2,ps = True)
+#filename = '2025/playoffs/defense/rimfreq.csv'
+#update_log(filename,stat2,ps = True)
 
 def update_dash(ps = False):
     stype = 'Regular%20Season'
@@ -236,14 +238,14 @@ def update_dash(ps = False):
     df = prep_dfg(df)
     #old = pd.read_csv('dfg.csv')
     #old = old[old.year!=2024]
-    df['year'] = 2024
+    df['year'] = 2025
     df = df.round(2)
     #old = pd.concat([old,df])
     #old.to_csv('dfg.csv',index = False)
     if ps == True:
-         df.to_csv('2024/playoffs/defense/dfg.csv',index = False)
+         df.to_csv('2025/playoffs/defense/dfg.csv',index = False)
     else:
-        df.to_csv('2024/defense/dfg.csv',index = False)
+        df.to_csv('2025/defense/dfg.csv',index = False)
     
     url = "https://stats.nba.com/stats/leaguedashptdefend?College=&Conference=&Country=&DateFrom=&DateTo=&DefenseCategory=Less%20Than%206Ft&Division=&DraftPick=&DraftYear=&GameSegment=&Height=&LastNGames=0&LeagueID=00&Location=&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PerMode=Totals&Period=0&PlayerExperience=&PlayerPosition=&Season=2023-24&SeasonSegment=&SeasonType="+stype+"&StarterBench=&TeamID=0&VsConference=&VsDivision=&Weight="
     
@@ -251,20 +253,20 @@ def update_dash(ps = False):
     df = prep_dfg(df)
     #old = pd.read_csv('rimdfg.csv')
     #old = old[old.year!=2024]
-    df['year'] = 2024
+    df['year'] = 2025
     df = df.round(2)
     #old = pd.concat([old,df])
     #old.to_csv('rimdfg.csv',index = False)
     if ps == True:
-        df.to_csv('2024/playoffs/defense/rimdfg.csv',index = False)
+        df.to_csv('2025/playoffs/defense/rimdfg.csv',index = False)
     else:
-        df.to_csv('2024/defense/rimdfg.csv',index = False)
+        df.to_csv('2025/defense/rimdfg.csv',index = False)
     
 
 #update_master('rimfreq.csv',filename)
 update_dash()
 
-update_dash(ps = True)
+#update_dash(ps = True)
 #year = 2023
 #filename = '2023/defense/rim_acc.csv'
 #update_master('rim_acc.csv',filename,year)
@@ -285,7 +287,7 @@ update_master('rim_acc.csv',filename,year)
 '''
 
 
-# In[4]:
+# In[3]:
 
 
 def create_folders(new_folder):
@@ -304,9 +306,9 @@ masters =['rimfreq','rim_acc','dfg','rimdfg']
 #temp.to_csv('dfg_p.csv',index = False)
 def update_masters(masters,ps = False):
     trail = ''
-    end_year = 2025
+    end_year = 2026
     if ps == True:
-        end_year =2025
+        end_year =2026
         trail = '_p'
     frames1 = []
     frames2=[]

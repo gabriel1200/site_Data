@@ -88,7 +88,7 @@ def hustle_master(ps=False):
     if ps == False:
         trail = ''
     data_rs = []
-    for year in range(2016,2025):
+    for year in range(2016,2026):
         df = get_hustle(year,ps=ps)
         data_rs.append(df)
         print(len(df))

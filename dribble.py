@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[30]:
+# In[5]:
 
 
 import pandas as pd
@@ -49,8 +49,7 @@ def get_dribbleshots(years,ps = False):
             data = json['resultSets'][0]["rowSet"]
             columns = json["resultSets"][0]["headers"]
             df = pd.DataFrame.from_records(data, columns=columns)
-            new_columns = {'FG2A_FREQUENCY':'2FG FREQ%',
-             'FG2_PCT':'2FG%',
+            new_columns = {'FG2A_FREQUENCY':'2FG FREQ%', 'FG2_PCT':'2FG%',
              'FG2A':'2FGA',
              'FG2M':'2FGM',
              'FG3A_FREQUENCY':'3FG FREQ%',
@@ -63,7 +62,7 @@ def get_dribbleshots(years,ps = False):
              'PLAYER_NAME':'PLAYER',
              'PLAYER_LAST_TEAM_ABBREVIATION':'TEAM'}
             df = df.rename(columns = new_columns)
-            df = df [['PLAYER', 'TEAM', 'AGE', 'GP', 'G', 'FREQ%', 'FGM', 'FGA', 'FG%',
+            df = df [['PLAYER_ID','PLAYER', 'TEAM', 'AGE', 'GP', 'G', 'FREQ%', 'FGM', 'FGA', 'FG%',
                    'EFG%', '2FG FREQ%', '2FGM', '2FGA', '2FG%', '3FG FREQ%', '3PM', '3PA',
                    '3P%']]
             for col in df.columns:
@@ -75,14 +74,14 @@ def get_dribbleshots(years,ps = False):
             dataframe.append(df)
 
             i+=1
-        return pd.concat(dataframe)
+    return pd.concat(dataframe)
 
 def master_dribble(year,ps = False):
     trail='_ps'
     if ps == False:
         trail=''
     old = pd.read_csv('dribbleshot'+trail+'.csv')
-    df = get_dribbleshots([year],ps=True)
+    df = get_dribbleshots([year],ps=ps)
     year+=1
 
     old = old[old.year!=year]
@@ -117,8 +116,7 @@ def get_dribbleshots2(years,ps = False):
                     "Accept-Encoding": "gzip, deflate, br",
 
                     "Connection": "keep-alive",
-                    "Referer": "https://stats.nba.com/"
-                }
+                    "Referer": "https://stats.nba.com/"}
             json = requests.get(url,headers = headers).json()
             print(json.keys())
             data = json["resultSets"][0]["rowSet"]
@@ -128,23 +126,21 @@ def get_dribbleshots2(years,ps = False):
             data = json['resultSets'][0]["rowSet"]
             columns = json["resultSets"][0]["headers"]
             df = pd.DataFrame.from_records(data, columns=columns)
-            new_columns = {'FG2A_FREQUENCY':'2FG FREQ%',
-             'FG2_PCT':'2FG%',
-             'FG2A':'2FGA',
-             'FG2M':'2FGM',
-             'FG3A_FREQUENCY':'3FG FREQ%',
-             'FG3_PCT':'3P%',
-             'FG3A':'3PA',
-             'FG3M':'3PM',
-             'EFG_PCT':'EFG%',
-             'FG_PCT':'FG%',
-             'FGA_FREQUENCY':'FREQ%',
-             'PLAYER_NAME':'PLAYER',
-             'PLAYER_LAST_TEAM_ABBREVIATION':'TEAM'}
+            new_columns = {'FG2A_FREQUENCY':'2FG FREQ%', 'FG2_PCT':'2FG%',
+                             'FG2A':'2FGA',
+                             'FG2M':'2FGM',
+                             'FG3A_FREQUENCY':'3FG FREQ%',
+                             'FG3_PCT':'3P%',
+                             'FG3A':'3PA',
+                             'FG3M':'3PM',
+                             'EFG_PCT':'EFG%',
+                             'FG_PCT':'FG%',
+                             'FGA_FREQUENCY':'FREQ%',
+                             'PLAYER_NAME':'PLAYER',
+                             'PLAYER_LAST_TEAM_ABBREVIATION':'TEAM'}
             df = df.rename(columns = new_columns)
-            df = df [['PLAYER', 'TEAM', 'AGE', 'GP', 'G', 'FREQ%', 'FGM', 'FGA', 'FG%',
-                   'EFG%', '2FG FREQ%', '2FGM', '2FGA', '2FG%', '3FG FREQ%', '3PM', '3PA',
-                   '3P%']]
+            df = df [['PLAYER_ID','PLAYER', 'TEAM', 'AGE', 'GP', 'G', 'FREQ%', 'FGM', 'FGA', 'FG%',
+                   'EFG%', '2FG FREQ%', '2FGM', '2FGA', '2FG%', '3FG FREQ%', '3PM', '3PA','3P%']]
             for col in df.columns:
                 if '%' in col or 'PERC' in col:
                     df[col]*=100
@@ -166,8 +162,7 @@ def get_dribbleshots2(years,ps = False):
                     "Accept-Encoding": "gzip, deflate, br",
 
                     "Connection": "keep-alive",
-                    "Referer": "https://stats.nba.com/"
-                }
+                    "Referer": "https://stats.nba.com/"}
             json = requests.get(url,headers = headers).json()
             print(json.keys())
             data = json["resultSets"][0]["rowSet"]
@@ -177,23 +172,20 @@ def get_dribbleshots2(years,ps = False):
             data = json['resultSets'][0]["rowSet"]
             columns = json["resultSets"][0]["headers"]
             df = pd.DataFrame.from_records(data, columns=columns)
-            new_columns = {'FG2A_FREQUENCY':'2FG FREQ%',
-             'FG2_PCT':'2FG%',
-             'FG2A':'2FGA',
-             'FG2M':'2FGM',
-             'FG3A_FREQUENCY':'3FG FREQ%',
-             'FG3_PCT':'3P%',
-             'FG3A':'3PA',
-             'FG3M':'3PM',
-             'EFG_PCT':'EFG%',
-             'FG_PCT':'FG%',
-             'FGA_FREQUENCY':'FREQ%',
-             'PLAYER_NAME':'PLAYER',
-             'PLAYER_LAST_TEAM_ABBREVIATION':'TEAM'}
+            new_columns = {'FG2A_FREQUENCY':'2FG FREQ%', 'FG2_PCT':'2FG%',
+                                 'FG2A':'2FGA',
+                                 'FG2M':'2FGM',
+                                 'FG3A_FREQUENCY':'3FG FREQ%',
+                                 'FG3_PCT':'3P%',
+                                 'FG3A':'3PA',
+                                 'FG3M':'3PM',
+                                 'EFG_PCT':'EFG%',
+                                 'FG_PCT':'FG%',
+                                 'FGA_FREQUENCY':'FREQ%',
+                                 'PLAYER_NAME':'PLAYER',
+                                 'PLAYER_LAST_TEAM_ABBREVIATION':'TEAM'}
             df = df.rename(columns = new_columns)
-            df = df [['PLAYER_ID','PLAYER', 'TEAM', 'AGE', 'GP', 'G', 'FREQ%', 'FGM', 'FGA', 'FG%',
-                   'EFG%', '2FG FREQ%', '2FGM', '2FGA', '2FG%', '3FG FREQ%', '3PM', '3PA',
-                   '3P%']]
+            df = df [['PLAYER_ID','PLAYER', 'TEAM', 'AGE', 'GP', 'G', 'FREQ%', 'FGM', 'FGA', 'FG%','EFG%', '2FG FREQ%', '2FGM', '2FGA', '2FG%', '3FG FREQ%', '3PM', '3PA','3P%']]
             for col in df.columns:
                 if '%' in col or 'PERC' in col:
                     df[col]*=100
@@ -202,15 +194,23 @@ def get_dribbleshots2(years,ps = False):
             df['year']=year+1
             i+=1
             dataframe.append(df)
-        return pd.concat(dataframe)
+    return pd.concat(dataframe)
 
 def master_jump(year,ps = False):
     trail='_ps'
     if ps == False:
         trail=''
     old = pd.read_csv('jumpdribble'+trail+'.csv')
-    df = get_dribbleshots2([year],ps=True)
-    df2 = df.groupby(['PLAYER_ID','PLAYER', 'TEAM', 'AGE', 'GP', 'G','dribbles','year']).sum()[['FGM', 'FGA','2FGM', '2FGA', '3PM', '3PA',]].reset_index()
+    df = get_dribbleshots2([year],ps=ps)
+    print(df.columns)
+    data_col=['FGM', 'FGA', '2FGM', '2FGA', '3PM', '3PA']
+    for col in data_col:
+        df[col]=df[col].astype(int)
+        
+    df2 = df.groupby(['PLAYER_ID', 'PLAYER', 'TEAM', 'AGE', 'GP', 'G', 'dribbles', 'year']).sum(numeric_only=True).reset_index()
+    print(df2.columns)
+    df2 = df2[data_col].reset_index()
+
     year+=1
 
     old = old[old.year!=year]
@@ -218,17 +218,30 @@ def master_jump(year,ps = False):
     new_master.to_csv('jumpdribble'+trail+'.csv',index=False)
     return new_master
 #df = master_dribble(2023,ps=True)
-df = master_jump(2023,ps = True)
-df
+#df = master_jump(2023,ps = True)
+print('start')
+start_year=2013
+end_year=2025
+years = [i for i in range(start_year,end_year)]
+#df=get_dribbleshots(years,ps=False)
+years = [i for i in range(start_year,end_year)]
+
+#df_ps=get_dribbleshots(years,ps=True)
+#df.to_csv('dribbleshot.csv',index=False)
+#df_ps.to_csv('dribbleshot_ps.csv',index=False)
 
 
-# In[24]:
+df = master_dribble(2024,ps=False)
+df = master_jump(2024,ps = False)
+
+
+# In[ ]:
 
 
 df.columns
 
 
-# In[28]:
+# In[ ]:
 
 
 

@@ -163,7 +163,9 @@ def get_playershots(years,ps = False):
              'PLAYER_NAME':'PLAYER',
              'PLAYER_LAST_TEAM_ABBREVIATION':'TEAM'}
             df = df.rename(columns = new_columns)
-            df = df [['PLAYER', 'TEAM', 'AGE', 'GP', 'G', 'FREQ%', 'FGM', 'FGA', 'FG%',
+
+            print(df.columns)
+            df = df [['PLAYER_ID','PLAYER', 'TEAM', 'AGE', 'GP', 'G', 'FREQ%', 'FGM', 'FGA', 'FG%',
                    'EFG%', '2FG FREQ%', '2FGM', '2FGA', '2FG%', '3FG FREQ%', '3PM', '3PA',
                    '3P%']]
             for col in df.columns:
@@ -173,8 +175,8 @@ def get_playershots(years,ps = False):
             path = str(year+1)+sfolder+folder+term
             df.to_csv(path,index = False)
             i+=1
-get_playershots([2023],ps=False)
-get_playershots([2023],ps=True)
+#get_playershots([i for i in range(2013,2024)],ps=False)
+get_playershots([i for i in range(2024,2025)],ps=False)
 
 
 # In[2]:
@@ -182,7 +184,7 @@ get_playershots([2023],ps=True)
 
 def master_shooting(playoffs = False):
     data =[]
-    for i in range(2014,2025):
+    for i in range(2014,2026):
         if playoffs == False:
             p = ''
         else:
@@ -199,8 +201,8 @@ def master_shooting(playoffs = False):
     return master
 master= master_shooting() 
 master.to_csv('player_shooting.csv',index = False)
-master= master_shooting(playoffs=True) 
-master.to_csv('player_shooting_p.csv',index = False)
+#master= master_shooting(playoffs=True) 
+#master.to_csv('player_shooting_p.csv',index = False)
 
 
 # In[ ]:

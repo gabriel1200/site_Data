@@ -179,7 +179,7 @@ def get_teamshots(years,ps=False):
             i+=1
         year_df = pd.concat(frames)
         year_df.to_csv(str(year+1)+folder+'team_shooting.csv',index = False)
-get_teamshots([2023],ps=True)
+get_teamshots([2024],ps=False)
 
 
 # In[2]:
@@ -251,7 +251,7 @@ name_dict = {'SAS': 'San Antonio Spurs',
 
 shots = ['wide_open','open','tight','very_tight']
 frames = []
-for year in range(2014,2025):
+for year in range(2014,2026):
     path = str(year)+'/opp_shooting/'
     for shot in shots:
         filepath = path+shot+'.csv'
@@ -283,7 +283,7 @@ opp_master = pd.concat(frames)
 opp_master.to_csv('opp_team_shooting_ps.csv',index=False)
 
 frames = []
-for year in range(2014,2025):
+for year in range(2014,2026):
     path = str(year)+'/opp_shooting/'
     for shot in shots:
         filepath = path+shot+'.csv'
@@ -341,12 +341,6 @@ temp['TEAMNAME'] = temp['TEAM']
 temp['TEAM'] = temp['TEAMNAME'].map(name_dict)
 temp.to_csv('opp_team_shooting_ps.csv',index = False)
 '''
-
-
-# In[4]:
-
-
-opp_master
 
 
 # In[ ]:
