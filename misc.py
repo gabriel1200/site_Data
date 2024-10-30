@@ -85,7 +85,7 @@ def get_playtypes(years,ps= False,p_or_t='t',defense= False):
        'EFG%', 'FTFREQ%', 'TOVFREQ%', 'SFFREQ%', 'AND ONEFREQ%', 'SCOREFREQ%',
        'PERCENTILE']
     if type =="P":
-        data_columns= ['PLAYER_NAME','PLAYER_ID','TEAM', 'GP', 'POSS', 'FREQ%',
+        data_columns= ['PLAYER_NAME','PLAYER_ID','TEAM','TEAM_ID', 'GP', 'POSS', 'FREQ%',
                    'PPP', 'PTS', 'FGM', 'FGA', 'FG%','EFG%', 'FTFREQ%', 'TOVFREQ%', 'SFFREQ%', 'AND ONEFREQ%', 'SCOREFREQ%','PERCENTILE']
         
     for year in years:
@@ -113,6 +113,7 @@ def get_playtypes(years,ps= False,p_or_t='t',defense= False):
                 #df2.columns
           
             df2 = df2.rename(columns={'TEAM_NAME':'TEAM','POSS_PCT':'FREQ%','EFG_PCT':'EFG%','FG_PCT':'FG%',
+                                          
                                           'TOV_POSS_PCT':'TOVFREQ%','PLUSONE_POSS_PCT':'AND ONEFREQ%','FT_POSS_PCT':'FTFREQ%','SCORE_POSS_PCT':'SCOREFREQ%','SF_POSS_PCT':'SFFREQ%'})
             for col in df2.columns:
                 if '%' in col or 'PERC' in col:
@@ -148,6 +149,7 @@ def get_playtypes(years,ps= False,p_or_t='t',defense= False):
             
             map_terms ={
             'PLAYER_NAME': 'Player',
+                 'TEAM_ID':'team_id',
           
             'TEAM': 'Team',
             'GP': 'GP',
@@ -377,35 +379,37 @@ def w_avg(df, values, weights):
         return d.sum()
     
     return (d * w).sum() / w.sum()
-df = pd.read_csv('playtype_p.csv')
+df = pd.read_csv('playtype.csv')
 print(df.columns)
 #year = 2024
 #df=df[df.year==year].reset_index(drop=True)
 data_names = {'pr_ball':'on_ball','iso':'on_ball','pr_roll':'play_finish','post':'on_ball','hand_off':'motion'
                ,'oreb':'play_finish','cut':'play_finish','off_screen':'motion','spot':'play_finish','tran':'tran','misc':'misc'}
 df['playtype'] = df['playtype'].map(data_names)
-pstyle= df.groupby(['Player','Team','GP','PLAYER_ID','playtype','year']).sum()[['Poss','% Time','FGM','FGA','Points']].reset_index()
+pstyle= df.groupby(['Player','Team','GP','PLAYER_ID','playtype','year','TEAM_NAME','team_id']).sum()[['Poss','% Time','FGM','FGA','Points']].reset_index()
 pstyle['PPP'] = pstyle['Points']/pstyle['Poss']
 
 #pstyle.to_csv('play_style_p.csv',index=False)
-pstyle
-
-
-# In[ ]:
-
-
-
+pstyle.to_csv('playstyle.csv',index=False)
 
 
 # In[8]:
 
 
-old['Player'].value_counts()
+pstyle[pstyle.year==2014]
 
 
 # In[ ]:
 
 
+
+
+
+# In[9]:
+
+
+'''
+old['Player'].value_counts()
 old=pd.read_csv('playtype.csv')
 old = old[old.year==2024]
 temp = pd.read_csv('playtype_backup.csv')
@@ -434,6 +438,7 @@ oldstyle = oldstyle[oldstyle.year!=year]
 
 newstyle = pd.concat([oldstyle,pstyle])
 newstyle.to_csv('play_style.csv',index=False)
+'''
 
 
 # In[ ]:
@@ -448,18 +453,14 @@ newstyle.to_csv('play_style.csv',index=False)
 
 
 
-# In[ ]:
+# In[10]:
 
 
+'''
 df=pd.read_csv('playtype.csv')
 df=df[df.year>2013]
 df.to_csv('playtype.csv',index=False)
-
-
-# In[ ]:
-
-
-len(old)
+'''
 
 
 # In[ ]:

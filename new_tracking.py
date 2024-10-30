@@ -51,7 +51,9 @@ def get_tracking(years, ps=False):
                 print(f"Failed to retrieve data for shot type {shot} in season {season}")
 
     return category_frames
-years=[i for i in range(2013,2026)]
+
+current_year=2024
+years=[i for i in range(current_year,2025)]
 category_frames=get_tracking(years)
 
 #category_frames_ps=get_tracking(years,ps=True)
@@ -75,8 +77,11 @@ category_maps = {
 for cat in category_frames.keys():
 
     file='tracking/'+category_maps[cat]
+    old_df=pd.read_csv(file)
+    old_df=old_df[old_df.year!=current_year+1]
+    new_df=pd.concat(category_frames[cat])
 
-    df =pd.concat(category_frames[cat])
+    df =pd.concat([old_df,new_df])
     df.to_csv(file,index=False)
 
 

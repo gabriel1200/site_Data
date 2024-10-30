@@ -29,63 +29,7 @@ url3 = 'https://www.nba.com/stats/players/shots-closest-defender?CloseDefDistRan
 url2 = 'https://www.nba.com/stats/players/shots-closest-defender?CloseDefDistRange=2-4+Feet+-+Tight&PerMode=Totals'
 url1 = 'https://www.nba.com/stats/players/shots-closest-defender?CloseDefDistRange=0-2+Feet+-+Very+Tight&PerMode=Totals'
 url_list = [url1,url2,url3,url4]
-#url_list = url_list.reverse()
-#print(url_list)
-#url_list =[url +'&SeasonType=Playoffs' for url in url_list]
-#url_list =[url +'&SeasonType=Regular+Season'for url in url_list]
 
-def get_tables(url_list):
-    data = []
-    xpath = '//*[@id="__next"]/div[2]/div[2]/div[3]/section[2]/div/div[2]/div[2]/div[1]/div[3]/div/label/div/select'
-    options = webdriver.FirefoxOptions()
-    driver = webdriver.Firefox(options=options)
-    cookie_check = False
-    #driver = webdriver.Chrome()
-    for url in url_list:
-        
-        driver.get(url)
-        print(url)
-        # Wait for the page to fully load
-        #driver.implicitly_wait(20)
-        accept_path = '//*[@id="onetrust-accept-btn-handler"]'
-        if EC.presence_of_element_located((By.XPATH, accept_path)) and cookie_check == False:
-            driver.find_element(By.XPATH, accept_path).click() 
-            cookie_check = True
-            time.sleep(1)
-        element = WebDriverWait(driver, 5).until(
-        EC.presence_of_element_located((By.XPATH, xpath)))
-        #driver.implicitly_wait(10)
-        '''if check_exists_by_xpath(driver, "//a[contains(text(),'>')]/preceding-sibling::a[1]"):
-            number_of_pages = int(driver.find_element(By.XPATH, "//a[contains(text(),'>')]/preceding-sibling::a[1]").text)
-            print(number_of_pages)'''
-        #time.sleep(3)
-        dropdown1 = Select(driver.find_element(By.XPATH, xpath))
-        dropdown1.select_by_index(0)
-
-        # Step 2: Parse HTML code and grab tables with Beautiful Soup
-        soup = BeautifulSoup(driver.page_source, 'lxml')
-        
-
-        tables = soup.find_all('table')
-
-        # Step 3: Read tables with Pandas read_html()
-        dfs = pd.read_html(str(tables))
-
-        #print(f'Total tables: {len(dfs)}')
-        #print(dfs[2].head())
-
-        
-        df= dfs[-1]
-        print(len(df))
-        #print(df)
-    
-        df.columns = df.columns.droplevel()
-        drop = [ 'Unnamed: 18_level_1', 'Unnamed: 19_level_1','Unnamed: 20_level_1','Unnamed: 21_level_1','Unnamed: 22_level_1']
-        df = df.drop(columns = drop)
-        #df = df.drop(columns = drop)
-        data.append(df)
-    driver.close()
-    return data
 def get_multi(url_list,playoffs = False):
     if playoffs == True:
         p ='/playoffs'
@@ -177,11 +121,6 @@ def get_playershots(years,ps = False):
             i+=1
 #get_playershots([i for i in range(2013,2024)],ps=False)
 get_playershots([i for i in range(2024,2025)],ps=False)
-
-
-# In[2]:
-
-
 def master_shooting(playoffs = False):
     data =[]
     for i in range(2014,2026):
@@ -201,6 +140,11 @@ def master_shooting(playoffs = False):
     return master
 master= master_shooting() 
 master.to_csv('player_shooting.csv',index = False)
+
+
+# In[2]:
+
+
 #master= master_shooting(playoffs=True) 
 #master.to_csv('player_shooting_p.csv',index = False)
 
