@@ -335,14 +335,14 @@ def update_masters(masters,ps = False):
         masterframe.to_csv(masters[i]+trail+'.csv',index = False)
         print(masterframe)
 update_masters(masters,ps = False)
-update_masters(masters,ps = True)
+#update_masters(masters,ps = True)
 
 #temp = pd.read_csv('dfg_p.csv')
 #temp = temp.rename(columns = {'Year':'year'})
 #temp.to_csv('dfg_p.csv',index = False)     
 
 
-# In[ ]:
+# In[4]:
 
 
 '''

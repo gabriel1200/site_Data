@@ -52,36 +52,7 @@ def check_exists_by_xpath(driver, xpath):
         return False
     return True
 #url_list = [cs,pullup]
-def get_tables(url_list):
-    xpath = '//*[@id="__next"]/div[2]/div[2]/div[3]/section[2]/div/div[2]/div[3]/table'
-    data = []
-    options = webdriver.FirefoxOptions()
-    driver = webdriver.Firefox(options=options)
 
-    for url in url_list:
-        print(url)
-        
-        driver.get(url)
-        element = WebDriverWait(driver, 10).until(
-        EC.presence_of_element_located((By.XPATH, xpath)))
-        # Wait for the page to fully load
-        driver.implicitly_wait(20)
-        '''if check_exists_by_xpath(driver, "//a[contains(text(),'>')]/preceding-sibling::a[1]"):
-            number_of_pages = int(driver.find_element(By.XPATH, "//a[contains(text(),'>')]/preceding-sibling::a[1]").text)
-            print(number_of_pages)'''
-        # Step 2: Parse HTML code and grab tables with Beautiful Soup
-        soup = BeautifulSoup(driver.page_source, 'lxml')
-
-        tables = soup.find_all('table')
-
-        # Step 3: Read tables with Pandas read_html()
-        dfs = pd.read_html(str(tables))
-
-        df= dfs[-1]
-
-        data.append(df)
-    driver.close()
-    return data
 def get_playtypes(years,ps= False,p_or_t='t',defense= False):
     field_side = "offensive"
     if defense == True:
@@ -131,10 +102,12 @@ def get_playtypes(years,ps= False,p_or_t='t',defense= False):
                         
                     )
             #print(url)
+            print(url)
             json = requests.get(url,headers = headers).json()
             data = json["resultSets"][0]["rowSet"]
             
             columns = json["resultSets"][0]["headers"]
+            time.sleep(2)
 
             df2 = pd.DataFrame.from_records(data, columns=columns)
                 #df2.columns
@@ -239,8 +212,8 @@ def get_playtypes(years,ps= False,p_or_t='t',defense= False):
              data['Team'] = data['full_name'].map(team_dict)
             
              return data
-years = [2023]
-playoffs = True
+years = [2024]
+playoffs = False
 offense = get_playtypes(years,ps=playoffs)
 def update_player_master(year,ps=False):
     trail = ''
@@ -255,11 +228,11 @@ def update_player_master(year,ps=False):
     new = pd.concat([old,frames])
     new.to_csv('playtype'+trail+'.csv',index=False)
     return new
-new = update_player_master(2024,ps=playoffs)
-new2 = update_player_master(2024,ps=False)
+new = update_player_master(2025,ps=playoffs)
+new2 = update_player_master(2025,ps=False)
 
 
-defense = get_playtypes([2023],ps=True,defense=True)
+defense = get_playtypes([2024],ps=True,defense=True)
 def update_team_masters(year,offense,defense,ps=False):
     trail = ''
     if ps == True:
@@ -281,7 +254,7 @@ def update_team_masters(year,offense,defense,ps=False):
 
     new_off.to_csv(offpath,index=False)
     new_def.to_csv(defpath,index=False)
-update_team_masters(2024,offense,defense,ps=playoffs)
+update_team_masters(2025,offense,defense,ps=playoffs)
 
 
 # In[2]:
@@ -354,7 +327,7 @@ def add_synergy():
         year_df.to_csv(path+'playtype.csv')
 
 
-# In[29]:
+# In[7]:
 
 
 def create_macro(data,play,playlist):
@@ -418,19 +391,19 @@ pstyle['PPP'] = pstyle['Points']/pstyle['Poss']
 pstyle
 
 
-# In[7]:
+# In[ ]:
 
 
 
 
 
-# In[10]:
+# In[8]:
 
 
 old['Player'].value_counts()
 
 
-# In[27]:
+# In[ ]:
 
 
 old=pd.read_csv('playtype.csv')
@@ -463,25 +436,27 @@ newstyle = pd.concat([oldstyle,pstyle])
 newstyle.to_csv('play_style.csv',index=False)
 
 
-# In[16]:
+# In[ ]:
 
 
 
 
 
-# In[26]:
+# In[ ]:
 
 
 
 
 
-# In[23]:
+# In[ ]:
 
 
+df=pd.read_csv('playtype.csv')
+df=df[df.year>2013]
+df.to_csv('playtype.csv',index=False)
 
 
-
-# In[25]:
+# In[ ]:
 
 
 len(old)

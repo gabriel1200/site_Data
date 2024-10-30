@@ -32,6 +32,7 @@ def get_hustle(year,ps=False):
                 
     columns = json["resultSets"][0]["headers"]
     df = pd.DataFrame(data, columns=columns)
+    print(df)
     #return df
 
     headers = {
@@ -77,26 +78,41 @@ def get_hustle(year,ps=False):
     df3 = df3[['PLAYER_ID','POSS']]
     
     
-    combo_df = df.merge(df2,on=['PLAYER_ID','PLAYER_NAME','TEAM_ABBREVIATION','TEAM_ID'])
+    
+    collist=[col for col in df2.columns if col not in df.columns]
+    collist.append('PLAYER_ID')
+    df2=df2[collist]
+    combo_df = df.merge(df2,on=['PLAYER_ID'])
+    
+    print(combo_df)
     combo_df = combo_df.merge(df3)
+    print(combo_df)
     combo_df['year'] = year
     
     print(len(combo_df))
     return combo_df
 def hustle_master(ps=False):
     trail = '_ps'
+    pfolder='/'
+    pfolder='/playoffs/'
     if ps == False:
         trail = ''
+        pfolder='/'
+        
     data_rs = []
-    for year in range(2016,2026):
+    old_df=pd.read_csv('hustle.csv')
+    old_df=old_df[old_df.year<2025]
+    data_rs.append(old_df)
+    for year in range(2025,2026):
+
         df = get_hustle(year,ps=ps)
+
         data_rs.append(df)
-        print(len(df))
     hustle = pd.concat(data_rs)
 
     hustle.to_csv('hustle'+trail+'.csv',index = False)
     return hustle
-hustle = hustle_master(ps=True)
+hustle = hustle_master(ps=False)
 hustle
 
 
