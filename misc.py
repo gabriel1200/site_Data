@@ -232,10 +232,11 @@ def update_player_master(year,ps=False):
     new.to_csv('playtype'+trail+'.csv',index=False)
     return new
 new = update_player_master(2025,ps=playoffs)
-new2 = update_player_master(2025,ps=False)
+
+#new2 = update_player_master(2025,ps=False)
 
 
-defense = get_playtypes([2024],ps=True,defense=True)
+defense = get_playtypes([2024],ps=False,defense=True)
 def update_team_masters(year,offense,defense,ps=False):
     trail = ''
     if ps == True:
