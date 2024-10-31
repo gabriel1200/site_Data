@@ -37,7 +37,7 @@ Anton Watson,0,RFA,0,0,0,0,0.0,BOS
 Ben Simmons,0,0,0,0,0,,,BKN
 Nicolas Claxton,0,0,EE,0,0,,,BKN
 Cameron Johnson,0,EE,0,0,0,,,BKN
-Bojan Bogdanovic,EE,0,0,0,0,,,BKN
+Bojan Bogdanovic,0,0,0,0,0,,,BKN
 Dorian Finney-Smith,EE,P,0,0,0,,,BKN
 Dennis Schröder,0,0,0,0,0,,,BKN
 Ziaire Williams,0,RFA,0,0,0,,,BKN
@@ -185,7 +185,7 @@ Amen Thompson,0,T,T,RFA,0,0,0.0,HOU
 Jeff Green,0,0,0,0,0,0,0.0,HOU
 Jock Landale,0,NG,T,0,0,0,0.0,HOU
 Jae’Sean Tate,0,0,0,0,0,0,0.0,HOU
-Alperen Sengun,0,T,0,EE,0,P,0.0,HOU
+Alperen Sengun,0,RFA,0,EE,0,P,0.0,HOU
 Aaron Holiday,0,T,0,0,0,0,0.0,HOU
 Tari Eason,0,T,RFA,0,0,0,0.0,HOU
 Cam Whitmore,0,T,T,RFA,0,0,0.0,HOU
@@ -256,10 +256,11 @@ Zach Edey,0,0,T,T,RFA,0,,MEM
 Santi Aldama,0,RFA,0,0,0,0,,MEM
 Jake LaRavia,0,T,RFA,0,0,0,,MEM
  Vincent Williams Jr.,0,0,0,0,0,0,,MEM
-Jay Huff,0,0,0,0,0,0,,MEM
+Jay Huff,0,0,NG,T,0,0,,MEM
  Scotty Pippen Jr.,0,0,0,0,0,0,,MEM
 G.G. Jackson,0,EE,T,0,0,0,,MEM
 Jaylen Wells,0,0,EE,T,0,0,,MEM
+Colin Castleton,0,RFA,0,0,0,0,,MEM
 Yuki Kawamura,0,RFA,0,0,0,0,,MEM
 Cam Spencer,0,RFA,0,0,0,0,,MEM
 Jimmy Butler,0,P,0,0,0,0,,MIA
@@ -361,7 +362,7 @@ Nikola Topic,0,0,T,T,RFA,0,,OKC
 Jalen Williams,0,T,RFA,0,0,0,,OKC
 Dillon Jones,0,0,T,T,RFA,0,,OKC
 Jaylin Williams,NG,NG,0,0,0,0,,OKC
-Alex Reese,NG,RFA,0,0,0,0,,OKC
+Malevy Leons,NG,RFA,0,0,0,0,,OKC
 Alex Ducas,0,RFA,0,0,0,0,,OKC
 Adam Flagler,0,RFA,0,0,0,0,,OKC
 Ajay Mitchell,0,RFA,0,0,0,0,,OKC
