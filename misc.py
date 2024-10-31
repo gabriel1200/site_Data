@@ -190,6 +190,7 @@ def get_playtypes(years,ps= False,p_or_t='t',defense= False):
              'Philadelphia 76ers': 'PHI',
              'Sacramento Kings': 'SAC',
              'Los Angeles Clippers': 'LAC',
+             'LA Clippers':'LAC',
              'Cleveland Cavaliers': 'CLE',
              'Detroit Pistons': 'DET',
              'Los Angeles Lakers': 'LAL',

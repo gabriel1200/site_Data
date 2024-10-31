@@ -70,10 +70,10 @@ cp scoring_ps.csv ../web_app/data/scoring_ps.csv
 cp playtype.csv ../web_app/data/playtype.csv
 #cp playtype_p.csv ../web_app/data/playtype_p.csv
 
-#cp teamplay_p.csv ../web_app/data/teamplay_p.csv
-#cp teamplay.csv ../web_app/data/teamplay.csv
-#cp teamplayd_p.csv ../web_app/data/teamplayd_p.csv
-#cp teamplayd.csv ../web_app/data/teamplayd.csv
+cp teamplay_p.csv ../web_app/data/teamplay_p.csv
+cp teamplay.csv ../web_app/data/teamplay.csv
+cp teamplayd_p.csv ../web_app/data/teamplayd_p.csv
+cp teamplayd.csv ../web_app/data/teamplayd.csv
 
 cp shotzone.csv ../web_app/data/shotzone.csv
 cp shotzone_ps.csv ../web_app/data/shotzone_ps.csv
