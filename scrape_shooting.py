@@ -5,7 +5,7 @@
 
 
 import pandas as pd
-from selenium import webdriver
+
 from bs4 import BeautifulSoup
 import requests
 '''from selenium.webdriver.support.ui import WebDriverWait
