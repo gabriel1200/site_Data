@@ -96,4 +96,7 @@ cp jumpdribble_ps.csv ../web_app/data/jumpdribble_ps.csv
 
 cp tsavg.csv ../web_app/data/tsavg.csv
 
+cp index_master.csv ../web_app/data/index_master.csv
+
+
 
