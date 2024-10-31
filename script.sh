@@ -80,7 +80,7 @@ cp shotzone_ps.csv ../web_app/data/shotzone_ps.csv
 cp team_shotzone.csv ../web_app/data/team_shotzone.csv
 cp team_shotzone_ps.csv ../web_app/data/team_shotzone_ps.csv
 
-#cp tracking.csv ../web_app/data/tracking.csv
+cp tracking.csv ../web_app/data/tracking.csv
 
 cp tracking_p.csv ../web_app/data/tracking_p.csv
 
