@@ -127,8 +127,9 @@ index_frame.dropna(inplace=True)
 index_frame=pd.concat([index_frame,notfound])
 index_frame['team_id']=index_frame['team'].map(team_dict)
 index_copy = index_frame[['player', 'url', 'year', 'team', 'bref_id', 'nba_id', 'team_id']]
-
+master=master[master.year!=2025]
 master=pd.concat([master,index_copy])
+master.drop_duplicates(inplace=True)
 master.to_csv('index_master.csv',index=False)
 index_frame.dropna(subset='bref_id',inplace=True)
 index_frame['FTA']=index_frame['FTA'].astype(int)
