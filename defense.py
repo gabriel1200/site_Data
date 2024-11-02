@@ -13,23 +13,10 @@ from pathlib import Path
 import requests
 import time
 #url_list = [cs,pullup]
-'''
-from selenium.webdriver.support.select import Select
-from selenium import webdriver
-from bs4 import BeautifulSoup
-from pathlib import Path
-import requests
-import time
-
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.by import By
-from selenium.common.exceptions import NoSuchElementException
-from selenium.common.exceptions import ElementNotInteractableException 
-'''
 
 
-# In[2]:
+
+# In[ ]:
 
 
 def pull_data(url):
@@ -66,61 +53,7 @@ def update_master(master_file,new_file,year):
     df['year'] = year
     old = pd.concat([old,df])
     old.to_csv(master_file,index = False)
-def get_ptables(url_list,path_list):
-    data = []
-    options = webdriver.FirefoxOptions()
-    driver = webdriver.Firefox(options=options)
-    cookie_check = False
-    
-    for i in range(len(url_list)):
-        url = url_list[i]
-        xpath = path_list[i]
-        print(url)
-        
-        driver.get(url)
 
-        # Wait for the page to fully load
-
-        driver.implicitly_wait(10)
-        '''if check_exists_by_xpath(driver, "//a[contains(text(),'>')]/preceding-sibling::a[1]"):
-            number_of_pages = int(driver.find_element(By.XPATH, "//a[contains(text(),'>')]/preceding-sibling::a[1]").text)
-            print(number_of_pages)'''
-        accept_path = '//*[@id="onetrust-accept-btn-handler"]'
-        time.sleep(4)
-        if EC.presence_of_element_located((By.XPATH, accept_path)) and cookie_check == False:
-            driver.find_element(By.XPATH, accept_path).click() 
-            cookie_check = True
-            time.sleep(1)
-        element = WebDriverWait(driver, 5).until(
-        EC.presence_of_element_located((By.XPATH, xpath)))
-        
-        dropdown1 = Select(driver.find_element(By.XPATH, xpath))
-        dropdown1.select_by_index(0)
-
-        # Step 2: Parse HTML code and grab tables with Beautiful Soup
-        
-        soup = BeautifulSoup(driver.page_source, 'lxml')
-
-        tables = soup.find_all('table')
-        
-
-        # Step 3: Read tables with Pandas read_html()
-        dfs = pd.read_html(str(tables))
-        #print(dfs)
-
-        #print(f'Total tables: {len(dfs)}')
-        #print(dfs[2].head())
-    
-        
-        #return dfs
-        df= dfs[-1]
-        #drop = ['Unnamed: 16_level_1', 'Unnamed: 17_level_1', 'Unnamed: 18_level_1']
-        #df.columns = df.columns.droplevel()
-        #df = df.drop(columns = drop)
-       
-        data.append(df)
-    driver.close()
-    return data
 def get_defense(url,year,ps = False):
     
     defense = url
@@ -151,9 +84,10 @@ def get_defense(url,year,ps = False):
     df['year'] = year
     return df
 def prep_dfg(dfg):
-    dfg = dfg.drop(columns = ['CLOSE_DEF_PERSON_ID','PLAYER_LAST_TEAM_ID'])
+    #dfg = dfg.drop(columns = ['CLOSE_DEF_PERSON_ID','PLAYER_LAST_TEAM_ID'])
+    print(dfg.columns)
     dfg = dfg.rename(columns={'DIFF%':'Diff%'})
-    dfg.columns = ['PLAYER', 'TEAM', 'POSITION', 'AGE','GP', 'G', 'FREQ%', 'DFGM', 'DFGA',
+    dfg.columns = ['PLAYER_ID','PLAYER', 'TEAM_ID','TEAM', 'POSITION', 'AGE','GP', 'G', 'FREQ%', 'DFGM', 'DFGA',
        'DFG%', 'FG%', 'DIFF%']
     for col in dfg:
         if '%' in col:
@@ -186,14 +120,16 @@ def wowy_statlog(stat,start_year,ps =False):
                 "Stat": stat, # for all options for Stat, see the list below
 
             }
-            print(params)
+         
             response = requests.get(url, params=params)
             response_json = response.json()
             #print(response_json)
             df = pd.DataFrame(response_json['results'])
+            print(df.columns)
             df['Team'] = team
             df['Year'] = season
             df['Season'] = season_s
+            
             #print(df)
             #break
             #print(df)
@@ -287,7 +223,7 @@ update_master('rim_acc.csv',filename,year)
 '''
 
 
-# In[3]:
+# In[ ]:
 
 
 def create_folders(new_folder):
@@ -342,7 +278,7 @@ update_masters(masters,ps = False)
 #temp.to_csv('dfg_p.csv',index = False)     
 
 
-# In[4]:
+# In[ ]:
 
 
 '''
