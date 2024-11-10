@@ -157,7 +157,7 @@ new_scoring.to_csv('totals.csv',index=False)
 new_scoring
 
 
-# In[7]:
+# In[2]:
 
 
 def pull_bref_score(ps=False,totals=False):
@@ -283,6 +283,13 @@ new_scoring=pd.concat([old_scoring,new_df])
 new_scoring.fillna(0,inplace=True)
 new_scoring.to_csv('scoring.csv',index=False)
 new_scoring
+
+
+# In[3]:
+
+
+index=pd.read_csv('index_master.csv')
+index[index.year==2025]
 
 
 # In[ ]:
