@@ -98,5 +98,8 @@ cp tsavg.csv ../web_app/data/tsavg.csv
 
 cp index_master.csv ../web_app/data/index_master.csv
 
+cp index_master.csv ../player_sheets/lineups/index_master.csv
+
+
 
 
