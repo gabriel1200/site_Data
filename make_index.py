@@ -282,6 +282,9 @@ new_df = new_df.rename(columns={
 new_scoring=pd.concat([old_scoring,new_df])
 new_scoring.fillna(0,inplace=True)
 new_scoring.to_csv('scoring.csv',index=False)
+gp=new_scoring[['nba_id','Player','year','G']].reset_index()
+gp.to_csv('../player_sheets/lineups/games.csv',index=False)
+
 new_scoring
 
 
