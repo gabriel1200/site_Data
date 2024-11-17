@@ -13,7 +13,7 @@ import sys
 import unicodedata
 import re
 # URL of the NBA awards page
-
+import numpy as np
 from nba_api.stats.endpoints import commonallplayers
 from nba_api.stats.static import players,teams
 
@@ -153,6 +153,9 @@ new_df = new_df.rename(columns={
 # Display the resulting DataFrame
 new_scoring=pd.concat([old_scoring,new_df])
 new_scoring.fillna(0,inplace=True)
+new_scoring.replace([np.inf, -np.inf], 0, inplace=True)
+new_scoring.loc[new_scoring['TS%'] > 150, 'TS%'] = 0
+
 new_scoring.to_csv('totals.csv',index=False)
 new_scoring
 
@@ -281,6 +284,8 @@ new_df = new_df.rename(columns={
 # Display the resulting DataFrame
 new_scoring=pd.concat([old_scoring,new_df])
 new_scoring.fillna(0,inplace=True)
+new_scoring.loc[new_scoring['TS%'] > 150, 'TS%'] = 0
+
 new_scoring.to_csv('scoring.csv',index=False)
 gp=new_scoring[['nba_id','Player','year','G']].reset_index()
 gp.to_csv('../player_sheets/lineups/games.csv',index=False)
