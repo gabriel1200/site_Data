@@ -32,11 +32,11 @@ def pull_bref(ps=False,totals=False):
     for year in range(2025, 2026):
         if totals ==True:
             url = f"https://www.basketball-reference.com/{leagues}/NBA_{year}_totals.html"
-            pt_index=27
+            pt_index=28
         else:
             url = f"https://www.basketball-reference.com/{leagues}/NBA_{year}_per_poss.html"
-            pt_index=27
-        
+            pt_index=28
+        print(url)
         response = requests.get(url, headers={'User-Agent': 'Mozilla/5.0'})
         response.encoding = 'utf-8' 
         soup = BeautifulSoup(response.text, 'html.parser')
@@ -68,7 +68,7 @@ def pull_bref(ps=False,totals=False):
                 tp = cells[10].text if len(cells) > 10 else "0"  # Three-Point Made
                 fta = cells[18].text if len(cells) > 18 else "0" # Free Throw Attempts
                 ft = cells[17].text if len(cells) > 17 else "0"  # Free Throws Made
-                pts = cells[pt_index].text if len(cells) > pt_index else "0"  # Free Throws Made
+                pts = cells[pt_index].text if len(cells) > pt_index else "0"  #
                 
                 data.append([
                     player_name, player_url, team_acronym, year, gp,mp, fga, fg, tpa, tp, fta, ft,pts
@@ -157,7 +157,7 @@ new_scoring.replace([np.inf, -np.inf], 0, inplace=True)
 new_scoring.loc[new_scoring['TS%'] > 150, 'TS%'] = 0
 
 new_scoring.to_csv('totals.csv',index=False)
-new_scoring
+new_scoring[new_scoring.nba_id==2544]
 
 
 # In[2]:
@@ -168,7 +168,7 @@ def pull_bref_score(ps=False,totals=False):
     frames = []
     for year in range(2025, 2026):
    
-        url = f"https://www.basketball-reference.com/{leagues}/NBA_{year}_totals.html"
+        url = f"https://www.basketball-reference.com/{leagues}/NBA_{year}_per_poss.html"
 
         response = requests.get(url, headers={'User-Agent': 'Mozilla/5.0'})
         
@@ -186,7 +186,7 @@ def pull_bref_score(ps=False,totals=False):
         for row in rows:
             cells = row.find_all('td')
             if cells:
-                pt_index=27
+                pt_index=28
                 # Extract player name, url, team, and stats required
                 player_cell = cells[0]
                 player_name = player_cell.text if player_cell.text else "N/A"  # Player name
@@ -215,6 +215,7 @@ def pull_bref_score(ps=False,totals=False):
             columns=['player', 'url', 'team', 'year', 'G','MP', 'FGA', 'FG', '3PA', '3P', 'FTA', 'FT','PTS']
         )
         frames.append(year_data)
+        print(year_data.iloc[0])
         print(f"Year {year} data added.")
         time.sleep(2)
     
@@ -291,6 +292,7 @@ gp=new_scoring[['nba_id','Player','year','G']].reset_index()
 gp.to_csv('../player_sheets/lineups/games.csv',index=False)
 
 new_scoring
+new_scoring[new_scoring.nba_id==2544]
 
 
 # In[3]:
