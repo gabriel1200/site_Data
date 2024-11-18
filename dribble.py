@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[5]:
+# In[1]:
 
 
 import pandas as pd
@@ -202,18 +202,19 @@ def master_jump(year,ps = False):
         trail=''
     old = pd.read_csv('jumpdribble'+trail+'.csv')
     df = get_dribbleshots2([year],ps=ps)
-    print(df.columns)
+    print(df)
     data_col=['FGM', 'FGA', '2FGM', '2FGA', '3PM', '3PA']
     for col in data_col:
         df[col]=df[col].astype(int)
         
     df2 = df.groupby(['PLAYER_ID', 'PLAYER', 'TEAM', 'AGE', 'GP', 'G', 'dribbles', 'year']).sum(numeric_only=True).reset_index()
     print(df2.columns)
-    df2 = df2[data_col].reset_index()
+    print(df2)
 
     year+=1
 
     old = old[old.year!=year]
+    old=old.dropna(subset='year')
     new_master = pd.concat([old,df2])
     new_master.to_csv('jumpdribble'+trail+'.csv',index=False)
     return new_master
@@ -235,10 +236,10 @@ df = master_dribble(2024,ps=False)
 df = master_jump(2024,ps = False)
 
 
-# In[ ]:
+# In[2]:
 
 
-df.columns
+df
 
 
 # In[ ]:
