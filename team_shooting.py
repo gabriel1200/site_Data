@@ -23,41 +23,6 @@ url_list = [url1,url2,url3,url4]
 #url_list =[url +'&SeasonType=Playoffs' for url in url_list]
 url_list =[url +'&SeasonType=Regular+Season'for url in url_list]
 
-def get_tables(url_list):
-    data = []
-    xpath = '//*[@id="__next"]/div[2]/div[2]/div[3]/section[2]/div/div[2]/div[3]/table'
-    options = webdriver.FirefoxOptions()
-    driver = webdriver.Firefox(options=options)
-    for url in url_list:
-        
-        driver.get(url)
-        print(url)
-        # Wait for the page to fully load
-        driver.implicitly_wait(20)
-        element = WebDriverWait(driver, 10).until(
-        EC.presence_of_element_located((By.XPATH, xpath)))
-
-        # Step 2: Parse HTML code and grab tables with Beautiful Soup
-        soup = BeautifulSoup(driver.page_source, 'lxml')
-
-        tables = soup.find_all('table')
-
-        # Step 3: Read tables with Pandas read_html()
-        dfs = pd.read_html(str(tables))
-
-        #print(f'Total tables: {len(dfs)}')
-        #print(dfs[2].head())
-
-        
-        df= dfs[-1]
-        #print(df)
-        drop = ['Unnamed: 16_level_1', 'Unnamed: 17_level_1', 'Unnamed: 18_level_1']
-        df.columns = df.columns.droplevel()
-        df = df.drop(columns = drop)
-        data.append(df)
-    driver.close()
-    return data
-#url_list = [url1]#
 def multiyear_shooting(url_list,team_round=0,playoffs = True):
     df_list = []
     start_year = 2023
@@ -179,7 +144,7 @@ def get_teamshots(years,ps=False):
             i+=1
         year_df = pd.concat(frames)
         year_df.to_csv(str(year+1)+folder+'team_shooting.csv',index = False)
-get_teamshots([2023],ps=True)
+get_teamshots([2024],ps=False)
 
 
 # In[2]:
@@ -251,7 +216,7 @@ name_dict = {'SAS': 'San Antonio Spurs',
 
 shots = ['wide_open','open','tight','very_tight']
 frames = []
-for year in range(2014,2025):
+for year in range(2014,2026):
     path = str(year)+'/opp_shooting/'
     for shot in shots:
         filepath = path+shot+'.csv'
@@ -283,7 +248,7 @@ opp_master = pd.concat(frames)
 opp_master.to_csv('opp_team_shooting_ps.csv',index=False)
 
 frames = []
-for year in range(2014,2025):
+for year in range(2014,2026):
     path = str(year)+'/opp_shooting/'
     for shot in shots:
         filepath = path+shot+'.csv'
@@ -295,10 +260,11 @@ for year in range(2014,2025):
         df['TEAMNAME'] =df['TEAM'].map(name_dict)
         frames.append(df)
 opp_master = pd.concat(frames)
+opp_master.to_csv('opp_team_shooting.csv',index=False)
 
 #opp_master
 frames = []
-for year in range(2014,2025):
+for year in range(2014,2026):
     path = str(year)+'/team_shooting/'
     for shot in shots:
         filepath = path+shot+'.csv'
@@ -341,12 +307,6 @@ temp['TEAMNAME'] = temp['TEAM']
 temp['TEAM'] = temp['TEAMNAME'].map(name_dict)
 temp.to_csv('opp_team_shooting_ps.csv',index = False)
 '''
-
-
-# In[4]:
-
-
-opp_master
 
 
 # In[ ]:

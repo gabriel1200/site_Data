@@ -13,23 +13,10 @@ from pathlib import Path
 import requests
 import time
 #url_list = [cs,pullup]
-'''
-from selenium.webdriver.support.select import Select
-from selenium import webdriver
-from bs4 import BeautifulSoup
-from pathlib import Path
-import requests
-import time
-
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.by import By
-from selenium.common.exceptions import NoSuchElementException
-from selenium.common.exceptions import ElementNotInteractableException 
-'''
 
 
-# In[2]:
+
+# In[ ]:
 
 
 def pull_data(url):
@@ -66,61 +53,7 @@ def update_master(master_file,new_file,year):
     df['year'] = year
     old = pd.concat([old,df])
     old.to_csv(master_file,index = False)
-def get_ptables(url_list,path_list):
-    data = []
-    options = webdriver.FirefoxOptions()
-    driver = webdriver.Firefox(options=options)
-    cookie_check = False
-    
-    for i in range(len(url_list)):
-        url = url_list[i]
-        xpath = path_list[i]
-        print(url)
-        
-        driver.get(url)
 
-        # Wait for the page to fully load
-
-        driver.implicitly_wait(10)
-        '''if check_exists_by_xpath(driver, "//a[contains(text(),'>')]/preceding-sibling::a[1]"):
-            number_of_pages = int(driver.find_element(By.XPATH, "//a[contains(text(),'>')]/preceding-sibling::a[1]").text)
-            print(number_of_pages)'''
-        accept_path = '//*[@id="onetrust-accept-btn-handler"]'
-        time.sleep(4)
-        if EC.presence_of_element_located((By.XPATH, accept_path)) and cookie_check == False:
-            driver.find_element(By.XPATH, accept_path).click() 
-            cookie_check = True
-            time.sleep(1)
-        element = WebDriverWait(driver, 5).until(
-        EC.presence_of_element_located((By.XPATH, xpath)))
-        
-        dropdown1 = Select(driver.find_element(By.XPATH, xpath))
-        dropdown1.select_by_index(0)
-
-        # Step 2: Parse HTML code and grab tables with Beautiful Soup
-        
-        soup = BeautifulSoup(driver.page_source, 'lxml')
-
-        tables = soup.find_all('table')
-        
-
-        # Step 3: Read tables with Pandas read_html()
-        dfs = pd.read_html(str(tables))
-        #print(dfs)
-
-        #print(f'Total tables: {len(dfs)}')
-        #print(dfs[2].head())
-    
-        
-        #return dfs
-        df= dfs[-1]
-        #drop = ['Unnamed: 16_level_1', 'Unnamed: 17_level_1', 'Unnamed: 18_level_1']
-        #df.columns = df.columns.droplevel()
-        #df = df.drop(columns = drop)
-       
-        data.append(df)
-    driver.close()
-    return data
 def get_defense(url,year,ps = False):
     
     defense = url
@@ -151,9 +84,10 @@ def get_defense(url,year,ps = False):
     df['year'] = year
     return df
 def prep_dfg(dfg):
-    dfg = dfg.drop(columns = ['CLOSE_DEF_PERSON_ID','PLAYER_LAST_TEAM_ID'])
+    #dfg = dfg.drop(columns = ['CLOSE_DEF_PERSON_ID','PLAYER_LAST_TEAM_ID'])
+    print(dfg.columns)
     dfg = dfg.rename(columns={'DIFF%':'Diff%'})
-    dfg.columns = ['PLAYER', 'TEAM', 'POSITION', 'AGE','GP', 'G', 'FREQ%', 'DFGM', 'DFGA',
+    dfg.columns = ['PLAYER_ID','PLAYER', 'TEAM_ID','TEAM', 'POSITION', 'AGE','GP', 'G', 'FREQ%', 'DFGM', 'DFGA',
        'DFG%', 'FG%', 'DIFF%']
     for col in dfg:
         if '%' in col:
@@ -169,7 +103,7 @@ def wowy_statlog(stat,start_year,ps =False):
         print('Playoffs')
     player_dict,team_dict= get_index()
     frames = []
-    for season in range(start_year,2025):
+    for season in range(start_year,2026):
         if (season)%100 <=9:
             zero = '0'
         else:
@@ -178,6 +112,7 @@ def wowy_statlog(stat,start_year,ps =False):
         print(season_s)
         url = "https://api.pbpstats.com/get-on-off/nba/stat"
         for team in team_dict.keys():
+            time.sleep(3)
             params = {
                 "Season": season_s,
                 "SeasonType": s_type,
@@ -185,13 +120,16 @@ def wowy_statlog(stat,start_year,ps =False):
                 "Stat": stat, # for all options for Stat, see the list below
 
             }
+         
             response = requests.get(url, params=params)
             response_json = response.json()
             #print(response_json)
             df = pd.DataFrame(response_json['results'])
+            print(df.columns)
             df['Team'] = team
             df['Year'] = season
             df['Season'] = season_s
+            
             #print(df)
             #break
             #print(df)
@@ -200,30 +138,30 @@ def wowy_statlog(stat,start_year,ps =False):
     return pd.concat(frames)
 def update_log(filename,stat,ps = False):
 
-    df = wowy_statlog(stat,2024,ps)
+    df = wowy_statlog(stat,2025,ps)
     df.to_csv(filename,index =False)
     
 #stat = 'FG2APctBlocked'
 # At Rim Shot Frequency - Defense
 stat= "AtRimAccuracyOpponent"
-filename = '2024/defense/rim_acc.csv'
+filename = '2025/defense/rim_acc.csv'
 update_log(filename,stat,ps=False)
-filename = '2024/playoffs/defense/rim_acc.csv'
+#filename = '2025/playoffs/defense/rim_acc.csv'
 
 
-update_log(filename,stat,ps = True)
+#update_log(filename,stat,ps = True)
 #update_master('rim_acc.csv',filename)
 
 stat2 ="AtRimFrequencyOpponent"
 
 
 #update_log(filename,stat2)
-filename = '2024/defense/rimfreq.csv'
+filename = '2025/defense/rimfreq.csv'
 
 
 update_log(filename,stat2,ps = False)
-filename = '2024/playoffs/defense/rimfreq.csv'
-update_log(filename,stat2,ps = True)
+#filename = '2025/playoffs/defense/rimfreq.csv'
+#update_log(filename,stat2,ps = True)
 
 def update_dash(ps = False):
     stype = 'Regular%20Season'
@@ -236,14 +174,14 @@ def update_dash(ps = False):
     df = prep_dfg(df)
     #old = pd.read_csv('dfg.csv')
     #old = old[old.year!=2024]
-    df['year'] = 2024
+    df['year'] = 2025
     df = df.round(2)
     #old = pd.concat([old,df])
     #old.to_csv('dfg.csv',index = False)
     if ps == True:
-         df.to_csv('2024/playoffs/defense/dfg.csv',index = False)
+         df.to_csv('2025/playoffs/defense/dfg.csv',index = False)
     else:
-        df.to_csv('2024/defense/dfg.csv',index = False)
+        df.to_csv('2025/defense/dfg.csv',index = False)
     
     url = "https://stats.nba.com/stats/leaguedashptdefend?College=&Conference=&Country=&DateFrom=&DateTo=&DefenseCategory=Less%20Than%206Ft&Division=&DraftPick=&DraftYear=&GameSegment=&Height=&LastNGames=0&LeagueID=00&Location=&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PerMode=Totals&Period=0&PlayerExperience=&PlayerPosition=&Season=2023-24&SeasonSegment=&SeasonType="+stype+"&StarterBench=&TeamID=0&VsConference=&VsDivision=&Weight="
     
@@ -251,20 +189,20 @@ def update_dash(ps = False):
     df = prep_dfg(df)
     #old = pd.read_csv('rimdfg.csv')
     #old = old[old.year!=2024]
-    df['year'] = 2024
+    df['year'] = 2025
     df = df.round(2)
     #old = pd.concat([old,df])
     #old.to_csv('rimdfg.csv',index = False)
     if ps == True:
-        df.to_csv('2024/playoffs/defense/rimdfg.csv',index = False)
+        df.to_csv('2025/playoffs/defense/rimdfg.csv',index = False)
     else:
-        df.to_csv('2024/defense/rimdfg.csv',index = False)
+        df.to_csv('2025/defense/rimdfg.csv',index = False)
     
 
 #update_master('rimfreq.csv',filename)
 update_dash()
 
-update_dash(ps = True)
+#update_dash(ps = True)
 #year = 2023
 #filename = '2023/defense/rim_acc.csv'
 #update_master('rim_acc.csv',filename,year)
@@ -285,7 +223,7 @@ update_master('rim_acc.csv',filename,year)
 '''
 
 
-# In[3]:
+# In[ ]:
 
 
 def create_folders(new_folder):
@@ -304,9 +242,9 @@ masters =['rimfreq','rim_acc','dfg','rimdfg']
 #temp.to_csv('dfg_p.csv',index = False)
 def update_masters(masters,ps = False):
     trail = ''
-    end_year = 2025
+    end_year = 2026
     if ps == True:
-        end_year =2024
+        end_year =2026
         trail = '_p'
     frames1 = []
     frames2=[]
@@ -333,14 +271,14 @@ def update_masters(masters,ps = False):
         masterframe.to_csv(masters[i]+trail+'.csv',index = False)
         print(masterframe)
 update_masters(masters,ps = False)
-update_masters(masters,ps = True)
+#update_masters(masters,ps = True)
 
 #temp = pd.read_csv('dfg_p.csv')
 #temp = temp.rename(columns = {'Year':'year'})
 #temp.to_csv('dfg_p.csv',index = False)     
 
 
-# In[4]:
+# In[ ]:
 
 
 '''
