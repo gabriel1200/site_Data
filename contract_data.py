@@ -107,6 +107,8 @@ def team_books(team):
     for season in seasons:
 
         
+        salary_df[season] = salary_df[season].str.replace('Ext. Elig.', '', regex=False).str.strip()
+
     
         salary_df[season] = salary_df[season].apply(lambda x: '0' if any(s in x for s in strings_to_check) else x)
         salary_df[season]=salary_df[season].fillna('0')
@@ -114,7 +116,8 @@ def team_books(team):
         salary_df[season] = salary_df[season].str.replace(r'\D', '', regex=True)
         
         salary_df[season] = salary_df[season].replace('',0)
-    
+
+        
     
     salary_df['Player']=salary_df['Player'].str[1:]
     players = salary_df['Player'].unique()
@@ -171,7 +174,7 @@ def team_books(team):
 
     return salary_df,new_df
 teams = ['ATL', 'BOS', 'BKN', 'CHA', 'CHI', 'CLE', 'DAL', 'DEN', 'DET', 'GSW', 'HOU', 'IND', 'LAC', 'LAL', 'MEM', 'MIA', 'MIL', 'MIN', 'NOP', 'NYK', 'OKC', 'ORL', 'PHI', 'PHX', 'POR', 'SAC', 'SAS', 'TOR', 'UTA', 'WAS']
-#teams=['UTA']
+#teams=['OKC']
 salary=[]
 options=[]
 for team in teams:
@@ -185,13 +188,13 @@ option_df = pd.concat(options)
 option_df
 
 
+# In[ ]:
+
+
+
+
+
 # In[2]:
-
-
-salary_df[salary_df.Team=='UTA']
-
-
-# In[3]:
 
 
 temp_df=pd.DataFrame()
@@ -210,7 +213,7 @@ salary_df = salary_df.merge(guar,on='Player')
 salary_df.sort_values(by='Guaranteed',inplace=True)
 
 
-# In[4]:
+# In[3]:
 
 
 salary_df=salary_df.drop_duplicates(subset=['Player','Team'])
@@ -219,8 +222,10 @@ option_df=option_df.drop_duplicates(subset=['Player','Team'])
 option_df
 
 
-# In[5]:
+# In[4]:
 
+
+salary_df.loc[salary_df['Player'].str.contains('Branden Carlson'), '2024-25'] = 990895
 
 option_df.loc[option_df['Player'].str.contains('Scottie Barnes'), '2025-26'] = 0
 option_df.loc[option_df['Player'].str.contains('Julius Randle'), '2025-26'] = 'P'
@@ -228,16 +233,17 @@ option_df.loc[option_df['Player'].str.contains('Jalen Brunson'), '2024-25'] = 0
 option_df.loc[option_df['Player'].str.contains('Jalen Brunson'), '2025-26'] = 0
 
 
-# In[6]:
+# In[5]:
 
 
 salary_df.to_csv('salary.csv',index=False)
 option_df.to_csv('option.csv',index=False)
 #salary_df.to_csv('../data/salary.csv',index=False)
 #option_df.to_csv('../data/option.csv',index=False)
+salary_df[salary_df.Team=='OKC']
 
 
-# In[7]:
+# In[6]:
 
 
 '''
@@ -254,7 +260,7 @@ for col in columns:
 '''
 
 
-# In[8]:
+# In[7]:
 
 
 '''
@@ -272,7 +278,7 @@ df.to_csv('../data/lebron.csv',index=False)
 '''
 
 
-# In[9]:
+# In[8]:
 
 
 '''
