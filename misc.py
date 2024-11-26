@@ -401,13 +401,54 @@ pstyle.to_csv('playstyle.csv',index=False)
 pstyle[pstyle.year==2014]
 
 
-# In[ ]:
-
-
-
-
-
 # In[9]:
+
+
+team_dict= {'New York Knicks': 'NYK',
+             'New Orleans Pelicans': 'NOP',
+             'Oklahoma City Thunder': 'OKC',
+             'Golden State Warriors': 'GSW',
+             'Brooklyn Nets': 'BKN',
+             'Houston Rockets': 'HOU',
+             'Miami Heat': 'MIA',
+             'Phoenix Suns': 'PHX',
+             'Philadelphia 76ers': 'PHI',
+             'Sacramento Kings': 'SAC',
+             'Los Angeles Clippers': 'LAC',
+             'LA Clippers':'LAC',
+             'Cleveland Cavaliers': 'CLE',
+             'Detroit Pistons': 'DET',
+             'Los Angeles Lakers': 'LAL',
+             'Denver Nuggets': 'DEN',
+             'Orlando Magic': 'ORL',
+             'Indiana Pacers': 'IND',
+             'Boston Celtics': 'BOS',
+             'Toronto Raptors': 'TOR',
+             'Charlotte Bobcats': 'CHA',
+             'Washington Wizards': 'WAS',
+             'Milwaukee Bucks': 'MIL',
+             'Minnesota Timberwolves': 'MIN',
+             'Atlanta Hawks': 'ATL',
+             'Portland Trail Blazers': 'POR',
+             'Memphis Grizzlies': 'MEM',
+             'San Antonio Spurs': 'SAS',
+             'Dallas Mavericks': 'DAL',
+             'Utah Jazz': 'UTA',
+             'Chicago Bulls': 'CHI',
+             'Charlotte Hornets': 'CHA'}
+temp=pd.read_csv('teamplay_p.csv')
+
+temp['Team']=temp['full_name'].map(team_dict)
+temp.to_csv('teamplay_p.csv',index=False)
+
+
+temp=pd.read_csv('teamplayd_p.csv')
+
+temp['Team']=temp['full_name'].map(team_dict)
+temp.to_csv('teamplayd_p.csv',index=False)
+
+
+# In[10]:
 
 
 '''
@@ -455,7 +496,7 @@ newstyle.to_csv('play_style.csv',index=False)
 
 
 
-# In[10]:
+# In[11]:
 
 
 '''
