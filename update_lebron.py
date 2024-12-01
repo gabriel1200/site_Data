@@ -57,16 +57,10 @@ newframe.to_csv('lebron.csv',index=False)
 newframe
 
 
-# In[5]:
+# In[ ]:
 
 
 
-
-
-# In[3]:
-
-
-df[['Name','maxYOS']]
 
 
 # In[ ]:
