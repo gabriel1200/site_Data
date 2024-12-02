@@ -51,7 +51,7 @@ cp opp_team_shooting_ps.csv ../web_app/data/opp_team_shooting_ps.csv
 
 cp passing.csv ../web_app/data/passing.csv
 cp passing_ps.csv ../web_app/data/passing_ps.csv
-
+cp poss.csv ../web_app/data/poss.csv
 #cp poss.csv ../web_app/data/poss.csv
 #cp poss_ps.csv ../web_app/data/poss_ps.csv
 

@@ -54,6 +54,8 @@ df['Player']=df['Player'].str.lower()
 
 newframe = pd.concat([old_df,df])
 newframe.to_csv('lebron.csv',index=False)
+newframe.to_csv('../web_app/data/lebron.csv',index=False)
+
 newframe
 
 
