@@ -15,7 +15,6 @@ Garrison Mathews,NG,0,0,0,0,0,0.0,ATL
 Vit Krejci,0,NG,EE,T,0,0,0.0,ATL
 Mouhamed Gueye,0,EE,T,0,0,0,0.0,ATL
 Dominick Barlow,0,RFA,0,0,0,0,0.0,ATL
-Seth Lundy,0,RFA,0,0,0,0,0.0,ATL
 Keaton Wallace,0,RFA,0,0,0,0,0.0,ATL
 Jaylen Brown,0,0,EE,0,0,0,0.0,BOS
 Jayson Tatum,0,0,0,EE,0,P,0.0,BOS
@@ -50,8 +49,8 @@ Trendon Watford,0,0,0,0,0,,,BKN
 Keon Johnson,NG,T,0,0,0,,,BKN
 Jalen Wilson,NG,T,NG,0,0,,,BKN
 Reece Beekman,0,RFA,0,0,0,,,BKN
-Jaylen Martin,0,RFA,0,0,0,,,BKN
 Tyrese Martin,0,RFA,0,0,0,,,BKN
+Jaylen Martin,0,RFA,0,0,0,,,BKN
 LaMelo Ball,0,0,EE,0,0,0,,CHA
 Miles Bridges,0,0,EE,0,0,0,,CHA
 Grant Williams,0,EE,0,0,0,0,,CHA
@@ -299,7 +298,7 @@ Ryan Rollins,0,RFA,0,0,0,,,MIL
 Stanley Umude,0,RFA,0,0,0,,,MIL
 Rudy Gobert,0,P,EE,P,0,0,,MIN
 Anthony Edwards,0,0,EE,0,0,0,,MIN
-Julius Randle,0,P,0,0,0,0,,MIN
+Julius Randle,0,P,P,0,0,0,,MIN
 Jaden McDaniels,0,0,EE,0,0,0,,MIN
 Naz Reid,0,EE,0,0,0,0,,MIN
 Donte DiVincenzo,0,EE,0,0,0,0,,MIN
@@ -402,7 +401,7 @@ Jeff Dowtin,0,RFA,0,0,0,0,,PHI
 Justin Edwards,0,RFA,0,0,0,0,,PHI
 Pete Nance,0,RFA,0,0,0,0,,PHI
 Kevin Durant,0,0,0,0,0,0,0.0,PHX
-Bradley Beal,0,EE,0,0,0,0,0.0,PHX
+Bradley Beal,0,EE,P,0,0,0,0.0,PHX
 Devin Booker,0,EE,0,0,0,0,0.0,PHX
 Jusuf Nurkic,0,0,0,0,0,0,0.0,PHX
 Grayson Allen,0,0,EE,P,0,0,0.0,PHX

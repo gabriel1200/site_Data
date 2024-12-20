@@ -228,9 +228,10 @@ option_df
 salary_df.loc[salary_df['Player'].str.contains('Branden Carlson'), '2024-25'] = 990895
 
 option_df.loc[option_df['Player'].str.contains('Scottie Barnes'), '2025-26'] = 0
-option_df.loc[option_df['Player'].str.contains('Julius Randle'), '2025-26'] = 'P'
+option_df.loc[option_df['Player'].str.contains('Bradley Beal'), '2026-27'] = 'P'
 option_df.loc[option_df['Player'].str.contains('Jalen Brunson'), '2024-25'] = 0
 option_df.loc[option_df['Player'].str.contains('Jalen Brunson'), '2025-26'] = 0
+option_df.loc[option_df['Player'].str.contains('Julius Randle'), '2026-27'] = 'P'
 
 
 # In[5]:
