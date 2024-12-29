@@ -38,16 +38,16 @@ Ben Simmons,0,0,0,0,0,,,BKN
 Nicolas Claxton,0,0,EE,0,0,,,BKN
 Cameron Johnson,0,EE,0,0,0,,,BKN
 Bojan Bogdanovic,0,0,0,0,0,,,BKN
-Dorian Finney-Smith,EE,P,0,0,0,,,BKN
+D'Angelo Russell,0,0,0,0,0,,,BKN
 De'Anthony Melton,0,0,0,0,0,,,BKN
 Ziaire Williams,0,RFA,0,0,0,,,BKN
 Cameron Thomas,0,RFA,0,0,0,,,BKN
 Day'Ron Sharpe,0,RFA,0,0,0,,,BKN
 Noah Clowney,0,EE,T,RFA,0,,,BKN
 Dariq Whitehead,0,0,T,RFA,0,,,BKN
-Shake Milton,0,NG,EE,0,0,,,BKN
 Trendon Watford,0,0,0,0,0,,,BKN
 Keon Johnson,NG,T,0,0,0,,,BKN
+Maxwell Lewis,0,NG,T,0,0,,,BKN
 Jalen Wilson,NG,T,NG,0,0,,,BKN
 Reece Beekman,0,RFA,0,0,0,,,BKN
 Jaylen Martin,0,RFA,0,0,0,,,BKN
@@ -229,8 +229,8 @@ Kai Jones,0,RFA,0,0,0,,,LAC
 Jordan Miller,0,RFA,0,0,0,,,LAC
 LeBron James,0,P,0,0,0,,,LAL
 Anthony Davis,0,0,EE,P,0,,,LAL
-D'Angelo Russell,0,0,0,0,0,,,LAL
 Rui Hachimura,0,EE,0,0,0,,,LAL
+Dorian Finney-Smith,EE,P,0,0,0,,,LAL
 Austin Reaves,0,EE,P,0,0,,,LAL
 Gabe Vincent,0,EE,0,0,0,,,LAL
 Jarred Vanderbilt,0,0,EE,P,0,,,LAL
@@ -238,9 +238,9 @@ Max Christie,0,0,EE,P,0,,,LAL
 Jalen Hood-Schifino,0,0,T,RFA,0,,,LAL
 Dalton Knecht,0,T,T,EE,RFA,,,LAL
 Christian Wood,0,0,0,0,0,,,LAL
+Shake Milton,0,NG,EE,0,0,,,LAL
 Jaxson Hayes,0,0,0,0,0,,,LAL
 Cam Reddish,0,0,0,0,0,,,LAL
-Maxwell Lewis,0,NG,T,0,0,,,LAL
 Bronny James,0,0,NG,T,0,,,LAL
 Christian Koloko,0,RFA,0,0,0,,,LAL
 Quincy Olivari,0,RFA,0,0,0,,,LAL
@@ -276,7 +276,7 @@ Josh Richardson,0,0,0,0,0,0,,MIA
 Nikola Jovic,0,EE,RFA,0,0,0,,MIA
 Alec Burks,0,0,0,0,0,0,,MIA
 Pelle Larsson,0,NG,T,0,0,0,,MIA
-Keshad Johnson,0,RFA,0,0,0,0,,MIA
+Keshad Johnson,0,T,RFA,0,0,0,,MIA
 Josh Christopher,0,RFA,0,0,0,0,,MIA
 Dru Smith,0,RFA,0,0,0,0,,MIA
 Isaiah Stevens,0,RFA,0,0,0,0,,MIA
@@ -310,7 +310,6 @@ Nickeil Alexander-Walker,0,0,0,0,0,0,,MIN
  Terrence Shannon Jr.,0,0,0,0,0,0,,MIN
 Luka Garza,0,T,0,0,0,0,,MIN
 Joe Ingles,0,0,0,0,0,0,,MIN
-P.J. Dozier,0,0,0,0,0,0,,MIN
 Josh Minott,0,T,0,0,0,0,,MIN
 Leonard Miller,0,NG,T,0,0,0,,MIN
 Jaylen Clark,0,RFA,0,0,0,0,,MIN
