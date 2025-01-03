@@ -6,6 +6,7 @@ python misc.py
 python player_level.py
 
 python team_shooting.py
+python update_lebron.py
 python dribble.py
 python underground.py
 python hustle.py
@@ -27,6 +28,11 @@ WEB_APP_DIR="../web_app/data"
 DISCORD_DIR="../discord/data"
 
 # Copy files to both destinations
+
+
+cp lebron.csv $WEB_APP_DIR/lebron.csv
+cp lebron.csv $DISCORD_DIR/lebron.csv
+
 cp option.csv $WEB_APP_DIR/option.csv
 cp option.csv $DISCORD_DIR/option.csv
 

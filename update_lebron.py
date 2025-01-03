@@ -6,8 +6,34 @@
 
 import pandas as pd
 from nba_api.stats.endpoints import leaguedashplayerstats
-# URL of the local HTML file being served
+
+import requests
+
+# Step 1: Read the URL from the gitignored file
+url_file = "download_url.txt"
+try:
+    with open(url_file, "r") as file:
+        url = file.readline().strip()  # Read and strip any extra whitespace
+except FileNotFoundError:
+    print(f"Error: {url_file} not found. Please create the file and add the URL.")
+    exit()
+
+# Step 2: Download the file using the URL
+filename = "lebron_link25.csv"  # Name to save the file
+try:
+    response = requests.get(url)
+    response.raise_for_status()  # Check for request errors
+
+    # Save the content to a local file
+    with open(filename, "wb") as file:
+        file.write(response.content)
+    print(f"File downloaded and saved as {filename}")
+except requests.exceptions.RequestException as e:
+    print(f"Error downloading the file: {e}")
+
 df=pd.read_csv('lebron_link25.csv')
+print(df.columns)
+print(len(df))
 df['year']=2025
 df
 df.dropna(subset=['Name'],inplace=True)
