@@ -291,8 +291,14 @@ new_scoring.to_csv('scoring.csv',index=False)
 gp=new_scoring[['nba_id','Player','year','G']].reset_index()
 gp.to_csv('../player_sheets/lineups/games.csv',index=False)
 
-new_scoring
-new_scoring[new_scoring.nba_id==2544]
+ps_scoring=pd.read_csv('scoring_ps.csv')
+ps_scoring.fillna(0,inplace=True)
+ps_scoring.loc[ps_scoring['TS%'] > 150, 'TS%'] = 0
+
+
+ps_gp=ps_scoring[['nba_id','Player','year','G']].reset_index()
+ps_gp.to_csv('../player_sheets/lineups/ps_games.csv',index=False)
+ps_gp.to_csv('../extra_data/wowy_leverage/ps_games.csv',index=False)
 
 
 # In[3]:
