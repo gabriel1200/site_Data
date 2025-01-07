@@ -11,7 +11,7 @@ Jalen Johnson,0,RFA,0,EE,0,0,0.0,ATL
 Kobe Bufkin,0,0,T,RFA,0,0,0.0,ATL
 Cody Zeller,0,NG,EE,0,0,0,0.0,ATL
 David Roddy,0,0,RFA,0,0,0,0.0,ATL
-Garrison Mathews,NG,0,0,0,0,0,0.0,ATL
+Garrison Mathews,0,0,0,0,0,0,0.0,ATL
 Vit Krejci,0,NG,EE,T,0,0,0.0,ATL
 Mouhamed Gueye,0,EE,T,0,0,0,0.0,ATL
 Dominick Barlow,0,RFA,0,0,0,0,0.0,ATL
@@ -155,9 +155,9 @@ Marcus Sasser,0,0,T,RFA,0,0,0.0,DET
  Wendell Moore Jr.,0,0,0,0,0,0,0.0,DET
 Paul Reed,0,0,0,0,0,0,0.0,DET
 Bobi Klintman,0,0,NG,T,0,0,0.0,DET
+ Ron Harper Jr.,0,0,0,0,0,0,0.0,DET
 Daniss Jenkins,0,RFA,0,0,0,0,0.0,DET
-Cole Swider,0,RFA,0,0,0,0,0.0,DET
-Alondes Williams,0,RFA,0,0,0,0,0.0,DET
+Tolu Smith III,0,RFA,0,0,0,0,0.0,DET
 Stephen Curry,0,0,0,0,0,,,GSW
 Andrew Wiggins,0,EE,P,0,0,,,GSW
 Draymond Green,0,EE,P,0,0,,,GSW
@@ -362,7 +362,6 @@ Nikola Topic,0,0,T,T,RFA,0,,OKC
 Jalen Williams,0,EE,RFA,0,0,0,,OKC
 Dillon Jones,0,0,T,T,RFA,0,,OKC
 Jaylin Williams,NG,NG,0,0,0,0,,OKC
-Branden Carlson,0,RFA,0,0,0,0,,OKC
 Alex Ducas,0,RFA,0,0,0,0,,OKC
 Adam Flagler,0,RFA,0,0,0,0,,OKC
 Ajay Mitchell,0,RFA,0,0,0,0,,OKC
@@ -483,7 +482,6 @@ Gradey Dick,0,0,T,RFA,0,0,0.0,TOR
 Ochai Agbaji,0,EE,RFA,0,0,0,0.0,TOR
 Ja'Kobe Walter,0,0,T,T,RFA,0,0.0,TOR
 Garrett Temple,0,0,0,0,0,0,0.0,TOR
-Bruno Fernando,NG,0,0,0,0,0,0.0,TOR
 Jonathan Mogbo,0,0,T,RFA,0,0,0.0,TOR
 Jamal Shead,0,0,T,RFA,0,0,0.0,TOR
 Jamison Battle,0,RFA,0,0,0,0,0.0,TOR
