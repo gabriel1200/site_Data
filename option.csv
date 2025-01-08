@@ -63,10 +63,10 @@ Tidjane Salaun,0,0,T,T,RFA,0,,CHA
 Nick Richards,EE,NG,0,0,0,0,,CHA
 Tre Mann,0,RFA,0,0,0,0,,CHA
 Mark Williams,0,EE,RFA,0,0,0,,CHA
-Taj Gibson,NG,0,0,0,0,0,,CHA
  Nick Smith Jr.,0,0,0,0,0,0,,CHA
 DaQuan Jeffries,0,NG,EE,0,0,0,,CHA
 Seth Curry,0,0,0,0,0,0,,CHA
+Taj Gibson,NG,0,0,0,0,0,,CHA
 Moussa Diabate,0,RFA,0,0,0,0,,CHA
 K.J. Simpson,0,0,RFA,0,0,0,,CHA
 Isaiah Wong,0,0,RFA,0,0,0,,CHA
@@ -170,7 +170,7 @@ Jonathan Kuminga,0,RFA,0,0,0,,,GSW
 Moses Moody,0,RFA,EE,0,0,,,GSW
 Brandin Podziemski,0,0,T,RFA,0,,,GSW
 Lindy Waters III,0,0,0,0,0,,,GSW
-Trayce Jackson-Davis,0,NG,NG,0,0,,,GSW
+Trayce Jackson-Davis,0,NG,T,0,0,,,GSW
 Gui Santos,NG,T,RFA,0,0,,,GSW
 Quinten Post,0,RFA,0,0,0,,,GSW
 Pat Spencer,0,RFA,0,0,0,,,GSW
@@ -314,7 +314,7 @@ Leonard Miller,0,NG,T,0,0,0,,MIN
 Jaylen Clark,0,RFA,0,0,0,0,,MIN
 Jesse Edwards,0,RFA,0,0,0,0,,MIN
 Tristen Newton,0,RFA,0,0,0,0,,MIN
-Zion Williamson,0,NG,NG,NG,0,0,,NOP
+Zion Williamson,0,EE,NG,NG,0,0,,NOP
 Brandon Ingram,0,0,0,0,0,0,,NOP
 C.J. McCollum,0,0,0,0,0,0,,NOP
 Dejounte Murray,0,0,EE,P,0,0,,NOP
@@ -398,7 +398,6 @@ V  Ricky Council IV,0,0,0,0,0,0,,PHI
 Adem Bona,0,NG,NG,T,0,0,,PHI
 Jeff Dowtin,0,RFA,0,0,0,0,,PHI
 Justin Edwards,0,RFA,0,0,0,0,,PHI
-Pete Nance,0,RFA,0,0,0,0,,PHI
 Kevin Durant,0,0,0,0,0,0,0.0,PHX
 Bradley Beal,0,EE,P,0,0,0,0.0,PHX
 Devin Booker,0,EE,0,0,0,0,0.0,PHX
@@ -447,7 +446,6 @@ Colby Jones,0,NG,T,0,0,,,SAC
 Alex Len,0,0,0,0,0,,,SAC
 Doug McDermott,NG,0,0,0,0,,,SAC
 Jordan McLaughlin,0,0,0,0,0,,,SAC
-Orlando Robinson,NG,0,0,0,0,,,SAC
 Jae Crowder,NG,0,0,0,0,,,SAC
 Isaiah Crawford,0,RFA,0,0,0,,,SAC
 Isaac Jones,0,RFA,0,0,0,,,SAC
