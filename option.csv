@@ -46,9 +46,9 @@ Day'Ron Sharpe,0,RFA,0,0,0,,,BKN
 Noah Clowney,0,EE,T,RFA,0,,,BKN
 Dariq Whitehead,0,0,T,RFA,0,,,BKN
 Trendon Watford,0,0,0,0,0,,,BKN
-Keon Johnson,NG,T,0,0,0,,,BKN
+Keon Johnson,0,T,0,0,0,,,BKN
 Maxwell Lewis,0,NG,T,0,0,,,BKN
-Jalen Wilson,NG,T,NG,0,0,,,BKN
+Jalen Wilson,0,T,NG,0,0,,,BKN
 Reece Beekman,0,RFA,0,0,0,,,BKN
 Tosan Evbuomwan,0,0,0,0,0,,,BKN
 Tyrese Martin,0,RFA,0,0,0,,,BKN
@@ -66,7 +66,7 @@ Mark Williams,0,EE,RFA,0,0,0,,CHA
  Nick Smith Jr.,0,0,0,0,0,0,,CHA
 DaQuan Jeffries,0,NG,EE,0,0,0,,CHA
 Seth Curry,0,0,0,0,0,0,,CHA
-Taj Gibson,NG,0,0,0,0,0,,CHA
+Taj Gibson,0,0,0,0,0,0,,CHA
 Moussa Diabate,0,RFA,0,0,0,0,,CHA
 K.J. Simpson,0,0,RFA,0,0,0,,CHA
 Isaiah Wong,0,0,RFA,0,0,0,,CHA
@@ -83,7 +83,7 @@ Chris Duarte,0,RFA,0,0,0,0,,CHI
 Matas Buzelis,0,0,T,T,RFA,0,,CHI
 Dalen Terry,0,EE,RFA,0,0,0,,CHI
 Torrey Craig,0,0,0,0,0,0,,CHI
-Talen Horton-Tucker,0,NG,0,0,0,0,,CHI
+Talen Horton-Tucker,0,0,0,0,0,0,,CHI
 Julian Phillips,0,0,T,0,0,0,,CHI
 E.J. Liddell,0,RFA,0,0,0,0,,CHI
 Emanuel Miller,0,RFA,0,0,0,0,,CHI
@@ -99,8 +99,8 @@ Georges Niang,0,EE,0,0,0,0,0.0,CLE
 Dean Wade,0,NG,0,0,0,0,0.0,CLE
 Jaylon Tyson,0,0,T,T,RFA,0,0.0,CLE
 Ty Jerome,0,0,0,0,0,0,0.0,CLE
-Sam Merrill,NG,0,0,0,0,0,0.0,CLE
-Tristan Thompson,NG,0,0,0,0,0,0.0,CLE
+Sam Merrill,0,0,0,0,0,0,0.0,CLE
+Tristan Thompson,0,0,0,0,0,0,0.0,CLE
  Craig Porter Jr.,0,0,0,0,0,0,0.0,CLE
 Emoni Bates,0,RFA,0,0,0,0,0.0,CLE
 JT Thor,0,0,0,0,0,0,0.0,CLE
@@ -171,7 +171,7 @@ Moses Moody,0,RFA,EE,0,0,,,GSW
 Brandin Podziemski,0,0,T,RFA,0,,,GSW
 Lindy Waters III,0,0,0,0,0,,,GSW
 Trayce Jackson-Davis,0,NG,T,0,0,,,GSW
-Gui Santos,NG,T,RFA,0,0,,,GSW
+Gui Santos,0,T,RFA,0,0,,,GSW
 Quinten Post,0,RFA,0,0,0,,,GSW
 Pat Spencer,0,RFA,0,0,0,,,GSW
 Fred VanVleet,0,T,0,0,0,0,0.0,HOU
@@ -201,7 +201,7 @@ Bennedict Mathurin,0,EE,RFA,0,0,0,,IND
 Jarace Walker,0,0,T,RFA,0,0,,IND
 Isaiah Jackson,0,RFA,0,0,0,0,,IND
 Ben Sheppard,0,0,T,RFA,0,0,,IND
-James Wiseman,NG,T,0,0,0,0,,IND
+James Wiseman,0,T,0,0,0,0,,IND
 James Johnson,0,0,0,0,0,0,,IND
 Thomas Bryant,0,0,0,0,0,0,,IND
 Andrew Nembhard,0,T,EE,0,0,0,,IND
@@ -259,8 +259,8 @@ Jay Huff,0,0,NG,T,0,0,,MEM
  Scotty Pippen Jr.,0,0,0,0,0,0,,MEM
 G.G. Jackson,0,EE,T,0,0,0,,MEM
 Jaylen Wells,0,0,EE,T,0,0,,MEM
-Colin Castleton,0,RFA,0,0,0,0,,MEM
 Yuki Kawamura,0,RFA,0,0,0,0,,MEM
+Zyon Pullin,0,RFA,0,0,0,0,,MEM
 Cam Spencer,0,RFA,0,0,0,0,,MEM
 Jimmy Butler,0,P,0,0,0,0,,MIA
 Bam Adebayo,0,0,0,EE,P,0,,MIA
@@ -325,12 +325,12 @@ Yves Missi,0,0,T,T,RFA,0,,NOP
 Jeremiah Robinson-Earl,0,0,0,0,0,0,,NOP
 Daniel Theis,0,0,0,0,0,0,,NOP
 Javonte Green,0,0,0,0,0,0,,NOP
-Jose Alvarado,NG,0,P,0,0,0,,NOP
+Jose Alvarado,0,0,P,0,0,0,,NOP
 Karlo Matkovic,0,0,T,RFA,0,0,,NOP
 Antonio Reeves,0,NG,T,RFA,0,0,,NOP
 r  Brandon Boston Jr,0,0,0,0,0,0,,NOP
+ Keion Brooks Jr.,0,0,0,0,0,0,,NOP
 Jamal Cain,0,0,0,0,0,0,,NOP
-Trey Jemison,0,RFA,0,0,0,0,,NOP
 Karl-Anthony Towns,0,EE,0,P,0,0,,NYK
 OG Anunoby,0,0,0,EE,P,0,,NYK
 Jalen Brunson,0,0,0,EE,P,0,,NYK
@@ -344,7 +344,7 @@ Cameron Payne,0,0,0,0,0,0,,NYK
 Tyler Kolek,0,0,EE,T,0,0,,NYK
 Pacome Dadiet,0,0,T,T,RFA,0,,NYK
 Landry Shamet,0,0,0,0,0,0,,NYK
-Ariel Hukporti,NG,T,RFA,0,0,0,,NYK
+Ariel Hukporti,0,T,RFA,0,0,0,,NYK
 Boo Buie,0,RFA,0,0,0,0,,NYK
  Kevin McCullar Jr.,0,0,0,0,0,0,,NYK
 Jacob Toppin,0,RFA,0,0,0,0,,NYK
@@ -361,11 +361,12 @@ Ousmane Dieng,0,EE,T,0,0,0,,OKC
 Nikola Topic,0,0,T,T,RFA,0,,OKC
 Jalen Williams,0,EE,RFA,0,0,0,,OKC
 Dillon Jones,0,0,T,T,RFA,0,,OKC
-Jaylin Williams,NG,NG,0,0,0,0,,OKC
+Jaylin Williams,0,NG,0,0,0,0,,OKC
+Branden Carlson,0,0,0,0,0,0,,OKC
 Alex Ducas,0,RFA,0,0,0,0,,OKC
 Adam Flagler,0,RFA,0,0,0,0,,OKC
 Ajay Mitchell,0,RFA,0,0,0,0,,OKC
-Jonathan Isaac,NG,NG,NG,EE,NG,0,0.0,ORL
+Jonathan Isaac,0,NG,NG,EE,NG,0,0.0,ORL
 Kentavious Caldwell-Pope,0,0,P,0,0,0,0.0,ORL
 Cole Anthony,0,EE,T,0,0,0,0.0,ORL
 Paolo Banchero,0,EE,RFA,0,0,0,0.0,ORL
@@ -425,7 +426,7 @@ Scoot Henderson,0,0,T,RFA,0,,,POR
 Donovan Clingan,0,0,T,T,T,,,POR
 Shaedon Sharpe,0,EE,RFA,0,0,,,POR
 Kris Murray,0,0,T,RFA,0,,,POR
-Dalano Banton,NG,0,0,0,0,,,POR
+Dalano Banton,0,0,0,0,0,,,POR
 Duop Reath,0,NG,RFA,0,0,,,POR
 Jabari Walker,0,RFA,0,0,0,,,POR
 Toumani Camara,0,EE,T,0,0,,,POR
@@ -444,9 +445,9 @@ Devin Carter,0,0,T,T,"2028-29 $10,931,040",,,SAC
 Keon Ellis,0,T,0,0,0,,,SAC
 Colby Jones,0,NG,T,0,0,,,SAC
 Alex Len,0,0,0,0,0,,,SAC
-Doug McDermott,NG,0,0,0,0,,,SAC
+Doug McDermott,0,0,0,0,0,,,SAC
 Jordan McLaughlin,0,0,0,0,0,,,SAC
-Jae Crowder,NG,0,0,0,0,,,SAC
+Jae Crowder,0,0,0,0,0,,,SAC
 Isaiah Crawford,0,RFA,0,0,0,,,SAC
 Isaac Jones,0,RFA,0,0,0,,,SAC
 Mason Jones,0,RFA,0,0,0,,,SAC
