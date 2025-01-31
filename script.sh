@@ -153,6 +153,9 @@ cp shotzone_ps.csv $DISCORD_DIR/shotzone_ps.csv
 cp team_shotzone.csv $WEB_APP_DIR/team_shotzone.csv
 cp team_shotzone.csv $DISCORD_DIR/team_shotzone.csv
 
+cp team_shotzone_vs.csv $WEB_APP_DIR/team_shotzone_vs.csv
+cp team_shotzone_vs_ps.csv $WEB_APP_DIR/team_shotzone_vs_ps.csv
+
 cp team_shotzone_ps.csv $WEB_APP_DIR/team_shotzone_ps.csv
 cp team_shotzone_ps.csv $DISCORD_DIR/team_shotzone_ps.csv
 

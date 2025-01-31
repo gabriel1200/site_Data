@@ -1,0 +1,540 @@
+bref_id,Player,Season,team,Offensive Archetype,Minutes,Games,Pos,Age,LEBRON,O-LEBRON,D-LEBRON,WAR,NBA ID,boxLEBRON,boxOLEBRON,boxDLEBRON,year
+jamesle01,lebron james,2020-21,LAL,Shot Creator,1504,45,PG,36,5.31,3.93,1.38,7.30,2544.0,3.92,3.24,0.68,2021
+anthoca01,carmelo anthony,2020-21,POR,Versatile Big,1690,69,PF,36,-1.94,-0.01,-1.93,0.50,2546.0,-0.59,0.54,-1.12,2021
+hasleud01,udonis haslem,2020-21,MIA,Roll + Cut Big,3,1,C,40,-1.37,-1.5,0.13,0.00,2617.0,-1.38,-1.54,0.16,2021
+howardw01,dwight howard,2020-21,PHI,Roll + Cut Big,1196,69,C,35,0.58,-0.7,1.28,2.30,2730.0,0.64,-1.07,1.71,2021
+iguodan01,andre iguodala,2020-21,MIA,Stationary Shooter,1339,63,SF,37,-1.16,-1.94,0.78,1.10,2738.0,-0.9,-1.98,1.08,2021
+varejan01,anderson varejao,2020-21,CLE,Post Scorer,36,5,C,38,-1.54,-1.78,0.23,0.00,2760.0,-1.05,-1.54,0.49,2021
+arizatr01,trevor ariza,2020-21,MIA,Stationary Shooter,841,30,SF,35,-0.06,-0.73,0.67,1.30,2772.0,0.22,-0.66,0.88,2021
+paulch01,chris paul,2020-21,PHO,Shot Creator,2200,70,PG,35,3.53,2.5,1.03,8.40,101108.0,3.75,3.02,0.73,2021
+ilyaser01,ersan ilyasova,2020-21,UTA,Stretch Big,148,17,PF,33,-1.7,-1.16,-0.54,0.10,101141.0,-1.57,-1.21,-0.37,2021
+willilo02,lou williams,2020-21,LAC/ATL,Slasher,1423,66,PG,34,-1.96,-0.35,-1.61,0.40,101150.0,-0.98,0.09,-1.07,2021
+aldrila01,lamarcus aldridge,2020-21,SAS/BRK,Versatile Big,674,26,C,35,-0.71,-0.81,0.1,0.70,200746.0,-0.5,-0.47,-0.03,2021
+gayru01,rudy gay,2020-21,SAS,Stationary Shooter,1358,63,PF,34,-0.19,-0.78,0.59,1.90,200752.0,-0.27,-0.31,0.03,2021
+redicjj01,jj redick,2020-21,NOP/DAL,Movement Shooter,723,44,SG,36,-0.72,0.42,-1.14,0.80,200755.0,-1.55,-0.5,-1.06,2021
+rondora01,rajon rondo,2020-21,ATL/LAC,Secondary Ball Handler,769,45,PG,34,-1.28,-1.0,-0.29,0.50,200765.0,-0.71,-0.51,-0.2,2021
+lowryky01,kyle lowry,2020-21,TOR,Primary Ball Handler,1602,46,PG,34,0.25,0.16,0.09,2.70,200768.0,0.94,1.28,-0.34,2021
+tuckepj01,p.j. tucker,2020-21,HOU/MIL,Stationary Shooter,1356,52,PF,35,-3.55,-3.71,0.15,-1.00,200782.0,-2.95,-3.36,0.4,2021
+millspa01,paul millsap,2020-21,DEN,Stretch Big,1162,56,PF,35,1.38,0.28,1.1,2.80,200794.0,1.13,0.27,0.86,2021
+duranke01,kevin durant,2020-21,BRK,Shot Creator,1157,35,PF,32,3.35,3.46,-0.11,4.30,201142.0,3.84,3.83,0.01,2021
+horfoal01,al horford,2020-21,OKC,Versatile Big,782,28,C,34,1.42,-0.18,1.6,1.90,201143.0,1.41,0.5,0.91,2021
+conlemi01,mike conley,2020-21,UTA,Primary Ball Handler,1498,51,PG,33,3.22,1.86,1.36,5.40,201144.0,3.04,2.88,0.16,2021
+greenje02,jeff green,2020-21,BRK,Stretch Big,1835,68,C,34,-0.3,0.37,-0.66,2.50,201145.0,0.05,0.48,-0.44,2021
+youngth01,thaddeus young,2020-21,CHI,Post Scorer,1652,68,PF,32,0.84,1.43,-0.59,3.50,201152.0,0.47,0.28,0.19,2021
+dudleja01,jared dudley,2020-21,LAL,Stretch Big,81,12,PF,35,-1.52,-2.0,0.48,0.00,201162.0,-1.77,-1.96,0.19,2021
+gasolma01,marc gasol,2020-21,LAL,Stretch Big,993,52,C,36,1.54,-1.13,2.67,2.50,201188.0,0.88,-1.52,2.4,2021
+tollian01,anthony tolliver,2020-21,PHI,Movement Shooter,99,11,PF,35,-1.92,-1.87,-0.04,0.00,201229.0,-2.51,-1.97,-0.54,2021
+rosede01,derrick rose,2020-21,DET/NYK,Slasher,1279,50,PG,32,0.05,0.05,-0.01,2.00,201565.0,-0.28,0.61,-0.89,2021
+westbru01,russell westbrook,2020-21,WAS,Shot Creator,2369,65,PG,32,2.84,1.59,1.25,8.00,201566.0,2.0,1.54,0.46,2021
+loveke01,kevin love,2020-21,CLE,Versatile Big,622,25,PF,32,1.87,1.08,0.79,1.70,201567.0,1.36,0.75,0.6,2021
+gallida01,danilo gallinari,2020-21,ATL,Stretch Big,1222,51,PF,32,0.54,0.95,-0.41,2.30,201568.0,0.86,1.35,-0.48,2021
+gordoer01,eric gordon,2020-21,HOU,Secondary Ball Handler,789,27,SG,32,-0.55,0.93,-1.48,0.90,201569.0,-1.07,0.68,-1.75,2021
+augusdj01,d.j. augustin,2020-21,MIL/HOU,Secondary Ball Handler,1129,57,PG,33,-1.78,0.06,-1.84,0.40,201571.0,-1.04,0.09,-1.13,2021
+lopezbr01,brook lopez,2020-21,MIL,Stretch Big,1902,70,C,32,2.44,0.23,2.21,5.90,201572.0,1.33,0.19,1.14,2021
+lopezro01,robin lopez,2020-21,WAS,Post Scorer,1354,71,C,32,-1.32,-1.11,-0.22,0.90,201577.0,-2.02,-0.97,-1.05,2021
+mcgeeja01,javale mcgee,2020-21,CLE/DEN,Roll + Cut Big,678,46,C,33,-0.11,-1.58,1.46,1.00,201580.0,-0.22,-1.54,1.32,2021
+ibakase01,serge ibaka,2020-21,LAC,Stretch Big,955,41,C,31,1.4,0.15,1.26,2.30,201586.0,1.67,0.6,1.07,2021
+batumni01,nicolas batum,2020-21,LAC,Stationary Shooter,1835,67,SF,32,0.68,-0.66,1.34,3.60,201587.0,1.22,0.0,1.22,2021
+hillge01,george hill,2020-21,OKC/PHI,Secondary Ball Handler,672,30,PG,34,-0.02,0.4,-0.42,1.00,201588.0,-0.97,-0.49,-0.48,2021
+jordade01,deandre jordan,2020-21,BRK,Roll + Cut Big,1246,57,C,32,0.25,-0.96,1.21,2.10,201599.0,0.71,-0.56,1.27,2021
+dragigo01,goran dragic,2020-21,MIA,Primary Ball Handler,1336,50,PG,34,-2.2,-0.36,-1.84,0.20,201609.0,-1.05,-0.05,-1.0,2021
+griffbl01,blake griffin,2020-21,DET/BRK,Versatile Big,1187,46,PF,31,1.1,0.51,0.59,2.70,201933.0,0.02,0.06,-0.05,2021
+hardeja01,james harden,2020-21,HOU/BRK,Shot Creator,1609,44,PG-SG,31,3.66,4.42,-0.76,6.30,201935.0,4.64,4.42,0.22,2021
+rubiori01,ricky rubio,2020-21,MIN,Primary Ball Handler,1772,68,PG,30,0.4,0.33,0.07,3.20,201937.0,-0.2,-0.16,-0.04,2021
+curryst01,stephen curry,2020-21,GSW,Primary Ball Handler,2152,63,PG,32,5.29,5.93,-0.64,10.50,201939.0,3.89,4.9,-1.01,2021
+derozde01,demar derozan,2020-21,SAS,Shot Creator,2056,61,PF,31,1.33,2.61,-1.28,4.90,201942.0,1.39,1.97,-0.58,2021
+johnsja01,james johnson,2020-21,DAL/NOP,Stationary Shooter,1043,51,PF,33,-1.79,-1.93,0.14,0.40,201949.0,-0.8,-1.67,0.86,2021
+holidjr01,jrue holiday,2020-21,MIL,Shot Creator,1907,59,PG,30,3.18,1.78,1.4,6.80,201950.0,2.54,2.12,0.42,2021
+teaguje01,jeff teague,2020-21,BOS/MIL,Shot Creator,950,55,PG,32,-1.1,-0.57,-0.54,0.80,201952.0,-1.43,-0.93,-0.49,2021
+gibsota01,taj gibson,2020-21,NYK,Roll + Cut Big,936,45,PF,35,0.48,-1.35,1.83,1.70,201959.0,-0.36,-1.65,1.29,2021
+ellinwa01,wayne ellington,2020-21,DET,Off Screen Shooter,1012,46,SG,33,-1.92,-0.08,-1.84,0.30,201961.0,-1.28,0.12,-1.4,2021
+beverpa01,patrick beverley,2020-21,LAC,Stationary Shooter,832,37,PG,32,0.24,-0.83,1.07,1.40,201976.0,0.65,-0.48,1.13,2021
+greenda02,danny green,2020-21,PHI,Movement Shooter,1934,69,SF,33,0.3,-0.41,0.71,3.40,201980.0,1.16,-0.27,1.43,2021
+millspa02,patty mills,2020-21,SAS,Secondary Ball Handler,1685,68,PG,32,-1.49,-0.36,-1.13,1.00,201988.0,-1.88,-0.11,-1.77,2021
+templga01,garrett temple,2020-21,CHI,Stationary Shooter,1528,56,SG,34,-1.22,-1.63,0.42,1.10,202066.0,-1.92,-2.14,0.22,2021
+matthwe02,wesley matthews,2020-21,LAL,Movement Shooter,1130,58,SG,34,-1.27,-1.45,0.18,0.80,202083.0,-1.82,-2.05,0.23,2021
+walljo01,john wall,2020-21,HOU,Shot Creator,1288,40,PG,30,0.56,0.85,-0.3,2.50,202322.0,-0.42,0.74,-1.16,2021
+favorde01,derrick favors,2020-21,UTA,Roll + Cut Big,1039,68,C,29,-0.11,-0.95,0.84,1.50,202324.0,1.25,-0.63,1.88,2021
+couside01,demarcus cousins,2020-21,HOU/LAC,Versatile Big,713,41,C,30,1.0,-0.62,1.63,1.60,202326.0,0.7,-0.32,1.02,2021
+aminual01,al-farouq aminu,2020-21,ORL/CHI,Stretch Big,434,23,PF,30,-1.1,-2.6,1.5,0.40,202329.0,-1.22,-2.5,1.29,2021
+haywago01,gordon hayward,2020-21,CHO,Secondary Ball Handler,1496,44,SF,30,-0.16,0.03,-0.19,2.20,202330.0,0.58,0.77,-0.19,2021
+georgpa01,paul george,2020-21,LAC,Shot Creator,1821,54,SF,30,4.36,2.65,1.71,7.90,202331.0,3.16,2.96,0.21,2021
+davised01,ed davis,2020-21,MIN,Roll + Cut Big,299,23,C,31,-0.84,-2.56,1.72,0.30,202334.0,-0.98,-2.5,1.52,2021
+pattepa01,patrick patterson,2020-21,LAC,Stretch Big,582,38,PF,31,-0.99,-0.1,-0.89,0.50,202335.0,-1.1,-0.74,-0.36,2021
+bledser01,eric bledsoe,2020-21,NOP,Primary Ball Handler,2112,71,SG,31,-0.28,0.01,-0.29,2.90,202339.0,-0.41,-0.13,-0.28,2021
+bradlav01,avery bradley,2020-21,MIA/HOU,Movement Shooter,602,27,SG,30,-2.83,-2.23,-0.6,-0.20,202340.0,-2.82,-2.39,-0.43,2021
+whiteha01,hassan whiteside,2020-21,SAC,Post Scorer,546,36,C,31,-0.54,-1.48,0.93,0.60,202355.0,0.07,-1.15,1.22,2021
+bjeline01,nemanja bjelica,2020-21,SAC/MIA,Stretch Big,595,37,PF,32,-0.85,-0.06,-0.79,0.60,202357.0,-1.21,-0.74,-0.48,2021
+smithis01,ish smith,2020-21,WAS,Slasher,924,44,PG,32,-0.51,-0.77,0.26,1.10,202397.0,-1.22,-1.4,0.18,2021
+irvinky01,kyrie irving,2020-21,BRK,Shot Creator,1886,54,PG,28,3.38,3.99,-0.6,7.00,202681.0,3.59,4.26,-0.68,2021
+kanteen01,enes kanter,2020-21,POR,Post Scorer,1757,72,C,28,2.33,2.54,-0.22,5.40,202683.0,0.67,0.78,-0.11,2021
+thomptr01,tristan thompson,2020-21,BOS,Roll + Cut Big,1287,54,PF,29,-0.06,-1.48,1.42,1.90,202684.0,-0.83,-1.24,0.4,2021
+valanjo01,jonas valanciunas,2020-21,MEM,Post Scorer,1755,62,C,28,2.32,1.52,0.8,5.30,202685.0,2.06,1.2,0.86,2021
+biyombi01,bismack biyombo,2020-21,CHO,Roll + Cut Big,1349,66,C,28,-2.42,-3.28,0.86,0.00,202687.0,-2.05,-2.79,0.74,2021
+walkeke02,kemba walker,2020-21,BOS,Primary Ball Handler,1369,43,PG,30,1.68,1.98,-0.3,3.60,202689.0,1.78,2.38,-0.6,2021
+burksal01,alec burks,2020-21,NYK,Secondary Ball Handler,1255,49,SG,29,-0.79,-0.21,-0.58,1.30,202692.0,0.0,0.28,-0.28,2021
+morrima02,markieff morris,2020-21,LAL,Stretch Big,1200,61,PF,31,-1.49,-1.99,0.5,0.70,202693.0,-1.12,-1.63,0.5,2021
+morrima03,marcus morris sr.,2020-21,LAC,Stationary Shooter,1502,57,PF,31,-1.61,0.11,-1.72,0.70,202694.0,0.33,0.66,-0.32,2021
+leonaka01,kawhi leonard,2020-21,LAC,Shot Creator,1772,52,SF,29,4.94,3.61,1.33,8.30,202695.0,4.8,4.21,0.6,2021
+vucevni01,nikola vucevic,2020-21,ORL/CHI,Versatile Big,2348,70,C,30,1.15,0.58,0.57,5.40,202696.0,2.08,1.76,0.33,2021
+shumpim01,iman shumpert,2020-21,BRK,Stretch Big,11,2,SG,30,-1.61,-1.5,-0.11,0.00,202697.0,-1.71,-1.47,-0.24,2021
+harrito02,tobias harris,2020-21,PHI,Shot Creator,2014,62,PF,28,1.87,0.25,1.61,5.50,202699.0,2.21,1.27,0.94,2021
+jacksre01,reggie jackson,2020-21,LAC,Primary Ball Handler,1544,67,SG,30,0.51,0.25,0.26,2.90,202704.0,0.62,0.9,-0.28,2021
+josepco01,cory joseph,2020-21,SAC/DET,Secondary Ball Handler,1446,63,PG,29,-1.3,-0.56,-0.74,1.00,202709.0,-1.59,-1.04,-0.55,2021
+butleji01,jimmy butler,2020-21,MIA,Shot Creator,1745,52,SF,31,5.42,3.77,1.65,8.60,202710.0,4.58,3.56,1.02,2021
+bogdabo02,bojan bogdanovic,2020-21,UTA,Movement Shooter,2216,72,SF,31,-0.86,0.16,-1.02,2.20,202711.0,1.21,1.35,-0.14,2021
+bertada01,davis bertans,2020-21,WAS,Off Screen Shooter,1464,57,PF,28,0.07,0.96,-0.89,2.30,202722.0,-0.97,-0.07,-0.91,2021
+mooreet01,e'twaun moore,2020-21,PHO,Secondary Ball Handler,389,27,SG,31,-2.5,-1.69,-0.8,0.00,202734.0,-2.79,-2.03,-0.76,2021
+thomais02,isaiah thomas,2020-21,NOP,Secondary Ball Handler,48,3,PG,31,-1.43,-1.55,0.13,0.00,202738.0,-1.65,-1.74,0.1,2021
+wanambr01,brad wanamaker,2020-21,GSW/CHO,Secondary Ball Handler,1053,61,PG,31,-1.79,-2.66,0.87,0.40,202954.0,-2.0,-1.75,-0.25,2021
+davisan02,anthony davis,2020-21,LAL,Post Scorer,1162,36,PF,27,3.29,1.62,1.67,4.20,203076.0,2.98,1.35,1.64,2021
+bealbr01,bradley beal,2020-21,WAS,Slasher,2147,60,SG,27,2.86,4.26,-1.4,7.30,203078.0,1.14,2.58,-1.44,2021
+lillada01,damian lillard,2020-21,POR,Shot Creator,2398,67,PG,30,3.73,5.39,-1.66,9.40,203081.0,3.48,5.48,-2.0,2021
+rosste01,terrence ross,2020-21,ORL,Off Screen Shooter,1346,46,SG,29,-1.45,-0.7,-0.75,0.80,203082.0,-2.12,-1.11,-1.01,2021
+drumman01,andre drummond,2020-21,CLE/LAL,Post Scorer,1242,46,C,27,0.67,-1.49,2.16,2.50,203083.0,1.26,-0.6,1.86,2021
+barneha02,harrison barnes,2020-21,SAC,Stretch Big,2102,58,PF,28,0.03,0.51,-0.48,3.30,203084.0,-0.57,0.69,-1.25,2021
+riverau01,austin rivers,2020-21,NYK/DEN,Secondary Ball Handler,845,36,SG,28,-0.94,-0.22,-0.72,0.80,203085.0,-1.96,-1.25,-0.71,2021
+leoname01,meyers leonard,2020-21,MIA,Stretch Big,29,3,C,28,-1.36,-1.64,0.28,0.00,203086.0,-1.35,-1.54,0.19,2021
+lambje01,jeremy lamb,2020-21,IND,Secondary Ball Handler,765,36,SG,28,-0.37,0.21,-0.58,1.00,203087.0,-0.04,0.07,-0.11,2021
+harklma01,maurice harkless,2020-21,MIA/SAC,Athletic Finisher,772,37,PF-SF,27,-2.75,-2.44,-0.31,-0.20,203090.0,-1.58,-2.05,0.47,2021
+fournev01,evan fournier,2020-21,ORL/BOS,Secondary Ball Handler,1259,42,SF-SG,28,-0.05,0.18,-0.23,1.90,203095.0,0.39,0.77,-0.37,2021
+satorto01,tomas satoransky,2020-21,CHI,Primary Ball Handler,1307,58,SG,29,-0.53,-0.4,-0.13,1.60,203107.0,-0.56,-0.41,-0.15,2021
+crowdja01,jae crowder,2020-21,PHO,Stationary Shooter,1648,60,PF,30,0.58,-1.06,1.65,3.20,203109.0,0.57,0.2,0.37,2021
+greendr01,draymond green,2020-21,GSW,Stretch Big,1982,63,PF,30,2.09,-0.3,2.38,5.70,203110.0,1.33,-1.09,2.42,2021
+middlkh01,khris middleton,2020-21,MIL,Shot Creator,2269,68,SF,29,1.88,1.32,0.56,6.30,203114.0,2.05,2.0,0.05,2021
+bartowi01,will barton,2020-21,DEN,Secondary Ball Handler,1736,56,SF,30,-0.68,-0.59,-0.09,1.90,203115.0,-0.12,-0.1,-0.02,2021
+scottmi01,mike scott,2020-21,PHI,Stretch Big,852,51,PF,32,-2.96,-2.89,-0.07,-0.30,203118.0,-2.0,-2.11,0.11,2021
+milleda01,darius miller,2020-21,OKC,Stationary Shooter,197,18,SF,30,0.2,-0.48,0.68,0.30,203121.0,-0.11,-0.72,0.62,2021
+bazemke01,kent bazemore,2020-21,GSW,Stationary Shooter,1334,67,SF,31,0.59,-1.38,1.98,2.60,203145.0,-0.93,-1.89,0.96,2021
+holidju01,justin holiday,2020-21,IND,Movement Shooter,2183,72,SG,31,-1.13,-1.04,-0.09,1.80,203200.0,-1.22,-0.81,-0.41,2021
+greenja01,jamychal green,2020-21,DEN,Stretch Big,1120,58,PF,30,-0.83,-0.6,-0.22,1.10,203210.0,-0.6,-0.39,-0.21,2021
+nunnaja01,james nunnally,2020-21,NOP,Stationary Shooter,48,9,SF,30,-1.28,-1.48,0.2,0.00,203263.0,-1.5,-1.71,0.21,2021
+baynear01,aron baynes,2020-21,TOR,Stretch Big,980,53,C,34,-1.83,-2.66,0.83,0.30,203382.0,-2.21,-2.15,-0.06,2021
+noelne01,nerlens noel,2020-21,NYK,Roll + Cut Big,1547,64,C,26,-1.33,-3.83,2.5,1.00,203457.0,0.66,-2.78,3.43,2021
+lenal01,alex len,2020-21,TOR/WAS,Roll + Cut Big,979,64,C,27,-0.23,-1.89,1.66,1.40,203458.0,0.17,-1.12,1.29,2021
+roberan03,andre roberson,2020-21,BRK,Stretch Big,63,5,SG,29,-1.97,-1.86,-0.11,0.00,203460.0,-1.96,-1.77,-0.19,2021
+mclembe01,ben mclemore,2020-21,HOU/LAL,Movement Shooter,905,53,SG,27,-1.72,-0.51,-1.21,0.40,203463.0,-1.96,-0.85,-1.11,2021
+mccolcj01,cj mccollum,2020-21,POR,Primary Ball Handler,1600,47,SG,29,2.26,3.04,-0.78,4.80,203468.0,1.88,3.26,-1.38,2021
+zelleco01,cody zeller,2020-21,CHO,Roll + Cut Big,1005,48,C,28,0.6,0.51,0.09,1.90,203469.0,-0.41,-0.42,0.01,2021
+schrode01,dennis schroder,2020-21,LAL,Slasher,1956,61,SG,27,-0.51,0.02,-0.53,2.40,203471.0,0.42,-0.21,0.63,2021
+dedmode01,dewayne dedmon,2020-21,MIA,Roll + Cut Big,210,16,C,31,0.65,0.12,0.52,0.40,203473.0,0.42,-0.27,0.7,2021
+dienggo01,gorgui dieng,2020-21,MEM/SAS,Stretch Big,553,38,C,31,-0.23,-0.52,0.29,0.80,203476.0,0.36,-0.08,0.45,2021
+olynyke01,kelly olynyk,2020-21,MIA/HOU,Stretch Big,1997,70,C-PF,29,2.33,0.89,1.43,6.10,203482.0,1.12,0.27,0.85,2021
+caldwke01,kentavious caldwell-pope,2020-21,LAL,Movement Shooter,1902,67,SG,27,-0.41,-1.34,0.93,2.40,203484.0,-0.04,-1.03,0.99,2021
+plumlma01,mason plumlee,2020-21,DET,Roll + Cut Big,1499,56,C,30,0.36,-0.55,0.91,2.70,203486.0,0.81,-0.56,1.37,2021
+cartemi01,michael carter-williams,2020-21,ORL,Slasher,800,31,SG,29,-1.09,-2.43,1.34,0.70,203487.0,-2.38,-2.56,0.17,2021
+muscami01,mike muscala,2020-21,OKC,Stretch Big,645,35,C,29,0.51,0.41,0.1,1.20,203488.0,-0.31,0.24,-0.55,2021
+porteot01,otto porter jr.,2020-21,CHI/ORL,Movement Shooter,607,28,SF-PF,27,-0.8,-0.24,-0.56,0.60,203490.0,-0.24,-0.15,-0.09,2021
+bullore01,reggie bullock,2020-21,NYK,Movement Shooter,1949,65,SF,29,-1.03,-1.02,-0.02,1.70,203493.0,-0.32,-0.62,0.3,2021
+covinro01,robert covington,2020-21,POR,Movement Shooter,2243,70,PF,30,1.42,-1.2,2.62,5.50,203496.0,0.77,-0.71,1.48,2021
+goberru01,rudy gobert,2020-21,UTA,Roll + Cut Big,2187,71,C,28,6.01,0.92,5.08,11.60,203497.0,5.23,1.13,4.1,2021
+adamsst01,steven adams,2020-21,NOP,Roll + Cut Big,1604,58,C,27,0.82,-0.58,1.4,3.30,203500.0,-0.05,-0.96,0.9,2021
+hardati02,tim hardaway jr.,2020-21,DAL,Stationary Shooter,1985,70,SG,28,-0.87,0.92,-1.79,1.90,203501.0,0.41,1.93,-1.52,2021
+snellto01,tony snell,2020-21,ATL,Stationary Shooter,992,47,SG,29,-3.0,-2.23,-0.78,-0.40,203503.0,-1.9,-1.52,-0.38,2021
+burketr01,trey burke,2020-21,DAL,Secondary Ball Handler,911,62,PG,28,-2.24,-0.03,-2.2,0.10,203504.0,-1.06,-0.07,-0.99,2021
+oladivi01,victor oladipo,2020-21,IND/HOU,Secondary Ball Handler,1080,33,SG,28,1.2,0.29,0.91,2.50,203506.0,0.1,0.54,-0.44,2021
+antetgi01,giannis antetokounmpo,2020-21,MIL,Slasher,2013,61,PF,26,5.55,3.55,2.0,10.10,203507.0,5.95,4.35,1.6,2021
+ennisja01,james ennis iii,2020-21,ORL,Stationary Shooter,986,41,SF,30,0.17,-1.02,1.19,1.60,203516.0,-1.38,-1.52,0.15,2021
+dellama01,matthew dellavedova,2020-21,CLE,Secondary Ball Handler,224,13,PG,30,-1.29,-1.38,0.09,0.20,203521.0,-1.55,-1.65,0.1,2021
+hillso01,solomon hill,2020-21,ATL,Stationary Shooter,1514,71,PF,29,-2.58,-1.45,-1.14,-0.20,203524.0,-2.11,-2.05,-0.05,2021
+netora01,raul neto,2020-21,WAS,Secondary Ball Handler,1403,64,PG,28,-0.65,-0.81,0.16,1.60,203526.0,-0.96,-0.82,-0.14,2021
+curryse01,seth curry,2020-21,PHI,Secondary Ball Handler,1638,57,SG,30,0.15,-0.25,0.41,2.70,203552.0,-0.02,0.11,-0.13,2021
+mcgruro01,rodney mcgruder,2020-21,DET,Athletic Finisher,194,16,SG,29,-1.03,-0.36,-0.66,0.20,203585.0,-1.21,-0.73,-0.48,2021
+antetth01,thanasis antetokounmpo,2020-21,MIL,Roll + Cut Big,551,57,SF,28,-2.86,-3.05,0.19,-0.20,203648.0,-2.37,-2.29,-0.08,2021
+pelleno01,norvel pelle,2020-21,BRK/SAC,Roll + Cut Big,83,13,C,27,-1.67,-1.71,0.04,0.00,203658.0,-1.77,-1.66,-0.12,2021
+lavinza01,zach lavine,2020-21,CHI,Primary Ball Handler,2034,58,SG,25,1.32,2.74,-1.43,4.90,203897.0,1.64,2.51,-0.88,2021
+paytoel01,elfrid payton,2020-21,NYK,Slasher,1484,63,PG,26,-3.12,-1.46,-1.66,-0.70,203901.0,-1.61,-1.32,-0.29,2021
+clarkjo01,jordan clarkson,2020-21,UTA,Secondary Ball Handler,1818,68,SG,28,0.74,1.77,-1.02,3.70,203903.0,1.37,2.41,-1.04,2021
+harriga01,gary harris,2020-21,DEN/ORL,Stationary Shooter,1080,39,SG,26,-1.87,-1.38,-0.48,0.40,203914.0,-1.76,-1.49,-0.27,2021
+dinwisp01,spencer dinwiddie,2020-21,BRK,Secondary Ball Handler,64,3,SG,27,-1.34,-1.51,0.16,0.00,203915.0,-1.57,-1.44,-0.14,2021
+hoodro01,rodney hood,2020-21,POR/TOR,Shot Creator,943,55,SF,28,-4.52,-3.69,-0.83,-1.30,203918.0,-3.64,-2.82,-0.82,2021
+birchkh01,khem birch,2020-21,ORL/TOR,Roll + Cut Big,1529,67,C,28,-1.48,-1.58,0.1,0.90,203920.0,-1.25,-1.53,0.28,2021
+robingl02,glenn robinson iii,2020-21,SAC,Stationary Shooter,369,23,SF,27,-3.14,-1.59,-1.55,-0.20,203922.0,-2.75,-1.7,-1.05,2021
+grantje01,jerami grant,2020-21,DET,Stationary Shooter,1829,54,SF,26,0.2,0.42,-0.22,3.10,203924.0,0.07,0.71,-0.64,2021
+harrijo01,joe harris,2020-21,BRK,Off Screen Shooter,2142,69,SF,29,0.48,0.6,-0.12,4.00,203925.0,0.61,1.47,-0.85,2021
+mcderdo01,doug mcdermott,2020-21,IND,Athletic Finisher,1619,66,PF,29,-0.58,0.9,-1.48,1.90,203926.0,-1.66,0.45,-2.11,2021
+gordoaa01,aaron gordon,2020-21,ORL/DEN,Stretch Big,1384,50,PF,25,0.65,0.51,0.14,2.70,203932.0,-0.1,-0.34,0.24,2021
+warretj01,t.j. warren,2020-21,IND,Secondary Ball Handler,117,4,SF,27,-1.5,-1.21,-0.29,0.10,203933.0,-2.06,-1.48,-0.58,2021
+smartma01,marcus smart,2020-21,BOS,Primary Ball Handler,1581,48,PG,26,0.29,-0.04,0.33,2.70,203935.0,0.87,0.63,0.24,2021
+anderky01,kyle anderson,2020-21,MEM,Secondary Ball Handler,1887,69,PF,27,2.04,0.4,1.64,5.40,203937.0,2.18,0.6,1.57,2021
+poweldw01,dwight powell,2020-21,DAL,Roll + Cut Big,966,58,C,29,0.44,-0.59,1.03,1.80,203939.0,0.45,-0.5,0.95,2021
+vonleno01,noah vonleh,2020-21,BRK,Stationary Shooter,11,4,PF,25,-1.87,-1.6,-0.27,0.00,203943.0,-1.75,-1.5,-0.24,2021
+randlju01,julius randle,2020-21,NYK,Versatile Big,2667,71,PF,26,1.16,0.62,0.54,6.10,203944.0,2.07,1.33,0.74,2021
+wiggian01,andrew wiggins,2020-21,GSW,Shot Creator,2364,71,PF,25,0.46,-0.86,1.32,4.40,203952.0,0.17,-0.06,0.23,2021
+parkeja01,jabari parker,2020-21,SAC/BOS,Roll + Cut Big,165,13,PF,25,-1.09,-1.19,0.1,0.10,203953.0,-1.13,-1.18,0.05,2021
+embiijo01,joel embiid,2020-21,PHI,Post Scorer,1585,51,C,26,5.63,4.11,1.52,8.00,203954.0,5.18,3.94,1.24,2021
+exumda01,dante exum,2020-21,CLE,Secondary Ball Handler,116,6,SG,25,-0.74,-1.97,1.23,0.10,203957.0,-1.48,-1.92,0.44,2021
+sampsja02,jakarr sampson,2020-21,IND,Roll + Cut Big,316,29,PF,27,-2.32,-1.91,-0.41,0.00,203960.0,-2.65,-2.28,-0.37,2021
+saricda01,dario saric,2020-21,PHO,Versatile Big,870,50,C,26,0.42,0.47,-0.04,1.60,203967.0,-0.82,-0.18,-0.64,2021
+capelca01,clint capela,2020-21,ATL,Roll + Cut Big,1898,63,C,26,3.38,0.33,3.06,7.00,203991.0,3.29,1.12,2.17,2021
+bogdabo01,bogdan bogdanovic,2020-21,ATL,Secondary Ball Handler,1305,44,SG,28,0.3,1.45,-1.15,2.30,203992.0,1.11,1.8,-0.69,2021
+nurkiju01,jusuf nurkic,2020-21,POR,Post Scorer,880,37,C,26,1.73,-1.0,2.73,2.30,203994.0,1.85,0.16,1.69,2021
+cabocbr01,bruno caboclo,2020-21,HOU,Stretch Big,36,6,PF,25,-1.25,-1.4,0.15,0.00,203998.0,-1.37,-1.57,0.2,2021
+jokicni01,nikola jokic,2020-21,DEN,Post Scorer,2488,72,C,25,6.83,6.19,0.64,14.30,203999.0,5.87,5.24,0.64,2021
+porzikr01,kristaps porzingis,2020-21,DAL,Versatile Big,1327,43,C,25,1.4,1.48,-0.08,3.30,204001.0,2.71,2.13,0.58,2021
+johnsty01,tyler johnson,2020-21,BRK,Stationary Shooter,684,39,SG,28,-2.24,-0.73,-1.51,0.10,204020.0,-1.86,-0.87,-1.0,2021
+fraziti01,tim frazier,2020-21,MEM,Secondary Ball Handler,62,5,PG,30,-2.02,-1.97,-0.05,0.00,204025.0,-2.03,-1.98,-0.05,2021
+gallola01,langston galloway,2020-21,PHO,Movement Shooter,438,40,SG,29,-1.7,-0.37,-1.34,0.20,204038.0,-1.95,-0.46,-1.49,2021
+inglejo01,joe ingles,2020-21,UTA,Stationary Shooter,1867,67,SF,33,1.72,1.68,0.05,5.00,204060.0,1.59,1.66,-0.07,2021
+whittgr01,greg whittington,2020-21,DEN,Off Screen Shooter,12,4,PF,27,-1.97,-1.87,-0.1,0.00,204222.0,-1.92,-1.82,-0.1,2021
+mccontj01,t.j. mcconnell,2020-21,IND,Slasher,1796,69,PG,28,0.67,0.37,0.3,3.60,204456.0,-0.12,-0.35,0.24,2021
+okafoja01,jahlil okafor,2020-21,DET,Post Scorer,347,27,C,25,-3.06,-2.35,-0.71,-0.10,1626143.0,-2.56,-1.89,-0.67,2021
+jonesty01,tyus jones,2020-21,MEM,Primary Ball Handler,1223,70,PG,24,-0.65,-0.22,-0.43,1.40,1626145.0,0.19,0.25,-0.06,2021
+harremo01,montrezl harrell,2020-21,LAL,Post Scorer,1580,69,C,27,1.13,0.5,0.64,3.60,1626149.0,1.19,0.63,0.56,2021
+wrighde01,delon wright,2020-21,DET/SAC,Secondary Ball Handler,1748,63,SG-PG,28,1.21,0.36,0.86,4.10,1626153.0,0.4,0.07,0.33,2021
+russeda01,d'angelo russell,2020-21,MIN,Primary Ball Handler,1196,42,PG,24,-1.04,1.37,-2.4,1.00,1626156.0,0.22,1.77,-1.54,2021
+townska01,karl-anthony towns,2020-21,MIN,Versatile Big,1689,50,C,25,3.88,3.16,0.72,6.80,1626157.0,1.95,2.25,-0.3,2021
+holmeri01,richaun holmes,2020-21,SAC,Roll + Cut Big,1781,61,C,27,1.8,0.91,0.9,4.80,1626158.0,0.6,0.01,0.59,2021
+winslju01,justise winslow,2020-21,MEM,Stationary Shooter,507,26,SF,24,-2.62,-2.87,0.25,-0.10,1626159.0,-2.81,-2.99,0.18,2021
+caulewi01,willie cauley-stein,2020-21,DAL,Roll + Cut Big,906,53,C,27,-0.59,-2.03,1.44,1.00,1626161.0,-0.19,-1.59,1.39,2021
+oubreke01,kelly oubre jr.,2020-21,GSW,Athletic Finisher,1688,55,SF,25,-0.83,-1.34,0.51,1.70,1626162.0,-0.08,-0.42,0.33,2021
+kaminfr01,frank kaminsky,2020-21,PHO,Stretch Big,715,47,C,27,-0.47,-0.19,-0.28,0.90,1626163.0,0.39,0.13,0.26,2021
+bookede01,devin booker,2020-21,PHO,Shot Creator,2270,67,SG,24,1.11,2.63,-1.52,5.10,1626164.0,1.39,2.36,-0.96,2021
+payneca01,cameron payne,2020-21,PHO,Primary Ball Handler,1079,60,PG,26,0.34,0.99,-0.65,1.90,1626166.0,0.84,1.19,-0.34,2021
+turnemy01,myles turner,2020-21,IND,Stretch Big,1455,47,C,24,1.74,-1.54,3.27,3.90,1626167.0,1.56,-0.99,2.55,2021
+lylestr01,trey lyles,2020-21,SAS,Stationary Shooter,358,23,PF,25,-1.76,-1.81,0.05,0.10,1626168.0,-1.3,-1.4,0.1,2021
+johnsst04,stanley johnson,2020-21,TOR,Stationary Shooter,1006,61,PF,24,-2.37,-2.83,0.45,0.00,1626169.0,-1.8,-2.27,0.47,2021
+portibo01,bobby portis,2020-21,MIL,Versatile Big,1372,66,C,25,-0.29,-0.52,0.24,1.90,1626171.0,1.17,0.8,0.37,2021
+looneke01,kevon looney,2020-21,GSW,Roll + Cut Big,1161,61,C,24,-0.37,-1.58,1.21,1.50,1626172.0,-1.4,-1.87,0.48,2021
+woodch01,christian wood,2020-21,HOU,Stretch Big,1326,41,C,25,1.41,0.15,1.26,3.30,1626174.0,1.04,0.79,0.25,2021
+holliro01,rondae hollis-jefferson,2020-21,POR,Roll + Cut Big,107,11,PF,26,-1.23,-1.21,-0.02,0.10,1626178.0,-1.57,-1.78,0.22,2021
+roziete01,terry rozier,2020-21,CHO,Primary Ball Handler,2383,69,SG,26,0.22,1.53,-1.31,4.00,1626179.0,0.63,1.34,-0.71,2021
+powelno01,norman powell,2020-21,TOR/POR,Movement Shooter,2205,69,SG-SF,27,-1.32,-0.45,-0.87,1.50,1626181.0,-0.24,0.7,-0.94,2021
+randlch01,chasson randle,2020-21,ORL,Primary Ball Handler,837,41,PG,27,-4.08,-2.97,-1.11,-0.90,1626184.0,-3.33,-2.63,-0.7,2021
+cookqu01,quinn cook,2020-21,LAL/CLE,Secondary Ball Handler,157,23,PG,27,-1.37,-1.26,-0.11,0.10,1626188.0,-1.27,-1.32,0.05,2021
+connapa01,pat connaughton,2020-21,MIL,Stationary Shooter,1575,69,SG,28,0.8,-0.02,0.82,3.20,1626192.0,-0.2,-0.66,0.46,2021
+hernawi01,willy hernangomez,2020-21,NOP,Roll + Cut Big,846,47,C,26,0.66,0.72,-0.06,1.70,1626195.0,0.26,-0.27,0.53,2021
+richajo01,josh richardson,2020-21,DAL,Stationary Shooter,1790,59,SG,27,-0.9,-0.49,-0.41,1.70,1626196.0,-0.31,-0.09,-0.21,2021
+nancela02,larry nance jr.,2020-21,CLE,Stretch Big,1091,35,PF,28,0.16,-2.07,2.23,1.80,1626204.0,-0.32,-1.38,1.05,2021
+onealro01,royce o'neale,2020-21,UTA,Stationary Shooter,2240,71,SF,27,0.56,-0.88,1.44,4.30,1626220.0,1.1,-0.76,1.87,2021
+osmande01,cedi osman,2020-21,CLE,Movement Shooter,1511,59,SF,25,-1.46,-1.02,-0.44,0.90,1626224.0,-2.09,-1.16,-0.93,2021
+feliccr01,cristiano felicio,2020-21,CHI,Roll + Cut Big,84,18,C,28,-0.54,-1.28,0.74,0.10,1626245.0,-0.96,-1.5,0.54,2021
+marjabo01,boban marjanovic,2020-21,DAL,Post Scorer,271,33,C,32,0.41,0.08,0.32,0.50,1626246.0,-0.15,-0.05,-0.1,2021
+toupaax01,axel toupane,2020-21,MIL,Athletic Finisher,61,8,SF,28,-1.83,-2.1,0.27,0.00,1626253.0,-1.86,-1.89,0.03,2021
+simmobe01,ben simmons,2020-21,PHI,Roll + Cut Big,1877,58,PG,24,2.04,0.07,1.97,5.40,1627732.0,2.16,0.43,1.73,2021
+sabondo01,domantas sabonis,2020-21,IND,Post Scorer,2231,62,PF,24,1.32,0.04,1.28,5.40,1627734.0,1.58,1.24,0.34,2021
+beaslma01,malik beasley,2020-21,MIN,Movement Shooter,1214,37,SG,24,-0.92,0.21,-1.13,1.10,1627736.0,-0.54,0.9,-1.43,2021
+chrisma01,marquese chriss,2020-21,GSW,Stretch Big,27,2,PF,23,-1.81,-1.8,0.0,0.00,1627737.0,-1.66,-1.57,-0.09,2021
+dunnkr01,kris dunn,2020-21,ATL,Secondary Ball Handler,45,4,PG,26,-2.5,-2.09,-0.41,0.00,1627739.0,-1.95,-1.91,-0.04,2021
+ellenhe01,henry ellenson,2020-21,TOR,Stretch Big,38,2,PF,24,-1.33,-1.38,0.05,0.00,1627740.0,-1.7,-1.65,-0.05,2021
+hieldbu01,buddy hield,2020-21,SAC,Movement Shooter,2433,71,SG,28,0.35,1.73,-1.39,4.30,1627741.0,-0.73,0.92,-1.65,2021
+ingrabr01,brandon ingram,2020-21,NOP,Secondary Ball Handler,2092,61,SF,23,1.27,2.15,-0.87,5.00,1627742.0,1.31,2.07,-0.76,2021
+jonesda03,damian jones,2020-21,PHO/LAL,Roll + Cut Big,546,39,C,25,-1.48,-1.86,0.38,0.30,1627745.0,-0.92,-1.52,0.61,2021
+leverca01,caris levert,2020-21,BRK/IND,Secondary Ball Handler,1485,47,SG,26,-0.7,0.37,-1.06,1.60,1627747.0,0.61,1.19,-0.58,2021
+makerth01,thon maker,2020-21,CLE,Roll + Cut Big,76,8,C,23,-1.03,-1.48,0.45,0.10,1627748.0,-0.79,-1.34,0.55,2021
+murrade01,dejounte murray,2020-21,SAS,Slasher,2139,67,PG,24,2.21,0.76,1.44,6.40,1627749.0,0.55,0.12,0.42,2021
+murraja01,jamal murray,2020-21,DEN,Primary Ball Handler,1704,48,PG,23,1.25,1.79,-0.53,4.00,1627750.0,1.67,2.15,-0.48,2021
+poeltja01,jakob poeltl,2020-21,SAS,Roll + Cut Big,1845,69,C,25,2.14,-0.61,2.75,5.40,1627751.0,-0.04,-1.36,1.33,2021
+princta02,taurean prince,2020-21,BRK/CLE,Movement Shooter,905,41,PF,26,-0.66,-0.24,-0.42,1.00,1627752.0,-1.09,-0.93,-0.16,2021
+valende01,denzel valentine,2020-21,CHI,Stationary Shooter,1036,62,SG,27,-0.67,-0.84,0.16,1.10,1627756.0,-0.83,-0.71,-0.12,2021
+brownja02,jaylen brown,2020-21,BOS,Movement Shooter,1999,58,SG,24,0.3,0.86,-0.56,3.50,1627759.0,1.49,2.02,-0.53,2021
+bembrde01,deandre' bembry,2020-21,TOR,Athletic Finisher,972,51,SF,26,-0.19,-0.84,0.65,1.40,1627761.0,-1.77,-2.2,0.43,2021
+brogdma01,malcolm brogdon,2020-21,IND,Primary Ball Handler,1930,56,PG,28,1.38,1.83,-0.45,4.70,1627763.0,0.58,1.92,-1.34,2021
+laymaja01,jake layman,2020-21,MIN,Athletic Finisher,627,45,SF,26,-1.33,-1.93,0.6,0.40,1627774.0,-1.6,-1.74,0.14,2021
+mccawpa01,patrick mccaw,2020-21,TOR,Low Minutes,33,5,SF,25,-1.87,-1.79,-0.08,0.00,1627775.0,-1.74,-1.76,0.02,2021
+niangge01,georges niang,2020-21,UTA,Stationary Shooter,1154,72,PF,27,0.3,-0.02,0.33,2.00,1627777.0,-0.86,-0.16,-0.7,2021
+paytoga02,gary payton ii,2020-21,GSW,Stretch Big,40,10,PG,28,-1.47,-1.46,-0.01,0.00,1627780.0,-1.44,-1.38,-0.06,2021
+siakapa01,pascal siakam,2020-21,TOR,Shot Creator,2006,56,PF,26,2.45,1.79,0.67,6.30,1627783.0,0.65,0.81,-0.16,2021
+korkmfu01,furkan korkmaz,2020-21,PHI,Movement Shooter,1062,55,SG,23,0.93,1.14,-0.21,2.30,1627788.0,-0.29,0.35,-0.64,2021
+luwawti01,timothe luwawu-cabarrot,2020-21,BRK,Stationary Shooter,1050,58,SF,25,-2.13,-0.6,-1.53,0.20,1627789.0,-1.88,-0.86,-1.03,2021
+ferreyo01,yogi ferrell,2020-21,CLE/LAC,Secondary Ball Handler,137,10,PG,27,-1.26,-1.14,-0.11,0.10,1627812.0,-1.24,-1.28,0.05,2021
+leeda03,damion lee,2020-21,GSW,Movement Shooter,1079,57,SG,28,-0.14,-0.58,0.44,1.60,1627814.0,-0.77,-0.82,0.05,2021
+hernaju01,juancho hernangomez,2020-21,MIN,Stretch Big,900,52,PF,25,-0.69,0.52,-1.21,1.00,1627823.0,-1.23,-0.54,-0.69,2021
+zubaciv01,ivica zubac,2020-21,LAC,Roll + Cut Big,1608,72,C,23,0.03,-1.48,1.52,2.50,1627826.0,0.95,0.01,0.94,2021
+finnedo01,dorian finney-smith,2020-21,DAL,Athletic Finisher,1921,60,PF,27,0.71,0.25,0.46,3.80,1627827.0,0.04,-0.1,0.13,2021
+vanvlfr01,fred vanvleet,2020-21,TOR,Primary Ball Handler,1899,52,SG,26,3.29,2.0,1.29,6.90,1627832.0,1.84,1.84,0.0,2021
+naderab01,abdel nader,2020-21,PHO,Stationary Shooter,355,24,SF,27,-1.74,-1.63,-0.1,0.10,1627846.0,-1.24,-1.08,-0.16,2021
+arcidry01,ryan arcidiacono,2020-21,CHI,Movement Shooter,450,44,PG,26,-1.45,-1.06,-0.39,0.30,1627853.0,-0.91,-0.96,0.05,2021
+forbebr01,bryn forbes,2020-21,MIL,Movement Shooter,1354,70,SG,27,-1.68,-0.27,-1.41,0.60,1627854.0,-1.05,0.47,-1.51,2021
+houseda01,danuel house jr.,2020-21,HOU,Stationary Shooter,932,36,SF,27,-2.33,-1.89,-0.44,0.00,1627863.0,-2.03,-1.65,-0.39,2021
+jonesde02,derrick jones jr.,2020-21,POR,Stretch Big,1318,58,SF,23,-1.46,-1.62,0.16,0.80,1627884.0,-0.94,-1.18,0.24,2021
+harrish01,shaquille harrison,2020-21,UTA/DEN,Secondary Ball Handler,332,34,SG,27,-3.4,-3.29,-0.11,-0.20,1627885.0,-2.51,-2.83,0.32,2021
+carusal01,alex caruso,2020-21,LAL,Secondary Ball Handler,1216,58,PG,26,1.61,-0.98,2.59,3.10,1627936.0,-0.61,-1.52,0.91,2021
+nwabada01,david nwaba,2020-21,HOU,Stretch Big,679,30,SF,28,0.45,-0.21,0.66,1.20,1628021.0,-0.96,-1.12,0.16,2021
+mckinal01,alfonzo mckinnie,2020-21,LAL,Athletic Finisher,258,39,SF,28,-1.26,-0.6,-0.66,0.20,1628035.0,-1.25,-0.65,-0.59,2021
+fultzma01,markelle fultz,2020-21,ORL,Slasher,215,8,PG,22,-1.38,-1.4,0.02,0.10,1628365.0,-1.3,-1.48,0.18,2021
+balllo01,lonzo ball,2020-21,NOP,Primary Ball Handler,1747,55,PG,23,1.26,1.29,-0.03,4.10,1628366.0,1.53,1.16,0.37,2021
+jacksjo02,josh jackson,2020-21,DET,Movement Shooter,1560,62,SG,23,-1.24,-1.72,0.47,1.10,1628367.0,-2.02,-1.4,-0.62,2021
+foxde01,de'aaron fox,2020-21,SAC,Slasher,2036,58,PG,23,1.08,2.44,-1.35,4.60,1628368.0,1.03,2.59,-1.56,2021
+tatumja01,jayson tatum,2020-21,BOS,Shot Creator,2290,64,SF,22,4.01,3.35,0.66,9.40,1628369.0,2.56,2.81,-0.25,2021
+monkma01,malik monk,2020-21,CHO,Movement Shooter,878,42,SG,22,-0.93,0.39,-1.32,0.80,1628370.0,-1.4,0.23,-1.63,2021
+smithde03,dennis smith jr.,2020-21,NYK/DET,Secondary Ball Handler,420,23,PG,23,-0.64,-0.62,-0.02,0.50,1628372.0,-0.3,-0.57,0.27,2021
+ntilila01,frank ntilikina,2020-21,NYK,Secondary Ball Handler,322,33,PG,22,-2.61,-2.74,0.13,0.00,1628373.0,-2.33,-2.18,-0.15,2021
+markkla01,lauri markkanen,2020-21,CHI,Stationary Shooter,1317,51,PF,23,-0.92,-0.26,-0.66,1.20,1628374.0,0.18,0.42,-0.25,2021
+mitchdo01,donovan mitchell,2020-21,UTA,Primary Ball Handler,1771,53,PG,24,1.72,3.1,-1.38,4.70,1628378.0,3.09,3.84,-0.75,2021
+kennalu01,luke kennard,2020-21,LAC,Movement Shooter,1232,63,SG,24,-2.3,-0.19,-2.1,0.10,1628379.0,-0.44,0.08,-0.52,2021
+collijo01,john collins,2020-21,ATL,Versatile Big,1848,63,PF,23,1.75,1.68,0.08,5.00,1628381.0,1.7,1.31,0.38,2021
+jacksju01,justin jackson,2020-21,OKC/MIL,Stationary Shooter,577,34,SF,25,-1.67,-0.9,-0.77,0.30,1628382.0,-1.91,-1.06,-0.86,2021
+pattoju01,justin patton,2020-21,HOU,Stretch Big,247,13,C,23,-1.22,-1.82,0.59,0.20,1628383.0,-0.97,-1.89,0.92,2021
+anunoog01,og anunoby,2020-21,TOR,Stationary Shooter,1433,43,SF,23,0.44,-0.63,1.07,2.60,1628384.0,0.45,0.07,0.37,2021
+gilesha01,harry giles iii,2020-21,POR,Roll + Cut Big,348,38,C,22,-1.97,-2.65,0.67,0.10,1628385.0,-0.97,-2.15,1.17,2021
+allenja01,jarrett allen,2020-21,BRK/CLE,Roll + Cut Big,1864,63,C,22,0.66,-0.09,0.75,3.70,1628386.0,0.35,-0.46,0.8,2021
+leaftj01,t.j. leaf,2020-21,POR,Roll + Cut Big,35,7,PF,23,-1.68,-1.77,0.09,0.00,1628388.0,-1.84,-1.9,0.06,2021
+adebaba01,bam adebayo,2020-21,MIA,Roll + Cut Big,2143,64,C,23,2.19,0.89,1.3,6.30,1628389.0,2.66,1.29,1.36,2021
+fergute01,terrance ferguson,2020-21,PHI,Stretch Big,49,13,SG,22,-2.59,-2.0,-0.58,0.00,1628390.0,-2.41,-1.93,-0.48,2021
+wilsodj01,d.j. wilson,2020-21,MIL/HOU,Stretch Big,433,35,PF,24,-1.9,-1.91,0.0,0.10,1628391.0,-0.9,-1.24,0.34,2021
+harteis01,isaiah hartenstein,2020-21,DEN/CLE,Roll + Cut Big,559,46,C,22,1.19,-0.33,1.52,1.30,1628392.0,-0.01,-1.27,1.26,2021
+belljo01,jordan bell,2020-21,WAS/GSW,Roll + Cut Big,82,6,C,26,-1.59,-1.83,0.25,0.00,1628395.0,-1.49,-1.81,0.32,2021
+bradlto01,tony bradley,2020-21,PHI/OKC,Roll + Cut Big,684,42,C,23,1.09,0.05,1.04,1.50,1628396.0,-0.14,-0.69,0.55,2021
+kuzmaky01,kyle kuzma,2020-21,LAL,Movement Shooter,1954,68,SF,25,-1.56,-1.58,0.02,1.00,1628398.0,-0.53,-0.73,0.19,2021
+ojelese01,semi ojeleye,2020-21,BOS,Stationary Shooter,950,56,PF,26,-2.54,-1.89,-0.65,-0.10,1628400.0,-2.14,-1.39,-0.75,2021
+whitede01,derrick white,2020-21,SAS,Secondary Ball Handler,1064,36,SG,26,2.35,1.69,0.66,3.30,1628401.0,0.57,0.75,-0.17,2021
+jacksfr01,frank jackson,2020-21,DET,Movement Shooter,738,40,PG,22,-1.91,-0.21,-1.7,0.20,1628402.0,-1.67,-0.04,-1.63,2021
+hartjo01,josh hart,2020-21,NOP,Stationary Shooter,1350,47,SF,25,-0.11,-0.21,0.09,2.00,1628404.0,-0.23,-0.89,0.66,2021
+bacondw01,dwayne bacon,2020-21,ORL,Secondary Ball Handler,1853,72,SG,25,-3.86,-2.08,-1.78,-1.70,1628407.0,-3.59,-2.44,-1.16,2021
+doziepj01,pj dozier,2020-21,DEN,Secondary Ball Handler,1088,50,SG,24,-0.07,-1.43,1.37,1.60,1628408.0,-1.26,-1.22,-0.04,2021
+sumneed01,edmond sumner,2020-21,IND,Stationary Shooter,861,53,SG,25,-2.23,-0.62,-1.61,0.10,1628410.0,-2.14,-1.23,-0.91,2021
+iwundwe01,wes iwundu,2020-21,DAL/NOP,Athletic Finisher,539,41,SF,26,-3.13,-3.28,0.16,-0.30,1628411.0,-2.7,-2.97,0.26,2021
+masonfr01,frank mason,2020-21,ORL,Slasher,79,4,PG,26,-1.64,-1.88,0.24,0.00,1628412.0,-1.61,-1.89,0.28,2021
+thornsi01,sindarius thornwell,2020-21,NOP/ORL,Stationary Shooter,217,21,SG,26,-0.74,-1.71,0.97,0.20,1628414.0,-1.71,-2.12,0.41,2021
+brookdi01,dillon brooks,2020-21,MEM,Secondary Ball Handler,1997,67,SF,25,0.14,-0.26,0.4,3.30,1628415.0,-0.89,-0.48,-0.41,2021
+bryanth01,thomas bryant,2020-21,WAS,Roll + Cut Big,271,10,C,23,0.05,-0.33,0.38,0.40,1628418.0,0.27,-0.25,0.52,2021
+oliveca01,cameron oliver,2020-21,HOU,Stretch Big,87,4,SF,24,-1.27,-1.23,-0.03,0.10,1628419.0,-1.08,-1.29,0.21,2021
+morrimo01,monte morris,2020-21,DEN,Secondary Ball Handler,1196,47,PG,25,-0.67,0.14,-0.82,1.30,1628420.0,-0.49,0.1,-0.59,2021
+dotsoda01,damyean dotson,2020-21,CLE,Secondary Ball Handler,907,46,SG,26,-3.13,-1.79,-1.34,-0.40,1628422.0,-2.79,-1.79,-1.0,2021
+brownst02,sterling brown,2020-21,HOU,Stationary Shooter,1229,51,SG,25,-1.86,-1.7,-0.16,0.40,1628425.0,-2.04,-1.49,-0.55,2021
+cancavl01,vlatko cancar,2020-21,DEN,Stretch Big,281,41,PF,23,-3.12,-2.21,-0.91,-0.10,1628427.0,-2.27,-2.16,-0.11,2021
+kornelu01,luke kornet,2020-21,CHI/BOS,Stretch Big,347,31,C-PF,25,-0.1,-1.49,1.39,0.50,1628436.0,-0.62,-1.42,0.8,2021
+bouchch01,chris boucher,2020-21,TOR,Stretch Big,1453,60,C,28,1.76,1.32,0.43,3.90,1628449.0,2.25,1.07,1.17,2021
+jamesmi02,mike james,2020-21,BRK,Shot Creator,236,13,PG,30,-1.28,-0.5,-0.78,0.20,1628455.0,-1.22,-0.49,-0.73,2021
+theisda01,daniel theis,2020-21,BOS/CHI,Stretch Big,1601,65,C,28,1.46,-0.23,1.7,4.00,1628464.0,0.31,-0.6,0.91,2021
+klebima01,maxi kleber,2020-21,DAL,Stretch Big,1341,50,PF,29,-0.56,-1.19,0.63,1.60,1628467.0,-0.19,-0.87,0.68,2021
+craigto01,torrey craig,2020-21,MIL/PHO,Stretch Big,803,50,SF,30,-2.46,-0.97,-1.49,0.00,1628470.0,-0.51,-0.83,0.32,2021
+muldemy01,mychal mulder,2020-21,GSW,Movement Shooter,766,60,PG,26,-1.6,-0.26,-1.35,0.40,1628539.0,-1.64,-0.43,-1.21,2021
+brimaam01,amida brimah,2020-21,IND,Post Scorer,29,5,C,26,-1.97,-1.7,-0.27,0.00,1628578.0,-2.01,-1.65,-0.36,2021
+watsopa01,paul watson,2020-21,TOR,Movement Shooter,297,27,SF,26,-2.26,-1.24,-1.01,0.00,1628778.0,-1.55,-1.14,-0.41,2021
+allengr01,grayson allen,2020-21,MEM,Movement Shooter,1259,50,SG,25,-0.67,-0.33,-0.35,1.40,1628960.0,-0.11,0.06,-0.17,2021
+antetko01,kostas antetokounmpo,2020-21,LAL,Roll + Cut Big,56,15,PF,23,-1.45,-1.87,0.42,0.00,1628961.0,-1.66,-1.9,0.24,2021
+azubuud01,udoka azubuike,2020-21,UTA,Roll + Cut Big,57,15,C,21,-2.92,-2.32,-0.59,0.00,1628962.0,-2.08,-1.78,-0.3,2021
+baglema01,marvin bagley iii,2020-21,SAC,Roll + Cut Big,1112,43,PF,21,-0.26,0.27,-0.52,1.50,1628963.0,-0.7,0.12,-0.82,2021
+bambamo01,mo bamba,2020-21,ORL,Stretch Big,725,46,C,22,0.2,-0.31,0.5,1.20,1628964.0,0.89,-0.56,1.44,2021
+bateske01,keita bates-diop,2020-21,SAS,Athletic Finisher,245,30,SF,25,-1.52,-1.65,0.13,0.10,1628966.0,-1.55,-1.83,0.28,2021
+bowenbr02,brian bowen ii,2020-21,IND,Low Minutes,15,6,SF,22,-2.07,-1.58,-0.5,0.00,1628968.0,-2.06,-1.64,-0.41,2021
+bridgmi01,mikal bridges,2020-21,PHO,Stationary Shooter,2348,72,SF,24,1.78,0.95,0.83,6.30,1628969.0,1.86,1.1,0.76,2021
+bridgmi02,miles bridges,2020-21,CHO,Stationary Shooter,1932,66,PF,22,-0.99,-0.65,-0.34,1.70,1628970.0,-1.03,-0.8,-0.24,2021
+brownbr01,bruce brown,2020-21,BRK,Roll + Cut Big,1451,65,PG,24,1.04,0.66,0.38,3.20,1628971.0,0.49,0.19,0.3,2021
+browntr01,troy brown jr.,2020-21,WAS/CHI,Stationary Shooter,523,34,SF,21,-1.08,-1.27,0.19,0.40,1628972.0,-1.78,-1.91,0.13,2021
+brunsja01,jalen brunson,2020-21,DAL,Primary Ball Handler,1697,68,PG,24,1.12,1.31,-0.19,3.90,1628973.0,0.19,1.25,-1.07,2021
+carteje01,jevon carter,2020-21,PHO,Stationary Shooter,717,60,PG,25,-0.26,-0.15,-0.12,1.00,1628975.0,-0.63,-0.31,-0.32,2021
+cartewe01,wendell carter jr.,2020-21,CHI/ORL,Roll + Cut Big,1375,54,C,21,0.47,-0.99,1.46,2.50,1628976.0,0.33,-0.79,1.13,2021
+diallha01,hamidou diallo,2020-21,OKC/DET,Slasher,1226,52,SG-SF,22,-1.41,-1.0,-0.42,0.80,1628977.0,-1.12,-1.18,0.06,2021
+divindo01,donte divincenzo,2020-21,MIL,Stationary Shooter,1815,66,SG,24,1.38,0.25,1.13,4.40,1628978.0,1.1,0.41,0.69,2021
+fernabr01,bruno fernando,2020-21,ATL,Roll + Cut Big,226,33,C,22,-2.72,-3.14,0.43,0.00,1628981.0,-2.34,-2.82,0.48,2021
+gilgesh01,shai gilgeous-alexander,2020-21,OKC,Shot Creator,1180,35,SG,22,0.48,1.83,-1.35,2.20,1628983.0,1.1,1.71,-0.61,2021
+grahade01,devonte' graham,2020-21,CHO,Primary Ball Handler,1659,55,PG,25,0.71,1.27,-0.55,3.30,1628984.0,0.49,1.64,-1.16,2021
+holidaa01,aaron holiday,2020-21,IND,Stationary Shooter,1176,66,PG,24,-1.95,-1.1,-0.85,0.30,1628988.0,-2.67,-1.46,-1.21,2021
+huertke01,kevin huerter,2020-21,ATL,Movement Shooter,2126,69,SG,22,-0.13,0.23,-0.36,3.10,1628989.0,-0.09,0.15,-0.24,2021
+hutchch01,chandler hutchison,2020-21,CHI/WAS,Athletic Finisher,346,25,SF,24,-2.25,-2.25,0.0,0.00,1628990.0,-1.77,-2.3,0.53,2021
+jacksja02,jaren jackson jr.,2020-21,MEM,Stretch Big,258,11,C,21,0.26,0.2,0.05,0.40,1628991.0,0.43,-0.13,0.56,2021
+johnsal02,alize johnson,2020-21,BRK,Roll + Cut Big,189,18,PF,24,0.42,0.29,0.13,0.30,1628993.0,-0.33,-0.47,0.14,2021
+knoxke01,kevin knox ii,2020-21,NYK,Stationary Shooter,464,42,SF,21,-2.86,-2.09,-0.77,-0.10,1628995.0,-2.23,-1.54,-0.69,2021
+martica02,caleb martin,2020-21,CHO,Movement Shooter,818,53,SF,25,-1.54,-1.53,-0.01,0.40,1628997.0,-1.6,-1.67,0.07,2021
+martico01,cody martin,2020-21,CHO,Stationary Shooter,849,52,SF,25,-1.03,-1.04,0.02,0.70,1628998.0,-1.97,-2.11,0.14,2021
+meltode01,de'anthony melton,2020-21,MEM,Secondary Ball Handler,1045,52,PG,22,1.57,0.6,0.97,2.70,1629001.0,0.29,-0.13,0.42,2021
+metuch01,chimezie metu,2020-21,SAC,Roll + Cut Big,488,36,C,23,-1.49,-1.2,-0.29,0.30,1629002.0,-1.2,-1.22,0.02,2021
+miltosh01,shake milton,2020-21,PHI,Primary Ball Handler,1461,63,SG,24,-1.86,-0.71,-1.15,0.50,1629003.0,-0.84,0.14,-0.99,2021
+mykhasv01,svi mykhailiuk,2020-21,DET/OKC,Movement Shooter,1324,66,SF-SG,23,-1.58,-1.08,-0.5,0.70,1629004.0,-1.97,-1.1,-0.86,2021
+okogijo01,josh okogie,2020-21,MIN,Athletic Finisher,1197,59,SG,22,-1.69,-2.0,0.31,0.50,1629006.0,-2.18,-2.28,0.1,2021
+portejo01,jontay porter,2020-21,MEM,Versatile Big,54,11,PF,21,-1.4,-1.42,0.02,0.00,1629007.0,-1.74,-1.72,-0.02,2021
+portemi01,michael porter jr.,2020-21,DEN,Athletic Finisher,1912,61,SF,22,2.89,2.47,0.41,6.50,1629008.0,2.41,2.15,0.25,2021
+robinje01,jerome robinson,2020-21,WAS,Secondary Ball Handler,305,17,SG,23,-3.32,-3.37,0.06,-0.20,1629010.0,-2.71,-2.9,0.2,2021
+robinmi01,mitchell robinson,2020-21,NYK,Roll + Cut Big,853,31,C,22,0.47,-1.09,1.56,1.60,1629011.0,0.32,-1.28,1.6,2021
+sextoco01,collin sexton,2020-21,CLE,Slasher,2115,60,SG,22,-0.87,0.7,-1.57,2.10,1629012.0,-1.46,0.39,-1.85,2021
+shamela01,landry shamet,2020-21,BRK,Movement Shooter,1403,61,SG,23,-1.77,-0.28,-1.48,0.60,1629013.0,-0.99,0.35,-1.34,2021
+simonan01,anfernee simons,2020-21,POR,Secondary Ball Handler,1104,64,SG,21,-2.25,0.18,-2.43,0.10,1629014.0,-1.1,0.3,-1.4,2021
+thomakh01,khyri thomas,2020-21,HOU,Secondary Ball Handler,153,5,SG,24,-0.83,-0.49,-0.34,0.20,1629017.0,-0.59,-0.58,-0.02,2021
+trentga02,gary trent jr.,2020-21,POR/TOR,Movement Shooter,1802,58,SG,22,-1.59,0.47,-2.06,0.90,1629018.0,-1.19,0.22,-1.41,2021
+vandeja01,jarred vanderbilt,2020-21,MIN,Roll + Cut Big,1139,64,PF,21,0.45,-1.93,2.38,2.10,1629020.0,-0.04,-1.58,1.54,2021
+wagnemo01,moritz wagner,2020-21,WAS/BOS,Stretch Big,722,45,C,23,-0.91,-1.2,0.29,0.70,1629021.0,-0.23,-1.0,0.77,2021
+walkelo01,lonnie walker iv,2020-21,SAS,Movement Shooter,1522,60,SG,22,-3.44,-1.14,-2.31,-1.00,1629022.0,-2.41,-1.26,-1.14,2021
+washipj01,p.j. washington,2020-21,CHO,Stretch Big,1954,64,PF,22,-0.42,-1.54,1.12,2.50,1629023.0,-0.2,-1.13,0.93,2021
+willike04,kenrich williams,2020-21,OKC,Athletic Finisher,1426,66,PF,26,-1.11,-1.11,0.01,1.20,1629026.0,-2.31,-1.89,-0.41,2021
+youngtr01,trae young,2020-21,ATL,Primary Ball Handler,2125,63,PG,22,2.13,4.34,-2.2,6.20,1629027.0,2.81,4.08,-1.28,2021
+aytonde01,deandre ayton,2020-21,PHO,Post Scorer,2115,69,C,22,1.16,0.6,0.55,4.90,1629028.0,1.76,0.5,1.26,2021
+doncilu01,luka doncic,2020-21,DAL,Shot Creator,2262,66,PG,21,3.97,4.67,-0.7,9.20,1629029.0,4.31,4.68,-0.37,2021
+pinsoth01,theo pinson,2020-21,NYK,Stationary Shooter,34,17,SG,25,-2.17,-1.78,-0.39,0.00,1629033.0,-2.1,-1.76,-0.34,2021
+spaldra01,ray spalding,2020-21,HOU,Stretch Big,19,2,C,23,-1.6,-1.62,0.01,0.00,1629034.0,-1.4,-1.6,0.2,2021
+edwarca01,carsen edwards,2020-21,BOS,Stationary Shooter,276,31,SG,22,-1.68,-0.75,-0.93,0.10,1629035.0,-1.69,-0.87,-0.81,2021
+bitadgo01,goga bitadze,2020-21,IND,Stretch Big,561,45,C,21,0.44,-0.7,1.13,1.00,1629048.0,0.23,-0.83,1.06,2021
+brissos01,oshae brissett,2020-21,IND,Stretch Big,519,21,SF,22,0.24,0.39,-0.15,0.90,1629052.0,0.5,0.14,0.36,2021
+daviste02,terence davis,2020-21,TOR/SAC,Movement Shooter,1074,61,SG,23,-1.42,-0.61,-0.82,0.70,1629056.0,-1.09,-0.24,-0.85,2021
+williro04,robert williams iii,2020-21,BOS,Roll + Cut Big,985,52,C,23,1.55,0.52,1.03,2.50,1629057.0,3.08,0.58,2.5,2021
+hachiru01,rui hachimura,2020-21,WAS,Roll + Cut Big,1797,57,PF,22,-0.99,-1.64,0.65,1.60,1629060.0,-1.45,-1.34,-0.11,2021
+kurucro01,rodions kurucs,2020-21,BRK/HOU,Stretch Big,125,21,SF-PF,22,-2.01,-2.14,0.13,0.00,1629066.0,-1.7,-1.83,0.14,2021
+bongais01,isaac bonga,2020-21,WAS,Stationary Shooter,432,40,SF,21,-2.69,-3.85,1.16,-0.10,1629067.0,-3.41,-3.65,0.23,2021
+cookty01,tyler cook,2020-21,BRK/DET,Post Scorer,437,32,SF-PF,23,-2.61,-1.71,-0.9,-0.10,1629076.0,-2.34,-1.87,-0.46,2021
+bryanel01,elijah bryant,2020-21,MIL,Stretch Big,32,1,G,25,-1.71,-1.55,-0.16,0.00,1629091.0,-1.76,-1.68,-0.08,2021
+martike03,kelan martin,2020-21,IND,Stationary Shooter,323,35,SF,25,-0.88,-0.49,-0.39,0.30,1629103.0,-1.42,-0.85,-0.56,2021
+clarkga01,gary clark,2020-21,ORL/DEN,Stationary Shooter,654,39,SF,26,-2.71,-2.23,-0.48,-0.10,1629109.0,-3.21,-2.93,-0.28,2021
+gabriwe01,wenyen gabriel,2020-21,NOP,Stretch Big,241,21,PF,23,-1.18,-1.61,0.44,0.20,1629117.0,-1.65,-2.07,0.43,2021
+adamsja01,jaylen adams,2020-21,MIL,Slasher,18,7,PG,24,-2.16,-1.94,-0.23,0.00,1629121.0,-1.9,-1.81,-0.09,2021
+robindu01,duncan robinson,2020-21,MIA,Movement Shooter,2262,72,SF,26,0.63,0.07,0.57,4.40,1629130.0,-0.07,0.0,-0.07,2021
+nunnke01,kendrick nunn,2020-21,MIA,Secondary Ball Handler,1650,56,PG,25,-0.37,0.17,-0.54,2.10,1629134.0,-0.23,0.19,-0.42,2021
+watanyu01,yuta watanabe,2020-21,TOR,Movement Shooter,723,50,SF,26,-0.59,-1.46,0.87,0.80,1629139.0,-1.1,-1.52,0.43,2021
+mclaujo01,jordan mclaughlin,2020-21,MIN,Primary Ball Handler,938,51,PG,24,-0.37,-1.17,0.8,1.20,1629162.0,-1.21,-1.02,-0.19,2021
+goodwbr01,brandon goodwin,2020-21,ATL,Secondary Ball Handler,620,47,PG,25,-1.68,-0.81,-0.87,0.30,1629164.0,-1.8,-0.78,-1.02,2021
+chiozch01,chris chiozza,2020-21,BRK,Secondary Ball Handler,232,22,PG,25,0.3,0.28,0.03,0.40,1629185.0,-0.78,-0.31,-0.47,2021
+vincega01,gabe vincent,2020-21,MIA,Secondary Ball Handler,655,50,PG,24,-1.99,-1.2,-0.79,0.20,1629216.0,-2.1,-1.27,-0.83,2021
+eubandr01,drew eubanks,2020-21,SAS,Roll + Cut Big,755,54,C,23,-0.64,-1.42,0.79,0.90,1629234.0,-0.05,-1.33,1.28,2021
+reynoca01,cameron reynolds,2020-21,SAS/HOU,Stretch Big,40,5,SF,25,-1.69,-1.59,-0.11,0.00,1629244.0,-1.43,-1.53,0.11,2021
+toscaju01,juan toscano-anderson,2020-21,GSW,Stretch Big,1107,53,SG,27,-0.08,-1.78,1.7,1.60,1629308.0,-0.46,-1.57,1.11,2021
+smailal01,alen smailagic,2020-21,GSW,Stretch Big,84,15,PF,20,-2.38,-2.08,-0.3,0.00,1629346.0,-1.8,-1.76,-0.04,2021
+coffeam01,amir coffey,2020-21,LAC,Stationary Shooter,395,44,SG,23,-1.86,-1.58,-0.28,0.10,1629599.0,-1.76,-1.08,-0.68,2021
+diakima01,mamadi diakite,2020-21,MIL,Roll + Cut Big,141,14,PF,24,-1.3,-2.05,0.75,0.10,1629603.0,-1.65,-1.95,0.3,2021
+ellebcj01,cj elleby,2020-21,POR,Athletic Finisher,192,30,SF,20,-2.4,-1.76,-0.64,0.00,1629604.0,-2.11,-1.89,-0.22,2021
+fallta01,tacko fall,2020-21,BOS,Post Scorer,136,19,C,25,-0.12,-1.26,1.14,0.20,1629605.0,-0.78,-1.65,0.87,2021
+frankro01,robert franks,2020-21,ORL,Stretch Big,101,7,PF,24,-0.85,-1.05,0.2,0.10,1629606.0,-1.07,-1.46,0.39,2021
+harpeja01,jared harper,2020-21,NYK,Slasher,16,8,PG,23,-2.07,-1.73,-0.34,0.00,1629607.0,-1.93,-1.58,-0.35,2021
+jeffrda01,daquan jeffries,2020-21,SAC/HOU,Stationary Shooter,493,31,SG,23,-1.23,-1.27,0.04,0.40,1629610.0,-2.29,-2.23,-0.07,2021
+mannte01,terance mann,2020-21,LAC,Athletic Finisher,1263,67,SG,24,-0.01,0.23,-0.23,1.90,1629611.0,-0.25,-0.4,0.15,2021
+perryre01,reggie perry,2020-21,BRK,Stretch Big,211,26,PF,20,-2.06,-1.34,-0.72,0.00,1629617.0,-1.82,-1.7,-0.13,2021
+robinju01,justin robinson,2020-21,OKC,Secondary Ball Handler,88,9,PG,23,-1.79,-1.74,-0.05,0.00,1629620.0,-1.31,-1.65,0.34,2021
+strusma01,max strus,2020-21,MIA,Movement Shooter,507,39,SF,24,-0.95,0.44,-1.39,0.50,1629622.0,-0.74,0.41,-1.15,2021
+bolbo01,bol bol,2020-21,DEN,Movement Shooter,160,32,PF,21,-2.77,-2.32,-0.45,0.00,1629626.0,-1.98,-2.01,0.03,2021
+willizi01,zion williamson,2020-21,NOP,Slasher,2026,61,PF,20,3.91,3.97,-0.06,8.20,1629627.0,2.06,2.84,-0.78,2021
+barrerj01,rj barrett,2020-21,NYK,Slasher,2511,72,SG,20,-0.76,-0.39,-0.37,2.60,1629628.0,-0.39,-0.56,0.16,2021
+reddica01,cam reddish,2020-21,ATL,Movement Shooter,750,26,SF,21,-1.81,-1.34,-0.47,0.30,1629629.0,-1.23,-1.23,0.0,2021
+moranja01,ja morant,2020-21,MEM,Slasher,2053,63,PG,21,1.33,2.12,-0.79,4.90,1629630.0,0.39,1.14,-0.75,2021
+huntede01,de'andre hunter,2020-21,ATL,Stationary Shooter,678,23,SF,23,0.08,-0.52,0.6,1.10,1629631.0,0.28,0.28,0.0,2021
+whiteco01,coby white,2020-21,CHI,Primary Ball Handler,2156,69,PG,20,-1.28,-0.51,-0.77,1.50,1629632.0,-0.8,-0.16,-0.64,2021
+culveja01,jarrett culver,2020-21,MIN,Athletic Finisher,499,34,SG,21,-2.38,-2.67,0.29,0.00,1629633.0,-2.49,-2.26,-0.23,2021
+clarkbr01,brandon clarke,2020-21,MEM,Roll + Cut Big,1415,59,PF,24,1.13,-0.15,1.28,3.20,1629634.0,0.42,-0.41,0.83,2021
+doumbse01,sekou doumbouya,2020-21,DET,Stretch Big,869,56,PF,20,-3.91,-2.41,-1.5,-0.80,1629635.0,-3.25,-2.58,-0.67,2021
+garlada01,darius garland,2020-21,CLE,Primary Ball Handler,1790,54,PG,21,-1.04,-0.09,-0.95,1.50,1629636.0,-1.9,-0.5,-1.4,2021
+hayesja02,jaxson hayes,2020-21,NOP,Roll + Cut Big,964,60,C,20,-0.26,-0.66,0.39,1.30,1629637.0,-0.02,-0.51,0.48,2021
+alexani01,nickeil alexander-walker,2020-21,NOP,Secondary Ball Handler,1007,46,SG,22,-0.22,-0.68,0.46,1.40,1629638.0,-0.5,-0.49,-0.02,2021
+herroty01,tyler herro,2020-21,MIA,Secondary Ball Handler,1635,54,SG,21,-1.62,-0.36,-1.26,0.80,1629639.0,-0.73,-0.11,-0.62,2021
+johnske04,keldon johnson,2020-21,SAS,Stationary Shooter,1968,69,SF,21,-0.57,-0.35,-0.22,2.30,1629640.0,-0.99,-0.76,-0.23,2021
+langfro01,romeo langford,2020-21,BOS,Athletic Finisher,283,18,SG,21,-3.45,-3.37,-0.08,-0.20,1629641.0,-3.05,-2.85,-0.2,2021
+littlna01,nassir little,2020-21,POR,Stationary Shooter,640,48,PF,20,-1.75,-0.65,-1.1,0.30,1629642.0,-1.85,-1.3,-0.55,2021
+okekech01,chuma okeke,2020-21,ORL,Stationary Shooter,1133,45,PF,22,-1.16,-1.33,0.17,0.90,1629643.0,-1.86,-1.99,0.13,2021
+okpalkz01,kz okpala,2020-21,MIA,Athletic Finisher,447,37,PF,21,-2.78,-2.45,-0.33,-0.10,1629644.0,-2.83,-3.14,0.31,2021
+porteke02,kevin porter jr.,2020-21,HOU,Secondary Ball Handler,835,26,SG,20,-0.99,0.39,-1.38,0.70,1629645.0,-1.42,-0.16,-1.27,2021
+bazleda01,darius bazley,2020-21,OKC,Secondary Ball Handler,1714,55,PF,20,-2.6,-2.32,-0.27,-0.20,1629647.0,-2.8,-2.36,-0.44,2021
+bonejo01,jordan bone,2020-21,ORL,Secondary Ball Handler,196,14,PG,23,-2.34,-1.93,-0.41,0.00,1629648.0,-1.99,-1.91,-0.08,2021
+brazdig01,ignas brazdeikis,2020-21,NYK/PHI,Movement Shooter,249,13,SF,22,-1.54,-1.23,-0.31,0.10,1629649.0,-2.0,-1.91,-0.09,2021
+brownmo01,moses brown,2020-21,OKC,Roll + Cut Big,920,43,C,21,-1.45,-1.69,0.23,0.50,1629650.0,-0.19,-1.43,1.24,2021
+claxtni01,nicolas claxton,2020-21,BRK,Roll + Cut Big,594,32,C,21,1.74,-0.76,2.5,1.60,1629651.0,0.84,-0.95,1.79,2021
+dortlu01,luguentz dort,2020-21,OKC,Secondary Ball Handler,1543,52,SG,21,-1.28,-0.68,-0.61,1.10,1629652.0,-2.29,-1.55,-0.74,2021
+dotsode01,devon dotson,2020-21,CHI,Secondary Ball Handler,50,11,PG,21,-0.62,-1.03,0.42,0.10,1629653.0,-1.14,-1.41,0.27,2021
+gaffoda01,daniel gafford,2020-21,CHI/WAS,Roll + Cut Big,791,54,PF-C,22,2.49,0.45,2.05,2.50,1629655.0,1.33,-0.47,1.81,2021
+guyky01,kyle guy,2020-21,SAC,Movement Shooter,235,31,PG,23,-1.75,-1.04,-0.71,0.10,1629657.0,-1.81,-1.23,-0.58,2021
+hoardja01,jaylen hoard,2020-21,OKC,Roll + Cut Big,320,19,SF,21,-1.39,-1.3,-0.09,0.20,1629658.0,-1.17,-1.58,0.41,2021
+hortota01,talen horton-tucker,2020-21,LAL,Slasher,1304,65,SG,20,-0.41,-0.75,0.34,1.70,1629659.0,-0.69,-1.21,0.52,2021
+jeromty01,ty jerome,2020-21,OKC,Secondary Ball Handler,788,33,SG,23,-2.01,-0.33,-1.68,0.20,1629660.0,-1.26,-0.36,-0.9,2021
+johnsca02,cameron johnson,2020-21,PHO,Stationary Shooter,1437,60,PF,24,0.5,0.2,0.31,2.70,1629661.0,-0.47,0.15,-0.62,2021
+kabenmf01,mfiondu kabengele,2020-21,LAC/CLE,Stretch Big,280,39,PF,23,-2.1,-1.98,-0.12,0.10,1629662.0,-0.99,-1.51,0.52,2021
+kinglo02,louis king,2020-21,SAC,Secondary Ball Handler,85,6,SF,21,-1.1,-1.2,0.1,0.10,1629663.0,-1.27,-1.24,-0.03,2021
+lecquja01,jalen lecque,2020-21,IND,Slasher,12,4,PG,20,-2.05,-1.63,-0.42,0.00,1629665.0,-2.08,-1.62,-0.46,2021
+mcdanja01,jalen mcdaniels,2020-21,CHO,Athletic Finisher,904,47,SF,23,-1.68,-1.08,-0.6,0.40,1629667.0,-1.68,-1.63,-0.05,2021
+nowelja01,jaylen nowell,2020-21,MIN,Secondary Ball Handler,759,42,SG,21,-1.35,-0.33,-1.02,0.50,1629669.0,-1.52,-0.54,-0.99,2021
+nworajo01,jordan nwora,2020-21,MIL,Movement Shooter,274,30,SF,22,-1.35,-0.94,-0.41,0.20,1629670.0,-0.63,-0.49,-0.13,2021
+onimi01,miye oni,2020-21,UTA,Stationary Shooter,519,54,SG,23,-2.9,-2.12,-0.78,-0.20,1629671.0,-2.63,-2.33,-0.3,2021
+pascher01,eric paschall,2020-21,GSW,Roll + Cut Big,695,40,PF,24,-2.08,-1.2,-0.87,0.10,1629672.0,-1.6,-0.75,-0.85,2021
+poolejo01,jordan poole,2020-21,GSW,Movement Shooter,988,51,SG,21,-1.75,0.46,-2.21,0.40,1629673.0,-0.15,1.29,-1.44,2021
+reidna01,naz reid,2020-21,MIN,Stretch Big,1347,70,C,21,-0.23,-0.57,0.35,1.90,1629675.0,0.03,-0.17,0.21,2021
+robyis01,isaiah roby,2020-21,OKC,Stretch Big,1425,61,PF,22,-2.68,-2.73,0.05,-0.30,1629676.0,-2.6,-2.85,0.25,2021
+samanlu01,luka samanic,2020-21,SAS,Athletic Finisher,308,33,PF,21,-2.06,-2.0,-0.07,0.10,1629677.0,-1.86,-1.88,0.02,2021
+thybuma01,matisse thybulle,2020-21,PHI,Stationary Shooter,1298,65,SG,23,0.86,-1.51,2.36,2.70,1629680.0,-0.07,-2.45,2.38,2021
+tilliki02,killian tillie,2020-21,MEM,Stretch Big,182,18,C,22,-1.79,-1.74,-0.05,0.10,1629681.0,-1.77,-1.88,0.1,2021
+watertr01,tremont waters,2020-21,BOS,Secondary Ball Handler,238,26,PG,23,-0.86,-0.33,-0.53,0.20,1629682.0,-0.87,-0.41,-0.47,2021
+weathqu01,quinndary weatherspoon,2020-21,SAS,Secondary Ball Handler,121,20,SG,24,-2.22,-1.82,-0.41,0.00,1629683.0,-1.98,-1.9,-0.08,2021
+willigr01,grant williams,2020-21,BOS,Stretch Big,1138,63,PF,22,-1.58,-2.63,1.04,0.60,1629684.0,-2.4,-2.51,0.1,2021
+windldy01,dylan windler,2020-21,CLE,Athletic Finisher,513,31,SF,24,-0.63,-1.07,0.44,0.60,1629685.0,-1.28,-1.8,0.52,2021
+sirvyde01,deividas sirvydis,2020-21,DET,Movement Shooter,133,20,SG,20,-2.27,-2.04,-0.23,0.00,1629686.0,-1.81,-1.71,-0.1,2021
+mokokad01,adam mokoka,2020-21,CHI,Stationary Shooter,56,14,SG,22,-1.25,-1.7,0.46,0.00,1629690.0,-1.42,-1.72,0.3,2021
+louzama01,didi louzada,2020-21,NOP,Low Minutes,56,3,SF,21,-1.79,-1.92,0.13,0.00,1629712.0,-1.68,-1.98,0.3,2021
+jamesju01,justin james,2020-21,SAC,Stationary Shooter,310,36,SF,24,-2.25,-1.16,-1.1,0.00,1629713.0,-2.09,-1.08,-1.0,2021
+brantja01,jarrell brantley,2020-21,UTA,Stationary Shooter,138,28,PF,24,-2.27,-1.26,-1.01,0.00,1629714.0,-1.7,-1.08,-0.62,2021
+boldema01,marques bolden,2020-21,CLE,Post Scorer,29,6,C,22,-0.86,-1.58,0.72,0.00,1629716.0,-1.04,-1.53,0.48,2021
+brookar01,armoni brooks,2020-21,HOU,Movement Shooter,520,20,SG,22,-2.68,-0.71,-1.97,-0.10,1629717.0,-1.64,-0.5,-1.14,2021
+brownch02,charlie brown jr.,2020-21,OKC,Stationary Shooter,152,9,SG,23,-2.06,-1.88,-0.17,0.00,1629718.0,-1.76,-2.09,0.33,2021
+cacokde01,devontae cacok,2020-21,LAL,Roll + Cut Big,98,20,PF,24,-1.24,-1.28,0.04,0.10,1629719.0,-1.37,-1.61,0.24,2021
+konchjo01,john konchar,2020-21,MEM,Stretch Big,575,43,SG,24,-0.64,-0.47,-0.17,0.60,1629723.0,-0.29,-0.87,0.57,2021
+martije02,jeremiah martin,2020-21,CLE,Secondary Ball Handler,75,9,PG,24,-1.82,-1.81,0.0,0.00,1629725.0,-1.53,-1.83,0.3,2021
+mathega01,garrison mathews,2020-21,WAS,Movement Shooter,1038,64,SG,24,-2.35,-1.26,-1.1,0.00,1629726.0,-1.53,-1.07,-0.46,2021
+tuckera01,rayjon tucker,2020-21,PHI,Secondary Ball Handler,68,14,PG,23,-1.72,-1.23,-0.49,0.00,1629730.0,-1.88,-1.33,-0.55,2021
+wadede01,dean wade,2020-21,CLE,Stretch Big,1212,63,PF,24,-1.12,-1.01,-0.11,1.00,1629731.0,-1.36,-1.4,0.03,2021
+silvach01,chris silva,2020-21,MIA/SAC,Roll + Cut Big,92,15,PF,24,-1.27,-1.62,0.35,0.10,1629735.0,-1.21,-1.59,0.39,2021
+poirivi01,vincent poirier,2020-21,PHI,Roll + Cut Big,39,10,C,27,-2.41,-1.91,-0.5,0.00,1629738.0,-2.15,-1.78,-0.38,2021
+mellini01,nicolo melli,2020-21,NOP/DAL,Stretch Big,566,45,PF,30,-1.04,-1.77,0.74,0.50,1629740.0,-1.56,-1.71,0.14,2021
+halldo01,donta hall,2020-21,ORL,Roll + Cut Big,179,13,PF,23,0.09,-0.95,1.04,0.30,1629743.0,-0.24,-1.16,0.92,2021
+thomama02,matt thomas,2020-21,TOR/UTA,Movement Shooter,327,45,SG,26,-2.77,-1.51,-1.26,-0.10,1629744.0,-2.18,-1.38,-0.8,2021
+greenja02,javonte green,2020-21,BOS/CHI,Stretch Big,474,41,SG-PG,27,-1.25,-1.37,0.12,0.30,1629750.0,-1.6,-1.69,0.1,2021
+mathida01,dakota mathias,2020-21,PHI,Movement Shooter,123,8,SG,25,-2.11,-1.17,-0.94,0.00,1629751.0,-2.09,-1.32,-0.76,2021
+morgaju01,juwan morgan,2020-21,UTA,Stretch Big,147,29,PF,23,-3.68,-2.56,-1.12,-0.10,1629752.0,-2.37,-1.95,-0.42,2021
+blevike01,keljin blevins,2020-21,POR,Athletic Finisher,75,17,SF,25,-2.48,-2.47,-0.01,0.00,1629833.0,-2.39,-2.31,-0.08,2021
+cannade01,devin cannady,2020-21,ORL,Movement Shooter,74,8,PG,24,-1.11,-1.36,0.25,0.10,1629962.0,-1.37,-1.69,0.31,2021
+edwaran01,anthony edwards,2020-21,MIN,Secondary Ball Handler,2314,72,SG,19,-0.9,0.87,-1.77,2.20,1630162.0,-1.51,0.0,-1.52,2021
+ballla01,lamelo ball,2020-21,CHO,Primary Ball Handler,1469,51,PG,19,-0.71,-0.09,-0.62,1.60,1630163.0,0.64,0.66,-0.02,2021
+wisemja01,james wiseman,2020-21,GSW,Post Scorer,836,39,C,19,-3.47,-3.23,-0.24,-0.60,1630164.0,-1.66,-2.01,0.35,2021
+hayeski01,killian hayes,2020-21,DET,Secondary Ball Handler,670,26,PG,19,-3.84,-3.02,-0.81,-0.60,1630165.0,-3.26,-3.05,-0.21,2021
+avdijde01,deni avdija,2020-21,WAS,Stationary Shooter,1257,54,SF,20,-0.96,-2.29,1.33,1.20,1630166.0,-1.71,-2.37,0.66,2021
+toppiob01,obi toppin,2020-21,NYK,Stretch Big,683,62,PF,22,-1.36,-1.04,-0.32,0.40,1630167.0,-1.28,-1.29,0.01,2021
+okongon01,onyeka okongwu,2020-21,ATL,Roll + Cut Big,601,50,C,20,-1.06,-1.49,0.43,0.50,1630168.0,-0.38,-1.53,1.16,2021
+halibty01,tyrese haliburton,2020-21,SAC,Primary Ball Handler,1746,58,PG,20,-0.91,0.73,-1.64,1.70,1630169.0,-0.6,0.77,-1.37,2021
+vassede01,devin vassell,2020-21,SAS,Stationary Shooter,1056,62,SF,20,-1.53,-1.59,0.06,0.60,1630170.0,-1.4,-1.67,0.27,2021
+okorois01,isaac okoro,2020-21,CLE,Stationary Shooter,2173,67,SG,20,-3.55,-2.7,-0.86,-1.60,1630171.0,-3.58,-2.94,-0.64,2021
+willipa01,patrick williams,2020-21,CHI,Athletic Finisher,1983,71,PF,19,-3.5,-3.17,-0.34,-1.40,1630172.0,-0.99,-1.99,1.0,2021
+achiupr01,precious achiuwa,2020-21,MIA,Roll + Cut Big,737,61,PF,21,-1.66,-2.52,0.86,0.30,1630173.0,-1.06,-1.73,0.67,2021
+nesmiaa01,aaron nesmith,2020-21,BOS,Stationary Shooter,669,46,SF,21,-1.74,-1.47,-0.26,0.30,1630174.0,-1.83,-1.63,-0.2,2021
+anthoco01,cole anthony,2020-21,ORL,Primary Ball Handler,1273,47,PG,20,-2.28,-1.47,-0.81,0.10,1630175.0,-2.2,-1.54,-0.66,2021
+careyve01,vernon carey jr.,2020-21,CHO,Roll + Cut Big,115,19,C,19,-1.6,-1.85,0.24,0.10,1630176.0,-1.6,-1.86,0.25,2021
+maledth01,theo maledon,2020-21,OKC,Primary Ball Handler,1778,65,PG,19,-4.69,-3.65,-1.04,-2.50,1630177.0,-3.58,-2.63,-0.95,2021
+maxeyty01,tyrese maxey,2020-21,PHI,Slasher,936,61,SG,20,-1.1,0.29,-1.4,0.80,1630178.0,-1.01,-0.2,-0.81,2021
+terryty01,tyrell terry,2020-21,DAL,Secondary Ball Handler,56,11,PG,20,-1.46,-1.59,0.14,0.00,1630179.0,-1.62,-1.64,0.02,2021
+beysa01,saddiq bey,2020-21,DET,Movement Shooter,1909,70,SF,21,-1.97,-0.46,-1.51,0.50,1630180.0,-0.99,-0.24,-0.75,2021
+hamptrj01,r.j. hampton,2020-21,DEN/ORL,Secondary Ball Handler,888,51,SG-PG,19,-3.28,-1.62,-1.65,-0.50,1630181.0,-2.1,-1.82,-0.28,2021
+greenjo02,josh green,2020-21,DAL,Stretch Big,445,39,SG,20,-1.68,-1.6,-0.08,0.20,1630182.0,-2.43,-2.33,-0.11,2021
+mcdanja02,jaden mcdaniels,2020-21,MIN,Athletic Finisher,1511,63,PF,20,-1.59,-2.59,1.0,0.80,1630183.0,-2.43,-2.52,0.08,2021
+lewiski01,kira lewis jr.,2020-21,NOP,Secondary Ball Handler,904,54,PG,19,-1.15,-0.63,-0.52,0.70,1630184.0,-1.58,-1.26,-0.33,2021
+mannini01,nico mannion,2020-21,GSW,Secondary Ball Handler,364,30,PG,19,-2.89,-1.72,-1.17,-0.10,1630185.0,-1.68,-1.16,-0.52,2021
+ramseja01,jahmi'us ramsey,2020-21,SAC,Stationary Shooter,94,13,SG,19,-1.29,-1.22,-0.06,0.10,1630186.0,-1.7,-1.52,-0.18,2021
+oturuda01,daniel oturu,2020-21,LAC,Post Scorer,161,30,C,21,-1.83,-1.77,-0.06,0.10,1630187.0,-1.75,-1.94,0.19,2021
+smithja04,jalen smith,2020-21,PHO,Versatile Big,156,27,PF,20,-2.57,-2.15,-0.42,0.00,1630188.0,-2.39,-2.14,-0.25,2021
+beyty01,tyler bey,2020-21,DAL,Roll + Cut Big,71,18,SF,22,-1.89,-1.78,-0.12,0.00,1630189.0,-1.67,-1.74,0.07,2021
+hugheel01,elijah hughes,2020-21,UTA,Movement Shooter,64,18,SF,22,-2.73,-1.58,-1.15,0.00,1630190.0,-2.09,-1.42,-0.66,2021
+stewais01,isaiah stewart,2020-21,DET,Roll + Cut Big,1455,68,C,19,-0.2,-1.75,1.55,2.10,1630191.0,-0.92,-1.8,0.88,2021
+nnajize01,zeke nnaji,2020-21,DEN,Stretch Big,397,42,PF,20,-3.2,-1.66,-1.53,-0.20,1630192.0,-1.82,-1.41,-0.41,2021
+quickim01,immanuel quickley,2020-21,NYK,Primary Ball Handler,1243,64,PG,21,0.92,1.64,-0.72,2.70,1630193.0,0.01,1.23,-1.22,2021
+reedpa01,paul reed,2020-21,PHI,Roll + Cut Big,177,26,PF,21,-0.33,-0.67,0.34,0.20,1630194.0,-1.35,-1.28,-0.07,2021
+pokusal01,aleksej pokusevski,2020-21,OKC,Secondary Ball Handler,1090,45,PF,19,-4.47,-3.52,-0.95,-1.40,1630197.0,-3.39,-3.36,-0.03,2021
+joeis01,isaiah joe,2020-21,PHI,Movement Shooter,383,41,SG,21,-1.02,-0.18,-0.84,0.30,1630198.0,-1.77,-0.63,-1.15,2021
+stanlca01,cassius stanley,2020-21,IND,Athletic Finisher,93,24,SG,21,-2.31,-1.79,-0.52,0.00,1630199.0,-2.42,-1.85,-0.57,2021
+jonestr01,tre jones,2020-21,SAS,Slasher,269,37,PG,21,-2.7,-1.49,-1.21,-0.10,1630200.0,-2.42,-1.65,-0.77,2021
+flynnma01,malachi flynn,2020-21,TOR,Secondary Ball Handler,928,47,PG,22,-1.64,-1.77,0.13,0.40,1630201.0,-1.14,-0.75,-0.39,2021
+pritcpa01,payton pritchard,2020-21,BOS,Primary Ball Handler,1268,66,SG,23,-1.03,-0.09,-0.94,1.10,1630202.0,-0.97,-0.12,-0.85,2021
+rillegr01,grant riller,2020-21,CHO,Movement Shooter,27,7,PG,23,-1.74,-1.57,-0.17,0.00,1630203.0,-1.62,-1.62,0.0,2021
+haganas01,ashton hagans,2020-21,MIN,Low Minutes,4,2,PG,21,-1.41,-1.6,0.19,0.00,1630204.0,-1.38,-1.57,0.19,2021
+stevela01,lamar stevens,2020-21,CLE,Roll + Cut Big,499,40,PF,23,-0.61,-1.55,0.94,0.60,1630205.0,-1.68,-2.32,0.64,2021
+scrubja01,jay scrubb,2020-21,LAC,Movement Shooter,84,4,SG,20,-2.05,-1.46,-0.59,0.00,1630206.0,-1.92,-1.79,-0.13,2021
+hintona01,nate hinton,2020-21,DAL,Secondary Ball Handler,93,21,SG,21,-2.08,-1.54,-0.54,0.00,1630207.0,-1.48,-1.41,-0.06,2021
+richani01,nick richards,2020-21,CHO,Roll + Cut Big,63,18,PF,23,-2.06,-1.88,-0.18,0.00,1630208.0,-1.82,-1.95,0.13,2021
+howarma02,markus howard,2020-21,DEN,Secondary Ball Handler,205,37,SG,21,-3.21,-1.65,-1.56,-0.10,1630210.0,-2.46,-1.56,-0.91,2021
+maneka01,karim mane,2020-21,ORL,Secondary Ball Handler,88,10,PG,20,-2.3,-2.4,0.1,0.00,1630211.0,-1.94,-2.41,0.47,2021
+tillmxa01,xavier tillman,2020-21,MEM,Roll + Cut Big,1085,59,PF,22,0.32,-0.83,1.15,1.90,1630214.0,-0.55,-1.36,0.8,2021
+winstca01,cassius winston,2020-21,WAS,Secondary Ball Handler,98,22,PG,22,-1.53,-1.33,-0.2,0.10,1630216.0,-1.33,-1.34,0.02,2021
+banede01,desmond bane,2020-21,MEM,Movement Shooter,1519,68,SG,22,-1.45,-0.57,-0.88,0.90,1630217.0,-1.2,-0.75,-0.45,2021
+woodaro01,robert woodard ii,2020-21,SAC,Stretch Big,45,13,SF,21,-1.26,-1.36,0.11,0.00,1630218.0,-1.51,-1.55,0.04,2021
+mayssk01,skylar mays,2020-21,ATL,Stationary Shooter,269,33,SG,23,-0.21,0.26,-0.48,0.40,1630219.0,-0.46,-0.05,-0.41,2021
+halljo01,josh hall,2020-21,OKC,Stationary Shooter,336,21,SF,20,-3.57,-3.46,-0.1,-0.30,1630221.0,-3.6,-3.58,-0.02,2021
+jonesma05,mason jones,2020-21,HOU/PHI,Secondary Ball Handler,334,32,SG,22,-1.3,-0.7,-0.6,0.20,1630222.0,-1.23,-0.55,-0.68,2021
+harrija01,jalen harris,2020-21,TOR,Secondary Ball Handler,172,13,SG,22,-0.89,-0.56,-0.32,0.20,1630223.0,-1.51,-0.87,-0.64,2021
+marshna01,naji marshall,2020-21,NOP,Stationary Shooter,700,32,SF,23,-0.48,-1.11,0.63,0.90,1630230.0,-0.55,-1.23,0.68,2021
+martike04,kenyon martin jr.,2020-21,HOU,Stretch Big,1068,45,SF,20,-2.24,-1.09,-1.14,0.10,1630231.0,-1.38,-1.38,0.0,2021
+knighna01,nathan knight,2020-21,ATL,Stretch Big,279,33,PF,23,-1.43,-1.21,-0.22,0.20,1630233.0,-0.93,-0.95,0.03,2021
+alexaty01,ty-shon alexander,2020-21,PHO,Stationary Shooter,47,15,SG,22,-2.07,-1.77,-0.31,0.00,1630234.0,-2.17,-1.87,-0.3,2021
+forretr01,trent forrest,2020-21,UTA,Secondary Ball Handler,302,30,PG,22,-1.96,-0.63,-1.33,0.10,1630235.0,-2.06,-1.47,-0.59,2021
+lamban01,anthony lamb,2020-21,HOU,Athletic Finisher,415,24,SF,23,-2.88,-1.59,-1.29,-0.10,1630237.0,-2.78,-1.83,-0.95,2021
+fittsma01,malik fitts,2020-21,LAC,Stationary Shooter,11,3,PF,23,-1.66,-1.65,-0.01,0.00,1630238.0,-1.58,-1.59,0.01,2021
+leesa01,saben lee,2020-21,DET,Slasher,781,48,PG,21,-1.78,-1.32,-0.46,0.30,1630240.0,-0.92,-0.94,0.02,2021
+merrisa01,sam merrill,2020-21,MIL,Movement Shooter,233,30,SG,24,-1.97,-1.48,-0.5,0.10,1630241.0,-1.66,-1.13,-0.53,2021
+mcderse01,sean mcdermott,2020-21,MEM,Stationary Shooter,158,18,SF,24,-2.65,-2.19,-0.46,0.00,1630253.0,-2.31,-2.09,-0.23,2021
+tateja01,jae'sean tate,2020-21,HOU,Stretch Big,2043,70,SF,25,-0.27,-0.11,-0.16,2.80,1630256.0,-2.05,-1.5,-0.55,2021
+gillan01,anthony gill,2020-21,WAS,Stretch Big,218,26,PF,28,-0.79,-1.12,0.33,0.20,1630264.0,-0.95,-1.3,0.34,2021
+magnawi01,will magnay,2020-21,NOP,Low Minutes,3,1,C,22,-1.54,-1.8,0.26,0.00,1630266.0,-1.41,-1.69,0.28,2021
+campafa01,facundo campazzo,2020-21,DEN,Primary Ball Handler,1425,65,PG,29,-0.6,-1.14,0.54,1.60,1630267.0,0.11,-0.37,0.48,2021
+darlina01,nate darling,2020-21,CHO,Off Screen Shooter,26,7,SG,22,-2.06,-1.79,-0.27,0.00,1630268.0,-1.73,-1.73,0.0,2021
+thomabr01,brodric thomas,2020-21,HOU/CLE,Secondary Ball Handler,399,32,SG,24,-1.51,-1.57,0.06,0.20,1630271.0,-1.76,-2.13,0.37,2021
+gillefr01,freddie gillespie,2020-21,TOR,Roll + Cut Big,392,20,PF,23,-1.6,-2.33,0.73,0.20,1630273.0,-1.7,-2.46,0.76,2021
+deckga01,gabriel deck,2020-21,OKC,Roll + Cut Big,212,10,PF,25,-0.16,-0.17,0.01,0.30,1630466.0,-0.68,-0.86,0.18,2021

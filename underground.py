@@ -7,7 +7,7 @@
 import pandas as pd
 import requests
 
-
+import time
 # In[3]:
 
 
@@ -20,6 +20,7 @@ params = {
 response = requests.get(url, params=params)
 response_json = response.json()
 player_stats = response_json["multi_row_table_data"]
+time.sleep(1)
 df = pd.DataFrame(player_stats)
 
 col = ['Name','Minutes','Points','FG2M', 'FG2A', 'FG3M', 'FG3A', 'TsPct','AssistPoints','AtRimAssists','ShortMidRangeAssists', 'LongMidRangeAssists','Corner3Assists','Arc3Assists','LostBallSteals', 'LiveBallTurnovers', 'BadPassOutOfBoundsTurnovers', 'BadPassTurnovers',
@@ -116,19 +117,33 @@ poss.to_csv('poss_ps.csv',index=False)
 # In[3]:
 
 
-def team_shotzone(year,ps = False):
+#df.to_csv('shotzone.csv',index = False)
+
+
+# In[ ]:
+
+
+
+
+
+# In[5]:
+
+
+def team_shotzone(year,ps = False,vs=False):
     stype="Playoffs"
     if ps == False:
         stype="Regular Season"
     season = str(year)+'-'+str(year+1)[-2:]
 
                                
-        
+    dtype="Team"
+    if vs ==True:
+        dtype="Opponent"
     url = "https://api.pbpstats.com/get-totals/nba"
     params = {
         "Season": season,
         "SeasonType": stype,
-        "Type": "Team"
+        "Type": dtype
     }
     response = requests.get(url, params=params)
     response_json = response.json()
@@ -143,11 +158,13 @@ def team_shotzone(year,ps = False):
     return shotzone
 
 
-def update_team(year,ps=False):
+def update_team(year,ps=False,vs=False):
     trail = ''
+    if vs==True:
+        trail='_vs'
     if ps == True:
-        trail='_ps'
-    teamdf = team_shotzone(year,ps=ps)
+        trail+='_ps'
+    teamdf = team_shotzone(year,ps=ps,vs=vs)
     print(teamdf.columns)
     year+=1
     old_df =pd.read_csv('team_shotzone'+trail+'.csv')
@@ -156,14 +173,34 @@ def update_team(year,ps=False):
     new=pd.concat([old_df,teamdf])
     new.to_csv('team_shotzone'+trail+'.csv',index=False)
     return new
-newdf = update_team(2024,ps=False)
-newdf
 
 
-# In[4]:
+
+newdf = update_team(2024,ps=False,vs=False)
+
+newdf = update_team(2024,ps=False,vs=True)
 
 
-#df.to_csv('shotzone.csv',index = False)
+'''
+frames=[]
+for year in range(2000,2024):
+    frame= team_shotzone(year,vs=True)
+    frames.append(frame)
+    time.sleep(3)
+shotzone_vs=pd.concat(frames)
+shotzone_vs.to_csv('team_shotzone_vs.csv',index=False)
+
+
+
+
+frames=[]
+for year in range(2000,2023):
+    frame= team_shotzone(year,vs=True,ps=True)
+    frames.append(frame)
+    time.sleep(3)
+shotzone_vs_ps=pd.concat(frames)
+shotzone_vs_ps.to_csv('team_shotzone_vs_ps.csv',index=False)
+'''
 
 
 # In[ ]:
