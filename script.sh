@@ -14,6 +14,8 @@ python player_index.py
 python new_tracking.py
 python contract_data.py
 python make_index.py
+python salary2.py
+
 git add --all
 git commit -m 'Daily Update'
 git push origin master
@@ -80,6 +82,9 @@ cp rim_acc_p.csv $DISCORD_DIR/rim_acc_p.csv
 
 cp dfg_p.csv $WEB_APP_DIR/dfg_p.csv
 cp dfg_p.csv $DISCORD_DIR/dfg_p.csv
+
+cp salary_spread.csv $WEB_APP_DIR/salary_spread.csv
+cp salary_spread.csv $DISCORD_DIR/salary_spread.csv
 
 cp team_shooting.csv $WEB_APP_DIR/team_shooting.csv
 cp team_shooting.csv $DISCORD_DIR/team_shooting.csv
