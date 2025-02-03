@@ -100,7 +100,7 @@ def team_books(team):
 
 # Display the links DataFrame
 teams = ['ATL', 'BOS', 'BKN', 'CHA', 'CHI', 'CLE', 'DAL', 'DEN', 'DET', 'GSW', 'HOU', 'IND', 'LAC', 'LAL', 'MEM', 'MIA', 'MIL', 'MIN', 'NOP', 'NYK', 'OKC', 'ORL', 'PHI', 'PHX', 'POR', 'SAC', 'SAS', 'TOR', 'UTA', 'WAS']
-
+'''
 salary_frames=[]
 for team in teams:
     frame=team_books(team)
@@ -110,6 +110,7 @@ for team in teams:
 
 salary_master=pd.concat(salary_frames)
 salary_master.to_csv('salary_id.csv',index=False)
+'''
 
 
 # In[2]:
@@ -318,6 +319,20 @@ def standardize_names(df, name_column):
 # Apply the enhanced standardization
 
 salary=pd.read_csv('salary.csv')
+option=pd.read_csv('option.csv')
+
+option_rename={}
+seasons=['2024-25', '2025-26', '2026-27', '2027-28', '2028-29', '2029-30', '2030-31']
+
+for season in seasons:
+    option_rename[season]='option_'+season
+
+
+option.rename(columns=option_rename,inplace=True)
+
+
+salary=salary.merge(option, on =['Player','Team'])
+print(salary.columns)
 matched_df['Player']=matched_df['name']
 salary_standardized = standardize_names(salary, 'Player')
 matched_df_standardized = standardize_names(matched_df, 'Player')
@@ -402,12 +417,13 @@ print(unmatched['Player'].sort_values())
 
 merged.drop(columns='Player_x',inplace=True)
 merged.to_csv('salary_spread.csv')
+merged
 
 
-# In[ ]:
+# In[8]:
 
 
-
+merged.columns
 
 
 # In[ ]:
