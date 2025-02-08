@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[ ]:
 
 
 import pandas as pd
@@ -192,12 +192,6 @@ option_df
 # In[ ]:
 
 
-
-
-
-# In[2]:
-
-
 temp_df=pd.DataFrame()
 temp_df['Player'] = option_df['Player']
 seasons = ['2024-25','2025-26','2026-27','2027-28','2028-29']
@@ -214,7 +208,13 @@ salary_df = salary_df.merge(guar,on='Player')
 salary_df.sort_values(by='Guaranteed',inplace=True)
 
 
-# In[3]:
+# In[ ]:
+
+
+salary_df
+
+
+# In[ ]:
 
 
 salary_df=salary_df.drop_duplicates(subset=['Player','Team'])
@@ -223,7 +223,7 @@ option_df=option_df.drop_duplicates(subset=['Player','Team'])
 option_df
 
 
-# In[4]:
+# In[ ]:
 
 
 salary_df.loc[salary_df['Player'].str.contains('Branden Carlson'), '2024-25'] = 990895
@@ -235,7 +235,7 @@ option_df.loc[option_df['Player'].str.contains('Jalen Brunson'), '2025-26'] = 0
 option_df.loc[option_df['Player'].str.contains('Julius Randle'), '2026-27'] = 'P'
 
 
-# In[5]:
+# In[ ]:
 
 
 salary_df.to_csv('salary.csv',index=False)
@@ -245,7 +245,7 @@ option_df.to_csv('option.csv',index=False)
 salary_df[salary_df.Team=='OKC']
 
 
-# In[6]:
+# In[ ]:
 
 
 '''
@@ -262,7 +262,7 @@ for col in columns:
 '''
 
 
-# In[7]:
+# In[ ]:
 
 
 '''
@@ -280,7 +280,7 @@ df.to_csv('../data/lebron.csv',index=False)
 '''
 
 
-# In[8]:
+# In[ ]:
 
 
 '''

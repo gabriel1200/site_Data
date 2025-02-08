@@ -67,6 +67,7 @@ Cam Reddish,0,0,0,0,0,0,,CHA
 DaQuan Jeffries,0,NG,EE,0,0,0,,CHA
 Seth Curry,0,0,0,0,0,0,,CHA
 Taj Gibson,0,0,0,0,0,0,,CHA
+Elfrid Payton,0,0,0,0,0,0,,CHA
 Moussa Diabate,0,RFA,0,0,0,0,,CHA
 K.J. Simpson,0,0,RFA,0,0,0,,CHA
 Isaiah Wong,0,0,RFA,0,0,0,,CHA
@@ -168,7 +169,7 @@ Moses Moody,0,RFA,EE,0,0,,,GSW
 Brandin Podziemski,0,0,T,RFA,0,,,GSW
 Trayce Jackson-Davis,0,NG,T,0,0,,,GSW
 Gui Santos,0,T,RFA,0,0,,,GSW
-Quinten Post,0,RFA,0,0,0,,,GSW
+Quinten Post,0,0,RFA,0,0,,,GSW
 Jackson Rowe,0,0,RFA,0,0,,,GSW
 Pat Spencer,0,RFA,0,0,0,,,GSW
 Fred VanVleet,0,T,0,0,0,0,0.0,HOU
@@ -183,7 +184,6 @@ Jock Landale,0,NG,T,0,0,0,0.0,HOU
 Jae’Sean Tate,0,0,0,0,0,0,0.0,HOU
 Alperen Sengun,0,0,0,EE,0,P,0.0,HOU
 Aaron Holiday,0,T,0,0,0,0,0.0,HOU
-Jaden Springer,0,RFA,0,0,0,0,0.0,HOU
 Tari Eason,0,EE,RFA,0,0,0,0.0,HOU
 Cody Zeller,0,NG,EE,0,0,0,0.0,HOU
 Cam Whitmore,0,0,T,RFA,0,0,0.0,HOU
@@ -237,9 +237,9 @@ Shake Milton,0,NG,EE,0,0,,,LAL
 Jaxson Hayes,0,0,0,0,0,,,LAL
 Markieff Morris,0,0,0,0,0,,,LAL
 Bronny James,0,0,NG,T,0,,,LAL
+Jordan Goodwin,0,RFA,0,0,0,,,LAL
 Trey Jemison,0,0,RFA,0,0,,,LAL
 Christian Koloko,0,RFA,0,0,0,,,LAL
-Armel Traore,0,RFA,0,0,0,,,LAL
 Ja Morant,0,EE,0,0,0,0,,MEM
 Desmond Bane,0,0,EE,0,0,0,,MEM
  Jaren Jackson Jr.,0,0,0,0,0,0,,MEM
@@ -457,7 +457,6 @@ Jeremy Sochan,0,EE,RFA,0,0,0,,SAS
 Malaki Branham,0,EE,RFA,0,0,0,,SAS
 Julian Champagnie,0,EE,T,0,0,0,,SAS
 Blake Wesley,0,EE,RFA,0,0,0,,SAS
- Patrick Baldwin Jr.,0,0,0,0,0,0,,SAS
 Jordan McLaughlin,0,0,0,0,0,0,,SAS
 Charles Bassey,0,0,0,0,0,0,,SAS
 Sandro Mamukelashvili,0,0,0,0,0,0,,SAS
@@ -477,9 +476,10 @@ Ja'Kobe Walter,0,0,T,T,RFA,0,0.0,TOR
 Garrett Temple,0,0,0,0,0,0,0.0,TOR
 Jonathan Mogbo,0,0,T,RFA,0,0,0.0,TOR
 Jamal Shead,0,0,T,RFA,0,0,0.0,TOR
-Jamison Battle,0,RFA,0,0,0,0,0.0,TOR
+Jamison Battle,0,0,0,RFA,0,0,0.0,TOR
 Ulrich Chomche,0,0,RFA,0,0,0,0.0,TOR
 A.J. Lawson,0,RFA,0,0,0,0,0.0,TOR
+Orlando Robinson,0,RFA,0,0,0,0,0.0,TOR
 Lauri Markkanen,0,0,0,EE,0,0,,UTA
 John Collins,0,P,0,0,0,0,,UTA
 Collin Sexton,0,0,0,0,0,0,,UTA
