@@ -370,12 +370,47 @@ teams = ['ATL', 'BOS', 'BKN', 'CHA', 'CHI', 'CLE', 'DAL', 'DEN', 'DET', 'GSW',
          'HOU', 'IND', 'LAC', 'LAL', 'MEM', 'MIA', 'MIL', 'MIN', 'NOP', 'NYK', 
          'OKC', 'ORL', 'PHI', 'PHX', 'POR', 'SAC', 'SAS', 'TOR', 'UTA', 'WAS']
 #teams=['ATL']
-salary_df, options_df, cap_holds_df, dead_money_df, summary_df = scrape_all_teams(teams)
+salary_df, option_df, cap_holds_df, dead_money_df, summary_df = scrape_all_teams(teams)
 
 # Save results
 salary_df.to_csv('nba_salaries.csv', index=False)
-options_df.to_csv('nba_options.csv', index=False)
+option_df.to_csv('nba_options.csv', index=False)
 cap_holds_df.to_csv('nba_cap_holds.csv', index=False)
 dead_money_df.to_csv('nba_dead_money.csv', index=False)
 summary_df.to_csv('nba_summary.csv', index=False)
+
+
+# In[ ]:
+
+
+temp_df=pd.DataFrame()
+temp_df['Player'] = option_df['Player']
+seasons = ['2024-25','2025-26','2026-27','2027-28','2028-29']
+for season in seasons:
+    temp_df[season] = np.where(option_df[season]!='T', 1, 0)
+
+
+guar = pd.DataFrame()
+guar['Player'] = salary_df['Player']
+guar['Guaranteed'] = 0
+for season in seasons:
+    guar['Guaranteed']+= temp_df[season]* salary_df[season]
+salary_df = salary_df.merge(guar,on='Player')
+salary_df.sort_values(by='Guaranteed',inplace=True)
+salary_df
+salary_df=salary_df.drop_duplicates(subset=['Player','Team'])
+salary_df
+option_df=option_df.drop_duplicates(subset=['Player','Team'])
+option_df
+salary_df.loc[salary_df['Player'].str.contains('Branden Carlson'), '2024-25'] = 990895
+
+option_df.loc[option_df['Player'].str.contains('Scottie Barnes'), '2025-26'] = 0
+option_df.loc[option_df['Player'].str.contains('Bradley Beal'), '2026-27'] = 'P'
+option_df.loc[option_df['Player'].str.contains('Jalen Brunson'), '2024-25'] = 0
+option_df.loc[option_df['Player'].str.contains('Jalen Brunson'), '2025-26'] = 0
+option_df.loc[option_df['Player'].str.contains('Julius Randle'), '2026-27'] = 'P'
+
+
+salary_df.to_csv('nba_salaries.csv',index=False)
+option_df.to_csv('nba_summary.csv',index=False)
 
