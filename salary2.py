@@ -318,7 +318,7 @@ def standardize_names(df, name_column):
 
 # Apply the enhanced standardization
 
-salary=pd.read_csv('salary.csv')
+salary=pd.read_csv('nba_salaries.csv')
 option=pd.read_csv('option.csv')
 
 option_rename={}

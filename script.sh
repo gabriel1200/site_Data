@@ -13,6 +13,8 @@ python hustle.py
 python player_index.py
 python new_tracking.py
 python contract_data.py
+python contract_data2.py
+
 python make_index.py
 python salary2.py
 
@@ -30,6 +32,12 @@ WEB_APP_DIR="../web_app/data"
 DISCORD_DIR="../discord/data"
 
 # Copy files to both destinations
+cp nba_salaries.csv $WEB_APP_DIR/nba_salaries.csv
+cp nba_options.csv $WEB_APP_DIR/nba_options.csv
+cp nba_cap_holds.csv $WEB_APP_DIR/nba_cap_holds.csv
+cp nba_summary.csv $WEB_APP_DIR/nba_summary.csv
+
+cp nba_dead_money.csv $WEB_APP_DIR/nba_dead_money.csv
 
 
 cp lebron.csv $WEB_APP_DIR/lebron.csv
