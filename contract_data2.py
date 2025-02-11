@@ -380,7 +380,7 @@ dead_money_df.to_csv('nba_dead_money.csv', index=False)
 summary_df.to_csv('nba_summary.csv', index=False)
 
 
-# In[ ]:
+# In[2]:
 
 
 temp_df=pd.DataFrame()
