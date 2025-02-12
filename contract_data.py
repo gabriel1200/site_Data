@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[2]:
+# In[1]:
 
 
 import pandas as pd
@@ -11,8 +11,143 @@ import plotly.figure_factory as ff
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
+import pandas as pd
+import math
+import plotly.figure_factory as ff
+
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
+
+import pandas as pd
+import numpy as np
+from typing import Dict, List, Tuple, Optional, Union
+
+import requests
+from requests.exceptions import RequestException
+import time
+from bs4 import BeautifulSoup
+
 import numpy as np
 
+
+
+
+import pandas as pd
+import re
+def clean_seasonal_salaries(data, seasonlist):
+    """
+    Cleans salary data for specified seasons within the Dead Money section
+    
+    Parameters:
+    data (dict): Input data containing Dead Money section
+    seasonlist (list): List of seasons to process
+    
+    Returns:
+    pd.DataFrame: DataFrame with cleaned numerical salary values for all seasons
+    """
+    if 'Dead Money' not in data:
+        return pd.DataFrame()
+        
+    dead = data['Dead Money'].copy()
+    
+    for season in seasonlist:
+        if season not in dead.columns:
+            continue
+            
+        # Fill NA values
+        dead[season] = dead[season].fillna('0')
+        
+        # Remove 'Ext. Elig.' and strip whitespace
+        dead[season] = dead[season].str.replace('Ext. Elig.', '', regex=False).str.strip()
+        
+        # Convert strings to numeric values
+        dead[season] = dead[season].apply(lambda x: convert_salary_string(x))
+        
+        # Ensure integer type
+        dead[season] = dead[season].replace('', 0)
+        dead[season] = dead[season].astype(int)
+    
+    return dead
+
+def convert_salary_string(value):
+    """
+    Converts a salary string to a pure number, handling percentage suffixes for any size number
+    """
+    if pd.isna(value) or value == '':
+        return '0'
+    
+    if isinstance(value, (int, float)):
+        return str(int(value))
+    
+    value_str = str(value)
+    cutoff=1
+    if len(value_str)>15:
+        cutoff=2
+    
+    # Check for special strings
+    strings_to_check = ['UFA', 'RFA', 'NA', 'N/A']
+    if any(s in value_str for s in strings_to_check):
+        return '0'
+    
+    # First, remove $ and commas
+    value_str = value_str.replace('$', '').replace(',', '')
+    
+    # Find where the decimal point is (indicating start of percentage)
+    decimal_index = value_str.find('.')
+    if decimal_index != -1:
+        # Take everything up to the last 8 digits before the decimal
+        # (changed from 7 to 8 to capture the correct number of digits)
+        non_decimal_part = value_str[:decimal_index]
+      
+        value_str = non_decimal_part[:-cutoff]  # Remove last 2 digits instead of 1
+ 
+    # Remove any remaining non-digits
+    clean_value = ''.join(c for c in value_str if c.isdigit())
+    return clean_value if clean_value else '0'
+
+
+
+# Usage
+
+def get_team_data(url: str, timeout: int = 10) -> Tuple[List[pd.DataFrame], List[str]]:
+    """
+    Fetch and parse HTML tables from the team URL, along with their section headers.
+    Returns tuple of (list of dataframes, list of headers)
+    """
+    try:
+        response = requests.get(url, timeout=timeout)
+        response.raise_for_status()
+        
+        # Parse HTML content
+        soup = BeautifulSoup(response.text, 'html.parser')
+        
+        # Find all tables and their preceding h2 headers
+        tables_data = []
+        headers = []
+        
+        # Get all tables
+        tables = soup.find_all('table')
+        data_dict={}
+        
+        for table in tables:
+            # Look for the nearest preceding h2
+            header = None
+            prev_elem = table.find_previous('h2')
+            if prev_elem:
+                header = prev_elem.get_text(strip=True)
+            
+            # Parse table into DataFrame
+            df = pd.read_html(str(table))[0]
+            data_dict[header]=df
+        
+        return data_dict
+        
+    except RequestException as e:
+        print(f"Error fetching data: {e}")
+        return [], []
+    except ValueError as e:
+        print(f"Error parsing HTML tables: {e}")
+        return [], []
 # Populate the new DataFrame with player options and team options
 def team_books(team):
     print(team)
@@ -49,26 +184,19 @@ def team_books(team):
         "WAS": "https://www.spotrac.com/nba/washington-wizards/yearly"
     }
     
-    url = nba_team_urls[team.upper()]
-    dfs = pd.read_html(url)
-    count = 0
-    count_save = 0
-    
-    for df in dfs:
-        
-        if 'Deadline Date' in df.columns:
-            count_save=count
-        count+=1
-            
-    df = dfs[count_save]
-  
+    url = nba_team_urls[team.upper()]    
+    data=get_team_data(url)
 
-    salary_df = dfs[0]
-    
 
-    
+    df = data['Upcoming Deadlines']
 
   
+
+    salary_df = data['Active Roster']
+    
+
+
+
     columns = ['Player']
     for col in salary_df.columns[1:]:
         columns.append(col)
@@ -76,13 +204,14 @@ def team_books(team):
     df.columns=['Deadline Date', 'Player', 'Type', 'Value']
    
     salary_df.columns =columns
-    
+
     
     salary_df['Player'] = salary_df['Player'].str.split(' ').str[1:].str.join(' ')
+
    
     
-    salary_df['Player'] = salary_df['Player'].str.replace('III ', '')
-    salary_df['Player'] = salary_df['Player'].str.replace('II ', '')
+    #salary_df['Player'] = salary_df['Player'].str.replace('III ', '')
+    #salary_df['Player'] = salary_df['Player'].str.replace('II ', '')
     seasons= ['2024-25','2025-26','2026-27','2027-28','2028-29']
     extra_seasons = ['2029-30','2030-31']
     for seas in extra_seasons:
@@ -102,8 +231,7 @@ def team_books(team):
     
     # Replace the value with 0 if any of the strings are present
 
-    
-        
+
     
     for season in seasons:
 
@@ -114,19 +242,42 @@ def team_books(team):
         salary_df[season] = salary_df[season].apply(lambda x: '0' if any(s in x for s in strings_to_check) else x)
         salary_df[season]=salary_df[season].fillna('0')
         salary_df[season] = salary_df[season].str.split(',').str[0:2].str.join('') +salary_df[season].str.split(',').str[2:3].str.join('').str[0:3]
+
+        #salary_df[season] = salary_df[season].str.replace('Two-Way', '578,577', regex=False).str.strip()
+
+
         salary_df[season] = salary_df[season].str.replace(r'\D', '', regex=True)
         
         salary_df[season] = salary_df[season].replace('',0)
 
-        
-    
-    salary_df['Player']=salary_df['Player'].str[1:]
-    players = salary_df['Player'].unique()
+
     
 
-    #salary_df = pd.concat([salary_df,cap_hold]).reset_index(drop=True)
     
+    if 'Dead Money' in data.keys():
+        seasonlist=['2024-25','2025-26','2026-27','2027-28','2028-29','2029-30']
+
+        dead = clean_seasonal_salaries(data, seasonlist)
+
+
+        alldead=pd.DataFrame()
+        
+       
+      
+        for season in seasonlist:
+            if season in dead.columns:
+                alldead[season]=[dead[season].sum()]
+        alldead['Player'] = ['Dead Cap']
+
+        alldead.reset_index(inplace=True)
+
+        salary_df=pd.concat([salary_df,alldead])
+        
+
+    #salary_df = pd.concat([salary_df,cap_hold]).reset_index(drop=True)
+    players = salary_df['Player'].unique()
     data=[]
+
     for player in players:
     
         player_data = df[df['Player'] == player]
@@ -159,6 +310,8 @@ def team_books(team):
     # Display the new organized DataFrame
     new_df = pd.DataFrame(columns=['Player'] + seasons,data=data)
     new_df=new_df.drop_duplicates().reset_index(drop=True)
+    salary_df=salary_df.drop_duplicates().reset_index(drop=True)
+
     #new_df = pd.concat([new_df,cap_options]).reset_index(drop=True)
     for season in seasons:
         salary_df[season] = salary_df[season].astype(float)
@@ -167,15 +320,13 @@ def team_books(team):
     #new_df['Team']='GSW'
     
 
-    salary_df['Player'] = salary_df['Player'].str.replace('r. ','',regex=False)
-    new_df['Player'] = new_df['Player'].str.replace('r. ','',regex=False)
-
+    
     salary_df['Team']=team
     new_df['Team']=team
 
     return salary_df,new_df
 teams = ['ATL', 'BOS', 'BKN', 'CHA', 'CHI', 'CLE', 'DAL', 'DEN', 'DET', 'GSW', 'HOU', 'IND', 'LAC', 'LAL', 'MEM', 'MIA', 'MIL', 'MIN', 'NOP', 'NYK', 'OKC', 'ORL', 'PHI', 'PHX', 'POR', 'SAC', 'SAS', 'TOR', 'UTA', 'WAS']
-#teams=['OKC']
+#teams=['OKC','BKN']
 salary=[]
 options=[]
 for team in teams:
@@ -189,7 +340,16 @@ option_df = pd.concat(options)
 option_df
 
 
-# In[ ]:
+# In[2]:
+
+
+test1 = "$2,087,5191.5%"
+test2 = "$39,256,08327.9%"
+print(convert_salary_string(test1))  # Should be '2087519'
+print(convert_salary_string(test2))
+
+
+# In[3]:
 
 
 temp_df=pd.DataFrame()
@@ -201,7 +361,13 @@ for season in seasons:
 
 guar = pd.DataFrame()
 guar['Player'] = salary_df['Player']
+
+
 guar['Guaranteed'] = 0
+
+print(guar)
+print(temp_df)
+print(salary_df)
 for season in seasons:
     guar['Guaranteed']+= temp_df[season]* salary_df[season]
 salary_df = salary_df.merge(guar,on='Player')
@@ -211,7 +377,9 @@ salary_df=salary_df.drop_duplicates(subset=['Player','Team'])
 salary_df
 option_df=option_df.drop_duplicates(subset=['Player','Team'])
 option_df
-salary_df.loc[salary_df['Player'].str.contains('Branden Carlson'), '2024-25'] = 990895
+
+
+#salary_df.loc[salary_df['Player'].str.contains('Branden Carlson'), '2024-25'] = 990895
 
 option_df.loc[option_df['Player'].str.contains('Scottie Barnes'), '2025-26'] = 0
 option_df.loc[option_df['Player'].str.contains('Bradley Beal'), '2026-27'] = 'P'
@@ -226,19 +394,7 @@ option_df.loc[option_df['Player'].str.contains('Julius Randle'), '2026-27'] = 'P
 
 
 
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
+# In[4]:
 
 
 salary_df.to_csv('salary.csv',index=False)
@@ -248,7 +404,7 @@ option_df.to_csv('option.csv',index=False)
 salary_df[salary_df.Team=='OKC']
 
 
-# In[ ]:
+# In[5]:
 
 
 '''
@@ -265,7 +421,7 @@ for col in columns:
 '''
 
 
-# In[ ]:
+# In[6]:
 
 
 '''
@@ -283,7 +439,7 @@ df.to_csv('../data/lebron.csv',index=False)
 '''
 
 
-# In[ ]:
+# In[7]:
 
 
 '''
@@ -292,6 +448,16 @@ cap['year'] = cap['Season'].str.split('-').str[1:].str.join('')
 cap['year'] = cap['year'].astype(int)
 cap.to_csv('../data/cap.csv',index=False)
 '''
+
+
+# In[8]:
+
+
+# Let's test both cases
+test1 = "$2,087,5191.5%"
+test2 = "$39,256,08327.9%"
+print(convert_salary_string(test1))  # Should be '2087519'
+print(convert_salary_string(test2))  # Should be '39256083'
 
 
 # In[ ]:
