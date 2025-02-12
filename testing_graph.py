@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[12]:
+# In[20]:
 
 
 import plotly
@@ -143,7 +143,7 @@ def graph_payroll(team):
                 text='Sideways Dash = Team Option <br> White Text = Player Option',
                 font=dict(size=20, color="white"),
                 y=60,
-                x=2.5,
+                x=4.5,
                 xref='x',
                 yref='y'
             ),
@@ -152,7 +152,7 @@ def graph_payroll(team):
                 text='Dash = Extension Eligible',
                 font=dict(size=20, color="white"),
                 y=70,
-                x=2.5,
+                x=4.5,
                 xref='x',
                 yref='y'
             ),
@@ -187,7 +187,7 @@ def graph_payroll(team):
 
     return fig
 
-fig=graph_payroll('OKC')
+fig=graph_payroll('MIA')
 fig.show()
 
 

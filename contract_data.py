@@ -34,7 +34,7 @@ import numpy as np
 
 import pandas as pd
 import re
-def clean_seasonal_salaries(data, seasonlist):
+def clean_seasonal_salaries(data, seasonlist,header='Dead Money'):
     """
     Cleans salary data for specified seasons within the Dead Money section
     
@@ -48,7 +48,7 @@ def clean_seasonal_salaries(data, seasonlist):
     if 'Dead Money' not in data:
         return pd.DataFrame()
         
-    dead = data['Dead Money'].copy()
+    dead = data[header].copy()
     
     for season in seasonlist:
         if season not in dead.columns:
@@ -68,6 +68,43 @@ def clean_seasonal_salaries(data, seasonlist):
         dead[season] = dead[season].astype(int)
     
     return dead
+def convert_salary_string2(salary_str):
+    """
+    Convert salary strings to decimal values, handling both million and thousand scale values.
+    
+    Args:
+        salary_str: String representation of salary (e.g., "$724,883", "$1,234,567")
+    
+    Returns:
+        float: Converted salary value
+    """
+    if isinstance(salary_str, (int, float)):
+        return float(salary_str)
+    
+    if not salary_str or pd.isna(salary_str):
+        return 0.0
+        
+    # Remove non-numeric characters except commas
+    cleaned = re.sub(r'[^\d,]', '', str(salary_str))
+    
+    if not cleaned:
+        return 0.0
+    
+    # Split by commas to count the number groups
+    parts = cleaned.split(',')
+    
+    if len(parts) == 1:  # No commas, direct conversion
+        return float(parts[0])
+    
+    # Join all parts and convert to number
+    number = float(''.join(parts))
+    
+    # If the number is unreasonably large (over 100 million), 
+    # assume it should be scaled down
+    if number > 100000000:  # 100 million threshold
+        return number / 10
+        
+    return number
 
 def convert_salary_string(value):
     """
@@ -231,19 +268,14 @@ def team_books(team):
     
     # Replace the value with 0 if any of the strings are present
 
-
-    
     for season in seasons:
-
-        
+        salary_df[season] = salary_df[season].fillna('')
         salary_df[season] = salary_df[season].str.replace('Ext. Elig.', '', regex=False).str.strip()
-
-    
         salary_df[season] = salary_df[season].apply(lambda x: '0' if any(s in x for s in strings_to_check) else x)
-        salary_df[season]=salary_df[season].fillna('0')
-        salary_df[season] = salary_df[season].str.split(',').str[0:2].str.join('') +salary_df[season].str.split(',').str[2:3].str.join('').str[0:3]
-
-        #salary_df[season] = salary_df[season].str.replace('Two-Way', '578,577', regex=False).str.strip()
+        salary_df[season] = salary_df[season].fillna('0')
+        
+        # Apply the new conversion function
+        salary_df[season] = salary_df[season].apply(convert_salary_string)
 
 
         salary_df[season] = salary_df[season].str.replace(r'\D', '', regex=True)
@@ -326,7 +358,7 @@ def team_books(team):
 
     return salary_df,new_df
 teams = ['ATL', 'BOS', 'BKN', 'CHA', 'CHI', 'CLE', 'DAL', 'DEN', 'DET', 'GSW', 'HOU', 'IND', 'LAC', 'LAL', 'MEM', 'MIA', 'MIL', 'MIN', 'NOP', 'NYK', 'OKC', 'ORL', 'PHI', 'PHX', 'POR', 'SAC', 'SAS', 'TOR', 'UTA', 'WAS']
-#teams=['OKC','BKN']
+#teams=['MIA']
 salary=[]
 options=[]
 for team in teams:
@@ -343,13 +375,19 @@ option_df
 # In[2]:
 
 
+salary_df
+
+
+# In[3]:
+
+
 test1 = "$2,087,5191.5%"
 test2 = "$39,256,08327.9%"
 print(convert_salary_string(test1))  # Should be '2087519'
 print(convert_salary_string(test2))
 
 
-# In[3]:
+# In[4]:
 
 
 temp_df=pd.DataFrame()
@@ -378,6 +416,7 @@ salary_df
 option_df=option_df.drop_duplicates(subset=['Player','Team'])
 option_df
 
+salary_df.loc[salary_df['Player'].str.contains('Quinten Post'), '2024-25'] = 438930
 
 #salary_df.loc[salary_df['Player'].str.contains('Branden Carlson'), '2024-25'] = 990895
 
@@ -388,13 +427,14 @@ option_df.loc[option_df['Player'].str.contains('Jalen Brunson'), '2025-26'] = 0
 option_df.loc[option_df['Player'].str.contains('Julius Randle'), '2026-27'] = 'P'
 
 
+
 # In[ ]:
 
 
 
 
 
-# In[4]:
+# In[5]:
 
 
 salary_df.to_csv('salary.csv',index=False)
@@ -404,7 +444,7 @@ option_df.to_csv('option.csv',index=False)
 salary_df[salary_df.Team=='OKC']
 
 
-# In[5]:
+# In[6]:
 
 
 '''
@@ -421,7 +461,7 @@ for col in columns:
 '''
 
 
-# In[6]:
+# In[7]:
 
 
 '''
@@ -439,7 +479,7 @@ df.to_csv('../data/lebron.csv',index=False)
 '''
 
 
-# In[7]:
+# In[8]:
 
 
 '''
@@ -450,7 +490,7 @@ cap.to_csv('../data/cap.csv',index=False)
 '''
 
 
-# In[8]:
+# In[9]:
 
 
 # Let's test both cases
