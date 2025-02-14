@@ -66,11 +66,10 @@ Jr. Nick Smith Jr.,0,0,0,0,0,0,,CHA
 DaQuan Jeffries,0,NG,EE,0,0,0,,CHA
 Seth Curry,0,0,0,0,0,0,,CHA
 Taj Gibson,0,0,0,0,0,0,,CHA
-Moussa Diabate,0,RFA,0,0,0,0,,CHA
+Moussa Diabate,0,RFA,NG,0,0,0,,CHA
 Elfrid Payton,0,0,0,0,0,0,,CHA
-Damion Baugh,0,RFA,0,0,0,0,,CHA
+Damion Baugh,0,0,RFA,0,0,0,,CHA
 K.J. Simpson,0,0,RFA,0,0,0,,CHA
-Isaiah Wong,0,0,RFA,0,0,0,,CHA
 Dead Cap,0,0,0,0,0,0,,CHA
 Lonzo Ball,0,0,0,EE,0,0,,CHI
 Nikola Vucevic,0,EE,0,0,0,0,,CHI
@@ -406,14 +405,14 @@ Andre Drummond,0,P,0,0,0,0,,PHI
 Quentin Grimes,0,0,0,0,0,0,,PHI
 Jared McCain,0,0,T,T,RFA,0,,PHI
 Eric Gordon,0,P,0,0,0,0,,PHI
+Jared Butler,0,T,0,0,0,0,,PHI
 Kyle Lowry,0,0,0,0,0,0,,PHI
 Guerschon Yabusele,0,0,0,0,0,0,,PHI
 IV Ricky Council IV,0,0,0,0,0,0,,PHI
 Adem Bona,0,NG,NG,T,0,0,,PHI
-Justin Edwards,0,0,RFA,0,0,0,,PHI
+Justin Edwards,0,T,RFA,0,0,0,,PHI
 Chuma Okeke,0,0,0,0,0,0,,PHI
 David Roddy,0,0,0,0,0,0,,PHI
-Jared Butler,0,0,0,0,0,0,,PHI
 Jeff Dowtin,0,RFA,0,0,0,0,,PHI
 Kevin Durant,0,0,0,0,0,0,0.0,PHX
 Bradley Beal,0,EE,P,0,0,0,0.0,PHX
@@ -449,6 +448,7 @@ Duop Reath,0,NG,RFA,0,0,,,POR
 Jabari Walker,0,RFA,0,0,0,,,POR
 Toumani Camara,0,EE,T,0,0,,,POR
 Rayan Rupert,0,T,RFA,0,0,,,POR
+Sidy Cissoko,0,0,RFA,0,0,,,POR
 Bryce McGowens,0,RFA,0,0,0,,,POR
 Justin Minaya,0,0,0,0,0,,,POR
 Dead Cap,0,0,0,0,0,,,POR
@@ -464,10 +464,11 @@ Jake LaRavia,0,0,0,0,0,,,SAC
 Keon Ellis,0,T,0,0,0,,,SAC
 Doug McDermott,0,0,0,0,0,,,SAC
 Jae Crowder,0,0,0,0,0,,,SAC
+Markelle Fultz,0,0,0,0,0,,,SAC
 Daishen Nix,0,0,0,0,0,,,SAC
 Isaiah Crawford,0,RFA,0,0,0,,,SAC
-Mason Jones,0,RFA,0,0,0,,,SAC
 Isaac Jones,0,RFA,0,0,0,,,SAC
+Mason Jones,0,RFA,0,0,0,,,SAC
 Dead Cap,0,0,0,0,0,,,SAC
 De'Aaron Fox,0,0,0,0,0,0,,SAS
 Devin Vassell,0,0,EE,0,0,0,,SAS
@@ -540,6 +541,6 @@ Anthony Gill,0,NG,0,0,0,0,,WAS
 Colby Jones,0,NG,T,0,0,0,,WAS
 Jaylen Nowell,0,0,0,0,0,0,,WAS
 Justin Champagnie,RFA,0,0,0,0,0,,WAS
-Jaylen Martin,0,RFA,0,0,0,0,,WAS
+Jaylen Martin,0,0,RFA,0,0,0,,WAS
 Tristan Vukcevic,0,RFA,0,0,0,0,,WAS
 Dead Cap,0,0,0,0,0,0,,WAS

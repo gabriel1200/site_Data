@@ -239,7 +239,6 @@ search_dict={
 match_dict.update(search_dict)
 index_frame['nba_id']=index_frame['bref_id'].map(match_dict)
 
-
 current_season = "2024-25"  # Update this to the current season if needed
 
 # Fetch all players for the current season
@@ -258,12 +257,13 @@ index_frame.dropna(inplace=True)
 
 
 index_frame=pd.concat([index_frame,notfound])
+
 index_frame['team_id']=index_frame['team'].map(team_dict)
 
 index_frame.dropna(subset='bref_id',inplace=True)
 index_frame.fillna(0,inplace=True)
 print(index_frame)
-index_frame.replace('',0)
+index_frame.replace('',0,inplace=True)
 index_frame['FTA']=index_frame['FTA'].astype(float)
 index_frame['FGA']=index_frame['FGA'].astype(float)
 
@@ -301,11 +301,11 @@ ps_gp.to_csv('../player_sheets/lineups/ps_games.csv',index=False)
 ps_gp.to_csv('../extra_data/wowy_leverage/ps_games.csv',index=False)
 
 
-# In[3]:
+# In[4]:
 
 
-index=pd.read_csv('index_master.csv')
-index[index.year==2025]
+scoring=pd.read_csv('scoring.csv')
+scoring[scoring.year==2024]
 
 
 # In[ ]:
