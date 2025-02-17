@@ -139,10 +139,16 @@ import pandas as pd
 from fuzzywuzzy import fuzz
 from unidecode import unidecode
 import numpy as np
+import pandas as pd
+from fuzzywuzzy import fuzz
+from unidecode import unidecode
+import numpy as np
 
 def match_names(salary_df, index_df, threshold=85):
     """
-    Match names between two dataframes using fuzzy string matching.
+    Match names between two dataframes using fuzzy string matching and containment checking.
+    Checks if salary names are contained within index names to handle cases where salary names
+    are partial versions of the full names in the index.
     
     Parameters:
     -----------
@@ -161,9 +167,8 @@ def match_names(salary_df, index_df, threshold=85):
         Dictionary of name mappings for manual verification
     """
     
-    # Create clean versions of names for matching
     def clean_name(name):
-        # Convert to lowercase and remove accents
+        # Convert to lowercase, remove accents and extra whitespace
         return unidecode(str(name).lower().strip())
     
     # Clean names in both dataframes
@@ -182,22 +187,42 @@ def match_names(salary_df, index_df, threshold=85):
         # Try exact match first
         if salary_name in exact_matches:
             matched_ids.append(exact_matches[salary_name])
+            name_mappings[salary_name] = {
+                'matched_to': salary_name,
+                'score': 100,
+                'nba_id': exact_matches[salary_name],
+                'match_type': 'exact'
+            }
             continue
             
-        # If no exact match, try fuzzy matching
+        # If no exact match, try containment and fuzzy matching
         max_score = 0
         best_match = None
         best_id = None
+        match_type = None
         
         for idx_name, nba_id in zip(index_names, index_df['nba_id']):
-            # Calculate similarity score
-            score = fuzz.ratio(salary_name, idx_name)
+            # Check if salary name is contained within index name
+            if salary_name in idx_name:
+                # Calculate containment score based on length ratio
+                length_ratio = len(salary_name) / len(idx_name)
+                # Only consider containment if the salary name is at least 50% of the index name length
+                if length_ratio >= 0.5:
+                    score = 100 * length_ratio
+                    if score > max_score:
+                        max_score = score
+                        best_match = idx_name
+                        best_id = nba_id
+                        match_type = 'containment'
             
-            # Update best match if score is higher
-            if score > max_score:
-                max_score = score
-                best_match = idx_name
-                best_id = nba_id
+            # If no containment match, try fuzzy matching
+            if match_type is None:
+                score = fuzz.ratio(salary_name, idx_name)
+                if score > max_score:
+                    max_score = score
+                    best_match = idx_name
+                    best_id = nba_id
+                    match_type = 'fuzzy'
         
         # If we found a good match
         if max_score >= threshold:
@@ -205,14 +230,16 @@ def match_names(salary_df, index_df, threshold=85):
             name_mappings[salary_name] = {
                 'matched_to': best_match,
                 'score': max_score,
-                'nba_id': best_id
+                'nba_id': best_id,
+                'match_type': match_type
             }
         else:
             matched_ids.append(None)
             name_mappings[salary_name] = {
                 'matched_to': None,
                 'score': None,
-                'nba_id': None
+                'nba_id': None,
+                'match_type': None
             }
     
     # Create new dataframe with matches
@@ -318,7 +345,7 @@ def standardize_names(df, name_column):
 
 # Apply the enhanced standardization
 
-salary=pd.read_csv('nba_salaries.csv')
+salary=pd.read_csv('salary.csv')
 option=pd.read_csv('option.csv')
 
 option_rename={}
@@ -347,6 +374,8 @@ merged = salary_standardized.merge(
 
 # Clean up the merged dataframe
 merged = merged.drop(['Player_y', 'standardized_name'], axis=1)
+
+print(merged)
 merged = merged.rename(columns={
     'original_name_x': 'Player',
     'original_name_y': 'matched_name'
@@ -415,12 +444,18 @@ print(unmatched['Player'].sort_values())
 # In[7]:
 
 
+unmatched
+
+
+# In[8]:
+
+
 merged.drop(columns='Player_x',inplace=True)
 merged.to_csv('salary_spread.csv')
 merged
 
 
-# In[8]:
+# In[9]:
 
 
 merged.columns

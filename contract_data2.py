@@ -123,30 +123,75 @@ def get_available_seasons(salary_df: pd.DataFrame) -> List[str]:
             available_seasons.append(season)
     return available_seasons
 
+import pandas as pd
+import re
+
+def clean_player_name(name: str) -> str:
+    """
+    Clean player name by removing duplicates.
+    Example: "Forrest Trent Forrest" -> "Trent Forrest"
+    """
+    parts = name.split()
+    # Remove duplicates while preserving order
+    unique_parts = []
+    for part in parts:
+        if part not in unique_parts:
+            unique_parts.append(part)
+    return " ".join(unique_parts)
+
+def process_salary_value2(value: str) -> float:
+    """
+    Process salary value from string format.
+    Example: "UFA / $2.1M1.5%" -> 2100000
+    Returns None for NaN values.
+    """
+    if pd.isna(value):
+        return None
+        
+    # Extract dollar amount if present
+    match = re.search(r'\$(\d+\.?\d*)M', value)
+    if match:
+        # Convert millions to actual value
+        return float(match.group(1)) * 1_000_000
+    return None
+
 def process_cap_holds(df: pd.DataFrame, team: str) -> pd.DataFrame:
     """
     Process cap holds table.
+    
+    Parameters:
+    df (pd.DataFrame): DataFrame containing player salary information
+    team (str): Team name to be added to the DataFrame
+    
+    Returns:
+    pd.DataFrame: Processed DataFrame with cleaned names and converted salary values
     """
     if df is None:
         return pd.DataFrame()
+        
+    df = df.copy()
+    
+    # Ensure column names are standardized
     df.columns = ['Player' if 'player' in col.lower() else col for col in df.columns]
-
-    # Rename columns if necessary
-    if 'Player' in df.columns:
-        df = df.copy()
-        
-        
-        # Clean player names
-        df['Player'] = df['Player'].apply(clean_player_name)
-        
-        # Process values
-        value_cols = [col for col in df.columns if col != 'Player']
-        for col in value_cols:
-            df[col] = df[col].apply(process_salary_value)
-        
-        df['Team'] = team
-        
-    return df
+    
+    # Clean player names
+    df['Player'] = df['Player'].apply(clean_player_name)
+    
+    # Identify salary columns (those containing year patterns like '2024-25')
+    salary_cols = [col for col in df.columns if re.match(r'\d{4}-\d{2}', str(col))]
+    
+    # Process salary values for each year column
+    for col in salary_cols:
+        df[col] = df[col].apply(process_salary_value2)
+    
+    # Add team column
+    df['Team'] = team
+    
+    # Reorder columns to put Team first, then Player, Pos, Age, followed by salary years
+    non_salary_cols = ['Team', 'Player', 'Pos', 'Age']
+    ordered_cols = non_salary_cols + [col for col in salary_cols if col in df.columns]
+    
+    return df[ordered_cols]
 
 def process_dead_money(df: pd.DataFrame, team: str) -> pd.DataFrame:
     """
@@ -378,6 +423,14 @@ option_df.to_csv('nba_options.csv', index=False)
 cap_holds_df.to_csv('nba_cap_holds.csv', index=False)
 dead_money_df.to_csv('nba_dead_money.csv', index=False)
 summary_df.to_csv('nba_summary.csv', index=False)
+
+
+salary_df.to_csv('../web_app/data/nba_salaries.csv', index=False)
+option_df.to_csv('../web_app/data/nba_options.csv', index=False)
+cap_holds_df.to_csv('../web_app/data/nba_cap_holds.csv', index=False)
+dead_money_df.to_csv('../web_app/data/nba_dead_money.csv', index=False)
+summary_df.to_csv('../web_app/data/nba_summary.csv', index=False)
+print(cap_holds_df)
 
 
 # In[2]:

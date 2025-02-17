@@ -34,6 +34,35 @@ import numpy as np
 
 import pandas as pd
 import re
+
+def clean_player_name(name: str) -> str:
+    """
+    Cleans player names by removing common suffixes (Jr., II, III, etc.) from the start
+    and standardizing format.
+    
+    Args:
+        name (str): Player name to clean
+        
+    Returns:
+        str: Cleaned player name
+    """
+    # List of common name suffixes to remove
+    suffixes = ['Jr.', 'Jr', 'II', 'III', 'IV', 'Sr.', 'Sr']
+    
+    # Split the name into parts
+    name_parts = name.split()
+    
+    # If the first part is a suffix, remove it
+    if name_parts and name_parts[0] in suffixes:
+        name_parts = name_parts[1:]
+    
+    # Rejoin the name parts
+    cleaned_name = ' '.join(name_parts)
+    
+    # Remove any double spaces
+    cleaned_name = ' '.join(cleaned_name.split())
+    
+    return cleaned_name
 def clean_seasonal_salaries(data, seasonlist,header='Dead Money'):
     """
     Cleans salary data for specified seasons within the Dead Money section
@@ -221,97 +250,56 @@ def team_books(team):
         "WAS": "https://www.spotrac.com/nba/washington-wizards/yearly"
     }
     
+ 
     url = nba_team_urls[team.upper()]    
-    data=get_team_data(url)
-
+    data = get_team_data(url)
 
     df = data['Upcoming Deadlines']
-
-  
-
     salary_df = data['Active Roster']
-    
-
-
 
     columns = ['Player']
     for col in salary_df.columns[1:]:
         columns.append(col)
-    #print(df.columns)
-    df.columns=['Deadline Date', 'Player', 'Type', 'Value']
-   
-    salary_df.columns =columns
-
     
-    salary_df['Player'] = salary_df['Player'].str.split(' ').str[1:].str.join(' ')
+    df.columns = ['Deadline Date', 'Player', 'Type', 'Value']
+    salary_df.columns = columns
 
-   
-    
-    #salary_df['Player'] = salary_df['Player'].str.replace('III ', '')
-    #salary_df['Player'] = salary_df['Player'].str.replace('II ', '')
-    seasons= ['2024-25','2025-26','2026-27','2027-28','2028-29']
-    extra_seasons = ['2029-30','2030-31']
+    # Clean player names in both DataFrames
+    salary_df['Player'] = salary_df['Player'].str.split(' ').str[1:].str.join(' ').apply(clean_player_name)
+    df['Player'] = df['Player'].apply(clean_player_name)
+
+    seasons = ['2024-25', '2025-26', '2026-27', '2027-28', '2028-29']
+    extra_seasons = ['2029-30', '2030-31']
     for seas in extra_seasons:
         if seas in salary_df.columns:
             seasons.append(seas)
-    # List of strings to check for
-    strings_to_check = ['UFA','RFA']
-    for season in seasons:
-        salary_df[season] = salary_df[season].fillna('')
-        
 
-
-
-
-        
-        #
-    
-    # Replace the value with 0 if any of the strings are present
-
+    strings_to_check = ['UFA', 'RFA']
     for season in seasons:
         salary_df[season] = salary_df[season].fillna('')
         salary_df[season] = salary_df[season].str.replace('Ext. Elig.', '', regex=False).str.strip()
         salary_df[season] = salary_df[season].apply(lambda x: '0' if any(s in x for s in strings_to_check) else x)
         salary_df[season] = salary_df[season].fillna('0')
-        
-        # Apply the new conversion function
         salary_df[season] = salary_df[season].apply(convert_salary_string)
-
-
         salary_df[season] = salary_df[season].str.replace(r'\D', '', regex=True)
-        
-        salary_df[season] = salary_df[season].replace('',0)
+        salary_df[season] = salary_df[season].replace('', 0)
 
-
-    
-
-    
     if 'Dead Money' in data.keys():
-        seasonlist=['2024-25','2025-26','2026-27','2027-28','2028-29','2029-30']
-
+        seasonlist = ['2024-25', '2025-26', '2026-27', '2027-28', '2028-29', '2029-30']
         dead = clean_seasonal_salaries(data, seasonlist)
-
-
-        alldead=pd.DataFrame()
+        alldead = pd.DataFrame()
         
-       
-      
         for season in seasonlist:
             if season in dead.columns:
-                alldead[season]=[dead[season].sum()]
+                alldead[season] = [dead[season].sum()]
         alldead['Player'] = ['Dead Cap']
-
         alldead.reset_index(inplace=True)
+        salary_df = pd.concat([salary_df, alldead])
 
-        salary_df=pd.concat([salary_df,alldead])
-        
-
-    #salary_df = pd.concat([salary_df,cap_hold]).reset_index(drop=True)
     players = salary_df['Player'].unique()
-    data=[]
+    data = []
 
     for player in players:
-    
         player_data = df[df['Player'] == player]
         row = {'Player': player}
         for season in seasons:
@@ -319,44 +307,33 @@ def team_books(team):
                 row[season] = 0
                 season_data = player_data[player_data['Type'].str.contains(season)]
                 if not season_data.empty:
-        
                     if 'PLAYER' in season_data['Type'].values[0]:
                         row[season] = 'P'
-                    elif 'CLUB' in  season_data['Type'].values[0]:
+                    elif 'CLUB' in season_data['Type'].values[0]:
                         row[season] = 'T'
                     elif 'GUARANTEED' in season_data['Type'].values[0]:
-                        row[season]='NG'
+                        row[season] = 'NG'
                     elif 'EXTENSION' in season_data['Type'].values[0]:
-                        row[season]='EE'
+                        row[season] = 'EE'
                     elif 'RFA' in season_data['Type'].values[0]:
-                        row[season]='RFA'
+                        row[season] = 'RFA'
                     elif 'UNREST' in season_data['Type'].values[0]:
-                        row[season]='UFA'
+                        row[season] = 'UFA'
                     else:
-                    
                         row[season] = season_data['Type'].values[0] + (' ' + season_data['Value'].values[0] if not pd.isna(season_data['Value'].values[0]) else '')
                 data.append(row)
-            
-    
-    
-    # Display the new organized DataFrame
-    new_df = pd.DataFrame(columns=['Player'] + seasons,data=data)
-    new_df=new_df.drop_duplicates().reset_index(drop=True)
-    salary_df=salary_df.drop_duplicates().reset_index(drop=True)
 
-    #new_df = pd.concat([new_df,cap_options]).reset_index(drop=True)
+    new_df = pd.DataFrame(columns=['Player'] + seasons, data=data)
+    new_df = new_df.drop_duplicates().reset_index(drop=True)
+    salary_df = salary_df.drop_duplicates().reset_index(drop=True)
+
     for season in seasons:
         salary_df[season] = salary_df[season].astype(float)
 
-    #salary_df['Team']='GSW'
-    #new_df['Team']='GSW'
-    
+    salary_df['Team'] = team
+    new_df['Team'] = team
 
-    
-    salary_df['Team']=team
-    new_df['Team']=team
-
-    return salary_df,new_df
+    return salary_df, new_df
 teams = ['ATL', 'BOS', 'BKN', 'CHA', 'CHI', 'CLE', 'DAL', 'DEN', 'DET', 'GSW', 'HOU', 'IND', 'LAC', 'LAL', 'MEM', 'MIA', 'MIL', 'MIN', 'NOP', 'NYK', 'OKC', 'ORL', 'PHI', 'PHX', 'POR', 'SAC', 'SAS', 'TOR', 'UTA', 'WAS']
 #teams=['MIA']
 salary=[]
