@@ -72,7 +72,7 @@ Damion Baugh,0,0,RFA,0,0,0,,CHA
 Wendell Moore Jr.,0,RFA,0,0,0,0,,CHA
 K.J. Simpson,0,0,RFA,0,0,0,,CHA
 Dead Cap,0,0,0,0,0,0,,CHA
-Lonzo Ball,0,0,0,EE,0,0,,CHI
+Lonzo Ball,0,0,T,EE,0,0,,CHI
 Nikola Vucevic,0,EE,0,0,0,0,,CHI
 Patrick Williams,0,0,0,EE,P,0,,CHI
 Kevin Huerter,0,0,0,0,0,0,,CHI
@@ -89,7 +89,7 @@ Talen Horton-Tucker,0,0,0,0,0,0,,CHI
 Julian Phillips,0,0,T,0,0,0,,CHI
 E.J. Liddell,0,RFA,0,0,0,0,,CHI
 Emanuel Miller,0,RFA,0,0,0,0,,CHI
-Adama Sanogo,0,RFA,0,0,0,0,,CHI
+Jahmir Young,0,RFA,0,0,0,0,,CHI
 Dead Cap,0,0,0,0,0,0,,CHI
 Darius Garland,0,EE,0,0,0,0,0.0,CLE
 Donovan Mitchell,0,0,0,P,0,0,0.0,CLE
@@ -175,6 +175,8 @@ Brandin Podziemski,0,0,T,RFA,0,,,GSW
 Trayce Jackson-Davis,0,NG,T,0,0,,,GSW
 Gui Santos,0,T,RFA,0,0,,,GSW
 Quinten Post,0,T,RFA,0,0,,,GSW
+Kevin Knox,0,0,0,0,0,,,GSW
+Yuri Collins,0,0,0,0,0,,,GSW
 Jackson Rowe,0,0,RFA,0,0,,,GSW
 Pat Spencer,0,RFA,0,0,0,,,GSW
 Fred VanVleet,0,T,0,0,0,0,0.0,HOU
@@ -335,7 +337,6 @@ Trey Murphy III,0,RFA,0,EE,0,0,,NOP
 Jordan Hawkins,0,0,T,RFA,0,0,,NOP
 Yves Missi,0,0,T,T,RFA,0,,NOP
 Jeremiah Robinson-Earl,0,0,0,0,0,0,,NOP
-Javonte Green,0,0,0,0,0,0,,NOP
 Jose Alvarado,0,0,P,0,0,0,,NOP
 Karlo Matkovic,0,0,T,RFA,0,0,,NOP
 Antonio Reeves,0,NG,T,RFA,0,0,,NOP
@@ -466,7 +467,6 @@ Keon Ellis,0,T,0,0,0,,,SAC
 Doug McDermott,0,0,0,0,0,,,SAC
 Jae Crowder,0,0,0,0,0,,,SAC
 Markelle Fultz,0,0,0,0,0,,,SAC
-Daishen Nix,0,0,0,0,0,,,SAC
 Isaiah Crawford,0,RFA,0,0,0,,,SAC
 Isaac Jones,0,RFA,0,0,0,,,SAC
 Mason Jones,0,RFA,0,0,0,,,SAC
@@ -504,6 +504,7 @@ Garrett Temple,0,0,0,0,0,0,0.0,TOR
 Jonathan Mogbo,0,0,T,RFA,0,0,0.0,TOR
 Jamal Shead,0,0,T,RFA,0,0,0.0,TOR
 Jamison Battle,0,NG,NG,RFA,0,0,0.0,TOR
+Jared Rhoden,0,0,0,0,0,0,0.0,TOR
 Ulrich Chomche,0,0,RFA,0,0,0,0.0,TOR
 A.J. Lawson,0,RFA,0,0,0,0,0.0,TOR
 Orlando Robinson,0,RFA,0,0,0,0,0.0,TOR
@@ -540,7 +541,7 @@ Kyshawn George,0,0,T,T,RFA,0,,WAS
 AJ Johnson,0,0,T,T,RFA,0,,WAS
 Anthony Gill,0,NG,0,0,0,0,,WAS
 Colby Jones,0,NG,T,0,0,0,,WAS
-Jaylen Nowell,0,0,0,0,0,0,,WAS
+Erik Stevenson,0,0,0,0,0,0,,WAS
 Justin Champagnie,RFA,0,0,0,0,0,,WAS
 Jaylen Martin,0,0,RFA,0,0,0,,WAS
 Tristan Vukcevic,0,RFA,0,0,0,0,,WAS

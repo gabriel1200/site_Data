@@ -17,7 +17,7 @@ python contract_data2.py
 
 python make_index.py
 python salary2.py
-
+python price.py
 git add --all
 git commit -m 'Daily Update'
 git push origin master
