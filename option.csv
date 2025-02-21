@@ -36,7 +36,6 @@ Drew Peterson,0,RFA,0,0,0,0,0.0,BOS
 Anton Watson,0,RFA,0,0,0,0,0.0,BOS
 Nicolas Claxton,0,0,EE,0,0,,,BKN
 Cameron Johnson,0,EE,0,0,0,,,BKN
-Bojan Bogdanovic,0,0,0,0,0,,,BKN
 D'Angelo Russell,0,0,0,0,0,,,BKN
 De'Anthony Melton,0,0,0,0,0,,,BKN
 Ziaire Williams,0,RFA,0,0,0,,,BKN
@@ -48,9 +47,10 @@ Trendon Watford,0,0,0,0,0,,,BKN
 Keon Johnson,0,T,0,0,0,,,BKN
 Maxwell Lewis,0,NG,T,0,0,,,BKN
 Jalen Wilson,0,T,NG,0,0,,,BKN
+Tyrese Martin,0,T,RFA,0,0,,,BKN
+Killian Hayes,0,0,0,0,0,,,BKN
 Reece Beekman,0,RFA,0,0,0,,,BKN
 Tosan Evbuomwan,0,0,0,0,0,,,BKN
-Tyrese Martin,0,RFA,0,0,0,,,BKN
 Dead Cap,0,0,0,0,0,,,BKN
 LaMelo Ball,0,0,EE,0,0,0,,CHA
 Miles Bridges,0,0,EE,0,0,0,,CHA
@@ -89,7 +89,7 @@ Talen Horton-Tucker,0,0,0,0,0,0,,CHI
 Julian Phillips,0,0,T,0,0,0,,CHI
 E.J. Liddell,0,RFA,0,0,0,0,,CHI
 Emanuel Miller,0,RFA,0,0,0,0,,CHI
-Jahmir Young,0,RFA,0,0,0,0,,CHI
+Jahmir Young,0,0,RFA,0,0,0,,CHI
 Dead Cap,0,0,0,0,0,0,,CHI
 Darius Garland,0,EE,0,0,0,0,0.0,CLE
 Donovan Mitchell,0,0,0,P,0,0,0.0,CLE
@@ -104,6 +104,7 @@ Ty Jerome,0,0,0,0,0,0,0.0,CLE
 Sam Merrill,0,0,0,0,0,0,0.0,CLE
 Tristan Thompson,0,0,0,0,0,0,0.0,CLE
 Craig Porter Jr.,0,NG,EE,0,0,0,0.0,CLE
+Nae'qwan Tomlin,0,0,0,0,0,0,0.0,CLE
 Emoni Bates,0,RFA,0,0,0,0,0.0,CLE
 JT Thor,0,0,0,0,0,0,0.0,CLE
 Luke Travers,0,RFA,0,0,0,0,0.0,CLE
@@ -122,6 +123,7 @@ Dante Exum,0,0,0,0,0,,,DAL
 Olivier-Maxence Prosper,0,0,T,RFA,0,,,DAL
 Spencer Dinwiddie,0,0,0,0,0,,,DAL
 Jaden Hardy,0,RFA,0,T,0,,,DAL
+Moses Brown,0,0,0,0,0,,,DAL
 Kessler Edwards,0,RFA,0,0,0,,,DAL
 Kylor Kelley,RFA,0,0,0,0,,,DAL
 Brandon Williams,0,RFA,0,0,0,,,DAL
@@ -523,6 +525,7 @@ Kyle Filipowski,0,0,NG,T,0,0,,UTA
 Walker Kessler,0,EE,RFA,0,0,0,,UTA
 Brice Sensabaugh,0,0,T,RFA,0,0,,UTA
 Isaiah Collier,0,0,T,T,RFA,0,,UTA
+Jaden Springer,0,0,0,0,0,0,,UTA
 Elijah Harkless,0,0,0,0,0,0,,UTA
 Micah Potter,0,RFA,0,0,0,0,,UTA
 Oscar Tshiebwe,0,RFA,0,0,0,0,,UTA
