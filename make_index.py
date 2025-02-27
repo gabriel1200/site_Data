@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[ ]:
 
 
 import requests
@@ -100,6 +100,7 @@ search_dict={
     "dadiepa01": 1642359,
     "cuiyo01": 1642385,
     "dasiltr01": 1641783,
+    "shannte01":1630545
 
 }
 match_dict.update(search_dict)
@@ -118,6 +119,7 @@ player_names = dict(zip(players_list['DISPLAY_FIRST_LAST'],players_list['PERSON_
 
 notfound=index_frame[index_frame.year==2025].reset_index(drop=True)
 notfound=index_frame[index_frame.nba_id.isna()].reset_index(drop=True)
+print(notfound)
 notfound['nba_id']=notfound['player'].map(player_names)
 notfound.dropna(inplace=True)
 index_frame.dropna(inplace=True)
