@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
+# In[7]:
 
 
 import requests
@@ -162,7 +162,7 @@ new_scoring.to_csv('totals.csv',index=False)
 new_scoring[new_scoring.nba_id==2544]
 
 
-# In[2]:
+# In[8]:
 
 
 def pull_bref_score(ps=False,totals=False):
@@ -236,7 +236,8 @@ search_dict={
     "dadiepa01": 1642359,
     "cuiyo01": 1642385,
     "dasiltr01": 1641783,
-    "salauti01":1642275
+    "salauti01":1642275,
+    "shannte01":1630545
 
 }
 match_dict.update(search_dict)
@@ -304,7 +305,7 @@ ps_gp.to_csv('../player_sheets/lineups/ps_games.csv',index=False)
 ps_gp.to_csv('../extra_data/wowy_leverage/ps_games.csv',index=False)
 
 
-# In[3]:
+# In[9]:
 
 
 scoring=pd.read_csv('scoring.csv')
