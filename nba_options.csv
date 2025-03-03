@@ -13,6 +13,7 @@ Bufkin Kobe,0,0,0,0,0,0.0,0.0,ATL
 Mathews Garrison,0,0,0,0,0,0.0,0.0,ATL
 Krejci Vit,0,0,0,0,0,0.0,0.0,ATL
 Gueye Mouhamed,0,0,0,0,0,0.0,0.0,ATL
+Harris Kevon,0,0,0,0,0,0.0,0.0,ATL
 Barlow Dominick,0,0,0,0,0,0.0,0.0,ATL
 Plowden Daeqwon,0,0,0,0,0,0.0,0.0,ATL
 Wallace Keaton,0,0,0,0,0,0.0,0.0,ATL
@@ -67,6 +68,7 @@ Curry Seth,0,0,0,0,0,0.0,,CHA
 Gibson Taj,0,0,0,0,0,0.0,,CHA
 Diabate Moussa,0,0,0,0,0,0.0,,CHA
 Payton Elfrid,0,0,0,0,0,0.0,,CHA
+Flynn Malachi,0,0,0,0,0,0.0,,CHA
 Baugh Damion,0,0,0,0,0,0.0,,CHA
 Moore Jr. Wendell,0,0,0,0,0,0.0,,CHA
 Simpson K.J.,0,0,0,0,0,0.0,,CHA
@@ -104,7 +106,6 @@ Porter Jr. Craig,0,0,0,0,0,0.0,0.0,CLE
 Green Javonte,0,0,0,0,0,0.0,0.0,CLE
 Tomlin Nae'qwan,0,0,0,0,0,0.0,0.0,CLE
 Bates Emoni,0,0,0,0,0,0.0,0.0,CLE
-Thor JT,0,0,0,0,0,0.0,0.0,CLE
 Travers Luke,0,0,0,0,0,0.0,0.0,CLE
 Davis Anthony,0,0,0,0,0,,,DAL
 Irving Kyrie,0,0,0,0,0,,,DAL
@@ -173,7 +174,6 @@ Jackson-Davis Trayce,0,0,0,0,0,,,GSW
 Santos Gui,0,0,0,0,0,,,GSW
 Post Quinten,0,0,0,0,0,,,GSW
 Knox Kevin,0,0,0,0,0,,,GSW
-Collins Yuri,0,0,0,0,0,,,GSW
 Armstrong Taran,0,0,0,0,0,,,GSW
 Rowe Jackson,0,0,0,0,0,,,GSW
 Spencer Pat,0,0,0,0,0,,,GSW
@@ -222,14 +222,14 @@ Dunn Kris,0,0,0,0,0,,,LAC
 Eubanks Drew,0,0,0,0,0,,,LAC
 Batum Nicolas,0,0,0,0,0,,,LAC
 Coffey Amir,0,0,0,0,0,,,LAC
-Beauchamp MarJon,0,0,0,0,0,,,LAC
 Brown Kobe,0,0,0,0,0,,,LAC
 Mills Patty,0,0,0,0,0,,,LAC
 Christie Cameron,0,0,0,0,0,,,LAC
 Simmons Ben,0,0,0,0,0,,,LAC
-Flowers Trentyn,0,0,0,0,0,,,LAC
-Jones Kai,0,0,0,0,0,,,LAC
 Miller Jordan,0,0,0,0,0,,,LAC
+Baldwin Jr. Patrick,0,0,0,0,0,,,LAC
+Flowers Trentyn,0,0,0,0,0,,,LAC
+Lundy Seth,0,0,0,0,0,,,LAC
 James LeBron,0,0,0,0,0,,,LAL
 Doncic Luka,0,0,0,0,0,,,LAL
 Hachimura Rui,0,0,0,0,0,,,LAL
@@ -335,7 +335,6 @@ Reeves Antonio,0,0,0,0,0,0.0,,NOP
 Boston Jr Brandon,0,0,0,0,0,0.0,,NOP
 Brooks Jr. Keion,0,0,0,0,0,0.0,,NOP
 Cain Jamal,0,0,0,0,0,0.0,,NOP
-Crutcher Jalen,0,0,0,0,0,0.0,,NOP
 Towns Karl-Anthony,0,0,0,0,0,0.0,,NYK
 Anunoby OG,0,0,0,0,0,0.0,,NYK
 Brunson Jalen,0,0,0,0,0,0.0,,NYK
@@ -406,8 +405,8 @@ Butler Jared,0,0,0,0,0,0.0,,PHI
 Edwards Justin,0,0,0,0,0,0.0,,PHI
 Okeke Chuma,0,0,0,0,0,0.0,,PHI
 Dowtin Jeff,0,0,0,0,0,0.0,,PHI
+Hood-Schifino Jalen,0,0,0,0,0,0.0,,PHI
 Reese Alex,0,0,0,0,0,0.0,,PHI
-Roddy David,0,0,0,0,0,0.0,,PHI
 Durant Kevin,0,0,0,0,0,0.0,0.0,PHX
 Beal Bradley,0,0,0,0,0,0.0,0.0,PHX
 Booker Devin,0,0,0,0,0,0.0,0.0,PHX
@@ -458,8 +457,8 @@ McDermott Doug,0,0,0,0,0,,,SAC
 Crowder Jae,0,0,0,0,0,,,SAC
 Fultz Markelle,0,0,0,0,0,,,SAC
 Crawford Isaiah,0,0,0,0,0,,,SAC
-Jones Mason,0,0,0,0,0,,,SAC
 Jones Isaac,0,0,0,0,0,,,SAC
+Jones Mason,0,0,0,0,0,,,SAC
 Fox De'Aaron,0,0,0,0,0,0.0,,SAS
 Vassell Devin,0,0,0,0,0,0.0,,SAS
 Johnson Keldon,0,0,0,0,0,0.0,,SAS
@@ -491,7 +490,6 @@ Temple Garrett,0,0,0,0,0,0.0,0.0,TOR
 Mogbo Jonathan,0,0,0,0,0,0.0,0.0,TOR
 Shead Jamal,0,0,0,0,0,0.0,0.0,TOR
 Battle Jamison,0,0,0,0,0,0.0,0.0,TOR
-Rhoden Jared,0,0,0,0,0,0.0,0.0,TOR
 Chomche Ulrich,0,0,0,0,0,0.0,0.0,TOR
 Lawson A.J.,0,0,0,0,0,0.0,0.0,TOR
 Robinson Orlando,0,0,0,0,0,0.0,0.0,TOR

@@ -13,6 +13,7 @@ Kobe Bufkin,0,0,T,RFA,0,0,0.0,ATL
 Garrison Mathews,0,0,0,0,0,0,0.0,ATL
 Vit Krejci,0,NG,EE,T,0,0,0.0,ATL
 Mouhamed Gueye,0,EE,T,0,0,0,0.0,ATL
+Kevon Harris,0,0,0,0,0,0,0.0,ATL
 Dominick Barlow,0,RFA,0,0,0,0,0.0,ATL
 Daeqwon Plowden,0,0,RFA,0,0,0,0.0,ATL
 Keaton Wallace,0,RFA,0,0,0,0,0.0,ATL
@@ -69,6 +70,7 @@ Seth Curry,0,0,0,0,0,0,,CHA
 Taj Gibson,0,0,0,0,0,0,,CHA
 Moussa Diabate,0,RFA,NG,0,0,0,,CHA
 Elfrid Payton,0,0,0,0,0,0,,CHA
+Malachi Flynn,0,0,0,0,0,0,,CHA
 Damion Baugh,0,0,RFA,0,0,0,,CHA
 Wendell Moore Jr.,0,RFA,0,0,0,0,,CHA
 K.J. Simpson,0,0,RFA,0,0,0,,CHA
@@ -108,7 +110,6 @@ Craig Porter Jr.,0,NG,EE,0,0,0,0.0,CLE
 Javonte Green,0,0,0,0,0,0,0.0,CLE
 Nae'qwan Tomlin,0,0,0,0,0,0,0.0,CLE
 Emoni Bates,0,RFA,0,0,0,0,0.0,CLE
-JT Thor,0,0,0,0,0,0,0.0,CLE
 Luke Travers,0,RFA,0,0,0,0,0.0,CLE
 Dead Cap,0,0,0,0,0,0,0.0,CLE
 Anthony Davis,0,0,0,0,0,,,DAL
@@ -180,10 +181,10 @@ Trayce Jackson-Davis,0,NG,T,0,0,,,GSW
 Gui Santos,0,T,RFA,0,0,,,GSW
 Quinten Post,0,T,RFA,0,0,,,GSW
 Kevin Knox,0,0,0,0,0,,,GSW
-Yuri Collins,0,0,0,0,0,,,GSW
 Taran Armstrong,0,RFA,0,0,0,,,GSW
 Jackson Rowe,0,0,RFA,0,0,,,GSW
 Pat Spencer,0,RFA,0,0,0,,,GSW
+Dead Cap,0,0,0,0,0,,,GSW
 Fred VanVleet,0,T,0,0,0,0,0.0,HOU
 Dillon Brooks,0,EE,0,0,0,0,0.0,HOU
 Steven Adams,0,0,0,0,0,0,0.0,HOU
@@ -231,14 +232,14 @@ Kris Dunn,0,0,NG,0,0,,,LAC
 Drew Eubanks,0,0,0,0,0,,,LAC
 Nicolas Batum,0,P,0,0,0,,,LAC
 Amir Coffey,0,0,0,0,0,,,LAC
-MarJon Beauchamp,0,0,0,0,0,,,LAC
 Kobe Brown,0,0,EE,T,0,,,LAC
 Patty Mills,0,0,0,0,0,,,LAC
 Cameron Christie,0,0,NG,T,0,,,LAC
 Ben Simmons,0,0,0,0,0,,,LAC
-Trentyn Flowers,0,RFA,0,0,0,,,LAC
-Kai Jones,0,RFA,0,0,0,,,LAC
 Jordan Miller,0,RFA,0,0,0,,,LAC
+Patrick Baldwin Jr.,0,RFA,0,0,0,,,LAC
+Trentyn Flowers,0,RFA,0,0,0,,,LAC
+Seth Lundy,0,RFA,0,0,0,,,LAC
 Dead Cap,0,0,0,0,0,,,LAC
 LeBron James,0,P,0,0,0,,,LAL
 Luka Doncic,0,EE,P,0,0,,,LAL
@@ -348,7 +349,6 @@ Antonio Reeves,0,NG,T,RFA,0,0,,NOP
 Brandon Boston Jr,0,0,0,0,0,0,,NOP
 Keion Brooks Jr.,0,RFA,0,0,0,0,,NOP
 Jamal Cain,0,0,0,0,0,0,,NOP
-Jalen Crutcher,0,RFA,0,0,0,0,,NOP
 Dead Cap,0,0,0,0,0,0,,NOP
 Karl-Anthony Towns,0,EE,0,P,0,0,,NYK
 OG Anunoby,0,0,0,EE,P,0,,NYK
@@ -422,8 +422,8 @@ Jared Butler,0,T,0,0,0,0,,PHI
 Justin Edwards,0,T,RFA,0,0,0,,PHI
 Chuma Okeke,0,0,0,0,0,0,,PHI
 Jeff Dowtin,0,RFA,0,0,0,0,,PHI
+Jalen Hood-Schifino,0,RFA,0,0,0,0,,PHI
 Alex Reese,0,0,RFA,0,0,0,,PHI
-David Roddy,0,RFA,0,0,0,0,,PHI
 Dead Cap,0,0,0,0,0,0,,PHI
 Kevin Durant,0,0,0,0,0,0,0.0,PHX
 Bradley Beal,0,EE,P,0,0,0,0.0,PHX
@@ -477,8 +477,8 @@ Doug McDermott,0,0,0,0,0,,,SAC
 Jae Crowder,0,0,0,0,0,,,SAC
 Markelle Fultz,0,0,0,0,0,,,SAC
 Isaiah Crawford,0,RFA,0,0,0,,,SAC
-Mason Jones,0,RFA,0,0,0,,,SAC
 Isaac Jones,0,RFA,0,0,0,,,SAC
+Mason Jones,0,RFA,0,0,0,,,SAC
 Dead Cap,0,0,0,0,0,,,SAC
 De'Aaron Fox,0,0,0,0,0,0,,SAS
 Devin Vassell,0,0,EE,0,0,0,,SAS
@@ -512,7 +512,6 @@ Garrett Temple,0,0,0,0,0,0,0.0,TOR
 Jonathan Mogbo,0,0,T,RFA,0,0,0.0,TOR
 Jamal Shead,0,0,T,RFA,0,0,0.0,TOR
 Jamison Battle,0,NG,NG,RFA,0,0,0.0,TOR
-Jared Rhoden,0,0,0,0,0,0,0.0,TOR
 Ulrich Chomche,0,0,RFA,0,0,0,0.0,TOR
 A.J. Lawson,0,RFA,0,0,0,0,0.0,TOR
 Orlando Robinson,0,RFA,0,0,0,0,0.0,TOR
