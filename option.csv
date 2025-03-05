@@ -13,9 +13,10 @@ Kobe Bufkin,0,0,T,RFA,0,0,0.0,ATL
 Garrison Mathews,0,0,0,0,0,0,0.0,ATL
 Vit Krejci,0,NG,EE,T,0,0,0.0,ATL
 Mouhamed Gueye,0,EE,T,0,0,0,0.0,ATL
-Kevon Harris,0,0,0,0,0,0,0.0,ATL
 Dominick Barlow,0,RFA,0,0,0,0,0.0,ATL
+Kevon Harris,0,0,0,0,0,0,0.0,ATL
 Daeqwon Plowden,0,0,RFA,0,0,0,0.0,ATL
+Jacob Toppin,0,RFA,0,0,0,0,0.0,ATL
 Keaton Wallace,0,RFA,0,0,0,0,0.0,ATL
 Dead Cap,0,0,0,0,0,0,0.0,ATL
 Jaylen Brown,0,0,EE,0,0,0,0.0,BOS
@@ -33,6 +34,7 @@ Luke Kornet,0,0,0,0,0,0,0.0,BOS
 Jordan Walsh,0,NG,T,0,0,0,0.0,BOS
 Torrey Craig,0,0,0,0,0,0,0.0,BOS
 J.D. Davison,0,RFA,0,0,0,0,0.0,BOS
+Miles Norris,0,RFA,0,0,0,0,0.0,BOS
 Drew Peterson,0,RFA,0,0,0,0,0.0,BOS
 Nicolas Claxton,0,0,EE,0,0,,,BKN
 Cameron Johnson,0,EE,0,0,0,,,BKN
@@ -49,7 +51,6 @@ Maxwell Lewis,0,NG,T,0,0,,,BKN
 Jalen Wilson,0,T,NG,0,0,,,BKN
 Tyrese Martin,0,T,RFA,0,0,,,BKN
 Reece Beekman,0,RFA,0,0,0,,,BKN
-Kendall Brown,0,RFA,0,0,0,,,BKN
 Tosan Evbuomwan,0,0,0,0,0,,,BKN
 Dead Cap,0,0,0,0,0,,,BKN
 LaMelo Ball,0,0,EE,0,0,0,,CHA
@@ -177,10 +178,11 @@ Brandin Podziemski,0,0,T,RFA,0,,,GSW
 Trayce Jackson-Davis,0,NG,T,0,0,,,GSW
 Gui Santos,0,T,RFA,0,0,,,GSW
 Quinten Post,0,T,RFA,0,0,,,GSW
+Pat Spencer,0,RFA,0,0,0,,,GSW
 Kevin Knox,0,0,0,0,0,,,GSW
 Taran Armstrong,0,RFA,0,0,0,,,GSW
+Braxton Key,0,RFA,0,0,0,,,GSW
 Jackson Rowe,0,0,RFA,0,0,,,GSW
-Pat Spencer,0,RFA,0,0,0,,,GSW
 Dead Cap,0,0,0,0,0,,,GSW
 Fred VanVleet,0,T,0,0,0,0,0.0,HOU
 Dillon Brooks,0,EE,0,0,0,0,0.0,HOU
@@ -306,9 +308,10 @@ AJ Green,0,EE,0,0,0,,,MIL
 Jericho Sims,0,0,0,0,0,,,MIL
 Taurean Prince,0,0,0,0,0,,,MIL
 Gary Trent Jr.,0,0,0,0,0,,,MIL
-Andre Jackson Jr.,0,EE,T,0,0,,,MIL
+Andre Jackson Jr.,0,NG,T,0,0,,,MIL
 Chris Livingston,0,EE,T,0,0,,,MIL
 Tyler Smith,0,0,EE,NG,0,,,MIL
+Jamaree Bouyea,0,RFA,0,0,0,,,MIL
 Pete Nance,0,0,RFA,0,0,,,MIL
 Ryan Rollins,0,RFA,0,0,0,,,MIL
 Stanley Umude,0,RFA,0,0,0,,,MIL
@@ -363,8 +366,10 @@ Tyler Kolek,0,0,EE,T,0,0,,NYK
 Pacome Dadiet,0,0,T,T,RFA,0,,NYK
 Landry Shamet,0,0,0,0,0,0,,NYK
 Ariel Hukporti,0,T,RFA,0,0,0,,NYK
+MarJon Beauchamp,0,RFA,0,0,0,0,,NYK
 Boo Buie,0,RFA,0,0,0,0,,NYK
 Kevin McCullar Jr.,RFA,0,0,0,0,0,,NYK
+Anton Watson,0,RFA,0,0,0,0,,NYK
 Dead Cap,0,0,0,0,0,0,,NYK
 Shai Gilgeous-Alexander,0,EE,0,0,0,0,,OKC
 Isaiah Hartenstein,0,0,T,0,0,0,,OKC
@@ -511,9 +516,10 @@ Garrett Temple,0,0,0,0,0,0,0.0,TOR
 Jonathan Mogbo,0,0,T,RFA,0,0,0.0,TOR
 Jamal Shead,0,0,T,RFA,0,0,0.0,TOR
 Jamison Battle,0,NG,NG,RFA,0,0,0.0,TOR
+Orlando Robinson,0,RFA,0,0,0,0,0.0,TOR
 Ulrich Chomche,0,0,RFA,0,0,0,0.0,TOR
 A.J. Lawson,0,RFA,0,0,0,0,0.0,TOR
-Orlando Robinson,0,RFA,0,0,0,0,0.0,TOR
+Jared Rhoden,0,RFA,0,0,0,0,0.0,TOR
 Dead Cap,0,0,0,0,0,0,0.0,TOR
 Lauri Markkanen,0,0,0,EE,0,0,,UTA
 John Collins,0,P,0,0,0,0,,UTA
