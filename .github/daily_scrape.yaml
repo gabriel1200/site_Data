@@ -1,0 +1,85 @@
+name: Convert and Run Notebooks
+
+on:
+  schedule:
+    # Runs at 2:00 AM UTC every day
+    - cron: '0 13 * * *'
+  # Allow manual triggering
+  workflow_dispatch:
+
+jobs:
+  process-notebooks:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install jupyter nbconvert
+        pip install -r requirements.txt 
+        
+    - name: Convert Jupyter notebooks to Python scripts
+      run: |
+        cd game_report
+        jupyter nbconvert --to script game_report_scrape.ipynb
+        jupyter nbconvert --to script pbp_gamelogs.ipynb
+        cd ..
+        
+        cd teamgame_report
+        jupyter nbconvert --to script teamgame_report_scrape.ipynb
+        cd ..
+        
+        cd team_totals
+        jupyter nbconvert --to script team_average_scrape.ipynb
+        cd ..
+        
+        cd gen_totals
+        jupyter nbconvert --to script averages_scrape.ipynb
+        jupyter nbconvert --to script gen_totals.ipynb
+        cd ..
+        
+        cd lineups
+        jupyter nbconvert --to script lineups.ipynb
+        cd ..
+        
+    - name: Run Python scripts
+      run: |
+        cd game_report
+        python game_report_scrape.py
+        python pbp_gamelogs.py
+        cd ..
+        
+        cd team_totals
+        python team_average_scrape.py
+        cp team_averages.csv ../teamgame_report/team_averages.csv
+        cp team_averages_ps.csv ../teamgame_report/team_averages_ps.csv
+        cd ..
+        
+        cd gen_totals
+        python averages_scrape.py
+        python gen_totals.py
+        cd ..
+        
+        cd teamgame_report
+        python teamgame_report_scrape.py
+        cd ..
+        
+        cd lineups
+        python lineups.py
+        cd ..
+        
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git add .
+        git commit -m "Auto update data files" || echo "No changes to commit"
+        git push

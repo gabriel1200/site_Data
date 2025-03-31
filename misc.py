@@ -5,7 +5,7 @@
 
 
 import pandas as pd
-from selenium import webdriver
+#from selenium import webdriver
 from bs4 import BeautifulSoup
 from pathlib import Path
 import requests
@@ -52,37 +52,15 @@ def check_exists_by_xpath(driver, xpath):
         return False
     return True
 #url_list = [cs,pullup]
-def get_tables(url_list):
-    xpath = '//*[@id="__next"]/div[2]/div[2]/div[3]/section[2]/div/div[2]/div[3]/table'
-    data = []
-    options = webdriver.FirefoxOptions()
-    driver = webdriver.Firefox(options=options)
 
-    for url in url_list:
-        print(url)
-        
-        driver.get(url)
-        element = WebDriverWait(driver, 10).until(
-        EC.presence_of_element_located((By.XPATH, xpath)))
-        # Wait for the page to fully load
-        driver.implicitly_wait(20)
-        '''if check_exists_by_xpath(driver, "//a[contains(text(),'>')]/preceding-sibling::a[1]"):
-            number_of_pages = int(driver.find_element(By.XPATH, "//a[contains(text(),'>')]/preceding-sibling::a[1]").text)
-            print(number_of_pages)'''
-        # Step 2: Parse HTML code and grab tables with Beautiful Soup
-        soup = BeautifulSoup(driver.page_source, 'lxml')
-
-        tables = soup.find_all('table')
-
-        # Step 3: Read tables with Pandas read_html()
-        dfs = pd.read_html(str(tables))
-
-        df= dfs[-1]
-
-        data.append(df)
-    driver.close()
-    return data
-def get_playtypes(years,ps= False):
+def get_playtypes(years,ps= False,p_or_t='t',defense= False):
+    field_side = "offensive"
+    if defense == True:
+        field_side= "defensive"
+    if p_or_t =='p':
+        type ='P'
+    else:
+        type='T'
     stype = "Regular+Season"
     trail =''
     if ps == True:
@@ -100,44 +78,187 @@ def get_playtypes(years,ps= False):
     }
     playtypes = ['Transition','PRBallHandler','Spotup','Isolation','PRRollman','Postup','Misc','OffRebound','Cut','Handoff','OffScreen',]
     terms = ['trans.csv','bh.csv','spotup.csv','iso.csv','rollman.csv','postup.csv','misc.csv','putback.csv','cut.csv','handoff.csv','offscreen.csv']
+    plays = ['tran','pr_ball','spot','iso','pr_roll','post','misc','oreb','cut','hand_off','off_screen']
 
+    frames = []
+    data_columns= ['TEAM', 'GP', 'POSS', 'FREQ%', 'PPP', 'PTS', 'FGM', 'FGA', 'FG%',
+       'EFG%', 'FTFREQ%', 'TOVFREQ%', 'SFFREQ%', 'AND ONEFREQ%', 'SCOREFREQ%',
+       'PERCENTILE']
+    if type =="P":
+        data_columns= ['PLAYER_NAME','PLAYER_ID','TEAM','TEAM_ID', 'GP', 'POSS', 'FREQ%',
+                   'PPP', 'PTS', 'FGM', 'FGA', 'FG%','EFG%', 'FTFREQ%', 'TOVFREQ%', 'SFFREQ%', 'AND ONEFREQ%', 'SCOREFREQ%','PERCENTILE']
+        
     for year in years:
         ssn = str(year)+'-'+str(year+1 - 2000)
         i = 0
         for play in playtypes:
-            half1 = "https://stats.nba.com/stats/synergyplaytypes?LeagueID=00&PerMode=Totals&PlayType="+play+"&PlayerOrTeam=T&SeasonType="+stype+"&SeasonYear="
-            half2 = "&TypeGrouping=offensive"
+            
+            half1 = "https://stats.nba.com/stats/synergyplaytypes?LeagueID=00&PerMode=Totals&PlayType="+play+"&PlayerOrTeam="+type+"&SeasonType="+stype+"&SeasonYear="
+            half2 = "&TypeGrouping="+field_side
             term = terms[i]
             url = (
                         
                         half1+ str(ssn)+half2
                         
                     )
-
+            #print(url)
+            print(url)
             json = requests.get(url,headers = headers).json()
             data = json["resultSets"][0]["rowSet"]
+            
             columns = json["resultSets"][0]["headers"]
+            time.sleep(2)
 
             df2 = pd.DataFrame.from_records(data, columns=columns)
                 #df2.columns
+          
             df2 = df2.rename(columns={'TEAM_NAME':'TEAM','POSS_PCT':'FREQ%','EFG_PCT':'EFG%','FG_PCT':'FG%',
+                                          
                                           'TOV_POSS_PCT':'TOVFREQ%','PLUSONE_POSS_PCT':'AND ONEFREQ%','FT_POSS_PCT':'FTFREQ%','SCORE_POSS_PCT':'SCOREFREQ%','SF_POSS_PCT':'SFFREQ%'})
             for col in df2.columns:
                 if '%' in col or 'PERC' in col:
                     df2[col]*=100
             #print(df2)
             path = str(year+1)+trail+'/playtype/'+term
-            print(path)
-            df2 = df2.round(1)
-            df2 = df2[['TEAM', 'GP', 'POSS', 'FREQ%', 'PPP', 'PTS', 'FGM', 'FGA', 'FG%',
-       'EFG%', 'FTFREQ%', 'TOVFREQ%', 'SFFREQ%', 'AND ONEFREQ%', 'SCOREFREQ%',
-       'PERCENTILE']]
-            df2.to_csv(path,index = False)
+          
+            df2 = df2.round(2)
+            
+            df2 = df2[data_columns]
+            
+            #print(df2)
+            if p_or_t.lower() =='t':
+                if defense == False:
+                    df2.to_csv(path,index = False)
+                    
+                
+                df2['playtype'] = plays[i]
+                df2['year']=year+1
+                 
+                frames.append(df2)
+            else:
+                #print(df2)
+                df2['playtype'] = plays[i]
+                df2['year']=year+1
+                print(len(df2))
+                frames.append(df2)
           
             i+=1
-                
-years = [2023]
-get_playtypes(years,ps=True)
+            
+        if p_or_t.lower() =='p':
+            data = pd.concat(frames)
+            
+            map_terms ={
+            'PLAYER_NAME': 'Player',
+                 'TEAM_ID':'team_id',
+          
+            'TEAM': 'Team',
+            'GP': 'GP',
+            'POSS': 'Poss',
+            'FREQ%': '% Time',
+            'PPP': 'PPP',
+            'PTS': 'Points',
+            'FGM': 'FGM',
+            'FGA': 'FGA',
+            'FG%': 'FG%',
+            'EFG%': 'aFG%',
+            'FTFREQ%': '%FT',
+            'TOVFREQ%': '%TO',
+            'SFFREQ%': '%SF',
+            'AND ONEFREQ%': 'AND ONEFREQ%',
+            'SCOREFREQ%': '%Score',
+            'PERCENTILE': 'Percentile',
+            'playtype': 'playtype'
+        }
+
+            data.rename(columns=map_terms,inplace=True)
+            return data
+        else:
+             data = pd.concat(frames)
+             map_terms ={
+    
+            'PTS':'Points',
+            'TEAM': 'full_name'}
+             data.rename(columns=map_terms,inplace=True)
+             team_dict= {'New York Knicks': 'NYK',
+             'New Orleans Pelicans': 'NOP',
+             'Oklahoma City Thunder': 'OKC',
+             'Golden State Warriors': 'GSW',
+             'Brooklyn Nets': 'BKN',
+             'Houston Rockets': 'HOU',
+             'Miami Heat': 'MIA',
+             'Phoenix Suns': 'PHX',
+             'Philadelphia 76ers': 'PHI',
+             'Sacramento Kings': 'SAC',
+             'Los Angeles Clippers': 'LAC',
+             'LA Clippers':'LAC',
+             'Cleveland Cavaliers': 'CLE',
+             'Detroit Pistons': 'DET',
+             'Los Angeles Lakers': 'LAL',
+             'Denver Nuggets': 'DEN',
+             'Orlando Magic': 'ORL',
+             'Indiana Pacers': 'IND',
+             'Boston Celtics': 'BOS',
+             'Toronto Raptors': 'TOR',
+             'Charlotte Bobcats': 'CHA',
+             'Washington Wizards': 'WAS',
+             'Milwaukee Bucks': 'MIL',
+             'Minnesota Timberwolves': 'MIN',
+             'Atlanta Hawks': 'ATL',
+             'Portland Trail Blazers': 'POR',
+             'Memphis Grizzlies': 'MEM',
+             'San Antonio Spurs': 'SAS',
+             'Dallas Mavericks': 'DAL',
+             'Utah Jazz': 'UTA',
+             'Chicago Bulls': 'CHI',
+             'Charlotte Hornets': 'CHA'}
+            
+             data['Team'] = data['full_name'].map(team_dict)
+            
+             return data
+years = [2024]
+playoffs = False
+offense = get_playtypes(years,ps=playoffs)
+def update_player_master(year,ps=False):
+    trail = ''
+    if ps == True:
+        trail ='_p'
+    years=[year-1]
+    frames = get_playtypes(years,ps=ps,p_or_t='p')
+
+    old =pd.read_csv('playtype'+trail+'.csv')
+    old = old[old.year!=year]
+    print(frames.columns)
+    new = pd.concat([old,frames])
+    new.to_csv('playtype'+trail+'.csv',index=False)
+    return new
+new = update_player_master(2025,ps=playoffs)
+
+#new2 = update_player_master(2025,ps=False)
+
+
+defense = get_playtypes([2024],ps=False,defense=True)
+def update_team_masters(year,offense,defense,ps=False):
+    trail = ''
+    if ps == True:
+        trail='_p'
+    offpath= 'teamplay'+trail+'.csv'
+    defpath='teamplayd'+trail+'.csv'
+    old_off =pd.read_csv(offpath)
+    old_def =pd.read_csv(defpath)
+
+    old_off = old_off[old_off.year!=year]
+
+    new_off = pd.concat([old_off,offense])
+
+    old_def = old_def[old_def.year!=year]
+
+    new_def = pd.concat([old_def,defense])
+    #new_def.drop(columns=['TEAM','PTS'],inplace=True)
+    #new_off.drop(columns=['TEAM','PTS'],inplace=True)
+
+    new_off.to_csv(offpath,index=False)
+    new_def.to_csv(defpath,index=False)
+update_team_masters(2025,offense,defense,ps=playoffs)
 
 
 # In[2]:
@@ -208,6 +329,181 @@ def add_synergy():
         year_df = df[df.year == i]
         print(year_df.head())
         year_df.to_csv(path+'playtype.csv')
+
+
+# In[7]:
+
+
+def create_macro(data,play,playlist):
+        num_col = ['% Time', 'PPP', 'Points', 'FGM', 'FGA','FG%', 'aFG%', '%FT', '%TO', '%SF', '%Score','Poss','GP']
+        perc = [ 'PPP','FG%', 'aFG%', '%FT', '%TO', '%SF', '%Score']
+
+        print(len(data.columns))
+     
+        data = data.loc[data.playtype.isin(playlist)]
+        #data['playtype'] = play
+        #data['GP']/=3
+        group = data.groupby(['Player','Team','year'])
+        s_list = []
+        #print(p_df)
+        for col in num_col:
+            if col in perc:
+                series =group.apply(w_avg, col, 'Poss')
+            #poss = pd.Series([sum(df['Poss'])], index=['Poss'])
+            #series = pd.concat([series,poss],keys =['series'])
+            #print(series)
+        #print(series)
+
+            elif col =='GP':
+                series = group.mean()[col]
+                print(series)
+         
+            else:
+                series = group.sum()[col]
+            s_list.append(series)
+
+        player_df = pd.concat(s_list)
+        print(len(player_df.columns))
+        player_df.columns = num_col
+        #print(player_df)
+        new_data = player_df.reset_index()
+        new_data['playtype'] = play
+        
+        return new_data
+def w_avg(df, values, weights):
+    #print(values)
+    #print(weights)
+
+    d = df[values]
+    w = df[weights]
+    if values == 'Poss':
+
+        return d.sum()
+    
+    return (d * w).sum() / w.sum()
+df = pd.read_csv('playtype.csv')
+print(df.columns)
+#year = 2024
+#df=df[df.year==year].reset_index(drop=True)
+data_names = {'pr_ball':'on_ball','iso':'on_ball','pr_roll':'play_finish','post':'on_ball','hand_off':'motion'
+               ,'oreb':'play_finish','cut':'play_finish','off_screen':'motion','spot':'play_finish','tran':'tran','misc':'misc'}
+df['playtype'] = df['playtype'].map(data_names)
+pstyle= df.groupby(['Player','Team','GP','PLAYER_ID','playtype','year','TEAM_NAME','team_id']).sum()[['Poss','% Time','FGM','FGA','Points']].reset_index()
+pstyle['PPP'] = pstyle['Points']/pstyle['Poss']
+
+#pstyle.to_csv('play_style_p.csv',index=False)
+pstyle.to_csv('playstyle.csv',index=False)
+
+
+# In[8]:
+
+
+pstyle[pstyle.year==2014]
+
+
+# In[9]:
+
+
+team_dict= {'New York Knicks': 'NYK',
+             'New Orleans Pelicans': 'NOP',
+             'Oklahoma City Thunder': 'OKC',
+             'Golden State Warriors': 'GSW',
+             'Brooklyn Nets': 'BKN',
+             'Houston Rockets': 'HOU',
+             'Miami Heat': 'MIA',
+             'Phoenix Suns': 'PHX',
+             'Philadelphia 76ers': 'PHI',
+             'Sacramento Kings': 'SAC',
+             'Los Angeles Clippers': 'LAC',
+             'LA Clippers':'LAC',
+             'Cleveland Cavaliers': 'CLE',
+             'Detroit Pistons': 'DET',
+             'Los Angeles Lakers': 'LAL',
+             'Denver Nuggets': 'DEN',
+             'Orlando Magic': 'ORL',
+             'Indiana Pacers': 'IND',
+             'Boston Celtics': 'BOS',
+             'Toronto Raptors': 'TOR',
+             'Charlotte Bobcats': 'CHA',
+             'Washington Wizards': 'WAS',
+             'Milwaukee Bucks': 'MIL',
+             'Minnesota Timberwolves': 'MIN',
+             'Atlanta Hawks': 'ATL',
+             'Portland Trail Blazers': 'POR',
+             'Memphis Grizzlies': 'MEM',
+             'San Antonio Spurs': 'SAS',
+             'Dallas Mavericks': 'DAL',
+             'Utah Jazz': 'UTA',
+             'Chicago Bulls': 'CHI',
+             'Charlotte Hornets': 'CHA'}
+temp=pd.read_csv('teamplay_p.csv')
+
+temp['Team']=temp['full_name'].map(team_dict)
+temp.to_csv('teamplay_p.csv',index=False)
+
+
+temp=pd.read_csv('teamplayd_p.csv')
+
+temp['Team']=temp['full_name'].map(team_dict)
+temp.to_csv('teamplayd_p.csv',index=False)
+
+
+# In[10]:
+
+
+'''
+old['Player'].value_counts()
+old=pd.read_csv('playtype.csv')
+old = old[old.year==2024]
+temp = pd.read_csv('playtype_backup.csv')
+temp = temp[temp.year==2024]
+id_map=dict(zip(old['Player'],old['PLAYER_ID']))
+temp['PLAYER_ID'] = temp['Player'].map(id_map)
+trans = pd.concat([old,temp])
+
+trans = trans.drop_duplicates(subset=['Player','Team','GP','playtype','year'])
+backed = pd.read_csv('playtype.csv')
+backed = backed[backed.year<2024]
+new_save = pd.concat([backed,trans])
+new_save.to_csv('playtype.csv',index=False)
+df = pd.read_csv('playtype.csv')
+print(df.columns)
+year = 2024
+df=df[df.year==year].reset_index(drop=True)
+data_names = {'pr_ball':'on_ball','iso':'on_ball','pr_roll':'play_finish','post':'on_ball','hand_off':'motion'
+               ,'oreb':'play_finish','cut':'play_finish','off_screen':'motion','spot':'play_finish','tran':'tran','misc':'misc'}
+df['playtype'] = df['playtype'].map(data_names)
+pstyle= df.groupby(['Player','Team','GP','PLAYER_ID','playtype','year']).sum()[['Poss','% Time','FGM','FGA','Points']].reset_index()
+pstyle['PPP'] = pstyle['Points']/pstyle['Poss']
+oldstyle = pd.read_csv('play_style.csv')
+oldstyle = oldstyle[oldstyle.year!=year]
+
+
+newstyle = pd.concat([oldstyle,pstyle])
+newstyle.to_csv('play_style.csv',index=False)
+'''
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
+
+# In[11]:
+
+
+'''
+df=pd.read_csv('playtype.csv')
+df=df[df.year>2013]
+df.to_csv('playtype.csv',index=False)
+'''
 
 
 # In[ ]:
