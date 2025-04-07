@@ -1,213 +1,213 @@
 ,Pos,Age,2024-25,2025-26,2026-27,2027-28,2028-29,2029-30,2030-31,index,Team,Guaranteed,option_2024-25,option_2025-26,option_2026-27,option_2027-28,option_2028-29,option_2029-30,option_2030-31,Player,name,url,id,team,nba_id,matched_name
-0,G,26.0,0.0,0.0,0.0,0.0,0.0,0.0,,,IND,0.0,0,RFA,0,0,0,0,,Quenton Jackson,Quenton Jackson,https://www.spotrac.com/nba/player/_/id/79955,79955.0,IND,1631245.0,Quenton Jackson
-1,SF,22.0,0.0,0.0,0.0,0.0,0.0,0.0,,,SAS,0.0,0,RFA,0,0,0,0,,Harrison Ingram,Harrison Ingram,https://www.spotrac.com/nba/player/_/id/91775,91775.0,SAS,1631127.0,Harrison Ingram
-2,SF,24.0,0.0,0.0,0.0,0.0,0.0,0.0,,,SAS,0.0,0,RFA,0,0,0,0,,Riley Minix,Riley Minix,https://www.spotrac.com/nba/player/_/id/95269,95269.0,SAS,1642434.0,Riley Minix
-3,PG,27.0,0.0,0.0,0.0,0.0,0.0,0.0,,,PHI,0.0,0,RFA,0,0,0,0,,Jeff Dowtin,Jeff Dowtin,https://www.spotrac.com/nba/player/_/id/70872,70872.0,PHI,1630288.0,Jeff Dowtin
-4,PF,24.0,0.0,0.0,0.0,0.0,0.0,,,,MIL,0.0,0,0,RFA,0,0,,,Pete Nance,,,,,,
-5,PG,25.0,0.0,0.0,0.0,0.0,0.0,,,,MIL,0.0,0,0,RFA,0,0,,,Jamaree Bouyea,,,,,,
-6,SG,25.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,ORL,0.0,0,0,RFA,0,0,0,0.0,Ethan Thompson,Ethan Thompson,https://www.spotrac.com/nba/player/_/id/74413,74413.0,ORL,,Ethan Thompson
-7,PF,25.0,0.0,0.0,0.0,0.0,0.0,,,,LAL,0.0,0,0,RFA,0,0,,,Trey Jemison,Trey Jemison,https://www.spotrac.com/nba/player/_/id/86044,86044.0,LAL,1641998.0,Trey Jemison
-8,PG,22.0,0.0,0.0,0.0,0.0,0.0,0.0,,,CHA,0.0,0,0,RFA,0,0,0,,K.J. Simpson,K.J. Simpson,https://www.spotrac.com/nba/player/_/id/91788,91788.0,CHA,,K.J. Simpson
-9,SG,23.0,0.0,0.0,0.0,0.0,0.0,0.0,,,CHA,0.0,0,RFA,0,0,0,0,,Wendell Moore Jr.,Wendell Moore Jr.,https://www.spotrac.com/nba/player/_/id/78145,78145.0,DET,1631111.0,Wendell Moore Jr.
-10,SG,24.0,0.0,0.0,0.0,0.0,0.0,0.0,,,CHA,0.0,0,0,RFA,0,0,0,,Damion Baugh,Damion Baugh,https://www.spotrac.com/nba/player/_/id/85975,85975.0,CHA,1641878.0,Damion Baugh
-11,C,24.0,0.0,0.0,0.0,0.0,0.0,,,,LAL,0.0,0,RFA,0,0,0,,,Christian Koloko,Christian Koloko,https://www.spotrac.com/nba/player/_/id/78131,78131.0,LAL,1631132.0,Christian Koloko
-12,SG,22.0,0.0,0.0,0.0,0.0,0.0,,,,POR,0.0,0,RFA,0,0,0,,,Bryce McGowens,Bryce McGowens,https://www.spotrac.com/nba/player/_/id/78140,78140.0,POR,1631121.0,Bryce McGowens
-13,PG,26.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,ORL,0.0,0,RFA,0,0,0,0,0.0,Mac McClung,Mac McClung,https://www.spotrac.com/nba/player/_/id/74267,74267.0,ORL,1630644.0,Mac McClung
-14,SG,25.0,0.0,0.0,0.0,0.0,0.0,0.0,,,SAS,0.0,0,RFA,0,0,0,0,,David Duke Jr.,David Duke Jr.,https://www.spotrac.com/nba/player/_/id/74239,74239.0,SAS,1630561.0,David Duke Jr.
-15,PF,19.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,TOR,0.0,0,0,RFA,0,0,0,0.0,Ulrich Chomche,Ulrich Chomche,https://www.spotrac.com/nba/player/_/id/91781,91781.0,TOR,1642279.0,Ulrich Chomche
-16,SG,25.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,TOR,0.0,0,0,RFA,0,0,0,0.0,Jared Rhoden,,,,,,
-17,G,23.0,0.0,0.0,0.0,0.0,0.0,,,,GSW,0.0,0,RFA,0,0,0,,,Taran Armstrong,,,,,,
-18,SF,27.0,0.0,0.0,0.0,0.0,0.0,,,,GSW,0.0,0,RFA,0,0,0,,,Braxton Key,,,,,,
-19,F,28.0,0.0,0.0,0.0,0.0,0.0,,,,GSW,0.0,0,0,RFA,0,0,,,Jackson Rowe,Jackson Rowe,https://www.spotrac.com/nba/player/_/id/95270,95270.0,GSW,1642050.0,Jackson Rowe
-20,SF,,0.0,0.0,0.0,0.0,0.0,0.0,,,NOP,0.0,0,RFA,0,0,0,0,,Keion Brooks Jr.,Keion Brooks Jr.,https://www.spotrac.com/nba/player/_/id/95602,95602.0,NOP,1631232.0,Keion Brooks Jr.
-21,SF,25.0,0.0,0.0,0.0,0.0,0.0,0.0,,,NOP,0.0,0,0,0,0,0,0,,Jamal Cain,Jamal Cain,https://www.spotrac.com/nba/player/_/id/78584,78584.0,NOP,1631288.0,Jamal Cain
-22,SG,24.0,0.0,0.0,0.0,0.0,0.0,0.0,,,NOP,0.0,0,0,RFA,0,0,0,,Lester Quinones,,,,,,
-23,PG,24.0,0.0,0.0,0.0,0.0,0.0,0.0,,,UTA,0.0,0,0,0,0,0,0,,Elijah Harkless,Elijah Harkless,https://www.spotrac.com/nba/player/_/id/95564,95564.0,LAC,1641989.0,Elijah Harkless
-24,PG,24.0,0.0,0.0,0.0,0.0,0.0,0.0,,,UTA,0.0,0,0,0,0,0,0,,Elijah Harkless,Elijah Harkless,https://www.spotrac.com/nba/player/_/id/95564,95564.0,UTA,1641989.0,Elijah Harkless
-25,SG,23.0,0.0,0.0,0.0,0.0,0.0,,,,BKN,0.0,0,0,0,0,0,,,Tosan Evbuomwan,Tosan Evbuomwan,https://www.spotrac.com/nba/player/_/id/85500,85500.0,BKN,1641787.0,Tosan Evbuomwan
-26,SG,23.0,0.0,0.0,0.0,0.0,0.0,,,,BKN,0.0,0,0,0,0,0,,,Tosan Evbuomwan,Tosan Evbuomwan,https://www.spotrac.com/nba/player/_/id/85500,85500.0,UTA,1641787.0,Tosan Evbuomwan
-27,PG,23.0,0.0,0.0,0.0,0.0,0.0,,,,BKN,0.0,0,RFA,0,0,0,,,Reece Beekman,Reece Beekman,https://www.spotrac.com/nba/player/_/id/94484,94484.0,BKN,1641736.0,Reece Beekman
-28,G,25.0,0.0,0.0,0.0,0.0,0.0,0.0,,,OKC,0.0,0,RFA,0,0,0,0,,Adam Flagler,Adam Flagler,https://www.spotrac.com/nba/player/_/id/86081,86081.0,OKC,1641745.0,Adam Flagler
-29,G,24.0,0.0,0.0,0.0,0.0,0.0,0.0,,,OKC,0.0,0,RFA,0,0,0,0,,Alex Ducas,Alex Ducas,https://www.spotrac.com/nba/player/_/id/94882,94882.0,OKC,1642505.0,Alex Ducas
-30,C,25.0,0.0,0.0,0.0,0.0,0.0,0.0,,,OKC,0.0,0,RFA,0,0,0,0,,Branden Carlson,Branden Carlson,https://www.spotrac.com/nba/player/_/id/94490,94490.0,OKC,1642382.0,Branden Carlson
-31,F,24.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,TOR,0.0,0,RFA,0,0,0,0,0.0,A.J. Lawson,A.J. Lawson,https://www.spotrac.com/nba/player/_/id/74329,74329.0,TOR,1630639.0,A.J. Lawson
-32,PG,24.0,0.0,0.0,0.0,0.0,0.0,0.0,,,MIA,0.0,0,RFA,0,0,0,0,,Isaiah Stevens,Isaiah Stevens,https://www.spotrac.com/nba/player/_/id/94497,94497.0,MIA,1641815.0,Isaiah Stevens
-33,PG,21.0,0.0,0.0,0.0,0.0,0.0,0.0,,,PHI,0.0,0,RFA,0,0,0,0,,Jalen Hood-Schifino,Jalen Hood-Schifino,https://www.spotrac.com/nba/player/_/id/82210,82210.0,UTA,1641720.0,Jalen Hood-Schifino
-34,G,25.0,0.0,0.0,0.0,0.0,0.0,,,,MIL,0.0,0,RFA,0,0,0,,,Stanley Umude,Stanley Umude,https://www.spotrac.com/nba/player/_/id/79976,79976.0,MIL,1630649.0,Stanley Umude
-35,F,25.0,0.0,0.0,0.0,0.0,0.0,,,,POR,0.0,0,0,0,0,0,,,Justin Minaya,Justin Minaya,https://www.spotrac.com/nba/player/_/id/82122,82122.0,POR,1631303.0,Justin Minaya
-36,SF,24.0,0.0,0.0,0.0,0.0,0.0,,,,DAL,0.0,0,RFA,0,0,0,,,Kessler Edwards,Kessler Edwards,https://www.spotrac.com/nba/player/_/id/74151,74151.0,DAL,1630556.0,Kessler Edwards
-37,PF,24.0,0.0,0.0,0.0,0.0,0.0,,,,DAL,0.0,0,RFA,0,0,0,,,Kai Jones,Kai Jones,https://www.spotrac.com/nba/player/_/id/74126,74126.0,LAC,1630539.0,Kai Jones
-38,PG,25.0,0.0,0.0,0.0,0.0,0.0,,,,DAL,0.0,0,RFA,0,0,0,,,Brandon Williams,Brandon Williams,https://www.spotrac.com/nba/player/_/id/75136,75136.0,DAL,1630314.0,Brandon Williams
-39,PF,24.0,0.0,0.0,0.0,0.0,0.0,0.0,,,IND,0.0,0,RFA,0,0,0,0,,Enrique Freeman,Enrique Freeman,https://www.spotrac.com/nba/player/_/id/93958,93958.0,IND,1642402.0,Enrique Freeman
-40,SG,23.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,CLE,0.0,0,RFA,0,0,0,0,0.0,Luke Travers,Luke Travers,https://www.spotrac.com/nba/player/_/id/78166,78166.0,CLE,1631247.0,Luke Travers
-41,F,24.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,CLE,0.0,0,0,RFA,0,0,0,0.0,Nae'qwan Tomlin,,,,,,
-42,SG,21.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,CLE,0.0,0,RFA,0,0,0,0,0.0,Emoni Bates,Emoni Bates,https://www.spotrac.com/nba/player/_/id/84475,84475.0,CLE,1641734.0,Emoni Bates
-43,PG,23.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,PHX,0.0,0,RFA,0,0,0,0,0.0,TyTy Washington Jr.,TyTy Washington Jr.,https://www.spotrac.com/nba/player/_/id/78125,78125.0,PHX,1631102.0,TyTy Washington Jr.
-44,PG,25.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,PHX,0.0,0,RFA,0,0,0,0,0.0,Collin Gillespie,Collin Gillespie,https://www.spotrac.com/nba/player/_/id/78276,78276.0,PHX,1631221.0,Collin Gillespie
-45,PG,23.0,0.0,0.0,0.0,0.0,0.0,0.0,,,MIN,0.0,0,RFA,0,0,0,0,,Tristen Newton,Tristen Newton,https://www.spotrac.com/nba/player/_/id/93957,93957.0,MIN,1641803.0,Tristen Newton
-46,SG,23.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,PHX,0.0,0,RFA,0,0,0,0,0.0,Jalen Bridges,Jalen Bridges,https://www.spotrac.com/nba/player/_/id/94479,94479.0,PHX,1641779.0,Jalen Bridges
-47,G,23.0,0.0,0.0,0.0,0.0,0.0,,,,SAC,0.0,0,RFA,0,0,0,,,Isaiah Crawford,Isaiah Crawford,https://www.spotrac.com/nba/player/_/id/94482,94482.0,SAC,1642384.0,Isaiah Crawford
-48,F,25.0,0.0,0.0,0.0,0.0,0.0,0.0,,,PHI,0.0,0,0,RFA,0,0,0,,Alex Reese,Alex Reese,https://www.spotrac.com/nba/player/_/id/95612,95612.0,OKC,1642024.0,Alex Reese
-49,SG,26.0,0.0,0.0,0.0,0.0,0.0,,,,SAC,0.0,0,RFA,0,0,0,,,Mason Jones,Mason Jones,https://www.spotrac.com/nba/player/_/id/70713,70713.0,SAC,1630222.0,Mason Jones
-50,F,19.0,0.0,0.0,0.0,0.0,0.0,,,,LAC,0.0,0,RFA,0,0,0,,,Trentyn Flowers,Trentyn Flowers,https://www.spotrac.com/nba/player/_/id/95276,95276.0,LAC,1642280.0,Trentyn Flowers
-51,PG,24.0,0.0,0.0,0.0,0.0,0.0,0.0,,,MIN,0.0,0,0,0,0,0,0,,Nah'Shon Hyland,Nah'Shon Hyland,https://www.spotrac.com/nba/player/_/id/74133,74133.0,ATL,1630538,Nah'Shon Hyland
-52,SF,22.0,0.0,0.0,0.0,0.0,0.0,,,,LAC,0.0,0,0,RFA,0,0,,,Patrick Baldwin Jr.,Patrick Baldwin Jr.,https://www.spotrac.com/nba/player/_/id/78139,78139.0,SAS,1631116.0,Patrick Baldwin Jr.
-53,SG,21.0,0.0,0.0,0.0,0.0,0.0,0.0,,,DEN,0.0,0,RFA,0,0,0,0,,Trey Alexander,Trey Alexander,https://www.spotrac.com/nba/player/_/id/94483,94483.0,DEN,1641725.0,Trey Alexander
-54,PF,22.0,0.0,0.0,0.0,0.0,0.0,0.0,,,DEN,0.0,0,RFA,0,0,0,0,,P.J. Hall,P.J. Hall,https://www.spotrac.com/nba/player/_/id/94515,94515.0,DEN,,P.J. Hall
-55,C,24.0,0.0,0.0,0.0,0.0,0.0,0.0,,,MIN,0.0,0,RFA,0,0,0,0,,Jesse Edwards,Jesse Edwards,https://www.spotrac.com/nba/player/_/id/94511,94511.0,MIN,1642399.0,Jesse Edwards
-56,SF,23.0,0.0,0.0,0.0,0.0,0.0,0.0,,,DEN,0.0,0,RFA,0,0,0,0,,Spencer Jones,Spencer Jones,https://www.spotrac.com/nba/player/_/id/95438,95438.0,DEN,1642461.0,Spencer Jones
-57,SG,24.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,DET,0.0,0,RFA,0,0,0,0,0.0,Ron Harper Jr.,Ron Harper Jr.,https://www.spotrac.com/nba/player/_/id/78577,78577.0,DET,1631199.0,Ron Harper Jr.
-58,G,23.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,DET,0.0,0,RFA,0,0,0,0,0.0,Daniss Jenkins,Daniss Jenkins,https://www.spotrac.com/nba/player/_/id/94498,94498.0,DET,1642450.0,Daniss Jenkins
-59,PG,24.0,0.0,0.0,0.0,0.0,0.0,0.0,,,CHI,0.0,0,0,RFA,0,0,0,,Jahmir Young,,,,,,
-60,SF,24.0,0.0,0.0,0.0,0.0,0.0,0.0,,,CHI,0.0,0,RFA,0,0,0,0,,Emanuel Miller,Emanuel Miller,https://www.spotrac.com/nba/player/_/id/94538,94538.0,CHI,1641801.0,Emanuel Miller
-61,PF,24.0,0.0,0.0,0.0,0.0,0.0,0.0,,,CHI,0.0,0,RFA,0,0,0,0,,E.J. Liddell,E.J. Liddell,https://www.spotrac.com/nba/player/_/id/78129,78129.0,CHI,1630604.0,E.J. Liddell
-62,PF,24.0,0.0,0.0,0.0,0.0,0.0,0.0,,,CHI,0.0,0,RFA,0,0,0,0,,E.J. Liddell,E.J. Liddell,https://www.spotrac.com/nba/player/_/id/78129,78129.0,PHX,1630604.0,E.J. Liddell
-63,F,24.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,DET,0.0,0,0,RFA,0,0,0,0.0,Tolu Smith III,Tolu Smith III,https://www.spotrac.com/nba/player/_/id/95591,95591.0,DET,,Tolu Smith III
-64,SG,24.0,0.0,0.0,0.0,0.0,0.0,,,,LAC,0.0,0,0,RFA,0,0,,,Seth Lundy,,,,,,
-65,C,26.0,0.0,0.0,0.0,0.0,0.0,0.0,,,UTA,0.0,0,RFA,0,0,0,0,,Micah Potter,Micah Potter,https://www.spotrac.com/nba/player/_/id/74418,74418.0,UTA,1630695.0,Micah Potter
-66,SG,27.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,ORL,0.0,0,RFA,0,0,0,0,0.0,Trevelin Queen,Trevelin Queen,https://www.spotrac.com/nba/player/_/id/70720,70720.0,ORL,1630243.0,Trevelin Queen
-67,SG,20.0,0.0,0.0,0.0,0.0,0.0,,,,POR,0.0,0,0,RFA,0,0,,,Sidy Cissoko,Sidy Cissoko,https://www.spotrac.com/nba/player/_/id/84471,84471.0,POR,1631321.0,Sidy Cissoko
-68,SG,20.0,0.0,0.0,0.0,0.0,0.0,,,,POR,0.0,0,0,RFA,0,0,,,Sidy Cissoko,Sidy Cissoko,https://www.spotrac.com/nba/player/_/id/84471,84471.0,WAS,1631321.0,Sidy Cissoko
-69,F,28.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,HOU,0.0,0,RFA,0,0,0,0,0.0,Jack McVeigh,Jack McVeigh,https://www.spotrac.com/nba/player/_/id/95281,95281.0,HOU,1629098.0,Jack McVeigh
-70,PF,25.0,0.0,0.0,0.0,0.0,0.0,0.0,,,UTA,0.0,0,RFA,0,0,0,0,,Oscar Tshiebwe,Oscar Tshiebwe,https://www.spotrac.com/nba/player/_/id/84732,84732.0,UTA,1631131.0,Oscar Tshiebwe
-71,PF,24.0,0.0,0.0,0.0,0.0,0.0,0.0,,,NYK,0.0,0,RFA,0,0,0,0,,Anton Watson,Anton Watson,https://www.spotrac.com/nba/player/_/id/93961,93961.0,BOS,1641817.0,Anton Watson
-72,SG,23.0,0.0,0.0,0.0,0.0,0.0,0.0,,,NYK,0.0,RFA,0,0,0,0,0,,Kevin McCullar Jr.,Kevin McCullar Jr.,https://www.spotrac.com/nba/player/_/id/91763,91763.0,NYK,1641755.0,Kevin McCullar Jr.
-73,G,25.0,0.0,0.0,0.0,0.0,0.0,0.0,,,NYK,0.0,0,RFA,0,0,0,0,,Boo Buie,Boo Buie,https://www.spotrac.com/nba/player/_/id/95624,95624.0,NYK,,Boo Buie
-74,G,23.0,0.0,0.0,0.0,0.0,0.0,0.0,,,MEM,0.0,0,RFA,0,0,0,0,,Yuki Kawamura,Yuki Kawamura,https://www.spotrac.com/nba/player/_/id/95565,95565.0,MEM,1642530.0,Yuki Kawamura
-75,PG,23.0,0.0,0.0,0.0,0.0,0.0,0.0,,,MEM,0.0,0,0,RFA,0,0,0,,Zyon Pullin,Zyon Pullin,https://www.spotrac.com/nba/player/_/id/94457,94457.0,MEM,1642389.0,Zyon Pullin
+0,SG,20.0,0.0,0.0,0.0,0.0,0.0,,,,POR,0.0,0,0,RFA,0,0,,,Sidy Cissoko,Sidy Cissoko,https://www.spotrac.com/nba/player/_/id/84471,84471.0,POR,1631321.0,Sidy Cissoko
+1,SG,20.0,0.0,0.0,0.0,0.0,0.0,,,,POR,0.0,0,0,RFA,0,0,,,Sidy Cissoko,Sidy Cissoko,https://www.spotrac.com/nba/player/_/id/84471,84471.0,WAS,1631321.0,Sidy Cissoko
+2,SG,23.0,0.0,0.0,0.0,0.0,0.0,0.0,,,NYK,0.0,RFA,0,0,0,0,0,,Kevin McCullar Jr.,Kevin McCullar Jr.,https://www.spotrac.com/nba/player/_/id/91763,91763.0,NYK,1641755.0,Kevin McCullar Jr.
+3,G,25.0,0.0,0.0,0.0,0.0,0.0,0.0,,,NYK,0.0,0,RFA,0,0,0,0,,Boo Buie,Boo Buie,https://www.spotrac.com/nba/player/_/id/95624,95624.0,NYK,,Boo Buie
+4,PF,19.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,TOR,0.0,0,0,RFA,0,0,0,0.0,Ulrich Chomche,Ulrich Chomche,https://www.spotrac.com/nba/player/_/id/91781,91781.0,TOR,1642279.0,Ulrich Chomche
+5,F,24.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,TOR,0.0,0,RFA,0,0,0,0,0.0,A.J. Lawson,A.J. Lawson,https://www.spotrac.com/nba/player/_/id/74329,74329.0,TOR,1630639.0,A.J. Lawson
+6,SG,25.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,TOR,0.0,0,0,RFA,0,0,0,0.0,Jared Rhoden,,,,,,
+7,SG,24.0,0.0,0.0,0.0,0.0,0.0,0.0,,,NYK,0.0,0,RFA,0,0,0,0,,MarJon Beauchamp,MarJon Beauchamp,https://www.spotrac.com/nba/player/_/id/78134,78134.0,LAC,1630699.0,MarJon Beauchamp
+8,SG,24.0,0.0,0.0,0.0,0.0,0.0,0.0,,,NYK,0.0,0,RFA,0,0,0,0,,MarJon Beauchamp,MarJon Beauchamp,https://www.spotrac.com/nba/player/_/id/78134,78134.0,MIL,1630699.0,MarJon Beauchamp
+9,SF,23.0,0.0,0.0,0.0,0.0,0.0,0.0,,,DEN,0.0,0,RFA,0,0,0,0,,Spencer Jones,Spencer Jones,https://www.spotrac.com/nba/player/_/id/95438,95438.0,DEN,1642461.0,Spencer Jones
+10,PF,22.0,0.0,0.0,0.0,0.0,0.0,0.0,,,DEN,0.0,0,RFA,0,0,0,0,,P.J. Hall,P.J. Hall,https://www.spotrac.com/nba/player/_/id/94515,94515.0,DEN,,P.J. Hall
+11,SG,21.0,0.0,0.0,0.0,0.0,0.0,0.0,,,DEN,0.0,0,RFA,0,0,0,0,,Trey Alexander,Trey Alexander,https://www.spotrac.com/nba/player/_/id/94483,94483.0,DEN,1641725.0,Trey Alexander
+12,PG,23.0,0.0,0.0,0.0,0.0,0.0,0.0,,,IND,0.0,0,0,RFA,0,0,0,,RayJ Dennis,RayJ Dennis,https://www.spotrac.com/nba/player/_/id/95567,95567.0,IND,1642484.0,RayJ Dennis
+13,PF,24.0,0.0,0.0,0.0,0.0,0.0,0.0,,,IND,0.0,0,RFA,0,0,0,0,,Enrique Freeman,Enrique Freeman,https://www.spotrac.com/nba/player/_/id/93958,93958.0,IND,1642402.0,Enrique Freeman
+14,G,26.0,0.0,0.0,0.0,0.0,0.0,0.0,,,IND,0.0,0,RFA,0,0,0,0,,Quenton Jackson,Quenton Jackson,https://www.spotrac.com/nba/player/_/id/79955,79955.0,IND,1631245.0,Quenton Jackson
+15,SG,21.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,CLE,0.0,0,RFA,0,0,0,0,0.0,Emoni Bates,Emoni Bates,https://www.spotrac.com/nba/player/_/id/84475,84475.0,CLE,1641734.0,Emoni Bates
+16,SG,23.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,CLE,0.0,0,RFA,0,0,0,0,0.0,Luke Travers,Luke Travers,https://www.spotrac.com/nba/player/_/id/78166,78166.0,CLE,1631247.0,Luke Travers
+17,SG,23.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,PHX,0.0,0,RFA,0,0,0,0,0.0,Jalen Bridges,Jalen Bridges,https://www.spotrac.com/nba/player/_/id/94479,94479.0,PHX,1641779.0,Jalen Bridges
+18,SG,24.0,0.0,0.0,0.0,0.0,0.0,0.0,,,NOP,0.0,0,0,RFA,0,0,0,,Lester Quinones,,,,,,
+19,PG,25.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,PHX,0.0,0,RFA,0,0,0,0,0.0,Collin Gillespie,Collin Gillespie,https://www.spotrac.com/nba/player/_/id/78276,78276.0,PHX,1631221.0,Collin Gillespie
+20,PG,24.0,0.0,0.0,0.0,0.0,0.0,0.0,,,UTA,0.0,0,0,0,0,0,0,,Elijah Harkless,Elijah Harkless,https://www.spotrac.com/nba/player/_/id/95564,95564.0,LAC,1641989.0,Elijah Harkless
+21,PG,24.0,0.0,0.0,0.0,0.0,0.0,0.0,,,UTA,0.0,0,0,0,0,0,0,,Elijah Harkless,Elijah Harkless,https://www.spotrac.com/nba/player/_/id/95564,95564.0,UTA,1641989.0,Elijah Harkless
+22,SG,23.0,0.0,0.0,0.0,0.0,0.0,,,,BKN,0.0,0,0,0,0,0,,,Tosan Evbuomwan,Tosan Evbuomwan,https://www.spotrac.com/nba/player/_/id/85500,85500.0,BKN,1641787.0,Tosan Evbuomwan
+23,SG,23.0,0.0,0.0,0.0,0.0,0.0,,,,BKN,0.0,0,0,0,0,0,,,Tosan Evbuomwan,Tosan Evbuomwan,https://www.spotrac.com/nba/player/_/id/85500,85500.0,UTA,1641787.0,Tosan Evbuomwan
+24,PG,23.0,0.0,0.0,0.0,0.0,0.0,,,,BKN,0.0,0,RFA,0,0,0,,,Reece Beekman,Reece Beekman,https://www.spotrac.com/nba/player/_/id/94484,94484.0,BKN,1641736.0,Reece Beekman
+25,SF,25.0,0.0,0.0,0.0,0.0,0.0,0.0,,,NOP,0.0,0,0,0,0,0,0,,Jamal Cain,Jamal Cain,https://www.spotrac.com/nba/player/_/id/78584,78584.0,NOP,1631288.0,Jamal Cain
+26,SF,,0.0,0.0,0.0,0.0,0.0,0.0,,,NOP,0.0,0,RFA,0,0,0,0,,Keion Brooks Jr.,Keion Brooks Jr.,https://www.spotrac.com/nba/player/_/id/95602,95602.0,NOP,1631232.0,Keion Brooks Jr.
+27,C,26.0,0.0,0.0,0.0,0.0,0.0,0.0,,,UTA,0.0,0,RFA,0,0,0,0,,Micah Potter,Micah Potter,https://www.spotrac.com/nba/player/_/id/74418,74418.0,UTA,1630695.0,Micah Potter
+28,PF,25.0,0.0,0.0,0.0,0.0,0.0,0.0,,,UTA,0.0,0,RFA,0,0,0,0,,Oscar Tshiebwe,Oscar Tshiebwe,https://www.spotrac.com/nba/player/_/id/84732,84732.0,UTA,1631131.0,Oscar Tshiebwe
+29,SF,22.0,0.0,0.0,0.0,0.0,0.0,,,,LAC,0.0,0,0,RFA,0,0,,,Patrick Baldwin Jr.,Patrick Baldwin Jr.,https://www.spotrac.com/nba/player/_/id/78139,78139.0,SAS,1631116.0,Patrick Baldwin Jr.
+30,PF,24.0,0.0,0.0,0.0,0.0,0.0,0.0,,,NYK,0.0,0,RFA,0,0,0,0,,Anton Watson,Anton Watson,https://www.spotrac.com/nba/player/_/id/93961,93961.0,BOS,1641817.0,Anton Watson
+31,SG,22.0,0.0,0.0,0.0,0.0,0.0,,,,POR,0.0,0,RFA,0,0,0,,,Bryce McGowens,Bryce McGowens,https://www.spotrac.com/nba/player/_/id/78140,78140.0,POR,1631121.0,Bryce McGowens
+32,SG,24.0,0.0,0.0,0.0,0.0,0.0,0.0,,,CHA,0.0,0,0,RFA,0,0,0,,Damion Baugh,Damion Baugh,https://www.spotrac.com/nba/player/_/id/85975,85975.0,CHA,1641878.0,Damion Baugh
+33,SG,23.0,0.0,0.0,0.0,0.0,0.0,0.0,,,CHA,0.0,0,RFA,0,0,0,0,,Wendell Moore Jr.,Wendell Moore Jr.,https://www.spotrac.com/nba/player/_/id/78145,78145.0,DET,1631111.0,Wendell Moore Jr.
+34,SG,25.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,ORL,0.0,0,0,RFA,0,0,0,0.0,Ethan Thompson,Ethan Thompson,https://www.spotrac.com/nba/player/_/id/74413,74413.0,ORL,,Ethan Thompson
+35,SG,27.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,ORL,0.0,0,RFA,0,0,0,0,0.0,Trevelin Queen,Trevelin Queen,https://www.spotrac.com/nba/player/_/id/70720,70720.0,ORL,1630243.0,Trevelin Queen
+36,PG,24.0,0.0,0.0,0.0,0.0,0.0,0.0,,,CHI,0.0,0,0,RFA,0,0,0,,Jahmir Young,,,,,,
+37,SF,24.0,0.0,0.0,0.0,0.0,0.0,0.0,,,CHI,0.0,0,RFA,0,0,0,0,,Emanuel Miller,Emanuel Miller,https://www.spotrac.com/nba/player/_/id/94538,94538.0,CHI,1641801.0,Emanuel Miller
+38,PF,24.0,0.0,0.0,0.0,0.0,0.0,0.0,,,CHI,0.0,0,RFA,0,0,0,0,,E.J. Liddell,E.J. Liddell,https://www.spotrac.com/nba/player/_/id/78129,78129.0,CHI,1630604.0,E.J. Liddell
+39,PF,24.0,0.0,0.0,0.0,0.0,0.0,0.0,,,CHI,0.0,0,RFA,0,0,0,0,,E.J. Liddell,E.J. Liddell,https://www.spotrac.com/nba/player/_/id/78129,78129.0,PHX,1630604.0,E.J. Liddell
+40,PG,26.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,ORL,0.0,0,RFA,0,0,0,0,0.0,Mac McClung,Mac McClung,https://www.spotrac.com/nba/player/_/id/74267,74267.0,ORL,1630644.0,Mac McClung
+41,PG,27.0,0.0,0.0,0.0,0.0,0.0,0.0,,,PHI,0.0,0,RFA,0,0,0,0,,Jeff Dowtin,Jeff Dowtin,https://www.spotrac.com/nba/player/_/id/70872,70872.0,PHI,1630288.0,Jeff Dowtin
+42,G,23.0,0.0,0.0,0.0,0.0,0.0,,,,GSW,0.0,0,RFA,0,0,0,,,Taran Armstrong,,,,,,
+43,SF,27.0,0.0,0.0,0.0,0.0,0.0,,,,GSW,0.0,0,RFA,0,0,0,,,Braxton Key,,,,,,
+44,F,28.0,0.0,0.0,0.0,0.0,0.0,,,,GSW,0.0,0,0,RFA,0,0,,,Jackson Rowe,Jackson Rowe,https://www.spotrac.com/nba/player/_/id/95270,95270.0,GSW,1642050.0,Jackson Rowe
+45,SG,25.0,0.0,0.0,0.0,0.0,0.0,0.0,,,SAS,0.0,0,RFA,0,0,0,0,,David Duke Jr.,David Duke Jr.,https://www.spotrac.com/nba/player/_/id/74239,74239.0,SAS,1630561.0,David Duke Jr.
+46,SF,22.0,0.0,0.0,0.0,0.0,0.0,0.0,,,SAS,0.0,0,RFA,0,0,0,0,,Harrison Ingram,Harrison Ingram,https://www.spotrac.com/nba/player/_/id/91775,91775.0,SAS,1631127.0,Harrison Ingram
+47,F,25.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,BOS,0.0,0,RFA,0,0,0,0,0.0,Drew Peterson,Drew Peterson,https://www.spotrac.com/nba/player/_/id/85837,85837.0,BOS,1641809.0,Drew Peterson
+48,SF,24.0,0.0,0.0,0.0,0.0,0.0,0.0,,,SAS,0.0,0,RFA,0,0,0,0,,Riley Minix,Riley Minix,https://www.spotrac.com/nba/player/_/id/95269,95269.0,SAS,1642434.0,Riley Minix
+49,F,25.0,0.0,0.0,0.0,0.0,0.0,0.0,,,PHI,0.0,0,0,RFA,0,0,0,,Alex Reese,Alex Reese,https://www.spotrac.com/nba/player/_/id/95612,95612.0,OKC,1642024.0,Alex Reese
+50,SG,26.0,0.0,0.0,0.0,0.0,0.0,,,,SAC,0.0,0,RFA,0,0,0,,,Mason Jones,Mason Jones,https://www.spotrac.com/nba/player/_/id/70713,70713.0,SAC,1630222.0,Mason Jones
+51,G,23.0,0.0,0.0,0.0,0.0,0.0,,,,SAC,0.0,0,RFA,0,0,0,,,Isaiah Crawford,Isaiah Crawford,https://www.spotrac.com/nba/player/_/id/94482,94482.0,SAC,1642384.0,Isaiah Crawford
+52,G,25.0,0.0,0.0,0.0,0.0,0.0,0.0,,,OKC,0.0,0,RFA,0,0,0,0,,Adam Flagler,Adam Flagler,https://www.spotrac.com/nba/player/_/id/86081,86081.0,OKC,1641745.0,Adam Flagler
+53,G,24.0,0.0,0.0,0.0,0.0,0.0,0.0,,,OKC,0.0,0,RFA,0,0,0,0,,Alex Ducas,Alex Ducas,https://www.spotrac.com/nba/player/_/id/94882,94882.0,OKC,1642505.0,Alex Ducas
+54,C,25.0,0.0,0.0,0.0,0.0,0.0,0.0,,,OKC,0.0,0,RFA,0,0,0,0,,Branden Carlson,Branden Carlson,https://www.spotrac.com/nba/player/_/id/94490,94490.0,OKC,1642382.0,Branden Carlson
+55,F,24.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,DET,0.0,0,0,RFA,0,0,0,0.0,Tolu Smith III,Tolu Smith III,https://www.spotrac.com/nba/player/_/id/95591,95591.0,DET,,Tolu Smith III
+56,G,23.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,DET,0.0,0,RFA,0,0,0,0,0.0,Daniss Jenkins,Daniss Jenkins,https://www.spotrac.com/nba/player/_/id/94498,94498.0,DET,1642450.0,Daniss Jenkins
+57,PF,23.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,HOU,0.0,0,RFA,0,0,0,0,0.0,N'Faly Dante,N'Faly Dante,https://www.spotrac.com/nba/player/_/id/94513,94513.0,HOU,1642368.0,N'Faly Dante
+58,F,28.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,HOU,0.0,0,RFA,0,0,0,0,0.0,Jack McVeigh,Jack McVeigh,https://www.spotrac.com/nba/player/_/id/95281,95281.0,HOU,1629098.0,Jack McVeigh
+59,SG,24.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,DET,0.0,0,RFA,0,0,0,0,0.0,Ron Harper Jr.,Ron Harper Jr.,https://www.spotrac.com/nba/player/_/id/78577,78577.0,DET,1631199.0,Ron Harper Jr.
+60,PG,22.0,0.0,0.0,0.0,0.0,0.0,0.0,,,CHA,0.0,0,0,RFA,0,0,0,,K.J. Simpson,K.J. Simpson,https://www.spotrac.com/nba/player/_/id/91788,91788.0,CHA,,K.J. Simpson
+61,PG,21.0,0.0,0.0,0.0,0.0,0.0,0.0,,,PHI,0.0,0,RFA,0,0,0,0,,Jalen Hood-Schifino,Jalen Hood-Schifino,https://www.spotrac.com/nba/player/_/id/82210,82210.0,UTA,1641720.0,Jalen Hood-Schifino
+62,PF,24.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,BOS,0.0,0,RFA,0,0,0,0,0.0,Miles Norris,,,,,,
+63,F,24.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,CLE,0.0,0,0,RFA,0,0,0,0.0,Nae'qwan Tomlin,,,,,,
+64,PF,24.0,0.0,0.0,0.0,0.0,0.0,,,,DAL,0.0,0,RFA,0,0,0,,,Kai Jones,Kai Jones,https://www.spotrac.com/nba/player/_/id/74126,74126.0,LAC,1630539.0,Kai Jones
+65,PG,24.0,0.0,0.0,0.0,0.0,0.0,0.0,,,MIN,0.0,0,0,0,0,0,0,,Nah'Shon Hyland,Nah'Shon Hyland,https://www.spotrac.com/nba/player/_/id/74133,74133.0,ATL,1630538,Nah'Shon Hyland
+66,SF,24.0,0.0,0.0,0.0,0.0,0.0,,,,DAL,0.0,0,RFA,0,0,0,,,Kessler Edwards,Kessler Edwards,https://www.spotrac.com/nba/player/_/id/74151,74151.0,DAL,1630556.0,Kessler Edwards
+67,C,24.0,0.0,0.0,0.0,0.0,0.0,0.0,,,MIN,0.0,0,RFA,0,0,0,0,,Jesse Edwards,Jesse Edwards,https://www.spotrac.com/nba/player/_/id/94511,94511.0,MIN,1642399.0,Jesse Edwards
+68,F,21.0,0.0,0.0,0.0,0.0,0.0,0.0,,,WAS,0.0,0,0,RFA,0,0,0,,Jaylen Martin,Jaylen Martin,https://www.spotrac.com/nba/player/_/id/84733,84733.0,WAS,1641798.0,Jaylen Martin
+69,G,25.0,0.0,0.0,0.0,0.0,0.0,,,,MIL,0.0,0,RFA,0,0,0,,,Stanley Umude,Stanley Umude,https://www.spotrac.com/nba/player/_/id/79976,79976.0,MIL,1630649.0,Stanley Umude
+70,PG,25.0,0.0,0.0,0.0,0.0,0.0,,,,DAL,0.0,0,RFA,0,0,0,,,Brandon Williams,Brandon Williams,https://www.spotrac.com/nba/player/_/id/75136,75136.0,DAL,1630314.0,Brandon Williams
+71,PF,24.0,0.0,0.0,0.0,0.0,0.0,,,,MIL,0.0,0,0,RFA,0,0,,,Pete Nance,,,,,,
+72,PG,25.0,0.0,0.0,0.0,0.0,0.0,,,,MIL,0.0,0,0,RFA,0,0,,,Jamaree Bouyea,,,,,,
+73,G,26.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,ATL,0.0,0,0,RFA,0,0,0,0.0,Daeqwon Plowden,Daeqwon Plowden,https://www.spotrac.com/nba/player/_/id/79950,79950.0,ATL,1631342.0,Daeqwon Plowden
+74,SF,24.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,ATL,0.0,0,RFA,0,0,0,0,0.0,Jacob Toppin,Jacob Toppin,https://www.spotrac.com/nba/player/_/id/84769,84769.0,NYK,1631210.0,Jacob Toppin
+75,G,25.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,ATL,0.0,0,RFA,0,0,0,0,0.0,Keaton Wallace,Keaton Wallace,https://www.spotrac.com/nba/player/_/id/79960,79960.0,ATL,1630811.0,Keaton Wallace
 76,SG,27.0,0.0,0.0,0.0,0.0,0.0,0.0,,,MIA,0.0,0,RFA,0,0,0,0,,Dru Smith,Dru Smith,https://www.spotrac.com/nba/player/_/id/74420,74420.0,MIA,1630696.0,Dru Smith
-77,PF,23.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,HOU,0.0,0,RFA,0,0,0,0,0.0,N'Faly Dante,N'Faly Dante,https://www.spotrac.com/nba/player/_/id/94513,94513.0,HOU,1642368.0,N'Faly Dante
-78,F,21.0,0.0,0.0,0.0,0.0,0.0,0.0,,,WAS,0.0,0,0,RFA,0,0,0,,Jaylen Martin,Jaylen Martin,https://www.spotrac.com/nba/player/_/id/84733,84733.0,WAS,1641798.0,Jaylen Martin
-79,SG,24.0,0.0,0.0,0.0,0.0,0.0,0.0,,,NYK,0.0,0,RFA,0,0,0,0,,MarJon Beauchamp,MarJon Beauchamp,https://www.spotrac.com/nba/player/_/id/78134,78134.0,LAC,1630699.0,MarJon Beauchamp
-80,SG,24.0,0.0,0.0,0.0,0.0,0.0,0.0,,,NYK,0.0,0,RFA,0,0,0,0,,MarJon Beauchamp,MarJon Beauchamp,https://www.spotrac.com/nba/player/_/id/78134,78134.0,MIL,1630699.0,MarJon Beauchamp
-81,PG,22.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,BOS,0.0,0,RFA,0,0,0,0,0.0,J.D. Davison,J.D. Davison,https://www.spotrac.com/nba/player/_/id/78163,78163.0,BOS,,J.D. Davison
-82,C,21.0,0.0,0.0,0.0,0.0,0.0,0.0,,,WAS,0.0,0,RFA,0,0,0,0,,Tristan Vukcevic,Tristan Vukcevic,https://www.spotrac.com/nba/player/_/id/84470,84470.0,WAS,1641774.0,Tristan Vukcevic
-83,PF,24.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,BOS,0.0,0,RFA,0,0,0,0,0.0,Miles Norris,,,,,,
-84,F,25.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,BOS,0.0,0,RFA,0,0,0,0,0.0,Drew Peterson,Drew Peterson,https://www.spotrac.com/nba/player/_/id/85837,85837.0,BOS,1641809.0,Drew Peterson
-85,G,25.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,ATL,0.0,0,RFA,0,0,0,0,0.0,Keaton Wallace,Keaton Wallace,https://www.spotrac.com/nba/player/_/id/79960,79960.0,ATL,1630811.0,Keaton Wallace
-86,SF,24.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,ATL,0.0,0,RFA,0,0,0,0,0.0,Jacob Toppin,Jacob Toppin,https://www.spotrac.com/nba/player/_/id/84769,84769.0,NYK,1631210.0,Jacob Toppin
-87,G,26.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,ATL,0.0,0,0,RFA,0,0,0,0.0,Daeqwon Plowden,Daeqwon Plowden,https://www.spotrac.com/nba/player/_/id/79950,79950.0,ATL,1631342.0,Daeqwon Plowden
-88,SG,24.0,0.0,0.0,0.0,0.0,0.0,0.0,,,MEM,0.0,0,RFA,0,0,0,0,,Cam Spencer,Cam Spencer,https://www.spotrac.com/nba/player/_/id/93960,93960.0,MEM,1642285.0,Cam Spencer
-89,PG,23.0,0.0,0.0,0.0,0.0,0.0,0.0,,,IND,0.0,0,0,RFA,0,0,0,,RayJ Dennis,RayJ Dennis,https://www.spotrac.com/nba/player/_/id/95567,95567.0,IND,1642484.0,RayJ Dennis
-90,PF,22.0,0.0,0.0,0.0,0.0,0.0,0.0,,,WAS,0.0,0,RFA,0,0,0,0,,JT Thor,JT Thor,https://www.spotrac.com/nba/player/_/id/74144,74144.0,CLE,1630550.0,JT Thor
-91,SG,23.0,0.0,0.0,0.0,0.0,0.0,0.0,,,MIA,0.0,0,RFA,0,0,0,0,,Josh Christopher,Josh Christopher,https://www.spotrac.com/nba/player/_/id/74131,74131.0,MIA,1630528.0,Josh Christopher
-92,G,26.0,66503.0,0.0,0.0,0.0,0.0,0.0,,,CHA,66503.0,0,0,0,0,0,0,,Jaylen Sims,,,,,,
+77,C,21.0,0.0,0.0,0.0,0.0,0.0,0.0,,,WAS,0.0,0,RFA,0,0,0,0,,Tristan Vukcevic,Tristan Vukcevic,https://www.spotrac.com/nba/player/_/id/84470,84470.0,WAS,1641774.0,Tristan Vukcevic
+78,PF,25.0,0.0,0.0,0.0,0.0,0.0,,,,LAL,0.0,0,0,RFA,0,0,,,Trey Jemison,Trey Jemison,https://www.spotrac.com/nba/player/_/id/86044,86044.0,LAL,1641998.0,Trey Jemison
+79,C,24.0,0.0,0.0,0.0,0.0,0.0,,,,LAL,0.0,0,RFA,0,0,0,,,Christian Koloko,Christian Koloko,https://www.spotrac.com/nba/player/_/id/78131,78131.0,LAL,1631132.0,Christian Koloko
+80,PG,22.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,BOS,0.0,0,RFA,0,0,0,0,0.0,J.D. Davison,J.D. Davison,https://www.spotrac.com/nba/player/_/id/78163,78163.0,BOS,,J.D. Davison
+81,PG,24.0,0.0,0.0,0.0,0.0,0.0,0.0,,,MIA,0.0,0,RFA,0,0,0,0,,Isaiah Stevens,Isaiah Stevens,https://www.spotrac.com/nba/player/_/id/94497,94497.0,MIA,1641815.0,Isaiah Stevens
+82,SG,23.0,0.0,0.0,0.0,0.0,0.0,0.0,,,MIA,0.0,0,RFA,0,0,0,0,,Josh Christopher,Josh Christopher,https://www.spotrac.com/nba/player/_/id/74131,74131.0,MIA,1630528.0,Josh Christopher
+83,PG,23.0,0.0,0.0,0.0,0.0,0.0,0.0,,,MIN,0.0,0,RFA,0,0,0,0,,Tristen Newton,Tristen Newton,https://www.spotrac.com/nba/player/_/id/93957,93957.0,MIN,1641803.0,Tristen Newton
+84,PF,22.0,0.0,0.0,0.0,0.0,0.0,0.0,,,WAS,0.0,0,RFA,0,0,0,0,,JT Thor,JT Thor,https://www.spotrac.com/nba/player/_/id/74144,74144.0,CLE,1630550.0,JT Thor
+85,F,25.0,0.0,0.0,0.0,0.0,0.0,,,,POR,0.0,0,0,0,0,0,,,Justin Minaya,Justin Minaya,https://www.spotrac.com/nba/player/_/id/82122,82122.0,POR,1631303.0,Justin Minaya
+86,PG,23.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,PHX,0.0,0,RFA,0,0,0,0,0.0,TyTy Washington Jr.,TyTy Washington Jr.,https://www.spotrac.com/nba/player/_/id/78125,78125.0,PHX,1631102.0,TyTy Washington Jr.
+87,G,23.0,0.0,0.0,0.0,0.0,0.0,0.0,,,MEM,0.0,0,RFA,0,0,0,0,,Yuki Kawamura,Yuki Kawamura,https://www.spotrac.com/nba/player/_/id/95565,95565.0,MEM,1642530.0,Yuki Kawamura
+88,SG,24.0,0.0,0.0,0.0,0.0,0.0,,,,LAC,0.0,0,0,RFA,0,0,,,Seth Lundy,,,,,,
+89,SG,24.0,0.0,0.0,0.0,0.0,0.0,0.0,,,MEM,0.0,0,RFA,0,0,0,0,,Cam Spencer,Cam Spencer,https://www.spotrac.com/nba/player/_/id/93960,93960.0,MEM,1642285.0,Cam Spencer
+90,F,19.0,0.0,0.0,0.0,0.0,0.0,,,,LAC,0.0,0,RFA,0,0,0,,,Trentyn Flowers,Trentyn Flowers,https://www.spotrac.com/nba/player/_/id/95276,95276.0,LAC,1642280.0,Trentyn Flowers
+91,PG,23.0,0.0,0.0,0.0,0.0,0.0,0.0,,,MEM,0.0,0,0,RFA,0,0,0,,Zyon Pullin,Zyon Pullin,https://www.spotrac.com/nba/player/_/id/94457,94457.0,MEM,1642389.0,Zyon Pullin
+92,SF,23.0,59853.0,0.0,0.0,0.0,0.0,0.0,,,PHI,59853.0,0,0,0,0,0,0,,Marcus Bagley,,,,,,
 93,C,27.0,66503.0,0.0,0.0,0.0,0.0,0.0,,,NOP,66503.0,0,0,0,0,0,0,,Kylor Kelley,Kylor Kelley,https://www.spotrac.com/nba/player/_/id/86054,86054.0,DAL,1630283.0,Kylor Kelley
-94,SF,23.0,66503.0,0.0,0.0,0.0,0.0,0.0,,,PHI,66503.0,0,0,0,0,0,0,,Marcus Bagley,,,,,,
+94,G,26.0,66503.0,0.0,0.0,0.0,0.0,0.0,,,CHA,66503.0,0,0,0,0,0,0,,Jaylen Sims,,,,,,
 95,PG,26.0,107027.0,0.0,0.0,0.0,0.0,0.0,,,CHA,107027.0,0,0,0,0,0,0,,Marcus Garrett,,,,,,
 96,PF,24.0,107027.0,0.0,0.0,0.0,0.0,0.0,,,PHI,107027.0,0,0,0,0,0,0,,Colin Castleton,,,,,,
 97,F,25.0,107975.0,0.0,0.0,0.0,0.0,0.0,0.0,,TOR,107975.0,0,RFA,0,0,0,0,0.0,Cole Swider,,,,,,
 98,F,24.0,113055.0,1955377.0,0.0,0.0,0.0,,,,BKN,113055.0,0,T,RFA,0,0,,,Drew Timme,,,,,,
-99,PF,26.0,119972.0,0.0,0.0,0.0,0.0,0.0,,,PHI,119972.0,0,0,0,0,0,0,,Chuma Okeke,Chuma Okeke,https://www.spotrac.com/nba/player/_/id/31573,31573.0,PHI,1629643.0,Chuma Okeke
+99,C,26.0,119972.0,0.0,0.0,0.0,0.0,0.0,,,NOP,119972.0,0,0,0,0,0,0,,Mohamed Bamba,Mohamed Bamba,https://www.spotrac.com/nba/player/_/id/26972,26972.0,UTA,1628964,Mohamed Bamba
 100,PG,30.0,119972.0,0.0,0.0,0.0,0.0,0.0,,,NOP,119972.0,0,0,0,0,0,0,,Elfrid Payton,Elfrid Payton,https://www.spotrac.com/nba/player/_/id/15362,15362.0,CHA,203901.0,Elfrid Payton
 101,PG,30.0,119972.0,0.0,0.0,0.0,0.0,0.0,,,NOP,119972.0,0,0,0,0,0,0,,Elfrid Payton,Elfrid Payton,https://www.spotrac.com/nba/player/_/id/15362,15362.0,NOP,203901.0,Elfrid Payton
-102,C,26.0,119972.0,0.0,0.0,0.0,0.0,0.0,,,NOP,119972.0,0,0,0,0,0,0,,Mohamed Bamba,Mohamed Bamba,https://www.spotrac.com/nba/player/_/id/26972,26972.0,UTA,1628964,Mohamed Bamba
-103,SG,27.0,119972.0,0.0,0.0,0.0,0.0,0.0,0.0,,ATL,119972.0,0,0,0,0,0,0,0.0,Kevon Harris,,,,,,
-104,SF,27.0,119972.0,0.0,0.0,0.0,0.0,0.0,,,WAS,119972.0,0,0,0,0,0,0,,Jalen McDaniels,Jalen McDaniels,https://www.spotrac.com/nba/player/_/id/31611,31611.0,SAS,1629667.0,Jalen McDaniels
-105,C,24.0,152957.0,1955377.0,0.0,0.0,0.0,,,,SAC,152957.0,0,T,RFA,0,0,,,Isaac Jones,Isaac Jones,https://www.spotrac.com/nba/player/_/id/94481,94481.0,SAC,1642403.0,Isaac Jones
-106,PG,26.0,223718.0,2349578.0,0.0,0.0,0.0,,,,LAL,223718.0,0,T,0,0,0,,,Jordan Goodwin,Jordan Goodwin,https://www.spotrac.com/nba/player/_/id/74333,74333.0,LAL,1630692.0,Jordan Goodwin
-107,PF,39.0,246833.0,3468960.0,0.0,0.0,0.0,0.0,,,NYK,246833.0,0,T,0,0,0,0,,P.J. Tucker,P.J. Tucker,https://www.spotrac.com/nba/player/_/id/11059,11059.0,TOR,200782.0,P.J. Tucker
-108,SF,25.0,263939.0,0.0,0.0,0.0,0.0,,,,GSW,263939.0,0,0,0,0,0,,,Kevin Knox,,,,,,
-109,,,6901359.0,0.0,0.0,0.0,0.0,0.0,,0.0,WAS,306447.0,0,0,0,0,0,0,,Dead Cap,,,,,,
-110,,,7577453.0,0.0,0.0,0.0,0.0,0.0,,0.0,SAS,306447.0,0,0,0,0,0,0,,Dead Cap,,,,,,
-111,,,7768363.0,0.0,0.0,0.0,0.0,0.0,,0.0,HOU,306447.0,0,0,0,0,0,0,0.0,Dead Cap,,,,,,
-112,,,1319695.0,0.0,0.0,0.0,0.0,,,0.0,SAC,306447.0,0,0,0,0,0,,,Dead Cap,,,,,,
-113,,,14806444.0,0.0,0.0,0.0,0.0,0.0,,0.0,CHA,306447.0,0,0,0,0,0,0,,Dead Cap,,,,,,
-114,,,8014853.0,464050.0,464050.0,0.0,0.0,0.0,,0.0,MEM,306447.0,0,0,0,0,0,0,,Dead Cap,,,,,,
-115,,,11466009.0,0.0,0.0,0.0,0.0,0.0,,0.0,UTA,306447.0,0,0,0,0,0,0,,Dead Cap,,,,,,
-116,,,8739110.0,0.0,0.0,0.0,0.0,0.0,,0.0,CHI,306447.0,0,0,0,0,0,0,,Dead Cap,,,,,,
-117,,,876383.0,0.0,0.0,0.0,0.0,0.0,,0.0,NYK,306447.0,0,0,0,0,0,0,,Dead Cap,,,,,,
-118,,,2530538.0,0.0,0.0,0.0,0.0,0.0,,0.0,IND,306447.0,0,0,0,0,0,0,,Dead Cap,,,,,,
-119,,,492922.0,0.0,0.0,0.0,0.0,0.0,,0.0,PHI,306447.0,0,0,0,0,0,0,,Dead Cap,,,,,,
-120,,,2328828.0,2208856.0,2208856.0,2208856.0,0.0,,,0.0,DAL,306447.0,0,0,0,0,0,,,Dead Cap,,,,,,
-121,,,306447.0,0.0,0.0,0.0,0.0,,,0.0,GSW,306447.0,0,0,0,0,0,,,Dead Cap,,,,,,
-122,,,1568032.0,268032.0,268032.0,268031.0,268031.0,,,0.0,POR,306447.0,0,0,0,0,0,,,Dead Cap,,,,,,
-123,,,5514986.0,0.0,0.0,0.0,0.0,,,0.0,LAL,306447.0,0,0,0,0,0,,,Dead Cap,,,,,,
+102,SG,27.0,119972.0,0.0,0.0,0.0,0.0,0.0,0.0,,ATL,119972.0,0,0,0,0,0,0,0.0,Kevon Harris,,,,,,
+103,SF,27.0,119972.0,0.0,0.0,0.0,0.0,0.0,,,WAS,119972.0,0,0,0,0,0,0,,Jalen McDaniels,Jalen McDaniels,https://www.spotrac.com/nba/player/_/id/31611,31611.0,SAS,1629667.0,Jalen McDaniels
+104,C,24.0,152957.0,1955377.0,0.0,0.0,0.0,,,,SAC,152957.0,0,T,RFA,0,0,,,Isaac Jones,Isaac Jones,https://www.spotrac.com/nba/player/_/id/94481,94481.0,SAC,1642403.0,Isaac Jones
+105,PG,26.0,223718.0,2349578.0,0.0,0.0,0.0,,,,LAL,223718.0,0,T,0,0,0,,,Jordan Goodwin,Jordan Goodwin,https://www.spotrac.com/nba/player/_/id/74333,74333.0,LAL,1630692.0,Jordan Goodwin
+106,PF,39.0,246833.0,3468960.0,0.0,0.0,0.0,0.0,,,NYK,246833.0,0,T,0,0,0,0,,P.J. Tucker,P.J. Tucker,https://www.spotrac.com/nba/player/_/id/11059,11059.0,TOR,200782.0,P.J. Tucker
+107,SF,25.0,263939.0,0.0,0.0,0.0,0.0,,,,GSW,263939.0,0,0,0,0,0,,,Kevin Knox,,,,,,
+108,,,876383.0,0.0,0.0,0.0,0.0,0.0,,0.0,NYK,306447.0,0,0,0,0,0,0,,Dead Cap,,,,,,
+109,,,5514986.0,0.0,0.0,0.0,0.0,,,0.0,LAL,306447.0,0,0,0,0,0,,,Dead Cap,,,,,,
+110,,,7768363.0,0.0,0.0,0.0,0.0,0.0,,0.0,HOU,306447.0,0,0,0,0,0,0,0.0,Dead Cap,,,,,,
+111,,,11466009.0,0.0,0.0,0.0,0.0,0.0,,0.0,UTA,306447.0,0,0,0,0,0,0,,Dead Cap,,,,,,
+112,,,14806444.0,0.0,0.0,0.0,0.0,0.0,,0.0,CHA,306447.0,0,0,0,0,0,0,,Dead Cap,,,,,,
+113,,,8739110.0,0.0,0.0,0.0,0.0,0.0,,0.0,CHI,306447.0,0,0,0,0,0,0,,Dead Cap,,,,,,
+114,,,491175.0,424672.0,424672.0,0.0,0.0,0.0,,0.0,CLE,306447.0,0,0,0,0,0,0,0.0,Dead Cap,,,,,,
+115,,,7005680.0,0.0,0.0,0.0,0.0,0.0,,0.0,ATL,306447.0,0,0,0,0,0,0,0.0,Dead Cap,,,,,,
+116,,,612894.0,0.0,0.0,0.0,0.0,0.0,,0.0,PHI,306447.0,0,0,0,0,0,0,,Dead Cap,,,,,,
+117,,,2328828.0,2208856.0,2208856.0,2208856.0,0.0,,,0.0,DAL,306447.0,0,0,0,0,0,,,Dead Cap,,,,,,
+118,,,3792452.0,0.0,0.0,0.0,0.0,0.0,,0.0,OKC,306447.0,0,0,0,0,0,0,,Dead Cap,,,,,,
+119,,,1568032.0,268032.0,268032.0,268031.0,268031.0,,,0.0,POR,306447.0,0,0,0,0,0,,,Dead Cap,,,,,,
+120,,,58408905.0,0.0,0.0,0.0,0.0,,,0.0,BKN,306447.0,0,0,0,0,0,,,Dead Cap,,,,,,
+121,,,2402011.0,0.0,0.0,0.0,0.0,0.0,,0.0,NOP,306447.0,0,0,0,0,0,0,,Dead Cap,,,,,,
+122,,,2530538.0,0.0,0.0,0.0,0.0,0.0,,0.0,IND,306447.0,0,0,0,0,0,0,,Dead Cap,,,,,,
+123,,,6901359.0,0.0,0.0,0.0,0.0,0.0,,0.0,WAS,306447.0,0,0,0,0,0,0,,Dead Cap,,,,,,
 124,,,7818542.0,0.0,0.0,0.0,0.0,0.0,,0.0,DET,306447.0,0,0,0,0,0,0,0.0,Dead Cap,,,,,,
-125,,,3792452.0,0.0,0.0,0.0,0.0,0.0,,0.0,OKC,306447.0,0,0,0,0,0,0,,Dead Cap,,,,,,
-126,,,3705899.0,0.0,0.0,0.0,0.0,0.0,,0.0,MIN,306447.0,0,0,0,0,0,0,,Dead Cap,,,,,,
-127,,,491175.0,424672.0,424672.0,0.0,0.0,0.0,,0.0,CLE,306447.0,0,0,0,0,0,0,0.0,Dead Cap,,,,,,
-128,,,3733720.0,0.0,0.0,0.0,0.0,,,0.0,LAC,306447.0,0,0,0,0,0,,,Dead Cap,,,,,,
-129,,,58408905.0,0.0,0.0,0.0,0.0,,,0.0,BKN,306447.0,0,0,0,0,0,,,Dead Cap,,,,,,
-130,,,3814041.0,3814041.0,3814041.0,3107143.0,3107143.0,3107143.0,,0.0,PHX,306447.0,0,0,0,0,0,0,0.0,Dead Cap,,,,,,
-131,,,15805733.0,0.0,0.0,0.0,0.0,0.0,,0.0,TOR,306447.0,0,0,0,0,0,0,0.0,Dead Cap,,,,,,
-132,,,2402011.0,0.0,0.0,0.0,0.0,0.0,,0.0,NOP,306447.0,0,0,0,0,0,0,,Dead Cap,,,,,,
-133,,,7005680.0,0.0,0.0,0.0,0.0,0.0,,0.0,ATL,306447.0,0,0,0,0,0,0,0.0,Dead Cap,,,,,,
-134,C,27.0,330394.0,0.0,0.0,0.0,0.0,0.0,,,IND,330394.0,0,0,T,0,0,0,,Tony Bradley,,,,,,
-135,SF,27.0,383912.0,0.0,0.0,0.0,0.0,0.0,,,MEM,383912.0,0,0,0,0,0,0,,Lamar Stevens,,,,,,
-136,SG,21.0,425619.0,1955377.0,0.0,0.0,0.0,0.0,,,PHI,425619.0,0,T,RFA,0,0,0,,Justin Edwards,Justin Edwards,https://www.spotrac.com/nba/player/_/id/91770,91770.0,PHI,1642348.0,Justin Edwards
-137,G,28.0,438810.0,0.0,0.0,0.0,0.0,,,,GSW,438810.0,0,RFA,0,0,0,,,Pat Spencer,Pat Spencer,https://www.spotrac.com/nba/player/_/id/79256,79256.0,GSW,1630311.0,Pat Spencer
-138,C,24.0,438930.0,1955377.0,0.0,0.0,0.0,,,,GSW,438920.0,0,T,RFA,0,0,,,Quinten Post,Quinten Post,https://www.spotrac.com/nba/player/_/id/93959,93959.0,GSW,1642366.0,Quinten Post
-139,C,24.0,491887.0,0.0,0.0,0.0,0.0,0.0,0.0,,TOR,491887.0,0,RFA,0,0,0,0,0.0,Orlando Robinson,Orlando Robinson,https://www.spotrac.com/nba/player/_/id/78309,78309.0,SAC,1631115.0,Orlando Robinson
-140,C,24.0,491887.0,0.0,0.0,0.0,0.0,0.0,0.0,,TOR,491887.0,0,RFA,0,0,0,0,0.0,Orlando Robinson,Orlando Robinson,https://www.spotrac.com/nba/player/_/id/78309,78309.0,TOR,1631115.0,Orlando Robinson
-141,PF,21.0,491887.0,2270735.0,0.0,0.0,0.0,0.0,0.0,,ATL,491887.0,0,T,RFA,0,0,0,0.0,Dominick Barlow,Dominick Barlow,https://www.spotrac.com/nba/player/_/id/78565,78565.0,ATL,1631230.0,Dominick Barlow
-142,SG,22.0,491887.0,0.0,0.0,0.0,0.0,,,,MIL,491887.0,0,RFA,0,0,0,,,Ryan Rollins,Ryan Rollins,https://www.spotrac.com/nba/player/_/id/78155,78155.0,MIL,1631157.0,Ryan Rollins
-143,SG,22.0,491887.0,0.0,0.0,0.0,0.0,,,,MIL,491887.0,0,RFA,0,0,0,,,Ryan Rollins,Ryan Rollins,https://www.spotrac.com/nba/player/_/id/78155,78155.0,WAS,1631157.0,Ryan Rollins
-144,C,32.0,503884.0,0.0,0.0,0.0,0.0,0.0,,,SAS,503884.0,0,0,0,0,0,0,,Bismack Biyombo,Bismack Biyombo,https://www.spotrac.com/nba/player/_/id/8057,8057.0,SAS,202687.0,Bismack Biyombo
-145,SG,23.0,596581.0,2349578.0,0.0,0.0,0.0,0.0,,,NOP,596581.0,0,T,0,0,0,0,,Brandon Boston Jr,Brandon Boston Jr,https://www.spotrac.com/nba/player/_/id/74158,74158.0,NOP,1630527.0,Brandon Boston Jr
-146,SG,31.0,599862.0,0.0,0.0,0.0,0.0,0.0,0.0,,CLE,599862.0,0,0,0,0,0,0,0.0,Javonte Green,Javonte Green,https://www.spotrac.com/nba/player/_/id/32409,32409.0,NOP,1629750.0,Javonte Green
-147,SF,25.0,635853.0,2191897.0,0.0,0.0,0.0,,,,BKN,635853.0,0,T,RFA,0,0,,,Tyrese Martin,Tyrese Martin,https://www.spotrac.com/nba/player/_/id/78162,78162.0,BKN,1631213.0,Tyrese Martin
-148,PF,23.0,724883.0,1955377.0,0.0,0.0,0.0,0.0,,,MIA,724883.0,0,T,RFA,0,0,0,,Keshad Johnson,Keshad Johnson,https://www.spotrac.com/nba/player/_/id/91786,91786.0,MIA,1642352.0,Keshad Johnson
-149,PG,26.0,731831.0,0.0,0.0,0.0,0.0,,,,SAC,731831.0,0,0,0,0,0,,,Markelle Fultz,Markelle Fultz,https://www.spotrac.com/nba/player/_/id/23596,23596.0,SAC,1628365.0,Markelle Fultz
-150,C,31.0,743829.0,0.0,0.0,0.0,0.0,,,,LAL,743829.0,0,0,0,0,0,,,Alex Len,Alex Len,https://www.spotrac.com/nba/player/_/id/13318,13318.0,LAL,203458.0,Alex Len
-151,C,31.0,743829.0,0.0,0.0,0.0,0.0,,,,LAL,743829.0,0,0,0,0,0,,,Alex Len,Alex Len,https://www.spotrac.com/nba/player/_/id/13318,13318.0,WAS,203458.0,Alex Len
-152,PG,24.0,745726.0,2349578.0,0.0,0.0,0.0,0.0,,,PHI,745726.0,0,T,0,0,0,0,,Jared Butler,Jared Butler,https://www.spotrac.com/nba/player/_/id/74147,74147.0,PHI,1630215.0,Jared Butler
-153,PG,28.0,755826.0,0.0,0.0,0.0,0.0,,,,LAC,755826.0,0,0,0,0,0,,,Ben Simmons,Ben Simmons,https://www.spotrac.com/nba/player/_/id/20206,20206.0,BKN,1627732.0,Ben Simmons
-154,PG,28.0,755826.0,0.0,0.0,0.0,0.0,,,,LAC,755826.0,0,0,0,0,0,,,Ben Simmons,Ben Simmons,https://www.spotrac.com/nba/player/_/id/20206,20206.0,LAC,1627732.0,Ben Simmons
-155,SF,34.0,779820.0,0.0,0.0,0.0,0.0,0.0,0.0,,BOS,779820.0,0,0,0,0,0,0,0.0,Torrey Craig,Torrey Craig,https://www.spotrac.com/nba/player/_/id/24230,24230.0,BOS,1628470.0,Torrey Craig
-156,SF,34.0,779820.0,0.0,0.0,0.0,0.0,0.0,0.0,,BOS,779820.0,0,0,0,0,0,0,0.0,Torrey Craig,Torrey Craig,https://www.spotrac.com/nba/player/_/id/24230,24230.0,CHI,1628470.0,Torrey Craig
-157,SG,26.0,780932.0,2940876.0,0.0,0.0,0.0,0.0,,,PHI,780932.0,0,T,0,0,0,0,,Lonnie Walker IV,,,,,,
-158,C,22.0,1064049.0,1955377.0,0.0,0.0,0.0,0.0,,,NYK,1064049.0,0,T,RFA,0,0,0,,Ariel Hukporti,Ariel Hukporti,https://www.spotrac.com/nba/player/_/id/93962,93962.0,NYK,1630574.0,Ariel Hukporti
-159,SG,27.0,1343690.0,0.0,0.0,0.0,0.0,0.0,,,NYK,1343690.0,0,0,0,0,0,0,,Landry Shamet,Landry Shamet,https://www.spotrac.com/nba/player/_/id/26992,26992.0,NYK,1629013.0,Landry Shamet
-160,C,25.0,1427671.0,0.0,0.0,0.0,0.0,0.0,0.0,,DET,1427671.0,0,0,0,0,0,0,0.0,Paul Reed,Paul Reed,https://www.spotrac.com/nba/player/_/id/70700,70700.0,DET,1630194.0,Paul Reed
-161,SF,34.0,1655619.0,0.0,0.0,0.0,0.0,,,,SAC,1655619.0,0,0,0,0,0,,,Jae Crowder,Jae Crowder,https://www.spotrac.com/nba/player/_/id/10859,10859.0,SAC,203109.0,Jae Crowder
+125,,,3705899.0,0.0,0.0,0.0,0.0,0.0,,0.0,MIN,306447.0,0,0,0,0,0,0,,Dead Cap,,,,,,
+126,,,7577453.0,0.0,0.0,0.0,0.0,0.0,,0.0,SAS,306447.0,0,0,0,0,0,0,,Dead Cap,,,,,,
+127,,,306447.0,0.0,0.0,0.0,0.0,,,0.0,GSW,306447.0,0,0,0,0,0,,,Dead Cap,,,,,,
+128,,,1319695.0,0.0,0.0,0.0,0.0,,,0.0,SAC,306447.0,0,0,0,0,0,,,Dead Cap,,,,,,
+129,,,3814041.0,3814041.0,3814041.0,3107143.0,3107143.0,3107143.0,,0.0,PHX,306447.0,0,0,0,0,0,0,0.0,Dead Cap,,,,,,
+130,,,15805733.0,0.0,0.0,0.0,0.0,0.0,,0.0,TOR,306447.0,0,0,0,0,0,0,0.0,Dead Cap,,,,,,
+131,,,3733720.0,0.0,0.0,0.0,0.0,,,0.0,LAC,306447.0,0,0,0,0,0,,,Dead Cap,,,,,,
+132,,,8014853.0,464050.0,464050.0,0.0,0.0,0.0,,0.0,MEM,306447.0,0,0,0,0,0,0,,Dead Cap,,,,,,
+133,C,27.0,330394.0,0.0,0.0,0.0,0.0,0.0,,,IND,330394.0,0,0,T,0,0,0,,Tony Bradley,,,,,,
+134,SF,27.0,383912.0,0.0,0.0,0.0,0.0,0.0,,,MEM,383912.0,0,0,0,0,0,0,,Lamar Stevens,,,,,,
+135,SG,21.0,425619.0,1955377.0,0.0,0.0,0.0,0.0,,,PHI,425619.0,0,T,RFA,0,0,0,,Justin Edwards,Justin Edwards,https://www.spotrac.com/nba/player/_/id/91770,91770.0,PHI,1642348.0,Justin Edwards
+136,G,28.0,438810.0,0.0,0.0,0.0,0.0,,,,GSW,438810.0,0,RFA,0,0,0,,,Pat Spencer,Pat Spencer,https://www.spotrac.com/nba/player/_/id/79256,79256.0,GSW,1630311.0,Pat Spencer
+137,C,24.0,438930.0,1955377.0,0.0,0.0,0.0,,,,GSW,438920.0,0,T,RFA,0,0,,,Quinten Post,Quinten Post,https://www.spotrac.com/nba/player/_/id/93959,93959.0,GSW,1642366.0,Quinten Post
+138,C,24.0,491887.0,0.0,0.0,0.0,0.0,0.0,0.0,,TOR,491887.0,0,RFA,0,0,0,0,0.0,Orlando Robinson,Orlando Robinson,https://www.spotrac.com/nba/player/_/id/78309,78309.0,SAC,1631115.0,Orlando Robinson
+139,C,24.0,491887.0,0.0,0.0,0.0,0.0,0.0,0.0,,TOR,491887.0,0,RFA,0,0,0,0,0.0,Orlando Robinson,Orlando Robinson,https://www.spotrac.com/nba/player/_/id/78309,78309.0,TOR,1631115.0,Orlando Robinson
+140,PF,21.0,491887.0,2270735.0,0.0,0.0,0.0,0.0,0.0,,ATL,491887.0,0,T,RFA,0,0,0,0.0,Dominick Barlow,Dominick Barlow,https://www.spotrac.com/nba/player/_/id/78565,78565.0,ATL,1631230.0,Dominick Barlow
+141,SG,22.0,491887.0,0.0,0.0,0.0,0.0,,,,MIL,491887.0,0,RFA,0,0,0,,,Ryan Rollins,Ryan Rollins,https://www.spotrac.com/nba/player/_/id/78155,78155.0,MIL,1631157.0,Ryan Rollins
+142,SG,22.0,491887.0,0.0,0.0,0.0,0.0,,,,MIL,491887.0,0,RFA,0,0,0,,,Ryan Rollins,Ryan Rollins,https://www.spotrac.com/nba/player/_/id/78155,78155.0,WAS,1631157.0,Ryan Rollins
+143,C,32.0,503884.0,0.0,0.0,0.0,0.0,0.0,,,SAS,503884.0,0,0,0,0,0,0,,Bismack Biyombo,Bismack Biyombo,https://www.spotrac.com/nba/player/_/id/8057,8057.0,SAS,202687.0,Bismack Biyombo
+144,SG,23.0,596581.0,2349578.0,0.0,0.0,0.0,0.0,,,NOP,596581.0,0,T,0,0,0,0,,Brandon Boston Jr,Brandon Boston Jr,https://www.spotrac.com/nba/player/_/id/74158,74158.0,NOP,1630527.0,Brandon Boston Jr
+145,SG,31.0,599862.0,0.0,0.0,0.0,0.0,0.0,0.0,,CLE,599862.0,0,0,0,0,0,0,0.0,Javonte Green,Javonte Green,https://www.spotrac.com/nba/player/_/id/32409,32409.0,NOP,1629750.0,Javonte Green
+146,SF,25.0,635853.0,2191897.0,0.0,0.0,0.0,,,,BKN,635853.0,0,T,RFA,0,0,,,Tyrese Martin,Tyrese Martin,https://www.spotrac.com/nba/player/_/id/78162,78162.0,BKN,1631213.0,Tyrese Martin
+147,PF,23.0,724883.0,1955377.0,0.0,0.0,0.0,0.0,,,MIA,724883.0,0,T,RFA,0,0,0,,Keshad Johnson,Keshad Johnson,https://www.spotrac.com/nba/player/_/id/91786,91786.0,MIA,1642352.0,Keshad Johnson
+148,PG,26.0,731831.0,0.0,0.0,0.0,0.0,,,,SAC,731831.0,0,0,0,0,0,,,Markelle Fultz,Markelle Fultz,https://www.spotrac.com/nba/player/_/id/23596,23596.0,SAC,1628365.0,Markelle Fultz
+149,C,31.0,743829.0,0.0,0.0,0.0,0.0,,,,LAL,743829.0,0,0,0,0,0,,,Alex Len,Alex Len,https://www.spotrac.com/nba/player/_/id/13318,13318.0,LAL,203458.0,Alex Len
+150,C,31.0,743829.0,0.0,0.0,0.0,0.0,,,,LAL,743829.0,0,0,0,0,0,,,Alex Len,Alex Len,https://www.spotrac.com/nba/player/_/id/13318,13318.0,WAS,203458.0,Alex Len
+151,PG,24.0,745726.0,2349578.0,0.0,0.0,0.0,0.0,,,PHI,745726.0,0,T,0,0,0,0,,Jared Butler,Jared Butler,https://www.spotrac.com/nba/player/_/id/74147,74147.0,PHI,1630215.0,Jared Butler
+152,PG,28.0,755826.0,0.0,0.0,0.0,0.0,,,,LAC,755826.0,0,0,0,0,0,,,Ben Simmons,Ben Simmons,https://www.spotrac.com/nba/player/_/id/20206,20206.0,BKN,1627732.0,Ben Simmons
+153,PG,28.0,755826.0,0.0,0.0,0.0,0.0,,,,LAC,755826.0,0,0,0,0,0,,,Ben Simmons,Ben Simmons,https://www.spotrac.com/nba/player/_/id/20206,20206.0,LAC,1627732.0,Ben Simmons
+154,SF,34.0,779820.0,0.0,0.0,0.0,0.0,0.0,0.0,,BOS,779820.0,0,0,0,0,0,0,0.0,Torrey Craig,Torrey Craig,https://www.spotrac.com/nba/player/_/id/24230,24230.0,BOS,1628470.0,Torrey Craig
+155,SF,34.0,779820.0,0.0,0.0,0.0,0.0,0.0,0.0,,BOS,779820.0,0,0,0,0,0,0,0.0,Torrey Craig,Torrey Craig,https://www.spotrac.com/nba/player/_/id/24230,24230.0,CHI,1628470.0,Torrey Craig
+156,SG,26.0,780932.0,2940876.0,0.0,0.0,0.0,0.0,,,PHI,780932.0,0,T,0,0,0,0,,Lonnie Walker IV,,,,,,
+157,C,22.0,1064049.0,1955377.0,0.0,0.0,0.0,0.0,,,NYK,1064049.0,0,T,RFA,0,0,0,,Ariel Hukporti,Ariel Hukporti,https://www.spotrac.com/nba/player/_/id/93962,93962.0,NYK,1630574.0,Ariel Hukporti
+158,SG,27.0,1343690.0,0.0,0.0,0.0,0.0,0.0,,,NYK,1343690.0,0,0,0,0,0,0,,Landry Shamet,Landry Shamet,https://www.spotrac.com/nba/player/_/id/26992,26992.0,NYK,1629013.0,Landry Shamet
+159,C,25.0,1427671.0,0.0,0.0,0.0,0.0,0.0,0.0,,DET,1427671.0,0,0,0,0,0,0,0.0,Paul Reed,Paul Reed,https://www.spotrac.com/nba/player/_/id/70700,70700.0,DET,1630194.0,Paul Reed
+160,SF,34.0,1655619.0,0.0,0.0,0.0,0.0,,,,SAC,1655619.0,0,0,0,0,0,,,Jae Crowder,Jae Crowder,https://www.spotrac.com/nba/player/_/id/10859,10859.0,SAC,203109.0,Jae Crowder
+161,PF,24.0,1891857.0,2221677.0,0.0,0.0,0.0,,,,BKN,1891857.0,0,T,NG,0,0,,,Jalen Wilson,Jalen Wilson,https://www.spotrac.com/nba/player/_/id/84477,84477.0,BKN,1630592.0,Jalen Wilson
 162,SF,22.0,1891857.0,2221677.0,0.0,0.0,0.0,,,,GSW,1891857.0,0,T,RFA,0,0,,,Gui Santos,Gui Santos,https://www.spotrac.com/nba/player/_/id/78165,78165.0,GSW,1630611.0,Gui Santos
 163,SG,20.0,1891857.0,2221677.0,0.0,0.0,0.0,,,,POR,1891857.0,0,T,RFA,0,0,,,Rayan Rupert,Rayan Rupert,https://www.spotrac.com/nba/player/_/id/82212,82212.0,POR,1641712.0,Rayan Rupert
-164,PF,24.0,1891857.0,2221677.0,0.0,0.0,0.0,,,,BKN,1891857.0,0,T,NG,0,0,,,Jalen Wilson,Jalen Wilson,https://www.spotrac.com/nba/player/_/id/84477,84477.0,BKN,1630592.0,Jalen Wilson
+164,SF,22.0,2019699.0,0.0,0.0,0.0,0.0,,,,POR,2019699.0,0,RFA,0,0,0,,,Jabari Walker,Jabari Walker,https://www.spotrac.com/nba/player/_/id/78167,78167.0,POR,1631133.0,Jabari Walker
 165,SF,22.0,2019699.0,2187699.0,0.0,0.0,0.0,0.0,0.0,,ORL,2019699.0,0,T,0,0,0,0,0.0,Caleb Houstan,Caleb Houstan,https://www.spotrac.com/nba/player/_/id/78142,78142.0,ORL,1631216.0,Caleb Houstan
-166,SF,22.0,2019699.0,0.0,0.0,0.0,0.0,,,,POR,2019699.0,0,RFA,0,0,0,,,Jabari Walker,Jabari Walker,https://www.spotrac.com/nba/player/_/id/78167,78167.0,POR,1631133.0,Jabari Walker
-167,SF,22.0,2019699.0,2187451.0,0.0,0.0,0.0,0.0,,,MIN,2019699.0,0,T,0,0,0,0,,Josh Minott,Josh Minott,https://www.spotrac.com/nba/player/_/id/78156,78156.0,MIN,1631169.0,Josh Minott
-168,PG,36.0,2087519.0,0.0,0.0,0.0,0.0,,,,LAC,2087519.0,0,0,0,0,0,,,Patty Mills,Patty Mills,https://www.spotrac.com/nba/player/_/id/6322,6322.0,LAC,201988.0,Patty Mills
-169,PF,27.0,2087519.0,0.0,0.0,0.0,0.0,0.0,,,DEN,2087519.0,0,0,0,0,0,0,,Vlatko Cancar,Vlatko Cancar,https://www.spotrac.com/nba/player/_/id/23650,23650.0,DEN,1628427.0,Vlatko Cancar
-170,C,36.0,2087519.0,0.0,0.0,0.0,0.0,0.0,,,DEN,2087519.0,0,0,0,0,0,0,,DeAndre Jordan,DeAndre Jordan,https://www.spotrac.com/nba/player/_/id/6117,6117.0,DEN,201599.0,DeAndre Jordan
-171,SF,37.0,2087519.0,0.0,0.0,0.0,0.0,0.0,,,MIN,2087519.0,0,0,0,0,0,0,,Joe Ingles,Joe Ingles,https://www.spotrac.com/nba/player/_/id/15852,15852.0,MIN,204060.0,Joe Ingles
-172,SG,24.0,2087519.0,0.0,0.0,0.0,0.0,0.0,,,CHI,2087519.0,0,0,0,0,0,0,,Talen Horton-Tucker,Talen Horton-Tucker,https://www.spotrac.com/nba/player/_/id/31605,31605.0,CHI,1629659.0,Talen Horton-Tucker
-173,PG,28.0,2087519.0,0.0,0.0,0.0,0.0,0.0,,,SAS,2087519.0,0,0,0,0,0,0,,Jordan McLaughlin,Jordan McLaughlin,https://www.spotrac.com/nba/player/_/id/27975,27975.0,SAS,1629162.0,Jordan McLaughlin
-174,C,24.0,2087519.0,0.0,0.0,0.0,0.0,0.0,,,SAS,2087519.0,0,0,0,0,0,0,,Charles Bassey,Charles Bassey,https://www.spotrac.com/nba/player/_/id/74160,74160.0,SAS,1629646.0,Charles Bassey
-175,C,39.0,2087519.0,0.0,0.0,0.0,0.0,0.0,,,CHA,2087519.0,0,0,0,0,0,0,,Taj Gibson,Taj Gibson,https://www.spotrac.com/nba/player/_/id/6278,6278.0,CHA,201959.0,Taj Gibson
-176,PF,35.0,2087519.0,0.0,0.0,0.0,0.0,,,,LAL,2087519.0,0,0,0,0,0,,,Markieff Morris,Markieff Morris,https://www.spotrac.com/nba/player/_/id/8064,8064.0,LAL,202693.0,Markieff Morris
-177,PG,38.0,2087519.0,0.0,0.0,0.0,0.0,0.0,,,PHI,2087519.0,0,0,0,0,0,0,,Kyle Lowry,Kyle Lowry,https://www.spotrac.com/nba/player/_/id/2536,2536.0,PHI,200768.0,Kyle Lowry
-178,SG,38.0,2087519.0,0.0,0.0,0.0,0.0,0.0,0.0,,TOR,2087519.0,0,0,0,0,0,0,0.0,Garrett Temple,Garrett Temple,https://www.spotrac.com/nba/player/_/id/6492,6492.0,TOR,202066.0,Garrett Temple
-179,SG,34.0,2087519.0,0.0,0.0,0.0,0.0,0.0,,,CHA,2087519.0,0,0,0,0,0,0,,Seth Curry,Seth Curry,https://www.spotrac.com/nba/player/_/id/13512,13512.0,CHA,203552.0,Seth Curry
-180,SG,26.0,2087519.0,0.0,0.0,0.0,0.0,,,,MIL,2087519.0,0,0,0,0,0,,,Gary Trent Jr.,Gary Trent Jr.,https://www.spotrac.com/nba/player/_/id/27003,27003.0,MIL,1629018.0,Gary Trent Jr.
-181,PF,30.0,2087519.0,0.0,0.0,0.0,0.0,,,,MIL,2087519.0,0,0,0,0,0,,,Taurean Prince,Taurean Prince,https://www.spotrac.com/nba/player/_/id/20217,20217.0,MIL,1627752.0,Taurean Prince
-182,C,29.0,2087519.0,0.0,0.0,0.0,0.0,0.0,0.0,,BOS,2087519.0,0,0,0,0,0,0,0.0,Luke Kornet,Luke Kornet,https://www.spotrac.com/nba/player/_/id/23670,23670.0,BOS,1628436.0,Luke Kornet
-183,SG,33.0,2087519.0,0.0,0.0,0.0,0.0,0.0,,,MIA,2087519.0,0,0,0,0,0,0,,Alec Burks,Alec Burks,https://www.spotrac.com/nba/player/_/id/8063,8063.0,MIA,202692.0,Alec Burks
-184,PG,32.0,2087519.0,0.0,0.0,0.0,0.0,0.0,,,NYK,2087519.0,0,0,0,0,0,0,,Delon Wright,Delon Wright,https://www.spotrac.com/nba/player/_/id/17848,17848.0,NYK,1626153.0,Delon Wright
-185,PG,30.0,2087519.0,0.0,0.0,0.0,0.0,0.0,,,NYK,2087519.0,0,0,0,0,0,0,,Cameron Payne,Cameron Payne,https://www.spotrac.com/nba/player/_/id/17842,17842.0,NYK,1626166.0,Cameron Payne
-186,PF,37.0,2087519.0,0.0,0.0,0.0,0.0,0.0,,,IND,2087519.0,0,0,0,0,0,0,,James Johnson,James Johnson,https://www.spotrac.com/nba/player/_/id/6279,6279.0,IND,201949.0,James Johnson
-187,C,27.0,2087519.0,0.0,0.0,0.0,0.0,0.0,,,IND,2087519.0,0,0,0,0,0,0,,Thomas Bryant,Thomas Bryant,https://www.spotrac.com/nba/player/_/id/23643,23643.0,IND,1628418.0,Thomas Bryant
-188,C,25.0,2087519.0,0.0,0.0,0.0,0.0,0.0,,,SAS,2087519.0,0,0,0,0,0,0,,Sandro Mamukelashvili,Sandro Mamukelashvili,https://www.spotrac.com/nba/player/_/id/74161,74161.0,SAS,1630572.0,Sandro Mamukelashvili
-189,SF,33.0,2087519.0,0.0,0.0,0.0,0.0,,,,SAC,2087519.0,0,0,0,0,0,,,Doug McDermott,Doug McDermott,https://www.spotrac.com/nba/player/_/id/15363,15363.0,SAC,203926.0,Doug McDermott
-190,PF,29.0,2087519.0,0.0,0.0,0.0,0.0,0.0,,,PHI,2087519.0,0,0,0,0,0,0,,Guerschon Yabusele,Guerschon Yabusele,https://www.spotrac.com/nba/player/_/id/20221,20221.0,PHI,1627824.0,Guerschon Yabusele
-191,C,34.0,2087519.0,0.0,0.0,0.0,0.0,0.0,0.0,,PHX,2087519.0,0,0,0,0,0,0,0.0,Mason Plumlee,Mason Plumlee,https://www.spotrac.com/nba/player/_/id/13335,13335.0,PHX,203486.0,Mason Plumlee
+166,SF,22.0,2019699.0,2187451.0,0.0,0.0,0.0,0.0,,,MIN,2019699.0,0,T,0,0,0,0,,Josh Minott,Josh Minott,https://www.spotrac.com/nba/player/_/id/78156,78156.0,MIN,1631169.0,Josh Minott
+167,PF,27.0,2087519.0,0.0,0.0,0.0,0.0,0.0,,,DEN,2087519.0,0,0,0,0,0,0,,Vlatko Cancar,Vlatko Cancar,https://www.spotrac.com/nba/player/_/id/23650,23650.0,DEN,1628427.0,Vlatko Cancar
+168,C,36.0,2087519.0,0.0,0.0,0.0,0.0,0.0,,,DEN,2087519.0,0,0,0,0,0,0,,DeAndre Jordan,DeAndre Jordan,https://www.spotrac.com/nba/player/_/id/6117,6117.0,DEN,201599.0,DeAndre Jordan
+169,SF,33.0,2087519.0,0.0,0.0,0.0,0.0,,,,SAC,2087519.0,0,0,0,0,0,,,Doug McDermott,Doug McDermott,https://www.spotrac.com/nba/player/_/id/15363,15363.0,SAC,203926.0,Doug McDermott
+170,PF,29.0,2087519.0,0.0,0.0,0.0,0.0,0.0,,,PHI,2087519.0,0,0,0,0,0,0,,Guerschon Yabusele,Guerschon Yabusele,https://www.spotrac.com/nba/player/_/id/20221,20221.0,PHI,1627824.0,Guerschon Yabusele
+171,PG,38.0,2087519.0,0.0,0.0,0.0,0.0,0.0,,,PHI,2087519.0,0,0,0,0,0,0,,Kyle Lowry,Kyle Lowry,https://www.spotrac.com/nba/player/_/id/2536,2536.0,PHI,200768.0,Kyle Lowry
+172,PF,30.0,2087519.0,0.0,0.0,0.0,0.0,,,,MIL,2087519.0,0,0,0,0,0,,,Taurean Prince,Taurean Prince,https://www.spotrac.com/nba/player/_/id/20217,20217.0,MIL,1627752.0,Taurean Prince
+173,C,33.0,2087519.0,0.0,0.0,0.0,0.0,0.0,0.0,,CLE,2087519.0,0,0,0,0,0,0,0.0,Tristan Thompson,Tristan Thompson,https://www.spotrac.com/nba/player/_/id/8054,8054.0,CLE,202684.0,Tristan Thompson
+174,SG,34.0,2087519.0,0.0,0.0,0.0,0.0,0.0,,,CHA,2087519.0,0,0,0,0,0,0,,Seth Curry,Seth Curry,https://www.spotrac.com/nba/player/_/id/13512,13512.0,CHA,203552.0,Seth Curry
+175,SG,24.0,2087519.0,0.0,0.0,0.0,0.0,0.0,,,CHI,2087519.0,0,0,0,0,0,0,,Talen Horton-Tucker,Talen Horton-Tucker,https://www.spotrac.com/nba/player/_/id/31605,31605.0,CHI,1629659.0,Talen Horton-Tucker
+176,PG,28.0,2087519.0,0.0,0.0,0.0,0.0,0.0,,,SAS,2087519.0,0,0,0,0,0,0,,Jordan McLaughlin,Jordan McLaughlin,https://www.spotrac.com/nba/player/_/id/27975,27975.0,SAS,1629162.0,Jordan McLaughlin
+177,C,24.0,2087519.0,0.0,0.0,0.0,0.0,0.0,,,SAS,2087519.0,0,0,0,0,0,0,,Charles Bassey,Charles Bassey,https://www.spotrac.com/nba/player/_/id/74160,74160.0,SAS,1629646.0,Charles Bassey
+178,SG,33.0,2087519.0,0.0,0.0,0.0,0.0,0.0,,,MIA,2087519.0,0,0,0,0,0,0,,Alec Burks,Alec Burks,https://www.spotrac.com/nba/player/_/id/8063,8063.0,MIA,202692.0,Alec Burks
+179,PF,35.0,2087519.0,0.0,0.0,0.0,0.0,,,,LAL,2087519.0,0,0,0,0,0,,,Markieff Morris,Markieff Morris,https://www.spotrac.com/nba/player/_/id/8064,8064.0,LAL,202693.0,Markieff Morris
+180,SF,37.0,2087519.0,0.0,0.0,0.0,0.0,0.0,,,MIN,2087519.0,0,0,0,0,0,0,,Joe Ingles,Joe Ingles,https://www.spotrac.com/nba/player/_/id/15852,15852.0,MIN,204060.0,Joe Ingles
+181,SG,38.0,2087519.0,0.0,0.0,0.0,0.0,0.0,0.0,,TOR,2087519.0,0,0,0,0,0,0,0.0,Garrett Temple,Garrett Temple,https://www.spotrac.com/nba/player/_/id/6492,6492.0,TOR,202066.0,Garrett Temple
+182,C,39.0,2087519.0,0.0,0.0,0.0,0.0,0.0,,,CHA,2087519.0,0,0,0,0,0,0,,Taj Gibson,Taj Gibson,https://www.spotrac.com/nba/player/_/id/6278,6278.0,CHA,201959.0,Taj Gibson
+183,PG,32.0,2087519.0,0.0,0.0,0.0,0.0,0.0,,,NYK,2087519.0,0,0,0,0,0,0,,Delon Wright,Delon Wright,https://www.spotrac.com/nba/player/_/id/17848,17848.0,NYK,1626153.0,Delon Wright
+184,PG,30.0,2087519.0,0.0,0.0,0.0,0.0,0.0,,,NYK,2087519.0,0,0,0,0,0,0,,Cameron Payne,Cameron Payne,https://www.spotrac.com/nba/player/_/id/17842,17842.0,NYK,1626166.0,Cameron Payne
+185,PF,37.0,2087519.0,0.0,0.0,0.0,0.0,0.0,,,IND,2087519.0,0,0,0,0,0,0,,James Johnson,James Johnson,https://www.spotrac.com/nba/player/_/id/6279,6279.0,IND,201949.0,James Johnson
+186,C,27.0,2087519.0,0.0,0.0,0.0,0.0,0.0,,,IND,2087519.0,0,0,0,0,0,0,,Thomas Bryant,Thomas Bryant,https://www.spotrac.com/nba/player/_/id/23643,23643.0,IND,1628418.0,Thomas Bryant
+187,C,29.0,2087519.0,0.0,0.0,0.0,0.0,0.0,0.0,,BOS,2087519.0,0,0,0,0,0,0,0.0,Luke Kornet,Luke Kornet,https://www.spotrac.com/nba/player/_/id/23670,23670.0,BOS,1628436.0,Luke Kornet
+188,PG,36.0,2087519.0,0.0,0.0,0.0,0.0,,,,LAC,2087519.0,0,0,0,0,0,,,Patty Mills,Patty Mills,https://www.spotrac.com/nba/player/_/id/6322,6322.0,LAC,201988.0,Patty Mills
+189,SG,26.0,2087519.0,0.0,0.0,0.0,0.0,,,,MIL,2087519.0,0,0,0,0,0,,,Gary Trent Jr.,Gary Trent Jr.,https://www.spotrac.com/nba/player/_/id/27003,27003.0,MIL,1629018.0,Gary Trent Jr.
+190,C,34.0,2087519.0,0.0,0.0,0.0,0.0,0.0,0.0,,PHX,2087519.0,0,0,0,0,0,0,0.0,Mason Plumlee,Mason Plumlee,https://www.spotrac.com/nba/player/_/id/13335,13335.0,PHX,203486.0,Mason Plumlee
+191,C,25.0,2087519.0,0.0,0.0,0.0,0.0,0.0,,,SAS,2087519.0,0,0,0,0,0,0,,Sandro Mamukelashvili,Sandro Mamukelashvili,https://www.spotrac.com/nba/player/_/id/74161,74161.0,SAS,1630572.0,Sandro Mamukelashvili
 192,PG,28.0,2087519.0,0.0,0.0,0.0,0.0,0.0,0.0,,PHX,2087519.0,0,0,0,0,0,0,0.0,Tyus Jones,Tyus Jones,https://www.spotrac.com/nba/player/_/id/17852,17852.0,PHX,1626145.0,Tyus Jones
-193,SG,32.0,2087519.0,0.0,0.0,0.0,0.0,0.0,0.0,,PHX,2087519.0,0,0,0,0,0,0,0.0,Damion Lee,Damion Lee,https://www.spotrac.com/nba/player/_/id/21063,21063.0,PHX,1627814.0,Damion Lee
-194,PG,29.0,2087519.0,0.0,0.0,0.0,0.0,0.0,0.0,,PHX,2087519.0,0,0,0,0,0,0,0.0,Monte Morris,Monte Morris,https://www.spotrac.com/nba/player/_/id/23652,23652.0,PHX,1628420.0,Monte Morris
-195,PG,31.0,2087519.0,0.0,0.0,0.0,0.0,,,,DAL,2087519.0,0,0,0,0,0,,,Spencer Dinwiddie,Spencer Dinwiddie,https://www.spotrac.com/nba/player/_/id/15390,15390.0,DAL,203915.0,Spencer Dinwiddie
-196,PF,25.0,2087519.0,0.0,0.0,0.0,0.0,0.0,0.0,,PHX,2087519.0,0,0,0,0,0,0,0.0,Bol Bol,Bol Bol,https://www.spotrac.com/nba/player/_/id/31603,31603.0,PHX,1629626.0,Bol Bol
-197,C,33.0,2087519.0,0.0,0.0,0.0,0.0,0.0,0.0,,CLE,2087519.0,0,0,0,0,0,0,0.0,Tristan Thompson,Tristan Thompson,https://www.spotrac.com/nba/player/_/id/8054,8054.0,CLE,202684.0,Tristan Thompson
-198,C,26.0,2092344.0,0.0,0.0,0.0,0.0,,,,MIL,2092344.0,0,0,0,0,0,,,Jericho Sims,Jericho Sims,https://www.spotrac.com/nba/player/_/id/74166,74166.0,MIL,1630579.0,Jericho Sims
-199,SF,25.0,2120693.0,2301587.0,0.0,0.0,0.0,,,,SAC,2120693.0,0,T,0,0,0,,,Keon Ellis,Keon Ellis,https://www.spotrac.com/nba/player/_/id/78267,78267.0,SAC,1631165.0,Keon Ellis
+193,PG,31.0,2087519.0,0.0,0.0,0.0,0.0,,,,DAL,2087519.0,0,0,0,0,0,,,Spencer Dinwiddie,Spencer Dinwiddie,https://www.spotrac.com/nba/player/_/id/15390,15390.0,DAL,203915.0,Spencer Dinwiddie
+194,PF,25.0,2087519.0,0.0,0.0,0.0,0.0,0.0,0.0,,PHX,2087519.0,0,0,0,0,0,0,0.0,Bol Bol,Bol Bol,https://www.spotrac.com/nba/player/_/id/31603,31603.0,PHX,1629626.0,Bol Bol
+195,SG,32.0,2087519.0,0.0,0.0,0.0,0.0,0.0,0.0,,PHX,2087519.0,0,0,0,0,0,0,0.0,Damion Lee,Damion Lee,https://www.spotrac.com/nba/player/_/id/21063,21063.0,PHX,1627814.0,Damion Lee
+196,PG,29.0,2087519.0,0.0,0.0,0.0,0.0,0.0,0.0,,PHX,2087519.0,0,0,0,0,0,0,0.0,Monte Morris,Monte Morris,https://www.spotrac.com/nba/player/_/id/23652,23652.0,PHX,1628420.0,Monte Morris
+197,C,26.0,2092344.0,0.0,0.0,0.0,0.0,,,,MIL,2092344.0,0,0,0,0,0,,,Jericho Sims,Jericho Sims,https://www.spotrac.com/nba/player/_/id/74166,74166.0,MIL,1630579.0,Jericho Sims
+198,SF,25.0,2120693.0,2301587.0,0.0,0.0,0.0,,,,SAC,2120693.0,0,T,0,0,0,,,Keon Ellis,Keon Ellis,https://www.spotrac.com/nba/player/_/id/78267,78267.0,SAC,1631165.0,Keon Ellis
+199,C,26.0,2162606.0,2349578.0,0.0,0.0,0.0,0.0,,,MIN,2162606.0,0,T,0,0,0,0,,Luka Garza,Luka Garza,https://www.spotrac.com/nba/player/_/id/74159,74159.0,MIN,1630568.0,Luka Garza
 200,SG,22.0,2162606.0,2349578.0,0.0,0.0,0.0,,,,BKN,2162606.0,0,T,0,0,0,,,Keon Johnson,Keon Johnson,https://www.spotrac.com/nba/player/_/id/74128,74128.0,BKN,1630553.0,Keon Johnson
-201,C,26.0,2162606.0,2349578.0,0.0,0.0,0.0,0.0,,,MIN,2162606.0,0,T,0,0,0,0,,Luka Garza,Luka Garza,https://www.spotrac.com/nba/player/_/id/74159,74159.0,MIN,1630568.0,Luka Garza
-202,SG,28.0,2164993.0,0.0,0.0,0.0,0.0,0.0,0.0,,CLE,2164993.0,0,0,0,0,0,0,0.0,Sam Merrill,Sam Merrill,https://www.spotrac.com/nba/player/_/id/70702,70702.0,CLE,1630241.0,Sam Merrill
+201,SG,28.0,2164993.0,0.0,0.0,0.0,0.0,0.0,0.0,,CLE,2164993.0,0,0,0,0,0,0,0.0,Sam Merrill,Sam Merrill,https://www.spotrac.com/nba/player/_/id/70702,70702.0,CLE,1630241.0,Sam Merrill
+202,SF,27.0,2196970.0,0.0,0.0,0.0,0.0,0.0,0.0,,DET,2196970.0,0,0,0,0,0,0,0.0,Lindy Waters III,Lindy Waters III,https://www.spotrac.com/nba/player/_/id/75746,75746.0,DET,1630322.0,Lindy Waters III
 203,PF,24.0,2196970.0,0.0,0.0,0.0,0.0,0.0,,,NOP,2196970.0,0,0,0,0,0,0,,Jeremiah Robinson-Earl,Jeremiah Robinson-Earl,https://www.spotrac.com/nba/player/_/id/74139,74139.0,NOP,1630526.0,Jeremiah Robinson-Earl
 204,PG,25.0,2196970.0,0.0,0.0,0.0,0.0,,,,POR,2196970.0,0,0,0,0,0,,,Dalano Banton,Dalano Banton,https://www.spotrac.com/nba/player/_/id/74153,74153.0,POR,1630625.0,Dalano Banton
-205,SF,27.0,2196970.0,0.0,0.0,0.0,0.0,0.0,0.0,,DET,2196970.0,0,0,0,0,0,0,0.0,Lindy Waters III,Lindy Waters III,https://www.spotrac.com/nba/player/_/id/75746,75746.0,DET,1630322.0,Lindy Waters III
-206,SG,28.0,2230253.0,0.0,0.0,0.0,0.0,0.0,0.0,,ATL,2230253.0,0,0,0,0,0,0,0.0,Garrison Mathews,Garrison Mathews,https://www.spotrac.com/nba/player/_/id/32044,32044.0,ATL,1629726.0,Garrison Mathews
-207,C,24.0,2463946.0,0.0,0.0,0.0,0.0,,,,LAL,2463946.0,0,0,0,0,0,,,Jaxson Hayes,Jaxson Hayes,https://www.spotrac.com/nba/player/_/id/31565,31565.0,LAL,1629637.0,Jaxson Hayes
-208,SG,27.0,2560975.0,0.0,0.0,0.0,0.0,0.0,0.0,,CLE,2560975.0,0,0,0,0,0,0,0.0,Ty Jerome,Ty Jerome,https://www.spotrac.com/nba/player/_/id/31582,31582.0,CLE,1629660.0,Ty Jerome
+205,SG,28.0,2230253.0,0.0,0.0,0.0,0.0,0.0,0.0,,ATL,2230253.0,0,0,0,0,0,0,0.0,Garrison Mathews,Garrison Mathews,https://www.spotrac.com/nba/player/_/id/32044,32044.0,ATL,1629726.0,Garrison Mathews
+206,C,24.0,2463946.0,0.0,0.0,0.0,0.0,,,,LAL,2463946.0,0,0,0,0,0,,,Jaxson Hayes,Jaxson Hayes,https://www.spotrac.com/nba/player/_/id/31565,31565.0,LAL,1629637.0,Jaxson Hayes
+207,SG,27.0,2560975.0,0.0,0.0,0.0,0.0,0.0,0.0,,CLE,2560975.0,0,0,0,0,0,0,0.0,Ty Jerome,Ty Jerome,https://www.spotrac.com/nba/player/_/id/31582,31582.0,CLE,1629660.0,Ty Jerome
+208,PF,26.0,115743.0,2546675.0,0.0,0.0,0.0,0.0,0.0,,CLE,2662418.0,0,0,0,0,0,0,0.0,Chuma Okeke,Chuma Okeke,https://www.spotrac.com/nba/player/_/id/31573,31573.0,PHI,1629643.0,Chuma Okeke
 209,SG,23.0,492323.0,2191897.0,0.0,0.0,0.0,0.0,,,MIN,2684220.0,0,0,RFA,0,0,0,,Jaylen Clark,Jaylen Clark,https://www.spotrac.com/nba/player/_/id/84479,84479.0,MIN,1641740.0,Jaylen Clark
 210,PF,24.0,2726603.0,0.0,0.0,0.0,0.0,,,,BKN,2726603.0,0,0,0,0,0,,,Trendon Watford,Trendon Watford,https://www.spotrac.com/nba/player/_/id/74232,74232.0,BKN,1630570.0,Trendon Watford
 211,PG,22.0,634437.0,2349578.0,2667944.0,0.0,0.0,0.0,,,UTA,2984015.0,0,NG,T,0,0,0,,Jaden Springer,Jaden Springer,https://www.spotrac.com/nba/player/_/id/74135,74135.0,HOU,1630531.0,Jaden Springer
@@ -220,25 +220,25 @@
 218,PF,23.0,3352680.0,0.0,0.0,0.0,0.0,,,,SAC,3352680.0,0,0,0,0,0,,,Jake LaRavia,Jake LaRavia,https://www.spotrac.com/nba/player/_/id/78141,78141.0,SAC,1631222.0,Jake LaRavia
 219,PF,23.0,1407153.0,1955377.0,2296271.0,0.0,0.0,0.0,,,NOP,3362530.0,0,0,T,RFA,0,0,,Karlo Matkovic,Karlo Matkovic,https://www.spotrac.com/nba/player/_/id/78144,78144.0,NOP,1631255.0,Karlo Matkovic
 220,SF,25.0,1050000.0,0.0,2378864.0,2573347.0,0.0,,,,LAC,3428864.0,0,NG,NG,T,0,,,Jordan Miller,Jordan Miller,https://www.spotrac.com/nba/player/_/id/84474,84474.0,LAC,1641757.0,Jordan Miller
-221,C,23.0,1862265.0,1955377.0,2296271.0,0.0,0.0,0.0,0.0,,TOR,3817642.0,0,0,T,RFA,0,0,0.0,Jonathan Mogbo,Jonathan Mogbo,https://www.spotrac.com/nba/player/_/id/92956,92956.0,TOR,1642367.0,Jonathan Mogbo
-222,PG,22.0,1862265.0,1955377.0,2296271.0,0.0,0.0,0.0,0.0,,TOR,3817642.0,0,0,T,RFA,0,0,0.0,Jamal Shead,Jamal Shead,https://www.spotrac.com/nba/player/_/id/93955,93955.0,TOR,1642347.0,Jamal Shead
+221,PG,22.0,1862265.0,1955377.0,2296271.0,0.0,0.0,0.0,0.0,,TOR,3817642.0,0,0,T,RFA,0,0,0.0,Jamal Shead,Jamal Shead,https://www.spotrac.com/nba/player/_/id/93955,93955.0,TOR,1642347.0,Jamal Shead
+222,C,23.0,1862265.0,1955377.0,2296271.0,0.0,0.0,0.0,0.0,,TOR,3817642.0,0,0,T,RFA,0,0,0.0,Jonathan Mogbo,Jonathan Mogbo,https://www.spotrac.com/nba/player/_/id/92956,92956.0,TOR,1642367.0,Jonathan Mogbo
 223,SG,27.0,3938271.0,0.0,0.0,0.0,0.0,,,,LAC,3938271.0,0,0,0,0,0,,,Amir Coffey,Amir Coffey,https://www.spotrac.com/nba/player/_/id/32198,32198.0,LAC,1629599.0,Amir Coffey
 224,C,24.0,3960531.0,0.0,0.0,0.0,0.0,0.0,,,MEM,3960531.0,0,RFA,0,0,0,0,,Santi Aldama,Santi Aldama,https://www.spotrac.com/nba/player/_/id/74137,74137.0,MEM,1630583.0,Santi Aldama
 225,C,23.0,3989122.0,0.0,0.0,0.0,0.0,,,,BKN,3989122.0,0,RFA,0,0,0,,,Day'Ron Sharpe,Day'Ron Sharpe,https://www.spotrac.com/nba/player/_/id/74136,74136.0,BKN,1630549.0,Day'Ron Sharpe
 226,SG,23.0,4041249.0,0.0,0.0,0.0,0.0,,,,BKN,4041249.0,0,RFA,0,0,0,,,Cameron Thomas,Cameron Thomas,https://www.spotrac.com/nba/player/_/id/74134,74134.0,BKN,1630560,Cameron Thomas
-227,G,23.0,1891857.0,2221677.0,2406205.0,0.0,0.0,0.0,,,PHI,4113534.0,0,NG,T,0,0,0,,Ricky Council IV,Ricky Council IV,https://www.spotrac.com/nba/player/_/id/84718,84718.0,PHI,1641741.0,Ricky Council IV
-228,PG,25.0,1891857.0,2221677.0,2406205.0,0.0,0.0,0.0,,,DEN,4113534.0,0,0,T,0,0,0,,Jalen Pickett,Jalen Pickett,https://www.spotrac.com/nba/player/_/id/84465,84465.0,DEN,1629618.0,Jalen Pickett
-229,PF,24.0,1891857.0,2221677.0,2406205.0,0.0,0.0,,,,GSW,4113534.0,0,NG,T,0,0,,,Trayce Jackson-Davis,Trayce Jackson-Davis,https://www.spotrac.com/nba/player/_/id/84443,84443.0,GSW,1631218.0,Trayce Jackson-Davis
-230,SF,21.0,1891857.0,2221677.0,2406205.0,0.0,0.0,0.0,,,CHI,4113534.0,0,0,T,0,0,0,,Julian Phillips,Julian Phillips,https://www.spotrac.com/nba/player/_/id/84444,84444.0,CHI,1641763.0,Julian Phillips
-231,SF,21.0,1891857.0,2221677.0,2406205.0,0.0,0.0,0.0,,,MIN,4113534.0,0,NG,T,0,0,0,,Leonard Miller,Leonard Miller,https://www.spotrac.com/nba/player/_/id/82215,82215.0,MIN,1631159.0,Leonard Miller
+227,SG,23.0,1891857.0,2221677.0,2406205.0,0.0,0.0,,,,MIL,4113534.0,0,NG,T,0,0,,,Andre Jackson Jr.,Andre Jackson Jr.,https://www.spotrac.com/nba/player/_/id/82321,82321.0,MIL,1641748.0,Andre Jackson Jr.
+228,SF,21.0,1891857.0,2221677.0,2406205.0,0.0,0.0,,,,MIL,4113534.0,0,EE,T,0,0,,,Chris Livingston,Chris Livingston,https://www.spotrac.com/nba/player/_/id/84483,84483.0,MIL,1641753.0,Chris Livingston
+229,SF,20.0,1891857.0,2221677.0,2406205.0,0.0,0.0,0.0,0.0,,BOS,4113534.0,0,NG,T,0,0,0,0.0,Jordan Walsh,Jordan Walsh,https://www.spotrac.com/nba/player/_/id/84467,84467.0,BOS,1641775.0,Jordan Walsh
+230,SF,21.0,1891857.0,2221677.0,2406205.0,0.0,0.0,0.0,,,MIN,4113534.0,0,NG,T,0,0,0,,Leonard Miller,Leonard Miller,https://www.spotrac.com/nba/player/_/id/82215,82215.0,MIN,1631159.0,Leonard Miller
+231,PF,20.0,1891857.0,2221677.0,2406205.0,0.0,0.0,0.0,,,MEM,4113534.0,0,EE,T,0,0,0,,G.G. Jackson,G.G. Jackson,https://www.spotrac.com/nba/player/_/id/85972,85972.0,MEM,1641713,G.G. Jackson
 232,PF,22.0,1891857.0,2221677.0,2406205.0,0.0,0.0,0.0,0.0,,ATL,4113534.0,0,EE,T,0,0,0,0.0,Mouhamed Gueye,Mouhamed Gueye,https://www.spotrac.com/nba/player/_/id/84468,84468.0,ATL,1631243.0,Mouhamed Gueye
 233,PF,24.0,1891857.0,2221677.0,2406205.0,0.0,0.0,,,,POR,4113534.0,0,EE,T,0,0,,,Toumani Camara,Toumani Camara,https://www.spotrac.com/nba/player/_/id/84478,84478.0,POR,1641739.0,Toumani Camara
-234,SG,23.0,1891857.0,2221677.0,2406205.0,0.0,0.0,,,,MIL,4113534.0,0,NG,T,0,0,,,Andre Jackson Jr.,Andre Jackson Jr.,https://www.spotrac.com/nba/player/_/id/82321,82321.0,MIL,1641748.0,Andre Jackson Jr.
-235,SF,22.0,1891857.0,2221677.0,2406205.0,0.0,0.0,,,,BKN,4113534.0,0,NG,T,0,0,,,Maxwell Lewis,Maxwell Lewis,https://www.spotrac.com/nba/player/_/id/82318,82318.0,BKN,1641721.0,Maxwell Lewis
-236,SF,20.0,1891857.0,2221677.0,2406205.0,0.0,0.0,0.0,0.0,,BOS,4113534.0,0,NG,T,0,0,0,0.0,Jordan Walsh,Jordan Walsh,https://www.spotrac.com/nba/player/_/id/84467,84467.0,BOS,1641775.0,Jordan Walsh
-237,PF,20.0,1891857.0,2221677.0,2406205.0,0.0,0.0,0.0,,,MEM,4113534.0,0,EE,T,0,0,0,,G.G. Jackson,G.G. Jackson,https://www.spotrac.com/nba/player/_/id/85972,85972.0,MEM,1641713,G.G. Jackson
-238,SF,21.0,1891857.0,2221677.0,2406205.0,0.0,0.0,,,,MIL,4113534.0,0,EE,T,0,0,,,Chris Livingston,Chris Livingston,https://www.spotrac.com/nba/player/_/id/84483,84483.0,MIL,1641753.0,Chris Livingston
-239,SF,24.0,1891857.0,2221677.0,2406205.0,0.0,0.0,0.0,,,DEN,4113534.0,0,0,T,0,0,0,,Hunter Tyson,Hunter Tyson,https://www.spotrac.com/nba/player/_/id/84466,84466.0,DEN,1641816.0,Hunter Tyson
+234,SF,21.0,1891857.0,2221677.0,2406205.0,0.0,0.0,0.0,,,CHI,4113534.0,0,0,T,0,0,0,,Julian Phillips,Julian Phillips,https://www.spotrac.com/nba/player/_/id/84444,84444.0,CHI,1641763.0,Julian Phillips
+235,PF,24.0,1891857.0,2221677.0,2406205.0,0.0,0.0,,,,GSW,4113534.0,0,NG,T,0,0,,,Trayce Jackson-Davis,Trayce Jackson-Davis,https://www.spotrac.com/nba/player/_/id/84443,84443.0,GSW,1631218.0,Trayce Jackson-Davis
+236,PG,25.0,1891857.0,2221677.0,2406205.0,0.0,0.0,0.0,,,DEN,4113534.0,0,0,T,0,0,0,,Jalen Pickett,Jalen Pickett,https://www.spotrac.com/nba/player/_/id/84465,84465.0,DEN,1629618.0,Jalen Pickett
+237,SF,22.0,1891857.0,2221677.0,2406205.0,0.0,0.0,,,,BKN,4113534.0,0,NG,T,0,0,,,Maxwell Lewis,Maxwell Lewis,https://www.spotrac.com/nba/player/_/id/82318,82318.0,BKN,1641721.0,Maxwell Lewis
+238,SF,24.0,1891857.0,2221677.0,2406205.0,0.0,0.0,0.0,,,DEN,4113534.0,0,0,T,0,0,0,,Hunter Tyson,Hunter Tyson,https://www.spotrac.com/nba/player/_/id/84466,84466.0,DEN,1641816.0,Hunter Tyson
+239,G,23.0,1891857.0,2221677.0,2406205.0,0.0,0.0,0.0,,,PHI,4113534.0,0,NG,T,0,0,0,,Ricky Council IV,Ricky Council IV,https://www.spotrac.com/nba/player/_/id/84718,84718.0,PHI,1641741.0,Ricky Council IV
 240,C,22.0,2019699.0,2187699.0,0.0,0.0,0.0,0.0,,,OKC,4207398.0,0,NG,0,0,0,0,,Jaylin Williams,Jaylin Williams,https://www.spotrac.com/nba/player/_/id/78150,78150.0,OKC,1631119.0,Jaylin Williams
 241,C,28.0,2048780.0,2221677.0,0.0,0.0,0.0,,,,POR,4270457.0,0,NG,RFA,0,0,,,Duop Reath,Duop Reath,https://www.spotrac.com/nba/player/_/id/86051,86051.0,POR,1641871.0,Duop Reath
 242,SG,24.0,4296682.0,0.0,0.0,0.0,0.0,0.0,,,PHI,4296682.0,0,0,0,0,0,0,,Quentin Grimes,Quentin Grimes,https://www.spotrac.com/nba/player/_/id/74132,74132.0,DAL,1629656.0,Quentin Grimes
@@ -266,11 +266,11 @@
 264,SF,21.0,2571480.0,2693760.0,4862237.0,0.0,0.0,0.0,,,UTA,5265240.0,0,0,T,RFA,0,0,,Brice Sensabaugh,Brice Sensabaugh,https://www.spotrac.com/nba/player/_/id/82213,82213.0,UTA,1641729.0,Brice Sensabaugh
 265,PG,20.0,2587200.0,2710680.0,4890067.0,0.0,0.0,0.0,,,CHA,5297880.0,0,0,T,RFA,0,0,,Nick Smith Jr.,Nick Smith Jr.,https://www.spotrac.com/nba/player/_/id/82206,82206.0,CHA,1641733.0,Nick Smith Jr.
 266,SF,23.0,2622360.0,2753280.0,2884440.0,5200646.0,0.0,0.0,,,OKC,5375640.0,0,0,T,T,RFA,0,,Dillon Jones,Dillon Jones,https://www.spotrac.com/nba/player/_/id/91778,91778.0,OKC,1641794.0,Dillon Jones
-267,SG,21.0,1157153.0,1955377.0,2296271.0,2486995.0,0.0,0.0,,,MEM,5408801.0,0,0,EE,T,0,0,,Jaylen Wells,Jaylen Wells,https://www.spotrac.com/nba/player/_/id/93952,93952.0,MEM,1642377.0,Jaylen Wells
-268,PG,20.0,1157153.0,1955377.0,2296271.0,2486995.0,0.0,,,,LAL,5408801.0,0,0,NG,T,0,,,Bronny James,Bronny James,https://www.spotrac.com/nba/player/_/id/92960,92960.0,LAL,1642355.0,Bronny James
-269,C,21.0,1157153.0,1955377.0,2296271.0,2486995.0,0.0,0.0,,,PHI,5408801.0,0,NG,NG,T,0,0,,Adem Bona,Adem Bona,https://www.spotrac.com/nba/player/_/id/91790,91790.0,PHI,1641737.0,Adem Bona
-270,C,22.0,1157153.0,1955377.0,2296271.0,2486995.0,0.0,0.0,0.0,,PHX,5408801.0,0,0,NG,T,0,0,0.0,Oso Ighodaro,Oso Ighodaro,https://www.spotrac.com/nba/player/_/id/93953,93953.0,PHX,1642345.0,Oso Ighodaro
-271,SG,19.0,1157153.0,1955377.0,2296271.0,2486995.0,0.0,,,,LAC,5408801.0,0,0,NG,T,0,,,Cameron Christie,Cameron Christie,https://www.spotrac.com/nba/player/_/id/91777,91777.0,LAC,,Cameron Christie
+267,C,22.0,1157153.0,1955377.0,2296271.0,2486995.0,0.0,0.0,0.0,,PHX,5408801.0,0,0,NG,T,0,0,0.0,Oso Ighodaro,Oso Ighodaro,https://www.spotrac.com/nba/player/_/id/93953,93953.0,PHX,1642345.0,Oso Ighodaro
+268,SG,21.0,1157153.0,1955377.0,2296271.0,2486995.0,0.0,0.0,,,MEM,5408801.0,0,0,EE,T,0,0,,Jaylen Wells,Jaylen Wells,https://www.spotrac.com/nba/player/_/id/93952,93952.0,MEM,1642377.0,Jaylen Wells
+269,PG,20.0,1157153.0,1955377.0,2296271.0,2486995.0,0.0,,,,LAL,5408801.0,0,0,NG,T,0,,,Bronny James,Bronny James,https://www.spotrac.com/nba/player/_/id/92960,92960.0,LAL,1642355.0,Bronny James
+270,SG,19.0,1157153.0,1955377.0,2296271.0,2486995.0,0.0,,,,LAC,5408801.0,0,0,NG,T,0,,,Cameron Christie,Cameron Christie,https://www.spotrac.com/nba/player/_/id/91777,91777.0,LAC,,Cameron Christie
+271,C,21.0,1157153.0,1955377.0,2296271.0,2486995.0,0.0,0.0,,,PHI,5408801.0,0,NG,NG,T,0,0,,Adem Bona,Adem Bona,https://www.spotrac.com/nba/player/_/id/91790,91790.0,PHI,1641737.0,Adem Bona
 272,SF,23.0,2663880.0,2790720.0,5031669.0,0.0,0.0,0.0,,,IND,5454600.0,0,0,T,RFA,0,0,,Ben Sheppard,Ben Sheppard,https://www.spotrac.com/nba/player/_/id/84440,84440.0,IND,1641767.0,Ben Sheppard
 273,SF,21.0,1257153.0,1955377.0,2296271.0,2486995.0,0.0,0.0,0.0,,DET,5508801.0,0,0,NG,T,0,0,0.0,Bobi Klintman,Bobi Klintman,https://www.spotrac.com/nba/player/_/id/91764,91764.0,DET,1641752.0,Bobi Klintman
 274,PG,24.0,2755080.0,2886720.0,5198983.0,0.0,0.0,0.0,0.0,,DET,5641800.0,0,0,T,RFA,0,0,0.0,Marcus Sasser,Marcus Sasser,https://www.spotrac.com/nba/player/_/id/84442,84442.0,DET,1631204.0,Marcus Sasser
@@ -278,8 +278,8 @@
 276,SG,21.0,2825520.0,2966760.0,3108000.0,5435892.0,0.0,0.0,,,WAS,5792280.0,0,0,T,T,RFA,0,,Kyshawn George,Kyshawn George,https://www.spotrac.com/nba/player/_/id/91765,91765.0,WAS,1642273.0,Kyshawn George
 277,PF,22.0,2870400.0,3007080.0,5259383.0,0.0,0.0,,,,DAL,5877480.0,0,0,T,RFA,0,,,Olivier-Maxence Prosper,Olivier-Maxence Prosper,https://www.spotrac.com/nba/player/_/id/84439,84439.0,DAL,1641765.0,Olivier-Maxence Prosper
 278,PG,20.0,2795294.0,3090480.0,3237120.0,5493394.0,0.0,0.0,,,WAS,5885774.0,0,0,T,T,RFA,0,,AJ Johnson,AJ Johnson,https://www.spotrac.com/nba/player/_/id/92952,92952.0,WAS,1642358.0,AJ Johnson
-279,PF,25.0,6000000.0,0.0,0.0,0.0,0.0,0.0,,,NYK,6000000.0,0,0,0,0,0,0,,Precious Achiuwa,Precious Achiuwa,https://www.spotrac.com/nba/player/_/id/70662,70662.0,NYK,1630173.0,Precious Achiuwa
-280,SG,28.0,6000000.0,0.0,0.0,0.0,0.0,0.0,0.0,,DET,6000000.0,0,0,0,0,0,0,0.0,Malik Beasley,Malik Beasley,https://www.spotrac.com/nba/player/_/id/20224,20224.0,DET,1627736.0,Malik Beasley
+279,SG,28.0,6000000.0,0.0,0.0,0.0,0.0,0.0,0.0,,DET,6000000.0,0,0,0,0,0,0,0.0,Malik Beasley,Malik Beasley,https://www.spotrac.com/nba/player/_/id/20224,20224.0,DET,1627736.0,Malik Beasley
+280,PF,25.0,6000000.0,0.0,0.0,0.0,0.0,0.0,,,NYK,6000000.0,0,0,0,0,0,0,,Precious Achiuwa,Precious Achiuwa,https://www.spotrac.com/nba/player/_/id/70662,70662.0,NYK,1630173.0,Precious Achiuwa
 281,SF,23.0,3000000.0,3000000.0,3000000.0,0.0,0.0,0.0,,,SAS,6000000.0,0,EE,T,0,0,0,,Julian Champagnie,Julian Champagnie,https://www.spotrac.com/nba/player/_/id/78268,78268.0,SAS,1630577.0,Julian Champagnie
 282,SG,20.0,1850842.0,1955377.0,2296271.0,2486995.0,0.0,0.0,,,IND,6102490.0,0,0,EE,T,0,0,,Johnny Furphy,Johnny Furphy,https://www.spotrac.com/nba/player/_/id/91768,91768.0,IND,1642277.0,Johnny Furphy
 283,PF,24.0,2990040.0,3132000.0,5315004.0,0.0,0.0,,,,POR,6122040.0,0,0,T,RFA,0,,,Kris Murray,Kris Murray,https://www.spotrac.com/nba/player/_/id/82275,82275.0,POR,1631200.0,Kris Murray
@@ -313,11 +313,11 @@
 311,PG,31.0,7723000.0,8109150.0,0.0,0.0,0.0,0.0,0.0,,PHX,7723000.0,0,T,RFA,0,0,0,0.0,Vasilije Micic,Vasilije Micic,https://www.spotrac.com/nba/player/_/id/15404,15404.0,PHX,203995.0,Vasilije Micic
 312,C,23.0,2965920.0,4878938.0,0.0,0.0,0.0,0.0,,,UTA,7844858.0,0,EE,RFA,0,0,0,,Walker Kessler,Walker Kessler,https://www.spotrac.com/nba/player/_/id/78133,78133.0,UTA,1631117.0,Walker Kessler
 313,SF,20.0,1157153.0,1955377.0,2296271.0,2486995.0,0.0,,,,MIL,7895796.0,0,0,EE,NG,0,,,Tyler Smith,Tyler Smith,https://www.spotrac.com/nba/player/_/id/91762,91762.0,MIL,1641890.0,Tyler Smith
-314,C,28.0,8000000.0,0.0,0.0,0.0,0.0,,,,GSW,8000000.0,0,0,0,0,0,,,Kevon Looney,Kevon Looney,https://www.spotrac.com/nba/player/_/id/17858,17858.0,GSW,1626172.0,Kevon Looney
-315,C,33.0,4000000.0,4000000.0,0.0,0.0,0.0,,,,DAL,8000000.0,0,P,0,0,0,,,Dwight Powell,Dwight Powell,https://www.spotrac.com/nba/player/_/id/15397,15397.0,DAL,203939.0,Dwight Powell
-316,C,36.0,3850000.0,4150000.0,0.0,0.0,0.0,0.0,,,MIA,8000000.0,0,0,0,0,0,0,,Kevin Love,Kevin Love,https://www.spotrac.com/nba/player/_/id/6132,6132.0,MIA,201567.0,Kevin Love
+314,C,36.0,3850000.0,4150000.0,0.0,0.0,0.0,0.0,,,MIA,8000000.0,0,0,0,0,0,0,,Kevin Love,Kevin Love,https://www.spotrac.com/nba/player/_/id/6132,6132.0,MIA,201567.0,Kevin Love
+315,C,28.0,8000000.0,0.0,0.0,0.0,0.0,,,,GSW,8000000.0,0,0,0,0,0,,,Kevon Looney,Kevon Looney,https://www.spotrac.com/nba/player/_/id/17858,17858.0,GSW,1626172.0,Kevon Looney
+316,PF,29.0,8000000.0,0.0,0.0,0.0,0.0,,,,SAC,8000000.0,0,0,0,0,0,,,Trey Lyles,Trey Lyles,https://www.spotrac.com/nba/player/_/id/17840,17840.0,SAC,1626168.0,Trey Lyles
 317,PF,38.0,8000000.0,0.0,0.0,0.0,0.0,0.0,0.0,,HOU,8000000.0,0,0,0,0,0,0,0.0,Jeff Green,Jeff Green,https://www.spotrac.com/nba/player/_/id/2720,2720.0,HOU,201145.0,Jeff Green
-318,PF,29.0,8000000.0,0.0,0.0,0.0,0.0,,,,SAC,8000000.0,0,0,0,0,0,,,Trey Lyles,Trey Lyles,https://www.spotrac.com/nba/player/_/id/17840,17840.0,SAC,1626168.0,Trey Lyles
+318,C,33.0,4000000.0,4000000.0,0.0,0.0,0.0,,,,DAL,8000000.0,0,P,0,0,0,,,Dwight Powell,Dwight Powell,https://www.spotrac.com/nba/player/_/id/15397,15397.0,DAL,203939.0,Dwight Powell
 319,SG,23.0,3089640.0,4921797.0,0.0,0.0,0.0,0.0,,,DEN,8011437.0,0,0,0,0,0,0,,Christian Braun,Christian Braun,https://www.spotrac.com/nba/player/_/id/78148,78148.0,DEN,1631128.0,Christian Braun
 320,SG,21.0,3217920.0,4962033.0,0.0,0.0,0.0,0.0,,,SAS,8179953.0,0,EE,RFA,0,0,0,,Malaki Branham,Malaki Branham,https://www.spotrac.com/nba/player/_/id/78120,78120.0,SAS,1631103.0,Malaki Branham
 321,PG,20.0,4020360.0,4221360.0,4422600.0,6784268.0,0.0,0.0,,,PHI,8241720.0,0,0,T,T,RFA,0,,Jared McCain,Jared McCain,https://www.spotrac.com/nba/player/_/id/91760,91760.0,PHI,1642272.0,Jared McCain
@@ -476,8 +476,8 @@
 474,PG,25.0,2019699.0,18102000.0,19550160.0,20998320.0,0.0,0.0,,,IND,42568179.0,0,T,EE,0,0,0,,Andrew Nembhard,Andrew Nembhard,https://www.spotrac.com/nba/player/_/id/78137,78137.0,IND,1629614.0,Andrew Nembhard
 475,PG,30.0,42846615.0,44886930.0,0.0,0.0,0.0,0.0,0.0,,HOU,42846615.0,0,T,0,0,0,0,0.0,Fred VanVleet,Fred VanVleet,https://www.spotrac.com/nba/player/_/id/20778,20778.0,HOU,1627832.0,Fred VanVleet
 476,SG,22.0,5803269.0,11574075.0,12500000.0,13425925.0,0.0,,,,GSW,43303269.0,0,RFA,EE,0,0,,,Moses Moody,Moses Moody,https://www.spotrac.com/nba/player/_/id/74121,74121.0,GSW,1630541.0,Moses Moody
-477,C,23.0,15000000.0,15000000.0,15000000.0,15000000.0,0.0,0.0,0.0,,DET,45000000.0,0,0,EE,T,0,0,0.0,Isaiah Stewart,Isaiah Stewart,https://www.spotrac.com/nba/player/_/id/70658,70658.0,DET,1630191.0,Isaiah Stewart
-478,SG,26.0,10514017.0,9672897.0,8831776.0,7990655.0,7990655.0,0.0,,,OKC,45000000.0,0,0,0,EE,0,0,,Aaron Wiggins,Aaron Wiggins,https://www.spotrac.com/nba/player/_/id/74162,74162.0,OKC,1630598.0,Aaron Wiggins
+477,SG,26.0,10514017.0,9672897.0,8831776.0,7990655.0,7990655.0,0.0,,,OKC,45000000.0,0,0,0,EE,0,0,,Aaron Wiggins,Aaron Wiggins,https://www.spotrac.com/nba/player/_/id/74162,74162.0,OKC,1630598.0,Aaron Wiggins
+478,C,23.0,15000000.0,15000000.0,15000000.0,15000000.0,0.0,0.0,0.0,,DET,45000000.0,0,0,EE,T,0,0,0.0,Isaiah Stewart,Isaiah Stewart,https://www.spotrac.com/nba/player/_/id/70658,70658.0,DET,1630191.0,Isaiah Stewart
 479,SF,25.0,5705888.0,13975000.0,13975000.0,13025000.0,13025000.0,0.0,,,WAS,46680888.0,0,RFA,0,EE,T,0,,Corey Kispert,Corey Kispert,https://www.spotrac.com/nba/player/_/id/74122,74122.0,WAS,1630557.0,Corey Kispert
 480,SF,27.0,2092344.0,10044644.0,10848215.0,11651785.0,12455356.0,0.0,0.0,,BOS,47092344.0,0,0,0,EE,0,0,0.0,Sam Hauser,Sam Hauser,https://www.spotrac.com/nba/player/_/id/74311,74311.0,BOS,1630573.0,Sam Hauser
 481,SG,28.0,15212068.0,15936452.0,16660836.0,0.0,0.0,0.0,0.0,,CLE,47809356.0,0,EE,0,0,0,0,0.0,Max Strus,Max Strus,https://www.spotrac.com/nba/player/_/id/32411,32411.0,CLE,1629622.0,Max Strus
@@ -497,8 +497,8 @@
 495,PF,26.0,12975000.0,14000000.0,15000000.0,16025000.0,0.0,0.0,,,IND,58000000.0,0,0,EE,0,0,0,,Obi Toppin,Obi Toppin,https://www.spotrac.com/nba/player/_/id/70650,70650.0,IND,1630167.0,Obi Toppin
 496,SG,28.0,11423077.0,15500000.0,15500000.0,16000000.0,0.0,0.0,0.0,,ATL,58423077.0,0,0,0,0,0,0,0.0,Terance Mann,Terance Mann,https://www.spotrac.com/nba/player/_/id/31607,31607.0,ATL,1629611.0,Terance Mann
 497,SG,28.0,11423077.0,15500000.0,15500000.0,16000000.0,0.0,0.0,0.0,,ATL,58423077.0,0,0,0,0,0,0,0.0,Terance Mann,Terance Mann,https://www.spotrac.com/nba/player/_/id/31607,31607.0,LAC,1629611.0,Terance Mann
-498,C,29.0,19500000.0,19500000.0,19500000.0,0.0,0.0,0.0,0.0,,TOR,58500000.0,0,EE,P,0,0,0,0.0,Jakob Poeltl,Jakob Poeltl,https://www.spotrac.com/nba/player/_/id/20214,20214.0,TOR,1627751.0,Jakob Poeltl
-499,C,26.0,30000000.0,28500000.0,28500000.0,0.0,0.0,0.0,,,OKC,58500000.0,0,0,T,0,0,0,,Isaiah Hartenstein,Isaiah Hartenstein,https://www.spotrac.com/nba/player/_/id/23644,23644.0,OKC,1628392.0,Isaiah Hartenstein
+498,C,26.0,30000000.0,28500000.0,28500000.0,0.0,0.0,0.0,,,OKC,58500000.0,0,0,T,0,0,0,,Isaiah Hartenstein,Isaiah Hartenstein,https://www.spotrac.com/nba/player/_/id/23644,23644.0,OKC,1628392.0,Isaiah Hartenstein
+499,C,29.0,19500000.0,19500000.0,19500000.0,0.0,0.0,0.0,0.0,,TOR,58500000.0,0,EE,P,0,0,0,0.0,Jakob Poeltl,Jakob Poeltl,https://www.spotrac.com/nba/player/_/id/20214,20214.0,TOR,1627751.0,Jakob Poeltl
 500,SG,29.0,18144000.0,19472240.0,20923760.0,22375280.0,0.0,0.0,,,NYK,58540000.0,0,0,EE,T,0,0,,Josh Hart,Josh Hart,https://www.spotrac.com/nba/player/_/id/23625,23625.0,NYK,1628404.0,Josh Hart
 501,PF,29.0,29268293.0,30731707.0,0.0,0.0,0.0,0.0,0.0,,BOS,60000000.0,0,0,0,0,0,0,0.0,Kristaps Porzingis,Kristaps Porzingis,https://www.spotrac.com/nba/player/_/id/17832,17832.0,BOS,204001.0,Kristaps Porzingis
 502,C,25.0,11950000.0,10850000.0,18102000.0,19550160.0,20998320.0,0.0,0.0,,ORL,60452160.0,0,0,0,EE,T,0,0.0,Wendell Carter Jr.,Wendell Carter Jr.,https://www.spotrac.com/nba/player/_/id/26973,26973.0,ORL,1628976.0,Wendell Carter Jr.
