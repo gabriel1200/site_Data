@@ -1,6 +1,6 @@
 jupyter nbconvert --to script *.ipynb
 python player_shooting.py
-python defense.py
+#python defense.py
 python scrape_shooting.py
 python misc.py
 python player_level.py
@@ -12,8 +12,8 @@ python underground.py
 python hustle.py
 python player_index.py
 python new_tracking.py
-python contract_data.py
-python contract_data2.py
+#python contract_data.py
+#python contract_data2.py
 
 python make_index.py
 python salary2.py
