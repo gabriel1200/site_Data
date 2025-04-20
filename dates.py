@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[3]:
 
 
 import requests
@@ -38,6 +38,8 @@ for game_date in data["leagueSchedule"]["gameDates"]:
 
 # Convert to DataFrame
 df = pd.DataFrame(games_data)
+
+print(df.tail(10))
 
 # Display the DataFrame
 print(df.columns)
@@ -103,7 +105,7 @@ df.to_csv('../web_app/data/schedule.csv')
 df['home_team_id'].unique()
 
 
-# In[2]:
+# In[4]:
 
 
 df[df['home_team_id'].isna()]

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[7]:
+# In[36]:
 
 
 import requests
@@ -25,7 +25,11 @@ import pandas as pd
 import time
 from bs4 import BeautifulSoup
 
-
+ps = True
+if ps:
+    trail='_ps'
+else:
+    trail=''
 def pull_bref(ps=False,totals=False):
     leagues = "playoffs" if ps else "leagues"
     frames = []
@@ -86,10 +90,10 @@ def pull_bref(ps=False,totals=False):
     return pd.concat(frames)
 
 
-index_frame=pull_bref(ps=False,totals=True)
+index_frame=pull_bref(ps=ps,totals=True)
 index_frame['bref_id']=index_frame['url'].str.split('/',expand=True)[5]
 index_frame['bref_id']=index_frame['bref_id'].str.split('.',expand=True)[0]
-master = pd.read_csv('index_master.csv')
+master = pd.read_csv('index_master'+trail+'.csv')
 match_dict=dict(zip(master['bref_id'],master['nba_id']))
 
 team_dict=dict(zip(master['team'],master['team_id']))
@@ -132,14 +136,14 @@ index_copy = index_frame[['player', 'url', 'year', 'team', 'bref_id', 'nba_id', 
 master=master[master.year!=2025]
 master=pd.concat([master,index_copy])
 master.drop_duplicates(inplace=True)
-master.to_csv('index_master.csv',index=False)
+master.to_csv('index_master'+trail+'.csv',index=False)
 index_frame.dropna(subset='bref_id',inplace=True)
 index_frame['FTA']=index_frame['FTA'].astype(int)
 index_frame['FGA']=index_frame['FGA'].astype(int)
 
 index_frame['PTS']=index_frame['PTS'].astype(int)
 year=2025
-old_scoring=pd.read_csv('totals.csv')
+old_scoring=pd.read_csv('totals'+trail+'.csv')
 old_scoring=old_scoring[old_scoring.year<year]
 old_scoring.columns
 
@@ -158,11 +162,11 @@ new_scoring.fillna(0,inplace=True)
 new_scoring.replace([np.inf, -np.inf], 0, inplace=True)
 new_scoring.loc[new_scoring['TS%'] > 150, 'TS%'] = 0
 
-new_scoring.to_csv('totals.csv',index=False)
+new_scoring.to_csv('totals'+trail+'.csv',index=False)
 new_scoring[new_scoring.nba_id==2544]
 
 
-# In[8]:
+# In[37]:
 
 
 def pull_bref_score(ps=False,totals=False):
@@ -222,7 +226,7 @@ def pull_bref_score(ps=False,totals=False):
         time.sleep(2)
     
     return pd.concat(frames)
-index_frame=pull_bref_score(ps=False)
+index_frame=pull_bref_score(ps=ps)
 index_frame['bref_id']=index_frame['url'].str.split('/',expand=True)[5]
 index_frame['bref_id']=index_frame['bref_id'].str.split('.',expand=True)[0]
 
@@ -240,6 +244,8 @@ search_dict={
     "shannte01":1630545
 
 }
+
+
 match_dict.update(search_dict)
 index_frame['nba_id']=index_frame['bref_id'].map(match_dict)
 
@@ -273,7 +279,7 @@ index_frame['FGA']=index_frame['FGA'].astype(float)
 
 index_frame['PTS']=index_frame['PTS'].astype(float)
 year=2025
-old_scoring=pd.read_csv('scoring.csv')
+old_scoring=pd.read_csv('scoring'+trail+'.csv')
 old_scoring=old_scoring[old_scoring.year<year]
 old_scoring.columns
 
@@ -291,7 +297,9 @@ new_scoring=pd.concat([old_scoring,new_df])
 new_scoring.fillna(0,inplace=True)
 new_scoring.loc[new_scoring['TS%'] > 150, 'TS%'] = 0
 
-new_scoring.to_csv('scoring.csv',index=False)
+new_scoring.to_csv('scoring'+trail+'.csv',index=False)
+
+new_scoring=pd.read_csv('scoring.csv')
 gp=new_scoring[['nba_id','Player','year','G']].reset_index()
 gp.to_csv('../player_sheets/lineups/games.csv',index=False)
 
@@ -303,9 +311,11 @@ ps_scoring.loc[ps_scoring['TS%'] > 150, 'TS%'] = 0
 ps_gp=ps_scoring[['nba_id','Player','year','G']].reset_index()
 ps_gp.to_csv('../player_sheets/lineups/ps_games.csv',index=False)
 ps_gp.to_csv('../extra_data/wowy_leverage/ps_games.csv',index=False)
+ps_gp
+ps_scoring
 
 
-# In[9]:
+# In[38]:
 
 
 scoring=pd.read_csv('scoring.csv')

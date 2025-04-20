@@ -10,7 +10,7 @@ python update_lebron.py
 python dribble.py
 python underground.py
 python hustle.py
-python player_index.py
+#python player_index.py
 python new_tracking.py
 #python contract_data.py
 #python contract_data2.py

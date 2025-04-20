@@ -112,7 +112,8 @@ def hustle_master(ps=False):
 
     hustle.to_csv('hustle'+trail+'.csv',index = False)
     return hustle
-hustle = hustle_master(ps=False)
+ps=True
+hustle = hustle_master(ps=ps)
 hustle
 
 

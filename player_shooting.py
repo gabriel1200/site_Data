@@ -23,6 +23,7 @@ from selenium.webdriver.chrome.service import Service
 import time
 '''
 from pathlib import Path
+ps=True
 # Step 1: Create a session and load the page
 url4 = 'https://www.nba.com/stats/players/shots-closest-defender?CloseDefDistRange=6%2B+Feet+-+Wide+Open&PerMode=Totals'
 url3 = 'https://www.nba.com/stats/players/shots-closest-defender?CloseDefDistRange=4-6+Feet+-+Open&PerMode=Totals'
@@ -120,7 +121,8 @@ def get_playershots(years,ps = False):
             df.to_csv(path,index = False)
             i+=1
 #get_playershots([i for i in range(2013,2024)],ps=False)
-get_playershots([i for i in range(2024,2025)],ps=False)
+
+get_playershots([i for i in range(2024,2025)],ps=ps)
 def master_shooting(playoffs = False):
     data =[]
     for i in range(2014,2026):
@@ -138,7 +140,7 @@ def master_shooting(playoffs = False):
             data.append(df)
     master = pd.concat(data)
     return master
-master= master_shooting() 
+master= master_shooting(playoffs=ps) 
 master.to_csv('player_shooting.csv',index = False)
 
 

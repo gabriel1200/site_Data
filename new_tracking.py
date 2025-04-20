@@ -1,12 +1,12 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[3]:
 
 
 import pandas as pd
 import requests
-
+ps=True
 def get_tracking(years, ps=False):
     stype = "Regular%20Season"
     if ps:
@@ -54,12 +54,13 @@ def get_tracking(years, ps=False):
 
 current_year=2024
 years=[i for i in range(current_year,2025)]
-category_frames=get_tracking(years)
+if ps ==False:
+    category_frames=get_tracking(years,ps=ps)
+else:
+    category_frames_ps=get_tracking(years,ps=True)
 
-#category_frames_ps=get_tracking(years,ps=True)
 
-
-# In[2]:
+# In[4]:
 
 
 category_maps = {
@@ -73,26 +74,25 @@ category_maps = {
     "PullUpShot": 'pullup.csv'
 }
 
+if ps == False:
+    for cat in category_frames.keys():
 
-for cat in category_frames.keys():
+        file='tracking/'+category_maps[cat]
+        old_df=pd.read_csv(file)
+        old_df=old_df[old_df.year!=current_year+1]
+        new_df=pd.concat(category_frames[cat])
 
-    file='tracking/'+category_maps[cat]
-    old_df=pd.read_csv(file)
-    old_df=old_df[old_df.year!=current_year+1]
-    new_df=pd.concat(category_frames[cat])
+        df =pd.concat([old_df,new_df])
+        df.to_csv(file,index=False)
 
-    df =pd.concat([old_df,new_df])
-    df.to_csv(file,index=False)
+else:
 
+    for cat in category_frames_ps.keys():
 
-'''
-for cat in category_frames_ps.keys():
+        file='tracking_ps/'+category_maps[cat]
 
-    file='tracking_ps/'+category_maps[cat]
-
-    df =pd.concat(category_frames_ps[cat])
-    df.to_csv(file,index=False)
-'''
+        df =pd.concat(category_frames_ps[cat])
+        df.to_csv(file,index=False)
 
 
 # In[ ]:

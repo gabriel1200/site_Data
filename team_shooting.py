@@ -20,9 +20,11 @@ url2 = 'https://www.nba.com/stats/teams/shots-closest-defender?CloseDefDistRange
 url3 = 'https://www.nba.com/stats/teams/shots-closest-defender?CloseDefDistRange=4-6+Feet+-+Open&PerMode=Totals'
 url4 = 'https://www.nba.com/stats/teams/shots-closest-defender?CloseDefDistRange=6%2B+Feet+-+Wide+Open&PerMode=Totals'
 url_list = [url1,url2,url3,url4]
-#url_list =[url +'&SeasonType=Playoffs' for url in url_list]
-url_list =[url +'&SeasonType=Regular+Season'for url in url_list]
-
+ps=True
+if ps == True:
+    url_list =[url +'&SeasonType=Playoffs' for url in url_list]
+else:
+    url_list =[url +'&SeasonType=Regular+Season'for url in url_list]
 def multiyear_shooting(url_list,team_round=0,playoffs = True):
     df_list = []
     start_year = 2023
@@ -144,7 +146,7 @@ def get_teamshots(years,ps=False):
             i+=1
         year_df = pd.concat(frames)
         year_df.to_csv(str(year+1)+folder+'team_shooting.csv',index = False)
-get_teamshots([2024],ps=False)
+get_teamshots([2024],ps=ps)
 
 
 # In[2]:

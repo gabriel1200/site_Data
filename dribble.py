@@ -231,9 +231,9 @@ years = [i for i in range(start_year,end_year)]
 #df.to_csv('dribbleshot.csv',index=False)
 #df_ps.to_csv('dribbleshot_ps.csv',index=False)
 
-
-df = master_dribble(2024,ps=False)
-df = master_jump(2024,ps = False)
+ps=True
+df = master_dribble(2024,ps=ps)
+df = master_jump(2024,ps = ps)
 
 
 # In[2]:

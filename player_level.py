@@ -216,12 +216,12 @@ def tracking_master(years,ps=False):
 
         all_frames.append(year_master)
     return pd.concat(all_frames)
-ps = False
+ps = True
 trail =''
 if ps == True:
     trail='_p'
 
-tracking_save([i for i in range(2025,2026)],ps=False)
+tracking_save([i for i in range(2025,2026)],ps=ps)
 
 #tracking_save([i for i in range(2014,2025)],ps=True)
 

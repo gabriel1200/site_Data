@@ -124,7 +124,8 @@ def get_oppshots(years,ps = False):
             df.to_csv(path,index = False)
             print(path)
             i+=1
-get_oppshots([2024],ps=False)
+ps=True
+get_oppshots([2024],ps=ps)
 
 
 # In[2]:
