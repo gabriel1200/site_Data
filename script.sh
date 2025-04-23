@@ -15,7 +15,7 @@ python new_tracking.py
 #python contract_data.py
 #python contract_data2.py
 
-python make_index.py
+python make_index2.py
 python salary2.py
 python price.py
 git add --all
