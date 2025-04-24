@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[ ]:
 
 
 import pandas as pd
@@ -23,7 +23,7 @@ from selenium.webdriver.chrome.service import Service
 import time
 '''
 from pathlib import Path
-ps=True
+ps=False
 # Step 1: Create a session and load the page
 url4 = 'https://www.nba.com/stats/players/shots-closest-defender?CloseDefDistRange=6%2B+Feet+-+Wide+Open&PerMode=Totals'
 url3 = 'https://www.nba.com/stats/players/shots-closest-defender?CloseDefDistRange=4-6+Feet+-+Open&PerMode=Totals'
@@ -141,10 +141,13 @@ def master_shooting(playoffs = False):
     master = pd.concat(data)
     return master
 master= master_shooting(playoffs=ps) 
-master.to_csv('player_shooting.csv',index = False)
+if ps == False:
+    master.to_csv('player_shooting.csv',index = False)
+else:
+    master.to_csv('player_shooting_p.csv',index = False)
 
 
-# In[2]:
+# In[3]:
 
 
 #master= master_shooting(playoffs=True) 

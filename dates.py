@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[3]:
+# In[1]:
 
 
 import requests
@@ -108,7 +108,7 @@ df['home_team_id'].unique()
 # In[4]:
 
 
-df[df['home_team_id'].isna()]
+df.tail(40)
 
 
 # In[ ]:

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[36]:
+# In[8]:
 
 
 import requests
@@ -25,7 +25,7 @@ import pandas as pd
 import time
 from bs4 import BeautifulSoup
 
-ps = True
+ps = False
 if ps:
     trail='_ps'
 else:
@@ -91,6 +91,7 @@ def pull_bref(ps=False,totals=False):
 
 
 index_frame=pull_bref(ps=ps,totals=True)
+print(index_frame)
 index_frame['bref_id']=index_frame['url'].str.split('/',expand=True)[5]
 index_frame['bref_id']=index_frame['bref_id'].str.split('.',expand=True)[0]
 master = pd.read_csv('index_master'+trail+'.csv')
@@ -131,6 +132,7 @@ index_frame.dropna(inplace=True)
 
 
 index_frame=pd.concat([index_frame,notfound])
+
 index_frame['team_id']=index_frame['team'].map(team_dict)
 index_copy = index_frame[['player', 'url', 'year', 'team', 'bref_id', 'nba_id', 'team_id']]
 master=master[master.year!=2025]
@@ -166,7 +168,7 @@ new_scoring.to_csv('totals'+trail+'.csv',index=False)
 new_scoring[new_scoring.nba_id==2544]
 
 
-# In[37]:
+# In[9]:
 
 
 def pull_bref_score(ps=False,totals=False):
@@ -227,6 +229,10 @@ def pull_bref_score(ps=False,totals=False):
     
     return pd.concat(frames)
 index_frame=pull_bref_score(ps=ps)
+for col in index_frame:
+    print(col)
+    print(index_frame[col].iloc[0])
+print('original')
 index_frame['bref_id']=index_frame['url'].str.split('/',expand=True)[5]
 index_frame['bref_id']=index_frame['bref_id'].str.split('.',expand=True)[0]
 
@@ -272,12 +278,13 @@ index_frame['team_id']=index_frame['team'].map(team_dict)
 
 index_frame.dropna(subset='bref_id',inplace=True)
 index_frame.fillna(0,inplace=True)
-print(index_frame)
+
 index_frame.replace('',0,inplace=True)
 index_frame['FTA']=index_frame['FTA'].astype(float)
 index_frame['FGA']=index_frame['FGA'].astype(float)
 
 index_frame['PTS']=index_frame['PTS'].astype(float)
+
 year=2025
 old_scoring=pd.read_csv('scoring'+trail+'.csv')
 old_scoring=old_scoring[old_scoring.year<year]
@@ -287,6 +294,8 @@ index_frame['TS%'] = (index_frame['PTS'] / (2 * (index_frame['FGA'] + 0.44 * ind
 
 # Select and rename columns to match scoring.csv
 new_df = index_frame[['player', 'TS%', 'PTS', 'MP', 'team', 'G', 'year', 'nba_id']].copy()
+print('former scoring')
+print(new_df)
 new_df = new_df.rename(columns={
     'player': 'Player',
     'team': 'Tm'
@@ -294,12 +303,14 @@ new_df = new_df.rename(columns={
 
 # Display the resulting DataFrame
 new_scoring=pd.concat([old_scoring,new_df])
+
 new_scoring.fillna(0,inplace=True)
 new_scoring.loc[new_scoring['TS%'] > 150, 'TS%'] = 0
 
 new_scoring.to_csv('scoring'+trail+'.csv',index=False)
 
 new_scoring=pd.read_csv('scoring.csv')
+print(new_scoring.head(40))
 gp=new_scoring[['nba_id','Player','year','G']].reset_index()
 gp.to_csv('../player_sheets/lineups/games.csv',index=False)
 
@@ -315,7 +326,7 @@ ps_gp
 ps_scoring
 
 
-# In[38]:
+# In[10]:
 
 
 scoring=pd.read_csv('scoring.csv')

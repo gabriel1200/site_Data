@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[15]:
+# In[43]:
 
 
 import pandas as pd
@@ -141,19 +141,19 @@ lebron = lebron[lebron.Year==2025]
 old_ids = lebron.bref_id.tolist()
 
 
-# In[16]:
+# In[44]:
 
 
 salary.columns
 
 
-# In[17]:
+# In[45]:
 
 
 salary.sort_values(by=['Year','Salary'])
 
 
-# In[18]:
+# In[46]:
 
 
 lebron.merge(salary)
@@ -161,19 +161,19 @@ new_ids = lebron.bref_id.tolist()
 set(old_ids)-set(new_ids)
 
 
-# In[19]:
+# In[47]:
 
 
 salary
 
 
-# In[20]:
+# In[48]:
 
 
 lebron = lebron[lebron.Year==2025]
 
 
-# In[21]:
+# In[49]:
 
 
 lebron['lastname'] = lebron['Player'].str.split(' ').str[-1]
@@ -187,7 +187,7 @@ temp = null.merge(short, on = ['Year','lastname'],how='left')
 temp[temp.LEBRON.isnull()]
 
 
-# In[22]:
+# In[50]:
 
 
 '''
@@ -201,19 +201,19 @@ lebron = lebron[lebron.year==2025]
 '''
 
 
-# In[23]:
+# In[51]:
 
 
 lebron.columns
 
 
-# In[24]:
+# In[52]:
 
 
 salary.columns
 
 
-# In[25]:
+# In[53]:
 
 
 #salary = salary.drop(columns=['Player'])
@@ -229,8 +229,8 @@ print(games.columns)
 games.columns = ['year','G']
 year_total = year_total.merge(games)
 print(year_total['G'])
-#year_total['Salary']/=year_total['G']
-year_total['Salary']/=1280
+year_total['Salary']/=year_total['G']
+#year_total['Salary']/=1280
 year_total.rename(columns ={'Salary':'Win_Cost'},inplace = True)
 year_total.drop_duplicates(inplace=True)
 pay_table = salary.merge(year_total)
@@ -259,13 +259,13 @@ temp_bron = temp_bron[~temp_bron['NBA ID'].isin(id_list) ]
 #null[null.bref_id.isnull()]
 
 
-# In[26]:
+# In[54]:
 
 
 print(pay_table.columns)
 
 
-# In[27]:
+# In[55]:
 
 
 pay_table.columns#pay_table['WAR'] = pay_table['LEBRON WAR']
@@ -283,14 +283,14 @@ pay_table[pay_table.Year==2025]
 pay_table[pay_table.bref_id=='thompkl01']
 
 
-# In[28]:
+# In[56]:
 
 
 old_pay = pd.read_csv('pay_table.csv')
 print((old_pay.columns))
 
 
-# In[29]:
+# In[57]:
 
 
 pay_table = pay_table.drop_duplicates(subset='bref_id')
@@ -304,13 +304,13 @@ filt
 
 
 
-# In[30]:
+# In[58]:
 
 
 pay_table[~pay_table.LEBRON.isnull()]
 
 
-# In[31]:
+# In[59]:
 
 
 filt = pay_table[~pay_table.LEBRON.isnull()]
@@ -325,7 +325,7 @@ index=pd.read_csv('index_master.csv')
 index_id=dict(zip(index.bref_id,index.nba_id))
 
 
-# In[32]:
+# In[60]:
 
 
 #old_pay = old_pay[old_pay.Year!=2025]
@@ -352,19 +352,19 @@ new_pay
 new_pay
 
 
-# In[33]:
+# In[61]:
 
 
 new_pay.to_csv('../web_app/data/pay_table.csv',index=False)
 
 
-# In[34]:
+# In[62]:
 
 
 print(pay_table)
 
 
-# In[35]:
+# In[63]:
 
 
 new_pay['year'].unique()
