@@ -234,7 +234,7 @@ opp_master = pd.concat(frames)
 
 opp_master.to_csv('opp_team_shooting.csv',index=False)
 frames = []
-for year in range(2014,2025):
+for year in range(2014,2026):
     path = str(year)+'/playoffs/opp_shooting/'
     for shot in shots:
         filepath = path+shot+'.csv'
@@ -280,7 +280,7 @@ for year in range(2014,2026):
 master = pd.concat(frames)
 master.to_csv('team_shooting.csv',index = False)
 frames = []
-for year in range(2014,2025):
+for year in range(2014,2026):
     path = str(year)+'/playoffs/team_shooting/'
     for shot in shots:
         filepath = path+shot+'.csv'

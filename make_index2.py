@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
+# In[14]:
 
 
 import requests
@@ -306,7 +306,12 @@ def update_master_index(index_df, master_df):
 
     updated_master.to_csv(config.index_master_path, index=False)
     updated_master.to_csv(config.index_master_path, index=False)
+    if config.PLAYOFFS_MODE:
+        team_master=updated_master[['team','team_id','year']].reset_index(drop=True)
+        team_master.drop_duplicates(inplace=True)
+        #print(len(team_master[team_master.year==2025]))
 
+        team_master.to_csv('team_index_ps.csv',index=False)
     
     print(f"Master index updated: {len(updated_master)} total players")
     new_players = len(index_copy[~index_copy['bref_id'].isin(master_df['bref_id'])])
