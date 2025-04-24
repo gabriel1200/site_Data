@@ -220,6 +220,7 @@ ps = True
 trail =''
 if ps == True:
     trail='_p'
+    trail2='_ps'
 
 tracking_save([i for i in range(2025,2026)],ps=ps)
 
@@ -387,7 +388,7 @@ columns = ['nba_id','Name','Points','on-ball-time%','on-ball-time','UAPTS','TSA'
 #rs=passing[columns]
 rs=passing[columns]
 #rs.to_csv('passing.csv',index =False)
-rs.to_csv('passing.csv',index = False)
+rs.to_csv('passing'+trail2+'.csv',index = False)
 
 avg = pd.read_html('https://www.basketball-reference.com/leagues/NBA_stats_per_poss.html')[0]
 avg.columns = avg.columns.droplevel()

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[6]:
+# In[ ]:
 
 
 import requests
@@ -44,7 +44,10 @@ class Config:
         "cuiyo01": 1642385,
         "dasiltr01": 1641783,
         "salauti01": 1642275,
-        "shannte01": 1630545
+        "shannte01": 1630545,
+        "sengual01":1630578,
+        "willije02":1631466
+
     }
 
 # Initialize config
@@ -279,15 +282,28 @@ def update_master_index(index_df, master_df):
     
     # Create copy of current data
     index_copy = index_df[['player', 'url', 'year', 'team', 'bref_id', 'nba_id', 'team_id']]
-    
+    # Create copy of current data
+    index_copy = index_df[['player', 'url', 'year', 'team', 'bref_id', 'nba_id', 'team_id']]
+
+    # Print data types
+    print(index_copy.dtypes)
+
     # Remove current year data from master
     master_df = master_df[master_df.year != config.CURRENT_YEAR]
     
     # Concatenate and deduplicate
     updated_master = pd.concat([master_df, index_copy])
     updated_master.drop_duplicates(inplace=True)
+    nan_rows = updated_master[updated_master['nba_id'].isna()]
+    print(nan_rows)
+    updated_master['nba_id'] = updated_master['nba_id'].astype('int64')
+
     
     # Save updated master
+    updated_master['team_id']=updated_master['team_id'].astype(int)
+    #updated_master['nba_id']=updated_master['nba_id'].astype(int)
+    updated_master['year']=updated_master['year'].astype(int)
+
     updated_master.to_csv(config.index_master_path, index=False)
     updated_master.to_csv(config.index_master_path, index=False)
 
