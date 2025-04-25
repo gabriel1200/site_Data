@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[3]:
+# In[1]:
 
 
 import pandas as pd
@@ -13,7 +13,7 @@ import requests
 
 
 
-# In[4]:
+# In[2]:
 
 
 def prep_passing(passing):
@@ -230,7 +230,7 @@ new_master = tracking_master([i for i in range(2014,2026)],ps=ps)
 new_master.to_csv('tracking'+trail+'.csv',index=False)
 
 
-# In[5]:
+# In[3]:
 
 
 to_save=['PLAYER_ID','PLAYER', 'TEAM', 'GP', 'W', 'L', 'MIN', 'DRIVES', 'FGM', 'FGA', 'FG%',
@@ -241,7 +241,7 @@ new_master = new_master[to_save]
 new_master.to_csv('tracking'+trail+'.csv',index=False)
 
 
-# In[6]:
+# In[4]:
 
 
 year = 2024
@@ -251,7 +251,7 @@ path = str(year)+'/player_tracking/pullup.csv'
 #df2
 
 
-# In[7]:
+# In[5]:
 
 
 '''
@@ -287,7 +287,7 @@ for year in range(2014,2024):
 '''
 
 
-# In[8]:
+# In[6]:
 
 
 def passing_data(ps=False, update=True):
@@ -408,7 +408,7 @@ avg.to_csv('team_avg.csv',index = False)
 #avg
 
 
-# In[9]:
+# In[7]:
 
 
 '''
@@ -444,7 +444,7 @@ name_list = ['drives','touches','cs','pullup','passing',\
 '''
 
 
-# In[10]:
+# In[8]:
 
 
 #get_multi(url_list,path_list,name_list,folder_choice,ps = False,start_year=2023)
@@ -462,7 +462,7 @@ name_list = ['drives','touches','cs','pullup','passing',\
 
 
 
-# In[11]:
+# In[9]:
 
 
 '''
