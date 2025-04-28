@@ -146,8 +146,8 @@ cp playtype.csv $WEB_APP_DIR/playtype.csv
 cp playtype.csv $DISCORD_DIR/playtype.csv
 
 
-cp playtype.csv $WEB_APP_DIR/playtype_p.csv
-cp playtype.csv $DISCORD_DIR/playtype_p.csv
+cp playtype_p.csv $WEB_APP_DIR/playtype_p.csv
+cp playtype_p.csv $DISCORD_DIR/playtype_p.csv
 
 
 cp teamplay_p.csv $WEB_APP_DIR/teamplay_p.csv

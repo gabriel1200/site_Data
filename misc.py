@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[12]:
+# In[1]:
 
 
 import pandas as pd
@@ -215,15 +215,14 @@ def get_playtypes(years,ps= False,p_or_t='t',defense= False):
              data['Team'] = data['full_name'].map(team_dict)
             
              return data
-years = [2024]
-playoffs = True
-offense = get_playtypes(years,ps=playoffs)
+
 def update_player_master(year,ps=False):
     trail = ''
     if ps == True:
         trail ='_p'
     years=[year-1]
-    frames = get_playtypes(years,ps=ps,p_or_t='p')
+    frames = get_playtypes(years,ps=ps,p_or_t='p') 
+    print('playtype'+trail+'.csv')
 
     old =pd.read_csv('playtype'+trail+'.csv')
     old = old[old.year!=year]
@@ -231,11 +230,14 @@ def update_player_master(year,ps=False):
     new = pd.concat([old,frames])
     new.to_csv('playtype'+trail+'.csv',index=False)
     return new
+playoffs = True
 new = update_player_master(2025,ps=playoffs)
 
 #new2 = update_player_master(2025,ps=False)
 
+years = [2024]
 
+offense = get_playtypes(years,ps=playoffs)
 defense = get_playtypes([2024],ps=playoffs,defense=True)
 def update_team_masters(year,offense,defense,ps=False):
     trail = ''
@@ -261,7 +263,7 @@ def update_team_masters(year,offense,defense,ps=False):
 update_team_masters(2025,offense,defense,ps=playoffs)
 
 
-# In[13]:
+# In[2]:
 
 
 #url_list = [url1]#
@@ -292,13 +294,13 @@ def get_multi(url_list,playoffs = False):
             df.to_csv(terms[i],index = False)
 
 
-# In[14]:
+# In[3]:
 
 
 #get_multi(url_list,playoffs = False)
 
 
-# In[15]:
+# In[4]:
 
 
 #terms = ['data/teampullup.csv','data/teamcatchshoot.csv','data/teamundersix.csv','data/teamiso.csv','data/teamtransition.csv']
@@ -307,14 +309,14 @@ terms = ['playtype/handoff.csv','playtype/iso.csv','playtype/trans.csv','playtyp
          'playtype/cut.csv','playtype/offscreen.csv','playtype/putback.csv','playtype/misc.csv','playtype/drives.csv']
 
 
-# In[16]:
+# In[5]:
 
 
 #df = pd.read_csv('2024/playtype/spotup.csv')
 #df
 
 
-# In[17]:
+# In[6]:
 
 
 def add_synergy():
@@ -331,7 +333,7 @@ def add_synergy():
         year_df.to_csv(path+'playtype.csv')
 
 
-# In[18]:
+# In[7]:
 
 
 def create_macro(data,play,playlist):
@@ -410,13 +412,13 @@ else:
     #pstyle.to_csv('playstyle.csv',index=False)
 
 
-# In[19]:
+# In[8]:
 
 
 pstyle[pstyle.year==2014]
 
 
-# In[20]:
+# In[9]:
 
 
 team_dict= {'New York Knicks': 'NYK',
@@ -463,7 +465,7 @@ temp['Team']=temp['full_name'].map(team_dict)
 temp.to_csv('teamplayd_p.csv',index=False)
 
 
-# In[21]:
+# In[10]:
 
 
 '''
@@ -511,7 +513,7 @@ newstyle.to_csv('play_style.csv',index=False)
 
 
 
-# In[22]:
+# In[11]:
 
 
 '''
