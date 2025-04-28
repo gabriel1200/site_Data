@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[43]:
+# In[84]:
 
 
 import pandas as pd
@@ -141,19 +141,19 @@ lebron = lebron[lebron.Year==2025]
 old_ids = lebron.bref_id.tolist()
 
 
-# In[44]:
+# In[85]:
 
 
 salary.columns
 
 
-# In[45]:
+# In[86]:
 
 
 salary.sort_values(by=['Year','Salary'])
 
 
-# In[46]:
+# In[87]:
 
 
 lebron.merge(salary)
@@ -161,19 +161,19 @@ new_ids = lebron.bref_id.tolist()
 set(old_ids)-set(new_ids)
 
 
-# In[47]:
+# In[88]:
 
 
 salary
 
 
-# In[48]:
+# In[89]:
 
 
 lebron = lebron[lebron.Year==2025]
 
 
-# In[49]:
+# In[90]:
 
 
 lebron['lastname'] = lebron['Player'].str.split(' ').str[-1]
@@ -187,7 +187,7 @@ temp = null.merge(short, on = ['Year','lastname'],how='left')
 temp[temp.LEBRON.isnull()]
 
 
-# In[50]:
+# In[91]:
 
 
 '''
@@ -201,19 +201,19 @@ lebron = lebron[lebron.year==2025]
 '''
 
 
-# In[51]:
+# In[92]:
 
 
 lebron.columns
 
 
-# In[52]:
+# In[93]:
 
 
 salary.columns
 
 
-# In[53]:
+# In[94]:
 
 
 #salary = salary.drop(columns=['Player'])
@@ -259,13 +259,13 @@ temp_bron = temp_bron[~temp_bron['NBA ID'].isin(id_list) ]
 #null[null.bref_id.isnull()]
 
 
-# In[54]:
+# In[95]:
 
 
 print(pay_table.columns)
 
 
-# In[55]:
+# In[96]:
 
 
 pay_table.columns#pay_table['WAR'] = pay_table['LEBRON WAR']
@@ -283,14 +283,14 @@ pay_table[pay_table.Year==2025]
 pay_table[pay_table.bref_id=='thompkl01']
 
 
-# In[56]:
+# In[97]:
 
 
 old_pay = pd.read_csv('pay_table.csv')
 print((old_pay.columns))
 
 
-# In[57]:
+# In[98]:
 
 
 pay_table = pay_table.drop_duplicates(subset='bref_id')
@@ -304,13 +304,13 @@ filt
 
 
 
-# In[58]:
+# In[99]:
 
 
 pay_table[~pay_table.LEBRON.isnull()]
 
 
-# In[59]:
+# In[100]:
 
 
 filt = pay_table[~pay_table.LEBRON.isnull()]
@@ -325,7 +325,7 @@ index=pd.read_csv('index_master.csv')
 index_id=dict(zip(index.bref_id,index.nba_id))
 
 
-# In[60]:
+# In[101]:
 
 
 #old_pay = old_pay[old_pay.Year!=2025]
@@ -352,19 +352,57 @@ new_pay
 new_pay
 
 
-# In[61]:
+# In[ ]:
 
 
-new_pay.to_csv('../web_app/data/pay_table.csv',index=False)
+import pandas as pd
+import numpy as np
+
+# --- Fix Season and year columns ---
+def year_to_season(year):
+    if pd.isna(year):
+        return np.nan
+    year = int(year)
+    return f"{year-1}-{str(year)[-2:]}"
+
+def season_to_year(season):
+    if pd.isna(season):
+        return np.nan
+    return int(season.split('-')[1]) + 2000 if int(season.split('-')[1]) < 50 else int(season.split('-')[1]) + 1900
+
+new_pay['Season'] = new_pay['Season'].fillna(new_pay['year'].apply(year_to_season))
+new_pay['year'] = new_pay['year'].fillna(new_pay['Season'].apply(season_to_year))
+
+# --- Fix team and all_teams columns ---
+def extract_last_team(team_str):
+    if pd.isna(team_str):
+        return np.nan
+    return team_str.split('/')[-1]
+
+# Rename 'Team' to 'all_teams'
+new_pay = new_pay.rename(columns={'Team': 'all_teams'})
+
+# If 'team' is NaN, use last part of 'all_teams'
+new_pay['team'] = new_pay['team'].fillna(new_pay['all_teams'])
+
+# If 'team' contains '/', extract last part
+mask_dash = new_pay['team'].str.contains('/', na=False)
+new_pay.loc[mask_dash, 'team'] = new_pay.loc[mask_dash, 'team'].apply(extract_last_team)
+
+# If 'all_teams' is blank but 'team' exists, fill all_teams with team
+new_pay['all_teams'] = new_pay['all_teams'].fillna(new_pay['team'])
+
+# --- Save ---
+new_pay.to_csv('../web_app/data/pay_table.csv', index=False)
 
 
-# In[62]:
+# In[105]:
 
 
-print(pay_table)
+print(new_pay)
 
 
-# In[63]:
+# In[104]:
 
 
 new_pay['year'].unique()
