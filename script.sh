@@ -145,6 +145,11 @@ cp scoring_ps.csv $DISCORD_DIR/scoring_ps.csv
 cp playtype.csv $WEB_APP_DIR/playtype.csv
 cp playtype.csv $DISCORD_DIR/playtype.csv
 
+
+cp playtype.csv $WEB_APP_DIR/playtype_p.csv
+cp playtype.csv $DISCORD_DIR/playtype_p.csv
+
+
 cp teamplay_p.csv $WEB_APP_DIR/teamplay_p.csv
 cp teamplay_p.csv $DISCORD_DIR/teamplay_p.csv
 
