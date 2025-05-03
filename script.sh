@@ -14,7 +14,7 @@ python hustle.py
 python new_tracking.py
 #python contract_data.py
 #python contract_data2.py
-
+python dates.py
 python make_index2.py
 python salary2.py
 python price.py
@@ -38,6 +38,8 @@ cp nba_cap_holds.csv $WEB_APP_DIR/nba_cap_holds.csv
 cp nba_summary.csv $WEB_APP_DIR/nba_summary.csv
 
 cp nba_dead_money.csv $WEB_APP_DIR/nba_dead_money.csv
+
+cp schedule.csv $WEB_APP_DIR/schedule.csv
 
 
 cp lebron.csv $WEB_APP_DIR/lebron.csv
