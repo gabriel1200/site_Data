@@ -5,27 +5,11 @@
 
 
 import pandas as pd
-from selenium import webdriver
+
 from bs4 import BeautifulSoup
 from pathlib import Path
 import time
 import requests
-'''
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.by import By
-from selenium.common.exceptions import NoSuchElementException
-from selenium.common.exceptions import ElementNotInteractableException 
-from selenium.webdriver.support.select import Select
-
-# Step 1: Create a session and load the page
-
-url1 = 'https://www.nba.com/stats/players/pullup?PerMode=Totals'
-url2 = 'https://www.nba.com/stats/players/catch-shoot?PerMode=Totals'
-url3 = 'https://www.nba.com/stats/players/defense-dash-lt6?PerMode=Totals'
-url4 = 'https://www.nba.com/stats/teams/isolation?PerMode=Totals'
-url5 = 'https://www.nba.com/stats/players/transition?PerMode=Totals&dir=D&sort=POSS'
-'''
 
 
 
@@ -50,7 +34,7 @@ def format_drives(df):
     df.columns = [col.replace('_PCT','%') for col in df.columns]
     replace_columns = {'PASSES':'PASS', 'PASSES%':'PASS%', 'PLAYER_NAME':'PLAYER', 'TEAM_ABBREVIATION':'TEAM', 'TOV':'TO'}
     df = df.rename(columns=replace_columns)
-    df = df[['PLAYER', 'TEAM', 'GP', 'W', 'L', 'MIN', 'DRIVES', 'FGM', 'FGA', 'FG%',
+    df = df[['PLAYER_ID','PLAYER', 'TEAM', 'GP', 'W', 'L', 'MIN', 'DRIVES', 'FGM', 'FGA', 'FG%',
            'FTM', 'FTA', 'FT%', 'PTS', 'PTS%', 'PASS', 'PASS%', 'AST', 'AST%',
            'TO', 'TOV%', 'PF', 'PF%']]
     for col in df:
@@ -70,7 +54,8 @@ def prep_touches(touches):
     touches['TEAM_ID']= tid
     return touches
 def prep_cs(cs):
-    cs =cs.drop(columns=['PLAYER_ID', 'TEAM_ID', 'W','L'])
+    cs =cs.drop(columns=['TEAM_ID', 'W','L'])
+    pid=cs['PLAYER_ID']
     cs.columns
     pts = cs['CATCH_SHOOT_PTS']
 
@@ -81,6 +66,7 @@ def prep_cs(cs):
     cs.columns = ['PLAYER', 'TEAM', 'GP', 'MIN',  'FGM', 'FGA', 'FG%', '3PM', '3PA',
            '3P%', 'eFG%']
     cs['PTS'] = pts
+    cs['PLAYER_ID']=pid
     for col in cs:
         if '%' in col:
             cs[col]*=100
@@ -201,11 +187,61 @@ def tracking_save(years,ps=False):
 
         pullup = prep_pullup(frames[7])
         pullup.to_csv(folder+'pullup.csv',index = False)
+def tracking_master(years,ps=False):
+    if ps == False:
+        trail = ''
+    else:
+        trail='/playoffs'
 
-tracking_save([2024],ps=True)
+    all_frames = []
+    for year in years:
+        folder = str(year)+trail+'/player_tracking/'
+
+        drives = pd.read_csv(folder+'drives.csv')
+        drives['type']='drives'
+        drives['Volume']= drives['DRIVES']
+        
+        cs = pd.read_csv(folder+'cs.csv')
+        cs['type']='cs'
+        elbow = pd.read_csv(folder+'elbow.csv')
+        elbow['type']='elbow'
+        post = pd.read_csv(folder+'post_up.csv')
+        post['type']='post_up'
+        pullup = pd.read_csv(folder+'pullup.csv')
+        pullup['type']='pullup'
+        paint= pd.read_csv(folder+'drives.csv')
+        paint['type']='paint'
+        year_master = pd.concat([drives,cs,elbow,paint,pullup,post])
+        year_master['year']=year
+
+        all_frames.append(year_master)
+    return pd.concat(all_frames)
+ps = True
+trail =''
+if ps == True:
+    trail='_p'
+    trail2='_ps'
+
+tracking_save([i for i in range(2025,2026)],ps=ps)
+
+#tracking_save([i for i in range(2014,2025)],ps=True)
+
+new_master = tracking_master([i for i in range(2014,2026)],ps=ps)
+new_master.to_csv('tracking'+trail+'.csv',index=False)
 
 
 # In[3]:
+
+
+to_save=['PLAYER_ID','PLAYER', 'TEAM', 'GP', 'W', 'L', 'MIN', 'DRIVES', 'FGM', 'FGA', 'FG%',
+       'FTM', 'FTA', 'FT%', 'PTS', 'PTS%', 'PASS', 'PASS%', 'AST', 'AST%',
+       'TO', 'TOV%', 'PF', 'PF%', 'type', '3PM', '3PA', '3P%', 'eFG%',
+       'Touches','year']
+new_master = new_master[to_save]
+new_master.to_csv('tracking'+trail+'.csv',index=False)
+
+
+# In[4]:
 
 
 year = 2024
@@ -215,7 +251,7 @@ path = str(year)+'/player_tracking/pullup.csv'
 #df2
 
 
-# In[4]:
+# In[5]:
 
 
 '''
@@ -251,13 +287,128 @@ for year in range(2014,2024):
 '''
 
 
-# In[ ]:
+# In[6]:
 
 
+def passing_data(ps=False, update=True):
+    url = 'https://api.pbpstats.com/get-totals/nba'
+    stype = 'Regular Season'
+    folder = 'tracking'
+    
+    if ps:
+        stype = 'Playoffs'
+        folder = 'tracking_ps'
+
+    frames = []
+    start_year = 2014
+    
+    if update:
+        df = pd.read_csv('passing.csv')
+        df = df[df.year < 2025]
+        frames.append(df)
+        start_year = 2025
+
+    print(start_year)
+
+    for year in range(start_year, 2026):
+        time.sleep(1)
+        # Prepare API call
+        season=str(year-1)+"-"+str(year)[-2:]
+        params = {
+            "Season": season,
+            "SeasonType": stype,
+            "Type": "Player"
+        }
+        response = requests.get(url, params=params)
+        response_json = response.json()
+        df = response_json["multi_row_table_data"]
+        df = pd.DataFrame(df)
+        df.rename(columns={'EntityId':'PLAYER_ID'},inplace=True)
+
+        # Load the unified passing and touches data from the common files
+        passing_file_path = f'{folder}/passing.csv'
+        touches_file_path = f'{folder}/touches.csv'
+        print(passing_file_path)
+        print(touches_file_path)
+
+        df2 = pd.read_csv(passing_file_path)
+        df2.rename(columns={'PLAYER': 'Name'}, inplace=True)
 
 
+        df3 = pd.read_csv(touches_file_path)
 
-# In[5]:
+        df2=df2[df2.year==year]
+        df3=df3[df3.year==year]
+        df['nba_id']=df['PLAYER_ID'].astype(int)
+        df2['nba_id']=df2['PLAYER_ID'].astype(int)
+        df3['nba_id']=df3['PLAYER_ID'].astype(int)
+
+        df.drop(columns=['PLAYER_ID'],inplace=True)
+        df2.drop(columns=['PLAYER_ID','GP'],inplace=True)
+        df3.drop(columns=['PLAYER_ID'],inplace=True)
+        df3.rename(columns={'Player': 'Name'}, inplace=True)
+
+        # Merging data
+        merged = df.merge(df2, on='nba_id', how='left')
+        merged = merged.merge(df3, on='nba_id', how='left')
+
+        # Cleaning up column names and calculating additional fields
+
+        merged = merged.fillna(0)
+        merged['Points Unassisted'] = merged['PtsUnassisted2s'] + merged['PtsUnassisted3s']
+        merged['UAFGM'] = (merged['PtsUnassisted2s'] / 2) + (merged['PtsUnassisted3s'] / 3)
+        merged['UAPTS'] = merged['Points Unassisted']
+        merged['on-ball-time'] = merged['TIME_OF_POSS']
+        merged['High Value Assist %'] = 100 * (merged['ThreePtAssists'] + merged['AtRimAssists']) / merged['Assists']
+        merged['on-ball-time%'] = 100 * 2 * (merged['TIME_OF_POSS']) / (merged['Minutes'])
+        merged['TSA'] = (merged['Points'] / (merged['TsPct'] * 2))
+        merged['Potential Assists'] = merged['POTENTIAL_AST']
+        merged['Passes'] = merged['PASSES_MADE']
+        merged['PotAss/Passes'] = merged['POTENTIAL_AST'] / merged['Passes']
+        merged['Assist PPP'] = (merged['AST_PTS_CREATED']) / merged['POTENTIAL_AST']
+        merged['POT_AST_PER_MIN'] = merged['POTENTIAL_AST'] / (merged['on-ball-time'])
+        merged['year'] = year
+
+        frames.append(merged)
+        print(f'Season done {year}')
+    
+    df = pd.concat(frames)
+    return df
+
+
+#passing = passing_data()
+passing= passing_data(ps=False,update=True)
+#merged['testas'] = merged['TwoPtAssists']*2+ merged['ThreePtAssists']*3
+print(passing.columns)
+columns = ['nba_id','Name','Points','on-ball-time%','on-ball-time','UAPTS','TSA','OffPoss','Potential Assists','Travels','TsPct',
+            'Turnovers','Passes','PASSES_RECEIVED','PotAss/Passes','UAFGM','High Value Assist %','Assist PPP','TOUCHES','AVG_SEC_PER_TOUCH', 'AVG_DRIB_PER_TOUCH', 'PTS_PER_TOUCH',
+                'SECONDARY_AST', 'POTENTIAL_AST', 'AST_PTS_CREATED', 'AST_ADJ', 'AST_TO_PASS_PCT', 'AST_TO_PASS_PCT_ADJ','Assists','POT_AST_PER_MIN','ThreePtAssists','AtRimAssists','BadPassTurnovers',
+           'BadPassSteals','BadPassOutOfBoundsTurnovers',
+                   'PtsUnassisted2s','PtsUnassisted3s','Fg3Pct','FG3A','FG3M','OffPoss','GP','Minutes','year']
+#rs=passing[columns]
+rs=passing[columns]
+#rs.to_csv('passing.csv',index =False)
+rs.to_csv('passing'+trail2+'.csv',index = False)
+
+avg = pd.read_html('https://www.basketball-reference.com/leagues/NBA_stats_per_poss.html')[0]
+avg.columns = avg.columns.droplevel()
+avg = avg.dropna(subset='Season')
+avg = avg[avg.Season!='Season']
+
+avg = avg.dropna()
+avg['PTS'] = avg['PTS'].astype(float)
+avg['FGA'] = avg['FGA'].astype(float)
+avg['FTA'] = avg['FTA'].astype(float)
+
+#avg.head(87)
+avg['TS%'] = avg['PTS']/(2*(avg['FGA']+.44*avg['FTA']))
+avg.to_csv('avg_shooting.csv',index = False)
+avg = avg[['Season','ORtg']]
+avg.to_csv('team_avg.csv',index = False)
+#avg
+
+
+# In[7]:
 
 
 '''
@@ -293,7 +444,7 @@ name_list = ['drives','touches','cs','pullup','passing',\
 '''
 
 
-# In[6]:
+# In[8]:
 
 
 #get_multi(url_list,path_list,name_list,folder_choice,ps = False,start_year=2023)
@@ -311,7 +462,7 @@ name_list = ['drives','touches','cs','pullup','passing',\
 
 
 
-# In[7]:
+# In[9]:
 
 
 '''

@@ -5,7 +5,7 @@
 
 
 import pandas as pd
-from selenium import webdriver
+
 from bs4 import BeautifulSoup
 import requests
 '''from selenium.webdriver.support.ui import WebDriverWait
@@ -124,7 +124,8 @@ def get_oppshots(years,ps = False):
             df.to_csv(path,index = False)
             print(path)
             i+=1
-get_oppshots([2023],ps=True)
+ps=True
+get_oppshots([2024],ps=ps)
 
 
 # In[2]:
@@ -137,7 +138,7 @@ def get_multi(url_list,playoffs = False):
     else:
         p = ''
         
-    for i in range(2023,2024):
+    for i in range(2024,2025):
         
         season = '&Season='+str(i)+'-'+str(i+1 - 2000)
         year_url = [url+season for url in url_list]
