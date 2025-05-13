@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[106]:
 
 
 import pandas as pd
@@ -13,7 +13,7 @@ import requests
 
 
 
-# In[2]:
+# In[107]:
 
 
 def prep_passing(passing):
@@ -222,15 +222,15 @@ if ps == True:
     trail='_p'
     trail2='_ps'
 
-tracking_save([i for i in range(2025,2026)],ps=ps)
+tracking_save([i for i in range(2014,2026)],ps=ps)
 
 #tracking_save([i for i in range(2014,2025)],ps=True)
 
 new_master = tracking_master([i for i in range(2014,2026)],ps=ps)
-new_master.to_csv('tracking'+trail+'.csv',index=False)
+new_master.to_csv('tracking'+trail2+'.csv',index=False)
 
 
-# In[3]:
+# In[108]:
 
 
 to_save=['PLAYER_ID','PLAYER', 'TEAM', 'GP', 'W', 'L', 'MIN', 'DRIVES', 'FGM', 'FGA', 'FG%',
@@ -241,7 +241,7 @@ new_master = new_master[to_save]
 new_master.to_csv('tracking'+trail+'.csv',index=False)
 
 
-# In[4]:
+# In[109]:
 
 
 year = 2024
@@ -251,7 +251,7 @@ path = str(year)+'/player_tracking/pullup.csv'
 #df2
 
 
-# In[5]:
+# In[110]:
 
 
 '''
@@ -287,7 +287,7 @@ for year in range(2014,2024):
 '''
 
 
-# In[6]:
+# In[ ]:
 
 
 def passing_data(ps=False, update=True):
@@ -303,7 +303,10 @@ def passing_data(ps=False, update=True):
     start_year = 2014
     
     if update:
-        df = pd.read_csv('passing.csv')
+        if ps == True:
+            df = pd.read_csv('passing_ps.csv')
+        else:
+            df = pd.read_csv('passing.csv')
         df = df[df.year < 2025]
         frames.append(df)
         start_year = 2025
@@ -390,6 +393,23 @@ rs=passing[columns]
 #rs.to_csv('passing.csv',index =False)
 rs.to_csv('passing'+trail2+'.csv',index = False)
 
+
+
+
+passing_ps= passing_data(ps=True,update=False)
+#merged['testas'] = merged['TwoPtAssists']*2+ merged['ThreePtAssists']*3
+
+columns = ['nba_id','Name','Points','on-ball-time%','on-ball-time','UAPTS','TSA','OffPoss','Potential Assists','Travels','TsPct',
+            'Turnovers','Passes','PASSES_RECEIVED','PotAss/Passes','UAFGM','High Value Assist %','Assist PPP','TOUCHES','AVG_SEC_PER_TOUCH', 'AVG_DRIB_PER_TOUCH', 'PTS_PER_TOUCH',
+                'SECONDARY_AST', 'POTENTIAL_AST', 'AST_PTS_CREATED', 'AST_ADJ', 'AST_TO_PASS_PCT', 'AST_TO_PASS_PCT_ADJ','Assists','POT_AST_PER_MIN','ThreePtAssists','AtRimAssists','BadPassTurnovers',
+           'BadPassSteals','BadPassOutOfBoundsTurnovers',
+                   'PtsUnassisted2s','PtsUnassisted3s','Fg3Pct','FG3A','FG3M','OffPoss','GP','Minutes','year']
+#rs=passing[columns]
+ps=passing_ps[columns]
+#rs.to_csv('passing.csv',index =False)
+ps.to_csv('passing_ps.csv',index = False)
+
+
 avg = pd.read_html('https://www.basketball-reference.com/leagues/NBA_stats_per_poss.html')[0]
 avg.columns = avg.columns.droplevel()
 avg = avg.dropna(subset='Season')
@@ -408,43 +428,13 @@ avg.to_csv('team_avg.csv',index = False)
 #avg
 
 
-# In[7]:
+# In[112]:
 
 
-'''
-cs ='https://www.nba.com/stats/players/catch-shoot?PerMode=Totals'
-pullup ='https://www.nba.com/stats/players/pullup?PerMode=Totals'
-
-touches = 'https://www.nba.com/stats/players/touches?PerMode=Totals'
-drives = 'https://www.nba.com/stats/players/drives?PerMode=Totals'
-
-passing = 'https://www.nba.com/stats/players/passing?PerMode=Totals'
-paint = 'https://www.nba.com/stats/players/paint-touch?PerMode=Totals'
-elbow = 'https://www.nba.com/stats/players/elbow-touch?PerMode=Totals'
-#oreb = 'https://www.nba.com/stats/players/offensive-rebounding?PerMode=Totals'
-#dreb = 'https://www.nba.com/stats/players/defensive-rebounding?PerMode=Totals'
-#shoot_ef = 'https://www.nba.com/stats/players/shooting-efficiency?'
-post_up = 'https://www.nba.com/stats/players/tracking-post-ups?PerMode=Totals'
-url_list = [drives,touches,cs,pullup,passing,paint,elbow,post_up]
-#url_list =[url +'&SeasonType=Playoffs' for url in url_list]
-#url_list =[url +'&SeasonType=Regular+Season'for url in url_list]
+ps
 
 
-xpath = '//*[@id="__next"]/div[2]/div[2]/div[3]/section[2]/div/div[2]/div[2]/div[1]/div[3]/div/label/div/select'
-#xpath2 = '//*[@id="__next"]/div[2]/div[2]/div[3]/section[2]/div/div[2]/div[2]/div[1]/div[3]/div/label/div/select'
-path_list = [xpath for i in range(len(url_list))]
-
-hurl_list= ['https://www.nba.com/stats/players/hustle?PerMode=Totals']
-h_paths = [xpath for i in range(len(hurl_list))]
-
-ps = True
-folder_choice = 'player_tracking'
-name_list = ['drives','touches','cs','pullup','passing',\
-            'paint','elbow','oreb','post_up']
-'''
-
-
-# In[8]:
+# In[113]:
 
 
 #get_multi(url_list,path_list,name_list,folder_choice,ps = False,start_year=2023)
@@ -462,7 +452,7 @@ name_list = ['drives','touches','cs','pullup','passing',\
 
 
 
-# In[9]:
+# In[114]:
 
 
 '''

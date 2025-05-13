@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[5]:
+# In[1]:
 
 
 import pandas as pd
@@ -52,7 +52,7 @@ def get_tracking(years, ps=False):
 
     return category_frames
 
-current_year=2024
+current_year=2013
 years=[i for i in range(current_year,2025)]
 if ps ==False:
     category_frames=get_tracking(years,ps=ps)
@@ -60,7 +60,7 @@ else:
     category_frames_ps=get_tracking(years,ps=True)
 
 
-# In[6]:
+# In[2]:
 
 
 category_maps = {

@@ -114,13 +114,13 @@ rs.to_csv('passing.csv',index = False)
 
 
 
-#passing= passing_data(ps=True,update=False)
+passing_ps= passing_data(ps=True,update=False)
 #merged['testas'] = merged['TwoPtAssists']*2+ merged['ThreePtAssists']*3
 
 #rs=passing[columns]
-#ps=passing[columns]
+ps=passing[columns]
 #rs.to_csv('passing.csv',index =False)
-#ps.to_csv('passing_ps.csv',index = False)
+ps.to_csv('passing_ps.csv',index = False)
 
 
 # In[2]:
