@@ -44,13 +44,13 @@ def pull_bref(ps=False,totals=False):
         response = requests.get(url, headers={'User-Agent': 'Mozilla/5.0'})
         response.encoding = 'utf-8' 
         soup = BeautifulSoup(response.text, 'html.parser')
-        
+
         # Find the specific table
         table = soup.find('table')
-        
+
         # Get all rows from the table body
         rows = table.find('tbody').find_all('tr')
-        
+
         # Define the data structure to store extracted rows
         data = []
         for row in rows:
@@ -61,7 +61,7 @@ def pull_bref(ps=False,totals=False):
                 player_name = player_cell.text if player_cell.text else "N/A"  # Player name
                 player_url = "https://www.basketball-reference.com" + player_cell.a['href'] if player_cell.a else "N/A"  # Player URL
                 team_acronym = cells[2].text if cells[2].text else "N/A"  # Team acronym
-                
+
                 gp = cells[4].text if len(cells) > 4 else "0"  # Minutes played
                 mp = cells[6].text if len(cells) > 6 else "0"  # Minutes played
 
@@ -73,11 +73,11 @@ def pull_bref(ps=False,totals=False):
                 fta = cells[18].text if len(cells) > 18 else "0" # Free Throw Attempts
                 ft = cells[17].text if len(cells) > 17 else "0"  # Free Throws Made
                 pts = cells[pt_index].text if len(cells) > pt_index else "0"  #
-                
+
                 data.append([
                     player_name, player_url, team_acronym, year, gp,mp, fga, fg, tpa, tp, fta, ft,pts
                 ])
-        
+
         # Create DataFrame for the current year
         year_data = pd.DataFrame(
             data=data, 
@@ -86,7 +86,7 @@ def pull_bref(ps=False,totals=False):
         frames.append(year_data)
         print(f"Year {year} data added.")
         time.sleep(2)
-    
+
     return pd.concat(frames)
 
 
@@ -223,7 +223,7 @@ def pull_bref_score(ps=False, totals=False): # totals parameter retained but not
         table = soup.find('table', id='per_poss_stats')
         if not table:
             table = soup.find('table') # Fallback if specific id isn't found
-        
+
         if not table:
             print(f"No data table found on {url}")
             continue
@@ -232,9 +232,9 @@ def pull_bref_score(ps=False, totals=False): # totals parameter retained but not
         if not tbody:
             print(f"No tbody found in table on {url}")
             continue
-            
+
         rows = tbody.find_all('tr')
-        
+
         data_for_year = []
         print(f"Processing {len(rows)} rows for year {year_to_scrape}...")
         for i, row_obj in enumerate(rows):
@@ -243,20 +243,20 @@ def pull_bref_score(ps=False, totals=False): # totals parameter retained but not
                 continue
 
             player_name = get_stat_from_row(row_obj, "player", "N/A")
-            
+
             # Skip rows that are not actual player data rows
             if player_name == "N/A" or player_name == "Player" or not player_name.strip():
                 continue
-            
+
             # For team acronym, use a more distinct default if not found
             team_acronym = get_stat_from_row(row_obj, "team_id", default_value="UNK") # "UNK" for Unknown team
 
             player_url = get_player_url_from_row(row_obj, "player")
-            
+
             # Fetching stats using their data-stat attributes from the per_poss page
             gp = get_stat_from_row(row_obj, "g")         # Games Played
             mp = get_stat_from_row(row_obj, "mp")         # Minutes Played (total for season on per_poss)
-            
+
             fga = get_stat_from_row(row_obj, "fga_per_poss")
             fg = get_stat_from_row(row_obj, "fg_per_poss")
             tpa = get_stat_from_row(row_obj, "fg3a_per_poss") # 3-Point Attempts
@@ -264,12 +264,12 @@ def pull_bref_score(ps=False, totals=False): # totals parameter retained but not
             fta = get_stat_from_row(row_obj, "fta_per_poss")
             ft = get_stat_from_row(row_obj, "ft_per_poss")
             pts = get_stat_from_row(row_obj, "pts_per_poss")
-            
+
             data_for_year.append([
                 player_name, player_url, team_acronym, year_to_scrape, gp, mp, 
                 fga, fg, tpa, tp, fta, ft, pts
             ])
-        
+
         if not data_for_year:
             print(f"No player data extracted for year {year_to_scrape}.")
             continue
@@ -279,7 +279,7 @@ def pull_bref_score(ps=False, totals=False): # totals parameter retained but not
             columns=['player', 'url', 'team', 'year', 'G', 'MP', 'FGA', 'FG', '3PA', '3P', 'FTA', 'FT', 'PTS']
         )
         frames.append(year_df)
-        
+
         if not year_df.empty:
             print(f"First player processed for year {year_to_scrape}:")
             print(year_df.iloc[0])
@@ -287,14 +287,14 @@ def pull_bref_score(ps=False, totals=False): # totals parameter retained but not
             # print(f"Unique team acronyms found for {year_to_scrape}: {year_df['team'].unique()}")
         else:
             print(f"No data parsed into DataFrame for year {year_to_scrape}.")
-        
+
         print(f"Year {year_to_scrape} data processing complete. Found {len(year_df)} players.")
         time.sleep(3) # Maintain a respectful delay
-    
+
     if not frames:
         print("No data collected across all years. Returning an empty DataFrame.")
         return pd.DataFrame(columns=['player', 'url', 'team', 'year', 'G', 'MP', 'FGA', 'FG', '3PA', '3P', 'FTA', 'FT', 'PTS'])
-        
+
     return pd.concat(frames)
 
 # --- Example of how to call and test (ensure other parts of your script are set up) ---

@@ -28,7 +28,7 @@ def get_tables(url_list):
     options = webdriver.FirefoxOptions()
     driver = webdriver.Firefox(options=options)
     for url in url_list:
-        
+
         driver.get(url)
         print(url)
         # Wait for the page to fully load
@@ -47,7 +47,7 @@ def get_tables(url_list):
         #print(f'Total tables: {len(dfs)}')
         #print(dfs[2].head())
 
-        
+
         df= dfs[-1]
         #print(df)
         drop = ['Unnamed: 16_level_1', 'Unnamed: 17_level_1', 'Unnamed: 18_level_1']
@@ -69,7 +69,7 @@ def get_oppshots(years,ps = False):
         i = 0
         for shot in shots:
             season = str(year)+'-'+str(year+1 - 2000)
-            
+
             part1 = "https://stats.nba.com/stats/leaguedashoppptshot?CloseDefDistRange="
             part2 = "&College=&Conference=&Country=&DateFrom=&DateTo=&Division=&DraftPick=&DraftYear=&DribbleRange=&GameScope=&GameSegment=&GeneralRange=&Height=&LastNGames=0&LeagueID=00&Location=&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PerMode=Totals&Period=0&PlayerExperience=&PlayerPosition=&Season="
 
@@ -100,14 +100,14 @@ def get_oppshots(years,ps = False):
              'EFG_PCT':'EFG%',
              'FG_PCT':'FG%',
                          'FGA_FREQUENCY':'FREQ%',
-                          
+
                           }
             new_columns2 = {'FREQ%':'Freq%',
 
              'TEAM_ABBREVIATION':'TEAM',
                      '3FG FREQ%': '3FG Freq%',
                           'EFG%': 'eFG%',
-                           
+
                           '2FG FREQ%': '2FG Freq%'}
             df = df.rename(columns = new_columns)
             df = df.rename(columns = new_columns2)
@@ -120,7 +120,7 @@ def get_oppshots(years,ps = False):
                     df[col]*=100
             term = terms[i]
             path = str(year+1)+folder+term
-         
+
             df.to_csv(path,index = False)
             print(path)
             i+=1
@@ -137,25 +137,25 @@ def get_multi(url_list,playoffs = False):
         p ='/playoffs'
     else:
         p = ''
-        
+
     for i in range(2024,2025):
-        
+
         season = '&Season='+str(i)+'-'+str(i+1 - 2000)
         year_url = [url+season for url in url_list]
         frames = get_tables(year_url)
 
- 
+
         path = str(i+1)+p+'/opp_shooting/'
         output_dir = Path(path)
         output_dir.mkdir(parents=True, exist_ok=True)
         #terms = ['data/teampullup.csv','data/teamcatchshoot.csv','data/teamundersix.csv','data/teamiso.csv','data/teamtransition.csv']
         terms = ['very_tight.csv','tight.csv','open.csv','wide_open.csv']
         terms = [ path+ t for t in terms]
-        
+
         for i in range(len(terms)):
             df = frames[i]
             df.to_csv(terms[i],index = False)
-    
+
 
 
 # In[3]:

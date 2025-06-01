@@ -44,7 +44,7 @@ def get_index():
     players_response = requests.get("https://api.pbpstats.com/get-all-players-for-league/nba")
     players = players_response.json()["players"]
     player_dict = dict([(player.lower(),num) for num,player in players.items()])
-  
+
     return player_dict,team_dict
 def update_master(master_file,new_file,year):
     df = pd.read_csv(new_file)
@@ -55,7 +55,7 @@ def update_master(master_file,new_file,year):
     old.to_csv(master_file,index = False)
 
 def get_defense(url,year,ps = False):
-    
+
     defense = url
     url_list = [defense]
     #url_list =[url +'&SeasonType=Regular+Season'for url in url_list]
@@ -72,14 +72,14 @@ def get_defense(url,year,ps = False):
         output_dir = Path(path)
         output_dir.mkdir(parents=True, exist_ok=True)
         filename = path+'dfg_p.csv'
-   
-        
+
+
 
     xpath = '//*[@id="__next"]/div[2]/div[2]/div[3]/section[2]/div/div[2]/div[2]/div[1]/div[3]/div/label/div/select'
     #xpath2 = '//*[@id="__next"]/div[2]/div[2]/div[3]/section[2]/div/div[2]/div[2]/div[1]/div[3]/div/label/div/select'
     path_list = [xpath for i in range(len(url_list))]
     frames = get_ptables(url_list,path_list)
-    
+
     df = frames[0]
     df['year'] = year
     return df
@@ -120,7 +120,7 @@ def wowy_statlog(stat,start_year,ps =False):
                 "Stat": stat, # for all options for Stat, see the list below
 
             }
-         
+
             response = requests.get(url, params=params)
             response_json = response.json()
             #print(response_json)
@@ -129,7 +129,7 @@ def wowy_statlog(stat,start_year,ps =False):
             df['Team'] = team
             df['Year'] = season
             df['Season'] = season_s
-            
+
             #print(df)
             #break
             #print(df)
@@ -140,7 +140,7 @@ def update_log(filename,stat,ps = False):
 
     df = wowy_statlog(stat,2025,ps)
     df.to_csv(filename,index =False)
-    
+
 #stat = 'FG2APctBlocked'
 # At Rim Shot Frequency - Defense
 stat= "AtRimAccuracyOpponent"
@@ -167,7 +167,7 @@ def update_dash(ps = False):
     stype = 'Regular%20Season'
     if ps == True:
         stype='Playoffs'
-    
+
     url="https://stats.nba.com/stats/leaguedashptdefend?College=&Conference=&Country=&DateFrom=&DateTo=&DefenseCategory=Overall&Division=&DraftPick=&DraftYear=&GameSegment=&Height=&ISTRound=&LastNGames=0&LeagueID=00&Location=&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PerMode=Totals&Period=0&PlayerExperience=&PlayerPosition=&Season=2023-24&SeasonSegment=&SeasonType="+stype+"&StarterBench=&TeamID=0&VsConference=&VsDivision=&Weight="
 
     df = pull_data(url)
@@ -182,9 +182,9 @@ def update_dash(ps = False):
          df.to_csv('2025/playoffs/defense/dfg.csv',index = False)
     else:
         df.to_csv('2025/defense/dfg.csv',index = False)
-    
+
     url = "https://stats.nba.com/stats/leaguedashptdefend?College=&Conference=&Country=&DateFrom=&DateTo=&DefenseCategory=Less%20Than%206Ft&Division=&DraftPick=&DraftYear=&GameSegment=&Height=&LastNGames=0&LeagueID=00&Location=&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PerMode=Totals&Period=0&PlayerExperience=&PlayerPosition=&Season=2023-24&SeasonSegment=&SeasonType="+stype+"&StarterBench=&TeamID=0&VsConference=&VsDivision=&Weight="
-    
+
     df = pull_data(url)
     df = prep_dfg(df)
     #old = pd.read_csv('rimdfg.csv')
@@ -197,7 +197,7 @@ def update_dash(ps = False):
         df.to_csv('2025/playoffs/defense/rimdfg.csv',index = False)
     else:
         df.to_csv('2025/defense/rimdfg.csv',index = False)
-    
+
 
 #update_master('rimfreq.csv',filename)
 update_dash()
@@ -253,12 +253,12 @@ def update_masters(masters,ps = False):
     frames = [frames1,frames2,frames3,frames4]
     i = 0
     for year in range(2014,end_year):
-        
+
         if ps == False:
-           
+
             path = str(year)+'/defense/'
         else:
-           
+
             path = str(year)+'/playoffs/defense/'
         for file in masters:
             print(file)

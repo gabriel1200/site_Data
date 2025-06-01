@@ -87,7 +87,7 @@ def process_salary_value(value: str) -> float:
     """
     if pd.isna(value) or any(fa_type in str(value) for fa_type in FREE_AGENT_TYPES):
         return 0.0
-    
+
     value = str(value).replace('Ext. Elig.', '').strip()
     value = ''.join(filter(str.isdigit, value))
     return float(value) if value else 0.0
@@ -147,7 +147,7 @@ def process_salary_value2(value: str) -> float:
     """
     if pd.isna(value):
         return None
-        
+
     # Extract dollar amount if present
     match = re.search(r'\$(\d+\.?\d*)M', value)
     if match:
@@ -158,39 +158,39 @@ def process_salary_value2(value: str) -> float:
 def process_cap_holds(df: pd.DataFrame, team: str) -> pd.DataFrame:
     """
     Process cap holds table.
-    
+
     Parameters:
     df (pd.DataFrame): DataFrame containing player salary information
     team (str): Team name to be added to the DataFrame
-    
+
     Returns:
     pd.DataFrame: Processed DataFrame with cleaned names and converted salary values
     """
     if df is None:
         return pd.DataFrame()
-        
+
     df = df.copy()
-    
+
     # Ensure column names are standardized
     df.columns = ['Player' if 'player' in col.lower() else col for col in df.columns]
-    
+
     # Clean player names
     df['Player'] = df['Player'].apply(clean_player_name)
-    
+
     # Identify salary columns (those containing year patterns like '2024-25')
     salary_cols = [col for col in df.columns if re.match(r'\d{4}-\d{2}', str(col))]
-    
+
     # Process salary values for each year column
     for col in salary_cols:
         df[col] = df[col].apply(process_salary_value2)
-    
+
     # Add team column
     df['Team'] = team
-    
+
     # Reorder columns to put Team first, then Player, Pos, Age, followed by salary years
     non_salary_cols = ['Team', 'Player', 'Pos', 'Age']
     ordered_cols = non_salary_cols + [col for col in salary_cols if col in df.columns]
-    
+
     return df[ordered_cols]
 
 def process_dead_money(df: pd.DataFrame, team: str) -> pd.DataFrame:
@@ -199,21 +199,21 @@ def process_dead_money(df: pd.DataFrame, team: str) -> pd.DataFrame:
     """
     if df is None:
         return pd.DataFrame()
-    
+
     df = df.copy()
     # Standardize column 
     df.columns = ['Player' if 'player' in col.lower() else col for col in df.columns]
     if 'Player' in df.columns:
-        
-        
+
+
         # Clean player names
         df['Player'] = df['Player'].apply(clean_player_name)
-        
+
         # Process values
         value_cols = [col for col in df.columns if col != 'Player']
         for col in value_cols:
             df[col] = df[col].apply(process_salary_value)
-        
+
         df['Team'] = team
     return df
 
@@ -223,13 +223,13 @@ def process_summary(df: pd.DataFrame, team: str) -> pd.DataFrame:
     """
     if df is None:
         return pd.DataFrame()
-    
+
     df = df.copy()
     # Process values and add team identifier
     value_cols = df.columns
     for col in value_cols:
         df[col] = df[col].apply(process_salary_value)
-    
+
     df['Team'] = team
     return df
 
@@ -241,31 +241,31 @@ def get_team_data(url: str, timeout: int = 10) -> Tuple[List[pd.DataFrame], List
     try:
         response = requests.get(url, timeout=timeout)
         response.raise_for_status()
-        
+
         # Parse HTML content
         soup = BeautifulSoup(response.text, 'html.parser')
-        
+
         # Find all tables and their preceding h2 headers
         tables_data = []
         headers = []
-        
+
         # Get all tables
         tables = soup.find_all('table')
-        
+
         for table in tables:
             # Look for the nearest preceding h2
             header = None
             prev_elem = table.find_previous('h2')
             if prev_elem:
                 header = prev_elem.get_text(strip=True)
-            
+
             # Parse table into DataFrame
             df = pd.read_html(str(table))[0]
             tables_data.append(df)
             headers.append(header)
-        
+
         return tables_data, headers
-        
+
     except RequestException as e:
         print(f"Error fetching data: {e}")
         return [], []
@@ -288,15 +288,15 @@ def process_salary_data(df: pd.DataFrame, team: str) -> pd.DataFrame:
     """
     # Clean column names
     df.columns = ['Player'] + [col for col in df.columns[1:]]
-    
+
     # Clean player names
     df['Player'] = df['Player'].apply(clean_player_name)
-    
+
     # Process salary values
     seasons = get_available_seasons(df)
     for season in seasons:
         df[season] = df[season].apply(process_salary_value)
-    
+
     df['Team'] = team
     return df
 
@@ -305,42 +305,42 @@ def process_options_data(df: pd.DataFrame, salary_df: pd.DataFrame, team: str) -
     Process and clean options data.
     """
     df.columns = ['Deadline Date', 'Player', 'Type', 'Value']
-    
 
-    
+
+
     # Process options
     players = salary_df['Player'].unique()
     seasons = get_available_seasons(salary_df)
-    
+
     data = []
     for player in players:
         player_data = df[df['Player'] == player]
         row = {'Player': player}
-        
+
         for season in seasons:
             row[season] = 0
             season_data = player_data[player_data['Type'].str.contains(season, na=False)]
             if not season_data.empty:
                 row[season] = process_option_type(season_data.iloc[0])
-        
+
         data.append(row)
-    
+
     options_df = pd.DataFrame(data, columns=['Player'] + seasons)
     options_df = options_df.drop_duplicates().reset_index(drop=True)
     options_df['Team'] = team
-    
+
     return options_df
 def team_books(team: str) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     """
     Get salary, options, cap holds, dead money, and summary data for a given team.
     """
     print(f"Processing {team}...")
-    
+
     # Fetch data
     url = NBA_TEAM_URLS.get(team.upper())
     if not url:
         raise ValueError(f"Invalid team code: {team}")
-    
+
     dfs, headers = get_team_data(url)
     if not dfs:
         return pd.DataFrame(), pd.DataFrame(), pd.DataFrame(), pd.DataFrame(), pd.DataFrame()
@@ -353,7 +353,7 @@ def team_books(team: str) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.
 
     dead_money_df = find_table_by_header(dfs, headers, "Dead Money")
 
-    
+
     summary_df = find_table_by_header(dfs, headers, "Summary")
     if salary_df is None:
         print(f"Required salary table not found for {team}")
@@ -380,11 +380,11 @@ def scrape_all_teams(teams: List[str], delay: float = 1.0) -> Tuple[pd.DataFrame
     cap_holds_dfs = []
     dead_money_dfs = []
     summary_dfs = []
-    
+
     for team in teams:
         try:
             salary_df, options_df, cap_holds_df, dead_money_df, summary_df = team_books(team)
-            
+
             if not salary_df.empty:
                 salary_dfs.append(salary_df)
             if not options_df.empty:
@@ -395,12 +395,12 @@ def scrape_all_teams(teams: List[str], delay: float = 1.0) -> Tuple[pd.DataFrame
                 dead_money_dfs.append(dead_money_df)
             if not summary_df.empty:
                 summary_dfs.append(summary_df)
-                
+
         except Exception as e:
             print(f"Error processing {team}: {e}")
-        
+
         time.sleep(delay)  # Rate limiting
-    
+
     return (
         pd.concat(salary_dfs) if salary_dfs else pd.DataFrame(),
         pd.concat(options_dfs) if options_dfs else pd.DataFrame(),

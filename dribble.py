@@ -148,7 +148,7 @@ def get_dribbleshots2(years,ps = False):
             df['dribbles'] = term
             df['year']=year+1
             dataframe.append(df)
-          
+
             part1 = "https://stats.nba.com/stats/leaguedashplayerptshot?CloseDefDistRange=&College=&Conference=&Country=&DateFrom=&DateTo=&Division=&DraftPick=&DraftYear=&DribbleRange="
             part2 = "&GameScope=&GameSegment=&GeneralRange=Pullups&Height=&LastNGames=0&LeagueID=00&Location=&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PerMode=Totals&Period=0&PlayerExperience=&PlayerPosition=&Season="
 
@@ -206,7 +206,7 @@ def master_jump(year,ps = False):
     data_col=['FGM', 'FGA', '2FGM', '2FGA', '3PM', '3PA']
     for col in data_col:
         df[col]=df[col].astype(int)
-        
+
     df2 = df.groupby(['PLAYER_ID', 'PLAYER', 'TEAM', 'AGE', 'GP', 'G', 'dribbles', 'year']).sum(numeric_only=True).reset_index()
     print(df2.columns)
     print(df2)

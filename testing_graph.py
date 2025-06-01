@@ -23,10 +23,10 @@ def graph_payroll(team):
     options = pd.read_csv('option.csv')
     df = df[df.Team.str.upper()==team.upper()]
     options = options[options.Team.str.upper()==team.upper()]
-    
+
     salary = dict(zip(cap['Season'],cap['Salary Cap']))
     df = df.sort_values(by='Guaranteed',ascending = False)
-    
+
     players = df['Player'].tolist()
     fig = go.Figure()
     x = ['2024-2025','2025-2026','2026-2027','2027-2028','2028-2029','2029-2030']
@@ -35,18 +35,18 @@ def graph_payroll(team):
     print(df['2024-25'].sum())
     for player in players:
         perc_salaries = []
-        
+
         p_df = df[df.Player==player].iloc[0]
         o_df = options[options.Player==player].iloc[0]
         legend = False
-        
+
         player_salaries = df[df.Player==player].iloc[0][seasons].tolist()
         player_options = options[options.Player==player].iloc[0][seasons].tolist()
         marker_shapes=[]
         line_colors= []
         option_positions=[]
         option_count = 0
-        
+
         for year in player_options:
             if year == 'T':
                 line_colors.append('#0d0106')
@@ -61,30 +61,30 @@ def graph_payroll(team):
                 line_colors.append('#0d0106')
                 marker_shapes.append('')
             option_count+=1
-        
+
         player_options = options[options.Player==player].iloc[0][seasons].tolist()
         team_options = [x =='T' or x=='UFA' for x in player_options]
         player_options = [x =='P' for x in player_options]
-        
+
         opacities = []
         for year in team_options:
             if year ==True:
                 opacities.append(.35)
             else:
                 opacities.append(1)
-                
+
         i = 0
         for payment in player_salaries:
             perc_salaries.append(100*payment/salary[x[i]])
             i+=1
-        
+
         to_average = [x for x in perc_salaries if pd.isna(x)==False]
-        
+
         player_name=player
         if np.average(to_average)<3:
             legend=True
             player_name=''
-            
+
         # Create hover text with formatted information
         hover_text = []
         for i, salary_val in enumerate(player_salaries):
@@ -98,7 +98,7 @@ def graph_payroll(team):
                             f"Cap %: {perc_salaries[i]:.1f}%<br>" + \
                             f"Guaranteed Total: ${p_df['Guaranteed']:,.2f}"
                 hover_text.append(hover_info)
-        
+
         fig.add_trace(go.Bar(
             x=seasons, 
             y=perc_salaries, 
@@ -116,7 +116,7 @@ def graph_payroll(team):
             hovertext=hover_text,
             hoverinfo='text'
         ))
-    
+
     tickvals = [i * 20 for i in range(1,6)]
     ticktext = [str(i)+'% ' for i in tickvals]
     tickvals.append(122)
@@ -125,7 +125,7 @@ def graph_payroll(team):
     fig.add_hline(y=122,line_color="white",opacity=.4)
     fig.add_hline(y=127,line_color="white")
     fig.add_hline(y=135,line_color="white")
-    
+
     ticktext.append('Luxury Tax ')
     ticktext.append('First Apron ')
     ticktext.append('Second Apron ')
@@ -173,13 +173,13 @@ def graph_payroll(team):
             ticktext=seasons,
         )
     )
-    
+
     fig.update_yaxes(
         tickfont=dict(color='#e5e5e5', size=25,family="Malgun Gothic"),
         showgrid=False,
         zeroline=False
     )
-    
+
     fig.update_xaxes(
         showgrid=False,
         tickfont=dict(color='#e5e5e5', size=30,family="Malgun Gothic")

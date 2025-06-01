@@ -17,7 +17,7 @@ import pandas as pd
 
 def team_books(team):
     print(f"Getting salary data for {team}")
-    
+
     nba_team_urls = {
         "ATL": "https://www.spotrac.com/nba/atlanta-hawks/yearly",
         "BOS": "https://www.spotrac.com/nba/boston-celtics/yearly",
@@ -50,49 +50,49 @@ def team_books(team):
         "UTA": "https://www.spotrac.com/nba/utah-jazz/yearly",
         "WAS": "https://www.spotrac.com/nba/washington-wizards/yearly"
     }
-    
-    
+
+
     url = nba_team_urls[team.upper()]
-    
+
     # Make the HTTP request
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'html.parser')
-    
+
     # Find all table bodies
     tbodies = soup.find_all('tbody')
-    
+
     # Lists to store link data
     texts = []
     hrefs = []
-    
+
     # Process each tbody
     for tbody in tbodies:
         # Find all td elements that contain links
         td_with_links = tbody.find_all('td')
-        
+
         for td in td_with_links:
             # Find all anchor tags within the td
             links = td.find_all('a')
-            
+
             # Extract hrefs from the links
             for link in links:
                 href = link.get('href')
                 if href and href != 'javascript:void(0)':  # Only add valid links
                     texts.append(link.text.strip())
                     hrefs.append(href)
-    
+
     # Create DataFrame from the collected data
     links_df = pd.DataFrame({
         'text': texts,
         'href': hrefs
     })
-    
+
     # Get the original table data as well
     tables_df= pd.read_html(url)
     links_df.rename(columns={'text':'name','href':'url'},inplace=True)
 
     links_df['id']=links_df['url'].str.split('id/').str[-1]
-    
+
     return links_df
 
 # Example usage
@@ -106,7 +106,7 @@ for team in teams:
     frame=team_books(team)
     frame['team']=team
     salary_frames.append(frame)
-    
+
 
 salary_master=pd.concat(salary_frames)
 salary_master.to_csv('salary_id.csv',index=False)
@@ -149,7 +149,7 @@ def match_names(salary_df, index_df, threshold=85):
     Match names between two dataframes using fuzzy string matching and containment checking.
     Checks if salary names are contained within index names to handle cases where salary names
     are partial versions of the full names in the index.
-    
+
     Parameters:
     -----------
     salary_df : DataFrame
@@ -158,7 +158,7 @@ def match_names(salary_df, index_df, threshold=85):
         DataFrame containing index information with 'player' and 'nba_id' columns
     threshold : int
         Minimum similarity score (0-100) required for a match
-        
+
     Returns:
     --------
     DataFrame
@@ -166,22 +166,22 @@ def match_names(salary_df, index_df, threshold=85):
     dict
         Dictionary of name mappings for manual verification
     """
-    
+
     def clean_name(name):
         # Convert to lowercase, remove accents and extra whitespace
         return unidecode(str(name).lower().strip())
-    
+
     # Clean names in both dataframes
     salary_names = salary_df['name'].apply(clean_name)
     index_names = index_df['player'].apply(clean_name)
-    
+
     # Create dictionary for exact matches first
     exact_matches = dict(zip(index_names, index_df['nba_id']))
-    
+
     # Initialize results
     matched_ids = []
     name_mappings = {}
-    
+
     # For each salary name, find the best match
     for salary_name in salary_names:
         # Try exact match first
@@ -194,13 +194,13 @@ def match_names(salary_df, index_df, threshold=85):
                 'match_type': 'exact'
             }
             continue
-            
+
         # If no exact match, try containment and fuzzy matching
         max_score = 0
         best_match = None
         best_id = None
         match_type = None
-        
+
         for idx_name, nba_id in zip(index_names, index_df['nba_id']):
             # Check if salary name is contained within index name
             if salary_name in idx_name:
@@ -214,7 +214,7 @@ def match_names(salary_df, index_df, threshold=85):
                         best_match = idx_name
                         best_id = nba_id
                         match_type = 'containment'
-            
+
             # If no containment match, try fuzzy matching
             if match_type is None:
                 score = fuzz.ratio(salary_name, idx_name)
@@ -223,7 +223,7 @@ def match_names(salary_df, index_df, threshold=85):
                     best_match = idx_name
                     best_id = nba_id
                     match_type = 'fuzzy'
-        
+
         # If we found a good match
         if max_score >= threshold:
             matched_ids.append(best_id)
@@ -241,11 +241,11 @@ def match_names(salary_df, index_df, threshold=85):
                 'nba_id': None,
                 'match_type': None
             }
-    
+
     # Create new dataframe with matches
     result_df = salary_df.copy()
     result_df['nba_id'] = matched_ids
-    
+
     return result_df, name_mappings
 
 # Example usage:
@@ -295,7 +295,7 @@ def standardize_names(df, name_column):
     def clean_name(name):
         # Initial cleanup
         name = str(name).strip()
-        
+
         # Fix specific formatting issues
         name_fixes = {
             'ilva  Tristan Da Silva': 'Tristan Da Silva',
@@ -306,10 +306,10 @@ def standardize_names(df, name_column):
             'Sviatoslav Mykhailiuk': 'Svi Mykhailiuk',
             'N\'Faly Dante': 'NFaly Dante'  # Remove apostrophe
         }
-        
+
         if name in name_fixes:
             return name_fixes[name]
-            
+
         # Handle suffixes consistently
         suffix_map = {
             r'Jr\.?$': 'Jr.',  # Standardize Jr. suffix
@@ -319,7 +319,7 @@ def standardize_names(df, name_column):
             r'IV$': 'IV',      # Keep IV
             r'V$': 'V'         # Keep V
         }
-        
+
         # Apply suffix standardization
         cleaned_name = name
         for pattern, replacement in suffix_map.items():
@@ -328,19 +328,19 @@ def standardize_names(df, name_column):
                 base_name = re.sub(pattern, '', cleaned_name, flags=re.IGNORECASE).strip()
                 # Add back the standardized suffix
                 cleaned_name = f"{base_name} {replacement}"
-        
+
         # Clean up extra spaces
         cleaned_name = ' '.join(cleaned_name.split())
-        
+
         return cleaned_name
-    
+
     # Create a copy of the dataframe
     result_df = df.copy()
-    
+
     # Store original names and create standardized versions
     result_df['original_name'] = result_df[name_column]
     result_df['standardized_name'] = result_df[name_column].apply(clean_name)
-    
+
     return result_df
 
 # Apply the enhanced standardization
@@ -400,14 +400,14 @@ unmatched = merged[merged['nba_id'].isna()]
 def map_additional_ids(df, id_mapping):
     """
     Maps additional NBA IDs to players in the dataframe.
-    
+
     Parameters:
     -----------
     df : DataFrame
         DataFrame containing player information
     id_mapping : dict
         Dictionary mapping player names to NBA IDs
-        
+
     Returns:
     --------
     DataFrame
@@ -415,13 +415,13 @@ def map_additional_ids(df, id_mapping):
     """
     # Create a copy to avoid modifying the original
     result_df = df.copy()
-    
+
     # For each player in the mapping
     for player, nba_id in id_mapping.items():
         # Update the nba_id where the player name matches
         mask = result_df['Player'] == player
         result_df.loc[mask, 'nba_id'] = nba_id
-    
+
     return result_df
 
 # Apply the mapping

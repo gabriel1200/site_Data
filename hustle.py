@@ -29,7 +29,7 @@ def get_hustle(year,ps=False):
     }
     json = requests.get(url,headers = headers).json()
     data = json["resultSets"][0]["rowSet"]
-                
+
     columns = json["resultSets"][0]["headers"]
     df = pd.DataFrame(data, columns=columns)
     print(df)
@@ -49,46 +49,46 @@ def get_hustle(year,ps=False):
     data = json["resultSets"][0]["rowSet"]
     #print(len(data))
     print('Data Length')
-                
+
     columns = json["resultSets"][0]["headers"]
     #print(columns)
     #print(data)
-    
+
     df2 = pd.DataFrame(data, columns=columns)
     df.drop(columns=['MIN'],inplace=True)
     print('Data Length')
     print(len(df))
     print(len(df2))
 
-    
+
     print('Frame Length')
-    
+
     json = requests.get(url3,headers = headers).json()
     data = json["resultSets"][0]["rowSet"]
-    
+
     print('Data Length')
-                
+
     columns = json["resultSets"][0]["headers"]
     #print(columns)
     #print(data)
-    
+
     df3 = pd.DataFrame(data, columns=columns)
     print(df3.columns)
     print(len(df3))
     df3 = df3[['PLAYER_ID','POSS']]
-    
-    
-    
+
+
+
     collist=[col for col in df2.columns if col not in df.columns]
     collist.append('PLAYER_ID')
     df2=df2[collist]
     combo_df = df.merge(df2,on=['PLAYER_ID'])
-    
+
     print(combo_df)
     combo_df = combo_df.merge(df3)
     print(combo_df)
     combo_df['year'] = year
-    
+
     print(len(combo_df))
     return combo_df
 def hustle_master(ps=False):
@@ -98,7 +98,7 @@ def hustle_master(ps=False):
     if ps == False:
         trail = ''
         pfolder='/'
-        
+
     data_rs = []
     old_df=pd.read_csv('hustle.csv')
     old_df=old_df[old_df.year<2025]

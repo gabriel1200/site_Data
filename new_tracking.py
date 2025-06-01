@@ -11,20 +11,20 @@ def get_tracking(years, ps=False):
     stype = "Regular%20Season"
     if ps:
         stype = "Playoffs"
-    
+
     shots = ["Drives", "CatchShoot", "Passing", "Possessions", "ElbowTouch", "PostTouch", "PaintTouch", "PullUpShot"]
-    
+
     # Dictionary to store dataframes for each shot category
     category_frames = {shot: [] for shot in shots}
 
     for year in years:
         season = str(year) + '-' + str(year + 1 - 2000)
-        
+
         for shot in shots:
             part1 = "https://stats.nba.com/stats/leaguedashptstats?College=&Conference=&Country=&DateFrom=&DateTo=&Division=&DraftPick=&DraftYear=&GameScope=&Height=&ISTRound=&LastNGames=0&LeagueID=00&Location=&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PerMode=Totals&PlayerExperience=&PlayerOrTeam=Player&PlayerPosition=&PtMeasureType="
             part2 = "&Season="
             part3 = "&SeasonSegment=&SeasonType=" + stype + "&StarterBench=&TeamID=0&VsConference=&VsDivision=&Weight="
-            
+
             url = part1 + shot + part2 + season + part3
 
             headers = {

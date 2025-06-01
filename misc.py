@@ -87,53 +87,53 @@ def get_playtypes(years,ps= False,p_or_t='t',defense= False):
     if type =="P":
         data_columns= ['PLAYER_NAME','PLAYER_ID','TEAM','TEAM_ID', 'GP', 'POSS', 'FREQ%',
                    'PPP', 'PTS', 'FGM', 'FGA', 'FG%','EFG%', 'FTFREQ%', 'TOVFREQ%', 'SFFREQ%', 'AND ONEFREQ%', 'SCOREFREQ%','PERCENTILE']
-        
+
     for year in years:
         ssn = str(year)+'-'+str(year+1 - 2000)
         i = 0
         for play in playtypes:
-            
+
             half1 = "https://stats.nba.com/stats/synergyplaytypes?LeagueID=00&PerMode=Totals&PlayType="+play+"&PlayerOrTeam="+type+"&SeasonType="+stype+"&SeasonYear="
             half2 = "&TypeGrouping="+field_side
             term = terms[i]
             url = (
-                        
+
                         half1+ str(ssn)+half2
-                        
+
                     )
             #print(url)
             print(url)
             json = requests.get(url,headers = headers).json()
             data = json["resultSets"][0]["rowSet"]
-            
+
             columns = json["resultSets"][0]["headers"]
             time.sleep(2)
 
             df2 = pd.DataFrame.from_records(data, columns=columns)
                 #df2.columns
-          
+
             df2 = df2.rename(columns={'TEAM_NAME':'TEAM','POSS_PCT':'FREQ%','EFG_PCT':'EFG%','FG_PCT':'FG%',
-                                          
+
                                           'TOV_POSS_PCT':'TOVFREQ%','PLUSONE_POSS_PCT':'AND ONEFREQ%','FT_POSS_PCT':'FTFREQ%','SCORE_POSS_PCT':'SCOREFREQ%','SF_POSS_PCT':'SFFREQ%'})
             for col in df2.columns:
                 if '%' in col or 'PERC' in col:
                     df2[col]*=100
             #print(df2)
             path = str(year+1)+trail+'/playtype/'+term
-          
+
             df2 = df2.round(2)
-            
+
             df2 = df2[data_columns]
-            
+
             #print(df2)
             if p_or_t.lower() =='t':
                 if defense == False:
                     df2.to_csv(path,index = False)
-                    
-                
+
+
                 df2['playtype'] = plays[i]
                 df2['year']=year+1
-                 
+
                 frames.append(df2)
             else:
                 #print(df2)
@@ -141,16 +141,16 @@ def get_playtypes(years,ps= False,p_or_t='t',defense= False):
                 df2['year']=year+1
                 print(len(df2))
                 frames.append(df2)
-          
+
             i+=1
-            
+
         if p_or_t.lower() =='p':
             data = pd.concat(frames)
-            
+
             map_terms ={
             'PLAYER_NAME': 'Player',
                  'TEAM_ID':'team_id',
-          
+
             'TEAM': 'Team',
             'GP': 'GP',
             'POSS': 'Poss',
@@ -175,7 +175,7 @@ def get_playtypes(years,ps= False,p_or_t='t',defense= False):
         else:
              data = pd.concat(frames)
              map_terms ={
-    
+
             'PTS':'Points',
             'TEAM': 'full_name'}
              data.rename(columns=map_terms,inplace=True)
@@ -211,9 +211,9 @@ def get_playtypes(years,ps= False,p_or_t='t',defense= False):
              'Utah Jazz': 'UTA',
              'Chicago Bulls': 'CHI',
              'Charlotte Hornets': 'CHA'}
-            
+
              data['Team'] = data['full_name'].map(team_dict)
-            
+
              return data
 
 def update_player_master(year,ps=False):
@@ -273,14 +273,14 @@ def get_multi(url_list,playoffs = False):
     else:
         p=''
     # get table per year, create corresponding directory if it doesn't exist
-    
+
     for i in range(2023,2024):
-        
+
         season = '&SeasonYear='+str(i)+'-'+str(i+1 - 2000)
         year_url = [url+season for url in url_list]
         frames = get_tables(year_url)
 
- 
+
         path = str(i+1)+p+'/playtype/'
         output_dir = Path(path)
         output_dir.mkdir(parents=True, exist_ok=True)
@@ -288,7 +288,7 @@ def get_multi(url_list,playoffs = False):
         terms = ['handoff.csv','iso.csv','trans.csv','bh.csv','rollman.csv','postup.csv','spotup.csv',
                  'cut.csv','offscreen.csv','putback.csv','misc.csv']
         terms = [ path+t for t in terms]
-        
+
         for i in range(len(terms)):
             df = frames[i]
             df.to_csv(terms[i],index = False)
@@ -341,7 +341,7 @@ def create_macro(data,play,playlist):
         perc = [ 'PPP','FG%', 'aFG%', '%FT', '%TO', '%SF', '%Score']
 
         print(len(data.columns))
-     
+
         data = data.loc[data.playtype.isin(playlist)]
         #data['playtype'] = play
         #data['GP']/=3
@@ -359,7 +359,7 @@ def create_macro(data,play,playlist):
             elif col =='GP':
                 series = group.mean()[col]
                 print(series)
-         
+
             else:
                 series = group.sum()[col]
             s_list.append(series)
@@ -370,7 +370,7 @@ def create_macro(data,play,playlist):
         #print(player_df)
         new_data = player_df.reset_index()
         new_data['playtype'] = play
-        
+
         return new_data
 def w_avg(df, values, weights):
     #print(values)
@@ -381,7 +381,7 @@ def w_avg(df, values, weights):
     if values == 'Poss':
 
         return d.sum()
-    
+
     return (d * w).sum() / w.sum()
 ps=True
 if ps ==False:

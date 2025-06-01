@@ -36,7 +36,7 @@ def multiyear_shooting(url_list,team_round=0,playoffs = True):
             year_url = [url + '&PORound='+str(team_round) for url in year_url]
         frames = get_tables(year_url)
 
- 
+
         path = str(i+1)+'/playoff_shooting/round'+str(team_round)+'/'
         if playoffs == False:
             path = str(i+1)+'/team_shooting/'
@@ -44,10 +44,10 @@ def multiyear_shooting(url_list,team_round=0,playoffs = True):
         output_dir.mkdir(parents=True, exist_ok=True)
         #terms = ['data/teampullup.csv','data/teamcatchshoot.csv','data/teamundersix.csv','data/teamiso.csv','data/teamtransition.csv']
         terms = ['very_tight','tight','open','wide_open']
-        
-        
+
+
         for k in range(len(terms)):
-            
+
             frames[k]['shot_coverage'] = terms[k]
             if playoffs == True:
                 frames[k]['round'] = team_round
@@ -87,7 +87,7 @@ def get_teamshots(years,ps=False):
         frames = []
         for shot in shots:
             season = str(year)+'-'+str(year+1 - 2000)
-            
+
             part1 = "https://stats.nba.com/stats/leaguedashteamptshot?CloseDefDistRange="
             part2 = "&College=&Conference=&Country=&DateFrom=&DateTo=&Division=&DraftPick=&DraftYear=&DribbleRange=&GameScope=&GameSegment=&GeneralRange=&Height=&LastNGames=0&LeagueID=00&Location=&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PerMode=Totals&Period=0&PlayerExperience=&PlayerPosition=&Season="
 
@@ -119,14 +119,14 @@ def get_teamshots(years,ps=False):
              'EFG_PCT':'EFG%',
              'FG_PCT':'FG%',
                          'FGA_FREQUENCY':'FREQ%',
-                          
+
                           }
             new_columns2 = {'FREQ%':'Freq%',
 
              'TEAM_ABBREVIATION':'TEAM',
                      '3FG FREQ%': '3FG Freq%',
                           'EFG%': 'eFG%',
-                           
+
                           '2FG FREQ%': '2FG Freq%'}
             df = df.rename(columns = new_columns)
             df = df.rename(columns = new_columns2)

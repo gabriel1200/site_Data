@@ -39,100 +39,100 @@ def clean_player_name(name: str) -> str:
     """
     Cleans player names by removing common suffixes (Jr., II, III, etc.) from the start
     and standardizing format.
-    
+
     Args:
         name (str): Player name to clean
-        
+
     Returns:
         str: Cleaned player name
     """
     # List of common name suffixes to remove
     suffixes = ['Jr.', 'Jr', 'II', 'III', 'IV', 'Sr.', 'Sr']
-    
+
     # Split the name into parts
     name_parts = name.split()
-    
+
     # If the first part is a suffix, remove it
     if name_parts and name_parts[0] in suffixes:
         name_parts = name_parts[1:]
-    
+
     # Rejoin the name parts
     cleaned_name = ' '.join(name_parts)
-    
+
     # Remove any double spaces
     cleaned_name = ' '.join(cleaned_name.split())
-    
+
     return cleaned_name
 def clean_seasonal_salaries(data, seasonlist,header='Dead Money'):
     """
     Cleans salary data for specified seasons within the Dead Money section
-    
+
     Parameters:
     data (dict): Input data containing Dead Money section
     seasonlist (list): List of seasons to process
-    
+
     Returns:
     pd.DataFrame: DataFrame with cleaned numerical salary values for all seasons
     """
     if 'Dead Money' not in data:
         return pd.DataFrame()
-        
+
     dead = data[header].copy()
-    
+
     for season in seasonlist:
         if season not in dead.columns:
             continue
-            
+
         # Fill NA values
         dead[season] = dead[season].fillna('0')
-        
+
         # Remove 'Ext. Elig.' and strip whitespace
         dead[season] = dead[season].str.replace('Ext. Elig.', '', regex=False).str.strip()
-        
+
         # Convert strings to numeric values
         dead[season] = dead[season].apply(lambda x: convert_salary_string(x))
-        
+
         # Ensure integer type
         dead[season] = dead[season].replace('', 0)
         dead[season] = dead[season].astype(int)
-    
+
     return dead
 def convert_salary_string2(salary_str):
     """
     Convert salary strings to decimal values, handling both million and thousand scale values.
-    
+
     Args:
         salary_str: String representation of salary (e.g., "$724,883", "$1,234,567")
-    
+
     Returns:
         float: Converted salary value
     """
     if isinstance(salary_str, (int, float)):
         return float(salary_str)
-    
+
     if not salary_str or pd.isna(salary_str):
         return 0.0
-        
+
     # Remove non-numeric characters except commas
     cleaned = re.sub(r'[^\d,]', '', str(salary_str))
-    
+
     if not cleaned:
         return 0.0
-    
+
     # Split by commas to count the number groups
     parts = cleaned.split(',')
-    
+
     if len(parts) == 1:  # No commas, direct conversion
         return float(parts[0])
-    
+
     # Join all parts and convert to number
     number = float(''.join(parts))
-    
+
     # If the number is unreasonably large (over 100 million), 
     # assume it should be scaled down
     if number > 100000000:  # 100 million threshold
         return number / 10
-        
+
     return number
 
 def convert_salary_string(value):
@@ -141,32 +141,32 @@ def convert_salary_string(value):
     """
     if pd.isna(value) or value == '':
         return '0'
-    
+
     if isinstance(value, (int, float)):
         return str(int(value))
-    
+
     value_str = str(value)
     cutoff=1
     if len(value_str)>15:
         cutoff=2
-    
+
     # Check for special strings
     strings_to_check = ['UFA', 'RFA', 'NA', 'N/A']
     if any(s in value_str for s in strings_to_check):
         return '0'
-    
+
     # First, remove $ and commas
     value_str = value_str.replace('$', '').replace(',', '')
-    
+
     # Find where the decimal point is (indicating start of percentage)
     decimal_index = value_str.find('.')
     if decimal_index != -1:
         # Take everything up to the last 8 digits before the decimal
         # (changed from 7 to 8 to capture the correct number of digits)
         non_decimal_part = value_str[:decimal_index]
-      
+
         value_str = non_decimal_part[:-cutoff]  # Remove last 2 digits instead of 1
- 
+
     # Remove any remaining non-digits
     clean_value = ''.join(c for c in value_str if c.isdigit())
     return clean_value if clean_value else '0'
@@ -183,31 +183,31 @@ def get_team_data(url: str, timeout: int = 10) -> Tuple[List[pd.DataFrame], List
     try:
         response = requests.get(url, timeout=timeout)
         response.raise_for_status()
-        
+
         # Parse HTML content
         soup = BeautifulSoup(response.text, 'html.parser')
-        
+
         # Find all tables and their preceding h2 headers
         tables_data = []
         headers = []
-        
+
         # Get all tables
         tables = soup.find_all('table')
         data_dict={}
-        
+
         for table in tables:
             # Look for the nearest preceding h2
             header = None
             prev_elem = table.find_previous('h2')
             if prev_elem:
                 header = prev_elem.get_text(strip=True)
-            
+
             # Parse table into DataFrame
             df = pd.read_html(str(table))[0]
             data_dict[header]=df
-        
+
         return data_dict
-        
+
     except RequestException as e:
         print(f"Error fetching data: {e}")
         return [], []
@@ -249,8 +249,8 @@ def team_books(team):
         "UTA": "https://www.spotrac.com/nba/utah-jazz/yearly",
         "WAS": "https://www.spotrac.com/nba/washington-wizards/yearly"
     }
-    
- 
+
+
     url = nba_team_urls[team.upper()]    
     data = get_team_data(url)
 
@@ -260,7 +260,7 @@ def team_books(team):
     columns = ['Player']
     for col in salary_df.columns[1:]:
         columns.append(col)
-    
+
     df.columns = ['Deadline Date', 'Player', 'Type', 'Value']
     salary_df.columns = columns
 
@@ -288,7 +288,7 @@ def team_books(team):
         seasonlist = ['2024-25', '2025-26', '2026-27', '2027-28', '2028-29', '2029-30']
         dead = clean_seasonal_salaries(data, seasonlist)
         alldead = pd.DataFrame()
-        
+
         for season in seasonlist:
             if season in dead.columns:
                 alldead[season] = [dead[season].sum()]
