@@ -38,22 +38,22 @@ def get_multi(url_list,playoffs = False):
     else:
         p = ''
         url_list =[url +'&SeasonType=Regular+Season'for url in url_list]
-        
+
     for i in range(2023,2024):
-        
+
         season = '&Season='+str(i)+'-'+str(i+1 - 2000)
         year_url = [url+season for url in url_list]
         frames = get_tables(year_url)
 
- 
+
         path = str(i+1)+p+'/player_shooting/'
         output_dir = Path(path)
         output_dir.mkdir(parents=True, exist_ok=True)
-        
+
         #terms = ['data/teampullup.csv','data/teamcatchshoot.csv','data/teamundersix.csv','data/teamiso.csv','data/teamtransition.csv']
         terms = ['very_tight.csv','tight.csv','open.csv','wide_open.csv']
         terms = [ path+ t for t in terms]
-        
+
         for i in range(len(terms)):
             df = frames[i]
             #print(df)

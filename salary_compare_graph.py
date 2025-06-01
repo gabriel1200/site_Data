@@ -30,25 +30,25 @@ import pandas as pd
 def compare_player_salaries(df, *player_ids):
     if len(player_ids) > 4:
         raise ValueError("Maximum of 4 players can be compared at once")
-        
+
     cap = pd.read_csv('cap.csv')
     cap['Season'] = cap['Season'].apply(lambda x: f"{x.split('-')[0]}-{str(int(x.split('-')[1]))[-2:]}")
-    
+
     seasons = [col for col in df.columns if col.startswith('20')]
     season_cap = dict(zip(cap['Season'], cap['Salary Cap']))
-    
+
     for season in seasons:
         df[season] = 100 * df[season] / season_cap[season]
-    
+
     fig = go.Figure()
-    
+
     option_markers = {
         'T': 'triangle-up',
         'P': 'star',
         'ee': 'diamond',
         '': 'circle'
     }
-    
+
     # Enhanced color palette with better opacity
     colors = [
         'rgba(0, 255, 255, 0.8)',    # cyan
@@ -56,7 +56,7 @@ def compare_player_salaries(df, *player_ids):
         'rgba(255, 215, 0, 0.8)',    # gold
         'rgba(50, 205, 50, 0.8)'     # lime green
     ]
-    
+
     for i, player_id in enumerate(player_ids):
         player_data = df[df['nba_id'] == player_id].iloc[0]
         years = [int(season.split('-')[0]) for season in seasons]
@@ -67,7 +67,7 @@ def compare_player_salaries(df, *player_ids):
         print(seasons)
         options = [player_data[f'option_{season}'] if pd.notna(player_data[f'option_{season}']) else ''
                   for season in seasons]
-        
+
         fig.add_trace(go.Scatter(
             x=years,
             y=y_values,
@@ -89,14 +89,14 @@ def compare_player_salaries(df, *player_ids):
             fill='tozeroy',
             fillcolor=colors[i].replace('0.8', '0.2')
         ))
-    
+
     # Create title based on number of players
     player_names = [df[df['nba_id'] == pid].iloc[0]['name'] for pid in player_ids]
     if len(player_names) == 2:
         title = f"Salary Comparison: {player_names[0]} vs {player_names[1]}"
     else:
         title = f"Salary Comparison: {', '.join(player_names[:-1])} and {player_names[-1]}"
-    
+
     fig.update_layout(
         title=dict(
             text=title,
@@ -140,7 +140,7 @@ def compare_player_salaries(df, *player_ids):
         width=1200,
         margin=dict(t=100, b=80, l=80, r=50)  # Increased margins for better tick visibility
     )
-    
+
     # Add legend entries for option markers
     for option, symbol in option_markers.items():
         if option:
@@ -157,7 +157,7 @@ def compare_player_salaries(df, *player_ids):
                 name=f'{option} Option' if option != "ee" else "Extension Eligible",
                 showlegend=True
             ))
-    
+
     return fig
 
 df=pd.read_csv('salary_spread.csv')

@@ -17,22 +17,22 @@ def gen_master(ps=False):
     for file in files:
         dfs = []
         for year in range(2014, end_year):
-            
+
             if ps == False:
                 path = f"{year}/defense/{file}.csv"
             else:
                 path = f"{year}/playoffs/defense/{file}.csv"
-            
+
             df = pd.read_csv(path)
             print(f"Processing {file} for {year}")
-            
+
             # Standardize column names based on file type
             if file == 'dfg':
 
                 df = df[['nba_id','team_id','PLAYER', 'TEAM', 'DFG%','DFGA','DFGM','DIFF%', 'year']]  # Overall DFG contested
                 df = df.rename(columns={'DFG%': 'overall_dfg%','DFGA':'all_dfga','DFGM':'all_dfgm','TEAM':'Team','DIFF%':'dif%'})
-                
-                
+
+
             elif file == 'rim_acc':
                 #df=df.sort_values(by='MinutesOn',ascending=False)
                 #df.drop_duplicates(subset='Name',inplace=True)
@@ -56,11 +56,11 @@ def gen_master(ps=False):
     for frame in all_frames[1:]:
         master=master.merge(frame,on=['PLAYER','year','nba_id','team_id'])
     print(count)
-        
-                
-        
-    
-    
+
+
+
+
+
     # Save master file
     return master
 

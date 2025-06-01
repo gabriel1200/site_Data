@@ -19,7 +19,7 @@ def get_salaries(team = False):
         base = 'https://hoopshype.com/salaries/players/'
     else:
         base = 'https://hoopshype.com/salaries/'
-        
+
     salaries = []
     for i in range(2023,2025):
         if i !=2007:
@@ -47,7 +47,7 @@ def get_salaries(team = False):
     if team == True:
         final.rename(columns={'Player':'Team'},inplace = True)
     return final
-        
+
 def games_per_year():
     url = 'https://www.basketball-reference.com/leagues/NBA_stats_per_game.html'
     games = pd.read_html(url)[0]

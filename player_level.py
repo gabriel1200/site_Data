@@ -200,7 +200,7 @@ def tracking_master(years,ps=False):
         drives = pd.read_csv(folder+'drives.csv')
         drives['type']='drives'
         drives['Volume']= drives['DRIVES']
-        
+
         cs = pd.read_csv(folder+'cs.csv')
         cs['type']='cs'
         elbow = pd.read_csv(folder+'elbow.csv')
@@ -246,7 +246,7 @@ new_master.to_csv('tracking'+trail+'.csv',index=False)
 
 year = 2024
 path = str(year)+'/player_tracking/pullup.csv'
-    
+
 #df2 = pd.read_csv(path)
 #df2
 
@@ -257,7 +257,7 @@ path = str(year)+'/player_tracking/pullup.csv'
 '''
 for year in range(2014,2025):
     path = str(year)+'/player_tracking/passing.csv'
-    
+
     df2 = pd.read_csv(path)
     if 'AST PTSCreated.1' in df2.columns:
         print(df2)
@@ -294,14 +294,14 @@ def passing_data(ps=False, update=True):
     url = 'https://api.pbpstats.com/get-totals/nba'
     stype = 'Regular Season'
     folder = 'tracking'
-    
+
     if ps:
         stype = 'Playoffs'
         folder = 'tracking_ps'
 
     frames = []
     start_year = 2014
-    
+
     if update:
         if ps == True:
             df = pd.read_csv('passing_ps.csv')
@@ -374,7 +374,7 @@ def passing_data(ps=False, update=True):
 
         frames.append(merged)
         print(f'Season done {year}')
-    
+
     df = pd.concat(frames)
     return df
 
@@ -473,7 +473,7 @@ def save_tables(folder_choice,tables,year,name_list, playoffs= False):
         table = tables[1]
         #print(table)
         temp = table
-        
+
         temp.columns = temp.columns.droplevel() 
         #temp = temp.drop(columns = ['Unnamed: 18_level_1','Unnamed: 19_level_1','Unnamed: 20_level_1', 'Unnamed: 21_level_1','Unnamed: 22_level_1'])
         #temp
@@ -510,7 +510,7 @@ def get_ptables(url_list,path_list):
         url = url_list[i]
         xpath = path_list[i]
         print(url)
-        
+
         driver.get(url)
         accept_path = '//*[@id="onetrust-accept-btn-handler"]'
         time.sleep(5)
@@ -519,7 +519,7 @@ def get_ptables(url_list,path_list):
             driver.find_element(By.XPATH, accept_path).click() 
             cookie_check = True
             time.sleep(1)
-        
+
 
         element = WebDriverWait(driver, 20).until(
         EC.presence_of_element_located((By.XPATH, xpath)))
@@ -528,37 +528,37 @@ def get_ptables(url_list,path_list):
         if check_exists_by_xpath(driver, "//a[contains(text(),'>')]/preceding-sibling::a[1]"):
             number_of_pages = int(driver.find_element(By.XPATH, "//a[contains(text(),'>')]/preceding-sibling::a[1]").text)
             print(number_of_pages)
-        
+
         dropdown1 = Select(driver.find_element(By.XPATH, xpath))
         dropdown1.select_by_index(0)
 
         # Step 2: Parse HTML code and grab tables with Beautiful Soup
-        
+
         soup = BeautifulSoup(driver.page_source, 'lxml')
 
         tables = soup.find_all('table')
-        
+
 
         # Step 3: Read tables with Pandas read_html()
         dfs = pd.read_html(str(tables))
         #needed table is at the end
         df= dfs[-1]
 
-       
+
         data.append(df)
     driver.close()
     return data
 def get_multi(url_list,path_list,name_list,folder_choice,ps =False,start_year = 2016,end_year=2024):
     for i in range(start_year,end_year):
-        
+
         season = '&Season='+str(i)+'-'+str(i+1 - 2000)
         year_url = [url+season for url in url_list]
         tables = get_ptables(year_url,path_list)
         year =i+1
-        
+
         save_tables(folder_choice,tables,year,name_list,playoffs = ps)
-       
-        
+
+
 frames_normal= []
 for i in range(2017,2025):
     path = str(i) + '/hustle/hustle.csv'
