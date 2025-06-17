@@ -1,138 +1,148 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[2]:
-
-
 import pandas as pd
 import math
 import plotly.figure_factory as ff
-
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
-
-import pandas as pd
-import math
-import plotly.figure_factory as ff
-
-import plotly.graph_objects as go
-from plotly.subplots import make_subplots
-
-import pandas as pd
 import numpy as np
 from typing import Dict, List, Tuple, Optional, Union
-
-import requests
-from requests.exceptions import RequestException
 import time
+import re
+
+# Selenium imports
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
+from selenium.common.exceptions import TimeoutException, WebDriverException
 from bs4 import BeautifulSoup
 
-import numpy as np
-
-
-
-
-import pandas as pd
-import re
+def setup_driver(headless=True):
+    """
+    Set up Chrome WebDriver with optimal settings
+    
+    Args:
+        headless (bool): Whether to run browser in headless mode
+        
+    Returns:
+        webdriver.Chrome: Configured Chrome driver
+    """
+    chrome_options = Options()
+    
+    if headless:
+        chrome_options.add_argument("--headless")
+    
+    # Add other useful options
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--disable-dev-shm-usage")
+    chrome_options.add_argument("--disable-gpu")
+    chrome_options.add_argument("--window-size=1920,1080")
+    chrome_options.add_argument("--disable-extensions")
+    chrome_options.add_argument("--disable-plugins")
+    chrome_options.add_argument("--disable-images")  # Faster loading
+    chrome_options.add_argument("--disable-javascript")  # If JS not needed
+    
+    # User agent to avoid detection
+    chrome_options.add_argument("--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36")
+    
+    driver = webdriver.Chrome(options=chrome_options)
+    return driver
 
 def clean_player_name(name: str) -> str:
     """
-    Cleans player names by removing common suffixes (Jr., II, III, etc.) from the start
-    and standardizing format.
-
+    Cleans player names by removing common suffixes (Jr., II, III, etc.)
+    regardless of their position in the string.
+    
     Args:
         name (str): Player name to clean
-
+        
     Returns:
         str: Cleaned player name
     """
     # List of common name suffixes to remove
-    suffixes = ['Jr.', 'Jr', 'II', 'III', 'IV', 'Sr.', 'Sr']
+    suffixes = {'Jr.', 'Jr', 'II', 'III', 'IV', 'Sr.', 'Sr'}
 
-    # Split the name into parts
-    name_parts = name.split()
-
-    # If the first part is a suffix, remove it
-    if name_parts and name_parts[0] in suffixes:
-        name_parts = name_parts[1:]
-
-    # Rejoin the name parts
+    # Split the name into parts and remove any suffix
+    name_parts = [part for part in name.split() if part not in suffixes]
+    
+    # Rejoin the cleaned name
     cleaned_name = ' '.join(name_parts)
-
-    # Remove any double spaces
-    cleaned_name = ' '.join(cleaned_name.split())
-
+    
     return cleaned_name
-def clean_seasonal_salaries(data, seasonlist,header='Dead Money'):
+
+
+def clean_seasonal_salaries(data, seasonlist, header='Dead Money'):
     """
     Cleans salary data for specified seasons within the Dead Money section
-
+    
     Parameters:
     data (dict): Input data containing Dead Money section
     seasonlist (list): List of seasons to process
-
+    
     Returns:
     pd.DataFrame: DataFrame with cleaned numerical salary values for all seasons
     """
     if 'Dead Money' not in data:
         return pd.DataFrame()
-
+        
     dead = data[header].copy()
-
+    
     for season in seasonlist:
         if season not in dead.columns:
             continue
-
+            
         # Fill NA values
         dead[season] = dead[season].fillna('0')
-
+        
         # Remove 'Ext. Elig.' and strip whitespace
         dead[season] = dead[season].str.replace('Ext. Elig.', '', regex=False).str.strip()
-
+        
         # Convert strings to numeric values
         dead[season] = dead[season].apply(lambda x: convert_salary_string(x))
-
+        
         # Ensure integer type
         dead[season] = dead[season].replace('', 0)
         dead[season] = dead[season].astype(int)
-
+    
     return dead
+
 def convert_salary_string2(salary_str):
     """
     Convert salary strings to decimal values, handling both million and thousand scale values.
-
+    
     Args:
         salary_str: String representation of salary (e.g., "$724,883", "$1,234,567")
-
+    
     Returns:
         float: Converted salary value
     """
     if isinstance(salary_str, (int, float)):
         return float(salary_str)
-
+    
     if not salary_str or pd.isna(salary_str):
         return 0.0
-
+        
     # Remove non-numeric characters except commas
     cleaned = re.sub(r'[^\d,]', '', str(salary_str))
-
+    
     if not cleaned:
         return 0.0
-
+    
     # Split by commas to count the number groups
     parts = cleaned.split(',')
-
+    
     if len(parts) == 1:  # No commas, direct conversion
         return float(parts[0])
-
+    
     # Join all parts and convert to number
     number = float(''.join(parts))
-
+    
     # If the number is unreasonably large (over 100 million), 
     # assume it should be scaled down
     if number > 100000000:  # 100 million threshold
         return number / 10
-
+        
     return number
 
 def convert_salary_string(value):
@@ -141,81 +151,115 @@ def convert_salary_string(value):
     """
     if pd.isna(value) or value == '':
         return '0'
-
+    
     if isinstance(value, (int, float)):
         return str(int(value))
-
+    
     value_str = str(value)
-    cutoff=1
-    if len(value_str)>15:
-        cutoff=2
-
+    cutoff = 1
+    if len(value_str) > 15:
+        cutoff = 2
+    
     # Check for special strings
     strings_to_check = ['UFA', 'RFA', 'NA', 'N/A']
     if any(s in value_str for s in strings_to_check):
         return '0'
-
+    
     # First, remove $ and commas
     value_str = value_str.replace('$', '').replace(',', '')
-
+    
     # Find where the decimal point is (indicating start of percentage)
     decimal_index = value_str.find('.')
     if decimal_index != -1:
         # Take everything up to the last 8 digits before the decimal
         # (changed from 7 to 8 to capture the correct number of digits)
         non_decimal_part = value_str[:decimal_index]
-
         value_str = non_decimal_part[:-cutoff]  # Remove last 2 digits instead of 1
-
+ 
     # Remove any remaining non-digits
     clean_value = ''.join(c for c in value_str if c.isdigit())
     return clean_value if clean_value else '0'
 
-
-
-# Usage
-
-def get_team_data(url: str, timeout: int = 10) -> Tuple[List[pd.DataFrame], List[str]]:
+def get_team_data(url: str, driver: webdriver.Chrome = None, timeout: int = 10) -> Dict[str, pd.DataFrame]:
     """
-    Fetch and parse HTML tables from the team URL, along with their section headers.
-    Returns tuple of (list of dataframes, list of headers)
+    Fetch and parse HTML tables from the team URL using Selenium, along with their section headers.
+    Returns dictionary of {header: dataframe}
+    
+    Args:
+        url (str): URL to scrape
+        driver (webdriver.Chrome): Selenium driver instance (optional)
+        timeout (int): Timeout in seconds
+        
+    Returns:
+        Dict[str, pd.DataFrame]: Dictionary mapping headers to DataFrames
     """
+    close_driver = False
+    if driver is None:
+        driver = setup_driver()
+        close_driver = True
+    
     try:
-        response = requests.get(url, timeout=timeout)
-        response.raise_for_status()
-
-        # Parse HTML content
-        soup = BeautifulSoup(response.text, 'html.parser')
-
+        # Navigate to the URL
+        driver.get(url)
+        
+        # Wait for the page to load completely
+        WebDriverWait(driver, timeout).until(
+            EC.presence_of_element_located((By.TAG_NAME, "table"))
+        )
+        
+        # Additional wait to ensure all content is loaded
+        time.sleep(2)
+        
+        # Get page source and parse with BeautifulSoup
+        page_source = driver.page_source
+        soup = BeautifulSoup(page_source, 'html.parser')
+        
         # Find all tables and their preceding h2 headers
-        tables_data = []
-        headers = []
-
-        # Get all tables
         tables = soup.find_all('table')
-        data_dict={}
-
+        data_dict = {}
+        
         for table in tables:
             # Look for the nearest preceding h2
             header = None
             prev_elem = table.find_previous('h2')
             if prev_elem:
                 header = prev_elem.get_text(strip=True)
-
+            
             # Parse table into DataFrame
-            df = pd.read_html(str(table))[0]
-            data_dict[header]=df
+            try:
+                df = pd.read_html(str(table))[0]
 
+                data_dict[header] = df
+            except ValueError as e:
+                print(f"Error parsing table with header '{header}': {e}")
+                continue
+        
         return data_dict
+        
+    except TimeoutException as e:
+        print(f"Timeout waiting for page to load: {e}")
+        return {}
+    except WebDriverException as e:
+        print(f"WebDriver error: {e}")
+        return {}
+    except Exception as e:
+        print(f"Unexpected error: {e}")
+        return {}
+    finally:
+        if close_driver:
+            driver.quit()
 
-    except RequestException as e:
-        print(f"Error fetching data: {e}")
-        return [], []
-    except ValueError as e:
-        print(f"Error parsing HTML tables: {e}")
-        return [], []
-# Populate the new DataFrame with player options and team options
-def team_books(team):
+def team_books(team, driver=None):
+    """
+    Get team salary and option data using Selenium
+    
+    Args:
+        team (str): Team abbreviation
+        driver (webdriver.Chrome): Optional Selenium driver instance
+        
+    Returns:
+        tuple: (salary_df, option_df) - DataFrames containing salary and option data
+    """
     print(team)
     nba_team_urls = {
         "ATL": "https://www.spotrac.com/nba/atlanta-hawks/yearly",
@@ -249,10 +293,13 @@ def team_books(team):
         "UTA": "https://www.spotrac.com/nba/utah-jazz/yearly",
         "WAS": "https://www.spotrac.com/nba/washington-wizards/yearly"
     }
-
-
+    
     url = nba_team_urls[team.upper()]    
-    data = get_team_data(url)
+    data = get_team_data(url, driver)
+
+    if 'Upcoming Deadlines' not in data or 'Active Roster' not in data:
+        print(f"Warning: Required data sections not found for {team}")
+        return pd.DataFrame(), pd.DataFrame()
 
     df = data['Upcoming Deadlines']
     salary_df = data['Active Roster']
@@ -260,7 +307,7 @@ def team_books(team):
     columns = ['Player']
     for col in salary_df.columns[1:]:
         columns.append(col)
-
+    
     df.columns = ['Deadline Date', 'Player', 'Type', 'Value']
     salary_df.columns = columns
 
@@ -276,19 +323,20 @@ def team_books(team):
 
     strings_to_check = ['UFA', 'RFA']
     for season in seasons:
-        salary_df[season] = salary_df[season].fillna('')
-        salary_df[season] = salary_df[season].str.replace('Ext. Elig.', '', regex=False).str.strip()
-        salary_df[season] = salary_df[season].apply(lambda x: '0' if any(s in x for s in strings_to_check) else x)
-        salary_df[season] = salary_df[season].fillna('0')
-        salary_df[season] = salary_df[season].apply(convert_salary_string)
-        salary_df[season] = salary_df[season].str.replace(r'\D', '', regex=True)
-        salary_df[season] = salary_df[season].replace('', 0)
+        if season in salary_df.columns:
+            salary_df[season] = salary_df[season].fillna('')
+            salary_df[season] = salary_df[season].str.replace('Ext. Elig.', '', regex=False).str.strip()
+            salary_df[season] = salary_df[season].apply(lambda x: '0' if any(s in x for s in strings_to_check) else x)
+            salary_df[season] = salary_df[season].fillna('0')
+            salary_df[season] = salary_df[season].apply(convert_salary_string)
+            salary_df[season] = salary_df[season].str.replace(r'\D', '', regex=True)
+            salary_df[season] = salary_df[season].replace('', 0)
 
     if 'Dead Money' in data.keys():
         seasonlist = ['2024-25', '2025-26', '2026-27', '2027-28', '2028-29', '2029-30']
         dead = clean_seasonal_salaries(data, seasonlist)
         alldead = pd.DataFrame()
-
+        
         for season in seasonlist:
             if season in dead.columns:
                 alldead[season] = [dead[season].sum()]
@@ -297,7 +345,7 @@ def team_books(team):
         salary_df = pd.concat([salary_df, alldead])
 
     players = salary_df['Player'].unique()
-    data = []
+    data_list = []
 
     for player in players:
         player_data = df[df['Player'] == player]
@@ -305,7 +353,7 @@ def team_books(team):
         for season in seasons:
             if season in salary_df.columns:
                 row[season] = 0
-                season_data = player_data[player_data['Type'].str.contains(season)]
+                season_data = player_data[player_data['Type'].str.contains(season, na=False)]
                 if not season_data.empty:
                     if 'PLAYER' in season_data['Type'].values[0]:
                         row[season] = 'P'
@@ -321,164 +369,73 @@ def team_books(team):
                         row[season] = 'UFA'
                     else:
                         row[season] = season_data['Type'].values[0] + (' ' + season_data['Value'].values[0] if not pd.isna(season_data['Value'].values[0]) else '')
-                data.append(row)
+        data_list.append(row)
 
-    new_df = pd.DataFrame(columns=['Player'] + seasons, data=data)
+    new_df = pd.DataFrame(columns=['Player'] + seasons, data=data_list)
     new_df = new_df.drop_duplicates().reset_index(drop=True)
     salary_df = salary_df.drop_duplicates().reset_index(drop=True)
 
     for season in seasons:
-        salary_df[season] = salary_df[season].astype(float)
+        if season in salary_df.columns:
+            salary_df[season] = salary_df[season].astype(float)
 
     salary_df['Team'] = team
     new_df['Team'] = team
 
     return salary_df, new_df
-teams = ['ATL', 'BOS', 'BKN', 'CHA', 'CHI', 'CLE', 'DAL', 'DEN', 'DET', 'GSW', 'HOU', 'IND', 'LAC', 'LAL', 'MEM', 'MIA', 'MIL', 'MIN', 'NOP', 'NYK', 'OKC', 'ORL', 'PHI', 'PHX', 'POR', 'SAC', 'SAS', 'TOR', 'UTA', 'WAS']
-#teams=['MIA']
-salary=[]
-options=[]
-for team in teams:
-    salary_df,option_df =team_books(team)
-    salary.append(salary_df)
-    options.append(option_df)
 
-salary_df = pd.concat(salary)
-option_df = pd.concat(options)
-#salary_df.to_csv('salary.csv',index=False)
-option_df
+# Main execution
+def main():
+    """
+    Main function to scrape all team data
+    """
+    teams = ['ATL', 'BOS', 'BKN', 'CHA', 'CHI', 'CLE', 'DAL', 'DEN', 'DET', 'GSW', 
+             'HOU', 'IND', 'LAC', 'LAL', 'MEM', 'MIA', 'MIL', 'MIN', 'NOP', 'NYK', 
+             'OKC', 'ORL', 'PHI', 'PHX', 'POR', 'SAC', 'SAS', 'TOR', 'UTA', 'WAS']
+    
+    # Initialize driver once for all teams to improve performance
+    driver = setup_driver()
+    
+    try:
+        salary = []
+        options = []
+        
+        for team in teams:
+            try:
+                salary_df, option_df = team_books(team, driver)
+                salary.append(salary_df)
+                options.append(option_df)
+                
+                # Add small delay between requests to be respectful
+                time.sleep(1)
+                
+            except Exception as e:
+                print(f"Error processing team {team}: {e}")
+                continue
 
+        # Combine all data
+        if salary:
+            salary_df = pd.concat(salary, ignore_index=True)
+        else:
+            salary_df = pd.DataFrame()
+            
+        if options:
+            option_df = pd.concat(options, ignore_index=True)
+        else:
+            option_df = pd.DataFrame()
+        
+        # Save to CSV
+        salary_df.to_csv('salary.csv', index=False)
+        option_df.to_csv('option.csv', index=False)
+        
+        print(f"Successfully processed {len(salary)} teams")
+        return salary_df, option_df
+        
+    finally:
+        driver.quit()
 
-# In[2]:
-
-
-salary_df
-
-
-# In[3]:
-
-
-test1 = "$2,087,5191.5%"
-test2 = "$39,256,08327.9%"
-print(convert_salary_string(test1))  # Should be '2087519'
-print(convert_salary_string(test2))
-
-
-# In[4]:
-
-
-temp_df=pd.DataFrame()
-temp_df['Player'] = option_df['Player']
-seasons = ['2024-25','2025-26','2026-27','2027-28','2028-29']
-for season in seasons:
-    temp_df[season] = np.where(option_df[season]!='T', 1, 0)
-
-
-guar = pd.DataFrame()
-guar['Player'] = salary_df['Player']
-
-
-guar['Guaranteed'] = 0
-
-print(guar)
-print(temp_df)
-print(salary_df)
-for season in seasons:
-    guar['Guaranteed']+= temp_df[season]* salary_df[season]
-salary_df = salary_df.merge(guar,on='Player')
-salary_df.sort_values(by='Guaranteed',inplace=True)
-salary_df
-salary_df=salary_df.drop_duplicates(subset=['Player','Team'])
-salary_df
-option_df=option_df.drop_duplicates(subset=['Player','Team'])
-option_df
-
-salary_df.loc[salary_df['Player'].str.contains('Quinten Post'), '2024-25'] = 438930
-
-#salary_df.loc[salary_df['Player'].str.contains('Branden Carlson'), '2024-25'] = 990895
-
-option_df.loc[option_df['Player'].str.contains('Scottie Barnes'), '2025-26'] = 0
-option_df.loc[option_df['Player'].str.contains('Bradley Beal'), '2026-27'] = 'P'
-option_df.loc[option_df['Player'].str.contains('Jalen Brunson'), '2024-25'] = 0
-option_df.loc[option_df['Player'].str.contains('Jalen Brunson'), '2025-26'] = 0
-option_df.loc[option_df['Player'].str.contains('Julius Randle'), '2026-27'] = 'P'
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[5]:
-
-
-salary_df.to_csv('salary.csv',index=False)
-option_df.to_csv('option.csv',index=False)
-#salary_df.to_csv('../data/salary.csv',index=False)
-#option_df.to_csv('../data/option.csv',index=False)
-salary_df[salary_df.Team=='OKC']
-
-
-# In[6]:
-
-
-'''
-dfs =pd.read_html('https://basketball.realgm.com/nba/info/salary_cap')
-cap = dfs[0]
-cap.columns = cap.columns.droplevel()
-cap.columns
-columns = [ 'Salary Cap', 'Luxury Tax', '1st Apron', '2nd Apron', 'BAE',
-       'Standard / Non-Taxpayer', 'Taxpayer', 'Team Room / Under Cap']
-for col in columns:
-    cap[col] = cap[col].str.replace(r'\D', '', regex=True)
-    cap[col] = cap[col].astype(float)
-#cap.to_csv('../data/cap.csv',index=False)
-'''
-
-
-# In[7]:
-
-
-'''
-df = pd.read_csv('../data/lebron.csv')
-jrue =df[df['NBA ID']==201950]
-
-df =df[df['NBA ID']!=201950]
-
-
-jrue['Player'] = 'jrue holiday'
-
-df =pd.concat([df,jrue]).reset_index(drop=True)
-df.sort_values(['year','Player'],inplace=True)
-df.to_csv('../data/lebron.csv',index=False)
-'''
-
-
-# In[8]:
-
-
-'''
-cap=pd.read_csv('../data/cap.csv')
-cap['year'] = cap['Season'].str.split('-').str[1:].str.join('')
-cap['year'] = cap['year'].astype(int)
-cap.to_csv('../data/cap.csv',index=False)
-'''
-
-
-# In[9]:
-
-
-# Let's test both cases
-test1 = "$2,087,5191.5%"
-test2 = "$39,256,08327.9%"
-print(convert_salary_string(test1))  # Should be '2087519'
-print(convert_salary_string(test2))  # Should be '39256083'
-
-
-# In[ ]:
-
-
-
-
+if __name__ == "__main__":
+    salary_df, option_df = main()
+    print("Scraping completed!")
+    print(f"Salary data shape: {salary_df.shape}")
+    print(f"Options data shape: {option_df.shape}")
