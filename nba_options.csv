@@ -83,7 +83,7 @@ Naji Marshall,DAL,0,0,UFA,0,,
 Max Christie,DAL,0,0,P,UFA,,
 Jaden Hardy,DAL,0,0,T,UFA,,
 Dereck Lively,DAL,0,T,RFA,0,,
-Dwight Powell,DAL,P,UFA,0,0,,
+Dwight Powell,DAL,0,UFA,0,0,,
 Olivier-Maxence Prosper,DAL,0,T,RFA,0,,
 Brandon Williams,DAL,NG,UFA,0,0,,
 Nikola Jokic,DEN,0,0,P,UFA,0,
@@ -120,10 +120,9 @@ Gui Santos,GSW,T,RFA,0,0,,
 Trayce Jackson-Davis,GSW,NG,T,UFA,0,,
 Quinten Post,GSW,T,RFA,0,0,,
 Jackson Rowe,GSW,0,RFA,0,0,,
+Kevin Durant,HOU,0,UFA,0,0,0,0
 Fred VanVleet,HOU,T,UFA,0,0,0,0
 Alperen Sengun,HOU,0,0,0,0,P,UFA
-Jalen Green,HOU,0,0,P,UFA,0,0
-Dillon Brooks,HOU,0,0,UFA,0,0,0
 Steven Adams,HOU,0,0,0,UFA,0,0
 Smith . Jabari,HOU,0,RFA,0,0,0,0
 Reed Sheppard,HOU,0,T,T,RFA,0,0
@@ -202,7 +201,7 @@ Damian Lillard,MIL,0,P,UFA,0,,
 Giannis Antetokounmpo,MIL,0,0,P,UFA,,
 Kyle Kuzma,MIL,0,0,UFA,0,,
 Bobby Portis,MIL,P,UFA,0,0,,
-Pat Connaughton,MIL,P,UFA,0,0,,
+Pat Connaughton,MIL,0,UFA,0,0,,
 Porter . Kevin,MIL,P,UFA,0,0,,
 AJ Green,MIL,NG,UFA,0,0,,
 Chris Livingston,MIL,NG,T,UFA,0,,
@@ -272,10 +271,8 @@ Moritz Wagner,ORL,T,UFA,0,0,0,0
 Carter . Wendell,ORL,0,0,0,T,UFA,0
 Goga Bitadze,ORL,0,0,UFA,0,0,0
 Anthony Black,ORL,0,T,RFA,0,0,0
-Gary Harris,ORL,T,UFA,0,0,0,0
 Jett Howard,ORL,0,T,RFA,0,0,0
 Da Silva Tristan,ORL,0,T,T,RFA,0,0
-Cory Joseph,ORL,T,UFA,0,0,0,0
 Caleb Houstan,ORL,T,UFA,0,0,0,0
 Ethan Thompson,ORL,0,RFA,0,0,0,0
 Joel Embiid,PHI,0,0,0,P,UFA,
@@ -291,9 +288,10 @@ Ricky Council,PHI,NG,T,UFA,0,0,
 Justin Edwards,PHI,T,RFA,0,0,0,
 Adem Bona,PHI,NG,NG,T,UFA,0,
 Alex Reese,PHI,0,RFA,0,0,0,
-Kevin Durant,PHX,0,UFA,0,0,0,0
 Bradley Beal,PHX,0,P,UFA,0,0,0
 Devin Booker,PHX,0,0,0,UFA,0,0
+Jalen Green,PHX,0,0,P,UFA,0,0
+Dillon Brooks,PHX,0,0,UFA,0,0,0
 Grayson Allen,PHX,0,0,P,UFA,0,0
 Royce O'Neale,PHX,0,0,0,UFA,0,0
 Cody Martin,PHX,NG,UFA,0,0,0,0
