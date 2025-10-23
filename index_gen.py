@@ -353,6 +353,8 @@ def update_master_index(index_df, master_df):
     # Concatenate and deduplicate
     updated_master = pd.concat([master_df, index_copy])
     updated_master['team'] = updated_master['team'].replace('2TM', 'TOT')
+    updated_master['team'] = updated_master['team'].replace('3TM', 'TOT')
+
     updated_master.drop_duplicates(subset=['bref_id', 'year', 'team'], inplace=True)
 
     # Save updated master
