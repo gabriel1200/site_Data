@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[41]:
+# In[ ]:
 
 
 import requests
@@ -33,7 +33,7 @@ else:
 def pull_bref(ps=False,totals=False):
     leagues = "playoffs" if ps else "leagues"
     frames = []
-    for year in range(2025, 2026):
+    for year in range(2026, 2027):
         if totals ==True:
             url = f"https://www.basketball-reference.com/{leagues}/NBA_{year}_totals.html"
             pt_index=28

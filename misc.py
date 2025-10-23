@@ -120,6 +120,7 @@ def get_playtypes(years, ps=False, p_or_t='t', defense=False):
 def update_master_file(year, file_path, fetch_function, **fetch_kwargs):
     """
     Updates a master CSV file with new data for a given year.
+    For player data, preserves existing player-playtype combinations that aren't in the new scrape.
 
     Args:
         year (int): The calendar year to update (e.g., 2025).
@@ -138,9 +139,52 @@ def update_master_file(year, file_path, fetch_function, **fetch_kwargs):
 
     try:
         old_data = pd.read_csv(file_path)
-        # Remove any existing data for the year to avoid duplication
-        old_data = old_data[old_data.year != year]
-        combined_data = pd.concat([old_data, new_data], ignore_index=True)
+        
+        # Check if this is player data (has PLAYER_ID column) and apply refined logic
+        is_player_data = 'PLAYER_ID' in old_data.columns and fetch_kwargs.get('p_or_t', 't').lower() == 'p'
+        
+        if is_player_data:
+            print(f"Applying refined player data logic for {file_path}...")
+            
+            # Make a copy of the existing year data
+            existing_year_data = old_data[old_data.year == year].copy()
+            print(f"Found {len(existing_year_data)} existing records for year {year}")
+            
+            # Remove the year from old_data (we'll add back selectively)
+            old_data_without_year = old_data[old_data.year != year]
+            
+            # Create sets of (PLAYER_ID, playtype) combinations for comparison
+            new_combinations = set(zip(new_data['PLAYER_ID'], new_data['playtype']))
+            existing_combinations = set(zip(existing_year_data['PLAYER_ID'], existing_year_data['playtype']))
+            
+            # Find combinations that exist in old data but not in new data
+            missing_combinations = existing_combinations - new_combinations
+            print(f"Found {len(missing_combinations)} player-playtype combinations to preserve from existing data")
+            
+            # Filter existing data to keep only the missing combinations
+            if missing_combinations:
+                missing_mask = existing_year_data.apply(
+                    lambda row: (row['PLAYER_ID'], row['playtype']) in missing_combinations, 
+                    axis=1
+                )
+                preserved_data = existing_year_data[missing_mask]
+                print(f"Preserving {len(preserved_data)} records from existing data")
+            else:
+                preserved_data = pd.DataFrame()
+            
+            # Combine: old data (other years) + new data (current year) + preserved data (current year)
+            frames_to_combine = [old_data_without_year, new_data]
+            if not preserved_data.empty:
+                frames_to_combine.append(preserved_data)
+            
+            combined_data = pd.concat(frames_to_combine, ignore_index=True)
+            print(f"Final dataset has {len(combined_data)} total records")
+            
+        else:
+            # Original logic for team data
+            old_data_without_year = old_data[old_data.year != year]
+            combined_data = pd.concat([old_data_without_year, new_data], ignore_index=True)
+            
     except FileNotFoundError:
         print(f"{file_path} not found. Creating a new file.")
         combined_data = new_data
@@ -226,5 +270,4 @@ if __name__ == "__main__":
     generate_and_update_playstyle(YEAR_TO_UPDATE, ps=True)
 
     print("\nScript finished.")
-
 

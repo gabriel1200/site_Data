@@ -1,23 +1,16 @@
 jupyter nbconvert --to script *.ipynb
-python player_shooting.py
-#python defense.py
-python scrape_shooting.py
-python misc.py
-python player_level.py
+python index_gen.py
+python stat_scrape.py
 
-python team_shooting.py
 python update_lebron.py
-python dribble.py
-python underground.py
-python hustle.py
-#python player_index.py
-python new_tracking.py
+
+
 #python contract_data.py
 #python contract_data2.py
 python dates.py
-python make_index2.py
+
 python salary2.py
-python price.py
+#python price.py
 git add --all
 git commit -m 'Daily Update'
 git push origin master
