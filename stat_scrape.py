@@ -111,7 +111,7 @@ PBP_PLAYER_COLS_SHOTZONE = [
     'DefPoss', 'Minutes', 'FtPoints', 'FTA', 'AtRimFGA', 'AtRimFGM', 'AtRimAccuracy',
     'ShortMidRangeFGA', 'ShortMidRangeFGM', 'ShortMidRangeAccuracy',
     'ShortMidRangeFrequency', 'LongMidRangeFGM', 'LongMidRangeFGA', 'FG2A', 'FG2M',
-    'FG3A', 'NonHeaveFg3Pct', 'NonHeaveArc3FGA', 'HeaveAttempts', 'Corner3FGA',
+    'FG3A',  'NonHeaveArc3FGA', 'HeaveAttempts', 'Corner3FGA',
     'Corner3FGM', 'NonHeaveFg3Pct', 'NonHeaveArc3FGM', 'TsPct', 'Points', 'EfgPct',
     'SecondChanceEfgPct', 'PenaltyEfgPct', 'SecondChanceTsPct', 'PenaltyTsPct',
     'SecondChanceShotQualityAvg', 'PenaltyShotQualityAvg', 'ShotQualityAvg', 'year'
