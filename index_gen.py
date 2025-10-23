@@ -352,6 +352,7 @@ def update_master_index(index_df, master_df):
 
     # Concatenate and deduplicate
     updated_master = pd.concat([master_df, index_copy])
+    updated_master['team'] = updated_master['team'].replace('2TM', 'TOT')
     updated_master.drop_duplicates(subset=['bref_id', 'year', 'team'], inplace=True)
 
     # Save updated master
@@ -365,7 +366,7 @@ def update_master_index(index_df, master_df):
     print(f"Master index updated: {len(updated_master)} total entries")
     new_players = len(index_copy[~index_copy['bref_id'].isin(master_df['bref_id'])])
     print(f"Added {new_players} new players to the index")
-
+    
     return updated_master
 
 def update_stats_file(index_df, stats_type):
