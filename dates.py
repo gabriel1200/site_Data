@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[ ]:
 
 
 import requests
@@ -39,7 +39,7 @@ for game_date in data["leagueSchedule"]["gameDates"]:
 # Convert to DataFrame
 df = pd.DataFrame(games_data)
 
-print(df.tail(10))
+df=df[df.gameId.str[0:3]!='001']
 
 # Display the DataFrame
 print(df.columns)
