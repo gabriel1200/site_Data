@@ -50,7 +50,7 @@ df.to_csv('schedule.csv')
 print(df[df.gameId=='0032400001'])
 df['gameDate'] = pd.to_datetime(df['gameDate']).dt.strftime('%Y-%m-%d')
 
-df=df[df['gameDate']>='10222024']
+df=df[df['gameDate']>='10212025']
 
 team_acronyms = {
     'Celtics': 'BOS',
@@ -100,6 +100,7 @@ df['home_team_id']=df['home_team'].map(old_map)
 
 df['away_team_id']=df['away_team'].map(old_map)
 df.dropna(subset= 'home_team_id',inplace=True)
+df =df[df.game_id.str[0:3]!='001']
 df.to_csv('schedule.csv')
 df.to_csv('../web_app/data/schedule.csv')
 df['home_team_id'].unique()

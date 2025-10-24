@@ -495,3 +495,18 @@ def main():
 
 if __name__ == "__main__":
     main()
+avg = pd.read_html('https://www.basketball-reference.com/leagues/NBA_stats_per_poss.html')[0]
+avg.columns = avg.columns.droplevel()
+avg = avg.dropna(subset='Season')
+avg = avg[avg.Season!='Season']
+
+avg = avg.dropna()
+avg['PTS'] = avg['PTS'].astype(float)
+avg['FGA'] = avg['FGA'].astype(float)
+avg['FTA'] = avg['FTA'].astype(float)
+
+#avg.head(87)
+avg['TS%'] = avg['PTS']/(2*(avg['FGA']+.44*avg['FTA']))
+avg.to_csv('avg_shooting.csv',index = False)
+avg = avg[['Season','ORtg']]
+avg.to_csv('team_avg.csv',index = False)
