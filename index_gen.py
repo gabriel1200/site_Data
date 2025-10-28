@@ -55,6 +55,7 @@ class Config:
         "jonesda06": 1642357,
         "konanya01": 1642949,
         "traorno01": 1642849,
+        "holmeda01":1641747,
         # From make_index2.py
         "salauti01": 1642275,
         "sengual01": 1630578,
