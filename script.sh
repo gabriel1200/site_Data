@@ -196,6 +196,14 @@ cp tsavg.csv $DISCORD_DIR/tsavg.csv
 cp index_master.csv $WEB_APP_DIR/index_master.csv
 cp index_master.csv $DISCORD_DIR/index_master.csv
 
+
+
+cp team_index.csv $WEB_APP_DIR/team_index.csv
+cp team_index.csv $DISCORD_DIR/team_index.csv
+
+
+cp team_index_ps.csv $WEB_APP_DIR/team_index_ps.csv
+cp team_index_ps.csv $DISCORD_DIR/team_index_ps.csv
 cp index_master.csv ../player_sheets/lineups/index_master.csv
 
 

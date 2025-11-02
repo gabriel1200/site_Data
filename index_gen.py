@@ -8,7 +8,7 @@ import time
 import numpy as np
 import sys
 from nba_api.stats.endpoints import commonallplayers
-
+import os
 # Configuration
 class Config:
     """
@@ -57,7 +57,7 @@ class Config:
         "traorno01": 1642849,
         "holmeda01":1641747,
         # From make_index2.py
-        "salauti01": 1642275,
+        "salauti01": 1642275,   
         "sengual01": 1630578,
         "willije02": 1631466
     }
@@ -328,15 +328,14 @@ def calculate_true_shooting(df):
     return df
 
 def update_master_index(index_df, master_df):
-    """Update master index with new players"""
+    """Update master index with new players and current-year team index."""
     if index_df.empty:
         print("Master index update skipped: DataFrame is empty.")
         return master_df
-        
-    print(f"Updating master index")
+
+    print("Updating master index")
 
     # Create copy of current data
-    # Fixed duplicated line from make_index2.py
     index_copy = index_df[['player', 'url', 'year', 'team', 'bref_id', 'nba_id', 'team_id']].copy()
 
     # Ensure correct types before merge
@@ -353,24 +352,42 @@ def update_master_index(index_df, master_df):
 
     # Concatenate and deduplicate
     updated_master = pd.concat([master_df, index_copy])
-    updated_master['team'] = updated_master['team'].replace('2TM', 'TOT')
-    updated_master['team'] = updated_master['team'].replace('3TM', 'TOT')
-
+    updated_master['team'] = updated_master['team'].replace({'2TM': 'TOT', '3TM': 'TOT'})
     updated_master.drop_duplicates(subset=['bref_id', 'year', 'team'], inplace=True)
 
     # Save updated master
     updated_master.to_csv(config.index_master_path, index=False)
-    
+
+    # ---- Only update team index for CURRENT_YEAR ----
+    current_year_teams = updated_master.loc[
+        updated_master['year'] == config.CURRENT_YEAR, ['team', 'team_id', 'year']
+    ].dropna(subset=['team_id']).drop_duplicates().reset_index(drop=True)
+
     if config.PLAYOFFS_MODE:
-        team_master = updated_master[['team','team_id','year']].reset_index(drop=True)
-        team_master.drop_duplicates(inplace=True)
-        team_master.to_csv('team_index_ps.csv',index=False)
+        team_index_path = 'team_index_ps.csv'
+    else:
+        team_index_path = 'team_index.csv'
+
+    # Load existing team index if it exists
+    if os.path.exists(team_index_path):
+        existing_team_index = pd.read_csv(team_index_path)
+        # Remove current year data to avoid duplicates
+        existing_team_index = existing_team_index[existing_team_index['year'] != config.CURRENT_YEAR]
+        # Combine old + new
+        updated_team_index = pd.concat([existing_team_index, current_year_teams], ignore_index=True)
+    else:
+        updated_team_index = current_year_teams
+
+    updated_team_index.to_csv(team_index_path, index=False)
 
     print(f"Master index updated: {len(updated_master)} total entries")
     new_players = len(index_copy[~index_copy['bref_id'].isin(master_df['bref_id'])])
     print(f"Added {new_players} new players to the index")
-    
+    print(f"Updated team index for {config.CURRENT_YEAR}: {len(current_year_teams)} teams written to {team_index_path}")
+
     return updated_master
+
+
 
 def update_stats_file(index_df, stats_type):
     """Update either totals or scoring stats file"""
