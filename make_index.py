@@ -138,7 +138,12 @@ index_copy = index_frame[['player', 'url', 'year', 'team', 'bref_id', 'nba_id', 
 master=master[master.year!=2025]
 master=pd.concat([master,index_copy])
 master.drop_duplicates(inplace=True)
-master.to_csv('index_master'+trail+'.csv',index=False)
+master.to_csv(''
+''
+''
+''
+''
+''+trail+'.csv',index=False)
 index_frame.dropna(subset='bref_id',inplace=True)
 index_frame['FTA']=index_frame['FTA'].astype(int)
 index_frame['FGA']=index_frame['FGA'].astype(int)

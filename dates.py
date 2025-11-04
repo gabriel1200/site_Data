@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
+# In[4]:
 
 
 import requests
@@ -105,10 +105,10 @@ df.to_csv('../web_app/data/schedule.csv')
 df['home_team_id'].unique()
 
 
-# In[4]:
+# In[5]:
 
 
-df.tail(40)
+df.head(40)
 
 
 # In[ ]:

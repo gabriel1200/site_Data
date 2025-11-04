@@ -7,7 +7,6 @@ BOS,Mfiondu Kabengele,PF,28.0,4.0,4.0,4.0,4.0,4.0,0.0,
 BOS,Blake Griffin,C,36.0,4.0,4.0,4.0,4.0,4.0,0.0,
 BOS,Torrey Craig,SF,35.0,4.0,4.0,4.0,4.0,4.0,0.0,
 BOS,Incomplete Roster Charge,,,0.0,0.0,0.0,0.0,0.0,0.0,
-BKN,Nikola Milutinov,C,31.0,4.0,0.0,0.0,0.0,0.0,,
 BKN,Incomplete Roster Charge,,,0.0,0.0,0.0,0.0,0.0,,
 CHA,Taj Gibson,C,40.0,4.0,4.0,4.0,4.0,4.0,,
 CHA,Incomplete Roster Charge,,,0.0,0.0,0.0,0.0,0.0,,
@@ -28,15 +27,14 @@ DAL,Theo Pinson,SG,30.0,4.0,4.0,4.0,4.0,4.0,0.0,
 DAL,Kai Jones,PF,25.0,4.0,4.0,4.0,4.0,4.0,0.0,
 DAL,Nicolo Melli,PF,35.0,4.0,4.0,4.0,4.0,4.0,0.0,
 DAL,Incomplete Roster Charge,,,0.0,0.0,0.0,0.0,0.0,0.0,
-DEN,Markus Howard,PG,26.0,4.0,4.0,4.0,4.0,4.0,,
-DEN,DeAndre Jordan,C,37.0,4.0,4.0,4.0,4.0,4.0,,
-DEN,Richard Jefferson,SF,45.0,4.0,4.0,4.0,4.0,4.0,,
-DEN,Justin Holiday,SG,36.0,4.0,4.0,4.0,4.0,4.0,,
-DEN,Troy Daniels,SG,34.0,4.0,4.0,4.0,4.0,4.0,,
-DEN,DeMarcus Cousins,C,35.0,4.0,4.0,4.0,4.0,4.0,,
-DEN,Vlatko Cancar,PF,28.0,4.0,4.0,4.0,4.0,4.0,,
-DEN,Russell Westbrook,PG,38.0,0.0,4.0,0.0,0.0,0.0,,
-DEN,Incomplete Roster Charge,,,0.0,0.0,0.0,0.0,0.0,,
+DEN,Markus Howard,PG,26.0,4.0,4.0,4.0,4.0,4.0,0.0,0.0
+DEN,Richard Jefferson,SF,45.0,4.0,4.0,4.0,4.0,4.0,0.0,0.0
+DEN,Justin Holiday,SG,36.0,4.0,4.0,4.0,4.0,4.0,0.0,0.0
+DEN,Troy Daniels,SG,34.0,4.0,4.0,4.0,4.0,4.0,0.0,0.0
+DEN,DeMarcus Cousins,C,35.0,4.0,4.0,4.0,4.0,4.0,0.0,0.0
+DEN,Vlatko Cancar,PF,28.0,4.0,4.0,4.0,4.0,4.0,0.0,0.0
+DEN,Russell Westbrook,PG,38.0,0.0,4.0,0.0,0.0,0.0,0.0,0.0
+DEN,Incomplete Roster Charge,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
 DET,Malik Beasley,SG,29.0,4.0,4.0,4.0,4.0,4.0,0.0,
 DET,Incomplete Roster Charge,,,0.0,0.0,0.0,0.0,0.0,0.0,
 GSW,Jerome Robinson,SG,28.0,4.0,4.0,4.0,4.0,4.0,,
@@ -94,7 +92,6 @@ NOP,Brandon Boston,SG,24.0,4.0,4.0,4.0,4.0,4.0,0.0,
 NOP,Willy Hernangomez,C,31.0,4.0,4.0,4.0,4.0,4.0,0.0,
 NOP,Incomplete Roster Charge,,,0.0,0.0,0.0,0.0,0.0,0.0,
 NYK,P.J. Tucker,PF,40.0,4.0,4.0,4.0,4.0,4.0,0.0,
-NYK,Petteri Koponen,G,37.0,4.0,0.0,0.0,0.0,0.0,0.0,
 NYK,Incomplete Roster Charge,,,0.0,0.0,0.0,0.0,0.0,0.0,
 OKC,Alex Ducas,G,25.0,4.0,4.0,4.0,4.0,4.0,0.0,0.0
 OKC,Incomplete Roster Charge,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
@@ -117,12 +114,12 @@ PHX,Saben Lee,PG,26.0,4.0,4.0,4.0,4.0,4.0,0.0,
 PHX,Bol,PF,26.0,4.0,4.0,4.0,4.0,4.0,0.0,
 PHX,Terrence Ross,SF,34.0,4.0,4.0,4.0,4.0,4.0,0.0,
 PHX,Incomplete Roster Charge,,,0.0,0.0,0.0,0.0,0.0,0.0,
-POR,TJ Leaf,PF,28.0,4.0,4.0,4.0,4.0,4.0,,
-POR,Ashton Hagans,PG,26.0,4.0,4.0,4.0,4.0,4.0,,
-POR,Keljin Blevins,G,30.0,4.0,4.0,4.0,4.0,4.0,,
-POR,Ben McLemore,SF,32.0,4.0,4.0,4.0,4.0,4.0,,
-POR,Rondae Hollis-Jefferson,SF,31.0,4.0,4.0,4.0,4.0,4.0,,
-POR,Incomplete Roster Charge,,,0.0,0.0,0.0,0.0,0.0,,
+POR,TJ Leaf,PF,28.0,4.0,4.0,4.0,4.0,4.0,0.0,
+POR,Ashton Hagans,PG,26.0,4.0,4.0,4.0,4.0,4.0,0.0,
+POR,Keljin Blevins,G,30.0,4.0,4.0,4.0,4.0,4.0,0.0,
+POR,Ben McLemore,SF,32.0,4.0,4.0,4.0,4.0,4.0,0.0,
+POR,Rondae Hollis-Jefferson,SF,31.0,4.0,4.0,4.0,4.0,4.0,0.0,
+POR,Incomplete Roster Charge,,,0.0,0.0,0.0,0.0,0.0,0.0,
 SAC,Mason Jones,SG,27.0,4.0,4.0,4.0,4.0,4.0,0.0,0.0
 SAC,Jordan Ford,PG,27.0,4.0,4.0,4.0,4.0,4.0,0.0,0.0
 SAC,JaVale McGee,C,38.0,4.0,4.0,4.0,4.0,4.0,0.0,0.0
@@ -130,7 +127,6 @@ SAC,Markelle Fultz,PG,27.0,4.0,4.0,4.0,4.0,4.0,0.0,0.0
 SAC,Jae Crowder,SF,35.0,4.0,4.0,4.0,4.0,4.0,0.0,0.0
 SAC,Trey Lyles,PF,30.0,4.0,4.0,4.0,4.0,4.0,0.0,0.0
 SAC,Incomplete Roster Charge,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-TOR,A.J. Lawson,F,25.0,2270735.0,5.0,0.0,0.0,0.0,0.0,
 TOR,Will Barton,SG,35.0,4.0,4.0,4.0,4.0,4.0,0.0,
 TOR,Jordan Nwora,SF,27.0,4.0,4.0,4.0,4.0,4.0,0.0,
 TOR,Incomplete Roster Charge,,,0.0,0.0,0.0,0.0,0.0,0.0,
