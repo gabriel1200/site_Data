@@ -898,7 +898,7 @@ def get_playtypes(years, ps=False, p_or_t='t', defense=False):
     else: # Team data
         team_dict = NAME_DICT # Use global helper
         full_data.rename(columns={'PTS': 'Points', 'TEAM': 'full_name'}, inplace=True)
-        full_data['Team'] = full_data['full_name'].map(team_dict)
+        full_data['Team'] = full_data['TEAM_ABBREVIATION']
     
     return full_data
 
