@@ -1053,7 +1053,8 @@ def team_shotzone(year, ps=False, vs=False):
         time.sleep(2)
 
         df = pd.DataFrame(player_stats)
-        shotzone = df[PBP_TEAM_COLS_SHOTZONE].reset_index(drop=True)
+        data_cols= [col for col in PBP_TEAM_COLS_SHOTZONE if col in df.columns]
+        shotzone = df[data_cols].reset_index(drop=True)
         shotzone['year'] = year + 1 # Save with season end year
         return shotzone.reset_index(drop=True)
     except Exception as e:
@@ -1377,12 +1378,12 @@ def run_underground_updates(year_to_scrape, season_str, season_end_year, ps):
         df.to_csv(f'wowy/player_large{trail}.csv', index=False)
         print(f"Saved wowy/player_small{trail}.csv and wowy/player_large{trail}.csv")
 
-        # Update player shotzone
         df['year'] = season_end_year
         # Filter df columns to only those in PBP_PLAYER_COLS_SHOTZONE
         cols_to_use = [col for col in PBP_PLAYER_COLS_SHOTZONE if col in df.columns]
-        shotzone = df[cols_to_use]
+        shotzone = df[cols_to_use] # NEW data is filtered and ordered by PBP_PLAYER_COLS_SHOTZONE
         
+        # ... (rest of the file loading unchanged)
         shotzone_filename = f'shotzone{trail}.csv'
         try:
             old = pd.read_csv(shotzone_filename)
@@ -1391,8 +1392,40 @@ def run_underground_updates(year_to_scrape, season_str, season_end_year, ps):
         except FileNotFoundError:
             print(f"{shotzone_filename} not found, creating new file.")
             old = pd.DataFrame()
+
+        # --- START FIX: COLUMN STANDARDIZATION ---
+        
+        # 1. Standardize OLD DataFrame Columns before the debug checks/concat
+        if not old.empty:
+            # Re-read PBP_PLAYER_COLS_SHOTZONE and only keep columns that exist in the OLD data.
+            # Then force the OLD data into the exact order of PBP_PLAYER_COLS_SHOTZONE.
+            old_cols_to_keep = [col for col in PBP_PLAYER_COLS_SHOTZONE if col in old.columns]
+            old = old[old_cols_to_keep]
             
-        master = pd.concat([old, shotzone])
+            # Note: This means if the 'HeaveAttempts' column is deprecated in new data, 
+            # it will be dropped from the old data to ensure alignment.
+            print(f"Standardized OLD DF columns to match template: {len(old.columns)} columns kept.")
+
+
+        # 2. Re-standardize NEW DataFrame Columns (since the previous code only filtered, not reordered)
+        if not shotzone.empty:
+            shotzone_cols_to_keep = [col for col in PBP_PLAYER_COLS_SHOTZONE if col in shotzone.columns]
+            shotzone = shotzone[shotzone_cols_to_keep]
+            print(f"Standardized NEW DF columns to match template: {len(shotzone.columns)} columns kept.")
+        
+        # 3. Final alignment check (optional, but good for stability)
+        # Ensure the final columns are identical before concatenation
+        if not old.empty and not shotzone.empty:
+             old_cols_final = old.columns.tolist()
+             shotzone_cols_final = shotzone.columns.tolist()
+             if old_cols_final != shotzone_cols_final:
+                 print("🛑 CRITICAL: Final column lists still DO NOT MATCH.")
+                 # You might need to manually inspect the PBP_PLAYER_COLS_SHOTZONE list definition
+                 # to make sure it includes all necessary columns in the right order.
+             else:
+                 print("✅ Final column lists match and are in the same order.")
+
+        master = pd.concat([old, shotzone]) # Line 1412: This should now work
         master.to_csv(shotzone_filename, index=False)
         print(f"Updated {shotzone_filename}")
         
@@ -1429,6 +1462,7 @@ def main():
 
     # Run Team & Opponent Shooting (from team_shooting.py, scrape_shooting.py)
     # This scrapes new data AND recompiles the master files
+    run_underground_updates(YEAR_TO_SCRAPE, SEASON_STR_NBA, SEASON_END_YEAR, IS_PLAYOFFS)
     run_team_and_opp_shooting_updates(YEAR_TO_SCRAPE, SEASON_END_YEAR, IS_PLAYOFFS)
 
     # Run Player Shooting (from player_shooting.py)
@@ -1453,7 +1487,7 @@ def main():
 
     # Run PBPStats (from underground.py)
     # This scrapes new data AND updates all master files (player/team)
-    run_underground_updates(YEAR_TO_SCRAPE, SEASON_STR_NBA, SEASON_END_YEAR, IS_PLAYOFFS)
+    
 
     print(f"\n---------------------------------")
     print(f"--- MASTER SCRAPE COMPLETE ---")
