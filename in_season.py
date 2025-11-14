@@ -180,7 +180,7 @@ df
 
 
 start_year = 1974
-end_year = 2024
+end_year = 2027
 averages = pd.read_html('https://www.basketball-reference.com/leagues/NBA_stats_per_game.html#stats', header=1)[0]
 
 #averages= averages.dropna()
