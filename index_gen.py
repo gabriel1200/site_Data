@@ -173,7 +173,7 @@ def pull_bref_data(totals=False):
         player_url = get_player_url_from_row(row, 'name_display')
         team_acronym = get_stat_from_row(row, 'team_name_abbr', "N/A")
         
-        gp = get_stat_from_row(row, 'g', "0")
+        gp = get_stat_from_row(row, 'games', "0")
         mp = get_stat_from_row(row, 'mp', "0")
 
         # Get shooting stats with dynamic suffixes
