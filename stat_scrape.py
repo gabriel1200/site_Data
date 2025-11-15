@@ -1264,7 +1264,7 @@ def run_tracking_updates(year_to_scrape, season_end_year, ps):
     
     # 1. Fetch new data for the single year
     category_frames = get_tracking([year_to_scrape], ps=ps)
-    
+    print(category_frames)
     file_prefix = 'tracking_ps/' if ps else 'tracking/'
     Path(file_prefix).mkdir(parents=True, exist_ok=True) # Ensure directory exists
 
@@ -1459,7 +1459,7 @@ def main():
     print(f"Season: {SEASON_STR_NBA}")
     print(f"Type: {SEASON_TYPE_STR_PBP}")
     print(f"---------------------------------")
-
+    run_tracking_updates(YEAR_TO_SCRAPE, SEASON_END_YEAR, IS_PLAYOFFS)
     # Run Team & Opponent Shooting (from team_shooting.py, scrape_shooting.py)
     # This scrapes new data AND recompiles the master files
     run_underground_updates(YEAR_TO_SCRAPE, SEASON_STR_NBA, SEASON_END_YEAR, IS_PLAYOFFS)
@@ -1475,7 +1475,7 @@ def main():
 
     # Run Player Tracking (from new_tracking.py)
     # This scrapes new data AND updates the master files
-    run_tracking_updates(YEAR_TO_SCRAPE, SEASON_END_YEAR, IS_PLAYOFFS)
+    
 
     # Run Dribble Stats (from dribble.py)
     # This scrapes new data AND updates the master files
