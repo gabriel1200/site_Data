@@ -947,6 +947,7 @@ def update_master_file(year, file_path, fetch_function, **fetch_kwargs):
             
             frames_to_combine = [old_data_without_year, new_data]
             if not preserved_data.empty:
+                pass
                 frames_to_combine.append(preserved_data)
             
             combined_data = pd.concat(frames_to_combine, ignore_index=True)
