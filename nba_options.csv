@@ -135,8 +135,8 @@ Bruce Brown.,DEN,0,UFA,0,0,0,0,0,0,0
 Tim Hardaway.,DEN,0,UFA,0,0,0,0,0,0,0
 Hunter Tyson,DEN,0,T,UFA,0,0,0,0,0,0
 Jalen Pickett,DEN,0,T,UFA,0,0,0,0,0,0
-Curtis Jones,DEN,0,RFA,0,0,0,0,0,0,0
 Spencer Jones,DEN,0,RFA,0,0,0,0,0,0,0
+Curtis Jones,DEN,0,RFA,0,0,0,0,0,0,0
 Tamar Bates,DEN,0,RFA,0,0,0,0,0,0,0
 Cade Cunningham,DET,0,0,0,0,0,UFA,0,0,0
 Tobias Harris,DET,0,UFA,0,0,0,0,0,0,0
@@ -151,9 +151,10 @@ Paul Reed,DET,0,0,UFA,0,0,0,0,0,0
 Marcus Sasser,DET,0,0,RFA,0,0,0,0,0,0
 Javonte Green,DET,NG,UFA,0,0,0,0,0,0,0
 Bobi Klintman,DET,0,NG,T,UFA,0,0,0,0,0
+Isaac Jones,DET,NG,RFA,0,0,0,0,0,0,0
 Chaz Lanier,DET,0,0,NG,T,UFA,0,0,0,0
 Tolu Smith,DET,0,RFA,0,0,0,0,0,0,0
-Colby Jones,DET,0,RFA,0,0,0,0,0,0,0
+Wendell Moore.,DET,0,RFA,0,0,0,0,0,0,0
 Daniss Jenkins,DET,0,RFA,0,0,0,0,0,0,0
 Stephen Curry,GSW,0,0,UFA,0,0,0,0,0,0
 Jimmy Butler,GSW,0,0,UFA,0,0,0,0,0,0
@@ -201,7 +202,7 @@ Jarace Walker,IND,0,0,RFA,0,0,0,0,0,0
 Tony Bradley,IND,NG,UFA,0,0,0,0,0,0,0
 Ben Sheppard,IND,0,0,RFA,0,0,0,0,0,0
 Jay Huff,IND,0,0,T,UFA,0,0,0,0,0
-Mac McClung,IND,NG,T,UFA,0,0,0,0,0,0
+Monte Morris,IND,NG,UFA,0,0,0,0,0,0,0
 Johnny Furphy,IND,0,0,T,UFA,0,0,0,0,0
 Kam Jones,IND,0,NG,NG,T,UFA,0,0,0,0
 Jeremiah Robinson-Earl,IND,0,0,0,0,0,0,0,0,0
@@ -257,10 +258,9 @@ Jock Landale,MEM,0,UFA,0,0,0,0,0,0,0
 Scotty Pippen.,MEM,0,NG,T,UFA,0,0,0,0,0
 G.G. Jackson,MEM,0,T,UFA,0,0,0,0,0,0
 Jaylen Wells,MEM,0,NG,T,UFA,0,0,0,0,0
-Charles Bassey,MEM,0,0,0,0,0,0,0,0,0
 Javon Small,MEM,0,0,RFA,0,0,0,0,0,0
 Olivier-Maxence Prosper,MEM,0,RFA,0,0,0,0,0,0,0
-P.J. Hall,MEM,0,RFA,0,0,0,0,0,0,0
+Jahmai Mashack,MEM,0,0,RFA,0,0,0,0,0,0
 Bam Adebayo,MIA,0,0,0,P,UFA,0,0,0,0
 Tyler Herro,MIA,0,0,UFA,0,0,0,0,0,0
 Andrew Wiggins,MIA,0,P,UFA,0,0,0,0,0,0
@@ -415,8 +415,8 @@ Nigel Hayes-Davis,PHX,0,RFA,0,0,0,0,0,0,0
 Oso Ighodaro,PHX,0,NG,T,UFA,0,0,0,0,0
 Rasheer Fleming,PHX,0,0,0,T,UFA,0,0,0,0
 Isaiah Livers,PHX,0,RFA,0,0,0,0,0,0,0
-CJ Huntley,PHX,0,0,RFA,0,0,0,0,0,0
 Koby Brea,PHX,0,RFA,0,0,0,0,0,0,0
+Jamaree Bouyea,PHX,0,RFA,0,0,0,0,0,0,0
 Jrue Holiday,POR,0,0,P,UFA,0,0,0,0,0
 Jerami Grant,POR,0,0,P,UFA,0,0,0,0,0
 Deni Avdija,POR,0,0,0,UFA,0,0,0,0,0
@@ -448,7 +448,7 @@ Keon Ellis,SAC,NG,UFA,0,0,0,0,0,0,0
 Drew Eubanks,SAC,0,UFA,0,0,0,0,0,0,0
 Russell Westbrook,SAC,0,UFA,0,0,0,0,0,0,0
 Doug McDermott,SAC,0,UFA,0,0,0,0,0,0,0
-Isaac Jones,SAC,0,RFA,0,0,0,0,0,0,0
+Precious Achiuwa,SAC,0,UFA,0,0,0,0,0,0,0
 Maxime Raynaud,SAC,0,0,T,RFA,0,0,0,0,0
 Isaiah Stevens,SAC,0,RFA,0,0,0,0,0,0,0
 Daeqwon Plowden,SAC,0,RFA,0,0,0,0,0,0,0
@@ -540,9 +540,14 @@ Spencer Dinwiddie,CHA,D,0,0,0,0,0,0,0.0,0.0
 Ricky Rubio,CLE,D,D,0,0,0,0,0,0.0,0.0
 JaVale McGee,DAL,D,D,D,0,0,0,0,0.0,0.0
 Olivier-Maxence Prosper,DAL,D,D,D,0,0,0,0,0.0,0.0
+Colby Jones,DET,0,0,0,0,0,0,0,0.0,0.0
 James Wiseman,IND,D,0,0,0,0,0,0,0.0,0.0
+Mac McClung,IND,D,0,0,0,0,0,0,0.0,0.0
+Jeremiah Robinson-Earl,IND,D,0,0,0,0,0,0,0.0,0.0
+Cody Martin,IND,D,0,0,0,0,0,0,0.0,0.0
 Cole Anthony,MEM,D,D,D,0,0,0,0,0.0,0.0
 Mamadi Diakite,MEM,D,D,0,0,0,0,0,0.0,0.0
+Charles Bassey,MEM,D,0,0,0,0,0,0,0.0,0.0
 Damian Lillard,MIL,D,D,D,D,D,0,0,0.0,0.0
 Chris Livingston,MIL,D,0,0,0,0,0,0,0.0,0.0
 Tyler Smith,MIL,D,0,0,0,0,0,0,0.0,0.0
