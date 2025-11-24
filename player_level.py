@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[106]:
+# In[1]:
 
 
 import pandas as pd
@@ -10,10 +10,10 @@ from bs4 import BeautifulSoup
 from pathlib import Path
 import time
 import requests
+end_year=2026
 
 
-
-# In[107]:
+# In[ ]:
 
 
 def prep_passing(passing):
@@ -216,21 +216,22 @@ def tracking_master(years,ps=False):
 
         all_frames.append(year_master)
     return pd.concat(all_frames)
-ps = True
+ps = False
 trail =''
+trail2=''
 if ps == True:
     trail='_p'
     trail2='_ps'
 
-tracking_save([i for i in range(2014,2026)],ps=ps)
+tracking_save([i for i in range(end_year-1,end_year+1)],ps=ps)
 
 #tracking_save([i for i in range(2014,2025)],ps=True)
 
-new_master = tracking_master([i for i in range(2014,2026)],ps=ps)
+new_master = tracking_master([i for i in range(2014,end_year+1)],ps=ps)
 new_master.to_csv('tracking'+trail2+'.csv',index=False)
 
 
-# In[108]:
+# In[ ]:
 
 
 to_save=['PLAYER_ID','PLAYER', 'TEAM', 'GP', 'W', 'L', 'MIN', 'DRIVES', 'FGM', 'FGA', 'FG%',
@@ -239,348 +240,6 @@ to_save=['PLAYER_ID','PLAYER', 'TEAM', 'GP', 'W', 'L', 'MIN', 'DRIVES', 'FGM', '
        'Touches','year']
 new_master = new_master[to_save]
 new_master.to_csv('tracking'+trail+'.csv',index=False)
-
-
-# In[109]:
-
-
-year = 2024
-path = str(year)+'/player_tracking/pullup.csv'
-
-#df2 = pd.read_csv(path)
-#df2
-
-
-# In[110]:
-
-
-'''
-for year in range(2014,2025):
-    path = str(year)+'/player_tracking/passing.csv'
-
-    df2 = pd.read_csv(path)
-    if 'AST PTSCreated.1' in df2.columns:
-        print(df2)
-        new_df = pd.DataFrame()
-        new_df = df2[df2.columns[:-1]]
-        #print(new_df)
-        old_col = ['ASTAdj', 'AST ToPass%', 'AST ToPass% Adj']
-        #df2 = df2.drop(columns = ['AST ToPass% Adj'])
-        new_df.columns= ['PLAYER', 'TEAM', 'GP', 'W', 'L', 'MIN', 'PassesMade', 'PassesReceived',
-               'AST', 'SecondaryAST', 'PotentialAST', 'AST PTSCreated',
-               'ASTAdj', 'AST ToPass%', 'AST ToPass% Adj']
-        new_df.to_csv(path, index = False)
-for year in range(2014,2024):
-    path = str(year)+'/playoffs/player_tracking/passing.csv'
-    df2 = pd.read_csv(path)
-    if 'AST PTSCreated.1' in df2.columns:
-        print(df2)
-        new_df = pd.DataFrame()
-        new_df = df2[df2.columns[:-1]]
-        #print(new_df)
-        old_col = ['ASTAdj', 'AST ToPass%', 'AST ToPass% Adj']
-        #df2 = df2.drop(columns = ['AST ToPass% Adj'])
-        new_df.columns= ['PLAYER', 'TEAM', 'GP', 'W', 'L', 'MIN', 'PassesMade', 'PassesReceived',
-               'AST', 'SecondaryAST', 'PotentialAST', 'AST PTSCreated',
-               'ASTAdj', 'AST ToPass%', 'AST ToPass% Adj']
-        new_df.to_csv(path, index = False)
-'''
-
-
-# In[ ]:
-
-
-def passing_data(ps=False, update=True):
-    url = 'https://api.pbpstats.com/get-totals/nba'
-    stype = 'Regular Season'
-    folder = 'tracking'
-
-    if ps:
-        stype = 'Playoffs'
-        folder = 'tracking_ps'
-
-    frames = []
-    start_year = 2014
-
-    if update:
-        if ps == True:
-            df = pd.read_csv('passing_ps.csv')
-        else:
-            df = pd.read_csv('passing.csv')
-        df = df[df.year < 2025]
-        frames.append(df)
-        start_year = 2025
-
-    print(start_year)
-
-    for year in range(start_year, 2026):
-        time.sleep(1)
-        # Prepare API call
-        season=str(year-1)+"-"+str(year)[-2:]
-        params = {
-            "Season": season,
-            "SeasonType": stype,
-            "Type": "Player"
-        }
-        response = requests.get(url, params=params)
-        response_json = response.json()
-        df = response_json["multi_row_table_data"]
-        df = pd.DataFrame(df)
-        df.rename(columns={'EntityId':'PLAYER_ID'},inplace=True)
-
-        # Load the unified passing and touches data from the common files
-        passing_file_path = f'{folder}/passing.csv'
-        touches_file_path = f'{folder}/touches.csv'
-        print(passing_file_path)
-        print(touches_file_path)
-
-        df2 = pd.read_csv(passing_file_path)
-        df2.rename(columns={'PLAYER': 'Name'}, inplace=True)
-
-
-        df3 = pd.read_csv(touches_file_path)
-
-        df2=df2[df2.year==year]
-        df3=df3[df3.year==year]
-        df['nba_id']=df['PLAYER_ID'].astype(int)
-        df2['nba_id']=df2['PLAYER_ID'].astype(int)
-        df3['nba_id']=df3['PLAYER_ID'].astype(int)
-
-        df.drop(columns=['PLAYER_ID'],inplace=True)
-        df2.drop(columns=['PLAYER_ID','GP'],inplace=True)
-        df3.drop(columns=['PLAYER_ID'],inplace=True)
-        df3.rename(columns={'Player': 'Name'}, inplace=True)
-
-        # Merging data
-        merged = df.merge(df2, on='nba_id', how='left')
-        merged = merged.merge(df3, on='nba_id', how='left')
-
-        # Cleaning up column names and calculating additional fields
-
-        merged = merged.fillna(0)
-        merged['Points Unassisted'] = merged['PtsUnassisted2s'] + merged['PtsUnassisted3s']
-        merged['UAFGM'] = (merged['PtsUnassisted2s'] / 2) + (merged['PtsUnassisted3s'] / 3)
-        merged['UAPTS'] = merged['Points Unassisted']
-        merged['on-ball-time'] = merged['TIME_OF_POSS']
-        merged['High Value Assist %'] = 100 * (merged['ThreePtAssists'] + merged['AtRimAssists']) / merged['Assists']
-        merged['on-ball-time%'] = 100 * 2 * (merged['TIME_OF_POSS']) / (merged['Minutes'])
-        merged['TSA'] = (merged['Points'] / (merged['TsPct'] * 2))
-        merged['Potential Assists'] = merged['POTENTIAL_AST']
-        merged['Passes'] = merged['PASSES_MADE']
-        merged['PotAss/Passes'] = merged['POTENTIAL_AST'] / merged['Passes']
-        merged['Assist PPP'] = (merged['AST_PTS_CREATED']) / merged['POTENTIAL_AST']
-        merged['POT_AST_PER_MIN'] = merged['POTENTIAL_AST'] / (merged['on-ball-time'])
-        merged['year'] = year
-
-        frames.append(merged)
-        print(f'Season done {year}')
-
-    df = pd.concat(frames)
-    return df
-
-
-#passing = passing_data()
-passing= passing_data(ps=False,update=True)
-#merged['testas'] = merged['TwoPtAssists']*2+ merged['ThreePtAssists']*3
-print(passing.columns)
-columns = ['nba_id','Name','Points','on-ball-time%','on-ball-time','UAPTS','TSA','OffPoss','Potential Assists','Travels','TsPct',
-            'Turnovers','Passes','PASSES_RECEIVED','PotAss/Passes','UAFGM','High Value Assist %','Assist PPP','TOUCHES','AVG_SEC_PER_TOUCH', 'AVG_DRIB_PER_TOUCH', 'PTS_PER_TOUCH',
-                'SECONDARY_AST', 'POTENTIAL_AST', 'AST_PTS_CREATED', 'AST_ADJ', 'AST_TO_PASS_PCT', 'AST_TO_PASS_PCT_ADJ','Assists','POT_AST_PER_MIN','ThreePtAssists','AtRimAssists','BadPassTurnovers',
-           'BadPassSteals','BadPassOutOfBoundsTurnovers',
-                   'PtsUnassisted2s','PtsUnassisted3s','Fg3Pct','FG3A','FG3M','OffPoss','GP','Minutes','year']
-#rs=passing[columns]
-rs=passing[columns]
-#rs.to_csv('passing.csv',index =False)
-rs.to_csv('passing'+trail2+'.csv',index = False)
-
-
-
-
-passing_ps= passing_data(ps=True,update=False)
-#merged['testas'] = merged['TwoPtAssists']*2+ merged['ThreePtAssists']*3
-
-columns = ['nba_id','Name','Points','on-ball-time%','on-ball-time','UAPTS','TSA','OffPoss','Potential Assists','Travels','TsPct',
-            'Turnovers','Passes','PASSES_RECEIVED','PotAss/Passes','UAFGM','High Value Assist %','Assist PPP','TOUCHES','AVG_SEC_PER_TOUCH', 'AVG_DRIB_PER_TOUCH', 'PTS_PER_TOUCH',
-                'SECONDARY_AST', 'POTENTIAL_AST', 'AST_PTS_CREATED', 'AST_ADJ', 'AST_TO_PASS_PCT', 'AST_TO_PASS_PCT_ADJ','Assists','POT_AST_PER_MIN','ThreePtAssists','AtRimAssists','BadPassTurnovers',
-           'BadPassSteals','BadPassOutOfBoundsTurnovers',
-                   'PtsUnassisted2s','PtsUnassisted3s','Fg3Pct','FG3A','FG3M','OffPoss','GP','Minutes','year']
-#rs=passing[columns]
-ps=passing_ps[columns]
-#rs.to_csv('passing.csv',index =False)
-ps.to_csv('passing_ps.csv',index = False)
-
-
-avg = pd.read_html('https://www.basketball-reference.com/leagues/NBA_stats_per_poss.html')[0]
-avg.columns = avg.columns.droplevel()
-avg = avg.dropna(subset='Season')
-avg = avg[avg.Season!='Season']
-
-avg = avg.dropna()
-avg['PTS'] = avg['PTS'].astype(float)
-avg['FGA'] = avg['FGA'].astype(float)
-avg['FTA'] = avg['FTA'].astype(float)
-
-#avg.head(87)
-avg['TS%'] = avg['PTS']/(2*(avg['FGA']+.44*avg['FTA']))
-avg.to_csv('avg_shooting.csv',index = False)
-avg = avg[['Season','ORtg']]
-avg.to_csv('team_avg.csv',index = False)
-#avg
-
-
-# In[112]:
-
-
-ps
-
-
-# In[113]:
-
-
-#get_multi(url_list,path_list,name_list,folder_choice,ps = False,start_year=2023)
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[114]:
-
-
-'''
-#url_list = [cs,pullup]
-
-def check_exists_by_xpath(driver, xpath):
-    try:
-        driver.find_element(By.XPATH, xpath)
-    except NoSuchElementException:
-        return False
-    return True
-def save_tables(folder_choice,tables,year,name_list, playoffs= False):
-    if playoffs == True:
-        path = str(year)+'/playoffs/'+'/'+folder_choice+'/'
-    else:
-        path = str(year)+'/'+folder_choice+'/'
-    if len(tables)>1:
-        table = tables[1]
-        #print(table)
-        temp = table
-
-        temp.columns = temp.columns.droplevel() 
-        #temp = temp.drop(columns = ['Unnamed: 18_level_1','Unnamed: 19_level_1','Unnamed: 20_level_1', 'Unnamed: 21_level_1','Unnamed: 22_level_1'])
-        #temp
-        temp = temp.drop(columns = ['Unnamed: 18_level_1','Unnamed: 19_level_1','Unnamed: 20_level_1', 'Unnamed: 21_level_1','Unnamed: 22_level_1'])
-        table = temp
-
-        tables[1] = temp
-        #print(tables)
-        for i in range(len(name_list)):
-            #tables[i].to_csv('player_tracking/'+name_list[i]+'.csv',index = False)
-            tables[i].to_csv(path+name_list[i]+'.csv',index = False)
-    else:
-        table = tables[0]
-        #print(table)
-        temp = table
-        #temp.columns = temp.columns.droplevel() 
-        #temp = temp.drop(columns = ['Unnamed: 18_level_1','Unnamed: 19_level_1','Unnamed: 20_level_1', 'Unnamed: 21_level_1','Unnamed: 22_level_1'])
-        #temp
-        #temp = temp.drop(columns = ['Unnamed: 18_level_1','Unnamed: 19_level_1','Unnamed: 20_level_1', 'Unnamed: 21_level_1','Unnamed: 22_level_1'])
-        #table = temp
-
-        #tables[0] = temp
-        #print(tables)
-        for i in range(len(name_list)):
-            #tables[i].to_csv('player_tracking/'+name_list[i]+'.csv',index = False)
-            tables[i].to_csv(path+name_list[i]+'.csv',index = False)
-
-def get_ptables(url_list,path_list):
-    data = []
-    options = webdriver.FirefoxOptions()
-    driver = webdriver.Firefox(options=options)
-    cookie_check = False
-    for i in range(len(url_list)):
-        url = url_list[i]
-        xpath = path_list[i]
-        print(url)
-
-        driver.get(url)
-        accept_path = '//*[@id="onetrust-accept-btn-handler"]'
-        time.sleep(5)
-
-        if EC.presence_of_element_located((By.XPATH, accept_path)) and cookie_check == False:
-            driver.find_element(By.XPATH, accept_path).click() 
-            cookie_check = True
-            time.sleep(1)
-
-
-        element = WebDriverWait(driver, 20).until(
-        EC.presence_of_element_located((By.XPATH, xpath)))
-        # Wait for the page to fully load
-        #time.sleep(5)
-        if check_exists_by_xpath(driver, "//a[contains(text(),'>')]/preceding-sibling::a[1]"):
-            number_of_pages = int(driver.find_element(By.XPATH, "//a[contains(text(),'>')]/preceding-sibling::a[1]").text)
-            print(number_of_pages)
-
-        dropdown1 = Select(driver.find_element(By.XPATH, xpath))
-        dropdown1.select_by_index(0)
-
-        # Step 2: Parse HTML code and grab tables with Beautiful Soup
-
-        soup = BeautifulSoup(driver.page_source, 'lxml')
-
-        tables = soup.find_all('table')
-
-
-        # Step 3: Read tables with Pandas read_html()
-        dfs = pd.read_html(str(tables))
-        #needed table is at the end
-        df= dfs[-1]
-
-
-        data.append(df)
-    driver.close()
-    return data
-def get_multi(url_list,path_list,name_list,folder_choice,ps =False,start_year = 2016,end_year=2024):
-    for i in range(start_year,end_year):
-
-        season = '&Season='+str(i)+'-'+str(i+1 - 2000)
-        year_url = [url+season for url in url_list]
-        tables = get_ptables(year_url,path_list)
-        year =i+1
-
-        save_tables(folder_choice,tables,year,name_list,playoffs = ps)
-
-
-frames_normal= []
-for i in range(2017,2025):
-    path = str(i) + '/hustle/hustle.csv'
-    df = pd.read_csv(path)
-    df['year'] = i
-    frames_normal.append(df)
-master= pd.concat(frames_normal)
-
-
-
-
-frames_ps= []
-for i in range(2017,2024):
-    path = str(i) + '/playoffs/hustle/hustle.csv'
-    df = pd.read_csv(path)
-    df['year'] = i
-    frames_ps.append(df)
-master_ps= pd.concat(frames_ps)
-master.to_csv('hustle.csv',index = False)
-
-master_ps.to_csv('hustle_ps.csv', index = False)
-'''
 
 
 # In[ ]:

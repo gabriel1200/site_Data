@@ -1,6 +1,9 @@
 jupyter nbconvert --to script *.ipynb
+
+
 python index_gen.py
 python stat_scrape.py
+python player_level.py
 python passing.py 2026 regular
 python update_lebron.py
 
