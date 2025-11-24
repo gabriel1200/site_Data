@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[ ]:
 
 
 import pandas as pd
@@ -222,7 +222,7 @@ def master_jump(year,ps = False):
 #df = master_jump(2023,ps = True)
 print('start')
 start_year=2013
-end_year=2025
+end_year=2026
 years = [i for i in range(start_year,end_year)]
 #df=get_dribbleshots(years,ps=False)
 years = [i for i in range(start_year,end_year)]
@@ -231,9 +231,9 @@ years = [i for i in range(start_year,end_year)]
 #df.to_csv('dribbleshot.csv',index=False)
 #df_ps.to_csv('dribbleshot_ps.csv',index=False)
 
-ps=True
-df = master_dribble(2024,ps=ps)
-df = master_jump(2024,ps = ps)
+ps=False
+df = master_dribble(end_year-1,ps=ps)
+df = master_jump(end_year-1,ps = ps)
 
 
 # In[ ]:

@@ -674,103 +674,113 @@ def master_dribble(year, ps=False):
     new_master.to_csv(filename, index=False)
     print(f"Updated {filename}")
     return new_master
-
-def get_dribbleshots2(years, ps=False):
-    """
-    Scrapes player catch & shoot AND pullup data by dribbles.
-    (From dribble.py)
-    """
-    dribbles = ['0%20Dribbles', '1%20Dribble', '2%20Dribbles', '3-6%20Dribbles', '7%2B%20Dribbles']
-    terms = ['0', '1', '2', '3_6', '7+']
-    stype = "Playoffs" if ps else "Regular%20Season"
-    
-    dataframe = []
+def get_dribbleshots2(years,ps = False):
+    dribbles=['0%20Dribbles','1%20Dribble','2%20Dribbles','3-6%20Dribbles','7%2B%20Dribbles']
+    terms = ['0','1','2','3_6','7+']
+    folder = '/player_shooting/'
+    sfolder=''
+    stype = "Regular%20Season"
+    if ps == True:
+        stype="Playoffs"
+        sfolder = "/playoffs"
+    dataframe=[]
     for year in years:
         i = 0
         for dribble in dribbles:
-            season = str(year) + '-' + str(year + 1 - 2000)
-            print(f"Fetching C&S/Pullup for {season} {stype} - {terms[i]} dribbles")
-            
+            #print(dribble)
+            season = str(year)+'-'+str(year+1 - 2000)
+            part1 = "https://stats.nba.com/stats/leaguedashplayerptshot?CloseDefDistRange=&College=&Conference=&Country=&DateFrom=&DateTo=&Division=&DraftPick=&DraftYear=&DribbleRange="
+            part2 = "&GameScope=&GameSegment=&GeneralRange=Catch%20and%20Shoot&Height=&LastNGames=0&LeagueID=00&Location=&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PerMode=Totals&Period=0&PlayerExperience=&PlayerPosition=&Season="
+
+            part3 = "&SeasonSegment=&SeasonType="+stype+"&ShotClockRange=&ShotDistRange=&StarterBench=&TeamID=0&TouchTimeRange=&VsConference=&VsDivision=&Weight="
+            url = part1+dribble+part2+season+part3
             headers = {
-                "Host": "stats.nba.com",
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0",
-                "Accept": "application/json, text/plain, */*",
-                "Accept-Language": "en-US,en;q=0.5",
-                "Accept-Encoding": "gzip, deflate, br",
-                "Connection": "keep-alive",
-                "Referer": "https://stats.nba.com/"
-            }
-            
-            # --- Catch and Shoot ---
-            part1_cs = "https://stats.nba.com/stats/leaguedashplayerptshot?CloseDefDistRange=&College=&Conference=&Country=&DateFrom=&DateTo=&Division=&DraftPick=&DraftYear=&DribbleRange="
-            part2_cs = "&GameScope=&GameSegment=&GeneralRange=Catch%20and%20Shoot&Height=&LastNGames=0&LeagueID=00&Location=&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PerMode=Totals&Period=0&PlayerExperience=&PlayerPosition=&Season="
-            part3_cs = "&SeasonSegment=&SeasonType=" + stype + "&ShotClockRange=&ShotDistRange=&StarterBench=&TeamID=0&TouchTimeRange=&VsConference=&VsDivision=&Weight="
-            url_cs = part1_cs + dribble + part2_cs + season + part3_cs
-            
-            try:
-                json_cs = requests.get(url_cs, headers=headers).json()
-                data_cs = json_cs["resultSets"][0]["rowSet"]
-                columns_cs = json_cs["resultSets"][0]["headers"]
-                df_cs = pd.DataFrame.from_records(data_cs, columns=columns_cs)
-            except Exception as e:
-                print(f"  - Error fetching C&S data: {e}")
-                df_cs = pd.DataFrame() # Create empty
-                
-            time.sleep(2)
+                    "Host": "stats.nba.com",
+                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0",
+                    "Accept": "application/json, text/plain, */*",
+                    "Accept-Language": "en-US,en;q=0.5",
+                    "Accept-Encoding": "gzip, deflate, br",
 
-            # --- Pullups ---
-            part1_pull = "https://stats.nba.com/stats/leaguedashplayerptshot?CloseDefDistRange=&College=&Conference=&Country=&DateFrom=&DateTo=&Division=&DraftPick=&DraftYear=&DribbleRange="
-            part2_pull = "&GameScope=&GameSegment=&GeneralRange=Pullups&Height=&LastNGames=0&LeagueID=00&Location=&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PerMode=Totals&Period=0&PlayerExperience=&PlayerPosition=&Season="
-            part3_pull = "&SeasonSegment=&SeasonType=" + stype + "&ShotClockRange=&ShotDistRange=&StarterBench=&TeamID=0&TouchTimeRange=&VsConference=&VsDivision=&Weight="
-            url_pull = part1_pull + dribble + part2_pull + season + part3_pull
-            
-            try:
-                json_pull = requests.get(url_pull, headers=headers).json()
-                data_pull = json_pull["resultSets"][0]["rowSet"]
-                columns_pull = json_pull["resultSets"][0]["headers"]
-                df_pull = pd.DataFrame.from_records(data_pull, columns=columns_pull)
-            except Exception as e:
-                print(f"  - Error fetching Pullup data: {e}")
-                df_pull = pd.DataFrame() # Create empty
-
-            time.sleep(2)
-
-            # --- Process Both ---
-            new_columns = {
-                'FG2A_FREQUENCY': '2FG FREQ%', 'FG2_PCT': '2FG%', 'FG2A': '2FGA', 'FG2M': '2FGM',
-                'FG3A_FREQUENCY': '3FG FREQ%', 'FG3_PCT': '3P%', 'FG3A': '3PA', 'FG3M': '3PM',
-                'EFG_PCT': 'EFG%', 'FG_PCT': 'FG%', 'FGA_FREQUENCY': 'FREQ%',
-                'PLAYER_NAME': 'PLAYER', 'PLAYER_LAST_TEAM_ABBREVIATION': 'TEAM'
-            }
-            
-            cols_to_keep = ['PLAYER_ID', 'PLAYER', 'TEAM', 'AGE', 'GP', 'G', 'FREQ%', 'FGM', 'FGA', 'FG%',
-                            'EFG%', '2FG FREQ%', '2FGM', '2FGA', '2FG%', '3FG FREQ%', '3PM', '3PA', '3P%']
-            
+                    "Connection": "keep-alive",
+                    "Referer": "https://stats.nba.com/"}
+            json = requests.get(url,headers = headers).json()
+            print(json.keys())
+            data = json["resultSets"][0]["rowSet"]
+            columns = json["resultSets"][0]["headers"]
+            df = pd.DataFrame.from_records(data, columns=columns)
+            json = requests.get(url,headers = headers).json()
+            data = json['resultSets'][0]["rowSet"]
+            columns = json["resultSets"][0]["headers"]
+            df = pd.DataFrame.from_records(data, columns=columns)
+            new_columns = {'FG2A_FREQUENCY':'2FG FREQ%', 'FG2_PCT':'2FG%',
+                             'FG2A':'2FGA',
+                             'FG2M':'2FGM',
+                             'FG3A_FREQUENCY':'3FG FREQ%',
+                             'FG3_PCT':'3P%',
+                             'FG3A':'3PA',
+                             'FG3M':'3PM',
+                             'EFG_PCT':'EFG%',
+                             'FG_PCT':'FG%',
+                             'FGA_FREQUENCY':'FREQ%',
+                             'PLAYER_NAME':'PLAYER',
+                             'PLAYER_LAST_TEAM_ABBREVIATION':'TEAM'}
+            df = df.rename(columns = new_columns)
+            df = df [['PLAYER_ID','PLAYER', 'TEAM', 'AGE', 'GP', 'G', 'FREQ%', 'FGM', 'FGA', 'FG%',
+                   'EFG%', '2FG FREQ%', '2FGM', '2FGA', '2FG%', '3FG FREQ%', '3PM', '3PA','3P%']]
+            for col in df.columns:
+                if '%' in col or 'PERC' in col:
+                    df[col]*=100
             term = terms[i]
+            df['dribbles'] = term
+            df['year']=year+1
+            dataframe.append(df)
+          
+            part1 = "https://stats.nba.com/stats/leaguedashplayerptshot?CloseDefDistRange=&College=&Conference=&Country=&DateFrom=&DateTo=&Division=&DraftPick=&DraftYear=&DribbleRange="
+            part2 = "&GameScope=&GameSegment=&GeneralRange=Pullups&Height=&LastNGames=0&LeagueID=00&Location=&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PerMode=Totals&Period=0&PlayerExperience=&PlayerPosition=&Season="
 
-            if not df_cs.empty:
-                df_cs = df_cs.rename(columns=new_columns)
-                df_cs = df_cs[cols_to_keep]
-                for col in df_cs.columns:
-                    if '%' in col or 'PERC' in col:
-                        df_cs[col] *= 100
-                df_cs['dribbles'] = term
-                df_cs['year'] = year + 1 # Save with season end year
-                dataframe.append(df_cs)
-                
-            if not df_pull.empty:
-                df_pull = df_pull.rename(columns=new_columns)
-                df_pull = df_pull[cols_to_keep]
-                for col in df_pull.columns:
-                    if '%' in col or 'PERC' in col:
-                        df_pull[col] *= 100
-                df_pull['dribbles'] = term
-                df_pull['year'] = year + 1 # Save with season end year
-                dataframe.append(df_pull)
-            
-            i += 1
-            
-    return pd.concat(dataframe) if dataframe else pd.DataFrame()
+            part3 = "&SeasonSegment=&SeasonType="+stype+"&ShotClockRange=&ShotDistRange=&StarterBench=&TeamID=0&TouchTimeRange=&VsConference=&VsDivision=&Weight="
+            url = part1+dribble+part2+season+part3
+            headers = {
+                    "Host": "stats.nba.com",
+                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0",
+                    "Accept": "application/json, text/plain, */*",
+                    "Accept-Language": "en-US,en;q=0.5",
+                    "Accept-Encoding": "gzip, deflate, br",
+
+                    "Connection": "keep-alive",
+                    "Referer": "https://stats.nba.com/"}
+            json = requests.get(url,headers = headers).json()
+            print(json.keys())
+            data = json["resultSets"][0]["rowSet"]
+            columns = json["resultSets"][0]["headers"]
+            df = pd.DataFrame.from_records(data, columns=columns)
+            json = requests.get(url,headers = headers).json()
+            data = json['resultSets'][0]["rowSet"]
+            columns = json["resultSets"][0]["headers"]
+            df = pd.DataFrame.from_records(data, columns=columns)
+            new_columns = {'FG2A_FREQUENCY':'2FG FREQ%', 'FG2_PCT':'2FG%',
+                                 'FG2A':'2FGA',
+                                 'FG2M':'2FGM',
+                                 'FG3A_FREQUENCY':'3FG FREQ%',
+                                 'FG3_PCT':'3P%',
+                                 'FG3A':'3PA',
+                                 'FG3M':'3PM',
+                                 'EFG_PCT':'EFG%',
+                                 'FG_PCT':'FG%',
+                                 'FGA_FREQUENCY':'FREQ%',
+                                 'PLAYER_NAME':'PLAYER',
+                                 'PLAYER_LAST_TEAM_ABBREVIATION':'TEAM'}
+            df = df.rename(columns = new_columns)
+            df = df [['PLAYER_ID','PLAYER', 'TEAM', 'AGE', 'GP', 'G', 'FREQ%', 'FGM', 'FGA', 'FG%','EFG%', '2FG FREQ%', '2FGM', '2FGA', '2FG%', '3FG FREQ%', '3PM', '3PA','3P%']]
+            for col in df.columns:
+                if '%' in col or 'PERC' in col:
+                    df[col]*=100
+            term = terms[i]
+            df['dribbles'] = term
+            df['year']=year+1
+            i+=1
+            dataframe.append(df)
+    return pd.concat(dataframe)
 
 def master_jump(year, ps=False):
     """
