@@ -7,7 +7,7 @@ import sys
 # --- CONFIGURATION ---
 CONFIG_FILE = "data_urls.txt"
 FILE_HISTORY = "lebron.csv"
-FILE_INDEX_MASTER = "modern_index.csv" # Updated to your new index file
+FILE_INDEX_MASTER = "modern_index.csv" 
 
 def get_urls_from_config(filename):
     """Reads URLs from a key=value formatted text file."""
@@ -29,7 +29,7 @@ def get_urls_from_config(filename):
 def download_csv(url):
     """Downloads a CSV from a URL and returns a DataFrame."""
     try:
-        print(f"Downloading data...") 
+        print(f"Downloading data from {url}...") 
         response = requests.get(url)
         response.raise_for_status()
         return pd.read_csv(io.BytesIO(response.content))
@@ -68,7 +68,6 @@ def main():
         return
         
     current_season = df_latest['Season'].unique()[0]
-    # Extract year (e.g., '2025-26' -> 2026)
     try:
         current_year = int(current_season.split('-')[0]) + 1
     except:
@@ -77,15 +76,13 @@ def main():
     
     print(f"Processing data for Season: {current_season} (Year: {current_year})")
 
-    # 4. Process Offensive Roles (Source for Team & Archetype)
+    # 4. Process Offensive Roles
+    # Filter for the current season
     roles_season = df_roles[df_roles['Season'] == current_season].copy()
     
-    # Handle duplicates: Keep the team where the player had the most minutes
-    if 'nba_min' in roles_season.columns:
-        roles_season = roles_season.sort_values('nba_min', ascending=False)
-        roles_season = roles_season.drop_duplicates(subset=['player_id'])
-    
-    roles_season = roles_season[['player_id', 'Team', 'offensive_role']]
+    # Select needed columns: ID, Role, and Games
+    # Note: 'offensive_roles_only.csv' does NOT have Team, so we only get role and games here
+    roles_season = roles_season[['player_id', 'offensive_role', 'ss_games']]
     
     # 5. Merge Stats with Roles
     if 'PLAYER_ID' in df_latest.columns:
@@ -97,55 +94,53 @@ def main():
     column_mapping = {
         'Season': 'Season',
         'Name': 'Player',
-        'Team': 'team',              
+        # 'Team' is NOT in the source files, will come from index
         'Mins': 'Minutes',
         'offensive_role': 'Offensive Archetype', 
+        'ss_games': 'Games',         # Mapping ss_games -> Games
         'LEBRON WAR': 'WAR',
         'LEBRON': 'LEBRON',
         'OLEBRON': 'O-LEBRON',
         'DLEBRON': 'D-LEBRON',
         'player_id': 'NBA ID',
-        # 'Pos' might be here in the future
-        'Pos': 'Pos' 
+        'Pos': 'Pos'
     }
     
     df_final = merged_df.rename(columns=column_mapping)
     
-    # Ensure 'Pos' column exists even if rename didn't find it
-    if 'Pos' not in df_final.columns:
-        df_final['Pos'] = None
-
-    # Add derived/missing columns
-    df_final['year'] = current_year
+    # Initialize columns that might be missing
+    for col in ['Pos', 'team', 'Defensive Role', 'Age', 'bref_id']:
+        if col not in df_final.columns:
+            df_final[col] = None
     
-    # Initialize other missing columns
-    for col in ['Defensive Role', 'Games', 'Age', 'bref_id']:
-        df_final[col] = None
+    # Add derived columns
+    df_final['year'] = current_year
 
-    # --- NEW STEP: Merge Pos and bref_id from modern_index.csv ---
+    # --- STEP 7: Merge Team, Pos, and ID from modern_index.csv ---
     if os.path.exists(FILE_INDEX_MASTER):
         try:
-            print(f"Loading {FILE_INDEX_MASTER} for Position and ID mapping...")
+            print(f"Loading {FILE_INDEX_MASTER} for Team, Position, and ID mapping...")
             idframe = pd.read_csv(FILE_INDEX_MASTER)
             
             # Create Mappings
-            # key: nba_id -> value: Pos
+            # Key: nba_id
             pos_map = dict(zip(idframe['nba_id'], idframe['Pos']))
-            # key: nba_id -> value: bref_id
+            team_map = dict(zip(idframe['nba_id'], idframe['team']))
             id_map = dict(zip(idframe['nba_id'], idframe['bref_id']))
             
-            # Map bref_id
+            # Map values
             df_final['bref_id'] = df_final['NBA ID'].map(id_map)
             
-            # Map Pos (Future Proofing Logic)
-            # If 'Pos' is already filled (from source), keep it. 
-            # If it's NaN/None, fill it from the map.
+            # Fill 'team' from index (CRITICAL since roles file lacks team)
+            df_final['team'] = df_final['team'].fillna(df_final['NBA ID'].map(team_map))
+            
+            # Fill 'Pos' from index
             df_final['Pos'] = df_final['Pos'].fillna(df_final['NBA ID'].map(pos_map))
             
         except Exception as e:
             print(f"Error reading {FILE_INDEX_MASTER}: {e}")
     else:
-        print(f"Warning: {FILE_INDEX_MASTER} not found. Positions may be missing.")
+        print(f"Warning: {FILE_INDEX_MASTER} not found. 'team' and 'Pos' will likely be missing!")
 
     # Optional: Fill Age using NBA API
     try:
@@ -179,7 +174,7 @@ def main():
             
     df_final = df_final[target_columns]
 
-    # 7. Update History File
+    # 8. Update History File
     if os.path.exists(FILE_HISTORY):
         old_df = pd.read_csv(FILE_HISTORY)
         
@@ -196,7 +191,7 @@ def main():
         print("No existing history file found. Creating new one.")
         updated_history = df_final
 
-    # 8. Save
+    # 9. Save
     updated_history.to_csv(FILE_HISTORY, index=False)
     print(f"Success! Updated {FILE_HISTORY}. Total rows: {len(updated_history)}")
 
