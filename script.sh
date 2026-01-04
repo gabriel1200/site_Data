@@ -6,7 +6,7 @@ python stat_scrape.py
 python player_level.py
 python passing.py 2026 regular
 python bio.py
-python update_lebron.py
+python update_lebron2.py
 
 
 #python contract_data.py
