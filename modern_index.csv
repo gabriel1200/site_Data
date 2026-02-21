@@ -43,13 +43,13 @@ Karl-Anthony Towns,https://www.basketball-reference.com/players/t/townska01.html
 Cooper Flagg,https://www.basketball-reference.com/players/f/flaggco01.html,2026,DAL,flaggco01,1642843,1610612742.0,SF
 Victor Wembanyama,https://www.basketball-reference.com/players/w/wembavi01.html,2026,SAS,wembavi01,1641705,1610612759.0,C
 Miles Bridges,https://www.basketball-reference.com/players/b/bridgmi02.html,2026,CHO,bridgmi02,1628970,1610612766.0,PF
-CJ McCollum,https://www.basketball-reference.com/players/m/mccolcj01.html,2026,TOT,mccolcj01,203468,,SG
+CJ McCollum,https://www.basketball-reference.com/players/m/mccolcj01.html,2026,TOT,mccolcj01,203468,,PG
 CJ McCollum,https://www.basketball-reference.com/players/m/mccolcj01.html,2026,TOT,mccolcj01,203468,,SG
 CJ McCollum,https://www.basketball-reference.com/players/m/mccolcj01.html,2026,TOT,mccolcj01,203468,,PG
-CJ McCollum,https://www.basketball-reference.com/players/m/mccolcj01.html,2026,WAS,mccolcj01,203468,1610612764.0,SG
+CJ McCollum,https://www.basketball-reference.com/players/m/mccolcj01.html,2026,WAS,mccolcj01,203468,1610612764.0,PG
 CJ McCollum,https://www.basketball-reference.com/players/m/mccolcj01.html,2026,WAS,mccolcj01,203468,1610612764.0,SG
 CJ McCollum,https://www.basketball-reference.com/players/m/mccolcj01.html,2026,WAS,mccolcj01,203468,1610612764.0,PG
-CJ McCollum,https://www.basketball-reference.com/players/m/mccolcj01.html,2026,ATL,mccolcj01,203468,1610612737.0,SG
+CJ McCollum,https://www.basketball-reference.com/players/m/mccolcj01.html,2026,ATL,mccolcj01,203468,1610612737.0,PG
 CJ McCollum,https://www.basketball-reference.com/players/m/mccolcj01.html,2026,ATL,mccolcj01,203468,1610612737.0,SG
 CJ McCollum,https://www.basketball-reference.com/players/m/mccolcj01.html,2026,ATL,mccolcj01,203468,1610612737.0,PG
 Alperen Şengün,https://www.basketball-reference.com/players/s/sengual01.html,2026,HOU,sengual01,1630578,1610612745.0,C
@@ -431,6 +431,8 @@ Vince Williams Jr.,https://www.basketball-reference.com/players/w/willivi01.html
 Vince Williams Jr.,https://www.basketball-reference.com/players/w/willivi01.html,2026,UTA,willivi01,1631246,1610612762.0,PG
 Vince Williams Jr.,https://www.basketball-reference.com/players/w/willivi01.html,2026,UTA,willivi01,1631246,1610612762.0,SG
 Kristaps Porziņģis,https://www.basketball-reference.com/players/p/porzikr01.html,2026,ATL,porzikr01,204001,1610612737.0,C
+Kristaps Porziņģis,https://www.basketball-reference.com/players/p/porzikr01.html,2026,ATL,porzikr01,204001,1610612737.0,C
+Kristaps Porziņģis,https://www.basketball-reference.com/players/p/porzikr01.html,2026,ATL,porzikr01,204001,1610612737.0,C
 Ryan Dunn,https://www.basketball-reference.com/players/d/dunnry01.html,2026,PHO,dunnry01,1642346,1610612756.0,SF
 Nae'Qwan Tomlin,https://www.basketball-reference.com/players/t/tomlina01.html,2026,CLE,tomlina01,1641772,1610612739.0,PF
 Landry Shamet,https://www.basketball-reference.com/players/s/shamela01.html,2026,NYK,shamela01,1629013,1610612752.0,SG
@@ -685,6 +687,8 @@ Liam McNeeley,https://www.basketball-reference.com/players/m/mcneeli01.html,2026
 Pete Nance,https://www.basketball-reference.com/players/n/nancepe01.html,2026,MIL,nancepe01,1631250,1610612749.0,PF
 Dwight Powell,https://www.basketball-reference.com/players/p/poweldw01.html,2026,DAL,poweldw01,203939,1610612742.0,C
 Jeremy Sochan,https://www.basketball-reference.com/players/s/sochaje01.html,2026,SAS,sochaje01,1631110,1610612759.0,PF
+Jeremy Sochan,https://www.basketball-reference.com/players/s/sochaje01.html,2026,SAS,sochaje01,1631110,1610612759.0,PF
+Jeremy Sochan,https://www.basketball-reference.com/players/s/sochaje01.html,2026,SAS,sochaje01,1631110,1610612759.0,PF
 Ben Saraf,https://www.basketball-reference.com/players/s/sarafbe01.html,2026,BRK,sarafbe01,1642879,1610612751.0,SG
 Kobe Brown,https://www.basketball-reference.com/players/b/brownko01.html,2026,TOT,brownko01,1641738,,PF
 Kobe Brown,https://www.basketball-reference.com/players/b/brownko01.html,2026,TOT,brownko01,1641738,,PF
@@ -743,6 +747,8 @@ Amir Coffey,https://www.basketball-reference.com/players/c/coffeam01.html,2026,P
 Amir Coffey,https://www.basketball-reference.com/players/c/coffeam01.html,2026,PHO,coffeam01,1629599,1610612756.0,SG
 Amir Coffey,https://www.basketball-reference.com/players/c/coffeam01.html,2026,PHO,coffeam01,1629599,1610612756.0,SG
 Jae'Sean Tate,https://www.basketball-reference.com/players/t/tateja01.html,2026,HOU,tateja01,1630256,1610612745.0,SF
+KJ Simpson,https://www.basketball-reference.com/players/s/simpskj01.html,2026,CHO,simpskj01,1642354,1610612766.0,PG
+KJ Simpson,https://www.basketball-reference.com/players/s/simpskj01.html,2026,CHO,simpskj01,1642354,1610612766.0,PG
 KJ Simpson,https://www.basketball-reference.com/players/s/simpskj01.html,2026,CHO,simpskj01,1642354,1610612766.0,PG
 Joan Beringer,https://www.basketball-reference.com/players/b/berinjo01.html,2026,MIN,berinjo01,1642866,1610612750.0,PF
 Ariel Hukporti,https://www.basketball-reference.com/players/h/hukpoar01.html,2026,NYK,hukpoar01,1630574,1610612752.0,C
