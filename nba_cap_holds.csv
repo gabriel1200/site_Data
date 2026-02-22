@@ -1,4 +1,5 @@
 Team,Player,Pos,Age,2025-26,2026-27,2027-28,2028-29,2029-30,2030-31,2031-32
+ATL,Nikola Djurisic,SF,21.0,1272870.0,0.0,0.0,4.0,0.0,0.0,
 ATL,Dylan Windler,SF,29.0,4.0,4.0,4.0,4.0,4.0,0.0,
 ATL,Wesley Matthews,SG,39.0,4.0,4.0,4.0,4.0,4.0,0.0,
 ATL,Trent Forrest,PG,27.0,4.0,4.0,4.0,4.0,4.0,0.0,
@@ -63,6 +64,8 @@ LAC,Xavier Moon,SG,31.0,4.0,4.0,4.0,4.0,4.0,,
 LAC,Ben Simmons,PG,29.0,4.0,4.0,4.0,4.0,4.0,,
 LAC,Patty Mills,PG,37.0,4.0,4.0,4.0,4.0,4.0,,
 LAC,Rodney Hood,SF,33.0,4.0,4.0,4.0,4.0,4.0,,
+LAC,Jordan Miller,SF,28.0,0.0,0.0,4.0,0.0,0.0,,
+LAC,James Harden,SG,38.0,0.0,0.0,4.0,0.0,0.0,,
 LAC,Incomplete Roster Charge,,,0.0,0.0,0.0,0.0,0.0,,
 LAL,Dion Waiters,SG,34.0,4.0,4.0,4.0,4.0,4.0,,
 LAL,Markieff Morris,PF,36.0,4.0,4.0,4.0,4.0,4.0,,
@@ -126,6 +129,7 @@ SAC,JaVale McGee,C,38.0,4.0,4.0,4.0,4.0,4.0,0.0,0.0
 SAC,Markelle Fultz,PG,27.0,4.0,4.0,4.0,4.0,4.0,0.0,0.0
 SAC,Jae Crowder,SF,35.0,4.0,4.0,4.0,4.0,4.0,0.0,0.0
 SAC,Trey Lyles,PF,30.0,4.0,4.0,4.0,4.0,4.0,0.0,0.0
+SAC,Dylan Cardwell,PF,26.0,0.0,0.0,4.0,0.0,0.0,0.0,0.0
 SAC,Incomplete Roster Charge,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0
 TOR,Will Barton,SG,35.0,4.0,4.0,4.0,4.0,4.0,0.0,
 TOR,Jordan Nwora,SF,27.0,4.0,4.0,4.0,4.0,4.0,0.0,
