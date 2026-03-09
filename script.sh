@@ -2,7 +2,7 @@ jupyter nbconvert --to script *.ipynb
 
 
 python index_gen.py
-python stat_scrape.py
+python stat_scrape2.py
 python player_level.py
 python passing.py 2026 regular
 python bio.py
