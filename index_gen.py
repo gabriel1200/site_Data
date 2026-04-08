@@ -283,7 +283,23 @@ def process_player_ids(df, master_df):
 
     # Map team IDs
     df['team_id'] = df['team'].map(team_dict)
-    
+
+    # Drop rows with invalid team_ids: keep only blank (NA) or exactly 9-digit values
+    initial_team_count = len(df)
+    valid_team_mask = df['team_id'].isna() | (
+        df['team_id'].astype('Int64').apply(
+            lambda x: pd.isna(x) or (int(x) >= 1_000_000_000 and int(x) <= 9_999_999_999)
+        )
+    )
+    dropped_teams = df[~valid_team_mask]
+    if not dropped_teams.empty:
+        print(f"\n--- Dropping {len(dropped_teams)} rows with invalid team_id (not blank or 9 digits): ---")
+        for _, row in dropped_teams.iterrows():
+            print(f"  - Player: '{row['player']}', Team: '{row['team']}', team_id: {row['team_id']}")
+    df = df[valid_team_mask].copy()
+    if initial_team_count > len(df):
+        print(f"Dropped {initial_team_count - len(df)} rows with invalid team_ids.")
+
     # Drop any players we couldn't find an ID for
     initial_count = len(df)
     df.dropna(subset=['nba_id'], inplace=True)
@@ -356,6 +372,7 @@ def update_master_index(index_df, master_df):
     updated_master.drop_duplicates(subset=['bref_id', 'year', 'team'], inplace=True)
 
     # Save updated master
+    print(updated_master['team_id'].unique())
     updated_master.to_csv(config.index_master_path, index=False)
 
     # ---- Only update team index for CURRENT_YEAR ----
