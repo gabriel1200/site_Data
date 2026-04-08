@@ -371,6 +371,10 @@ def update_master_index(index_df, master_df):
     updated_master['team'] = updated_master['team'].replace({'2TM': 'TOT', '3TM': 'TOT'})
     updated_master.drop_duplicates(subset=['bref_id', 'year', 'team'], inplace=True)
 
+    # Re-cast after concat to prevent NAs reverting to float64 in the CSV
+    updated_master['nba_id'] = pd.to_numeric(updated_master['nba_id'], errors='coerce').astype('Int64')
+    updated_master['team_id'] = pd.to_numeric(updated_master['team_id'], errors='coerce').astype('Int64')
+
     # Save updated master
     print(updated_master['team_id'].unique())
     updated_master.to_csv(config.index_master_path, index=False)
@@ -480,6 +484,8 @@ def main():
     # Step 1: Load master index
     try:
         master = pd.read_csv(config.index_master_path)
+        master['nba_id'] = pd.to_numeric(master['nba_id'], errors='coerce').astype('Int64')
+        master['team_id'] = pd.to_numeric(master['team_id'], errors='coerce').astype('Int64')
         print(f"Loaded master index with {len(master)} entries")
     except FileNotFoundError:
         print(f"No master index found at '{config.index_master_path}', creating a new one")
