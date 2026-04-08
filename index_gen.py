@@ -368,15 +368,19 @@ def update_master_index(index_df, master_df):
 
     # Concatenate and deduplicate
     updated_master = pd.concat([master_df, index_copy])
-    updated_master['team'] = updated_master['team'].replace({'2TM': 'TOT', '3TM': 'TOT'})
+    # Normalize all multi-team codes to TOT so downstream scripts only need to filter != 'TOT'
+    updated_master['team'] = updated_master['team'].replace(
+        {'2TM': 'TOT', '3TM': 'TOT', '4TM': 'TOT', '5TM': 'TOT'}
+    )
     updated_master.drop_duplicates(subset=['bref_id', 'year', 'team'], inplace=True)
 
-    # Re-cast after concat to prevent NAs reverting to float64 in the CSV
+    # Cast to Int64 so NAs write as empty string (not NaN/float) in the CSV.
+    # This means downstream scripts can safely do .dropna().astype(int) or
+    # just .astype(int) after filtering TOT rows — no float coercion issues.
     updated_master['nba_id'] = pd.to_numeric(updated_master['nba_id'], errors='coerce').astype('Int64')
     updated_master['team_id'] = pd.to_numeric(updated_master['team_id'], errors='coerce').astype('Int64')
 
     # Save updated master
-    print(updated_master['team_id'].unique())
     updated_master.to_csv(config.index_master_path, index=False)
 
     # ---- Only update team index for CURRENT_YEAR ----
