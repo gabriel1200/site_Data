@@ -42,7 +42,7 @@ YEAR_TO_SCRAPE = 2025
 
 # Set the season type
 # True = Playoffs, False = Regular Season
-IS_PLAYOFFS = False
+IS_PLAYOFFS = True
 
 # --- Derived Variables (Do not change) ---
 SEASON_END_YEAR = YEAR_TO_SCRAPE + 1
@@ -1086,6 +1086,7 @@ def run_underground_updates(year_to_scrape, season_str, season_end_year, ps):
         try:
             old = pd.read_csv(shotzone_filename)
             old = old.rename(columns={'NonHeaveFg3Pct.1': 'NonHeaveFg3Pct'})
+            old = old.loc[:, ~old.columns.duplicated()]
             old = old[old.year < season_end_year]
         except FileNotFoundError:
             old = pd.DataFrame()

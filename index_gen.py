@@ -15,7 +15,7 @@ class Config:
     Central configuration class for the scraper.
     """
     # Set to True for playoffs data, False for regular season
-    PLAYOFFS_MODE = False 
+    PLAYOFFS_MODE = True
     
     # --- Configuration Updated from test_index.py ---
     # Current year to scrape (e.g., 2026 for 2025-26 season)
@@ -94,7 +94,7 @@ def get_stat_from_row(row_obj, stat_name, default_value="0"):
         return text_content if text_content else default_value
     return default_value
 
-def get_player_url_from_row(row_obj, stat_name="name_display", default_value="N/A"):
+def get_player_url_from_row(row_obj, stat_name="player", default_value="N/A"):
     """
     Extracts the player's b-ref URL from the row.
     Uses 'name_display' as corrected in test_index.py.
@@ -164,16 +164,16 @@ def pull_bref_data(totals=False):
 
         # Get values using robust helper functions
         # Using 'name_display' and 'team_name_abbr' as corrected in test_index.py
-        player_name = get_stat_from_row(row, 'name_display', "N/A")
-        
+        player_name = get_stat_from_row(row, 'player', "N/A")
+
         # Skip non-player rows (like "Player" headers)
         if player_name == "N/A" or player_name == "Player":
             continue
             
-        player_url = get_player_url_from_row(row, 'name_display')
-        team_acronym = get_stat_from_row(row, 'team_name_abbr', "N/A")
-        
-        gp = get_stat_from_row(row, 'games', "0")
+        player_url = get_player_url_from_row(row, 'player')
+        team_acronym = get_stat_from_row(row, 'team_id', "N/A")
+
+        gp = get_stat_from_row(row, 'g', "0")
         mp = get_stat_from_row(row, 'mp', "0")
 
         # Get shooting stats with dynamic suffixes
