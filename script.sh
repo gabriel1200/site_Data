@@ -211,5 +211,5 @@ cp team_index_ps.csv $DISCORD_DIR/team_index_ps.csv
 cp index_master.csv ../player_sheets/lineups/index_master.csv
 
 
-
+cp index_master_ps.csv ../player_sheets/lineups/index_master_ps.csv
 
