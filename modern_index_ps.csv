@@ -1,5 +1,6 @@
 player,url,year,team,bref_id,nba_id,team_id,Pos
 Nickeil Alexander-Walker,https://www.basketball-reference.com/players/a/alexani01.html,2026,ATL,alexani01,1629638,1610612737.0,SG
+Grayson Allen,https://www.basketball-reference.com/players/a/allengr01.html,2026,PHO,allengr01,1628960,1610612756.0,SG
 Jarrett Allen,https://www.basketball-reference.com/players/a/allenja01.html,2026,CLE,allenja01,1628386,1610612739.0,C
 Jose Alvarado,https://www.basketball-reference.com/players/a/alvarjo01.html,2026,NYK,alvarjo01,1630631,1610612752.0,PG
 Kyle Anderson,https://www.basketball-reference.com/players/a/anderky01.html,2026,MIN,anderky01,203937,1610612750.0,SF
@@ -45,6 +46,7 @@ Mike Conley,https://www.basketball-reference.com/players/c/conlemi01.html,2026,M
 Cade Cunningham,https://www.basketball-reference.com/players/c/cunnica01.html,2026,DET,cunnica01,1630595,1610612765.0,PG
 Tristan Da Silva,https://www.basketball-reference.com/players/d/dasiltr01.html,2026,ORL,dasiltr01,1641783,1610612753.0,SF
 Dyson Daniels,https://www.basketball-reference.com/players/d/daniedy01.html,2026,ATL,daniedy01,1630700,1610612737.0,SG
+Mohamed Diawara,https://www.basketball-reference.com/players/d/diawamo01.html,2026,NYK,diawamo01,1642885,1610612752.0,SF
 Gradey Dick,https://www.basketball-reference.com/players/d/dickgr01.html,2026,TOR,dickgr01,1641711,1610612761.0,SG
 Donte DiVincenzo,https://www.basketball-reference.com/players/d/divindo01.html,2026,MIN,divindo01,1628978,1610612750.0,SG
 Luguentz Dort,https://www.basketball-reference.com/players/d/dortlu01.html,2026,OKC,dortlu01,1629652,1610612760.0,SF
@@ -95,6 +97,7 @@ DaRon Holmes,https://www.basketball-reference.com/players/h/holmeda01.html,2026,
 Chet Holmgren,https://www.basketball-reference.com/players/h/holmgch01.html,2026,OKC,holmgch01,1631096,1610612760.0,PF
 Jett Howard,https://www.basketball-reference.com/players/h/howarje01.html,2026,ORL,howarje01,1641724,1610612753.0,SF
 Kevin Huerter,https://www.basketball-reference.com/players/h/huertke01.html,2026,DET,huertke01,1628989,1610612765.0,SG
+Ariel Hukporti,https://www.basketball-reference.com/players/h/hukpoar01.html,2026,NYK,hukpoar01,1630574,1610612752.0,C
 Bones Hyland,https://www.basketball-reference.com/players/h/hylanbo01.html,2026,MIN,hylanbo01,1630538,1610612750.0,PG
 Oso Ighodaro,https://www.basketball-reference.com/players/i/ighodos01.html,2026,PHO,ighodos01,1642345,1610612756.0,PF
 Joe Ingles,https://www.basketball-reference.com/players/i/inglejo01.html,2026,MIN,inglejo01,204060,1610612750.0,SF
@@ -112,6 +115,7 @@ Spencer Jones,https://www.basketball-reference.com/players/j/jonessp01.html,2026
 Tyus Jones,https://www.basketball-reference.com/players/j/jonesty01.html,2026,DEN,jonesty01,1626145,1610612743.0,PG
 Luke Kennard,https://www.basketball-reference.com/players/k/kennalu01.html,2026,LAL,kennalu01,1628379,1610612747.0,SG
 Corey Kispert,https://www.basketball-reference.com/players/k/kispeco01.html,2026,ATL,kispeco01,1630557,1610612737.0,SF
+Tyler Kolek,https://www.basketball-reference.com/players/k/kolekty01.html,2026,NYK,kolekty01,1642278,1610612752.0,PG
 Luke Kornet,https://www.basketball-reference.com/players/k/kornelu01.html,2026,SAS,kornelu01,1628436,1610612759.0,C
 Vít Krejčí,https://www.basketball-reference.com/players/k/krejcvi01.html,2026,POR,krejcvi01,1630249,1610612757.0,PG
 Jonathan Kuminga,https://www.basketball-reference.com/players/k/kuminjo01.html,2026,ATL,kuminjo01,1630228,1610612737.0,PF
@@ -134,6 +138,7 @@ Jamal Murray,https://www.basketball-reference.com/players/m/murraja01.html,2026,
 Kris Murray,https://www.basketball-reference.com/players/m/murrakr01.html,2026,POR,murrakr01,1631200,1610612757.0,SF
 Collin Murray-Boyles,https://www.basketball-reference.com/players/m/murraco01.html,2026,TOR,murraco01,1642867,1610612761.0,PF
 Larry Nance Jr.,https://www.basketball-reference.com/players/n/nancela02.html,2026,CLE,nancela02,1626204,1610612739.0,PF
+Asa Newell,https://www.basketball-reference.com/players/n/newelas01.html,2026,ATL,newelas01,1642854,1610612737.0,PF
 Zeke Nnaji,https://www.basketball-reference.com/players/n/nnajize01.html,2026,DEN,nnajize01,1630192,1610612743.0,PF
 Royce O'Neale,https://www.basketball-reference.com/players/o/onealro01.html,2026,PHO,onealro01,1626220,1610612756.0,SF
 Josh Okogie,https://www.basketball-reference.com/players/o/okogijo01.html,2026,HOU,okogijo01,1629006,1610612745.0,SG
@@ -160,6 +165,7 @@ Baylor Scheierman,https://www.basketball-reference.com/players/s/scheiba01.html,
 Dennis Schröder,https://www.basketball-reference.com/players/s/schrode01.html,2026,CLE,schrode01,203471,1610612739.0,PG
 Alperen Şengün,https://www.basketball-reference.com/players/s/sengual01.html,2026,HOU,sengual01,1630578,1610612745.0,C
 Landry Shamet,https://www.basketball-reference.com/players/s/shamela01.html,2026,NYK,shamela01,1629013,1610612752.0,SG
+Terrence Shannon Jr.,https://www.basketball-reference.com/players/s/shannte01.html,2026,MIN,shannte01,1630545,1610612750.0,SG
 Shaedon Sharpe,https://www.basketball-reference.com/players/s/sharpsh01.html,2026,POR,sharpsh01,1631101,1610612757.0,SG
 Jamal Shead,https://www.basketball-reference.com/players/s/sheadja01.html,2026,TOR,sheadja01,1642347,1610612761.0,PG
 Reed Sheppard,https://www.basketball-reference.com/players/s/sheppre01.html,2026,HOU,sheppre01,1642263,1610612745.0,SG
@@ -192,6 +198,7 @@ Franz Wagner,https://www.basketball-reference.com/players/w/wagnefr01.html,2026,
 Moritz Wagner,https://www.basketball-reference.com/players/w/wagnemo01.html,2026,ORL,wagnemo01,1629021,1610612753.0,C
 Jabari Walker,https://www.basketball-reference.com/players/w/walkeja01.html,2026,PHI,walkeja01,1631133,1610612755.0,PF
 Cason Wallace,https://www.basketball-reference.com/players/w/wallaca01.html,2026,OKC,wallaca01,1641717,1610612760.0,SG
+Keaton Wallace,https://www.basketball-reference.com/players/w/wallake01.html,2026,ATL,wallake01,1630811,1610612737.0,PG
 Jordan Walsh,https://www.basketball-reference.com/players/w/walshjo01.html,2026,BOS,walshjo01,1641775,1610612738.0,PF
 Ja'Kobe Walter,https://www.basketball-reference.com/players/w/walteja01.html,2026,TOR,walteja01,1642266,1610612761.0,SG
 Lindy Waters III,https://www.basketball-reference.com/players/w/waterli01.html,2026,SAS,waterli01,1630322,1610612759.0,SG
