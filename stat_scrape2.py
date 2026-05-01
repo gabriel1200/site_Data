@@ -993,25 +993,38 @@ def run_player_shooting_updates(year_to_scrape, ps):
     
 def run_hustle_updates(season_end_year, ps):
     print("\n--- [STARTING] Hustle Stats ---")
+    
     trail = '_ps' if ps else ''
     filename = f'hustle{trail}.csv'
     
-    data_rs = []
+    data = []
+
     try:
         old_df = pd.read_csv(filename)
         old_df = old_df[old_df.year < season_end_year]
-        data_rs.append(old_df)
+        data.append(old_df)
+
+        # Only fetch current year if file exists
+        df = get_hustle(season_end_year, ps=ps)
+        if not df.empty:
+            data.append(df)
+
     except FileNotFoundError:
-        print(f"{filename} not found, creating new file.")
-    
-    df = get_hustle(season_end_year, ps=ps)
-    if not df.empty:
-        data_rs.append(df)
-        hustle = pd.concat(data_rs)
+        print(f"{filename} not found, backfilling from 2018 to {season_end_year}.")
+
+        # Backfill all years if file doesn't exist
+        for year in range(2018, season_end_year + 1):
+            df = get_hustle(year, ps=ps)
+            if not df.empty:
+                data.append(df)
+
+    if data:
+        hustle = pd.concat(data, ignore_index=True)
         hustle.to_csv(filename, index=False)
         print(f"Updated {filename}")
     else:
-        print(f"No new hustle data found. {filename} not updated.")
+        print(f"No hustle data found. {filename} not created.")
+
     print("--- [FINISHED] Hustle Stats ---")
 
 def run_tracking_updates(year_to_scrape, season_end_year, ps):
