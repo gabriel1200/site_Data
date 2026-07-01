@@ -25,9 +25,10 @@ except requests.exceptions.RequestException as e:
 # Step 3: Load + clean
 df = pd.read_csv(filename)
 
+
 # Select only needed columns and rename
-df = df[['player_id', 'Year', 'salary', 'LEBRON_salary_per_win']].copy()
-df.columns = ['nba_id', 'year', 'salary','salary_per_win']
+df = df[['player_id', 'Year', 'salary', 'LEBRON_salary_per_win', 'LEBRON_salary_over_expected']].copy()
+df.columns = ['nba_id', 'year', 'salary', 'salary_per_win', 'salary_over_expected']
 
 # Optional: enforce types
 df['nba_id'] = pd.to_numeric(df['nba_id'], errors='coerce')
