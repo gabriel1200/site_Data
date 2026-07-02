@@ -43,7 +43,7 @@ def main():
     if not urls:
         return
 
-    url_stats = urls.get('LEBRON_STATS')
+    url_stats = urls.get('IMPACT_METRICS')
     url_off_roles = urls.get('OFFENSIVE_ROLES')
     url_def_roles = urls.get('DEFENSIVE_ROLES')
 
@@ -62,56 +62,49 @@ def main():
         print("Failed to download one or more files. Exiting.")
         return
 
-    # 3. Determine Current Season
+    # 3. Handle Seasons
     if 'Season' not in df_latest.columns:
         print("Error: 'Season' column missing from Lebron Stats data.")
         return
     
-    current_season = df_latest['Season'].unique()[0]
-    print(current_season)
-    try:
-        current_year = int(current_season.split('-')[0]) + 1
-    except:
-        current_year = None
-    
-    print(f"Processing Season: {current_season} (Year: {current_year})")
+    # Get a list of all seasons present in the downloaded data
+    downloaded_seasons = df_latest['Season'].unique().tolist()
+    print(f"Processing Seasons: {downloaded_seasons}")
 
     # 4. Prepare Merge Dataframes
     if 'PLAYER_ID' in df_latest.columns:
         df_latest = df_latest.rename(columns={'PLAYER_ID': 'player_id'})
 
-    # Offensive Roles: Get Role and Games
-    off_season = df_off_roles[df_off_roles['Season'] == current_season].copy()
-    # Handle duplicate players (if any, keep most minutes)
-    if 'nba_min' in off_season.columns:
-        off_season = off_season.sort_values('nba_min', ascending=False)
-        off_season = off_season.drop_duplicates(subset=['player_id'])
+    # Offensive Roles
+    # Handle duplicate players per season
+    if 'nba_min' in df_off_roles.columns:
+        df_off_roles = df_off_roles.sort_values(['Season', 'nba_min'], ascending=[True, False])
+    df_off_roles = df_off_roles.drop_duplicates(subset=['Season', 'player_id'])
     
-    off_merge = off_season[['player_id', 'offensive_role', 'ss_games']]
+    # Keep Season in the merge frames
+    off_merge = df_off_roles[['Season', 'player_id', 'offensive_role', 'ss_games']]
 
-    # Defensive Roles: Get Role
-    def_season = df_def_roles[df_def_roles['Season'] == current_season].copy()
-    def_season = def_season.drop_duplicates(subset=['player_id'])
-    def_merge = def_season[['player_id', 'defensive_role']]
+    # Defensive Roles
+    df_def_roles = df_def_roles.drop_duplicates(subset=['Season', 'player_id'])
+    def_merge = df_def_roles[['Season', 'player_id', 'defensive_role']]
 
     # 5. Merge Everything
     print("--- 2. Merging Data ---")
-    # Merge Stats + Offensive Roles
-    merged_df = pd.merge(df_latest, off_merge, on='player_id', how='left')
+    # Merge Stats + Offensive Roles on BOTH Season and player_id
+    merged_df = pd.merge(df_latest, off_merge, on=['Season', 'player_id'], how='left')
     
-    # Merge + Defensive Roles
-    merged_df = pd.merge(merged_df, def_merge, on='player_id', how='left')
+    # Merge + Defensive Roles on BOTH Season and player_id
+    merged_df = pd.merge(merged_df, def_merge, on=['Season', 'player_id'], how='left')
 
     # 6. Map Columns
     column_mapping = {
         'Season': 'Season',
-        'Name': 'Player',
-        # 'Team' comes from index later
+        'player_name': 'Player', 
         'Mins': 'Minutes',
         'offensive_role': 'Offensive Archetype',
-        'defensive_role': 'Defensive Role', # New Mapping
+        'defensive_role': 'Defensive Role', 
         'ss_games': 'Games',
-        'LEBRON WAR': 'WAR',
+        'LEBRON_WAR': 'WAR', 
         'LEBRON': 'LEBRON',
         'OLEBRON': 'O-LEBRON',
         'DLEBRON': 'D-LEBRON',
@@ -119,8 +112,25 @@ def main():
         'Pos': 'Pos'
     }
     
+    # Fallback mappings for single-season files
+    if 'Name' in merged_df.columns and 'player_name' not in merged_df.columns:
+        column_mapping['Name'] = 'Player'
+        del column_mapping['player_name']
+        
+    if 'LEBRON WAR' in merged_df.columns and 'LEBRON_WAR' not in merged_df.columns:
+        column_mapping['LEBRON WAR'] = 'WAR'
+        del column_mapping['LEBRON_WAR']
+
     df_final = merged_df.rename(columns=column_mapping)
-    df_final['year'] = current_year
+    
+    # Calculate Year for all rows dynamically
+    def get_year(season_str):
+        try:
+            return int(str(season_str).split('-')[0]) + 1
+        except:
+            return None
+            
+    df_final['year'] = df_final['Season'].apply(get_year)
 
     # Initialize missing columns before index merge
     for col in ['team', 'Pos', 'bref_id', 'Age']:
@@ -132,36 +142,17 @@ def main():
     if os.path.exists(FILE_INDEX_MASTER):
         try:
             idframe = pd.read_csv(FILE_INDEX_MASTER)
-            
-            # Create Mappings
             team_map = dict(zip(idframe['nba_id'], idframe['team']))
             pos_map = dict(zip(idframe['nba_id'], idframe['Pos']))
             id_map = dict(zip(idframe['nba_id'], idframe['bref_id']))
             
-            # Apply Mappings
             df_final['team'] = df_final['team'].fillna(df_final['NBA ID'].map(team_map))
             df_final['Pos'] = df_final['Pos'].fillna(df_final['NBA ID'].map(pos_map))
             df_final['bref_id'] = df_final['NBA ID'].map(id_map)
-            
         except Exception as e:
             print(f"Error reading {FILE_INDEX_MASTER}: {e}")
     else:
         print(f"Warning: {FILE_INDEX_MASTER} not found. 'team' will be missing.")
-
-    # Optional: Fill Age using NBA API
-    try:
-        from nba_api.stats.endpoints import leaguedashplayerstats
-        season_string = f"{current_year-1}-{str(current_year)[-2:]}"
-        # Only fetch if we haven't already
-        print(f"Fetching ages from NBA API for {season_string}...")
-        frames = leaguedashplayerstats.LeagueDashPlayerStats(season=season_string).get_data_frames()
-        api_data = frames[0]
-        age_map = dict(zip(api_data['PLAYER_ID'], api_data['AGE']))
-        df_final['Age'] = df_final['NBA ID'].map(age_map)
-    except ImportError:
-        pass # Silent fail if not installed
-    except Exception as e:
-        print(f"Error fetching ages: {e}")
 
     # Formatting
     if 'Player' in df_final.columns:
@@ -184,15 +175,13 @@ def main():
     print("--- 4. Saving Files ---")
     if os.path.exists(FILE_HISTORY):
         old_df = pd.read_csv(FILE_HISTORY)
-        rows_before = len(old_df)
-        # Overwrite current season data
-        old_df = old_df[old_df['Season'] != current_season]
-        rows_after = len(old_df)
         
-        if rows_before != rows_after:
-            print(f"Replacing {rows_before - rows_after} existing rows for {current_season}.")
+        # Keep old rows that are NOT in the downloaded seasons (e.g., 2010 to 2012)
+        old_df_kept = old_df[~old_df['Season'].isin(downloaded_seasons)]
         
-        updated_history = pd.concat([old_df, df_final], ignore_index=True)
+        # Append the new processed multi-season data
+        updated_history = pd.concat([old_df_kept, df_final], ignore_index=True)
+        print(f"Kept {len(old_df_kept)} old rows. Added/Updated {len(df_final)} rows.")
     else:
         updated_history = df_final
 
