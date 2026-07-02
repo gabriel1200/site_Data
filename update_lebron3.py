@@ -104,7 +104,8 @@ def main():
         'offensive_role': 'Offensive Archetype',
         'defensive_role': 'Defensive Role', 
         'ss_games': 'Games',
-        'LEBRON_WAR': 'WAR', 
+        'LEBRON_WinsAdded': 'WAR',        # <-- was 'LEBRON_WAR'; match the fanspo source
+
         'LEBRON': 'LEBRON',
         'OLEBRON': 'O-LEBRON',
         'DLEBRON': 'D-LEBRON',
