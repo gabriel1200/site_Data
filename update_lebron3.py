@@ -92,7 +92,14 @@ def main():
     print("--- 2. Merging Data ---")
     # Merge Stats + Offensive Roles on BOTH Season and player_id
     merged_df = pd.merge(df_latest, off_merge, on=['Season', 'player_id'], how='left')
-    
+
+    # The impact-metrics source ships its own (fully-populated) defensive_role.
+    # Drop it before merging so the dedicated def_roles file wins, instead of
+    # pandas suffixing both into defensive_role_x / _y (which then breaks the
+    # rename below and nulls out Defensive Role entirely).
+    if 'defensive_role' in merged_df.columns:
+        merged_df = merged_df.drop(columns=['defensive_role'])
+
     # Merge + Defensive Roles on BOTH Season and player_id
     merged_df = pd.merge(merged_df, def_merge, on=['Season', 'player_id'], how='left')
 
@@ -104,8 +111,7 @@ def main():
         'offensive_role': 'Offensive Archetype',
         'defensive_role': 'Defensive Role', 
         'ss_games': 'Games',
-        'LEBRON_WinsAdded': 'WAR',        # <-- was 'LEBRON_WAR'; match the fanspo source
-
+        'LEBRON_WinsAdded': 'WAR',        # source's fully-populated WAR column (LEBRON_WAR is 2026-only)
         'LEBRON': 'LEBRON',
         'OLEBRON': 'O-LEBRON',
         'DLEBRON': 'D-LEBRON',
@@ -117,10 +123,17 @@ def main():
     if 'Name' in merged_df.columns and 'player_name' not in merged_df.columns:
         column_mapping['Name'] = 'Player'
         del column_mapping['player_name']
-        
-    if 'LEBRON WAR' in merged_df.columns and 'LEBRON_WAR' not in merged_df.columns:
-        column_mapping['LEBRON WAR'] = 'WAR'
-        del column_mapping['LEBRON_WAR']
+
+    # WAR column name has varied across source versions — accept whichever
+    # WAR-type column is actually present and populated, so a future source
+    # rename can't silently null out WAR again.
+    for war_src in ('LEBRON_WinsAdded', 'LEBRON_WAR', 'LEBRON WAR'):
+        if war_src in merged_df.columns and merged_df[war_src].notna().any():
+            # clear any other WAR-source mappings, then set the good one
+            for c in ('LEBRON_WinsAdded', 'LEBRON_WAR', 'LEBRON WAR'):
+                column_mapping.pop(c, None)
+            column_mapping[war_src] = 'WAR'
+            break
 
     df_final = merged_df.rename(columns=column_mapping)
     
