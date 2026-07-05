@@ -55,6 +55,7 @@ def main():
     # 2. Download Data
     print("--- 1. Fetching Data ---")
     df_latest = download_csv(url_stats)
+    print(df_latest.columns)
     df_off_roles = download_csv(url_off_roles)
     df_def_roles = download_csv(url_def_roles)
     
@@ -116,13 +117,19 @@ def main():
         'OLEBRON': 'O-LEBRON',
         'DLEBRON': 'D-LEBRON',
         'player_id': 'NBA ID',
-        'Pos': 'Pos'
+        'Position': 'Pos',                # FIXED: Maps the actual source column name
+        'Age': 'Age'                      # ADDED: Prevents Age from being wiped out
     }
     
     # Fallback mappings for single-season files
     if 'Name' in merged_df.columns and 'player_name' not in merged_df.columns:
         column_mapping['Name'] = 'Player'
         del column_mapping['player_name']
+        
+    # Fallback just in case an older or future file uses 'Pos' instead of 'Position'
+    if 'Pos' in merged_df.columns and 'Position' not in merged_df.columns:
+        column_mapping['Pos'] = 'Pos'
+        del column_mapping['Position']
 
     # WAR column name has varied across source versions — accept whichever
     # WAR-type column is actually present and populated, so a future source
