@@ -41,6 +41,25 @@ CAP_RATIOS = {
     "Team Room MLE":     0.05678,
 }
 
+# ---------------------------------------------------------------------------
+# Known-actual seasons — hardcoded, not derived. The NBA doesn't compute tax/
+# apron thresholds as (current cap * fixed ratio) each year; each threshold
+# carries forward from the PRIOR season's dollar figure scaled by the cap's
+# growth rate, so a flat ratio applied fresh to the current cap can be off by
+# a few hundred to a couple thousand dollars vs. the officially announced
+# number (confirmed: no single ratio reproduces all of 2024-25/2025-26/
+# 2026-27's real figures exactly — the windows are parts-per-million apart
+# but don't overlap). Once a season is officially announced, just enter the
+# real numbers here instead of trusting the ratio to reproduce them.
+KNOWN_ACTUALS = {
+    "2024-2025": {"Salary Cap": 140_588_000, "Luxury Tax": 170_814_000,
+                  "1st Apron": 178_132_000, "2nd Apron": 188_931_000},
+    "2025-2026": {"Salary Cap": 154_647_000, "Luxury Tax": 187_895_000,
+                  "1st Apron": 195_945_000, "2nd Apron": 207_824_000},
+    "2026-2027": {"Salary Cap": 164_961_000, "Luxury Tax": 200_428_000,
+                  "1st Apron": 209_015_000, "2nd Apron": 221_686_000},
+}
+
 # Last known-actual season and its real cap figure (update this each summer
 # once the league officially sets the new cap).
 BASE_SEASON = "2025-2026"
@@ -62,11 +81,22 @@ def round_to_thousand(x: float) -> int:
     return int(round(x, -3))
 
 
-def derive_row(cap: int) -> Dict[str, int]:
-    """Given a Salary Cap figure, derive every other CBA-linked column."""
+def derive_row(cap: int, season: Optional[str] = None) -> Dict[str, int]:
+    """Given a Salary Cap figure, derive every other CBA-linked column.
+
+    If `season` matches a KNOWN_ACTUALS entry, those real announced dollar
+    figures are used directly for Tax/1st Apron/2nd Apron instead of the
+    ratio (see KNOWN_ACTUALS comment above for why — the ratio is accurate
+    to ~5 decimal places but the league's actual compounding formula can
+    land a few hundred to a couple thousand dollars off from a fresh
+    cap*ratio calculation). BAE/MLE columns aren't independently announced
+    the same way, so those still derive from the ratio even in known-actual
+    seasons.
+    """
     row = {"Salary Cap": cap}
+    actual = KNOWN_ACTUALS.get(season, {}) if season else {}
     for col, ratio in CAP_RATIOS.items():
-        row[col] = round_to_thousand(cap * ratio)
+        row[col] = actual.get(col, round_to_thousand(cap * ratio))
     return row
 
 
@@ -88,11 +118,11 @@ def generate_projected(num_years: int = 9,
     rows = []
 
     base_start = int(BASE_SEASON.split("-")[0])
-    rows.append({"Season": BASE_SEASON, **derive_row(BASE_CAP)})
+    rows.append({"Season": BASE_SEASON, **derive_row(BASE_CAP, season=BASE_SEASON)})
 
     next_start = int(NEXT_SEASON.split("-")[0])
     cap = NEXT_SEASON_CAP
-    rows.append({"Season": NEXT_SEASON, **derive_row(cap)})
+    rows.append({"Season": NEXT_SEASON, **derive_row(cap, season=NEXT_SEASON)})
 
     for i in range(1, num_years + 1):
         start_year = next_start + i
@@ -101,7 +131,11 @@ def generate_projected(num_years: int = 9,
             cap = overrides[season]
         else:
             cap = round_to_thousand(cap * (1 + growth_rate))
-        rows.append({"Season": season, **derive_row(cap)})
+        # season won't be in KNOWN_ACTUALS for genuinely future years, so
+        # this naturally falls back to ratio-derivation for those — only
+        # matters if you extend KNOWN_ACTUALS with a newly-announced season
+        # that also happens to fall in this projected range.
+        rows.append({"Season": season, **derive_row(cap, season=season)})
 
     df = pd.DataFrame(rows)
     df["year"] = df["Season"].str.split("-").str[1].astype(int)
