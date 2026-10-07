@@ -38,5 +38,7 @@ for col in columns:
     cap[col] = cap[col].str.replace(r'\D', '', regex=True).astype(float)
 # For seasons like "2023-24", the second part is '24', so we prepend '20' if necessary
 cap['year'] = cap['Season'].str.split('-').str[1]
+# RealGM's table repeats the 1986-87 row; one row per season keeps `year` a clean index
+cap = cap.drop_duplicates(subset=['Season'], keep='last')
 
 cap.to_csv('cap.csv', index=False)

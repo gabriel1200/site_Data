@@ -684,7 +684,15 @@ def enrich_with_crosswalk(output_files: Dict[str, pd.DataFrame],
 
     cross = pd.read_csv(crosswalk_path, dtype={"spotrac_id": str})
     id_cols = [c for c in ("spotrac_id", "nba_id", "bref_id") if c in cross.columns]
-    cross = cross[id_cols].drop_duplicates(subset=["spotrac_id"])
+    # WAIVED rows carry a placeholder spotrac_id ("0", or blank). Joining on it would hand every one
+    # of them the first placeholder row's nba_id (they all became Damian Lillard), so those rows are
+    # matched by NAME instead and stay null when the name is not in the crosswalk.
+    placeholder_ids = {"0", "", "nan", "None", "<NA>"}
+    is_placeholder_cross = cross.spotrac_id.isin(placeholder_ids)
+    by_name = (cross[is_placeholder_cross & cross.get("spotrac_name", pd.Series(dtype=str)).notna()]
+               [["spotrac_name"] + [c for c in id_cols if c != "spotrac_id"]]
+               .drop_duplicates(subset=["spotrac_name"]) if "spotrac_name" in cross.columns else None)
+    cross = cross[~is_placeholder_cross][id_cols].drop_duplicates(subset=["spotrac_id"])
     print(f"  [crosswalk] loaded {len(cross)} id mappings from {crosswalk_path}")
 
     enriched = {}
@@ -696,7 +704,13 @@ def enrich_with_crosswalk(output_files: Dict[str, pd.DataFrame],
         df["spotrac_id"] = df["spotrac_id"].astype(str).str.replace(r"\.0$", "", regex=True)
         # drop any pre-existing id cols so reruns don't create nba_id_x/_y
         df = df.drop(columns=[c for c in ("nba_id", "bref_id") if c in df.columns])
-        merged = df.merge(cross, on="spotrac_id", how="left")
+        df["_row_order"] = range(len(df))
+        placeholder_rows = df.spotrac_id.isin(placeholder_ids)
+        merged = df[~placeholder_rows].merge(cross, on="spotrac_id", how="left")
+        waived = df[placeholder_rows]
+        if by_name is not None and "Player" in waived.columns:
+            waived = waived.merge(by_name, left_on="Player", right_on="spotrac_name", how="left").drop(columns="spotrac_name")
+        merged = pd.concat([merged, waived], ignore_index=True).sort_values("_row_order").drop(columns="_row_order").reset_index(drop=True)
         # place nba_id/bref_id right after spotrac_id for readability
         cols = list(merged.columns)
         for idc in ("bref_id", "nba_id"):  # insert in reverse so nba_id ends up first
@@ -775,6 +789,14 @@ if __name__ == "__main__":
 
     # Second pass: fold nba_id/bref_id in from the crosswalk (left join on
     # spotrac_id). Every scraped row is kept; unmapped rows get null ids.
+    # First update the crosswalk from the players scraped right now (accumulating into
+    # sal_crosswalk.csv), so newly seen players and WAIVED rows get ids in this same run.
+    print("Updating crosswalk from this scrape...")
+    try:
+        import cross
+        cross.update_crosswalk(output_files["nba_salaries.csv"])
+    except Exception as e:
+        print(f"  [crosswalk] could not update the crosswalk ({e}); using the existing sal_crosswalk.csv")
     print("Enriching with crosswalk ids...")
     output_files = enrich_with_crosswalk(output_files)
 
