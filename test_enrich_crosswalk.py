@@ -73,3 +73,103 @@ def test_new_row_replaces_the_old_one_for_the_same_real_spotrac_id():
     assert merged.spotrac_id.tolist().count("10") == 1 and merged.set_index("spotrac_id").loc["10", "nba_id"] == 2
     assert "A WAIVED" in set(merged.spotrac_name)                                   # unrelated placeholder row survives
     pd.testing.assert_frame_equal(cross.merge_crosswalk(merged, new).reset_index(drop=True), merged.reset_index(drop=True))  # idempotent
+
+
+# ---- payroll_history_scrape ---------------------------------------------------------------------
+
+import datetime as dt  # noqa: E402
+import payroll_history_scrape as payroll  # noqa: E402
+
+
+def _table(heading, rows, with_pos=True):
+    body = "".join(
+        f'<tr><td><a href="/nba/player/_/id/{pid}/x">{name}</a></td><td>PG</td><td>25</td><td>{kind}</td><td>{cap}</td><td>5%</td><td>{base}</td></tr>'
+        for pid, name, kind, cap, base in rows)
+    return (f"<h3>{heading}</h3><table><thead><tr><th>Player (n)</th><th>Pos</th><th>Age</th><th>Type</th><th>Cap Hit</th>"
+            f"<th>Cap Hit Pct  League Cap</th><th>Base Salary</th></tr></thead><tbody>{body}</tbody></table>")
+
+
+def test_payroll_page_is_split_by_section_and_cap_hit_ignores_the_percent_column():
+    html = (_table("2019-20 Active Roster Cap", [(1, "Jeff Teague", "", "$19,000,000", "$19,000,000"), (2, "Trae Young", "RK-1ST", "$6,273,000", "$6,273,000")])
+            + _table("2019-20 Dead Money Cap", [(3, "Chandler Parsons", "", "$25,102,511", "-")])
+            + _table("2019-20 Cap Hold Cap", [(4, "Dewayne Dedmon", "", "$1,500,000", "-")]))
+    frame = payroll.parse_payroll_page(html, "ATL", 2019)
+    assert frame.groupby("section").cap_hit.sum().to_dict() == {"active": 25_273_000.0, "dead_money": 25_102_511.0, "cap_hold": 1_500_000.0}
+    assert set(frame.season_end) == {2020} and frame.spotrac_id.tolist() == ["1", "2", "3", "4"]
+    assert frame.loc[frame.player == "Chandler Parsons", "base_salary"].isna().all()   # "-" is missing, not zero
+
+
+def test_a_page_without_a_full_active_roster_is_not_valid_and_season_arithmetic_is_right():
+    thin = payroll.parse_payroll_page(_table("2019-20 Active Roster Cap", [(1, "A", "", "$1", "$1")]), "ATL", 2019)
+    assert not payroll.page_is_valid(thin)
+    full = payroll.parse_payroll_page(_table("2019-20 Active Roster Cap", [(i, f"P{i}", "", "$1,000,000", "$1,000,000") for i in range(12)]), "ATL", 2019)
+    assert payroll.page_is_valid(full)
+    assert payroll.last_complete_spot_year(dt.date(2026, 10, 8)) == 2025   # 2025-26 is the latest finished season
+    assert payroll.last_complete_spot_year(dt.date(2026, 6, 1)) == 2024    # 2025-26 still in progress in early June
+
+
+class _Response:
+    def __init__(self, status, text=""):
+        self.status_code, self.text = status, text
+
+
+class _Session:
+    def __init__(self, *statuses_and_pages):
+        self.queue, self.calls = list(statuses_and_pages), 0
+
+    def get(self, url, **kwargs):
+        self.calls += 1
+        return self.queue.pop(0)
+
+
+def _full_page():
+    rows = [(i, f"P{i}", "", "$1,000,000", "$1,000,000") for i in range(12)]
+    return _table("2019-20 Active Roster Cap", rows) + "x" * payroll.MIN_PAGE_BYTES
+
+
+def test_a_block_is_waited_out_and_retried_but_a_404_is_not(monkeypatch):
+    waits = []
+    monkeypatch.setattr(payroll.time, "sleep", lambda seconds: waits.append(seconds))
+    session = _Session(_Response(403, "x"), _Response(403, "x"), _Response(200, _full_page()))
+    frame, status = payroll.fetch_team_year("ATL", 2019, session)
+    assert status == "ok" and session.calls == 3 and waits == list(payroll.BLOCK_WAITS[:2])   # 20s then 45s
+    gone = _Session(_Response(404, ""))
+    frame, status = payroll.fetch_team_year("LAC", 2013, gone)
+    assert status.startswith("failed: HTTP 404") and gone.calls == 1                            # no pointless retries
+    always = _Session(*[_Response(403, "x")] * 10)
+    frame, status = payroll.fetch_team_year("ATL", 2019, always)
+    assert status.startswith("failed: HTTP 403") and always.calls == len(payroll.BLOCK_WAITS) + 1   # gives up after the last wait
+
+
+def test_pacing_slows_down_after_a_block_and_recovers():
+    pacing = payroll.Pacing()
+    assert pacing.delay() < payroll.SLOW_AFTER_BLOCK                  # normal pace
+    pacing.blocked()
+    slow = [pacing.delay() for _ in range(payroll.SLOW_PAGES)]
+    assert all(d >= payroll.SLOW_AFTER_BLOCK for d in slow)
+    assert pacing.delay() < payroll.SLOW_AFTER_BLOCK                  # back to normal afterwards
+    assert payroll.SLUGS["LAC"] == "la-clippers"
+
+
+def test_a_run_limited_to_some_teams_keeps_every_other_cached_team_year(tmp_path, monkeypatch):
+    monkeypatch.setattr(payroll, "CACHE_DIR", str(tmp_path / "cache"))
+    monkeypatch.setattr(payroll, "HERE", str(tmp_path))
+    monkeypatch.setattr(payroll.time, "sleep", lambda s: None)
+    (tmp_path / "cache").mkdir()
+    def frame(team, year):
+        return pd.DataFrame([{**{c: None for c in payroll.COLUMNS}, "season_end": year + 1, "spot_year": year, "team": team,
+                              "section": "active", "spotrac_id": "1", "player": "P", "cap_hit": 1.0}])
+    for team in ("ATL", "BOS"):
+        frame(team, 2019).to_csv(tmp_path / "cache" / f"{team}_2019.csv", index=False)
+    monkeypatch.setattr(payroll, "fetch_team_year", lambda team, year, session, pacing: (frame(team, year), "ok"))
+    history, pages = payroll.run(2019, 2019, force=True, teams=["ATL"])        # only ATL requested
+    assert set(history.team) == {"ATL", "BOS"}                                  # BOS stays in the output
+    row = pages[(pages.team == "CHI") & (pages.spot_year == 2019)].iloc[0]
+    assert row.status.startswith("missing")                                     # and the manifest says what is not loaded
+
+
+def test_exempt_list_players_are_kept_as_pay_not_dropped_as_unknown():
+    html = (_table("2019-20 Active Roster Cap", [(1, "A", "", "$1", "$1")])
+            + _table("2019-20 Exempt List Cap", [(2, "Bradley Beal", "FA", "$27,093,019", "$27,093,019")]))
+    frame = payroll.parse_payroll_page(html, "WAS", 2019)
+    assert frame.set_index("player").loc["Bradley Beal", "section"] == "exempt"

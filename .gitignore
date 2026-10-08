@@ -164,3 +164,5 @@ download_url.txt
 download_url.txt2
 data_urls.txt
 salary_link26.csv
+# per-team-year scrape cache for payroll_history_scrape.py (rebuildable; the combined CSV is the product)
+payroll_cache/
