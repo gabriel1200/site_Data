@@ -1086,7 +1086,8 @@ def run_underground_updates(year_to_scrape, season_str, season_end_year, ps):
         df = pd.DataFrame(json_data["multi_row_table_data"])
         
         Path('wowy/').mkdir(parents=True, exist_ok=True)
-        df[PBP_PLAYER_COLS_SMALL].to_csv(f'wowy/player_small{trail}.csv', index=False)
+        # pbpstats leaves out stats nobody has recorded yet (early season), so fill them with 0
+        df.reindex(columns=PBP_PLAYER_COLS_SMALL, fill_value=0).to_csv(f'wowy/player_small{trail}.csv', index=False)
         df.to_csv(f'wowy/player_large{trail}.csv', index=False)
         print(f"Saved wowy/player_small{trail}.csv and wowy/player_large{trail}.csv")
 

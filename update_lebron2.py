@@ -3,6 +3,8 @@ import requests
 import io
 import os
 import sys
+sys.path.insert(0, os.path.expanduser("~/basketball"))
+import nba_headers  # points nba_api at the shared stats.nba.com headers
 
 # --- CONFIGURATION ---
 CONFIG_FILE = "data_urls.txt"
