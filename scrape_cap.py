@@ -18,9 +18,11 @@ HEADERS = {
 
 # Fetch the page with requests
 url = 'https://basketball.realgm.com/nba/info/salary_cap'
-session = requests.Session()
-session.headers.update(HEADERS)
-response = session.get(url)
+# RealGM is now behind a Cloudflare challenge that plain requests can't pass (403 even with
+# HEADERS); curl_cffi impersonating Chrome's TLS fingerprint gets the real page.
+from curl_cffi import requests as cffi_requests
+session = cffi_requests.Session(impersonate="chrome")
+response = session.get(url, timeout=30)
 response.raise_for_status()  # raise an error if request failed
 
 # Parse the tables from the HTML content
