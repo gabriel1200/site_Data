@@ -139,19 +139,19 @@ def pull_bref_data(totals=False):
             continue
 
         # FIX: Changed from 'name_display' to 'player'
-        player_name = get_stat_from_row(row, 'player', "N/A")
+        player_name = get_stat_from_row(row, 'name_display', "N/A")  # Basketball-Reference renamed player/team_id/g
         
         if player_name == "N/A" or player_name == "Player":
             continue
             
         # FIX: Explicitly passing 'player'
-        player_url = get_player_url_from_row(row, 'player')
+        player_url = get_player_url_from_row(row, 'name_display')
         
         # FIX: Changed from 'team_name_abbr' to 'team_id'
-        team_acronym = get_stat_from_row(row, 'team_id', "N/A")
+        team_acronym = get_stat_from_row(row, 'team_name_abbr', "N/A")
         
         position = get_stat_from_row(row, 'pos', "N/A")
-        gp = get_stat_from_row(row, 'g', "0")
+        gp = get_stat_from_row(row, 'games', "0")
         mp = get_stat_from_row(row, 'mp', "0")
 
         fg = get_stat_from_row(row, f'fg{stat_suffix}', "0")
