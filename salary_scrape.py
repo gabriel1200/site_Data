@@ -455,6 +455,13 @@ def process_salary_data(df_and_html: Tuple[pd.DataFrame, str], team: str,
             df = df.drop(columns=df.columns[1])
 
     df.rename(columns={df.columns[0]: "Player"}, inplace=True)
+    # Spotrac alternates between two layouts: separate Pos/Age columns, or both packed into the
+    # name ("Kawhi Leonard (SF, 35)"). Unhandled, the second wiped Pos/Age for whole teams.
+    if "Player" in df.columns and "Pos" not in df.columns:
+        packed = df["Player"].astype(str).str.extract(r"\(\s*([A-Z/-]+)\s*,\s*(\d+)\s*\)")
+        if packed[0].notna().any():
+            df.insert(1, "Pos", packed[0])
+            df.insert(2, "Age", pd.to_numeric(packed[1], errors="coerce"))
     if "Player" in df.columns:
         df["Player"] = df["Player"].apply(clean_player_name)
 
