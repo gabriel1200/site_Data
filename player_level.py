@@ -6,6 +6,9 @@ import os, datetime as _dt
 _today = _dt.date.today()
 SEASON_YEAR = int(os.environ.get("NBA_SEASON_YEAR") or _today.year + (_today.month >= 10))  # end year: 2027 = 2026-27 (see ~/basketball/season.sh)
 PLAYOFFS = os.environ.get("NBA_PLAYOFFS") == "1"
+import sys
+sys.path.insert(0, os.path.expanduser("~/basketball"))
+from nba_headers import NBA_HEADERS, NBA_TIMEOUT  # shared stats.nba.com headers; refresh there when requests hang
 import pandas as pd
 
 from bs4 import BeautifulSoup
@@ -141,17 +144,8 @@ def get_tracking(years,ps = False):
 
             url = part1+shot+part2+season+part3
             #url = "https://stats.nba.com/stats/leaguedashptstats?College=&Conference=&Country=&DateFrom=&DateTo=&Division=&DraftPick=&DraftYear=&GameScope=&Height=&ISTRound=&LastNGames=0&LeagueID=00&Location=&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PerMode=Totals&PlayerExperience=&PlayerOrTeam=Player&PlayerPosition=&PtMeasureType=Drives&Season=2023-24&SeasonSegment=&SeasonType=Regular%20Season&StarterBench=&TeamID=0&VsConference=&VsDivision=&Weight="
-            headers = {
-                                "Host": "stats.nba.com",
-                                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0",
-                                "Accept": "application/json, text/plain, */*",
-                                "Accept-Language": "en-US,en;q=0.5",
-                                "Accept-Encoding": "gzip, deflate, br",
-
-                                "Connection": "keep-alive",
-                                "Referer": "https://stats.nba.com/"
-                            }
-            json = requests.get(url,headers = headers).json()
+            headers = NBA_HEADERS
+            json = requests.get(url, headers=headers, timeout=NBA_TIMEOUT).json()
             data = json["resultSets"][0]["rowSet"]
             columns = json["resultSets"][0]["headers"]
             df = pd.DataFrame.from_records(data, columns=columns)

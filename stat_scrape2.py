@@ -17,6 +17,9 @@ import os, datetime as _dt
 _today = _dt.date.today()
 SEASON_YEAR = int(os.environ.get("NBA_SEASON_YEAR") or _today.year + (_today.month >= 10))  # end year: 2027 = 2026-27 (see ~/basketball/season.sh)
 PLAYOFFS = os.environ.get("NBA_PLAYOFFS") == "1"
+import sys
+sys.path.insert(0, os.path.expanduser("~/basketball"))
+from nba_headers import NBA_HEADERS, NBA_TIMEOUT  # shared stats.nba.com headers; refresh there when requests hang
 import pandas as pd
 import requests
 import time
@@ -57,15 +60,7 @@ TRAIL_SUFFIX = '_ps' if IS_PLAYOFFS else ''
 
 # --- Global Headers (Consolidated) ---
 # stats.nba.com requires specific headers to prevent 403 Forbidden errors.
-NBA_HEADERS = {
-    "Host": "stats.nba.com",
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0",
-    "Accept": "application/json, text/plain, */*",
-    "Accept-Language": "en-US,en;q=0.5",
-    "Accept-Encoding": "gzip, deflate, br",
-    "Connection": "keep-alive",
-    "Referer": "https://stats.nba.com/"
-}
+# NBA_HEADERS comes from ~/basketball/nba_headers.py
 
 # ==============================================================================
 # SECTION 3: GLOBAL HELPERS & RETRY LOGIC
