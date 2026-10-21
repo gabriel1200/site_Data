@@ -8,9 +8,8 @@ the real data lives in `data-sort` attributes and `pill-*` CSS classes that are
 present in the raw HTML. So a plain HTTP GET returns the same markup the parser
 needs — no headless browser required.
 
-All parsing/processing logic (option pills, data-sort salaries, cap holds,
-dead money, summary, post-processing) is preserved verbatim from the original.
-Only the fetch layer changed.
+The cap-hold and summary parsers also distinguish payable amounts from active
+salary-table free-agent placeholders.
 
 If Spotrac starts returning 403 / a Cloudflare challenge (the page won't contain
 'dataTable-active'), flip USE_CLOUDSCRAPER = True below, or swap in curl_cffi
@@ -344,8 +343,8 @@ def _attach_spotrac_id(df: pd.DataFrame, html: str,
 
 
 def _parse_table_html_for_salaries(df: pd.DataFrame, html: str,
-                                   value_cols: List[str]) -> pd.DataFrame:
-    """Parses table HTML to extract salary data from 'data-sort' attributes."""
+                                   value_cols: List[str], section: str = "active") -> pd.DataFrame:
+    """Read cap amounts, keeping active free-agent placeholders distinct from holds."""
     if not html or df.empty:
         return df
 
@@ -379,7 +378,7 @@ def _parse_table_html_for_salaries(df: pd.DataFrame, html: str,
             if col_idx < len(html_cells):
                 cell = html_cells[col_idx]
                 salary = 0.0
-                if _is_free_agent_cell(cell):
+                if section == "active" and _is_free_agent_cell(cell):
                     # Pending-free-agent cells ("UFA / $65.7M", "RFA / $17.0M")
                     # have no real contracted salary. Spotrac still stamps a
                     # data-sort attribute on them (small integers like 4/5,
@@ -390,11 +389,28 @@ def _parse_table_html_for_salaries(df: pd.DataFrame, html: str,
                 elif cell.has_attr("data-sort"):
                     try:
                         val = float(cell["data-sort"])
-                        salary = val if val > 0 else 0.0
+                        # Spotrac also uses 4/5 as sort-priority codes. These
+                        # are never a real NBA cap amount.
+                        salary = val if abs(val) >= 1000 else 0.0
                     except (ValueError, TypeError):
                         pass
+                if section in {"holds", "summary"} and salary == 0:
+                    salary = _visible_money(cell)
                 df.loc[idx, col_name] = salary
     return df
+
+
+def _visible_money(cell) -> float:
+    """Fallback for cap holds/summary cells without an exact numeric data-sort.
+
+    A displayed ``$21.9M`` is necessarily rounded; downstream audits should
+    reconcile against Spotrac's exact team totals before using it as cap room.
+    """
+    match = re.search(r"(-?)\s*\$\s*(-?[\d,]+(?:\.\d+)?)\s*([MK]?)", cell.get_text(" ", strip=True), re.I)
+    if not match:
+        return 0.0
+    amount = float(match.group(2).replace(",", "")) * {"": 1, "K": 1e3, "M": 1e6}[match.group(3).upper()]
+    return -amount if match.group(1) else amount
 
 
 def _is_free_agent_cell(cell) -> bool:
@@ -559,8 +575,8 @@ def process_cap_holds(df_and_html: Tuple[pd.DataFrame, str], team: str,
     if "Player" in df.columns:
         df["Player"] = df["Player"].apply(clean_player_name)
         df = _attach_spotrac_id(df, html, id_map=id_map)
-        value_cols = [col for col in df.columns if col not in ["Player", "Team", "spotrac_id"]]
-        df = _parse_table_html_for_salaries(df, html, value_cols)
+        value_cols = [col for col in df.columns if re.match(r"\d{4}-\d{2}", str(col))]
+        df = _parse_table_html_for_salaries(df, html, value_cols, section="holds")
     df["Team"] = team
     return df
 
@@ -588,8 +604,8 @@ def process_summary(df_and_html: Tuple[pd.DataFrame, str], team: str) -> pd.Data
     df, html = df_and_html
     if df.empty: return pd.DataFrame()
     df = df.copy()
-    value_cols = list(df.columns)
-    df = _parse_table_html_for_salaries(df, html, value_cols)
+    value_cols = [col for col in df.columns if re.match(r"\d{4}-\d{2}", str(col))]
+    df = _parse_table_html_for_salaries(df, html, value_cols, section="summary")
     df["Team"] = team
     return df
 
@@ -727,6 +743,22 @@ def enrich_with_crosswalk(output_files: Dict[str, pd.DataFrame],
     return enriched
 
 
+def validate_required_scrape(salary_df: pd.DataFrame, cap_holds_df: pd.DataFrame,
+                             summary_df: pd.DataFrame, teams: List[str]) -> None:
+    """Refuse to replace local exports after blocked or incomplete source fetches."""
+    expected = set(teams)
+    for label, frame in (("salary", salary_df), ("summary", summary_df)):
+        found = set(frame["Team"].dropna()) if "Team" in frame else set()
+        missing = expected - found
+        if missing:
+            raise RuntimeError(f"Incomplete {label} scrape; missing teams: {', '.join(sorted(missing))}")
+    for label, frame in (("cap holds", cap_holds_df), ("summary", summary_df)):
+        seasons = [col for col in frame if re.match(r"\d{4}-\d{2}", str(col))]
+        values = frame[seasons].apply(pd.to_numeric, errors="coerce") if seasons else pd.DataFrame()
+        if values.empty or not values.abs().ge(1000).any().any():
+            raise RuntimeError(f"No priced {label} amounts; refusing to replace existing CSVs")
+
+
 if __name__ == "__main__":
     teams = ["ATL", "BOS", "BKN", "CHA", "CHI", "CLE", "DAL", "DEN", "DET", "GSW",
              "HOU", "IND", "LAC", "LAL", "MEM", "MIA", "MIL", "MIN", "NOP", "NYK",
@@ -734,6 +766,7 @@ if __name__ == "__main__":
 
     print("Starting NBA salary scraping (requests edition)...")
     salary_df, option_df, cap_holds_df, dead_money_df, summary_df = scrape_all_teams(teams)
+    validate_required_scrape(salary_df, cap_holds_df, summary_df, teams)
 
     if not dead_money_df.empty:
         print("\nIntegrating dead cap data into salaries and options...")
