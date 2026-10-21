@@ -164,8 +164,8 @@ def main():
     """
     if len(sys.argv) != 3:
         print("Usage: python passing.py <year> <season_type>")
-        print("Example: python passing.py 2025 regular")
-        print("Example: python passing.py 2025 playoffs")
+        print("Example: python passing.py 2025 regular")  # season-lint: ok
+        print("Example: python passing.py 2025 playoffs")  # season-lint: ok
         sys.exit(1)
 
     try:

@@ -13,6 +13,10 @@ All original columns, file paths, and unused legacy functions are preserved.
 # SECTION 1: IMPORTS
 # ==============================================================================
 
+import os, datetime as _dt
+_today = _dt.date.today()
+SEASON_YEAR = int(os.environ.get("NBA_SEASON_YEAR") or _today.year + (_today.month >= 10))  # end year: 2027 = 2026-27 (see ~/basketball/season.sh)
+PLAYOFFS = os.environ.get("NBA_PLAYOFFS") == "1"
 import pandas as pd
 import requests
 import time
@@ -38,11 +42,11 @@ from selenium.webdriver.chrome.service import Service
 
 # Set the *start* year of the season you want to scrape.
 # (e.g., 2024 for the 2024-25 season)
-YEAR_TO_SCRAPE = 2025
+YEAR_TO_SCRAPE = SEASON_YEAR - 1
 
 # Set the season type
 # True = Playoffs, False = Regular Season
-IS_PLAYOFFS = True
+IS_PLAYOFFS = PLAYOFFS
 
 # --- Derived Variables (Do not change) ---
 SEASON_END_YEAR = YEAR_TO_SCRAPE + 1
@@ -879,7 +883,7 @@ def get_multi_opp_shooting_selenium(url_list, playoffs=False):
     """(From scrape_shooting.py - USES SELENIUM - Unused)"""
     if playoffs: p = '/playoffs'
     else: p = ''
-    for i in range(2024, 2025):
+    for i in range(SEASON_YEAR - 1, SEASON_YEAR):
         season = '&Season=' + str(i) + '-' + str(i + 1 - 2000)
         year_url = [url + season for url in url_list]
         frames = get_tables(year_url)

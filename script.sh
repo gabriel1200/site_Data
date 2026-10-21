@@ -1,10 +1,11 @@
+[ -n "$NBA_SEASON_YEAR" ] || source ~/basketball/season.sh  # season config when run standalone
 jupyter nbconvert --to script *.ipynb
 
 
 python index_gen.py
 python stat_scrape2.py
 python player_level.py
-python passing.py 2026 regular
+python passing.py "${NBA_SEASON_YEAR}" "${NBA_SEASON_TYPE}"
 python bio.py
 python update_lebron2.py
 

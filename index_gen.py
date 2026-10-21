@@ -1,6 +1,10 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+import os, datetime as _dt
+_today = _dt.date.today()
+SEASON_YEAR = int(os.environ.get("NBA_SEASON_YEAR") or _today.year + (_today.month >= 10))  # end year: 2027 = 2026-27 (see ~/basketball/season.sh)
+PLAYOFFS = os.environ.get("NBA_PLAYOFFS") == "1"
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
@@ -15,13 +19,13 @@ class Config:
     Central configuration class for the scraper.
     """
     # Set to True for playoffs data, False for regular season
-    PLAYOFFS_MODE = True
+    PLAYOFFS_MODE = PLAYOFFS
     
     # --- Configuration Updated from test_index.py ---
     # Current year to scrape (e.g., 2026 for 2025-26 season)
-    CURRENT_YEAR = 2026
+    CURRENT_YEAR = SEASON_YEAR
     # Current season in NBA API format
-    CURRENT_SEASON = "2025-26" # 2026-1 = 2025, 26 from 2026
+    CURRENT_SEASON = f"{SEASON_YEAR - 1}-{str(SEASON_YEAR)[-2:]}"
     
     # File paths with dynamic playoff suffix
     @property
