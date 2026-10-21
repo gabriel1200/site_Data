@@ -1,5 +1,5 @@
 [ -n "$NBA_SEASON_YEAR" ] || source ~/basketball/season.sh  # season config when run standalone
-jupyter nbconvert --to script *.ipynb
+python ~/basketball/nb2py.py *.ipynb
 
 
 python index_gen.py

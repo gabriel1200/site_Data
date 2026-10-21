@@ -1,19 +1,18 @@
 #!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
+# Generated from player_level.ipynb by nb2py.py; edit the notebook.
 
 
+import os, datetime as _dt
+_today = _dt.date.today()
+SEASON_YEAR = int(os.environ.get("NBA_SEASON_YEAR") or _today.year + (_today.month >= 10))  # end year: 2027 = 2026-27 (see ~/basketball/season.sh)
+PLAYOFFS = os.environ.get("NBA_PLAYOFFS") == "1"
 import pandas as pd
 
 from bs4 import BeautifulSoup
 from pathlib import Path
 import time
 import requests
-end_year=2026
-
-
-# In[ ]:
+end_year=SEASON_YEAR
 
 
 def prep_passing(passing):
@@ -200,7 +199,7 @@ def tracking_master(years,ps=False):
         drives = pd.read_csv(folder+'drives.csv')
         drives['type']='drives'
         drives['Volume']= drives['DRIVES']
-
+        
         cs = pd.read_csv(folder+'cs.csv')
         cs['type']='cs'
         elbow = pd.read_csv(folder+'elbow.csv')
@@ -231,8 +230,6 @@ new_master = tracking_master([i for i in range(2014,end_year+1)],ps=ps)
 new_master.to_csv('tracking'+trail2+'.csv',index=False)
 
 
-# In[ ]:
-
 
 to_save=['PLAYER_ID','PLAYER', 'TEAM', 'GP', 'W', 'L', 'MIN', 'DRIVES', 'FGM', 'FGA', 'FG%',
        'FTM', 'FTA', 'FT%', 'PTS', 'PTS%', 'PASS', 'PASS%', 'AST', 'AST%',
@@ -240,10 +237,6 @@ to_save=['PLAYER_ID','PLAYER', 'TEAM', 'GP', 'W', 'L', 'MIN', 'DRIVES', 'FGM', '
        'Touches','year']
 new_master = new_master[to_save]
 new_master.to_csv('tracking'+trail+'.csv',index=False)
-
-
-# In[ ]:
-
 
 
 

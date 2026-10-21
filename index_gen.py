@@ -475,6 +475,7 @@ def export_games_data(scoring_df, playoffs=False):
         output_path = '../player_sheets/lineups/ps_games.csv'
         extra_path = '../extra_data/wowy_leverage/ps_games.csv'
         gp.to_csv(output_path, index=False)
+        os.makedirs(os.path.dirname(extra_path), exist_ok=True)
         gp.to_csv(extra_path, index=False)
         print(f"Exported playoffs games data to {output_path} and {extra_path}")
     else:
