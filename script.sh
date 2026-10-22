@@ -214,3 +214,9 @@ cp index_master.csv ../player_sheets/lineups/index_master.csv
 
 cp index_master_ps.csv ../player_sheets/lineups/index_master_ps.csv
 
+
+# Files kept current by web_app scripts (update_tplayer.py, price.py, the windex build), not by site_data.
+# The bot reads the same files, so mirror them from web_app/data. cp -p keeps the mtime so staleness stays visible.
+for f in tplayer_stats.csv tplayer_stats_ps.csv pay_table.csv windex.csv windex_ps.csv; do
+    [ -f "$WEB_APP_DIR/$f" ] && cp -p "$WEB_APP_DIR/$f" "$DISCORD_DIR/$f"
+done
