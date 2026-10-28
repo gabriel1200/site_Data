@@ -66,7 +66,9 @@ class Config:
         # From make_index2.py
         "salauti01": 1642275,   
         "sengual01": 1630578,
-        "willije02": 1631466
+        "willije02": 1631466,
+        # 2026-27 rookie: b-ref "Christian Anderson Jr.", NBA "Christian Anderson"
+        "anderch02": 1643515,
     }
 
 # Initialize config
