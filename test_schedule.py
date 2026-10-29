@@ -21,7 +21,7 @@ headers = {
 }
 
 # Example of how to use it:
-url = 'https://cdn.nba.com/static/json/staticData/scheduleLeagueV2_1.json'
+url = 'https://nba-prod-us-east-1-mediaops-stats.s3.amazonaws.com/NBA/staticData/scheduleLeagueV2_1.json'
 response = requests.get(url, headers=headers)
 
 print(response.json())

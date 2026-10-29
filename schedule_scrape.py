@@ -2,7 +2,7 @@ import requests
 import pandas as pd
 
 def fetch_and_parse_nba_schedule():
-    url = "https://cdn.nba.com/static/json/staticData/scheduleLeagueV2_1.json"
+    url = "https://nba-prod-us-east-1-mediaops-stats.s3.amazonaws.com/NBA/staticData/scheduleLeagueV2_1.json"
     
     # Reusing your app's headers to bypass CDN blocking
     headers = {
@@ -27,7 +27,7 @@ def fetch_and_parse_nba_schedule():
     }
 
     print(f"Fetching schedule data from {url}...")
-    response = requests.get(url, headers=headers, timeout=15)
+    response = requests.get(url, headers=headers, timeout=60)  # ~7.4 MB uncompressed on the feed
     response.raise_for_status()
     
     data = response.json()

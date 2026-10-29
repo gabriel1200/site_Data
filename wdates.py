@@ -3,7 +3,7 @@ import pandas as pd
 import os
 
 # WNBA Schedule Endpoint
-URL = "https://cdn.wnba.com/static/json/staticData/scheduleLeagueV2.json"
+URL = "https://nba-prod-us-east-1-mediaops-stats.s3.amazonaws.com/WNBA/staticData/scheduleLeagueV2.json"
 
 # WNBA Team Mapping: Name -> (ID, Acronym)
 # Includes 2026 expansion teams: GSV, POR, TOR

@@ -29,7 +29,7 @@ NBA_HEADERS = {
     'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36'
 }
 
-URL = "https://cdn.nba.com/static/json/liveData/scoreboard/todaysScoreboard_00.json"
+URL = "https://nba-prod-us-east-1-mediaops-stats.s3.amazonaws.com/NBA/liveData/scoreboard/todaysScoreboard_00.json"
 
 
 def main():

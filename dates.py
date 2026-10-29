@@ -9,7 +9,7 @@ sys.path.insert(0, os.path.expanduser("~/basketball"))
 from nba_headers import CDN_HEADERS, NBA_TIMEOUT
 
 # Fetch the JSON data
-url = "https://cdn.nba.com/static/json/staticData/scheduleLeagueV2.json"
+url = "https://nba-prod-us-east-1-mediaops-stats.s3.amazonaws.com/NBA/staticData/scheduleLeagueV2.json"
 response = requests.get(url, headers=CDN_HEADERS, timeout=NBA_TIMEOUT)  # 403 without them
 data = response.json()
 print(data.keys())

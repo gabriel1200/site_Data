@@ -27,11 +27,11 @@ NBA_HEADERS = {
     'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36'
 }
 
-URL = "https://cdn.nba.com/static/json/staticData/scheduleLeagueV2.json"
+URL = "https://nba-prod-us-east-1-mediaops-stats.s3.amazonaws.com/NBA/staticData/scheduleLeagueV2.json"
 
 
 def main():
-    resp = requests.get(URL, headers=NBA_HEADERS, timeout=10)
+    resp = requests.get(URL, headers=NBA_HEADERS, timeout=60)  # ~7.4 MB uncompressed on the feed
     data = resp.json()
 
     matches = []
