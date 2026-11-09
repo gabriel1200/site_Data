@@ -58,8 +58,9 @@ spotrac_id,spotrac_name,canonical_name,nba_id,bref_id,team,latest_year,match_key
 15404,Vasilije Micic,Vasilije Micić,203995,micicva01,MIL,2025,vasilije micic,False
 93958,Enrique Freeman,Enrique Freeman,1642402,freemen01,MIN,2026,enrique freeman,False
 8055,Jonas Valanciunas,Jonas Valančiūnas,202685,valanjo01,DEN,2026,jonas valanciunas,False
-95269,Riley Minix,Riley Minix,1642434,minixri01,CLE,2027,riley minix,False
 70657,Cole Anthony,Cole Anthony,1630175,anthoco01,MEM,2026,cole anthony,False
+110254,Carson Cooper,Carson Cooper,1643721,coopeca02,MEM,2027,carson cooper,False
+94520,Tristan Enaruna,Tristan Enaruna,1642400,enarutr01,CLE,2027,tristan enaruna,False
 23598,Jayson Tatum,Jayson Tatum,1628369,tatumja01,BOS,2027,jayson tatum,False
 17841,Devin Booker,Devin Booker,1626164,bookede01,PHX,2027,devin booker,False
 23608,Donovan Mitchell,Donovan Mitchell,1628378,mitchdo01,CLE,2027,donovan mitchell,False
@@ -219,7 +220,7 @@ spotrac_id,spotrac_name,canonical_name,nba_id,bref_id,team,latest_year,match_key
 93953,Oso Ighodaro,Oso Ighodaro,1642345,ighodos01,PHX,2027,oso ighodaro,False
 31568,Cameron Johnson,Cameron Johnson,1629661,johnsca02,DEN,2027,cameron johnson,False
 26978,Miles Bridges,Miles Bridges,1628970,bridgmi02,PHX,2027,miles bridges,False
-18252,T.J. McConnell,T.J. McConnell,204456,mccontj01,IND,2026,tj mcconnell,False
+18252,T.J. McConnell,T.J. McConnell,204456,mccontj01,IND,2027,tj mcconnell,False
 91750,Stephon Castle,Stephon Castle,1642264,castlst01,SAS,2027,stephon castle,False
 24240,Royce O'Neale,Royce O'Neale,1626220,onealro01,CHA,2027,royce oneale,False
 15368,Jusuf Nurkic,Jusuf Nurkić,203994,nurkiju01,UTA,2026,jusuf nurkic,False
@@ -294,7 +295,7 @@ spotrac_id,spotrac_name,canonical_name,nba_id,bref_id,team,latest_year,match_key
 107930,Aday Mara,Aday Mara,1643530,maraad01,OKC,2027,aday mara,False
 70647,Isaac Okoro,Isaac Okoro,1630171,okorois01,CHI,2027,isaac okoro,False
 91767,Kel'el Ware,Kel'el Ware,1642276,wareke01,MIL,2027,kelel ware,False
-95438,Spencer Jones,Spencer Jones,1642461,jonessp01,DEN,2026,spencer jones,False
+95438,Spencer Jones,Spencer Jones,1642461,jonessp01,DEN,2027,spencer jones,False
 98619,Noa Essengue,Noa Essengue,1642855,essenno01,CHI,2027,noa essengue,False
 78118,Ousmane Dieng,Ousmane Dieng,1631172,diengou01,MIL,2027,ousmane dieng,False
 8062,Klay Thompson,Klay Thompson,202691,thompkl01,MIA,2027,klay thompson,False
@@ -531,13 +532,12 @@ spotrac_id,spotrac_name,canonical_name,nba_id,bref_id,team,latest_year,match_key
 91775,Harrison Ingram,Harrison Ingram,1631127,ingraha01,UTA,2026,harrison ingram,False
 108435,Felix Okpara,Felix Okpara,1643590,okparfe01,WAS,2027,felix okpara,False
 94484,Reece Beekman,Reece Beekman,1641736,beekmre01,WAS,2027,reece beekman,False
-99272,Jahmai Mashack,Jahmai Mashack,1642942,mashaja01,MEM,2027,jahmai mashack,False
 99644,Vladislav Goldin,Vladislav Goldin,1642884,goldivl01,MIA,2026,vladislav goldin,False
 91786,Keshad Johnson,Keshad Johnson,1642352,johnske10,MIA,2026,keshad johnson,False
 99261,Javon Small,Javon Small,1642914,smallja01,MEM,2027,javon small,False
 101196,Keshon Gilbert,Keshon Gilbert,1642933,gilbeke01,ATL,2026,keshon gilbert,False
 100551,Chris Manon,Chris Mañon,1643024,manonch01,LAL,2027,chris manon,False
-110254,Carson Cooper,Carson Cooper,1643721,coopeca02,MEM,2027,carson cooper,False
+99272,Jahmai Mashack,Jahmai Mashack,1642942,mashaja01,MEM,2027,jahmai mashack,False
 84465,Jalen Pickett,Jalen Pickett,1629618,pickeja02,LAC,2027,jalen pickett,False
 84477,Jalen Wilson,Jalen Wilson,1630592,wilsoja03,ATL,2026,jalen wilson,False
 108563,Nick Martinelli,Nick Martinelli,1643568,martini01,LAC,2027,nick martinelli,False
@@ -548,7 +548,7 @@ spotrac_id,spotrac_name,canonical_name,nba_id,bref_id,team,latest_year,match_key
 101235,Chris Youngblood,Chris Youngblood,1642959,youngch01,POR,2027,chris youngblood,False
 99266,John Tonje,John Tonje,1642910,tonjejo01,POR,2027,john tonje,False
 106562,Jayson Kent,Jayson Kent,1643257,kentja01,POR,2027,jayson kent,False
-94520,Tristan Enaruna,Tristan Enaruna,1642400,enarutr01,CLE,2027,tristan enaruna,False
+95269,Riley Minix,Riley Minix,1642434,minixri01,CLE,2027,riley minix,False
 101248,Norchad Omier,Norchad Omier,1641807,omierno01,CLE,2027,norchad omier,False
 85973,Drew Timme,Drew Timme,1631166,timmedr01,PHX,2026,drew timme,False
 79256,Pat Spencer,Pat Spencer,1630311,spencpa01,PHX,2027,pat spencer,False
