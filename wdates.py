@@ -5,25 +5,10 @@ import os
 # WNBA Schedule Endpoint
 URL = "https://nba-prod-us-east-1-mediaops-stats.s3.amazonaws.com/WNBA/staticData/scheduleLeagueV2.json"
 
-# WNBA Team Mapping: Name -> (ID, Acronym)
-# Includes 2026 expansion teams: GSV, POR, TOR
-WNBA_MAPPING = {
-    'Dream': (1611661330, 'ATL'),
-    'Sky': (1611661329, 'CHI'),
-    'Sun': (1611661317, 'CON'),
-    'Wings': (1611661321, 'DAL'),
-    'Fever': (1611661325, 'IND'),
-    'Aces': (1611661324, 'LVA'),
-    'Sparks': (1611661319, 'LAS'),
-    'Lynx': (1611661322, 'MIN'),
-    'Liberty': (1611661313, 'NYL'),
-    'Mercury': (1611661315, 'PHX'),
-    'Storm': (1611661328, 'SEA'),
-    'Mystics': (1611661320, 'WSH'),
-    'Valkyries': (1611661331, 'GSV'),
-    'Fire': (1611661327, 'POR'),
-    'Tempo': (1611661332, 'TOR')
-}
+# Team ids and codes come from the feed itself (homeTeam/awayTeam teamId, teamTricode).
+# A hand-typed name -> id table used to live here and had six ids wrong (PHX, CON, LAS, LVA,
+# MIN, WAS: logos and previews showed the wrong team or none); fixed 2026-11-10.
+# Codes are the feed's, e.g. WAS and PDX, the same as the live game pages and the playoff rows.
 
 def update_wschedule():
     # 1. Fetch live data
@@ -38,12 +23,11 @@ def update_wschedule():
         raw_date = game_date_obj["gameDate"].split("T")[0]
         
         for game in game_date_obj["games"]:
-            home_name = game["homeTeam"]["teamName"]
-            away_name = game["awayTeam"]["teamName"]
-            
-            # Map IDs and Acronyms
-            home_id, home_abbr = WNBA_MAPPING.get(home_name, (None, home_name))
-            away_id, away_abbr = WNBA_MAPPING.get(away_name, (None, away_name))
+            home, away = game["homeTeam"], game["awayTeam"]
+            # 0 / blank until a matchup is set (e.g. All-Star rosters, later playoff rounds)
+            home_id, away_id = home.get("teamId") or None, away.get("teamId") or None
+            home_abbr = home.get("teamTricode") or home.get("teamName") or None
+            away_abbr = away.get("teamTricode") or away.get("teamName") or None
             
             # Build row matching schedule.csv columns
             if game["gameLabel"]!= "Preseason":

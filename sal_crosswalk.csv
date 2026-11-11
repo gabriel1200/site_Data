@@ -61,7 +61,6 @@ spotrac_id,spotrac_name,canonical_name,nba_id,bref_id,team,latest_year,match_key
 70657,Cole Anthony,Cole Anthony,1630175,anthoco01,MEM,2026,cole anthony,False
 110254,Carson Cooper,Carson Cooper,1643721,coopeca02,MEM,2027,carson cooper,False
 94520,Tristan Enaruna,Tristan Enaruna,1642400,enarutr01,CLE,2027,tristan enaruna,False
-0,DeMar DeRozan WAIVED,DeMar DeRozan,201942,derozde01,SAC,2027,demar derozan,False
 78128,Dalen Terry,Dalen Terry,1631207,terryda01,OKC,2027,dalen terry,False
 23598,Jayson Tatum,Jayson Tatum,1628369,tatumja01,BOS,2027,jayson tatum,False
 17841,Devin Booker,Devin Booker,1626164,bookede01,PHX,2027,devin booker,False
@@ -316,7 +315,7 @@ spotrac_id,spotrac_name,canonical_name,nba_id,bref_id,team,latest_year,match_key
 82203,Anthony Black,Anthony Black,1641710,blackan01,ORL,2027,anthony black,False
 74136,Day'Ron Sharpe,Day'Ron Sharpe,1630549,sharpda01,BKN,2027,dayron sharpe,False
 84479,Jaylen Clark,Jaylen Clark,1641740,clarkja02,MIN,2027,jaylen clark,False
-6327,DeMar DeRozan,DeMar DeRozan,201942,derozde01,SAC,2027,demar derozan,False
+0,DeMar DeRozan WAIVED,DeMar DeRozan,201942,derozde01,SAC,2027,demar derozan,False
 78577,Ron Harper,Ron Harper Jr.,1631199,harpero02,BOS,2027,ron harper,True
 91754,Ja'Kobe Walter,Ja'Kobe Walter,1642266,walteja01,TOR,2027,jakobe walter,False
 107939,Bennett Stirtz,Bennett Stirtz,1642892,stirtbe01,OKC,2027,bennett stirtz,False
@@ -472,6 +471,7 @@ spotrac_id,spotrac_name,canonical_name,nba_id,bref_id,team,latest_year,match_key
 79950,Daeqwon Plowden,Daeqwon Plowden,1631342,plowdda01,SAC,2027,daeqwon plowden,False
 15379,Bogdan Bogdanovic,Bogdan Bogdanović,203992,bogdabo01,HOU,2027,bogdan bogdanovic,False
 2532,Mike Conley,Mike Conley,201144,conlemi01,BOS,2027,mike conley,False
+6327,DeMar DeRozan,DeMar DeRozan,201942,derozde01,DEN,2027,demar derozan,False
 26998,Jevon Carter,Jevon Carter,1628975,carteje01,ORL,2027,jevon carter,False
 70684,Nick Richards,Nick Richards,1630208,richani01,MIA,2027,nick richards,False
 78654,Simone Fontecchio,Simone Fontecchio,1631323,fontesi01,MIA,2027,simone fontecchio,False
@@ -584,7 +584,7 @@ spotrac_id,spotrac_name,canonical_name,nba_id,bref_id,team,latest_year,match_key
 86051,Duop Reath,Duop Reath,1641871,reathdu01,PHX,2027,duop reath,False
 108431,Dillon Mitchell,Dillon Mitchell,1641759,mitchdi01,BOS,2027,dillon mitchell,False
 98644,Amari Williams,Amari Williams,1642873,william01,BOS,2026,amari williams,False
-86052,Malachi Smith,Malachi Smith,1641869,smithma02,TOR,2026,malachi smith,False
+86052,Malachi Smith,Malachi Smith,1641869,smithma02,TOR,2027,malachi smith,False
 91763,Kevin McCullar,Kevin McCullar Jr.,1641755,mcculke01,TOR,2026,kevin mccullar,False
 101322,Julian Reese,Julian Reese,1642882,reeseju01,NOP,2027,julian reese,False
 79256,Pat Spencer,Pat Spencer,1630311,spencpa01,PHX,2027,pat spencer,False
