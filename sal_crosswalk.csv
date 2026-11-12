@@ -59,9 +59,9 @@ spotrac_id,spotrac_name,canonical_name,nba_id,bref_id,team,latest_year,match_key
 93958,Enrique Freeman,Enrique Freeman,1642402,freemen01,MIN,2026,enrique freeman,False
 8055,Jonas Valanciunas,Jonas Valančiūnas,202685,valanjo01,DEN,2026,jonas valanciunas,False
 70657,Cole Anthony,Cole Anthony,1630175,anthoco01,MEM,2026,cole anthony,False
-110254,Carson Cooper,Carson Cooper,1643721,coopeca02,MEM,2027,carson cooper,False
 94520,Tristan Enaruna,Tristan Enaruna,1642400,enarutr01,CLE,2027,tristan enaruna,False
 78128,Dalen Terry,Dalen Terry,1631207,terryda01,OKC,2027,dalen terry,False
+101064,Lawson Lovering,Lawson Lovering,1643133,loverla01,LAL,2027,lawson lovering,False
 23598,Jayson Tatum,Jayson Tatum,1628369,tatumja01,BOS,2027,jayson tatum,False
 17841,Devin Booker,Devin Booker,1626164,bookede01,PHX,2027,devin booker,False
 23608,Donovan Mitchell,Donovan Mitchell,1628378,mitchdo01,CLE,2027,donovan mitchell,False
@@ -542,7 +542,7 @@ spotrac_id,spotrac_name,canonical_name,nba_id,bref_id,team,latest_year,match_key
 99272,Jahmai Mashack,Jahmai Mashack,1642942,mashaja01,MEM,2027,jahmai mashack,False
 99261,Javon Small,Javon Small,1642914,smallja01,MEM,2027,javon small,False
 100551,Chris Manon,Chris Mañon,1643024,manonch01,LAL,2027,chris manon,False
-101064,Lawson Lovering,Lawson Lovering,1643133,loverla01,LAL,2027,lawson lovering,False
+110254,Carson Cooper,Carson Cooper,1643721,coopeca02,LAL,2027,carson cooper,False
 31972,Tacko Fall,Tacko Fall,1629605,fallta01,PHI,2027,tacko fall,False
 99629,Caleb Love,Caleb Love,1631126,loveca01,PHI,2027,caleb love,False
 94483,Trey Alexander,Trey Alexander,1641725,alexatr01,UTA,2026,trey alexander,False
