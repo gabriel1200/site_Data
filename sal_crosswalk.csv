@@ -535,7 +535,7 @@ spotrac_id,spotrac_name,canonical_name,nba_id,bref_id,team,latest_year,match_key
 94483,Trey Alexander,Trey Alexander,1641725,alexatr01,UTA,2026,trey alexander,False
 82271,Kobe Bufkin,Kobe Bufkin,1641723,bufkiko01,UTA,2026,kobe bufkin,False
 91775,Harrison Ingram,Harrison Ingram,1631127,ingraha01,UTA,2026,harrison ingram,False
-91786,Keshad Johnson,Keshad Johnson,1642352,johnske10,MIA,2026,keshad johnson,False
+91786,Keshad Johnson,Keshad Johnson,1642352,johnske10,MIA,2027,keshad johnson,False
 99272,Jahmai Mashack,Jahmai Mashack,1642942,mashaja01,MEM,2027,jahmai mashack,False
 110254,Carson Cooper,Carson Cooper,1643721,coopeca02,LAL,2027,carson cooper,False
 84465,Jalen Pickett,Jalen Pickett,1629618,pickeja02,LAC,2027,jalen pickett,False
@@ -543,6 +543,7 @@ spotrac_id,spotrac_name,canonical_name,nba_id,bref_id,team,latest_year,match_key
 95567,RayJ Dennis,RayJ Dennis,1642484,dennira01,ATL,2027,rayj dennis,False
 101196,Keshon Gilbert,Keshon Gilbert,1642933,gilbeke01,ATL,2026,keshon gilbert,False
 108563,Nick Martinelli,Nick Martinelli,1643568,martini01,LAC,2027,nick martinelli,False
+108840,Tre Donaldson,Tre Donaldson,1643621,donaltr01,MIA,2027,tre donaldson,False
 86006,Pete Nance,Pete Nance,1631250,nancepe01,MIL,2027,pete nance,False
 98618,Kam Jones,Kam Jones,1642880,joneska03,MIL,2026,kam jones,False
 100551,Chris Manon,Chris Mañon,1643024,manonch01,LAL,2027,chris manon,False
