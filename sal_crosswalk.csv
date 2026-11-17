@@ -398,7 +398,7 @@ spotrac_id,spotrac_name,canonical_name,nba_id,bref_id,team,latest_year,match_key
 0,Kevin Porter. WAIVED,Kevin Porter Jr.,1629645,porteke02,MIL,2026,kevin porter,True
 82275,Kris Murray,Kris Murray,1631200,murrakr01,MEM,2027,kris murray,False
 84442,Marcus Sasser,Marcus Sasser,1631204,sassema01,DAL,2027,marcus sasser,False
-91758,Devin Carter,Devin Carter,1642269,cartede02,ATL,2026,devin carter,False
+91758,Devin Carter,Devin Carter,1642269,cartede02,ATL,2027,devin carter,False
 84440,Ben Sheppard,Ben Sheppard,1641767,sheppbe01,IND,2027,ben sheppard,False
 93960,Cam Spencer,Cam Spencer,1642285,spencca01,MEM,2027,cam spencer,False
 27758,Kenrich Williams,Kenrich Williams,1629026,willike04,OKC,2027,kenrich williams,False
@@ -507,7 +507,7 @@ spotrac_id,spotrac_name,canonical_name,nba_id,bref_id,team,latest_year,match_key
 0,Micah Peavy WAIVED,Micah Peavy,1642877,peavymi01,MEM,2027,micah peavy,False
 99651,Ryan Nembhard,Ryan Nembhard,1642948,nembhry01,CHA,2027,ryan nembhard,False
 98625,Adou Thiero,Adou Thiero,1642876,thierad01,LAL,2027,adou thiero,False
-13335,Mason Plumlee,Mason Plumlee,203486,plumlma01,SAC,2026,mason plumlee,False
+13335,Mason Plumlee,Mason Plumlee,203486,plumlma01,SAC,2027,mason plumlee,False
 78309,Orlando Robinson,Orlando Robinson,1631115,robinor01,CHI,2026,orlando robinson,False
 0,Olivier-Maxence Prosper WAIVED,Olivier-Maxence Prosper,1641765,prospol01,DAL,2027,olivier maxence prosper,False
 0,Jonas Valanciunas WAIVED,Jonas Valančiūnas,202685,valanjo01,DEN,2026,jonas valanciunas,False
