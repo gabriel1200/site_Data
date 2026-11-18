@@ -49,16 +49,14 @@ cp option.csv $DISCORD_DIR/option.csv
 cp salary.csv $WEB_APP_DIR/salary.csv
 cp salary.csv $DISCORD_DIR/salary.csv
 
-cp rimdfg.csv $WEB_APP_DIR/rimdfg.csv
+# Rim and DFG files (site_data/defense.py, last run 2025-05-30; through 2024-25): only the bot's /rim reads them.
+# web_app's copies were dead (visuals/rim_p.py, not imported) and were removed 2026-11-18.
 cp rimdfg.csv $DISCORD_DIR/rimdfg.csv
 
-cp rimfreq.csv $WEB_APP_DIR/rimfreq.csv
 cp rimfreq.csv $DISCORD_DIR/rimfreq.csv
 
-cp rim_acc.csv $WEB_APP_DIR/rim_acc.csv
 cp rim_acc.csv $DISCORD_DIR/rim_acc.csv
 
-cp dfg.csv $WEB_APP_DIR/dfg.csv
 cp dfg.csv $DISCORD_DIR/dfg.csv
 
 cp hustle.csv $WEB_APP_DIR/hustle.csv
@@ -79,16 +77,12 @@ cp lebron.csv $DISCORD_DIR/lebron.csv
 cp playstyle.csv $WEB_APP_DIR/playstyle.csv
 cp playstyle.csv $DISCORD_DIR/playstyle.csv
 
-cp rimdfg_p.csv $WEB_APP_DIR/rimdfg_p.csv
 cp rimdfg_p.csv $DISCORD_DIR/rimdfg_p.csv
 
-cp rimfreq_p.csv $WEB_APP_DIR/rimfreq_p.csv
 cp rimfreq_p.csv $DISCORD_DIR/rimfreq_p.csv
 
-cp rim_acc_p.csv $WEB_APP_DIR/rim_acc_p.csv
 cp rim_acc_p.csv $DISCORD_DIR/rim_acc_p.csv
 
-cp dfg_p.csv $WEB_APP_DIR/dfg_p.csv
 cp dfg_p.csv $DISCORD_DIR/dfg_p.csv
 
 cp salary_spread.csv $WEB_APP_DIR/salary_spread.csv
