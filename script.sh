@@ -8,6 +8,9 @@ python player_level.py
 python passing.py "${NBA_SEASON_YEAR}" "${NBA_SEASON_TYPE}"
 python bio.py
 python update_lebron2.py
+# Current-season LEBRON from bball-index.com's public LEBRON Ratings table (R2 stops at 2025-26 since BBI's new site,
+# Nov 2026). Replaces only this season's rows in lebron.csv, and only if its checks pass. ~15 s.
+python bbi_lebron_scrape.py || echo "BBI LEBRON scrape stopped; lebron.csv keeps yesterday's current-season rows."
 
 
 #python contract_data.py
