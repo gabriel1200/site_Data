@@ -78,6 +78,14 @@ def main():
     
     print(f"Processing Season: {current_season} (Year: {current_year})")
 
+    # Only the season being played changes. Since BBI's new site (Nov 2026) R2's lebron_latest.csv has stayed on
+    # 2025-26, and re-writing a finished season daily re-labels its players with this season's teams/positions
+    # (modern_index.csv). bbi_lebron_scrape.py writes the current season from the site instead.
+    pipeline_season = os.environ.get("NBA_SEASON")
+    if pipeline_season and current_season != pipeline_season:
+        print(f"Skipping: R2 file is {current_season}, the current season is {pipeline_season}; lebron.csv unchanged.")
+        return
+
     # 4. Prepare Merge Dataframes
     if 'PLAYER_ID' in df_latest.columns:
         df_latest = df_latest.rename(columns={'PLAYER_ID': 'player_id'})

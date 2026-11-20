@@ -221,12 +221,21 @@ def pull_bref_data(totals=False):
 
     return pd.concat(frames) if frames else pd.DataFrame()
 
+def normalize_name(name):
+    """Lowercase ASCII name without periods, apostrophes, hyphens or Jr./Sr./II-V suffixes."""
+    import re, unicodedata
+    s = unicodedata.normalize("NFKD", str(name)).encode("ascii", "ignore").decode().lower().replace(".", "")
+    s = re.sub(r"['’,-]", " ", s)
+    s = re.sub(r"\b(jr|sr|ii|iii|iv|v)\b", " ", s)
+    return " ".join(s.split())
+
+
 def process_player_ids(df, master_df):
     """Process player IDs using master dataframe and NBA API"""
     if df.empty:
         print("Player ID processing skipped: DataFrame is empty.")
         return df
-        
+
     print(f"Processing player IDs for {len(df)} players")
 
     # Extract Basketball Reference IDs
@@ -271,9 +280,30 @@ def process_player_ids(df, master_df):
         print("Will only use existing master list for matching.")
         player_names_map = {} # Create empty dict so the script doesn't fail
 
+    # Also the NBA's names from player_sheets' season totals (local, yesterday's run): covers players the
+    # request above misses and keeps matching when stats.nba.com is down.
+    totals_path = os.path.expanduser(f"~/basketball/player_sheets/year_totals/{config.CURRENT_YEAR}.csv")
+    if os.path.exists(totals_path):
+        try:
+            t = pd.read_csv(totals_path, usecols=['PLAYER_ID', 'PLAYER_NAME'])
+            for name, pid in zip(t['PLAYER_NAME'], t['PLAYER_ID']):
+                player_names_map.setdefault(name, pid)
+        except Exception as e:
+            print(f"Could not read {totals_path}: {e}")
+
     if player_names_map:
-        # 3. Apply the name map to the missing players
+        # 3. Apply the name map to the missing players: exact name first, then a normalized name (accents,
+        #    periods, Jr./II suffixes ignored; BRef's "Bogoljub Markovic" vs the NBA's "Bogoljub Marković"),
+        #    used only where the normalized name belongs to one NBA player.
         df.loc[missing_mask, 'nba_id'] = df.loc[missing_mask, 'player'].map(player_names_map)
+        norm_ids = {}
+        for name, pid in player_names_map.items():
+            norm_ids.setdefault(normalize_name(name), set()).add(int(pid))
+        norm_map = {k: next(iter(v)) for k, v in norm_ids.items() if len(v) == 1}
+        still = df['nba_id'].isna()
+        df.loc[still, 'nba_id'] = df.loc[still, 'player'].map(lambda n: norm_map.get(normalize_name(n)))
+        for _, row in df[still & df['nba_id'].notna()].iterrows():
+            print(f"  Matched by normalized name: '{row['player']}' -> {int(row['nba_id'])}")
         
         # 4. Identify players *STILL* missing an nba_id after *both* attempts
         still_missing_mask = df['nba_id'].isna()

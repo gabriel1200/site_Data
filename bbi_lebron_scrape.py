@@ -25,15 +25,18 @@ from playwright.async_api import async_playwright
 URL = "https://www.bball-index.com/nba"
 HISTORY = "lebron.csv"
 INDEX = "index_master.csv"     # name/team -> nba_id, bref_id (has the current season)
-# nba_id -> Pos (BRef positions), best first. player_sheets' copy is rebuilt daily for the current season;
-# site_data's own modern_index.csv stopped in April 2026 (bio.py here writes only the playoff file).
-POS_SOURCES = ["../player_sheets/gen_totals/modern_index.csv", "modern_index.csv"]
-# Players missing from index_master (checked by hand on basketball-reference.com): nba_id -> (bref_id, Pos)
-MANUAL = {1642881: ("markobo01", "PF")}  # Bogoljub Marković, MIL (2026-11-20)
+# nba_id -> Pos (BRef positions, this season's rows), best first: site_data's own (bio.py, written minutes
+# before this in script.sh), then player_sheets' copy (yesterday's run).
+POS_SOURCES = ["modern_index.csv", "../player_sheets/gen_totals/modern_index.csv"]
+# Last resort for a player the indexes miss (check basketball-reference.com by hand): nba_id -> (bref_id, Pos).
+# Empty since index_gen.py matches names without accents/suffixes (2026-11-20; Marković was the case).
+MANUAL = {}
 TOTALS = "../player_sheets/year_totals/{year}.csv"  # NBA names + PLAYER_ID, the main ID match
 OUT_DIR = "bbi_lebron"
-MIN_ROWS = 400                  # the table lists ~470+ players once the season is under way
+MIN_SHARE = 0.8   # BBI lists ~every player who has played (473 of 473 on 2026-11-20); accept 80% of the NBA's count
+MIN_ROWS = 100    # floor when the NBA totals aren't available
 MAX_UNMATCHED = 10
+SEASON_RE = r"^\d{4}-\d{2}$"
 TARGET_COLUMNS = ['Season', 'Player', 'team', 'Minutes', 'Pos', 'Offensive Archetype', 'WAR', 'LEBRON',
                   'O-LEBRON', 'D-LEBRON', 'year', 'Defensive Role', 'NBA ID', 'bref_id', 'Games', 'Age']
 
@@ -66,7 +69,18 @@ async def scrape(season):
         await page.goto(URL, wait_until="networkidle", timeout=90000)
         await page.wait_for_selector("tbody tr", timeout=60000)
 
-        picker = page.locator("select:has(option[value='2025-26'])").first
+        # The season menu is the <select> whose options look like "2026-27".
+        selects = page.locator("select")
+        picker = None
+        for i in range(await selects.count()):
+            opts = await selects.nth(i).evaluate("s => [...s.options].map(o => o.value)")
+            if opts and all(re.match(SEASON_RE, o) for o in opts):
+                picker, seasons = selects.nth(i), opts
+                break
+        if picker is None:
+            raise SystemExit("No season menu found on the page (layout changed?); nothing written.")
+        if season not in seasons:
+            raise SystemExit(f"BBI doesn't list {season} yet (newest: {seasons[0]}); nothing written.")
         shown = await picker.input_value()
         if shown != season:
             await picker.select_option(season)
@@ -185,14 +199,13 @@ def add_ids(df, year):
     df["bref_id"] = df["nba_id"].map(dict(zip(bref["nba_id"].astype(int), bref["bref_id"])))
     df["bref_id"] = df["bref_id"].fillna(df["nba_id"].map({k: v[0] for k, v in MANUAL.items()}))
 
-    df["Pos"] = None
-    for path in POS_SOURCES:
+    pos = {k: v[1] for k, v in MANUAL.items()}
+    for path in reversed(POS_SOURCES):  # earlier sources overwrite later ones
         if os.path.exists(path):
             m = pd.read_csv(path).dropna(subset=["nba_id", "Pos"])
-            m = m[m["year"] == year] if path != "modern_index.csv" else m
-            pos = dict(zip(m["nba_id"].astype(int), m["Pos"]))
-            df["Pos"] = df["Pos"].fillna(df["nba_id"].map(pos))
-    df["Pos"] = df["Pos"].fillna(df["nba_id"].map({k: v[1] for k, v in MANUAL.items()}))
+            m = m[m["year"] == year]
+            pos.update(zip(m["nba_id"].astype(int), m["Pos"]))
+    df["Pos"] = df["nba_id"].map(pos)
     return df.drop(columns="key")
 
 
@@ -209,8 +222,13 @@ def to_history(df, season, year):
 
 def check(df, season):
     problems = []
-    if len(df) < MIN_ROWS:
-        problems.append(f"only {len(df)} players (expected at least {MIN_ROWS})")
+    # Expect about as many players as the NBA's season totals list (early season is small, so no fixed number).
+    need = MIN_ROWS
+    totals = TOTALS.format(year=int(season[:4]) + 1)
+    if os.path.exists(totals):
+        need = max(MIN_ROWS, int(MIN_SHARE * len(pd.read_csv(totals, usecols=["PLAYER_ID"]))))
+    if len(df) < need:
+        problems.append(f"only {len(df)} players (expected at least {need})")
     if df["lebron"].isna().any() or (df["lebron"].abs() < 1e-9).all():
         problems.append("LEBRON missing or all zero")
     if df["bbi_id"].duplicated().any():

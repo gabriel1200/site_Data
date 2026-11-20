@@ -196,11 +196,16 @@ if __name__ == "__main__":
         
         totals_data_with_pos=totals_data_with_pos[['Pos','bref_id']]
         
-        # Pulling the playoff index
-        index_master = pd.read_csv('https://raw.githubusercontent.com/gabriel1200/site_Data/refs/heads/master/index_master_ps.csv')
+        # This season's index (index_gen.py writes it just before this in script.sh), regular season or playoffs
+        # by season.sh. Until 2026-11-20 this read the playoff index only, so modern_index.csv froze in April 2026.
+        index_master = pd.read_csv(f'index_master{config.trail}.csv')
         index_master = index_master[index_master.year==SEASON_YEAR]
 
         player_index = index_master.merge(totals_data_with_pos,on='bref_id')
-        
-        # Save to a modern playoff index
-        player_index.to_csv('modern_index_ps.csv',index=False)
+
+        out = f'modern_index{config.trail}.csv'
+        if player_index.empty:
+            print(f"No {SEASON_YEAR} players with positions; {out} left as it was.")
+        else:
+            player_index.to_csv(out, index=False)
+            print(f"Wrote {out}: {len(player_index)} rows for {SEASON_YEAR}")
