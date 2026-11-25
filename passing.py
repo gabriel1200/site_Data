@@ -65,16 +65,20 @@ def passing_data(year_to_process, ps=False, update=True):
         "Type": "Player"
     }
     
-    try:
-        response = requests.get(url, params=params)
-        response.raise_for_status() # Raise an exception for bad status codes
-        response_json = response.json()
-    except requests.exceptions.RequestException as e:
-        print(f"API request failed: {e}")
-        return pd.DataFrame() # Return empty dataframe on failure
-    except json.JSONDecodeError:
-        print(f"Failed to decode JSON from response. Response text: {response.text}")
-        return pd.DataFrame()
+    # Without a timeout a dropped connection hangs forever (22 min on 2026-11-24, VPN on).
+    # On failure we return empty, so main() leaves the existing CSV untouched.
+    attempts = 3
+    for attempt in range(1, attempts + 1):
+        try:
+            response = requests.get(url, params=params, timeout=(10, 60))
+            response.raise_for_status() # Raise an exception for bad status codes
+            response_json = response.json()
+            break
+        except (requests.exceptions.RequestException, ValueError) as e:
+            print(f"API request failed (attempt {attempt}/{attempts}): {e}")
+            if attempt == attempts:
+                return pd.DataFrame() # Return empty dataframe on failure
+            time.sleep(5)
 
     if "multi_row_table_data" not in response_json or not response_json["multi_row_table_data"]:
         print(f"No 'multi_row_table_data' found in API response for {season}.")
